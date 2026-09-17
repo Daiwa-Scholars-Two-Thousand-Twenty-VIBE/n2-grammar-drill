@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JLPT N2 文法特訓ドリル (1課〜7課)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --background: #090d16;
+      --card: #131b2e;
+      --border: #23304a;
+      --foreground: #f3f4f6;
+      --muted-foreground: #9ca3af;
+      --secondary: #1e293b;
+    }
+    * { box-sizing: border-box; }
+    html { color-scheme: dark; }
+    body {
+      background-color: var(--background);
+      color: var(--foreground);
+    }
+  </style>
+</head>
+<body class="bg-[var(--background)] text-[var(--foreground)] antialiased min-h-screen p-3 sm:p-6 md:p-8 font-sans transition-colors">
+  
+  <div id="main-container" class="max-w-4xl mx-auto bg-[var(--card)] text-[var(--foreground)] border border-[var(--border)] rounded-2xl p-6 sm:p-8 md:p-10 shadow-lg transition-all">
+    
+    <!-- Header -->
+    <div class="flex flex-wrap items-center justify-between border-b border-[var(--border)] pb-5 mb-6 gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-1.5">
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+            新完全マスター N2
+          </span>
+          <span id="chapter-badge" class="px-3 py-1 rounded-full text-xs font-semibold bg-zinc-500/10 text-[var(--muted-foreground)]">
+            第1課〜第7課
+          </span>
+        </div>
+        <h1 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-[var(--foreground)] tracking-tight">
+          文法特訓ドリル（問題1形式・23問）
+        </h1>
+      </div>
+
+      <!-- Action Tools (Fullscreen, Wide, Timer) -->
+      <div class="flex items-center gap-3">
+        <!-- Timer -->
+        <div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-[var(--background)] border border-[var(--border)]">
+          <div class="text-right">
+            <div class="text-[10px] text-[var(--muted-foreground)] font-semibold uppercase tracking-wider">目標 25s</div>
+            <div id="timer-display" class="font-mono font-black text-lg text-emerald-400 leading-none">25s</div>
+          </div>
+          <button id="timer-toggle-btn" class="p-1 rounded-lg hover:bg-[var(--secondary)] text-xs text-[var(--muted-foreground)] transition" title="タイマーON/OFF">
+            ⏱️
+          </button>
+        </div>
+
+        <!-- Layout Expand Button -->
+        <button id="width-toggle-btn" class="p-2.5 rounded-xl border border-[var(--border)] bg-[var(--background)] hover:bg-[var(--secondary)] text-sm text-[var(--foreground)] transition flex items-center gap-1.5" title="幅の拡大切替">
+          <span>↔️</span>
+          <span class="text-xs font-medium hidden sm:inline">ワイド</span>
+        </button>
+
+        <!-- Fullscreen Button -->
+        <button id="fullscreen-btn" class="p-2.5 rounded-xl border border-[var(--border)] bg-[var(--background)] hover:bg-[var(--secondary)] text-sm text-[var(--foreground)] transition flex items-center gap-1.5" title="全画面表示">
+          <span>⛶</span>
+          <span class="text-xs font-medium hidden sm:inline">全画面</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Progress Tracker -->
+    <div class="mb-6">
+      <div class="flex justify-between items-center text-xs font-semibold text-[var(--muted-foreground)] mb-2">
+        <span id="question-number">第 1 問 / 全 23 問</span>
+        <span id="progress-percent" class="text-indigo-400 font-mono">4%</span>
+      </div>
+      <div class="w-full bg-[var(--border)] h-2 rounded-full overflow-hidden">
+        <div id="progress-bar" class="bg-indigo-500 h-full rounded-full transition-all duration-300" style="width: 4.3%;"></div>
+      </div>
+    </div>
+
+    <!-- Main Quiz View -->
+    <div id="quiz-view">
+      
+      <!-- Question Focus Badge -->
+      <div class="mb-3 flex items-center justify-between">
+        <span id="question-focus" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-indigo-400 bg-indigo-500/10 border border-indigo-500/20">
+          🎯 焦点: 
+        </span>
+        <span class="text-xs text-[var(--muted-foreground)] hidden sm:inline">
+          キーボード [1] [2] [3] [4] で回答 / [Enter] で次へ
+        </span>
+      </div>
+
+      <!-- Target Sentence Box -->
+      <div class="p-5 sm:p-7 md:p-8 rounded-2xl bg-[var(--background)] border border-[var(--border)] mb-6 text-lg sm:text-2xl leading-relaxed font-medium transition-all shadow-inner">
+        <p id="sentence-text"></p>
+      </div>
+
+      <!-- Multiple Choices Grid -->
+      <div id="choices-container" class="grid grid-cols-1 gap-3.5 mb-6">
+        <!-- Buttons injected dynamically -->
+      </div>
+
+      <!-- Feedback / Explanation Card -->
+      <div id="explanation-box" class="hidden rounded-2xl p-5 sm:p-6 border transition-all duration-200 mb-6 shadow-sm">
+        
+        <!-- Header badge -->
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--border)] pb-3 mb-4">
+          <div class="flex items-center gap-2.5">
+            <span id="result-badge" class="px-3 py-1 rounded-md text-xs sm:text-sm font-bold tracking-wide"></span>
+            <span id="rule-title" class="text-sm sm:text-base font-bold text-[var(--foreground)]"></span>
+          </div>
+        </div>
+
+        <!-- English Translation of sentence -->
+        <div class="mb-3 p-3 rounded-xl bg-[var(--background)] border border-[var(--border)]">
+          <div class="text-xs font-bold text-indigo-400 uppercase tracking-wider mb-1">Sentence Meaning</div>
+          <div id="sentence-translation" class="text-sm sm:text-base text-[var(--foreground)] italic"></div>
+        </div>
+
+        <!-- Main Explanation (Bilingual / English Core) -->
+        <div class="mb-4">
+          <div class="text-xs font-bold text-[var(--muted-foreground)] uppercase tracking-wider mb-1">Why This Answer Is Correct & Rule Breakdown</div>
+          <div id="explanation-text" class="text-sm sm:text-base leading-relaxed text-[var(--foreground)] whitespace-pre-line"></div>
+        </div>
+
+        <!-- Trap & Distractor Breakdown Box -->
+        <div class="p-4 rounded-xl bg-[var(--card)] border border-[var(--border)]">
+          <div class="text-xs font-bold text-amber-500 mb-1.5 flex items-center gap-1.5">
+            <span>⚡ SKM Exam Trap & Why Distractors Fail</span>
+          </div>
+          <div id="trap-box" class="text-xs sm:text-sm text-[var(--muted-foreground)] leading-relaxed whitespace-pre-line"></div>
+        </div>
+
+      </div>
+
+      <!-- Next Button -->
+      <div class="flex justify-end pt-2">
+        <button id="next-btn" class="hidden px-7 py-3 rounded-xl font-bold text-base bg-indigo-600 hover:bg-indigo-500 text-white shadow-md transition active:scale-95 flex items-center gap-2">
+          <span>次の問題へ (Next)</span>
+          <span>→</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Results View -->
+    <div id="results-view" class="hidden py-8 text-center">
+      <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-indigo-500/10 text-indigo-400 text-3xl font-bold mb-4">
+        🎯
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-[var(--foreground)] mb-2">ドリル完了！ (Drill Complete)</h2>
+      <p id="final-score-text" class="text-base text-[var(--muted-foreground)] mb-8"></p>
+
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-left mb-8">
+        <div class="p-4 rounded-2xl bg-[var(--background)] border border-[var(--border)]">
+          <div class="text-xs text-[var(--muted-foreground)] font-semibold">正答率 (Accuracy)</div>
+          <div id="stat-accuracy" class="text-2xl sm:text-3xl font-black text-emerald-400 mt-1">0%</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-[var(--background)] border border-[var(--border)]">
+          <div class="text-xs text-[var(--muted-foreground)] font-semibold">正解数 (Score)</div>
+          <div id="stat-correct" class="text-2xl sm:text-3xl font-black text-[var(--foreground)] mt-1">0 / 23</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-[var(--background)] border border-[var(--border)]">
+          <div class="text-xs text-[var(--muted-foreground)] font-semibold">要復習 (Missed)</div>
+          <div id="stat-incorrect" class="text-2xl sm:text-3xl font-black text-rose-500 mt-1">0 問</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-[var(--background)] border border-[var(--border)]">
+          <div class="text-xs text-[var(--muted-foreground)] font-semibold">平均解答速度 (Speed)</div>
+          <div id="stat-speed" class="text-2xl sm:text-3xl font-black text-indigo-400 mt-1">0s</div>
+        </div>
+      </div>
+
+      <!-- Missed Questions List -->
+      <div id="missed-container" class="text-left mb-8 hidden">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-base font-bold text-[var(--foreground)] flex items-center gap-2">
+            <span>⚠️ 要復習ポイント (Review Your Mistakes)</span>
+          </h3>
+          <span class="text-xs text-[var(--muted-foreground)]">STUDY_NOTES card candidates</span>
+        </div>
+        <div id="missed-list" class="space-y-3 max-h-80 overflow-y-auto pr-2"></div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <button id="retry-missed-btn" class="hidden px-7 py-3.5 rounded-xl font-bold text-base bg-rose-600 hover:bg-rose-500 text-white shadow-md transition active:scale-95">
+          間違えた問題だけ解き直す (Retry Missed)
+        </button>
+        <button id="restart-all-btn" class="px-7 py-3.5 rounded-xl font-bold text-base bg-[var(--secondary)] hover:bg-[var(--border)] text-[var(--foreground)] transition active:scale-95">
+          最初からもう一度 (Restart All)
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const ALL_QUESTIONS = [
+      {
+        id: 1,
+        chapter: "1課",
+        focus: "〜たとたん(に) vs 〜(か)と思うと",
+        sentence: "私は疲れてベッドに（　　）、すぐに深い眠りに落ちてしまった。",
+        translation: "Exhausted, the instant I got into bed, I fell fast asleep.",
+        choices: [
+          "入ったかと思うと",
+          "入ったとたんに",
+          "入るにあたって",
+          "入る最中に"
+        ],
+        answer: 1,
+        ruleTitle: "1課-3: 〜たとたん(に) — the instant that ~",
+        explanation: "Correct: [2] 入ったとたんに (動 た形 ＋ とたん).\nMeans: you did an action, and immediately after, an unexpected or involuntary event happened. Crucially, it CAN be used for the speaker's own action (falling asleep, feeling dizzy).",
+        trap: "⚠️ The Speaker Action Ban:\n• [1] 〜(か)と思うと is BANNED for the speaker's own intentional actions (✗ 私は座ったかと思うと...). It is only for observing someone else or nature.\n• [3] 〜にあたって is for a deliberate, special positive milestone (opening a shop, starting life).\n• [4] 〜最中に means 'in the middle of', interrupted by a surprise."
+      },
+      {
+        id: 2,
+        chapter: "1課",
+        focus: "〜に際して vs 〜にあたって",
+        sentence: "今回の入院（　　）、同僚たちが温かい励ましの言葉をかけてくれた。",
+        translation: "On the occasion of my hospitalization, my colleagues gave me warm words of encouragement.",
+        choices: [
+          "に際して",
+          "にあたって",
+          "かと思うと",
+          "の最中に"
+        ],
+        answer: 0,
+        ruleTitle: "1課-2: 〜に際して・〜にあたって — on the occasion of ~",
+        explanation: "Correct: [1] に際して (名 ＋ に際して).\nBoth mean 'on the occasion of', but 〜にあたって strictly refuses negative-image words (✗ 別れにあたって, ✗ 入院にあたって, ✗ 倒産にあたって). It must be positive and forward-looking.\n〜に際して is neutral and accepts both positive and negative occasions.",
+        trap: "⚠️ The Negative Word Ban:\n• [2] にあたって refuses negative words. Since 入院 (hospitalization) is an illness/setback, only に際して is allowed.\n• [3] かと思うと requires verb た形.\n• [4] 最中に would imply they interrupted the act of checking in."
+      },
+      {
+        id: 3,
+        chapter: "1課",
+        focus: "〜か〜ないかのうちに",
+        sentence: "終了のチャイムが（　　）、学生たちは一斉に教室から出ていった。",
+        translation: "Almost before the end chime had finished ringing, the students stormed out of the classroom all at once.",
+        choices: [
+          "鳴るか鳴らないかのうちに",
+          "鳴りつつあるうちに",
+          "鳴った上で",
+          "鳴るばかりに"
+        ],
+        answer: 0,
+        ruleTitle: "1課-5: 〜か〜ないかのうちに — almost before ~ had finished",
+        explanation: "Correct: [1] 鳴るか鳴らないかのうちに (動 辞書形/た形 ＋ か ＋ 動 ない形 ＋ かのうちに).\nMeans: at the very split-second ~ finishes (almost zero time gap), the next event happens. Connects to momentary change verbs (鳴る, 終わる, 着く).",
+        trap: "⚠️ Zero Time-Gap Rule:\n• [2] 鳴りつつあるうちに is grammatically broken (つつある + うちに).\n• [3] 鳴った上で means 'after doing A as preparation for step B', not instant simultaneity.\n• [4] 鳴るばかりに doesn't fit this meaning."
+      },
+      {
+        id: 4,
+        chapter: "2課",
+        focus: "〜最中に（割り込み妨害）",
+        sentence: "大事な商談を行っている（　　）、突然携帯電話が大音量で鳴り響いた。",
+        translation: "Right in the middle of conducting an important business negotiation, a phone suddenly rang out loudly.",
+        choices: [
+          "最中に",
+          "つつ",
+          "うちに",
+          "次第"
+        ],
+        answer: 0,
+        ruleTitle: "2課-1: 〜最中だ — right in the middle of ~",
+        explanation: "Correct: [1] 最中に (動 ている形 ＋ 最中に).\nMeans: right in the middle of an action of relatively short duration. The signature exam pattern: it is followed by an unplanned interruption or nuisance that breaks in.",
+        trap: "⚠️ The Interruption Nuance:\n• [3] うちに means 'while / before the window closes', not an abrupt disruptive interruption.\n• [2] つつ means 'while doing A, doing B' (requires the same subject doing both actions!).\n• [4] 次第 means 'as soon as', followed by intention."
+      },
+      {
+        id: 5,
+        chapter: "2課",
+        focus: "〜うちに (A: 期限・意志動作)",
+        sentence: "せっかく日本に留学しているのだから、日本に（　　）、できるだけ多くの観光地を訪れたい。",
+        translation: "Since I have this rare chance to study in Japan, while I'm still here (before the opportunity passes), I want to visit as many tourist spots as possible.",
+        choices: [
+          "いるうちに",
+          "いたとたんに",
+          "いる最中に",
+          "いるばかりに"
+        ],
+        answer: 0,
+        ruleTitle: "2課-2: 〜うちに — do it before the window closes",
+        explanation: "Correct: [1] いるうちに.\nMeaning A of 〜うちに: there is a time window; before the state changes, seize the chance to do something. The clause after is VOLITIONAL (〜たい, 〜よう, 〜てください).",
+        trap: "⚠️ The Volition Split (うちに A vs B):\n• うちに (A = window of opportunity) TAKES volitional endings (訪れたい = I want to visit).\n• うちに (B = unintended change) REFUSES volition (外が暗くなってきた = it grew dark).\n• [2] いたとたんに means 'the instant I was', which makes no sense with a long stay."
+      },
+      {
+        id: 6,
+        chapter: "2課",
+        focus: "〜つつある vs 〜(よ)うとしている",
+        sentence: "医師たちの懸命な治療により、患者の容体は少しずつ（　　）。",
+        translation: "Thanks to the doctors' devoted treatment, the patient's condition is gradually in the process of recovering.",
+        choices: [
+          "回復しつつある",
+          "回復しようとしている",
+          "回復する一方だ",
+          "回復した最中だ"
+        ],
+        answer: 0,
+        ruleTitle: "2課-5: 〜つつある — is in the process of ~ing",
+        explanation: "Correct: [1] 回復しつつある (動 ます-stem ＋ つつある).\nMeans: the change is currently underway in progress (formal/stiff). Naturally matches gradual adverbs like 少しずつ (little by little).",
+        trap: "⚠️ Before vs During the Change:\n• [2] 回復しようとしている means 'is just ABOUT to start recovering' (before the change starts). Doesn't fit with 少しずつ (gradually).\n• [3] 回復する一方だ implies relentless momentum, usually used for worsening trends."
+      },
+      {
+        id: 7,
+        chapter: "2課",
+        focus: "〜一方だ (一方向への変化)",
+        sentence: "最近の円安の影響で、輸入品の価格は（　　）、家計への負担が増えている。",
+        translation: "Due to the recent weak yen, the prices of imported goods just keep rising, and the burden on households is increasing.",
+        choices: [
+          "上がる一方だ",
+          "上がりつつ",
+          "上がった上で",
+          "上がろうとしている"
+        ],
+        answer: 0,
+        ruleTitle: "2課-3: 〜一方だ・〜ばかりだ — just keeps ~ing",
+        explanation: "Correct: [1] 上がる一方だ (動 辞書形 ＋ 一方だ).\nMeans: a change keeps continuously advancing in one single direction without stopping (very often a worsening situation).",
+        trap: "⚠️ One-Way Trajectory:\n• [2] 上がりつつ is mid-clause and needs a main clause predicate.\n• [3] 上がった上で means 'after prices rise as preparation...'\n• [4] 上がろうとしている means 'are on the verge of rising', but they are already rising."
+      },
+      {
+        id: 8,
+        chapter: "3課",
+        focus: "〜てはじめて (新しい気づき)",
+        sentence: "大きな病気を（　　）、健康の本当のありがたさに気づくことができた。",
+        translation: "Only after experiencing a serious illness was I able to realize the true value of good health.",
+        choices: [
+          "経験してはじめて",
+          "経験した上で",
+          "経験する次第",
+          "経験して以来"
+        ],
+        answer: 0,
+        ruleTitle: "3課-1: 〜てはじめて — only after ~ did I realize...",
+        explanation: "Correct: [1] 経験してはじめて (動 て形 ＋ はじめて).\nMeans: only after going through this experience did a new awareness dawn that was previously impossible. Followed by realization verbs: 気づく, わかる, 実感する.",
+        trap: "⚠️ Realization vs Planned Action:\n• [2] 〜上で requires a deliberate, volitional next action (✗ 上で気づいた is wrong; you cannot plan a realization).\n• [4] 〜て以来 means 'ever since, state continued unbroken', but doesn't express the sudden awakening."
+      },
+      {
+        id: 9,
+        chapter: "3課",
+        focus: "〜上(で) (準備ステップ→意志動作)",
+        sentence: "契約内容の詳細を十分に確認（　　）、こちらの書類にご署名をお願いいたします。",
+        translation: "Please sign this document after checking the contract details thoroughly first.",
+        choices: [
+          "の上で",
+          "のうちに",
+          "次第",
+          "に限って"
+        ],
+        answer: 0,
+        ruleTitle: "3課-2: 〜上(で) — after ~ing (as preparation)",
+        explanation: "Correct: [1] の上で (名 −の ＋ 上で).\nMeans: do step A first as deliberate preparation, then take volitional step B. Both actions share the same subject, and step A informs step B.",
+        trap: "⚠️ Sequential Step vs Stacking:\n• Do NOT confuse with 〜上に (Ch 6) which means 'on top of that / in addition to'.\n• [3] 次第 attaches to verb ます-stem (確認し次第), not noun + の.\n• [4] に限って means 'of all days/things'."
+      },
+      {
+        id: 10,
+        chapter: "3課",
+        focus: "〜次第 (〜したらすぐ・意志必須・過去形禁止)",
+        sentence: "詳しい日程が（　　）、改めてメールにてご連絡申し上げます。",
+        translation: "As soon as the detailed schedule is decided, I will contact you again by email.",
+        choices: [
+          "決まり次第",
+          "決まったとたん",
+          "決まりつつ",
+          "決まった上で"
+        ],
+        answer: 0,
+        ruleTitle: "3課-3: 〜次第 — as soon as ~",
+        explanation: "Correct: [1] 決まり次第 (動 ます-stem ＋ 次第).\nMeans: the moment ~ happens, immediately do the next action. Formal/business style. Followed by speaker's intention (ご連絡申し上げます) or urging (〜てください).",
+        trap: "⚠️ The Past Tense Ban:\n• 〜次第 CANNOT have a past tense ending (✗ 決まり次第、連絡しました is illegal).\n• [2] 決まったとたん is followed by an unexpected event, and bans speaker's intentional actions like ご連絡申し上げます."
+      },
+      {
+        id: 11,
+        chapter: "3課",
+        focus: "〜てからでないと (後ろは必ず否定文)",
+        sentence: "上司の許可を（　　）、この予算を使用することはできません。",
+        translation: "Unless you obtain your supervisor's permission first, you cannot use this budget.",
+        choices: [
+          "取ってからでないと",
+          "取った上で",
+          "取る次第",
+          "取って以来"
+        ],
+        answer: 0,
+        ruleTitle: "3課-5: 〜てからでないと — unless you ~ first",
+        explanation: "Correct: [1] 取ってからでないと (動 て形 ＋ からでないと).\nMeans: unless you do A first, B cannot happen. The sentence ending MUST be negative (〜ない, 〜できない, 〜無理だ).",
+        trap: "⚠️ Mandatory Negative Ending:\n• The final predicate is できません (cannot). This is the hallmark signature of 〜てからでないと.\n• [2] 取った上で would require a positive action (e.g. 使用してください)."
+      },
+      {
+        id: 12,
+        chapter: "4課",
+        focus: "〜からして (些細な例を挙げて不満・批判)",
+        sentence: "あの会社は、面接官の（　　）非常に高圧的で、第一印象から悪かった。",
+        translation: "At that company, just the interviewer's attitude alone was extremely overbearing — the first impression was terrible from the start.",
+        choices: [
+          "態度からして",
+          "態度をはじめ",
+          "態度を通して",
+          "態度に限って"
+        ],
+        answer: 0,
+        ruleTitle: "4課-2: 〜からして — judging from just ~ alone",
+        explanation: "Correct: [1] 態度からして (名 ＋ からして).\nMeans: take just this one small detail — even that is so, therefore the whole thing must be bad too. Followed by a negative evaluation or complaint.",
+        trap: "⚠️ Complaint vs Representative Group:\n• [2] 〜をはじめ is neutral and introduces the leading member of a group (校長をはじめ先生方 = teachers, starting with the principal). Not for complaints.\n• [3] 〜を通して means 'via an intermediary'."
+      },
+      {
+        id: 13,
+        chapter: "4課",
+        focus: "〜にわたって (空間・時間の大きな幅)",
+        sentence: "台風の影響による大雨は、広範囲に（　　）甚大な被害をもたらした。",
+        translation: "The heavy rain from the typhoon caused immense damage spanning across a wide area.",
+        choices: [
+          "わたって",
+          "かぎって",
+          "通して",
+          "もとづいて"
+        ],
+        answer: 0,
+        ruleTitle: "4課-3: 〜にわたって — spanning across ~",
+        explanation: "Correct: [1] わたって (名 ＋ にわたって).\nMeans: extending across an entire large range. Attaches to nouns of large spatial scale (広範囲), long time periods (3年間), or large numbers of times.",
+        trap: "⚠️ Scale Requirement:\n• Must have substantial width/scale (広範囲にわたって, 長年にわたって). Tiny intervals (✗ 5分にわたって) are impossible."
+      },
+      {
+        id: 14,
+        chapter: "4課",
+        focus: "〜を通して / 〜を通じて (仲介・媒介)",
+        sentence: "彼とは直接面識がなかったため、共通の友人（　　）連絡を取った。",
+        translation: "Since I had no direct acquaintance with him, I contacted him through a mutual friend.",
+        choices: [
+          "を通して",
+          "をもとに",
+          "にかけて",
+          "をめぐって"
+        ],
+        answer: 0,
+        ruleTitle: "4課-4: 〜を通じて・〜を通して — via; through an intermediary",
+        explanation: "Correct: [1] を通して (名 ＋ を通して).\nMeans: using ~ as an intermediary person or medium to achieve a goal. Cannot be a direct physical tool in your hand (you write with a pen [で], but contact someone through a friend [を通して]).",
+        trap: "⚠️ Intermediary vs Direct Tool:\n• Indirect mediator = を通して / を通じて.\n• [2] をもとに means 'based on as raw material'.\n• [4] をめぐって means 'over/concerning a dispute'."
+      },
+      {
+        id: 15,
+        chapter: "5課",
+        focus: "〜に限り (公式告知・例外の限定)",
+        sentence: "本日の夕方6時（　　）、全品20パーセント引きのタイムセールを実施いたします。",
+        translation: "Today until 6 PM only, we are holding a 20% off flash sale on all items.",
+        choices: [
+          "に限り",
+          "に限って",
+          "に限らず",
+          "の限り"
+        ],
+        answer: 0,
+        ruleTitle: "5課-1: 〜に限り — only ~ (as an official exception)",
+        explanation: "Correct: [1] に限り (名 ＋ に限り).\nMeans: only ~ is special; only ~ is the exception. Stiff/formal public announcement style used by shops, notices, hospitals.",
+        trap: "⚠️ Official Notice vs Murphy's Law:\n• [2] 〜に限って is used for complaints about bad luck timing ('on the very day when...').\n• [1] 〜に限り is the public rule exception ('Today only').\n• [3] 〜に限らず means 'not limited to'."
+      },
+      {
+        id: 16,
+        chapter: "5課",
+        focus: "〜限りでは (情報源の限定・断定回避)",
+        sentence: "私の（　　）限りでは、そのような方針の変更はまだ正式に発表されていません。",
+        translation: "As far as I know, no such policy change has been officially announced yet.",
+        choices: [
+          "知っている",
+          "知る",
+          "知ろうとする",
+          "知りつつ"
+        ],
+        answer: 0,
+        ruleTitle: "5課-3: 〜限りでは — as far as ~ (goes / tells us)",
+        explanation: "Correct: [1] 知っている (動 ている形 ＋ 限りでは).\nMeans: if we limit the source of information to ~, this is what can be said. Used to hedge a statement carefully.",
+        trap: "⚠️ Information Verbs Only:\n• Attaches strictly to info-getting verbs: 知っている, 調べた, 聞いた, 見た.\n• '知っている限りでは' (as far as I know) and '調べた限りでは' (as far as my investigation shows) are exam staples."
+      },
+      {
+        id: 17,
+        chapter: "5課",
+        focus: "〜に限って (マーフィーの法則・不運の重なり)",
+        sentence: "傘を持っていない日に（　　）、決まって激しい雨が降ってくる。",
+        translation: "Precisely on days when I don't have an umbrella, without fail it pours.",
+        choices: [
+          "限って",
+          "限り",
+          "限らず",
+          "かけては"
+        ],
+        answer: 0,
+        ruleTitle: "5課-4: 〜に限って — of all days / Murphy's Law",
+        explanation: "Correct: [1] 限って (名 ＋ に限って).\nMeans: of all times, precisely on this occasion, something unlucky coincides, causing speaker frustration.",
+        trap: "⚠️ The 3 Faces of 〜に限って:\n• ① Coinciding bad luck (急いでいる日に限って電車が遅れる = Murphy's Law).\n• ② Different from usual (今日に限ってよく喋る).\n• ③ Misplaced trust (彼に限って嘘をつくはずがない)."
+      },
+      {
+        id: 18,
+        chapter: "6課",
+        focus: "〜ばかりか (エスカレーション・それどころかもっと)",
+        sentence: "彼は無断で仕事を休んだ（　　）、連絡すら取ろうとしなかった。",
+        translation: "Not only did he skip work without notice, he didn't even try to contact us.",
+        choices: [
+          "ばかりか",
+          "うえで",
+          "次第",
+          "からして"
+        ],
+        answer: 0,
+        ruleTitle: "6課-3: 〜ばかりか — not only ~, but even ~",
+        explanation: "Correct: [1] ばかりか (普通形 ＋ ばかりか).\nMeans: Clause 1 is already abnormal/shocking, and Clause 2 escalates with something even more extreme. Often accompanied by も, まで, or すら.",
+        trap: "⚠️ Escalation Factor:\n• [2] うえで means 'after doing A as preparation for B'.\n• [3] 次第 means 'as soon as'.\n• [4] からして takes a noun, not a verb clause."
+      },
+      {
+        id: 19,
+        chapter: "6課",
+        focus: "〜上(に) (同方向の評価の積み重ね)",
+        sentence: "このパソコンは性能が優れている（　　）、デザインも洗練されていて使いやすい。",
+        translation: "Not only does this PC have superb performance, its design is sleek and easy to use on top of that.",
+        choices: [
+          "上に",
+          "上で",
+          "反面",
+          "ばかりで"
+        ],
+        answer: 0,
+        ruleTitle: "6課-5: 〜上(に) — on top of that / in addition",
+        explanation: "Correct: [1] 上に (普通形 ＋ 上に).\nMeans: stacks multiple traits of the SAME polarity (Positive + Positive, or Negative + Negative). Good specs (優れている) + Good design (洗練されている).",
+        trap: "⚠️ Polarity Rule & 〜上で vs 〜上に:\n• 〜上に CANNOT combine opposite polarities (✗ 安い上にまずい is illegal).\n• 〜上で (Ch 3) = sequence (do A first, then B). 〜上に (Ch 6) = additive stacking."
+      },
+      {
+        id: 20,
+        chapter: "7課",
+        focus: "〜をめぐって (複数者による争い・対立)",
+        sentence: "新工場の建設予定地を（　　）、住民と行政の間で対立が続いている。",
+        translation: "Over the planned construction site of the new factory, conflict continues between residents and the government.",
+        choices: [
+          "めぐって",
+          "に関して",
+          "こたえて",
+          "かけては"
+        ],
+        answer: 0,
+        ruleTitle: "7課-2: 〜をめぐって — over; surrounding (a dispute)",
+        explanation: "Correct: [1] めぐって (名 ＋ をめぐって).\nMeans: conflict, dispute, or debate over an issue. The subjects MUST be PLURAL (residents and administration), followed by verbs of conflict/debate: 対立する, 争う, 議論する.",
+        trap: "⚠️ The Plural Conflict Requirement:\n• Must involve multiple parties in conflict. If only one person is acting, 〜をめぐって is wrong.\n• [2] に関して is a neutral theme for collecting info, not mutual dispute."
+      },
+      {
+        id: 21,
+        chapter: "7課",
+        focus: "〜にかけては (特定の能力・技術で右に出る者はいない)",
+        sentence: "味の繊細な見分け方（　　）、あの料理長の右に出る者はいない。",
+        translation: "When it comes to distinguishing subtle flavors, nobody surpasses that head chef.",
+        choices: [
+          "にかけては",
+          "に関して",
+          "にこたえて",
+          "に対して"
+        ],
+        answer: 0,
+        ruleTitle: "7課-3: 〜にかけては — when it comes to ~ (nobody beats them)",
+        explanation: "Correct: [1] にかけては (名 ＋ にかけては).\nMeans: in the domain of this specific skill/technique, this person is unmatched. Followed by supreme praise: 誰にも負けない, 右に出る者はいない, 一番だ.",
+        trap: "⚠️ Skills & Unmatched Praise:\n• Before: MUST be a skill or ability (見分け方, 記憶力, 早さ). Not a general topic.\n• After: MUST be highest praise ('nobody beats them')."
+      },
+      {
+        id: 22,
+        chapter: "7課",
+        focus: "〜にこたえて (期待や要望に応じる)",
+        sentence: "地元ファンの熱烈な応援（　　）、選手たちは見事な逆転勝利を収めた。",
+        translation: "In response to the passionate cheers of the local fans, the players clinched a splendid comeback victory.",
+        choices: [
+          "にこたえて",
+          "に対して",
+          "をめぐって",
+          "にかかわって"
+        ],
+        answer: 0,
+        ruleTitle: "7課-5: 〜にこたえて — in response to (expectations/cheers)",
+        explanation: "Correct: [1] にこたえて (名 ＋ にこたえて).\nMeans: acting so as to fulfill someone's expectations, wishes, or requests. Attaches to: 応援, 期待, 要望, 希望, アンコール.",
+        trap: "⚠️ The Request/Expectation Nouns:\n• Strictly limited to expectations/demands (期待, 要望, 応援). Not for general objects.\n• [2] に対して means 'attitude directed toward a target'."
+      },
+      {
+        id: 23,
+        chapter: "7課",
+        focus: "〜のに対して (明確な対比・対照)",
+        sentence: "兄が社交的で友人が多いの（　　）、弟は物静かで読書を好む。",
+        translation: "Whereas the older brother is sociable and has many friends, in contrast the younger brother is quiet and likes reading.",
+        choices: [
+          "に対して",
+          "こたえて",
+          "めぐって",
+          "とおして"
+        ],
+        answer: 0,
+        ruleTitle: "7課-4: 〜に対して — in contrast to (Meaning B)",
+        explanation: "Correct: [1] に対して (普通形 ＋ の ＋ に対して).\nMeaning B of 〜に対して: indicates a sharp, explicit contrast between two subjects. The nominalizing の before に対して is the grammatical signal.",
+        trap: "⚠️ Target vs Contrast:\n• Meaning A (toward a target): 目上の人に対して (no の).\n• Meaning B (in contrast to): 兄が〜なのに対して (has の, comparing two distinct subjects)."
+      }
+    ];
+
+    let currentIdx = 0;
+    let score = 0;
+    let answersLog = [];
+    let timerDuration = 25;
+    let timerRemaining = 25;
+    let timerInterval = null;
+    let timerEnabled = true;
+    let isAnswered = false;
+    let activeQuestions = [...ALL_QUESTIONS];
+    let totalTimes = 0;
+    let isWide = false;
+
+    const elMainContainer = document.getElementById("main-container");
+    const elSentence = document.getElementById("sentence-text");
+    const elSentenceTranslation = document.getElementById("sentence-translation");
+    const elChoices = document.getElementById("choices-container");
+    const elExplanationBox = document.getElementById("explanation-box");
+    const elResultBadge = document.getElementById("result-badge");
+    const elRuleTitle = document.getElementById("rule-title");
+    const elExplanationText = document.getElementById("explanation-text");
+    const elTrapBox = document.getElementById("trap-box");
+    const elNextBtn = document.getElementById("next-btn");
+    const elProgressBar = document.getElementById("progress-bar");
+    const elProgressPercent = document.getElementById("progress-percent");
+    const elChapterBadge = document.getElementById("chapter-badge");
+    const elQuestionNumber = document.getElementById("question-number");
+    const elQuestionFocus = document.getElementById("question-focus");
+    const elTimerDisplay = document.getElementById("timer-display");
+    const elTimerToggleBtn = document.getElementById("timer-toggle-btn");
+    const elFullscreenBtn = document.getElementById("fullscreen-btn");
+    const elWidthToggleBtn = document.getElementById("width-toggle-btn");
+
+    const elQuizView = document.getElementById("quiz-view");
+    const elResultsView = document.getElementById("results-view");
+    const elFinalScoreText = document.getElementById("final-score-text");
+    const elStatAccuracy = document.getElementById("stat-accuracy");
+    const elStatCorrect = document.getElementById("stat-correct");
+    const elStatIncorrect = document.getElementById("stat-incorrect");
+    const elStatSpeed = document.getElementById("stat-speed");
+    const elMissedContainer = document.getElementById("missed-container");
+    const elMissedList = document.getElementById("missed-list");
+    const elRetryMissedBtn = document.getElementById("retry-missed-btn");
+    const elRestartAllBtn = document.getElementById("restart-all-btn");
+
+    // Fullscreen Toggle
+    elFullscreenBtn.onclick = () => {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+        elFullscreenBtn.innerHTML = '<span>⤓</span><span class="text-xs font-medium hidden sm:inline">縮小</span>';
+      } else {
+        document.exitFullscreen().catch(() => {});
+        elFullscreenBtn.innerHTML = '<span>⛶</span><span class="text-xs font-medium hidden sm:inline">全画面</span>';
+      }
+    };
+
+    // Width Toggle
+    elWidthToggleBtn.onclick = () => {
+      isWide = !isWide;
+      if (isWide) {
+        elMainContainer.classList.remove("max-w-4xl");
+        elMainContainer.classList.add("max-w-6xl", "w-full");
+      } else {
+        elMainContainer.classList.remove("max-w-6xl");
+        elMainContainer.classList.add("max-w-4xl");
+      }
+    };
+
+    function startTimer() {
+      if (!timerEnabled) {
+        elTimerDisplay.innerText = "OFF";
+        elTimerDisplay.className = "font-mono font-black text-lg text-[var(--muted-foreground)] leading-none";
+        return;
+      }
+      clearInterval(timerInterval);
+      timerRemaining = timerDuration;
+      updateTimerDisplay();
+
+      timerInterval = setInterval(() => {
+        timerRemaining--;
+        totalTimes++;
+        updateTimerDisplay();
+        if (timerRemaining <= 0) {
+          clearInterval(timerInterval);
+          if (!isAnswered) {
+            handleTimeout();
+          }
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      if (!timerEnabled) return;
+      elTimerDisplay.innerText = `${timerRemaining}s`;
+      if (timerRemaining <= 5) {
+        elTimerDisplay.className = "font-mono font-black text-lg text-rose-500 animate-pulse leading-none";
+      } else if (timerRemaining <= 10) {
+        elTimerDisplay.className = "font-mono font-black text-lg text-amber-500 leading-none";
+      } else {
+        elTimerDisplay.className = "font-mono font-black text-lg text-emerald-400 leading-none";
+      }
+    }
+
+    function loadQuestion(idx) {
+      isAnswered = false;
+      const q = activeQuestions[idx];
+
+      elChapterBadge.innerText = `第${q.chapter}`;
+      elQuestionNumber.innerText = `第 ${idx + 1} 問 / 全 ${activeQuestions.length} 問`;
+      elQuestionFocus.innerHTML = `🎯 焦点: <span class="text-white font-bold ml-1">${q.focus}</span>`;
+      
+      const pct = Math.round(((idx + 1) / activeQuestions.length) * 100);
+      elProgressBar.style.width = `${pct}%`;
+      elProgressPercent.innerText = `${pct}%`;
+
+      // Sentence with blank
+      elSentence.innerHTML = q.sentence.replace("（　　）", '<span class="inline-block px-3.5 py-1 mx-1.5 border-b-2 border-dashed border-indigo-400 font-black text-indigo-400 bg-indigo-500/10 rounded-lg">（　？　）</span>');
+
+      // Choices
+      elChoices.innerHTML = "";
+      q.choices.forEach((choice, cIdx) => {
+        const btn = document.createElement("button");
+        btn.className = "w-full text-left p-4 sm:p-5 rounded-xl border border-[var(--border)] bg-[var(--card)] hover:bg-[var(--secondary)] text-base sm:text-lg font-medium flex items-center gap-3.5 transition active:scale-[0.99] select-none shadow-sm";
+        btn.innerHTML = `
+          <span class="w-7 h-7 rounded-full border border-[var(--border)] flex items-center justify-center text-xs font-black text-[var(--muted-foreground)] shrink-0">
+            ${cIdx + 1}
+          </span>
+          <span class="flex-1">${choice}</span>
+        `;
+        btn.onclick = () => handleAnswer(cIdx);
+        elChoices.appendChild(btn);
+      });
+
+      elExplanationBox.classList.add("hidden");
+      elNextBtn.classList.add("hidden");
+
+      startTimer();
+    }
+
+    function handleAnswer(selectedIdx) {
+      if (isAnswered) return;
+      isAnswered = true;
+      clearInterval(timerInterval);
+
+      const q = activeQuestions[currentIdx];
+      const isCorrect = selectedIdx === q.answer;
+      const buttons = elChoices.querySelectorAll("button");
+
+      if (isCorrect) {
+        score++;
+      }
+      answersLog.push({ question: q, selected: selectedIdx, correct: isCorrect });
+
+      buttons.forEach((btn, cIdx) => {
+        btn.disabled = true;
+        btn.classList.remove("hover:bg-[var(--secondary)]", "active:scale-[0.99]");
+        if (cIdx === q.answer) {
+          btn.classList.add("border-emerald-500", "bg-emerald-500/15", "text-emerald-400");
+          btn.querySelector("span").classList.add("border-emerald-500", "text-emerald-400", "bg-emerald-500/25");
+        } else if (cIdx === selectedIdx && !isCorrect) {
+          btn.classList.add("border-rose-500", "bg-rose-500/15", "text-rose-400");
+          btn.querySelector("span").classList.add("border-rose-500", "text-rose-400", "bg-rose-500/25");
+        } else {
+          btn.classList.add("opacity-40");
+        }
+      });
+
+      // Update the blank in the sentence
+      const chosenText = q.choices[q.answer];
+      elSentence.innerHTML = q.sentence.replace("（　　）", `<span class="inline-block px-3 py-0.5 mx-1 font-black text-emerald-400 border-b-2 border-emerald-500 bg-emerald-500/20 rounded-md">${chosenText}</span>`);
+
+      // Feedback
+      elResultBadge.innerText = isCorrect ? "正解 ◎ Correct" : "不正解 ✗ Incorrect";
+      elResultBadge.className = isCorrect ? "px-3 py-1 rounded-md text-xs sm:text-sm font-bold bg-emerald-500/20 text-emerald-400" : "px-3 py-1 rounded-md text-xs sm:text-sm font-bold bg-rose-500/20 text-rose-400";
+      elRuleTitle.innerText = q.ruleTitle;
+      elSentenceTranslation.innerText = q.translation;
+      elExplanationText.innerText = q.explanation;
+      elTrapBox.innerText = q.trap;
+
+      elExplanationBox.className = isCorrect ? "rounded-2xl p-5 sm:p-6 border border-emerald-500/30 bg-emerald-500/5 mb-6" : "rounded-2xl p-5 sm:p-6 border border-rose-500/30 bg-rose-500/5 mb-6";
+      elExplanationBox.classList.remove("hidden");
+      elNextBtn.classList.remove("hidden");
+      elNextBtn.focus();
+    }
+
+    function handleTimeout() {
+      handleAnswer(-1);
+    }
+
+    elNextBtn.onclick = () => {
+      currentIdx++;
+      if (currentIdx < activeQuestions.length) {
+        loadQuestion(currentIdx);
+      } else {
+        showResults();
+      }
+    };
+
+    function showResults() {
+      clearInterval(timerInterval);
+      elQuizView.classList.add("hidden");
+      elResultsView.classList.remove("hidden");
+
+      const total = activeQuestions.length;
+      const accuracy = Math.round((score / total) * 100);
+      const avgSpeed = Math.round(totalTimes / total);
+
+      elFinalScoreText.innerText = `${total} 問中 ${score} 問 正解 (${score} / ${total} Correct)`;
+      elStatAccuracy.innerText = `${accuracy}%`;
+      elStatAccuracy.className = accuracy >= 80 ? "text-2xl sm:text-3xl font-black text-emerald-400 mt-1" : (accuracy >= 60 ? "text-2xl sm:text-3xl font-black text-amber-400 mt-1" : "text-2xl sm:text-3xl font-black text-rose-500 mt-1");
+      elStatCorrect.innerText = `${score} / ${total}`;
+      elStatIncorrect.innerText = `${total - score} 問`;
+      elStatSpeed.innerText = `${avgSpeed}s / 問`;
+
+      const missed = answersLog.filter(a => !a.correct);
+      if (missed.length > 0) {
+        elMissedContainer.classList.remove("hidden");
+        elRetryMissedBtn.classList.remove("hidden");
+        elMissedList.innerHTML = "";
+        missed.forEach(m => {
+          const item = document.createElement("div");
+          item.className = "p-4 rounded-xl border border-[var(--border)] bg-[var(--background)] text-xs sm:text-sm";
+          item.innerHTML = `
+            <div class="flex items-center justify-between font-bold text-rose-400 mb-1.5">
+              <span>【${m.question.chapter}】${m.question.focus}</span>
+              <span class="text-[var(--muted-foreground)] font-normal text-xs">正解: <b class="text-emerald-400">${m.question.choices[m.question.answer]}</b></span>
+            </div>
+            <div class="text-[var(--foreground)] font-medium mb-1 leading-relaxed">${m.question.sentence}</div>
+            <div class="text-indigo-400 italic mb-2 text-xs">${m.question.translation}</div>
+            <div class="text-[var(--muted-foreground)] text-xs bg-[var(--card)] p-2.5 rounded-lg border border-[var(--border)] whitespace-pre-line">${m.question.trap}</div>
+          `;
+          elMissedList.appendChild(item);
+        });
+      } else {
+        elMissedContainer.classList.add("hidden");
+        elRetryMissedBtn.classList.add("hidden");
+      }
+    }
+
+    elRetryMissedBtn.onclick = () => {
+      const missed = answersLog.filter(a => !a.correct).map(a => a.question);
+      if (missed.length === 0) return;
+      activeQuestions = missed;
+      currentIdx = 0;
+      score = 0;
+      answersLog = [];
+      totalTimes = 0;
+      elResultsView.classList.add("hidden");
+      elQuizView.classList.remove("hidden");
+      loadQuestion(0);
+    };
+
+    elRestartAllBtn.onclick = () => {
+      activeQuestions = [...ALL_QUESTIONS];
+      currentIdx = 0;
+      score = 0;
+      answersLog = [];
+      totalTimes = 0;
+      elResultsView.classList.add("hidden");
+      elQuizView.classList.remove("hidden");
+      loadQuestion(0);
+    };
+
+    elTimerToggleBtn.onclick = () => {
+      timerEnabled = !timerEnabled;
+      if (!timerEnabled) {
+        clearInterval(timerInterval);
+        elTimerDisplay.innerText = "OFF";
+        elTimerDisplay.className = "font-mono font-black text-lg text-[var(--muted-foreground)] leading-none";
+      } else {
+        startTimer();
+      }
+    };
+
+    // Keyboard Shortcuts
+    window.addEventListener("keydown", (e) => {
+      if (elQuizView.classList.contains("hidden")) return;
+      if (!isAnswered) {
+        if (["1", "2", "3", "4"].includes(e.key)) {
+          const idx = parseInt(e.key) - 1;
+          if (idx < activeQuestions[currentIdx].choices.length) {
+            handleAnswer(idx);
+          }
+        }
+      } else {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          elNextBtn.click();
+        }
+      }
+    });
+
+    // Initialize
+    loadQuestion(0);
+  </script>
+</body>
+</html>
