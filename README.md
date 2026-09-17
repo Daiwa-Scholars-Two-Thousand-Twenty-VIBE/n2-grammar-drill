@@ -2,7 +2,8 @@
 
 Interactive speed-drilling app for **新完全マスター N2 文法 (Shin Kanzen Master N2 Grammar)**, covering all grammar points and high-yield traps across Lessons 1 through 7.
 
-🌐 **Live GitHub Pages:** [https://daignrd.github.io/n2-grammar-drill/](https://daignrd.github.io/n2-grammar-drill/)
+🌐 **Live GitHub Pages:** [https://daiwa-scholars-two-thousand-twenty-vibe.github.io/n2-grammar-drill/](https://daiwa-scholars-two-thousand-twenty-vibe.github.io/n2-grammar-drill/)  
+*(Personal mirror: [https://daignrd.github.io/n2-grammar-drill/](https://daignrd.github.io/n2-grammar-drill/))*
 
 ---
 
