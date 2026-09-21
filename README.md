@@ -1,6 +1,6 @@
-# JLPT N2 Grammar Drill — Lessons 1 to 7
+# JLPT N2 Grammar Drill — Section I (Lessons 1 to 10)
 
-Interactive speed-drilling app for **新完全マスター N2 文法 (Shin Kanzen Master N2 Grammar)**, covering all grammar points and high-yield traps across Lessons 1 through 7.
+Interactive speed-drilling app for **新完全マスター N2 文法 (Shin Kanzen Master N2 Grammar)**, covering all 50 grammar points and high-yield traps across **第1部 Section I (Lessons 1 through 10)**.
 
 🌐 **Live GitHub Pages:** [https://daiwa-scholars-two-thousand-twenty-vibe.github.io/n2-grammar-drill/](https://daiwa-scholars-two-thousand-twenty-vibe.github.io/n2-grammar-drill/)
 
@@ -13,7 +13,7 @@ Interactive speed-drilling app for **新完全マスター N2 文法 (Shin Kanze
 
 ---
 
-## 📚 Syllabus Covered (Chapters 1–7)
+## 📚 Syllabus Covered (Chapters 1–10)
 1. **第1課 〜とき・〜直後に:** 〜際(に), 〜に際して・〜にあたって, 〜たとたん(に), 〜(か)と思うと, 〜か〜ないかのうちに
 2. **第2課 〜している（進行中）:** 〜最中だ, 〜うちに (A/B), 〜ばかりだ・〜一方だ, 〜(よ)うとしている, 〜つつある, 〜つつ
 3. **第3課 〜後で:** 〜てはじめて, 〜上(で), 〜次第, 〜て以来, 〜てからでないと
@@ -21,12 +21,20 @@ Interactive speed-drilling app for **新完全マスター N2 文法 (Shin Kanze
 5. **第5課 〜だけ:** 〜に限り, 〜限り(は), 〜限りでは, 〜に限って (A/B/C)
 6. **第6課 〜だけではなく・それに加えて:** 〜に限らず, 〜のみならず, 〜ばかりか, 〜はもとより, 〜上(に)
 7. **第7課 〜について・〜を相手にして:** 〜に関して, 〜をめぐって, 〜にかけては, 〜に対して (A/B), 〜にこたえて
+8. **第8課 〜を基準にして:** 〜をもとに(して), 〜に基づいて, 〜に沿って, 〜のもとで・〜のもとに, 〜向けだ
+9. **第9課 〜に関連して・〜に対応して:** 〜につれて・〜にしたがって, 〜に伴って・〜とともに, 〜次第だ, 〜に応じて, 〜につけて
+10. **第10課 〜や〜など:** 〜やら〜やら, 〜というか〜というか, 〜にしても〜にしても・〜にせよ〜にせよ, 〜といった
 
 ---
 
-## ⚡ Features
-- **23 Authentic JLPT 問題1 Multiple Choice Questions:** Rigorously designed using actual exam distractor patterns.
+## ⚡ Features & Superpowers
+- **34 Authentic JLPT 問題1 Multiple Choice Questions:** Rigorously designed using actual exam distractor patterns.
+- **Chapter Scope Selector:** Drill all 34 questions, filter by sub-range (e.g. `Lessons 8–10`, `Lessons 1–5`), or drill an individual chapter.
+- **Study Mode vs Exam Mode:** Choose instant English autopsies after each question or simulated exam pacing with a final autopsy breakdown.
 - **English Explanations & Translations:** Every feedback box gives the full English sentence translation, grammar connection rule, and an explicit distractor autopsy explaining why wrong choices fail.
+- **📋 Export to Anki / STUDY_NOTES:** One-click button on results screen formats all missed questions into ready-to-paste production cards for `STUDY_NOTES.md`.
+- **🖤 Boox E-Ink Mode:** High-contrast pure black-and-white theme designed specifically for the Onyx Boox Go 7.
+- **🔔 Web Audio Synthesizer:** Pure dependency-free audio chimes for correct and incorrect feedback.
 - **Keyboard Shortcuts:** Press `1`, `2`, `3`, or `4` to answer; press `Enter` or `Space` to advance.
 - **25s Countdown Timer:** Real-time speed indicator to build exam-pace parsing reflexes.
 - **Missed Questions Retry Mode:** Instantly restart with only the questions you got wrong to lock in 100% mastery.
