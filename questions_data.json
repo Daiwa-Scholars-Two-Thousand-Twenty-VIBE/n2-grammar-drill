@@ -1494,5 +1494,124 @@
     "ruleTitle": "20課-6: 〜ずじまいだ — never did get round to ~",
     "explanation": "Correct: [4] 行かずじまいだった (動 ない形 (drop ない) ＋ ずじまい).\nMeans: you meant to, didn't, and now the chance is gone. Regret. Usually past tense. する → せずじまい.",
     "trap": "⚠️ The Window Has Closed:\n• [3] ところだった = 'nearly went'. 一つも needs a negative.\n• [1] たきりだった = 'went and never came back'. Contradicts 一つも.\n• [2] あげく links two clauses. It can't end a sentence like this."
+  },
+  {
+    "id": 89,
+    "chapter": 21,
+    "focus": "〜くらい (最低限・せめてそれぐらい)",
+    "sentence": "自分が使った食器（　　）、自分で洗いなさい。",
+    "translation": "At the very least, wash the dishes you used yourself.",
+    "choices": [
+      "として",
+      "くらい",
+      "までして",
+      "さえ"
+    ],
+    "answer": 1,
+    "ruleTitle": "21課-1: 〜ぐらい・〜くらい — at least / just",
+    "explanation": "Correct: [2] くらい (名 ＋ くらい／ぐらい).\nMeans: this is the bare minimum, so surely you can manage it. The speaker treats the thing as trivially small. With nouns, ぐらい is the more common spelling.",
+    "trap": "⚠️ Making Things Small vs Extreme:\n• [4] さえ (A) = 'even ~' and BANS urging after it. 〜なさい is an order.\n• [1] として only works in the fixed frame 一＋counter＋として〜ない.\n• [3] までして needs a shocking means (借金までして). Washing dishes isn't a means here."
+  },
+  {
+    "id": 90,
+    "chapter": 21,
+    "focus": "〜なんか (自分を低く言う・話し言葉)",
+    "sentence": "私（　　）、まだまだ未熟者で、人に教えられるような立場ではありません。",
+    "translation": "Someone like me is still very inexperienced. I'm in no position to teach others.",
+    "choices": [
+      "さえ",
+      "くらい",
+      "なんか",
+      "まで"
+    ],
+    "answer": 2,
+    "ruleTitle": "21課-2: 〜など・〜なんか・〜なんて — the likes of ~ (low value)",
+    "explanation": "Correct: [3] なんか (名 ＋ など／なんか／なんて).\nMeans: the speaker rates ~ as low value. That includes THEMSELVES, as modesty (私なんか). After it: usually a negative expression. なんか and なんて are spoken.",
+    "trap": "⚠️ Self-Deprecation:\n• [1] さえ = 'even I'. That would suggest everyone else is even worse.\n• [4] まで = 'even I, of all people'. It points at an extreme case, not a modest one.\n• [2] くらい marks a bare minimum ('at least'). It can't put yourself down."
+  },
+  {
+    "id": 91,
+    "chapter": 21,
+    "focus": "〜てまで (そこまでするか・批判や驚き)",
+    "sentence": "弟は睡眠時間を（　　）毎晩ゲームを続けている。体を壊さないか心配だ。",
+    "translation": "My younger brother goes as far as cutting into his sleep to keep gaming every night. I'm worried he'll damage his health.",
+    "choices": [
+      "削ってまで",
+      "削ってさえ",
+      "削ってでも",
+      "削ったきり"
+    ],
+    "answer": 0,
+    "ruleTitle": "21課-3: 〜まで・〜までして・〜てまで — even going so far as ~",
+    "explanation": "Correct: [1] 削ってまで (動 て形 ＋ まで).\nMeans: someone uses a means the speaker finds shocking or excessive. The sentence carries criticism, doubt or astonishment. Here it's worry about someone else's habit.",
+    "trap": "⚠️ てまで vs てでも:\n• [3] てでも = the speaker's OWN resolve, and it needs a wish or intention after it (〜たい, 〜つもりだ). Describing a brother's habit isn't that.\n• [4] たきり (20課) = 'did ~ once and nothing since'. Wrong meaning.\n• [2] てさえ is not the さえ pattern. さえ attaches to nouns, or 〜さえ〜ば."
+  },
+  {
+    "id": 92,
+    "chapter": 21,
+    "focus": "一人として〜ない (ゼロを強調)",
+    "sentence": "説明会には50人以上が参加したが、質問する人は一人（　　）いなかった。",
+    "translation": "More than 50 people came to the information session, but not a single one asked a question.",
+    "choices": [
+      "まで",
+      "なんか",
+      "くらい",
+      "として"
+    ],
+    "answer": 3,
+    "ruleTitle": "21課-4: 〜として〜ない — not a single ~",
+    "explanation": "Correct: [4] として (一＋助数詞 ＋ として〜ない).\nMeans: not even the minimum amount. A fixed template: 一人として, 一度として, 何一つとして, always followed by a NEGATIVE.",
+    "trap": "⚠️ Learn the Template:\n• [3] くらい = 'at least one'. It can't build a total zero.\n• [1] まで = 'even one'. It points at an extreme, which one person isn't.\n• [2] なんか dismisses ~ as low value. Wrong meaning.\n• Not 19課 として ('as / in the role of'). Same string, different job."
+  },
+  {
+    "id": 93,
+    "chapter": 21,
+    "focus": "〜さえ (A: 極端な例・〜すら)",
+    "sentence": "祖母は最近目が悪くなって、大きな字の新聞（　　）読めなくなってしまった。",
+    "translation": "My grandmother's eyesight has got worse lately, and now she can't even read the large-print newspaper.",
+    "choices": [
+      "として",
+      "までして",
+      "さえ",
+      "くらい"
+    ],
+    "answer": 2,
+    "ruleTitle": "21課-5A: 〜さえ — even ~",
+    "explanation": "Correct: [3] さえ (名 ＋ さえ).\nMeans: even this extreme example is true, so the rest obviously are. Large print is the EASIEST thing to read, so failing at it says everything. Bans intention and urging after it. でさえ = 'even being ~'.",
+    "trap": "⚠️ Extreme Example → Everything Else Follows:\n• [4] くらい = 'at least'. It belongs in advice or criticism, not a sad statement of fact.\n• [1] として only works with 一＋counter.\n• [2] までして needs a shocking means (借金までして)."
+  },
+  {
+    "id": 94,
+    "chapter": 21,
+    "focus": "〜さえ〜ば (B: それだけで十分な条件)",
+    "sentence": "この薬（　　）飲めば、二、三日で熱は下がるでしょう。",
+    "translation": "As long as you take this medicine, your fever should go down in two or three days.",
+    "choices": [
+      "まで",
+      "さえ",
+      "なんか",
+      "として"
+    ],
+    "answer": 1,
+    "ruleTitle": "21課-5B: 〜さえ〜ば — if only ~ / as long as ~",
+    "explanation": "Correct: [2] さえ (名 ＋ さえ〜ば／〜なら／〜たら).\nMeans: meet this ONE condition and nothing else is needed. Spot the conditional (飲めば) later in the sentence and you have it.",
+    "trap": "⚠️ さえ ＋ 〜ば Is a Set:\n• [3] なんか dismisses the medicine as worthless. Wrong meaning.\n• [1] まで = 'even this medicine'. It adds an extreme case instead of naming the one thing needed.\n• [4] として only works with 一＋counter＋〜ない."
+  },
+  {
+    "id": 95,
+    "chapter": 21,
+    "focus": "〜てでも (どんな手段を使っても・話者の意志)",
+    "sentence": "どんなに高くても、借金を（　　）、あのギターを手に入れたい。",
+    "translation": "However expensive it is, I want to get that guitar, even if it means borrowing money.",
+    "choices": [
+      "するくらい",
+      "したあげく",
+      "してさえ",
+      "してでも"
+    ],
+    "answer": 3,
+    "ruleTitle": "21課-6: 〜てでも — even if it means ~",
+    "explanation": "Correct: [4] してでも (動 て形 ＋ でも).\nMeans: ready to use a means you normally wouldn't. After it: the speaker's WISH or INTENTION (〜たい, 〜つもりだ).\nThat is exactly what 〜さえ (A) and 〜まで criticism don't do.",
+    "trap": "⚠️ Your Own Resolve:\n• [1] くらい marks a bare minimum. Borrowing money isn't a minimum.\n• [3] てさえ is not a valid さえ pattern here.\n• [2] あげく (20課) = after a long struggle, a disappointing end. It bans a wish after it."
   }
 ]

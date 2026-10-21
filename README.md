@@ -1,6 +1,6 @@
-# JLPT N2 Grammar Drill — Lessons 1 to 20
+# JLPT N2 Grammar Drill — Lessons 1 to 21
 
-Interactive speed-drilling app for **新完全マスター N2 文法 (Shin Kanzen Master N2 Grammar)**, covering **第1部 Lessons 1 through 20**: all of Section I (L1–10) and Section II up to L20, matching the book's 問題 (1課〜20課) checkpoint on p.94.
+Interactive speed-drilling app for **新完全マスター N2 文法 (Shin Kanzen Master N2 Grammar)**, covering **第1部 Lessons 1 through 21**: all of Section I (L1–10) and all of Section II (L11–21).
 
 🌐 **Live GitHub Pages:** [https://daiwa-scholars-two-thousand-twenty-vibe.github.io/n2-grammar-drill/](https://daiwa-scholars-two-thousand-twenty-vibe.github.io/n2-grammar-drill/)
 
@@ -13,7 +13,7 @@ Interactive speed-drilling app for **新完全マスター N2 文法 (Shin Kanze
 
 ---
 
-## 📚 Syllabus Covered (Chapters 1–20)
+## 📚 Syllabus Covered (Chapters 1–21)
 1. **第1課 〜とき・〜直後に:** 〜際(に), 〜に際して・〜にあたって, 〜たとたん(に), 〜(か)と思うと, 〜か〜ないかのうちに
 2. **第2課 〜している（進行中）:** 〜最中だ, 〜うちに (A/B), 〜ばかりだ・〜一方だ, 〜(よ)うとしている, 〜つつある, 〜つつ
 3. **第3課 〜後で:** 〜てはじめて, 〜上(で), 〜次第, 〜て以来, 〜てからでないと
@@ -34,13 +34,14 @@ Interactive speed-drilling app for **新完全マスター N2 文法 (Shin Kanze
 18. **第18課 〜できない・困難だ・〜できる:** 〜がたい, 〜わけにはいかない, 〜かねる, 〜ようがない, 〜どころではない, 〜得る・〜得ない
 19. **第19課 評価する:** 〜わりに, 〜にしては, 〜だけあって, 〜として, 〜にとって, 〜にしたら・〜にしてみれば
 20. **第20課 結果はどうなったか:** 〜たところ, 〜きり, 〜あげく, 〜末(に), 〜ところだった, 〜ずじまいだ
+21. **第21課 強く言う・軽く言う:** 〜ぐらい・〜くらい, 〜など・〜なんか・〜なんて, 〜まで・〜までして・〜てまで, 〜として〜ない, 〜さえ (A/B), 〜てでも
 
 ---
 
 ## ⚡ Features & Superpowers
-- **88 JLPT 問題1-style Multiple Choice Questions:** 34 for Lessons 1–10, 54 for Lessons 11–20, built on the book's distractor patterns.
+- **95 JLPT 問題1-style Multiple Choice Questions:** 34 for Lessons 1–10, 61 for Lessons 11–21, built on the book's distractor patterns.
 - **Shuffled Answer Order:** The four choices are reshuffled every run, and the [n] numbers in each explanation follow them, so the answer slot never gives itself away.
-- **Chapter Scope Selector:** Drill all 88 questions, a range (`1–10`, `11–20`, `1–5`, `6–10`, `11–15`, `16–20`), or a single chapter. Opens on `11–20` by default. Counts are worked out from the data, so they stay correct when questions are added.
+- **Chapter Scope Selector:** Drill all 95 questions, a range (`1–10`, `11–21`, `1–5`, `6–10`, `11–15`, `16–21`), or a single chapter. Opens on `11–21` by default. Counts are worked out from the data, so they stay correct when questions are added.
 - **Study Mode vs Exam Mode:** Choose instant English autopsies after each question or simulated exam pacing with a final autopsy breakdown.
 - **English Explanations & Translations:** Every feedback box gives the full English sentence translation, grammar connection rule, and an explicit distractor autopsy explaining why wrong choices fail.
 - **📋 Export to Anki / STUDY_NOTES:** One-click button on results screen formats all missed questions into ready-to-paste production cards for `STUDY_NOTES.md`.
