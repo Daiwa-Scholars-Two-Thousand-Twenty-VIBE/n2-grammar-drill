@@ -576,5 +576,923 @@
     "ruleTitle": "10課-3: 〜にしても〜にしても・〜にせよ〜にせよ — whether A or B",
     "explanation": "Correct: [1] 賛成するにせよ反対するにせよ (動 辞書形 ＋ にせよ).\nMeans: whether you take case A or opposing case B, the exact same principle, advice, or necessity applies. Followed by speaker's judgment: 〜べきだ, 〜必要がある.",
     "trap": "⚠️ Opposing Cases + Advice/Principle:\n• Lists opposing alternatives (賛成／反対, 行く／行かない).\n• 〜にせよ〜にせよ is the stiffest/most formal variation of 〜にしても〜にしても."
+  },
+  {
+    "id": 35,
+    "chapter": 11,
+    "focus": "〜を問わず (幅のある名詞・公式な対象範囲)",
+    "sentence": "この奨学金は国籍（　　）、日本の大学に在籍する留学生ならだれでも申し込める。",
+    "translation": "This scholarship is open to any international student enrolled at a Japanese university, regardless of nationality.",
+    "choices": [
+      "を問わず",
+      "はさておき",
+      "にもかかわらず",
+      "もかまわず"
+    ],
+    "answer": 0,
+    "ruleTitle": "11課-1: 〜を問わず — regardless of",
+    "explanation": "Correct: [1] を問わず (名 ＋ を問わず).\nMeans: whatever the value of ~, the same rule applies to all. Takes nouns with width or variation (年齢, 国籍, 天候) or opposing pairs (男女, 有無). Classic official-notice wording.",
+    "trap": "⚠️ Official Scope vs Personal Behaviour:\n• [4] もかまわず judges a person for ignoring something they should have minded. It describes behaviour, not who is eligible.\n• [2] はさておき parks a topic already under discussion. It cannot say 'this applies to everyone'.\n• [3] にもかかわらず means 'even though' and needs a fact that should have blocked the result. 国籍にもかかわらず is nonsense."
+  },
+  {
+    "id": 36,
+    "chapter": 11,
+    "focus": "〜にかかわらず (疑問詞〜か に接続)",
+    "sentence": "理由が何であるか（　　）、無断欠勤は認められません。",
+    "translation": "Whatever the reason, absence without notice is not permitted.",
+    "choices": [
+      "にもかかわらず",
+      "にかかわらず",
+      "に限って",
+      "もかまわず"
+    ],
+    "answer": 1,
+    "ruleTitle": "11課-2: 〜にかかわらず — regardless of",
+    "explanation": "Correct: [2] にかかわらず (名／疑問詞〜か ＋ にかかわらず).\nMeans: the outcome is the same no matter what ~ is. Its signature connection is 「(疑問詞)〜か」: 何であるかにかかわらず, どちらを選ぶかにかかわらず.",
+    "trap": "⚠️ One も Changes Everything:\n• [1] にもかかわらず = 'even though'. It needs a settled fact (雨にもかかわらず), not an open question like 何であるか.\n• [3] に限って = 'of all times, precisely then' (bad luck or exception). Wrong meaning.\n• [4] もかまわず needs 〜のもかまわず and describes someone's careless behaviour, not a rule."
+  },
+  {
+    "id": 37,
+    "chapter": 11,
+    "focus": "〜もかまわず (気にすべきことを気にしない・非難)",
+    "sentence": "彼は周りの人が迷惑そうな顔をしている（　　）、電車の中で大声で電話を続けた。",
+    "translation": "Without caring that the people around him looked annoyed, he kept talking loudly on the phone on the train.",
+    "choices": [
+      "のを問わず",
+      "にかかわらず",
+      "どころか",
+      "のもかまわず"
+    ],
+    "answer": 3,
+    "ruleTitle": "11課-3: 〜もかまわず — without caring about ~",
+    "explanation": "Correct: [4] のもかまわず (普通形 ＋ の ＋ もかまわず).\nMeans: acting without minding something a normal person would mind. The speaker's criticism is built in: he SHOULD have cared.",
+    "trap": "⚠️ The Dropped も Trap:\n• [2] にかかわらず = 'regardless of'. It needs width words or opposing pairs, not one specific fact. (Many learners drop the も of にもかかわらず and land here.)\n• [1] を問わず also needs width nouns (年齢, 国籍). A whole clause like 迷惑そうな顔をしている doesn't fit.\n• [3] どころか = 'far from'. It needs two things differing hugely in degree.\n• Remember: もかまわず bans the speaker's own wish, intention and urging after it."
+  },
+  {
+    "id": 38,
+    "chapter": 11,
+    "focus": "〜はともかく (疑問詞〜か・もっと大事なことがある)",
+    "sentence": "実際に役に立つかどうか（　　）、一度試してみる価値はあると思う。",
+    "translation": "Whether it actually turns out to be useful or not, I think it's worth trying once.",
+    "choices": [
+      "をめぐって",
+      "にもかかわらず",
+      "はともかく",
+      "に基づいて"
+    ],
+    "answer": 2,
+    "ruleTitle": "11課-4: 〜はともかく(として) — ~ aside",
+    "explanation": "Correct: [3] はともかく (名／疑問詞〜か ＋ はともかく).\nMeans: set ~ aside for now, because what follows matters more. Accepts 「〜かどうか」 and 「(疑問詞)〜か」 directly.",
+    "trap": "⚠️ Set-Aside vs Concession:\n• [2] にもかかわらず needs a settled fact. 〜かどうか is still undecided, so it can't take にもかかわらず.\n• [4] に基づいて = 'based on' a rule or data (8課). Wrong meaning.\n• [1] をめぐって = 'over / surrounding' a dispute (7課). It needs conflict or debate after it."
+  },
+  {
+    "id": 39,
+    "chapter": 11,
+    "focus": "〜はさておき (話題を一旦置く・勧誘OK)",
+    "sentence": "堅い話（　　）、まずは乾杯しましょう。",
+    "translation": "Serious talk aside, let's start with a toast.",
+    "choices": [
+      "を問わず",
+      "もかまわず",
+      "にかかわらず",
+      "はさておき"
+    ],
+    "answer": 3,
+    "ruleTitle": "11課-5: 〜はさておき — setting ~ aside",
+    "explanation": "Correct: [4] はさておき (名 ＋ はさておき).\nMeans: drop ~ from the conversation for now and move to something more important. Set phrases: 冗談はさておき, それはさておき.",
+    "trap": "⚠️ Urging Is Allowed Only With さておき:\n• [1] を問わず and [3] にかかわらず both need width words or opposing pairs. 堅い話 has no range of values.\n• [2] もかまわず bans urging (〜しましょう) after it, and it criticises careless behaviour.\n• はさておき usually drops a topic already being discussed, then moves on to the main point."
+  },
+  {
+    "id": 40,
+    "chapter": 12,
+    "focus": "〜わけではない (部分否定・必ずしも)",
+    "sentence": "日本に長く住んでいるからといって、必ずしも敬語が完璧に使える（　　）。",
+    "translation": "Just because someone has lived in Japan a long time doesn't necessarily mean they can use keigo perfectly.",
+    "choices": [
+      "わけではない",
+      "わけがない",
+      "ものか",
+      "どころではない"
+    ],
+    "answer": 0,
+    "ruleTitle": "12課-4: 〜わけではない — it's not that ~ / not necessarily",
+    "explanation": "Correct: [1] わけではない (普通形 ＋ わけではない).\nMeans: PARTIAL denial. 'Not necessarily' or 'not entirely'. 必ずしも and 〜からといって are near-guaranteed signals for わけではない or とは限らない.",
+    "trap": "⚠️ 必ずしも Locks the Ending:\n• [2] わけがない is TOTAL denial ('no way'). 必ずしも can't pair with a total denial.\n• [3] ものか is an angry spoken total denial. Same problem, plus wrong register.\n• [4] どころではない = 'in no position to' (18課) or 'far from' (12課). Neither fits."
+  },
+  {
+    "id": 41,
+    "chapter": 12,
+    "focus": "〜わけがない (完全否定・確信)",
+    "sentence": "一度も授業に出ていない彼が、試験で満点を取れる（　　）。",
+    "translation": "There's no way he could get full marks on the exam when he hasn't attended a single class.",
+    "choices": [
+      "わけにはいかない",
+      "というものでもない",
+      "わけがない",
+      "わけではない"
+    ],
+    "answer": 2,
+    "ruleTitle": "12課-1: 〜わけがない — there's no way ~",
+    "explanation": "Correct: [3] わけがない (普通形 ＋ わけがない).\nMeans: absolutely not; unthinkable. The speaker is CERTAIN. Same feel as 〜はずがない.",
+    "trap": "⚠️ Total vs Partial Denial:\n• [4] わけではない is partial ('it's not that he can get full marks'). The context wants certainty, not a hedge.\n• [2] というものでもない denies a general rule of thumb, usually after 〜ば or 〜からといって. This is about one specific person.\n• [1] わけにはいかない = 'can't very well' because of social pressure (18課). Nobody is socially blocked from scoring well."
+  },
+  {
+    "id": 42,
+    "chapter": 12,
+    "focus": "〜どころか (正反対・程度の大差)",
+    "sentence": "薬を飲んだのに、熱は下がる（　　）、かえって上がってしまった。",
+    "translation": "Even though I took medicine, far from going down, my fever actually went up.",
+    "choices": [
+      "ばかりか",
+      "どころか",
+      "上に",
+      "ものか"
+    ],
+    "answer": 1,
+    "ruleTitle": "12課-2: 〜どころか — far from ~",
+    "explanation": "Correct: [2] どころか (普通形 ＋ どころか).\nMeans: reality is the OPPOSITE of ~ (or wildly different in degree). かえって ('on the contrary') is the giveaway.",
+    "trap": "⚠️ Opposite Direction vs Same Direction:\n• [1] ばかりか and [3] 上に (6課) ADD something in the same direction: 'not only A, but also B'. 下がる and 上がる point in opposite directions, so only どころか works.\n• [4] ものか is a sentence-final angry denial. It can't link two clauses."
+  },
+  {
+    "id": 43,
+    "chapter": 12,
+    "focus": "〜ものか (感情的な強い否定・話し言葉)",
+    "sentence": "あんなに失礼な態度をとられたんだから、二度とあの店に行く（　　）。",
+    "translation": "After being treated that rudely, there's no way I'm ever going back to that shop.",
+    "choices": [
+      "というものではない",
+      "ものか",
+      "わけではない",
+      "ものなら"
+    ],
+    "answer": 1,
+    "ruleTitle": "12課-3: 〜ものか — like hell ~ / as if ~!",
+    "explanation": "Correct: [2] ものか (普通形 ＋ ものか).\nMeans: an emotional, total denial. Spoken only, with temper in it. 二度と＋〜ものか is the classic pattern. Casual: 〜もんか.",
+    "trap": "⚠️ Emotional Total Denial:\n• [3] わけではない is a mild partial denial. It can't carry 二度と.\n• [1] というものではない states a general principle, not a personal vow.\n• [4] ものなら (15課) = 'if only I could ~', a wistful wish. It needs a potential verb and a second clause."
+  },
+  {
+    "id": 44,
+    "chapter": 12,
+    "focus": "〜というものではない (一般論の否定・〜ば)",
+    "sentence": "ただ長い時間机に向かっていれば成績が上がる（　　）。大切なのは勉強の中身だ。",
+    "translation": "Just sitting at a desk for long hours doesn't automatically raise your grades. What matters is what you actually study.",
+    "choices": [
+      "どころではない",
+      "わけにはいかない",
+      "わけだ",
+      "というものではない"
+    ],
+    "answer": 3,
+    "ruleTitle": "12課-5: 〜というものではない — it's not as if just ~ is enough",
+    "explanation": "Correct: [4] というものではない (普通形 ＋ というものではない).\nMeans: meeting one condition doesn't automatically produce the result. It denies a rule of thumb. Very often paired with 〜ば／〜たら or 〜からといって. 〜というものでもない is the softer version.",
+    "trap": "⚠️ 〜ば ＋ というものではない Is a Set:\n• [2] わけにはいかない = 'can't very well' (social block). Grades rising isn't a social act.\n• [1] どころではない = 'in no position to'. Wrong meaning.\n• [3] わけだ = 'that's why / it follows'. It agrees with the rule, which contradicts the next sentence."
+  },
+  {
+    "id": 45,
+    "chapter": 13,
+    "focus": "〜とは (定義・硬い言い方)",
+    "sentence": "「フードロス」（　　）、まだ食べられるのに捨てられてしまう食品のことである。",
+    "translation": "'Food loss' refers to food that gets thrown away even though it could still be eaten.",
+    "choices": [
+      "とは",
+      "となると",
+      "といったら",
+      "といえば"
+    ],
+    "answer": 0,
+    "ruleTitle": "13課-1: 〜とは — ~ means / ~ is defined as",
+    "explanation": "Correct: [1] とは (名 ＋ とは).\nMeans: defining a word or stating its essence. Stiff version of 〜というのは. Ending is 〜のことである／〜という意味だ. Everywhere in N2 reading passages.",
+    "trap": "⚠️ Definition Ending = とは:\n• [4] といえば hops to a related topic ('speaking of ~'). It doesn't define anything.\n• [2] となると needs a change in someone's behaviour after it.\n• [3] といったら stresses an extreme degree ('the ~ was something else!').\n• 「〜」とは…のことである is a fixed definition frame."
+  },
+  {
+    "id": 46,
+    "chapter": 13,
+    "focus": "〜といえば〜が (いちおう認めて本題へ・同語反復)",
+    "sentence": "この部屋は駅から遠い（　　）遠いが、その分家賃が安くて静かだ。",
+    "translation": "This apartment is far from the station, I suppose, but in exchange the rent is cheap and it's quiet.",
+    "choices": [
+      "となると",
+      "どころか",
+      "といえば",
+      "とは"
+    ],
+    "answer": 2,
+    "ruleTitle": "13課-2B: 〜といえば〜が — I'll grant ~, but",
+    "explanation": "Correct: [3] といえば (普通形 ＋ といえば ＋ same word ＋ が).\nMeans: grant the point for a moment, then say what you really mean. The SAME word repeated on both sides (遠いといえば遠いが) is the giveaway.",
+    "trap": "⚠️ Spot the Repeated Word:\n• [4] とは introduces a definition. 遠いとは遠い is not Japanese.\n• [1] となると = 'when it comes to'. It needs a noun and a behaviour change.\n• [2] どころか = 'far from'. 遠いどころか遠い contradicts itself."
+  },
+  {
+    "id": 47,
+    "chapter": 13,
+    "focus": "〜となると (話題になると人が変わる)",
+    "sentence": "普段はおとなしい兄だが、サッカーの話（　　）、急に声が大きくなって止まらなくなる。",
+    "translation": "My older brother is usually quiet, but once the topic turns to football, his voice suddenly gets loud and he won't stop.",
+    "choices": [
+      "となると",
+      "とは",
+      "といっても",
+      "からといって"
+    ],
+    "answer": 0,
+    "ruleTitle": "13課-4: 〜(のこと)となると — when it comes to ~",
+    "explanation": "Correct: [1] となると (名 ＋ (のこと)となると).\nMeans: on the subject of ~, the person turns into someone else. What follows MUST be a visible change to unusual behaviour.",
+    "trap": "⚠️ Behaviour Change After:\n• [2] とは is for definitions.\n• [3] といっても (14課) corrects an expectation downward ('I say football talk, but...'). Wrong meaning.\n• [4] からといって (14課) needs a partial denial after it (〜とは限らない)."
+  },
+  {
+    "id": 48,
+    "chapter": 13,
+    "focus": "〜といったら (程度が並外れている・驚き)",
+    "sentence": "初めてオーロラを見たときの感動（　　）、今でも言葉では言い表せないほどだ。",
+    "translation": "The emotion I felt seeing the aurora for the first time was something else. Even now it's beyond words.",
+    "choices": [
+      "というと",
+      "とは",
+      "となると",
+      "といったら"
+    ],
+    "answer": 3,
+    "ruleTitle": "13課-5: 〜といったら — the ~ was something else",
+    "explanation": "Correct: [4] といったら (名 ＋ といったら).\nMeans: the degree of ~ was far beyond normal. Usually takes an abstract quality noun (感動, 驚き, 忙しさ, 美しさ). The second half is often an astonished ending, or left off entirely: 「その美しさといったら……」.",
+    "trap": "⚠️ Degree vs Definition vs Association:\n• [2] とは defines a word. The ending ほどだ is a degree statement, not a definition.\n• [1] というと brings an association to mind or checks understanding.\n• [3] となると needs someone's behaviour to change."
+  },
+  {
+    "id": 49,
+    "chapter": 14,
+    "focus": "〜にもかかわらず (〜のに・硬い・驚き)",
+    "sentence": "足をけがしていた（　　）、彼は最後まで試合に出続けた。",
+    "translation": "Even though he had injured his leg, he kept playing until the end of the match.",
+    "choices": [
+      "を問わず",
+      "にかかわらず",
+      "にもかかわらず",
+      "をめぐって"
+    ],
+    "answer": 2,
+    "ruleTitle": "14課-1: 〜にもかかわらず — in spite of / even though",
+    "explanation": "Correct: [3] にもかかわらず (普通形／名 ＋ にもかかわらず).\nMeans: an actual fact (the injury) failed to stop the result, and that is surprising. Formal 〜のに.\nBans the speaker's wish, intention and urging after it.",
+    "trap": "⚠️ The も Pair (11課 vs 14課):\n• [2] にかかわらず = 'regardless of'. It takes width words or opposing pairs, not one past fact.\n• [1] を問わず = 'regardless of' too, and also needs a width noun.\n• [4] をめぐって = 'over a dispute'. Wrong meaning."
+  },
+  {
+    "id": 50,
+    "chapter": 14,
+    "focus": "〜ものの (事実だが期待どおりにならない)",
+    "sentence": "新しいパソコンを買った（　　）、忙しくてまだ一度も電源を入れていない。",
+    "translation": "I bought a new computer, and yet I've been so busy I haven't even switched it on once.",
+    "choices": [
+      "ものだから",
+      "ものの",
+      "ものか",
+      "ものなら"
+    ],
+    "answer": 1,
+    "ruleTitle": "14課-2: 〜ものの — although / and yet",
+    "explanation": "Correct: [2] ものの (普通形 ＋ ものの).\nMeans: ~ is a FACT, but what you'd naturally expect from it doesn't happen. You'd expect to use a new PC; you haven't.\nBans urging after it.",
+    "trap": "⚠️ The もの Family (4 different jobs):\n• [1] ものだから (16課) = an excuse: 'it's just that ~'. 'Because I bought it, I haven't switched it on' makes no sense.\n• [4] ものなら (15課) = 'if only I could ~'. Needs 辞書形 of a potential verb.\n• [3] ものか (12課) = angry sentence-final denial. Can't link two clauses."
+  },
+  {
+    "id": 51,
+    "chapter": 14,
+    "focus": "〜ながらも (逆接・状態語・同じ主語)",
+    "sentence": "この店は小さい（　　）、地元の人々に長く愛されている名店だ。",
+    "translation": "Small though it is, this shop is a renowned spot that local people have loved for years.",
+    "choices": [
+      "ながらも",
+      "からといって",
+      "どころか",
+      "ものなら"
+    ],
+    "answer": 0,
+    "ruleTitle": "14課-3: 〜ながら(も) — although",
+    "explanation": "Correct: [1] ながらも (イ形 い ＋ ながら(も)).\nMeans: 'although', attached to a STATE word, with the SAME subject before and after. Often admits a minus point first (小さい, 狭い, わずかな). Not the N3 'while doing' ながら.",
+    "trap": "⚠️ Same String, Opposite Job:\n• [4] ものなら needs a potential verb and a wish after it.\n• [3] どころか = 'far from small'. That contradicts the point that it IS small.\n• [2] からといって needs a partial denial after it (〜とは限らない)."
+  },
+  {
+    "id": 52,
+    "chapter": 14,
+    "focus": "〜つつも (心の動詞・わかっているのにしてしまう)",
+    "sentence": "夜中にラーメンを食べるのは体に悪いと（　　）、ついコンビニに寄ってしまう。",
+    "translation": "I know eating ramen in the middle of the night is bad for me, yet I still end up stopping at the convenience store.",
+    "choices": [
+      "わかったとたん",
+      "わかりつつも",
+      "わかり次第",
+      "わかりつつある"
+    ],
+    "answer": 1,
+    "ruleTitle": "14課-4: 〜つつ(も) — even while knowing ~",
+    "explanation": "Correct: [2] わかりつつも (動 ます ＋ つつ(も)).\nMeans: your inner state and your behaviour don't match. Takes verbs of the MIND or SPEECH (思う, 知る, わかる, 言う). The feel is guilty self-awareness, which つい〜てしまう confirms.",
+    "trap": "⚠️ 2課 つつ vs 14課 つつも:\n• [4] つつある (2課) = 'in the process of changing'. It ends a clause; it can't mean 'although'.\n• [3] 次第 (3課) = 'as soon as', and needs a deliberate action after it. つい〜てしまう is the opposite of deliberate.\n• [1] たとたん (1課) = 'the instant ~'. It describes one sudden moment, not an ongoing habit."
+  },
+  {
+    "id": 53,
+    "chapter": 14,
+    "focus": "〜からといって (〜とは限らない とセット)",
+    "sentence": "有名な大学を出た（　　）、仕事ができるとは限らない。",
+    "translation": "Just because someone graduated from a famous university doesn't necessarily mean they're good at their job.",
+    "choices": [
+      "ことだし",
+      "にもかかわらず",
+      "ばかりに",
+      "からといって"
+    ],
+    "answer": 3,
+    "ruleTitle": "14課-6: 〜からといって — just because ~ doesn't mean",
+    "explanation": "Correct: [4] からといって (普通形 ＋ からといって).\nMeans: the reason ~ alone isn't enough for the usual conclusion. After it comes a PARTIAL denial: 〜とは限らない, 〜わけではない, 〜とはいえない. Learn them as a matched pair.",
+    "trap": "⚠️ からといって ⇄ とは限らない:\n• [2] にもかかわらず needs a real surprising result after it, not a general 'not necessarily'.\n• [3] ばかりに (17課) = one cause led to a regrettable outcome.\n• [1] ことだし (17課) needs the speaker's intention or an invitation after it (〜しよう)."
+  },
+  {
+    "id": 54,
+    "chapter": 14,
+    "focus": "〜といっても (実際はイメージほどではない)",
+    "sentence": "庭がある（　　）、テーブルが一つ置ける程度の小さなものです。",
+    "translation": "I say we have a garden, but it's just a small one with room for a single table.",
+    "choices": [
+      "ばかりに",
+      "にもかかわらず",
+      "といっても",
+      "からといって"
+    ],
+    "answer": 2,
+    "ruleTitle": "14課-5: 〜といっても — although I say ~",
+    "explanation": "Correct: [3] といっても (普通形 ＋ といっても).\nMeans: the reality doesn't match the image the word creates. You lower the listener's expectation. The modesty pattern.",
+    "trap": "⚠️ Correcting an Image vs Denying a Rule:\n• [4] からといって denies a general 'A so obviously B' rule and needs 〜とは限らない／〜わけではない after it.\n• [2] にもかかわらず needs a surprising result. 'Even though we have a garden, it's small' is not a surprise.\n• [1] ばかりに needs a regrettable result caused by ~."
+  },
+  {
+    "id": 55,
+    "chapter": 15,
+    "focus": "〜としたら (完全な仮定・疑問文OK)",
+    "sentence": "もし宝くじで一億円が（　　）、まず何に使いますか。",
+    "translation": "If you won 100 million yen in the lottery, what would you spend it on first?",
+    "choices": [
+      "当たったとしたら",
+      "当たったからには",
+      "当たるものなら",
+      "当たらないことには"
+    ],
+    "answer": 0,
+    "ruleTitle": "15課-1: 〜としたら・〜とすれば — supposing ~",
+    "explanation": "Correct: [1] 当たったとしたら (普通形 ＋ としたら).\nMeans: pure supposition. Pairs naturally with もし or 仮に.\nNote: 〜とすると and 〜となると ban wish/intention/urging after them; 〜としたら does not.",
+    "trap": "⚠️ Hypothesis vs Fact:\n• [2] からには (17課) = 'now that ~'. It needs a real, settled fact. もし makes that impossible.\n• [3] ものなら needs a potential verb and a wish ('if only I could win, I'd ~').\n• [4] ないことには = 'unless ~'. It needs a negative result after it."
+  },
+  {
+    "id": 56,
+    "chapter": 15,
+    "focus": "〜ものなら (できるなら〜たい・可能動詞)",
+    "sentence": "（　　）、もう一度大学一年生からやり直したい。",
+    "translation": "If I could do it over, I'd want to start again from my first year of university.",
+    "choices": [
+      "やり直そうものなら",
+      "やり直さないことには",
+      "やり直せるものなら",
+      "やり直すとしても"
+    ],
+    "answer": 2,
+    "ruleTitle": "15課-2: 〜ものなら — if only I could ~",
+    "explanation": "Correct: [3] やり直せるものなら (可能動詞 辞書形 ＋ ものなら).\nMeans: if it were possible (and it isn't), I'd want to. After: the speaker's WISH (〜たい). Repeating the verb (代われるものなら代わりたい) is natural.",
+    "trap": "⚠️ Wistful vs Threatening (one letter apart):\n• [1] (よ)うものなら = 'if you dared to ~, disaster would follow'. It needs a bad outcome after it, not a wish.\n• [4] としても = 'even if'. 'Even if I redo it, I want to redo it' contradicts itself.\n• [2] ないことには needs a negative result after it."
+  },
+  {
+    "id": 57,
+    "chapter": 15,
+    "focus": "〜(よ)うものなら (もし〜したら大変なことになる)",
+    "sentence": "うちの父は厳しくて、門限を一分でも（　　）、一週間は口をきいてくれない。",
+    "translation": "My dad is strict: if I'm even one minute past curfew, he won't speak to me for a week.",
+    "choices": [
+      "過ぎるどころか",
+      "過ぎないことには",
+      "過ぎるものなら",
+      "過ぎようものなら"
+    ],
+    "answer": 3,
+    "ruleTitle": "15課-3: 〜(よ)うものなら — if you were to ~, there'd be trouble",
+    "explanation": "Correct: [4] 過ぎようものなら (動 う・よう形 ＋ ものなら).\nMeans: if ~ happened, it would turn into something awful. 〜でも ('even just') often appears in front.",
+    "trap": "⚠️ Threat vs Wish:\n• [3] 過ぎるものなら is the wistful 'if only I could pass it', which needs a potential verb and a wish.\n• [2] ないことには = 'unless I pass curfew, he won't talk'. Backwards logic.\n• [1] どころか = 'far from passing curfew'. Wrong meaning."
+  },
+  {
+    "id": 58,
+    "chapter": 15,
+    "focus": "〜ないことには (〜しなければ、後ろは否定)",
+    "sentence": "実際に（　　）、この機械が本当に便利かどうかはわからない。",
+    "translation": "Unless you actually try it out, you can't tell whether this machine is really convenient.",
+    "choices": [
+      "使ってみてはじめて",
+      "使ってみないことには",
+      "使ってみるものなら",
+      "使ってみようものなら"
+    ],
+    "answer": 1,
+    "ruleTitle": "15課-4: 〜ないことには — unless ~",
+    "explanation": "Correct: [2] 使ってみないことには (動 ない形 ＋ ことには).\nMeans: without doing ~, the thing won't happen. What follows is ALWAYS negative (わからない, できない). Same rule as 3課 〜てからでないと.",
+    "trap": "⚠️ Negative Ending Required:\n• [3] ものなら needs a potential verb and a wish after it.\n• [4] (よ)うものなら needs a disaster after it.\n• [1] てはじめて (3課) = 'only after ~ did I realise'. It needs a POSITIVE realisation after it (わかった), so it clashes with わからない."
+  },
+  {
+    "id": 59,
+    "chapter": 15,
+    "focus": "〜を抜きにしては (〜なしでは実現しない)",
+    "sentence": "ボランティアの方々の協力（　　）、今回の大会の成功はありえなかった。",
+    "translation": "Without the cooperation of the volunteers, this tournament could never have succeeded.",
+    "choices": [
+      "に応じて",
+      "を問わず",
+      "を抜きにしては",
+      "をもとに"
+    ],
+    "answer": 2,
+    "ruleTitle": "15課-5: 〜を抜きにしては — without ~",
+    "explanation": "Correct: [3] を抜きにしては (名 ＋ を抜きにしては).\nMeans: without ~ (or without considering ~), the thing can't happen. Attaches to something the speaker values highly, so it's a compliment in disguise. Negative ending after.",
+    "trap": "⚠️ Without ~ → Impossible:\n• [4] をもとに (8課) = using ~ as material to create something.\n• [1] に応じて (9課) = adjusting in response to a variable.\n• [2] を問わず = 'regardless of', which would say the volunteers didn't matter. The opposite meaning."
+  },
+  {
+    "id": 60,
+    "chapter": 15,
+    "focus": "〜としても (たとえ〜ても・仮定)",
+    "sentence": "たとえ明日雨が降った（　　）、試合は予定どおり行われる。",
+    "translation": "Even if it rains tomorrow, the match will go ahead as planned.",
+    "choices": [
+      "としても",
+      "ものの",
+      "からには",
+      "ばかりに"
+    ],
+    "answer": 0,
+    "ruleTitle": "15課-6: 〜としても — even if ~",
+    "explanation": "Correct: [1] としても (普通形 ＋ としても).\nMeans: even supposing ~, the outcome doesn't change. 〜としても MUST be hypothetical; たとえ is the signal. (〜にしても／にせよ can take hypotheses or facts.)",
+    "trap": "⚠️ たとえ Demands a Hypothesis:\n• [3] からには and [2] ものの both need a real FACT before them. Tomorrow's rain hasn't happened yet.\n• [4] ばかりに = one cause led to a regrettable result. Wrong meaning."
+  },
+  {
+    "id": 61,
+    "chapter": 16,
+    "focus": "〜による＋名詞 (手段・名詞修飾ならOK)",
+    "sentence": "電話（　　）お問い合わせは、平日の午前9時から午後5時まで受け付けております。",
+    "translation": "Telephone inquiries are accepted on weekdays from 9 a.m. to 5 p.m.",
+    "choices": [
+      "について",
+      "による",
+      "にとって",
+      "によって"
+    ],
+    "answer": 1,
+    "ruleTitle": "16課-1: 〜によって／〜による — by means of / due to",
+    "explanation": "Correct: [2] による (名 ＋ による ＋ 名).\nMeans: method or cause. Before a noun it must be による. Note: everyday tools sound odd with 〜によって (✗ 電話によって連絡した), BUT the noun-modifying form is fine: 電話による問い合わせ. The exam loves this exception.",
+    "trap": "⚠️ Noun-Modifying Form:\n• [4] によって can't sit directly before a noun. It modifies verbs.\n• [1] について also needs の before a noun (についての).\n• [3] にとって = 'from the viewpoint of' a person. Wrong meaning."
+  },
+  {
+    "id": 62,
+    "chapter": 16,
+    "focus": "〜ものだから (個人的な言い訳)",
+    "sentence": "すみません、目覚まし時計が鳴らなかった（　　）、遅刻してしまいました。",
+    "translation": "I'm sorry. It's just that my alarm clock didn't go off, so I ended up being late.",
+    "choices": [
+      "ことだし",
+      "ものの",
+      "ものなら",
+      "ものですから"
+    ],
+    "answer": 3,
+    "ruleTitle": "16課-2: 〜ものだから — it's just that ~ (excuse)",
+    "explanation": "Correct: [4] ものですから (普通形 ＋ ものだから).\nMeans: a personal excuse. 'The thing is, ~.' Very common in apologies. Bans commands and the speaker's intention after it. Casual: もんだから.",
+    "trap": "⚠️ Excuse vs Concession:\n• [2] ものの = 'although'. 'Although the alarm didn't ring, I was late' is backwards: the lateness is the expected result.\n• [3] ものなら = 'if only I could ~'.\n• [1] ことだし (17課) needs an invitation or intention after it (〜しよう)."
+  },
+  {
+    "id": 63,
+    "chapter": 16,
+    "focus": "〜おかげで (良い結果)",
+    "sentence": "先輩が丁寧に教えてくださった（　　）、初めての仕事も無事に終えることができた。",
+    "translation": "Thanks to my senior teaching me so carefully, I managed to finish my first job without any trouble.",
+    "choices": [
+      "につき",
+      "おかげで",
+      "あまり",
+      "せいで"
+    ],
+    "answer": 1,
+    "ruleTitle": "16課-3: 〜おかげで／〜せいで — thanks to / because of",
+    "explanation": "Correct: [2] おかげで (普通形／名の ＋ おかげで).\nMeans: ~ led to a GOOD result. This rule never varies: おかげで → good, せいで → bad. 〜せいか softens to 'perhaps because'.",
+    "trap": "⚠️ Good Result vs Bad Result:\n• [4] せいで blames ~ for a BAD result. Finishing without trouble is good.\n• [3] あまり = 'out of too much ~'. It needs an abnormal, usually bad result.\n• [1] につき is for public notices (本日休業につき)."
+  },
+  {
+    "id": 64,
+    "chapter": 16,
+    "focus": "〜あまり (〜すぎて普通でない結果)",
+    "sentence": "試験の結果が心配な（　　）、ゆうべはほとんど眠れなかった。",
+    "translation": "I was so worried about my exam results that I barely slept last night.",
+    "choices": [
+      "あまり",
+      "おかげで",
+      "ものの",
+      "ことだし"
+    ],
+    "answer": 0,
+    "ruleTitle": "16課-4: 〜あまり — out of too much ~",
+    "explanation": "Correct: [1] あまり (ナ形 な／名の ＋ あまり).\nMeans: the degree of ~ was so extreme that it caused an abnormal, usually bad result. Affirmative only before it. Bans wish, intention and urging after it.",
+    "trap": "⚠️ Extreme Cause → Abnormal Result:\n• [2] おかげで needs a GOOD result.\n• [4] ことだし needs an invitation or intention after it.\n• [3] ものの = 'although'. 'Although I was worried, I couldn't sleep' is backwards: not sleeping is the expected result of worry."
+  },
+  {
+    "id": 65,
+    "chapter": 16,
+    "focus": "〜につき (掲示・お知らせの理由)",
+    "sentence": "本日は館内工事（　　）、午後3時で閉館いたします。",
+    "translation": "Due to construction work in the building, we will close at 3 p.m. today.",
+    "choices": [
+      "のせいで",
+      "に応じて",
+      "につき",
+      "のあまり"
+    ],
+    "answer": 2,
+    "ruleTitle": "16課-5: 〜につき — owing to (public notice)",
+    "explanation": "Correct: [3] につき (名 ＋ につき).\nMeans: 'for reason ~, this is the situation', announced publicly. Stiff written style for signs, notices and official documents. Different from 一人につき ('per person').",
+    "trap": "⚠️ Notice Register:\n• [1] せいで blames ~ for a bad result. A business doesn't blame its own construction in a polite notice.\n• [4] あまり needs an extreme emotion or state as the cause.\n• [2] に応じて = 'in response to' a variable (9課)."
+  },
+  {
+    "id": 66,
+    "chapter": 17,
+    "focus": "〜ことだし (軽い理由＋勧誘・意志)",
+    "sentence": "みんなそろった（　　）、そろそろ会議を始めましょうか。",
+    "translation": "Everyone's here now, so shall we get the meeting started?",
+    "choices": [
+      "だけに",
+      "ものだから",
+      "ばかりに",
+      "ことだし"
+    ],
+    "answer": 3,
+    "ruleTitle": "17課-1: 〜ことだし — what with ~ and all",
+    "explanation": "Correct: [4] ことだし (普通形 ＋ ことだし).\nMeans: one light reason among others, used to nudge toward an action. After it: the speaker's judgement, wish, intention or an INVITATION (〜しよう, 〜しましょうか).",
+    "trap": "⚠️ Which 'Because' Allows an Invitation?\n• [2] ものだから bans intention and commands after it. It's for excuses.\n• [3] ばかりに bans wish, intention and urging. It's for regret.\n• [1] だけに bans urging after it.\n• Only ことだし (and からには) welcome 〜しましょう."
+  },
+  {
+    "id": 67,
+    "chapter": 17,
+    "focus": "〜のことだから (人の性格から推測)",
+    "sentence": "時間に正確な山田さん（　　）、きっと約束の10分前には来ているだろう。",
+    "translation": "Knowing how punctual Yamada-san is, they'll surely be there 10 minutes before the agreed time.",
+    "choices": [
+      "のことだから",
+      "だけあって",
+      "のおかげで",
+      "ばかりに"
+    ],
+    "answer": 0,
+    "ruleTitle": "17課-2: 〜のことだから — knowing ~ as I do",
+    "explanation": "Correct: [1] のことだから (人 ＋ のことだから).\nMeans: judging from this person's character or habits, I guess this. Attaches to a person. After it: the speaker's guess or judgement (きっと〜だろう).",
+    "trap": "⚠️ Person's Character → Guess:\n• [3] のおかげで needs an actual good result that already happened. 〜だろう is only a guess.\n• [2] だけあって (19課) bans future and conjecture endings. It praises something already shown.\n• [4] ばかりに needs a regrettable result."
+  },
+  {
+    "id": 68,
+    "chapter": 17,
+    "focus": "〜だけに (〜だから当然・それにふさわしい状態)",
+    "sentence": "この店は人気が高い（　　）、週末は予約なしではまず入れない。",
+    "translation": "Precisely because this restaurant is so popular, you basically can't get in on weekends without a reservation.",
+    "choices": [
+      "ことだし",
+      "だけに",
+      "からには",
+      "ばかりに"
+    ],
+    "answer": 1,
+    "ruleTitle": "17課-3: 〜だけに — precisely because ~",
+    "explanation": "Correct: [2] だけに (普通形 ＋ だけに; NOT 名＋だ).\nMeans: because of ~, it's natural to be in this state, often to a greater degree than usual. Bans urging after it.",
+    "trap": "⚠️ Natural Consequence vs Regret:\n• [4] ばかりに = one cause led to an unexpected, regrettable result. Popularity causing queues is expected, not regretted.\n• [1] ことだし needs an invitation or intention after it.\n• [3] からには = 'now that ~', followed by duty or resolve."
+  },
+  {
+    "id": 69,
+    "chapter": 17,
+    "focus": "〜ばかりに (それだけが原因で悪い結果・後悔)",
+    "sentence": "傘を持たずに出かけた（　　）、ずぶぬれになって風邪までひいてしまった。",
+    "translation": "All because I went out without an umbrella, I got soaked and even caught a cold.",
+    "choices": [
+      "以上は",
+      "おかげで",
+      "ばかりに",
+      "ことだし"
+    ],
+    "answer": 2,
+    "ruleTitle": "17課-4: 〜ばかりに — simply because ~ (and it went wrong)",
+    "explanation": "Correct: [3] ばかりに (普通形 ＋ ばかりに).\nMeans: that single cause produced an unexpected bad result, and the speaker regrets it. 〜てしまった is the typical ending. Exception: 〜たいばかりに = 'wanting it so badly that I did something unusual'.",
+    "trap": "⚠️ Single Cause → Regret:\n• [2] おかげで needs a GOOD result.\n• [4] ことだし needs an invitation or intention after it.\n• [1] 以上は needs duty, resolve or a judgement after it (〜べきだ, 〜つもりだ)."
+  },
+  {
+    "id": 70,
+    "chapter": 17,
+    "focus": "〜からには (〜した以上は当然・決意)",
+    "sentence": "代表に選ばれた（　　）、チームのために全力を尽くすつもりです。",
+    "translation": "Now that I've been chosen to represent the team, I intend to give it everything I've got.",
+    "choices": [
+      "ものだから",
+      "ばかりに",
+      "あまり",
+      "からには"
+    ],
+    "answer": 3,
+    "ruleTitle": "17課-5: 〜からには・〜以上(は)・〜上は — now that ~",
+    "explanation": "Correct: [4] からには (普通形 ＋ からには).\nMeans: given ~, it's only natural to do this. After it: judgement, wish, INTENTION (つもりだ) or urging. A commitment pattern.",
+    "trap": "⚠️ Resolve Requires からには:\n• [2] ばかりに bans the speaker's intention after it.\n• [1] ものだから also bans intention. It's for excuses.\n• [3] あまり bans intention and needs an extreme feeling as the cause."
+  },
+  {
+    "id": 71,
+    "chapter": 18,
+    "focus": "〜がたい (心理・発言動詞・能力ではない)",
+    "sentence": "あの真面目な彼が無断で会社を休んだとは、にわかには（　　）。",
+    "translation": "That someone as conscientious as him would skip work without notice is hard to believe at first.",
+    "choices": [
+      "信じがたい",
+      "信じ得る",
+      "信じるわけにはいかない",
+      "信じるどころではない"
+    ],
+    "answer": 0,
+    "ruleTitle": "18課-1: 〜がたい — hard to ~",
+    "explanation": "Correct: [1] 信じがたい (動 ます ＋ がたい).\nMeans: emotionally very hard to do. NOT about ability. Mostly mind and speech verbs: 信じがたい, 理解しがたい, 想像しがたい, 許しがたい.",
+    "trap": "⚠️ Four Ways to Say 'Can't':\n• [3] わけにはいかない = can't because of social pressure. Believing isn't blocked by etiquette.\n• [4] どころではない = no capacity (no time, no money). Wrong meaning.\n• [2] 得る = 'is possible'. にわかには needs a negative-sense ending."
+  },
+  {
+    "id": 72,
+    "chapter": 18,
+    "focus": "〜わけにはいかない (社会的・心理的にできない)",
+    "sentence": "明日は大事なプレゼンがあるので、少し熱があるくらいで（　　）。",
+    "translation": "I have an important presentation tomorrow, so I can't very well take the day off over a slight fever.",
+    "choices": [
+      "休み得ない",
+      "休むわけにはいかない",
+      "休みかねない",
+      "休みようがない"
+    ],
+    "answer": 1,
+    "ruleTitle": "18課-2: 〜わけにはいかない — I can't very well ~",
+    "explanation": "Correct: [2] 休むわけにはいかない (動 辞書形 ＋ わけにはいかない).\nMeans: you physically COULD, but social duty or conscience stops you. Normally first person.",
+    "trap": "⚠️ Not About Ability:\n• [3] かねない = 'might well happen' (22課). It contradicts the reasoning.\n• [4] ようがない = no method exists at all. Taking a day off is entirely possible.\n• [1] 得ない = 'impossible' in a general, logical sense. It isn't used for one person's situation."
+  },
+  {
+    "id": 73,
+    "chapter": 18,
+    "focus": "〜かねる (丁寧な断り・ビジネス)",
+    "sentence": "申し訳ございませんが、お客様の個人情報に関するご質問にはお答えし（　　）。",
+    "translation": "We apologise, but we are unable to answer questions about customers' personal information.",
+    "choices": [
+      "得ません",
+      "ようがありません",
+      "かねません",
+      "かねます"
+    ],
+    "answer": 3,
+    "ruleTitle": "18課-3: 〜かねる — unable to ~ (politely)",
+    "explanation": "Correct: [4] かねます (動 ます ＋ かねる).\nMeans: 'from my position, I can't'. This is how business Japanese says no. お答えいたしかねます is a phrase you'll hear constantly.",
+    "trap": "⚠️ かねる vs かねない (near opposites):\n• [3] かねません = 'might well answer'. The opposite of a refusal.\n• [2] ようがありません = no possible method. They know the answer; they just won't give it.\n• [1] 得ません = general logical impossibility. Not used for a polite refusal."
+  },
+  {
+    "id": 74,
+    "chapter": 18,
+    "focus": "〜ようがない (方法がまったくない)",
+    "sentence": "彼の連絡先を知らないので、会議の時間が変わったことを（　　）。",
+    "translation": "I don't know his contact details, so I have no way of letting him know the meeting time has changed.",
+    "choices": [
+      "伝えがたい",
+      "伝えかねない",
+      "伝えようがない",
+      "伝えるわけにはいかない"
+    ],
+    "answer": 2,
+    "ruleTitle": "18課-4: 〜ようがない — there's no way to ~",
+    "explanation": "Correct: [3] 伝えようがない (動 ます ＋ ようがない).\nMeans: even if you wanted to, there is no method at all. The one point in this lesson that IS about real impossibility. Can also mean 〜はずがない.",
+    "trap": "⚠️ No Method vs Other 'Can't's:\n• [2] かねない = 'might well happen'. Wrong meaning.\n• [1] がたい = emotionally hard to say. The problem here is missing contact details, not feelings.\n• [4] わけにはいかない = socially blocked. Nothing social is stopping you here."
+  },
+  {
+    "id": 75,
+    "chapter": 18,
+    "focus": "〜どころではない (余裕がない・それどころじゃない)",
+    "sentence": "引っ越しの準備で忙しくて、友達とゆっくり食事をする（　　）。",
+    "translation": "I'm so busy getting ready for the move that a leisurely meal with friends is out of the question.",
+    "choices": [
+      "どころではない",
+      "というものではない",
+      "わけがない",
+      "ものか"
+    ],
+    "answer": 0,
+    "ruleTitle": "18課-5: 〜どころではない — in no position to ~",
+    "explanation": "Correct: [1] どころではない (動 辞書形／名 ＋ どころではない).\nMeans: the situation leaves no room for it. The reason is a lack of time, money or calm (忙しくて, うるさくて).\n18課 = 'no capacity'. 12課-2 どころか = 'far from'.",
+    "trap": "⚠️ No Capacity:\n• [3] わけがない = 'there's no way' (logical certainty). Too strong and the wrong logic.\n• [4] ものか = angry refusal. You WANT the meal; you just can't fit it in.\n• [2] というものではない denies a general rule of thumb."
+  },
+  {
+    "id": 76,
+    "chapter": 18,
+    "focus": "〜得る (可能性がある・ありうる)",
+    "sentence": "どんなに注意していても、事故は起こり（　　）ことだ。",
+    "translation": "No matter how careful you are, accidents are something that can happen.",
+    "choices": [
+      "得ない",
+      "得る",
+      "がたい",
+      "かねる"
+    ],
+    "answer": 1,
+    "ruleTitle": "18課-6: 〜得る／〜得ない — possible / impossible",
+    "explanation": "Correct: [2] 得る (動 ます ＋ 得る; read うる).\nMeans: there is a possibility. Not for personal ability (✗ 英語が話し得る). Learn あり得る／あり得ない and 起こり得る as set words.",
+    "trap": "⚠️ Possibility, Not Ability:\n• [1] 得ない = 'impossible'. どんなに注意していても signals that accidents still CAN happen.\n• [4] かねる = politely can't. (起こりかねない would fit, but かねる is its opposite.)\n• [3] がたい = emotionally hard to do. Accidents don't 'find it hard' to happen."
+  },
+  {
+    "id": 77,
+    "chapter": 19,
+    "focus": "〜わりに (幅のある語・予想と違う)",
+    "sentence": "父は年齢（　　）体力があって、毎週末山に登っている。",
+    "translation": "For his age, my father has a lot of stamina and climbs mountains every weekend.",
+    "choices": [
+      "として",
+      "にしては",
+      "のわりに",
+      "だけあって"
+    ],
+    "answer": 2,
+    "ruleTitle": "19課-1: 〜わりに(は) — considering ~ / for a ~",
+    "explanation": "Correct: [3] のわりに (名の ＋ わりに).\nMeans: different from the level you'd expect from ~. Attaches to words with WIDTH (年齢, 値段, 若い).",
+    "trap": "⚠️ Width Word vs Specific Value:\n• [2] にしては takes a SPECIFIC value with no width (60歳にしては, 二月にしては). 年齢 is a scale, so it takes わりに.\n• [4] だけあって praises something that matches expectations. Age doesn't lead you to expect stamina.\n• [1] として = 'in the role of'. Wrong meaning."
+  },
+  {
+    "id": 78,
+    "chapter": 19,
+    "focus": "〜にしては (特定の事実から予想外)",
+    "sentence": "この料理は、料理を始めて一か月の人が作った（　　）、とてもよくできている。",
+    "translation": "For something made by a person who only started cooking a month ago, this dish is really well done.",
+    "choices": [
+      "からには",
+      "だけに",
+      "だけあって",
+      "にしては"
+    ],
+    "answer": 3,
+    "ruleTitle": "19課-2: 〜にしては — for a ~ / considering it's ~",
+    "explanation": "Correct: [4] にしては (普通形／名 ＋ にしては).\nMeans: judging from this specific fact, the result is unexpected. Attaches to a particular, fixed situation.",
+    "trap": "⚠️ Unexpected vs Expected:\n• [3] だけあって = 'no wonder'. It needs a reason that EXPLAINS the quality. A one-month beginner doesn't.\n• [2] だけに = natural consequence. Same problem.\n• [1] からには = 'now that ~', followed by resolve. Wrong meaning."
+  },
+  {
+    "id": 79,
+    "chapter": 19,
+    "focus": "〜だけあって (さすが・期待どおりの高評価)",
+    "sentence": "さすがプロの料理人（　　）、包丁の使い方が見事だ。",
+    "translation": "As you'd expect of a professional chef, their knife work is superb.",
+    "choices": [
+      "にしては",
+      "だけあって",
+      "にとって",
+      "わりに"
+    ],
+    "answer": 1,
+    "ruleTitle": "19課-3: 〜だけ(のことは)ある — no wonder / lives up to it",
+    "explanation": "Correct: [2] だけあって (名／普通形 ＋ だけあって).\nMeans: the result matches exactly what you'd expect, and it's PRAISE. さすが is a near-certain signal. Bans future and conjecture endings.",
+    "trap": "⚠️ さすが ＝ だけあって:\n• [1] にしては means the result is UNEXPECTED. That clashes with さすが.\n• [4] わりに also means 'unexpected', and needs の after a noun.\n• [3] にとって = 'from ~'s viewpoint'. Wrong meaning."
+  },
+  {
+    "id": 80,
+    "chapter": 19,
+    "focus": "〜にとって (人の立場からの評価・形容詞文)",
+    "sentence": "毎朝の散歩は、退職した父（　　）大切な楽しみの一つになっている。",
+    "translation": "Morning walks have become one of my retired father's most precious pleasures.",
+    "choices": [
+      "にかけては",
+      "として",
+      "にとって",
+      "をめぐって"
+    ],
+    "answer": 2,
+    "ruleTitle": "19課-5: 〜にとって — for / to (someone)",
+    "explanation": "Correct: [3] にとって (名 ＋ にとって).\nMeans: from ~'s point of view, this is how something rates. Mostly people. After: an evaluation (大切だ, 難しい). Action sentences are BANNED (✗ 私にとって本を買った).",
+    "trap": "⚠️ Evaluation vs Role:\n• [2] として = 'in the role of'. 'As my father, the walk became a pleasure' is wrong.\n• [4] をめぐって = 'over a dispute'.\n• [1] にかけては = 'when it comes to a skill, nobody beats ~' (7課)."
+  },
+  {
+    "id": 81,
+    "chapter": 19,
+    "focus": "〜として (立場・資格で行動する)",
+    "sentence": "彼女は大学時代、交換留学生（　　）一年間フランスで過ごした。",
+    "translation": "In university, she spent a year in France as an exchange student.",
+    "choices": [
+      "として",
+      "にしたら",
+      "にしては",
+      "にとって"
+    ],
+    "answer": 0,
+    "ruleTitle": "19課-4: 〜として — as / in the capacity of",
+    "explanation": "Correct: [1] として (名 ＋ として).\nMeans: doing something in the role, position or capacity of ~. Action verbs are fine after it.",
+    "trap": "⚠️ として Allows Actions; にとって Doesn't:\n• [4] にとって bans action sentences. 過ごした is an action.\n• [3] にしては = 'for a ~, surprisingly'. Needs an unexpected evaluation.\n• [2] にしたら guesses at someone's feelings (〜だろう)."
+  },
+  {
+    "id": 82,
+    "chapter": 19,
+    "focus": "〜にしてみれば (その人の立場で気持ちを推測)",
+    "sentence": "子どもは喜んでいるが、毎日弁当を作る母親（　　）、けっこう大変だろう。",
+    "translation": "The kids are happy, but for the mother who makes their lunch boxes every day, it must be pretty hard work.",
+    "choices": [
+      "にしては",
+      "だけあって",
+      "をめぐって",
+      "にしてみれば"
+    ],
+    "answer": 3,
+    "ruleTitle": "19課-6: 〜にしたら・〜にすれば・〜にしてみれば — from ~'s point of view",
+    "explanation": "Correct: [4] にしてみれば (名 ＋ にしてみれば).\nMeans: standing in someone ELSE's shoes and guessing their feelings. After: conjecture (〜だろう, 〜かもしれない).\nvs にとって: にとって states how something rates; にしたら guesses at feelings.",
+    "trap": "⚠️ Guessing Someone Else's Feelings:\n• [1] にしては = 'for a ~, surprisingly'. Needs an unexpected evaluation.\n• [2] だけあって bans conjecture (〜だろう) after it.\n• [3] をめぐって = 'over a dispute'."
+  },
+  {
+    "id": 83,
+    "chapter": 20,
+    "focus": "〜たところ (〜してみたら・結果の発見)",
+    "sentence": "駅の忘れ物センターに問い合わせ（　　）、財布が届けられていることがわかった。",
+    "translation": "When I contacted the station's lost-and-found office, I found out my wallet had been handed in.",
+    "choices": [
+      "たきり",
+      "た末に",
+      "たあげく",
+      "たところ"
+    ],
+    "answer": 3,
+    "ruleTitle": "20課-1: 〜たところ — when I did ~, it turned out",
+    "explanation": "Correct: [4] たところ (動 た形 ＋ ところ).\nMeans: I did ~ once and this was the result or discovery. One past event. More formal than 〜たら…た, with weight on the RESULT.",
+    "trap": "⚠️ One Action → Discovery:\n• [1] たきり = 'did ~ and nothing since'. Needs a state that never moved on.\n• [3] たあげく = after a long struggle, a disappointing end. One phone call isn't a struggle, and the result is good.\n• [2] た末に = after a long process, a decision. Same problem."
+  },
+  {
+    "id": 84,
+    "chapter": 20,
+    "focus": "〜きり (それ以来ずっと同じ状態)",
+    "sentence": "兄は三年前に海外へ行った（　　）、一度も日本に帰ってきていない。",
+    "translation": "My older brother went abroad three years ago and hasn't been back to Japan even once since.",
+    "choices": [
+      "末に",
+      "ところ",
+      "きり",
+      "あげく"
+    ],
+    "answer": 2,
+    "ruleTitle": "20課-2: 〜きり — and that was the last of it",
+    "explanation": "Correct: [3] きり (動 た形 ＋ きり).\nMeans: after that action, nothing changed. The expected next step never came. Negative endings are common (一度も〜ていない). Set words: それきり, 寝たきり.",
+    "trap": "⚠️ Frozen State:\n• [2] たところ = 'when I did ~, I found...'. It needs a discovery, not an ongoing state.\n• [4] あげく and [1] 末に both need a long, difficult process before them. Going abroad once isn't that."
+  },
+  {
+    "id": 85,
+    "chapter": 20,
+    "focus": "〜あげく (さんざん〜した結果、残念な結末)",
+    "sentence": "さんざん待たされた（　　）、結局その日は診察してもらえなかった。",
+    "translation": "After being made to wait for ages, in the end I didn't even get seen by the doctor that day.",
+    "choices": [
+      "あげく",
+      "きり",
+      "ところ",
+      "とたん"
+    ],
+    "answer": 0,
+    "ruleTitle": "20課-3: 〜あげく — after all that, in the end",
+    "explanation": "Correct: [1] あげく (動 た形／名の ＋ あげく).\nMeans: after a long, difficult stretch, a disappointing end. さんざん and 結局 are the giveaways.",
+    "trap": "⚠️ Drawn-Out Struggle → Bad End:\n• [3] たところ is for one action and its discovery, not a long ordeal.\n• [2] たきり needs a state that never changed afterwards.\n• [4] たとたん (1課) = 'the instant ~'. さんざん (for ages) clashes with an instant."
+  },
+  {
+    "id": 86,
+    "chapter": 20,
+    "focus": "〜末に (いろいろ〜した後、最終的に決断)",
+    "sentence": "家族と何度も話し合った（　　）、会社を辞めて実家の店を継ぐことに決めた。",
+    "translation": "After talking it over with my family many times, I decided to leave my company and take over the family shop.",
+    "choices": [
+      "あげく",
+      "末に",
+      "きり",
+      "ところ"
+    ],
+    "answer": 1,
+    "ruleTitle": "20課-4: 〜末(に) — after ~, finally",
+    "explanation": "Correct: [2] 末に (動 た形／名の ＋ 末(に)).\nMeans: after a long process, this is where it finally landed, usually a CONCLUSION or DECISION (〜ことに決めた), good or bad.",
+    "trap": "⚠️ あげく vs 末に:\n• [1] あげく ends in disappointment. A positive, settled decision wants 末に.\n• [4] たところ = one action and its discovery. 何度も話し合った is a long process.\n• [3] たきり needs a state that never changed afterwards."
+  },
+  {
+    "id": 87,
+    "chapter": 20,
+    "focus": "〜ところだった (もう少しで〜するところ・実際は起きなかった)",
+    "sentence": "同僚が気づいてくれなかったら、うっかり大事な書類をシュレッダーに（　　）。",
+    "translation": "If my colleague hadn't noticed, I would have carelessly put an important document through the shredder.",
+    "choices": [
+      "かけるところだった",
+      "かけたきりだった",
+      "かけずじまいだった",
+      "かけたところだった"
+    ],
+    "answer": 0,
+    "ruleTitle": "20課-5: 〜ところだった — nearly ~",
+    "explanation": "Correct: [1] かけるところだった (動 辞書形 ＋ ところだった).\nMeans: one step away, but it didn't actually happen. うっかり and 危うく are giveaways. The 〜なかったら opening tells you it never happened.",
+    "trap": "⚠️ 辞書形 vs た形 Before ところ:\n• [4] たところだった = 'had just done it'. It DID happen, which the counterfactual rules out.\n• [2] たきりだった = 'did it and nothing since'. Wrong meaning.\n• [3] ずじまいだった = 'never got round to it' (regret). The opposite feeling: you're relieved it didn't happen."
+  },
+  {
+    "id": 88,
+    "chapter": 20,
+    "focus": "〜ずじまいだ (結局〜しないまま終わった・後悔)",
+    "sentence": "京都に一週間もいたのに、忙しくて有名なお寺には一つも（　　）。",
+    "translation": "I was in Kyoto for a whole week, yet I was so busy I never got round to visiting a single famous temple.",
+    "choices": [
+      "行ったきりだった",
+      "行ったあげくだった",
+      "行くところだった",
+      "行かずじまいだった"
+    ],
+    "answer": 3,
+    "ruleTitle": "20課-6: 〜ずじまいだ — never did get round to ~",
+    "explanation": "Correct: [4] 行かずじまいだった (動 ない形 (drop ない) ＋ ずじまい).\nMeans: you meant to, didn't, and now the chance is gone. Regret. Usually past tense. する → せずじまい.",
+    "trap": "⚠️ The Window Has Closed:\n• [3] ところだった = 'nearly went'. 一つも needs a negative.\n• [1] たきりだった = 'went and never came back'. Contradicts 一つも.\n• [2] あげく links two clauses. It can't end a sentence like this."
   }
 ]
