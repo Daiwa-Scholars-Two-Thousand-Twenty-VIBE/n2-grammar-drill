@@ -1,0 +1,2073 @@
+[
+  {
+    "id": "7-L11-001",
+    "type": "p7",
+    "point": "11-1",
+    "set": "regardless",
+    "s": "この奨学金は国籍（　　）、日本の大学に在籍する留学生ならだれでも申し込める。",
+    "en": "This scholarship is open to any international student enrolled at a Japanese university, regardless of nationality.",
+    "c": [
+      "を問わず",
+      "にもかかわらず",
+      "もかまわず",
+      "はさておき"
+    ],
+    "cp": [
+      "11-1",
+      "14-1",
+      "11-3",
+      "11-5"
+    ],
+    "why": [
+      "〜を問わず takes a word with a range of values (国籍, 年齢) and says the same rule covers all of them. Typical of official notices.",
+      "〜にもかかわらず means 'even though'. It needs a fact that should have blocked the result. 国籍 is a range, not a fact.",
+      "〜もかまわず criticises a person for ignoring something they should mind. A scholarship rule is not someone's careless behaviour.",
+      "〜はさておき drops a topic in conversation to move to the main point. It cannot say who is eligible."
+    ],
+    "cue": [
+      "国籍",
+      "だれでも"
+    ],
+    "tell": "A range word (国籍, 年齢) + 'anyone can' in a rule: を問わず.",
+    "lv": 1
+  },
+  {
+    "id": "7-L11-002",
+    "type": "p7",
+    "point": "11-1",
+    "s": "このコールセンターでは、昼夜（　　）専門のスタッフが電話での相談を受け付けている。",
+    "en": "At this call centre, specialist staff take phone enquiries day and night.",
+    "c": [
+      "を問わず",
+      "にもかかわらず",
+      "はともかく",
+      "をめぐって"
+    ],
+    "cp": [
+      "11-1",
+      "14-1",
+      "11-4",
+      "7-2"
+    ],
+    "why": [
+      "〜を問わず takes an opposing pair like 昼夜 or 男女 and covers both sides. 昼夜を問わず is the fixed way to say 'around the clock'.",
+      "〜にもかかわらず needs a fact that should have stopped the result, like 深夜にもかかわらず. A pair like 昼夜 is not a fact.",
+      "〜はともかく parks something less important to stress something else. Nothing is parked here: the point is that both day and night are covered.",
+      "〜をめぐって means 'over' a dispute or debate. Nobody is arguing about day and night."
+    ],
+    "cue": [
+      "昼夜"
+    ],
+    "tell": "An opposing pair (昼夜, 男女, 有無) with no も: を問わず.",
+    "lv": 1
+  },
+  {
+    "id": "7-L11-003",
+    "type": "p7",
+    "point": "11-1",
+    "set": "regardless",
+    "s": "この大会は天候（　　）実施しますので、各自雨具をご用意ください。",
+    "en": "This event will be held whatever the weather, so please bring your own rain gear.",
+    "c": [
+      "を問わず",
+      "にもかかわらず",
+      "もかまわず",
+      "どころか"
+    ],
+    "cp": [
+      "11-1",
+      "14-1",
+      "11-3",
+      "12-2"
+    ],
+    "why": [
+      "〜を問わず takes a word with a range (天候: sun, rain, wind) and says the plan holds for all of it. The organiser's plan (実施します) can follow.",
+      "〜にもかかわらず needs a fact that has happened, like 悪天候. It also bans the speaker's plan after it, and 実施します is the organiser's plan.",
+      "〜もかまわず describes someone carelessly ignoring what they should mind. It also bans the speaker's own intention after it.",
+      "〜どころか needs two things far apart on one scale (far from A, even B). 天候 and holding the event are not on one scale."
+    ],
+    "cue": [
+      "天候",
+      "実施します"
+    ],
+    "tell": "A range word + the organiser's plan: を問わず. にもかかわらず needs a fact and bans plans after it.",
+    "lv": 2
+  },
+  {
+    "id": "7-L11-004",
+    "type": "p7",
+    "point": "11-2",
+    "set": "regardless",
+    "s": "どのような事情があるか（　　）、無断欠勤は認められません。",
+    "en": "Whatever your circumstances, absence without notice is not permitted.",
+    "c": [
+      "にかかわらず",
+      "にもかかわらず",
+      "もかまわず",
+      "に応じて"
+    ],
+    "cp": [
+      "11-2",
+      "14-1",
+      "11-3",
+      "9-4"
+    ],
+    "why": [
+      "〜にかかわらず can take a question-word clause (どのような〜か, どちらを選ぶか): whatever the answer, the result is the same.",
+      "〜にもかかわらず has も and means 'even though'. It needs a settled fact, not an open question like どのような事情があるか.",
+      "〜もかまわず describes someone carelessly ignoring what they should mind. This sentence states a rule, not a person's behaviour.",
+      "〜に応じて means the result changes to match the variable. Here the result never changes: absence is not allowed."
+    ],
+    "cue": [
+      "どのような事情があるか",
+      "認められません"
+    ],
+    "tell": "Question word + か, and the result never changes: にかかわらず. No も.",
+    "lv": 2
+  },
+  {
+    "id": "7-L11-005",
+    "type": "p7",
+    "point": "11-2",
+    "set": "regardless",
+    "s": "商品をお買い上げになる、ならない（　　）、ご試着はご自由にどうぞ。",
+    "en": "Whether or not you buy anything, you are welcome to try items on.",
+    "c": [
+      "にかかわらず",
+      "にもかかわらず",
+      "もかまわず",
+      "に限らず"
+    ],
+    "cp": [
+      "11-2",
+      "14-1",
+      "11-3",
+      "6-1"
+    ],
+    "why": [
+      "〜にかかわらず takes a yes or no pair (なる・ならない, 行く・行かない): either way, the offer stands.",
+      "〜にもかかわらず needs a settled fact and bans invitations and requests after it. ご自由にどうぞ is an invitation.",
+      "〜もかまわず criticises someone's careless act. It also bans invitations and requests after it.",
+      "〜に限らず means 'not only X, but wider too' (子どもに限らず大人も). A yes or no pair is not something you can widen."
+    ],
+    "cue": [
+      "お買い上げになる、ならない",
+      "ご自由にどうぞ"
+    ],
+    "tell": "A yes or no verb pair (する・しない) + an invitation or request: にかかわらず.",
+    "lv": 2
+  },
+  {
+    "id": "7-L11-006",
+    "type": "p7",
+    "point": "11-2",
+    "set": "regardless",
+    "s": "屋外コンサートは、当日（　　）予定どおり開催します。",
+    "en": "The outdoor concert will go ahead as planned, whether or not it rains on the day.",
+    "c": [
+      "雨が降るかどうかにかかわらず",
+      "雨が降ったにもかかわらず",
+      "雨が降るかどうかもかまわず",
+      "雨が降ろうものなら"
+    ],
+    "cp": [
+      "11-2",
+      "14-1",
+      "11-3",
+      "15-3"
+    ],
+    "why": [
+      "〜かどうかにかかわらず: rain or no rain, the plan stays the same. It fits a future event and the organiser's plan.",
+      "〜にもかかわらず needs a fact that has already happened. The concert is still ahead, and the organiser's plan (開催します) cannot follow it.",
+      "〜もかまわず criticises someone's careless behaviour and bans the speaker's intention after it. 開催します is the organiser's intention.",
+      "〜(よ)うものなら warns that a disaster would follow. 'Held as planned' is not a disaster."
+    ],
+    "cue": [
+      "当日",
+      "予定どおり開催します"
+    ],
+    "tell": "Future event, either way, organiser's plan: かどうかにかかわらず. にもかかわらず needs a past fact.",
+    "lv": 3
+  },
+  {
+    "id": "7-L11-007",
+    "type": "p7",
+    "point": "11-3",
+    "set": "regardless",
+    "s": "彼は周りの人が迷惑そうな顔をしている（　　）、電車の中で大声で電話を続けた。",
+    "en": "Without caring that the people around him looked annoyed, he kept talking loudly on the phone on the train.",
+    "c": [
+      "のもかまわず",
+      "のを問わず",
+      "のはともかく",
+      "どころか"
+    ],
+    "cp": [
+      "11-3",
+      "11-1",
+      "11-4",
+      "12-2"
+    ],
+    "why": [
+      "普通形 + の + もかまわず: someone acts without minding what a normal person would mind. The speaker's criticism of him is built in.",
+      "〜を問わず takes a range word or a pair (年齢, 男女). A whole clause about people looking annoyed is neither.",
+      "〜はともかく parks X to stress something that matters more (X はともかく、Y は〜). No second, more important point follows here; there is only what he did.",
+      "〜どころか contrasts two things far apart on one scale (far from A, even B). Looking annoyed and phoning loudly are not on one scale."
+    ],
+    "cue": [
+      "迷惑そうな顔をしている",
+      "大声で電話を続けた"
+    ],
+    "tell": "Someone ignores what they should mind (others' annoyance, being seen): のもかまわず.",
+    "lv": 2
+  },
+  {
+    "id": "7-L11-008",
+    "type": "p7",
+    "point": "11-3",
+    "s": "母は自分の服が汚れる（　　）、泥だらけの子犬を抱き上げた。",
+    "en": "Without caring that her own clothes would get dirty, my mother picked up the muddy puppy.",
+    "c": [
+      "のもかまわず",
+      "のはさておき",
+      "のをめぐって",
+      "どころか"
+    ],
+    "cp": [
+      "11-3",
+      "11-5",
+      "7-2",
+      "12-2"
+    ],
+    "why": [
+      "普通形 + の + もかまわず: someone acts without minding what most people would mind (dirty clothes). It describes another person's behaviour, here with admiration rather than criticism.",
+      "〜はさておき is the speaker dropping a topic to get to the main one. It cannot describe what another person ignored.",
+      "〜をめぐって means 'over' a dispute. Nobody is arguing about dirty clothes.",
+      "〜どころか says the opposite of X is true (far from X). But her clothes did get dirty; that is the point of the sentence."
+    ],
+    "cue": [
+      "服が汚れる",
+      "抱き上げた"
+    ],
+    "tell": "Someone else acts without minding a cost most people would mind (dirt, being seen): のもかまわず.",
+    "lv": 2
+  },
+  {
+    "id": "7-L11-009",
+    "type": "p7",
+    "point": "11-4",
+    "set": "regardless",
+    "s": "実際に役に立つかどうか（　　）、一度試してみる価値はあると思う。",
+    "en": "Whether or not it actually turns out to be useful, I think it's worth trying once.",
+    "c": [
+      "はともかく",
+      "にもかかわらず",
+      "もかまわず",
+      "をめぐって"
+    ],
+    "cp": [
+      "11-4",
+      "14-1",
+      "11-3",
+      "7-2"
+    ],
+    "why": [
+      "〜はともかく parks a question for now (〜かどうか is fine before it) because what follows matters more: it is worth a try.",
+      "〜にもかかわらず needs a settled fact. 〜かどうか is still open, so it cannot come before にもかかわらず.",
+      "〜もかまわず criticises someone for ignoring what they should mind. Here the speaker gives an opinion, not a report of careless behaviour.",
+      "〜をめぐって means 'over' a dispute and needs a debate or conflict after it. The sentence ends in a calm opinion."
+    ],
+    "cue": [
+      "かどうか",
+      "価値はあると思う"
+    ],
+    "tell": "Park an open question (〜かどうか) and stress what matters more: はともかく.",
+    "lv": 1
+  },
+  {
+    "id": "7-L11-010",
+    "type": "p7",
+    "point": "11-4",
+    "set": "regardless",
+    "s": "この掃除機は、デザイン（　　）、吸い込む力の強さは他社の製品よりずっと上だ。",
+    "en": "Its design aside, this vacuum cleaner has far stronger suction than other makers' products.",
+    "c": [
+      "はともかく",
+      "を問わず",
+      "もかまわず",
+      "どころか"
+    ],
+    "cp": [
+      "11-4",
+      "11-1",
+      "11-3",
+      "12-2"
+    ],
+    "why": [
+      "〜はともかく sets X aside as less important, then praises what matters more (the suction). Typical shape: X はともかく、Y は〜.",
+      "〜を問わず needs a range or a pair (年齢, 男女). One product has one design, so there is no range here.",
+      "〜もかまわず describes a person ignoring something they should mind. A vacuum cleaner does not act.",
+      "〜どころか contrasts two points on one scale (far from A, even B). Design and suction are different scales."
+    ],
+    "cue": [
+      "デザイン",
+      "吸い込む力の強さは"
+    ],
+    "tell": "X aside, Y is what counts (X はともかく、Y は + praise): はともかく.",
+    "lv": 1
+  },
+  {
+    "id": "7-L11-011",
+    "type": "p7",
+    "point": "11-5",
+    "set": "regardless",
+    "s": "堅い話（　　）、まずは乾杯しましょう。",
+    "en": "Serious talk aside, let's start with a toast.",
+    "c": [
+      "はさておき",
+      "を問わず",
+      "もかまわず",
+      "にかかわらず"
+    ],
+    "cp": [
+      "11-5",
+      "11-1",
+      "11-3",
+      "11-2"
+    ],
+    "why": [
+      "〜はさておき drops a topic for now and moves on to what comes first. An invitation like 〜ましょう can follow.",
+      "〜を問わず needs a range or a pair (年齢, 男女). 堅い話 has neither.",
+      "〜もかまわず criticises careless behaviour, and an invitation (〜ましょう) cannot follow it.",
+      "〜にかかわらず needs a range, a pair or 疑問詞〜か. 堅い話 is a single topic, not a range."
+    ],
+    "cue": [
+      "堅い話",
+      "乾杯しましょう"
+    ],
+    "tell": "Drop the topic for now and do this first (〜ましょう): はさておき.",
+    "lv": 1
+  },
+  {
+    "id": "7-L11-012",
+    "type": "p7",
+    "point": "11-5",
+    "set": "regardless",
+    "s": "A「昨日の試合、最後まで見ました？すごかったですね。」B「ええ、本当に。それ（　　）、例の報告書はもう出しましたか。」",
+    "en": "A: 'Did you watch yesterday's match to the end? It was amazing.' B: 'Yes, it really was. That aside, have you handed in that report yet?'",
+    "c": [
+      "はさておき",
+      "どころか",
+      "にもかかわらず",
+      "を問わず"
+    ],
+    "cp": [
+      "11-5",
+      "12-2",
+      "14-1",
+      "11-1"
+    ],
+    "why": [
+      "それはさておき closes the topic just discussed (the match) and moves to the real business (the report).",
+      "それどころか means 'far from it, in fact even more'. It needs a stronger statement on the same line, not a new question.",
+      "それにもかかわらず means 'even so' and needs a result that defies the last fact. B is changing the subject, not reporting a result.",
+      "〜を問わず needs a range or a pair (年齢, 男女). それ, the chat about the match, is neither."
+    ],
+    "cue": [
+      "すごかったですね",
+      "例の報告書は"
+    ],
+    "tell": "Close the chat you were having and switch to business: それはさておき.",
+    "lv": 2
+  },
+  {
+    "id": "7-L12-001",
+    "type": "p7",
+    "point": "12-1",
+    "set": "denial",
+    "s": "一度も授業に出ていない彼が、試験で満点を取れる（　　）。",
+    "en": "There's no way he could get full marks on the exam when he hasn't attended a single class.",
+    "c": [
+      "わけがない",
+      "わけではない",
+      "というものでもない",
+      "わけにはいかない"
+    ],
+    "cp": [
+      "12-1",
+      "12-4",
+      "12-5",
+      "18-2"
+    ],
+    "why": [
+      "〜わけがない is total denial: the speaker is certain it cannot happen. Not one class attended makes full marks unthinkable.",
+      "〜わけではない is partial denial ('not necessarily', 'not entirely'). The context calls for certainty, not a hedge.",
+      "〜というものでもない denies a general rule of thumb, often after 〜ば. This is about one specific student.",
+      "〜わけにはいかない means 'I can't very well' for social reasons and needs a deliberate action. 取れる is a potential verb, and nothing social blocks a good score."
+    ],
+    "cue": [
+      "一度も授業に出ていない",
+      "満点を取れる"
+    ],
+    "tell": "An outcome the facts make unthinkable, said with certainty: わけがない (total denial).",
+    "lv": 2
+  },
+  {
+    "id": "7-L12-002",
+    "type": "p7",
+    "point": "12-1",
+    "set": "wake",
+    "s": "あんなに口の堅い山田さんが、会議の内容を外部の人に漏らす（　　）。何かの誤解だろう。",
+    "en": "There's no way Yamada, who is so discreet, would leak what was said in the meeting to outsiders. It must be some misunderstanding.",
+    "c": [
+      "わけがない",
+      "わけではない",
+      "わけにはいかない",
+      "わけだ"
+    ],
+    "cp": [
+      "12-1",
+      "12-4",
+      "18-2",
+      "IV-10"
+    ],
+    "why": [
+      "〜わけがない: total denial. Knowing how discreet Yamada is, the speaker is sure he did not leak it, so it must be a misunderstanding.",
+      "〜わけではない only denies part of something ('not entirely'). The speaker is not hedging; he rejects the idea completely.",
+      "〜わけにはいかない is about the speaker's own social limits (I can't very well). It cannot judge whether someone else did something.",
+      "〜わけだ means 'so it follows'. It would accept that he leaked it, which clashes with 何かの誤解だろう."
+    ],
+    "cue": [
+      "あんなに口の堅い山田さんが",
+      "何かの誤解だろう"
+    ],
+    "tell": "あんな〜な人が + an act out of character + certainty: わけがない.",
+    "lv": 2
+  },
+  {
+    "id": "7-L12-003",
+    "type": "p7",
+    "point": "12-1",
+    "set": "wake",
+    "s": "どんなに優秀でも、入社したばかりの新人がこんな大きな取引を一人で（　　）。",
+    "en": "However talented they are, there's no way a brand-new hire could close a deal this big on their own.",
+    "c": [
+      "まとめられるわけがない",
+      "まとめられないわけではない",
+      "まとめさせるわけにはいかない",
+      "まとめられるわけだ"
+    ],
+    "cp": [
+      "12-1",
+      "12-4",
+      "18-2",
+      "IV-10"
+    ],
+    "why": [
+      "可能形 + わけがない: however talented, a newcomer simply cannot do it. どんなに〜でも sets up exactly this kind of total denial.",
+      "〜ないわけではない says 'it is not impossible'. That clashes with どんなに優秀でも, which means talent would not change the answer.",
+      "The subject is 新人が, so the causative まとめさせる does not fit. 〜わけにはいかない is also about the speaker's own social limits.",
+      "〜わけだ means 'so it follows that they can'. That contradicts どんなに優秀でも."
+    ],
+    "cue": [
+      "どんなに優秀でも",
+      "入社したばかりの新人が"
+    ],
+    "tell": "どんなに〜でも + clearly impossible: 〜られるわけがない.",
+    "lv": 3
+  },
+  {
+    "id": "7-L12-004",
+    "type": "p7",
+    "point": "12-2",
+    "set": "not-only",
+    "s": "薬を飲んだのに、熱は下がる（　　）、かえって上がってしまった。",
+    "en": "Even though I took medicine, far from going down, my fever actually went up.",
+    "c": [
+      "どころか",
+      "ばかりか",
+      "上に",
+      "ものか"
+    ],
+    "cp": [
+      "12-2",
+      "6-3",
+      "6-5",
+      "12-3"
+    ],
+    "why": [
+      "〜どころか: reality is the opposite of A. かえって ('on the contrary') is the giveaway.",
+      "〜ばかりか adds something in the same direction ('not only A, but also B'). 下がる and 上がる point in opposite directions.",
+      "〜上に also stacks two things in the same direction. It cannot link opposites.",
+      "〜ものか is an angry denial at the end of a sentence. It cannot link two clauses."
+    ],
+    "cue": [
+      "かえって"
+    ],
+    "tell": "Far from A, the opposite happened (かえって, 逆に): どころか.",
+    "lv": 1
+  },
+  {
+    "id": "7-L12-005",
+    "type": "p7",
+    "point": "12-2",
+    "set": "not-only",
+    "s": "生活がかなり苦しいらしく、彼には貯金（　　）、友人からの借金が百万円以上もあるそうだ。",
+    "en": "He's apparently struggling to get by: far from having savings, he owes friends over a million yen.",
+    "c": [
+      "どころか",
+      "ばかりか",
+      "はもとより",
+      "に限らず"
+    ],
+    "cp": [
+      "12-2",
+      "6-3",
+      "6-4",
+      "6-1"
+    ],
+    "why": [
+      "〜どころか: far from A (savings), the opposite B (debt). 生活がかなり苦しい tells you he has no savings.",
+      "〜ばかりか means 'not only A but also B', so he would have savings too. That clashes with 生活がかなり苦しい.",
+      "〜はもとより means 'A, of course, and also B'. It also says he has savings, which the first clause rules out.",
+      "〜に限らず means 'not limited to A'. It still assumes he has savings, so it clashes with 生活がかなり苦しい."
+    ],
+    "cue": [
+      "生活がかなり苦しいらしく",
+      "借金"
+    ],
+    "tell": "Far from A, the opposite B (savings → debt): どころか. ばかりか only adds in the same direction.",
+    "lv": 2
+  },
+  {
+    "id": "7-L12-006",
+    "type": "p7",
+    "point": "12-3",
+    "set": "denial",
+    "s": "A「駅前の新しいラーメン屋、はやると思う？」B「店員があんなに失礼なんだから、客が集まる（　　）。」",
+    "en": "A: 'Do you think the new ramen shop by the station will catch on?' B: 'With staff that rude? As if customers would ever flock there!'",
+    "c": [
+      "ものか",
+      "わけではない",
+      "というものではない",
+      "ものなら"
+    ],
+    "cp": [
+      "12-3",
+      "12-4",
+      "12-5",
+      "15-2"
+    ],
+    "why": [
+      "〜ものか: a heated, spoken 'as if!'. B denies the idea completely, with feeling. Casual speech fits it.",
+      "〜わけではない is a soft, partial denial ('not entirely'). B is not hedging; he rejects the idea outright.",
+      "〜というものではない denies a general rule, often after 〜ば. B is judging one shop, not stating a rule.",
+      "〜ものなら means 'if only I could' and needs a potential verb and a wish after it. It cannot end the sentence."
+    ],
+    "cue": [
+      "はやると思う",
+      "あんなに失礼なんだから"
+    ],
+    "tell": "Casual, heated total denial of a fact: 〜ものか (〜もんか).",
+    "lv": 2
+  },
+  {
+    "id": "7-L12-007",
+    "type": "p7",
+    "point": "12-3",
+    "s": "母「あの子が自分から部屋を（　　）。いつも私が言わないと何もしないんだから。」",
+    "en": "Mother: 'As if that child would ever tidy his room on his own! He never does a thing unless I tell him.'",
+    "c": [
+      "片付けるものですか",
+      "片付けるものですから",
+      "片付けたものです",
+      "片付けられるものなら"
+    ],
+    "cp": [
+      "12-3",
+      "16-2",
+      "26-2A",
+      "15-2"
+    ],
+    "why": [
+      "〜ものですか is the polite spoken form of 〜ものか: 'as if he would!'. Often used by women, it fits the mother's irritation.",
+      "〜ものですから gives an excuse ('it's just that he tidies'). The next sentence says he never does, so it contradicts.",
+      "た形 + ものです looks back fondly on a past habit ('he used to tidy'). The next sentence is about what he always does now.",
+      "〜ものなら needs a wish or a dare after it in the same sentence. It cannot end with a full stop."
+    ],
+    "cue": [
+      "いつも私が言わないと何もしない"
+    ],
+    "tell": "An annoyed 'as if!' about someone else's behaviour: 〜ものですか, not 〜ものですから.",
+    "lv": 3
+  },
+  {
+    "id": "7-L12-008",
+    "type": "p7",
+    "point": "12-4",
+    "set": "denial",
+    "s": "日本に長く住んでいるからといって、必ずしも敬語が完璧に使える（　　）。",
+    "en": "Just because someone has lived in Japan a long time doesn't necessarily mean they can use keigo perfectly.",
+    "c": [
+      "わけではない",
+      "わけがない",
+      "ものか",
+      "どころではない"
+    ],
+    "cp": [
+      "12-4",
+      "12-1",
+      "12-3",
+      "18-5"
+    ],
+    "why": [
+      "〜わけではない is partial denial: not necessarily. 必ずしも and 〜からといって are near-certain signals for it.",
+      "〜わけがない is total denial ('no way'). 必ずしも cannot pair with a total denial.",
+      "〜ものか is an angry, spoken total denial. Same problem as わけがない, and the register is wrong too.",
+      "〜どころではない means 'far from that' or 'no room for it'. Neither pairs with 必ずしも, which needs a partial denial."
+    ],
+    "cue": [
+      "からといって",
+      "必ずしも"
+    ],
+    "tell": "必ずしも or 〜からといって: partial denial, わけではない (or とは限らない).",
+    "lv": 2
+  },
+  {
+    "id": "7-L12-009",
+    "type": "p7",
+    "point": "12-4",
+    "set": "wake",
+    "s": "料理は好きだが、必ずしも毎日自分で作っている（　　）。忙しい日はコンビニの弁当で済ませることもある。",
+    "en": "I like cooking, but I don't necessarily make my own meals every day. On busy days I sometimes make do with a convenience-store bento.",
+    "c": [
+      "わけではない",
+      "わけがない",
+      "わけだ",
+      "わけにはいかない"
+    ],
+    "cp": [
+      "12-4",
+      "12-1",
+      "IV-10",
+      "18-2"
+    ],
+    "why": [
+      "〜わけではない is partial denial: not every day. 必ずしも must end in a partial denial, and 'sometimes a bento' shows it is only partly true.",
+      "〜わけがない is total denial ('no way'). 必ずしも ('not necessarily') cannot pair with a total denial.",
+      "〜わけだ means 'so it follows', an affirmative. 必ずしも needs a negative ending, and the next sentence says you don't cook every day.",
+      "〜わけにはいかない means 'I can't very well' for social reasons. 必ずしも does not pair with it, and nothing social is stopping you."
+    ],
+    "cue": [
+      "必ずしも",
+      "毎日",
+      "済ませることもある"
+    ],
+    "tell": "必ずしも + an 'all' word (毎日, いつも) partly denied: わけではない, never わけがない.",
+    "lv": 2
+  },
+  {
+    "id": "7-L12-010",
+    "type": "p7",
+    "point": "12-4",
+    "set": "wake",
+    "s": "今回の値上げは品質を守るための判断であり、決して利益を増やすことを目的としている（　　）。",
+    "en": "This price rise was a decision made to protect quality. It is by no means aimed at increasing our profits.",
+    "c": [
+      "わけではございません",
+      "わけでございます",
+      "わけにはまいりません",
+      "というものではございません"
+    ],
+    "cp": [
+      "12-4",
+      "IV-10",
+      "18-2",
+      "12-5"
+    ],
+    "why": [
+      "〜わけではございません politely denies a reading someone might take (that it is about profit). 決して〜わけではない is a set pairing.",
+      "〜わけでございます is the polite 〜わけだ ('that is why'), an affirmative. 決して must be followed by a negative, so it cannot end this sentence.",
+      "〜わけにはまいりません means 'we cannot very well do it' for social reasons. The company is not refusing an action.",
+      "〜というものではない denies a rule of thumb (doing X alone is not enough). Nobody is claiming such a rule here."
+    ],
+    "cue": [
+      "決して",
+      "品質を守るための判断であり"
+    ],
+    "tell": "決して + 〜わけではない: politely correcting a wrong reading of your motive.",
+    "lv": 3
+  },
+  {
+    "id": "7-L12-011",
+    "type": "p7",
+    "point": "12-5",
+    "set": "wake",
+    "s": "ただ長い時間机に向かっていれば成績が上がる（　　）。大切なのは勉強の中身だ。",
+    "en": "Just sitting at a desk for long hours doesn't automatically raise your grades. What matters is what you actually study.",
+    "c": [
+      "というものではない",
+      "どころではない",
+      "わけにはいかない",
+      "わけだ"
+    ],
+    "cp": [
+      "12-5",
+      "18-5",
+      "18-2",
+      "IV-10"
+    ],
+    "why": [
+      "〜ば + というものではない: meeting one condition (long hours) does not automatically give the result. It denies a rule of thumb.",
+      "〜どころではない means 'in no position to' (no time or room for it). Nothing is crowding out the grades.",
+      "〜わけにはいかない means 'I can't very well' for social reasons. Grades going up is not a social act.",
+      "〜わけだ means 'so it follows'. It would agree with the rule, but the next sentence rejects it."
+    ],
+    "cue": [
+      "ただ",
+      "向かっていれば",
+      "大切なのは勉強の中身だ"
+    ],
+    "tell": "ただ〜ば + a result: というものではない. One condition alone is not enough.",
+    "lv": 2
+  },
+  {
+    "id": "7-L12-012",
+    "type": "p7",
+    "point": "12-5",
+    "s": "部下を育てるには、ただ厳しく叱れば（　　）。一人一人に合った指導が必要だ。",
+    "en": "To develop your staff, it's not enough just to scold them hard. Each person needs guidance that suits them.",
+    "c": [
+      "いいというものではない",
+      "いいに違いない",
+      "いいわけだ",
+      "いいどころではない"
+    ],
+    "cp": [
+      "12-5",
+      "22-5",
+      "IV-10",
+      "18-5"
+    ],
+    "why": [
+      "〜ばいいというものではない: one method alone does not guarantee the result. The next sentence gives what is really needed.",
+      "〜に違いない says the speaker is sure it is true. That would back harsh scolding, but the next sentence rejects it.",
+      "〜わけだ means 'so it follows'. It agrees that scolding is enough, which the next sentence denies.",
+      "〜どころではない means 'in no position to' or 'far beyond that level'. Neither meaning fits 'scolding is fine'."
+    ],
+    "cue": [
+      "ただ厳しく叱れば",
+      "一人一人に合った指導が必要だ"
+    ],
+    "tell": "ただ〜ばいい, then 'not so': いいというものではない.",
+    "lv": 3
+  },
+  {
+    "id": "7-L13-001",
+    "type": "p7",
+    "point": "13-1",
+    "set": "topic",
+    "s": "「フードロス」（　　）、まだ食べられるのに捨てられてしまう食品のことである。",
+    "en": "'Food loss' refers to food that gets thrown away even though it could still be eaten.",
+    "c": [
+      "とは",
+      "となると",
+      "といったら",
+      "といえば"
+    ],
+    "cp": [
+      "13-1",
+      "13-4",
+      "13-5",
+      "13-2A"
+    ],
+    "why": [
+      "〜とは defines a word. The frame 「X」とは、〜のことである is fixed, and common in reading passages.",
+      "〜となると needs a change in someone's behaviour, or a judgement about a real prospect. Nothing like that follows.",
+      "〜といったら stresses an extreme degree ('the X was something else'). A definition is not a degree.",
+      "〜といえば hops from a word to a related story ('speaking of'). It does not define anything."
+    ],
+    "cue": [
+      "「フードロス」",
+      "のことである"
+    ],
+    "tell": "Term in 「」 + 〜のことである／〜という意味だ: とは.",
+    "lv": 1
+  },
+  {
+    "id": "7-L13-002",
+    "type": "p7",
+    "point": "13-1",
+    "s": "「ワーク・ライフ・バランス」とは、仕事と生活のどちらか一方を犠牲にせず、両方を（　　）。",
+    "en": "'Work-life balance' means making both work and private life fulfilling without sacrificing either one.",
+    "c": [
+      "充実させることである",
+      "充実させるわけがない",
+      "充実させるものか",
+      "充実させるどころではない"
+    ],
+    "cp": [
+      "13-1",
+      "12-1",
+      "12-3",
+      "18-5"
+    ],
+    "why": [
+      "〜とは opens a definition, so the sentence must close like one: 〜ことである or 〜という意味だ.",
+      "〜わけがない is a total denial ('no way'). A definition does not end with a denial.",
+      "〜ものか is a heated spoken denial. It clashes with a written definition.",
+      "〜どころではない means 'in no position to'. It does not complete a definition."
+    ],
+    "cue": [
+      "「ワーク・ライフ・バランス」とは"
+    ],
+    "tell": "「X」とは opens a definition: close it with 〜ことである.",
+    "lv": 3
+  },
+  {
+    "id": "7-L13-003",
+    "type": "p7",
+    "point": "13-2A",
+    "set": "topic",
+    "s": "A「来月、沖縄に出張することになったんです。」B「沖縄（　　）、先週うちの姉も旅行で行ってきましたよ。」",
+    "en": "A: 'I'm going on a business trip to Okinawa next month.' B: 'Speaking of Okinawa, my sister went there on holiday just last week.'",
+    "c": [
+      "といえば",
+      "とは",
+      "となると",
+      "といっても"
+    ],
+    "cp": [
+      "13-2A",
+      "13-1",
+      "13-4",
+      "14-5"
+    ],
+    "why": [
+      "〜といえば picks up a word the other person just said (沖縄) and hops to your own related story.",
+      "〜とは defines a word or states its essence. B is not defining Okinawa.",
+      "〜となると needs someone's behaviour to change, or a judgement about a real prospect. B is just telling a story.",
+      "〜といっても says 'I say X, but it's less than it sounds'. B is not shrinking anything."
+    ],
+    "cue": [
+      "沖縄に出張する",
+      "うちの姉も"
+    ],
+    "tell": "Pick up the word just said and hop to a related story: といえば (speaking of).",
+    "lv": 1
+  },
+  {
+    "id": "7-L13-004",
+    "type": "p7",
+    "point": "13-2A",
+    "s": "部長「来週の会議の準備は進んでる？」部下「はい。会議（　　）、会議室のプロジェクターがまだ修理中だそうです。」",
+    "en": "Manager: 'How are preparations for next week's meeting going?' Staff: 'Fine. Speaking of the meeting, apparently the projector in the meeting room is still being repaired.'",
+    "c": [
+      "といえば",
+      "といっても",
+      "とは",
+      "にしても"
+    ],
+    "cp": [
+      "13-2A",
+      "14-5",
+      "13-1",
+      "15-6"
+    ],
+    "why": [
+      "〜といえば picks up 会議 from the manager's question and moves on to a related point (the projector).",
+      "〜といっても lowers the image of X ('I say meeting, but it's only a small one'). Nothing is being played down.",
+      "〜とは defines a word. The staff member is not defining 'meeting'.",
+      "〜にしても means 'even if' or 'even granting X'. There is no concession here, just a related piece of news."
+    ],
+    "cue": [
+      "会議の準備",
+      "プロジェクターがまだ修理中"
+    ],
+    "tell": "Take the word just said and add related news: といえば.",
+    "lv": 2
+  },
+  {
+    "id": "7-L13-005",
+    "type": "p7",
+    "point": "13-2B",
+    "set": "topic",
+    "s": "この部屋は駅から遠い（　　）遠いが、その分家賃が安くて静かだ。",
+    "en": "This apartment is far from the station, I suppose, but in exchange the rent is cheap and it's quiet.",
+    "c": [
+      "といえば",
+      "となると",
+      "どころか",
+      "とは"
+    ],
+    "cp": [
+      "13-2B",
+      "13-4",
+      "12-2",
+      "13-1"
+    ],
+    "why": [
+      "X といえば X が: grant the point for a moment, then say what really matters. The same word on both sides (遠い…遠い) is the giveaway.",
+      "〜となると needs a noun and a change in behaviour, or a real prospect. 遠いとなると遠い is not Japanese.",
+      "〜どころか means 'far from X'. 遠いどころか遠い contradicts itself.",
+      "〜とは defines a word. 遠いとは遠いが is not a pattern."
+    ],
+    "cue": [
+      "駅から遠い",
+      "遠いが"
+    ],
+    "tell": "Same word on both sides of the blank (遠い…遠いが): といえば. Grant it, then the real point.",
+    "lv": 1
+  },
+  {
+    "id": "7-L13-006",
+    "type": "p7",
+    "point": "13-2B",
+    "s": "A「新しく入った田中さん、仕事が遅いって聞いたけど、どう？」B「（　　）、その分ミスがほとんどないから助かっているよ。」",
+    "en": "A: 'I heard the new guy, Tanaka, is slow at his work. How is he?' B: 'Slow, I suppose, yes, but he makes hardly any mistakes to make up for it, so he's a real help.'",
+    "c": [
+      "遅いといえば遅いけど",
+      "遅いどころか速いけど",
+      "遅いわけがないけど",
+      "遅いにもかかわらず"
+    ],
+    "cp": [
+      "13-2B",
+      "12-2",
+      "12-1",
+      "14-1"
+    ],
+    "why": [
+      "X といえば X けど grants the point (yes, he is slow), then gives the real one. その分 ('to make up for it') confirms he is slow.",
+      "遅いどころか速い says he is actually fast. Then その分 has nothing to make up for.",
+      "遅いわけがない denies he is slow at all. その分 needs the slowness to be true.",
+      "〜にもかかわらず is stiff and needs a surprising result. 'Slow, and in exchange few mistakes' is a trade-off, not a surprise."
+    ],
+    "cue": [
+      "仕事が遅いって聞いた",
+      "その分"
+    ],
+    "tell": "Concede by repeating the word (遅いといえば遅い), then the trade-off: といえば〜けど.",
+    "lv": 3
+  },
+  {
+    "id": "7-L13-007",
+    "type": "p7",
+    "point": "13-3",
+    "s": "この町の名物（　　）、何と言っても川で取れる魚の塩焼きだ。",
+    "en": "When you think of this town's local speciality, it has to be salt-grilled fish from the river.",
+    "c": [
+      "といえば",
+      "といっても",
+      "にしても",
+      "はともかく"
+    ],
+    "cp": [
+      "13-3",
+      "14-5",
+      "15-6",
+      "11-4"
+    ],
+    "why": [
+      "〜といえば names what springs to mind first from X. 何と言っても ('above all') is a typical follow-up.",
+      "〜といっても lowers the image of X ('I say speciality, but it's nothing much'). 何と言っても does the opposite.",
+      "〜にしても means 'even if' or 'even granting X'. There is nothing to concede here.",
+      "〜はともかく sets X aside to talk about something else. But the sentence goes on to name the speciality itself."
+    ],
+    "cue": [
+      "名物",
+      "何と言っても"
+    ],
+    "tell": "X + what springs to mind first (何と言っても, やはり, まず): といえば／というと.",
+    "lv": 1
+  },
+  {
+    "id": "7-L13-008",
+    "type": "p7",
+    "point": "13-3",
+    "s": "子どものころの夏休み（　　）、近所の友達と毎日のように虫を捕りに行ったことを思い出す。",
+    "en": "When I think of my childhood summer holidays, I remember going out to catch insects with the neighbourhood kids almost every day.",
+    "c": [
+      "というと",
+      "とは",
+      "といっても",
+      "にしても"
+    ],
+    "cp": [
+      "13-3",
+      "13-1",
+      "14-5",
+      "15-6"
+    ],
+    "why": [
+      "〜というと brings up the memory or image linked to X. 〜を思い出す is a natural follow-up.",
+      "〜とは needs a definition ending (〜のことだ). This sentence ends with a memory, not a definition.",
+      "〜といっても lowers the image of X ('I say summer holiday, but it was short'). Nothing is being played down.",
+      "〜にしても means 'even if' or 'even granting X'. A memory is not a concession."
+    ],
+    "cue": [
+      "思い出す"
+    ],
+    "tell": "X + a memory or image that comes to mind (思い出す, 思い浮かぶ): というと／といえば.",
+    "lv": 2
+  },
+  {
+    "id": "7-L13-009",
+    "type": "p7",
+    "point": "13-4",
+    "s": "普段はおとなしい兄だが、サッカーの話（　　）、急に声が大きくなって止まらなくなる。",
+    "en": "My older brother is usually quiet, but once the talk turns to football, his voice suddenly gets loud and he won't stop.",
+    "c": [
+      "となると",
+      "とは",
+      "といっても",
+      "からといって"
+    ],
+    "cp": [
+      "13-4",
+      "13-1",
+      "14-5",
+      "14-6"
+    ],
+    "why": [
+      "〜となると: when topic X comes up, the person turns into someone else. A visible change in behaviour must follow, and it does.",
+      "〜とは defines a word. Nothing here is being defined.",
+      "〜といっても lowers the image of X ('I say football talk, but...'). Nothing is being played down.",
+      "〜からといって needs 普通形 with だ (サッカーの話だからといって) and a 'doesn't mean' ending such as 〜とは限らない."
+    ],
+    "cue": [
+      "普段はおとなしい",
+      "急に声が大きくなって"
+    ],
+    "tell": "Usually calm, but topic X sets them off: (のこと)となると.",
+    "lv": 1
+  },
+  {
+    "id": "7-L13-010",
+    "type": "p7",
+    "point": "13-4",
+    "s": "料理はほとんどしない夫だが、カレー（　　）、スパイスを何種類も買いそろえて一から作る。",
+    "en": "My husband hardly ever cooks, but when it comes to curry, he buys in a whole range of spices and makes it from scratch.",
+    "c": [
+      "のこととなると",
+      "のこととは",
+      "のことといっても",
+      "のことはともかく"
+    ],
+    "cp": [
+      "13-4",
+      "13-1",
+      "14-5",
+      "11-4"
+    ],
+    "why": [
+      "名 + のこととなると: when that subject comes up, the person behaves unlike their usual self. A husband who hardly cooks suddenly goes all out.",
+      "〜とは defines a word. カレーのこととは would need a definition ending (〜のことだ).",
+      "〜といっても lowers the image of X ('I say curry, but it's nothing much'). Here his effort goes up, not down.",
+      "〜はともかく sets X aside to talk about something else. But curry is exactly what he goes all out for."
+    ],
+    "cue": [
+      "ほとんどしない",
+      "一から作る"
+    ],
+    "tell": "Usually one way, but topic X switches them into someone else: のこととなると.",
+    "lv": 2
+  },
+  {
+    "id": "7-L13-011",
+    "type": "p7",
+    "point": "13-5",
+    "set": "topic",
+    "s": "初めてオーロラを見たときの感動（　　）、今でも言葉では言い表せないほどだ。",
+    "en": "The emotion I felt seeing the aurora for the first time was something else. Even now it's beyond words.",
+    "c": [
+      "といったら",
+      "というと",
+      "とは",
+      "となると"
+    ],
+    "cp": [
+      "13-5",
+      "13-3",
+      "13-1",
+      "13-4"
+    ],
+    "why": [
+      "〜といったら stresses that the degree was far beyond normal. It takes an abstract noun (感動, 驚き) and an 'indescribable' ending.",
+      "〜というと brings an image to mind or checks meaning. It does not stress a degree.",
+      "〜とは defines a word. 〜ほどだ states a degree, not a definition.",
+      "〜となると needs a change in someone's behaviour when a topic comes up. Nothing changes here."
+    ],
+    "cue": [
+      "感動",
+      "言葉では言い表せない"
+    ],
+    "tell": "Abstract noun (感動, 驚き, 寒さ) + 'beyond words': といったら.",
+    "lv": 1
+  },
+  {
+    "id": "7-L13-012",
+    "type": "p7",
+    "point": "13-5",
+    "set": "topic",
+    "s": "大学の合格発表で自分の番号を見つけたときのうれしさ（　　）、思わずその場で母に電話してしまったほどだ。",
+    "en": "The joy when I found my number on the university results board was something else: I phoned my mother on the spot without thinking.",
+    "c": [
+      "といったら",
+      "というと",
+      "といっても",
+      "とは"
+    ],
+    "cp": [
+      "13-5",
+      "13-3",
+      "14-5",
+      "13-1"
+    ],
+    "why": [
+      "〜といったら stresses an extreme degree of a feeling (うれしさ). 〜ほどだ shows how extreme.",
+      "〜というと brings an image or memory to mind. It does not measure how strong a feeling was.",
+      "〜といっても lowers the image of X ('I say joy, but...'). The sentence raises it instead.",
+      "〜とは defines a word. 〜ほどだ states a degree, not a definition."
+    ],
+    "cue": [
+      "うれしさ",
+      "ほどだ"
+    ],
+    "tell": "Feeling noun + 〜ほどだ (so much that...): といったら.",
+    "lv": 2
+  },
+  {
+    "id": "7-L14-001",
+    "type": "p7",
+    "point": "14-1",
+    "set": "regardless",
+    "s": "足をけがしていた（　　）、彼は最後まで試合に出続けた。",
+    "en": "Even though he had injured his leg, he kept playing until the end of the match.",
+    "c": [
+      "にもかかわらず",
+      "からといって",
+      "を問わず",
+      "をめぐって"
+    ],
+    "cp": [
+      "14-1",
+      "14-6",
+      "11-1",
+      "7-2"
+    ],
+    "why": [
+      "〜にもかかわらず: an actual fact (the injury) failed to stop the result, which is surprising. A formal 〜のに.",
+      "〜からといって needs a 'doesn't mean' ending such as 〜とは限らない or 〜わけではない. Here a plain report of what he did follows.",
+      "〜を問わず also means 'regardless of' and needs a range noun. It cannot take a clause like けがしていた.",
+      "〜をめぐって means 'over' a dispute. Nobody is arguing."
+    ],
+    "cue": [
+      "けがしていた",
+      "最後まで試合に出続けた"
+    ],
+    "tell": "A real fact that should have stopped it, and didn't: にもかかわらず (a formal のに).",
+    "lv": 2
+  },
+  {
+    "id": "7-L14-002",
+    "type": "p7",
+    "point": "14-1",
+    "set": "regardless",
+    "s": "平日の昼間（　　）、新しくできた美術館の前には長い行列ができていた。",
+    "en": "Even though it was a weekday afternoon, there was a long queue outside the newly opened art museum.",
+    "c": [
+      "にもかかわらず",
+      "を問わず",
+      "もかまわず",
+      "はさておき"
+    ],
+    "cp": [
+      "14-1",
+      "11-1",
+      "11-3",
+      "11-5"
+    ],
+    "why": [
+      "名 + にもかかわらず: a weekday afternoon should mean few visitors, yet there was a queue. It attaches straight to a noun and carries surprise.",
+      "〜を問わず means 'regardless of' and needs a range or a pair (平日・休日を問わず). 平日の昼間 is one setting, and the queue is a surprise, not a rule.",
+      "〜もかまわず criticises someone for ignoring what they should mind. A queue forming is not careless behaviour.",
+      "〜はさておき drops a topic to move to the main one. The sentence reports a surprise, not a change of topic."
+    ],
+    "cue": [
+      "平日の昼間",
+      "長い行列ができていた"
+    ],
+    "tell": "A fact (平日の昼間) that should have meant the opposite + a surprising result: にもかかわらず.",
+    "lv": 2
+  },
+  {
+    "id": "7-L14-003",
+    "type": "p7",
+    "point": "14-1",
+    "set": "although",
+    "s": "十分な証拠がある（　　）、警察はなぜか容疑者を逮捕しようとしない。",
+    "en": "Even though there is enough evidence, for some reason the police are not trying to arrest the suspect.",
+    "c": [
+      "にもかかわらず",
+      "からには",
+      "といっても",
+      "からといって"
+    ],
+    "cp": [
+      "14-1",
+      "17-5",
+      "14-5",
+      "14-6"
+    ],
+    "why": [
+      "〜にもかかわらず: a fact (the evidence) should lead to an arrest, and it hasn't. なぜか marks the surprise.",
+      "〜からには ('now that ~') must be followed by resolve or duty (逮捕すべきだ). A puzzling non-action with なぜか cannot follow it.",
+      "〜といっても lowers the image of X ('I say there's evidence, but it's weak'). The second half does not shrink the evidence.",
+      "〜からといって denies an obvious conclusion and is followed by 〜とは限らない or 〜わけではない. Here an actual, puzzling situation follows."
+    ],
+    "cue": [
+      "十分な証拠がある",
+      "なぜか"
+    ],
+    "tell": "Fact + なぜか + the expected thing didn't happen: にもかかわらず (surprise).",
+    "lv": 2
+  },
+  {
+    "id": "7-L14-004",
+    "type": "p7",
+    "point": "14-2",
+    "s": "新しいパソコンを買った（　　）、忙しくてまだ一度も電源を入れていない。",
+    "en": "I bought a new computer, and yet I've been so busy I haven't switched it on even once.",
+    "c": [
+      "ものの",
+      "ものだから",
+      "ものか",
+      "ものなら"
+    ],
+    "cp": [
+      "14-2",
+      "16-2",
+      "12-3",
+      "15-2"
+    ],
+    "why": [
+      "〜ものの: X is a fact, but what you would expect from it did not happen. You buy a PC to use it, and it is still unused.",
+      "〜ものだから gives an excuse ('it's just that I bought one'). Buying a PC is no reason for not switching it on.",
+      "〜ものか is an angry denial at the end of a sentence. It cannot link two clauses.",
+      "〜ものなら means 'if only I could' and needs a potential verb in 辞書形 and a wish after it."
+    ],
+    "cue": [
+      "買った",
+      "まだ一度も電源を入れていない"
+    ],
+    "tell": "Did X, but the expected next step never happened (まだ〜ていない): ものの.",
+    "lv": 1
+  },
+  {
+    "id": "7-L14-005",
+    "type": "p7",
+    "point": "14-2",
+    "set": "although",
+    "s": "このアプリは便利な（　　）、操作が少し複雑なため、高齢の利用者からは不満の声も聞かれる。",
+    "en": "This app is convenient, but because it is a little complicated to use, some older users have complained.",
+    "c": [
+      "ものの",
+      "にもかかわらず",
+      "からといって",
+      "ものだから"
+    ],
+    "cp": [
+      "14-2",
+      "14-1",
+      "14-6",
+      "16-2"
+    ],
+    "why": [
+      "ナ形 + な + ものの: granted it is convenient, there is still a problem. 便利なものの is the correct connection.",
+      "〜にもかかわらず takes ナ形 + である (便利であるにもかかわらず). 便利なにもかかわらず is a connection error.",
+      "〜からといって takes 普通形 with だ (便利だからといって) and needs a 'doesn't mean' ending.",
+      "〜ものだから gives a reason or excuse. Being convenient does not cause the complaints."
+    ],
+    "cue": [
+      "便利な",
+      "不満の声も"
+    ],
+    "tell": "ナ形 + な + ものの. にもかかわらず needs である, からといって needs だ.",
+    "lv": 1
+  },
+  {
+    "id": "7-L14-006",
+    "type": "p7",
+    "point": "14-2",
+    "s": "新しいダイエット方法を三か月続けてみたものの、（　　）。",
+    "en": "I kept up the new diet for three months, but my weight barely changed.",
+    "c": [
+      "体重はほとんど変わらなかった",
+      "体重が五キロも減った",
+      "みなさんもぜひ試してください",
+      "体重が減ったに違いない"
+    ],
+    "cp": [
+      "14-2",
+      null,
+      null,
+      "22-5"
+    ],
+    "why": [
+      "After 〜ものの comes a result that goes against what the first fact leads you to expect. You diet to lose weight, and it barely moved.",
+      "Losing five kilos is exactly what you would expect from a diet. ものの needs a result that goes against that.",
+      "〜ものの bans requests and urging after it. 〜てください cannot follow.",
+      "〜に違いない is a guess. You would know your own weight, and the guess does not go against the first fact."
+    ],
+    "cue": [
+      "続けてみたものの"
+    ],
+    "tell": "〜たものの → the expected result did NOT come. No requests after it.",
+    "lv": 3
+  },
+  {
+    "id": "7-L14-007",
+    "type": "p7",
+    "point": "14-3",
+    "s": "この店は小さい（　　）、地元の人々に長く愛されている名店だ。",
+    "en": "Small though it is, this shop is a well-known place that local people have loved for years.",
+    "c": [
+      "ながらも",
+      "からといって",
+      "どころか",
+      "ものなら"
+    ],
+    "cp": [
+      "14-3",
+      "14-6",
+      "12-2",
+      "15-2"
+    ],
+    "why": [
+      "State word + ながらも = 'although'. The subject is the same on both sides (the shop), and it admits a minus point first.",
+      "〜からといって needs a 'doesn't mean' ending (〜とは限らない). The sentence ends with a plain statement.",
+      "〜どころか would mean 'far from small', which denies that it is small at all.",
+      "〜ものなら needs a potential verb and a wish after it. It cannot attach to an adjective."
+    ],
+    "cue": [
+      "小さい",
+      "名店だ"
+    ],
+    "tell": "State word (小さい, 狭い, 若い) + same subject + 'but': ながらも.",
+    "lv": 1
+  },
+  {
+    "id": "7-L14-008",
+    "type": "p7",
+    "point": "14-3",
+    "set": "although",
+    "s": "地元の祭りを盛り上げるために、（　　）私にも何かお手伝いさせてください。",
+    "en": "Please let me help in some way to make the local festival a success, small as my contribution may be.",
+    "c": [
+      "微力ながら",
+      "微力にもかかわらず",
+      "微力といっても",
+      "微力だからといって"
+    ],
+    "cp": [
+      "14-3",
+      "14-1",
+      "14-5",
+      "14-6"
+    ],
+    "why": [
+      "微力ながら is a humble set phrase: 'though my strength is small'. Noun + ながら admits a minus point, and a request may follow.",
+      "〜にもかかわらず bans requests after it. お手伝いさせてください is a request.",
+      "〜といっても lowers the image of X. 微力 is already modest, so there is nothing to lower.",
+      "〜からといって needs a 'doesn't mean' ending (〜わけではない). A request does not fit."
+    ],
+    "cue": [
+      "お手伝いさせてください"
+    ],
+    "tell": "Humble opener before an offer to help: 微力ながら. Noun + ながら = although.",
+    "lv": 3
+  },
+  {
+    "id": "7-L14-009",
+    "type": "p7",
+    "point": "14-4",
+    "s": "夜中にラーメンを食べるのは体に悪いと（　　）、ついコンビニに寄ってしまう。",
+    "en": "I know eating ramen in the middle of the night is bad for me, yet I still end up stopping at the convenience store.",
+    "c": [
+      "わかりつつも",
+      "わかったとたん",
+      "わかり次第",
+      "わかりつつある"
+    ],
+    "cp": [
+      "14-4",
+      "1-3",
+      "3-3",
+      "2-5"
+    ],
+    "why": [
+      "Mind verb (わかる, 思う, 知る) + つつも: I know better, and I do it anyway. つい〜てしまう confirms the guilty habit.",
+      "〜たとたん is one sudden moment ('the instant I realised'). This is a repeated habit, not one moment.",
+      "〜次第 means 'as soon as' and needs a deliberate action after it. つい〜てしまう is the opposite of deliberate.",
+      "〜つつある means a change is in progress and ends a clause. It cannot mean 'although'."
+    ],
+    "cue": [
+      "体に悪いと",
+      "ついコンビニに寄ってしまう"
+    ],
+    "tell": "Mind verb + つつも + つい〜てしまう: knew better, did it anyway.",
+    "lv": 2
+  },
+  {
+    "id": "7-L14-010",
+    "type": "p7",
+    "point": "14-4",
+    "s": "健康のために毎朝走ろうと思いつつも、（　　）。",
+    "en": "I keep meaning to go running every morning for my health, yet I end up oversleeping.",
+    "c": [
+      "つい寝坊してしまう",
+      "明日こそ必ず走ろう",
+      "一緒に走りましょう",
+      "きっと誰かが起こしてくれるだろう"
+    ],
+    "cp": [
+      "14-4",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "〜つつも is followed by what you actually do, against what you meant to do. つい〜てしまう is the classic follow-up.",
+      "〜つつも needs a contrast: what you actually did against what you meant. 明日こそ必ず走ろう is just the same intention again, so there is no contrast.",
+      "〜つつも bans urging and invitations after it. 〜ましょう cannot follow.",
+      "〜つつも needs the same subject on both sides: I meant to run, and I did something else. 誰かが changes the subject."
+    ],
+    "cue": [
+      "思いつつも"
+    ],
+    "tell": "After 〜と思いつつも comes what you actually did against your intention, often つい〜てしまう.",
+    "lv": 3
+  },
+  {
+    "id": "7-L14-011",
+    "type": "p7",
+    "point": "14-5",
+    "set": "although",
+    "s": "庭がある（　　）、テーブルが一つ置ける程度の小さなものです。",
+    "en": "I say we have a garden, but it's just a small one with room for a single table.",
+    "c": [
+      "といっても",
+      "にもかかわらず",
+      "からといって",
+      "ばかりに"
+    ],
+    "cp": [
+      "14-5",
+      "14-1",
+      "14-6",
+      "17-4"
+    ],
+    "why": [
+      "〜といっても: the real thing is smaller than the word suggests. You shrink the listener's picture of 'a garden'.",
+      "〜にもかかわらず needs a surprising result. 'We have a garden, and it is small' is not a surprise.",
+      "〜からといって denies an obvious conclusion and needs 〜とは限らない or 〜わけではない after it.",
+      "〜ばかりに needs a regrettable result caused by X. Having a garden does not cause it to be small."
+    ],
+    "cue": [
+      "程度の小さなもの"
+    ],
+    "tell": "Say X, then shrink it (〜程度, 〜だけ): といっても.",
+    "lv": 1
+  },
+  {
+    "id": "7-L14-012",
+    "type": "p7",
+    "point": "14-5",
+    "set": "although",
+    "s": "A「連休はどこかへ行きましたか。」B「ええ、旅行に行った（　　）、近くの温泉に一泊しただけですけどね。」",
+    "en": "A: 'Did you go anywhere over the long weekend?' B: 'Yes, I went on a trip. Though really it was just one night at a nearby hot spring.'",
+    "c": [
+      "といっても",
+      "にもかかわらず",
+      "からといって",
+      "どころか"
+    ],
+    "cp": [
+      "14-5",
+      "14-1",
+      "14-6",
+      "12-2"
+    ],
+    "why": [
+      "〜といっても corrects the picture downward: 'a trip' sounds big, but it was one night nearby. 〜だけ confirms it.",
+      "〜にもかかわらず needs a surprising result, and it is stiff for casual chat. One night away is not a surprise.",
+      "〜からといって needs a 'doesn't mean' ending (〜とは限らない). B simply describes the trip.",
+      "〜どころか says reality is far beyond or opposite to X. B is shrinking X, not denying it."
+    ],
+    "cue": [
+      "一泊しただけ"
+    ],
+    "tell": "'I did X, though it was only...' (〜だけ, 〜程度): といっても.",
+    "lv": 2
+  },
+  {
+    "id": "7-L14-013",
+    "type": "p7",
+    "point": "14-6",
+    "s": "有名な大学を出た（　　）、仕事ができるとは限らない。",
+    "en": "Just because someone graduated from a famous university doesn't necessarily mean they're good at their job.",
+    "c": [
+      "からといって",
+      "ことだし",
+      "にもかかわらず",
+      "ばかりに"
+    ],
+    "cp": [
+      "14-6",
+      "17-1",
+      "14-1",
+      "17-4"
+    ],
+    "why": [
+      "〜からといって: the reason X alone is not enough for the usual conclusion. 〜とは限らない after it is the matching pair.",
+      "〜ことだし gives a light reason and needs an intention or invitation after it (〜しよう).",
+      "〜にもかかわらず needs an actual, surprising result, not a general 'not necessarily'.",
+      "〜ばかりに means one cause led to a regrettable result. 〜とは限らない is not a result."
+    ],
+    "cue": [
+      "とは限らない"
+    ],
+    "tell": "〜とは限らない／〜わけではない at the end: からといって at the start.",
+    "lv": 1
+  },
+  {
+    "id": "7-L14-014",
+    "type": "p7",
+    "point": "14-6",
+    "s": "模試で合格点が取れた（　　）、油断してはいけません。本番まではまだ一か月あります。",
+    "en": "Just because you got a pass mark on the mock exam doesn't mean you can relax. There's still a month until the real exam.",
+    "c": [
+      "からといって",
+      "にもかかわらず",
+      "おかげで",
+      "ばかりに"
+    ],
+    "cp": [
+      "14-6",
+      "14-1",
+      "16-3",
+      "17-4"
+    ],
+    "why": [
+      "〜からといって + 〜てはいけない: X does not justify the obvious next step (relaxing). A warning can follow からといって.",
+      "〜にもかかわらず bans urging and warnings after it. 〜てはいけません cannot follow.",
+      "〜おかげで credits X for a good result and bans urging or warnings after it.",
+      "〜ばかりに needs a regrettable result caused by X. A warning is not a result."
+    ],
+    "cue": [
+      "合格点が取れた",
+      "油断してはいけません"
+    ],
+    "tell": "Just because X, don't do Y (〜てはいけない): からといって. にもかかわらず refuses warnings.",
+    "lv": 2
+  },
+  {
+    "id": "7-L14-015",
+    "type": "p7",
+    "point": "14-6",
+    "s": "一度上司に注意されたからといって、（　　）。",
+    "en": "Just because your boss told you off once, there's no need to get so down about it.",
+    "c": [
+      "そんなに落ち込むことはない",
+      "落ち込むに違いない",
+      "落ち込まずにはいられない",
+      "落ち込むわけだ"
+    ],
+    "cp": [
+      "14-6",
+      "22-5",
+      "25-3",
+      "IV-10"
+    ],
+    "why": [
+      "〜からといって is followed by a denial of the obvious conclusion. 〜ことはない (there's no need to) does that.",
+      "〜に違いない agrees with the obvious conclusion (you'll be down). からといって needs the opposite.",
+      "〜ずにはいられない (can't help it) also agrees with the obvious conclusion.",
+      "〜わけだ (so it follows) agrees with it too. からといって rejects it."
+    ],
+    "cue": [
+      "一度",
+      "からといって"
+    ],
+    "tell": "からといって needs a 'no' after it: 〜ことはない, 〜わけではない, 〜とは限らない.",
+    "lv": 3
+  },
+  {
+    "id": "7-L15-001",
+    "type": "p7",
+    "point": "15-1",
+    "s": "もし宝くじで一億円が（　　）、まず何に使いますか。",
+    "en": "If you won 100 million yen in the lottery, what would you spend it on first?",
+    "c": [
+      "当たったとしたら",
+      "当たったからには",
+      "当たるものなら",
+      "当たらないことには"
+    ],
+    "cp": [
+      "15-1",
+      "17-5",
+      "15-2",
+      "15-4"
+    ],
+    "why": [
+      "〜としたら is pure supposition and pairs with もし. A question about what you would do can follow.",
+      "〜からには means 'now that' and needs a real, settled fact. もし rules that out.",
+      "〜ものなら needs a potential verb and a wish (〜たい) after it, not a question.",
+      "〜ないことには means 'unless' and needs a negative result after it."
+    ],
+    "cue": [
+      "もし",
+      "何に使いますか"
+    ],
+    "tell": "もし + pure supposition + a question or judgement: としたら.",
+    "lv": 2
+  },
+  {
+    "id": "7-L15-002",
+    "type": "p7",
+    "point": "15-1",
+    "s": "もし今の仕事を辞めて好きなことができる（　　）、田舎で小さなパン屋を開きたい。",
+    "en": "If I could quit my job and do whatever I liked, I'd want to open a small bakery in the countryside.",
+    "c": [
+      "としたら",
+      "からには",
+      "にもかかわらず",
+      "ばかりに"
+    ],
+    "cp": [
+      "15-1",
+      "17-5",
+      "14-1",
+      "17-4"
+    ],
+    "why": [
+      "〜としたら is pure supposition and pairs with もし. A wish (〜たい) can follow it.",
+      "〜からには ('now that ~') needs a settled fact. もし marks a daydream, so からには cannot follow it.",
+      "〜にもかかわらず needs a fact that has actually happened. もし marks a supposition, so the two clash.",
+      "〜ばかりに needs a real cause and a regretted result that already happened. A daydream and a wish are neither."
+    ],
+    "cue": [
+      "もし",
+      "開きたい"
+    ],
+    "tell": "もし + a supposition + a wish (〜たい): としたら. からには and にもかかわらず need a real fact.",
+    "lv": 2
+  },
+  {
+    "id": "7-L15-003",
+    "type": "p7",
+    "point": "15-1",
+    "s": "来月から本当に一人暮らしをするとなると、（　　）。",
+    "en": "If I really am going to live on my own from next month, just getting the furniture together will cost quite a lot.",
+    "c": [
+      "家具をそろえるだけでもかなりお金がかかるだろう",
+      "ぜひ一人暮らしをしてみたい",
+      "ぜひ一人暮らしをしてください",
+      "家具はそろえずに済んだ"
+    ],
+    "cp": [
+      "15-1",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "〜となると looks at a real prospect and is followed by a judgement about it: here, what it will cost.",
+      "This just repeats the first half: you already plan to live alone, so 'I'd love to try it' adds nothing. となると needs a judgement about what the prospect involves.",
+      "It urges the very thing the first half already assumes will happen, so it says nothing. となると needs a judgement about what the prospect involves.",
+      "〜となると looks ahead at a prospect. A past result (済んだ) cannot follow."
+    ],
+    "cue": [
+      "来月から本当に",
+      "となると"
+    ],
+    "tell": "となると + a judgement about what the prospect will involve (〜だろう, 〜必要だ).",
+    "lv": 3
+  },
+  {
+    "id": "7-L15-004",
+    "type": "p7",
+    "point": "15-2",
+    "set": "conditional",
+    "s": "（　　）、もう一度大学一年生からやり直したい。",
+    "en": "If I could do it over, I'd want to start again from my first year of university.",
+    "c": [
+      "やり直せるものなら",
+      "やり直そうものなら",
+      "やり直さないことには",
+      "やり直したところ"
+    ],
+    "cp": [
+      "15-2",
+      "15-3",
+      "15-4",
+      "20-1"
+    ],
+    "why": [
+      "Potential verb + ものなら + a wish: if it were possible (and it isn't), I'd want to. Repeating the verb is natural.",
+      "〜(よ)うものなら warns that a disaster would follow. A wish (〜たい) is the wrong kind of ending.",
+      "〜ないことには needs a negative result after it ('unless I redo it, nothing works').",
+      "〜たところ reports what turned out after something you actually did. A wish about going back cannot follow it."
+    ],
+    "cue": [
+      "やり直したい"
+    ],
+    "tell": "可能形 + ものなら + 〜たい: if only I could. Volitional + ものなら is the disaster version.",
+    "lv": 3
+  },
+  {
+    "id": "7-L15-005",
+    "type": "p7",
+    "point": "15-2",
+    "set": "conditional",
+    "s": "A「この問題、簡単すぎて小学生でも解けるよ。」B「へえ、そんなに言うなら、（　　）解いてみてよ。」",
+    "en": "A: 'This problem is so easy even a primary school kid could solve it.' B: 'Oh really? If you're going to say that, go on, solve it if you can.'",
+    "c": [
+      "解けるものなら",
+      "解こうものなら",
+      "解けないことには",
+      "解けるとしても"
+    ],
+    "cp": [
+      "15-2",
+      "15-3",
+      "15-4",
+      "15-6"
+    ],
+    "why": [
+      "Potential verb + ものなら + the same verb + てみろ／てみて is a dare: 'go on, do it if you can'.",
+      "〜(よ)うものなら warns that a disaster would follow. B is daring A, not warning.",
+      "〜ないことには means 'unless' and needs a negative result after it.",
+      "〜としても means 'even if', which clashes with a dare. 'Even if you can, try it' makes no sense."
+    ],
+    "cue": [
+      "そんなに言うなら",
+      "解いてみてよ"
+    ],
+    "tell": "Potential verb + ものなら + the same verb + てみろ: a dare ('try it if you can').",
+    "lv": 2
+  },
+  {
+    "id": "7-L15-006",
+    "type": "p7",
+    "point": "15-3",
+    "s": "うちの父は厳しくて、門限を一分でも（　　）、一週間は口をきいてくれない。",
+    "en": "My dad is strict: if I'm even one minute past curfew, he won't speak to me for a week.",
+    "c": [
+      "過ぎようものなら",
+      "過ぎるものなら",
+      "過ぎないことには",
+      "過ぎるどころか"
+    ],
+    "cp": [
+      "15-3",
+      "15-2",
+      "15-4",
+      "12-2"
+    ],
+    "why": [
+      "Volitional + ものなら: if you dared to do X, something awful would follow. 〜でも ('even just') often comes before it.",
+      "辞書形 + ものなら is the wistful 'if only I could'. It needs a potential verb and a wish after it.",
+      "〜ないことには would mean 'unless I'm late, he won't talk to me'. That logic is backwards.",
+      "〜どころか means 'far from X'. 'Far from passing curfew' makes no sense here."
+    ],
+    "cue": [
+      "一分でも",
+      "口をきいてくれない"
+    ],
+    "tell": "〜でも + volitional + ものなら → a bad outcome: (よ)うものなら.",
+    "lv": 2
+  },
+  {
+    "id": "7-L15-007",
+    "type": "p7",
+    "point": "15-3",
+    "s": "あの部長の前で会社の悪口を一言でも（　　）、ただでは済まないだろう。",
+    "en": "If you said even one bad word about the company in front of that department head, you wouldn't get away with it.",
+    "c": [
+      "言おうものなら",
+      "言えるものなら",
+      "言わないことには",
+      "言ったからといって"
+    ],
+    "cp": [
+      "15-3",
+      "15-2",
+      "15-4",
+      "14-6"
+    ],
+    "why": [
+      "Volitional + ものなら + a guess of disaster: 'if you so much as said it, there'd be trouble'. ただでは済まないだろう is that guess.",
+      "Potential + ものなら needs a wish or a dare after it ('if only I could say it'). A warning of trouble does not fit.",
+      "〜ないことには means 'unless'. 'Unless you speak ill of the company, you'll be in trouble' is backwards.",
+      "〜からといって needs a 'doesn't mean' ending (〜とは限らない). ただでは済まない is a prediction, not a denial."
+    ],
+    "cue": [
+      "一言でも",
+      "ただでは済まないだろう"
+    ],
+    "tell": "一言でも + volitional + ものなら + 'there'd be trouble': (よ)うものなら.",
+    "lv": 2
+  },
+  {
+    "id": "7-L15-008",
+    "type": "p7",
+    "point": "15-4",
+    "set": "conditional",
+    "s": "実際に（　　）、この機械が本当に便利かどうかはわからない。",
+    "en": "Unless you actually try it out, you can't tell whether this machine is really convenient.",
+    "c": [
+      "使ってみないことには",
+      "使ってみてはじめて",
+      "使ってみるものなら",
+      "使ってみようものなら"
+    ],
+    "cp": [
+      "15-4",
+      "3-1",
+      "15-2",
+      "15-3"
+    ],
+    "why": [
+      "〜ないことには: without doing X, nothing can be known or done. A negative (わからない) must follow, and it does.",
+      "〜てはじめて means 'only after X did I realise' and needs a positive realisation after it (わかった). It clashes with わからない.",
+      "〜ものなら needs a potential verb and a wish after it.",
+      "〜(よ)うものなら needs a disaster after it. 'I can't tell' is not a disaster."
+    ],
+    "cue": [
+      "実際に",
+      "わからない"
+    ],
+    "tell": "Not until you do X + a negative (わからない, 何とも言えない): ないことには.",
+    "lv": 3
+  },
+  {
+    "id": "7-L15-009",
+    "type": "p7",
+    "point": "15-4",
+    "s": "どんなに好きな仕事でも、体が健康で（　　）、長く続けることはできない。",
+    "en": "However much you love your job, you can't keep it up for long unless you're physically healthy.",
+    "c": [
+      "ないことには",
+      "あるからといって",
+      "あるものの",
+      "あろうものなら"
+    ],
+    "cp": [
+      "15-4",
+      "14-6",
+      "14-2",
+      "15-3"
+    ],
+    "why": [
+      "ナ形 + で + ないことには: unless the condition is met, it can't happen. A negative (できない) follows.",
+      "〜からといって needs a 'doesn't mean' ending. 'Just because you're healthy, you can't keep working' makes no sense.",
+      "〜ものの means 'X is true, but'. 'You're healthy, but you can't keep working' turns the point of the sentence upside down.",
+      "〜(よ)うものなら warns of a disaster that would follow an act. Being healthy is not a risky act."
+    ],
+    "cue": [
+      "体が健康で",
+      "続けることはできない"
+    ],
+    "tell": "でない + ことには + a negative (できない): unless X, it won't happen.",
+    "lv": 1
+  },
+  {
+    "id": "7-L15-010",
+    "type": "p7",
+    "point": "15-4",
+    "s": "詳しいお見積もりにつきましては、一度現場を（　　）。",
+    "en": "As for a detailed quote, we are unable to provide one until we have seen the site.",
+    "c": [
+      "拝見しないことには、お出しできかねます",
+      "拝見しないことには、すぐにお出しします",
+      "拝見したところ、お出しできかねます",
+      "拝見しようものなら、お出しできかねます"
+    ],
+    "cp": [
+      "15-4",
+      "15-4",
+      "20-1",
+      "15-3"
+    ],
+    "why": [
+      "〜ないことには + a polite negative (〜かねます): until we see the site, we cannot quote. Business keigo throughout.",
+      "〜ないことには must be followed by a negative. すぐにお出しします is positive.",
+      "〜たところ reports what happened after something you already did. The site visit has not happened yet (一度 looks ahead).",
+      "〜(よ)うものなら warns of a disaster after a risky act. Visiting the site is the normal next step, not a risk."
+    ],
+    "cue": [
+      "詳しいお見積もり",
+      "一度現場を"
+    ],
+    "tell": "Polite 'not until we've seen it': 〜ないことには + 〜かねます (a negative).",
+    "lv": 3
+  },
+  {
+    "id": "7-L15-011",
+    "type": "p7",
+    "point": "15-5",
+    "s": "多くのボランティアの支え（　　）、今回のマラソン大会の成功はありえなかった。",
+    "en": "Without the support of so many volunteers, this marathon could never have succeeded.",
+    "c": [
+      "を抜きにしては",
+      "に応じて",
+      "を問わず",
+      "をもとに"
+    ],
+    "cp": [
+      "15-5",
+      "9-4",
+      "11-1",
+      "8-1"
+    ],
+    "why": [
+      "〜を抜きにしては: without X (something the speaker values), the result could not happen. A negative (ありえなかった) follows.",
+      "〜に応じて means adjusting to match a variable. Nothing is being adjusted.",
+      "〜を問わず means 'regardless of', which would say the volunteers didn't matter. That is the opposite meaning.",
+      "〜をもとに means using X as material to make something. Success is not made out of support as material."
+    ],
+    "cue": [
+      "ボランティアの支え",
+      "ありえなかった"
+    ],
+    "tell": "A valued X + 'could not have happened': を抜きにしては.",
+    "lv": 1
+  },
+  {
+    "id": "7-L15-012",
+    "type": "p7",
+    "point": "15-5",
+    "s": "この町の経済は、江戸時代から続く酒造り（　　）成り立たない。",
+    "en": "This town's economy could not survive without sake brewing, which has continued since the Edo period.",
+    "c": [
+      "を抜きにしては",
+      "にかかわらず",
+      "はさておき",
+      "を通じて"
+    ],
+    "cp": [
+      "15-5",
+      "11-2",
+      "11-5",
+      "4-4B"
+    ],
+    "why": [
+      "〜を抜きにしては: without X, the thing cannot stand. A negative (成り立たない) follows, and X is something the speaker values.",
+      "〜にかかわらず means 'regardless of', which would say sake brewing doesn't matter. That clashes with the point.",
+      "〜はさておき drops a topic to move to the main one. But sake brewing is the main point here.",
+      "〜を通じて means 'through' a go-between. 'Cannot stand through sake brewing' makes no sense."
+    ],
+    "cue": [
+      "江戸時代から続く",
+      "成り立たない"
+    ],
+    "tell": "Without (valued) X + cannot (成り立たない, 語れない): を抜きにしては.",
+    "lv": 1
+  },
+  {
+    "id": "7-L15-013",
+    "type": "p7",
+    "point": "15-6",
+    "s": "たとえ今から急いで空港に向かった（　　）、最終便には間に合わないだろう。",
+    "en": "Even if we headed for the airport right now, we probably wouldn't make the last flight.",
+    "c": [
+      "としても",
+      "ものの",
+      "からには",
+      "ばかりに"
+    ],
+    "cp": [
+      "15-6",
+      "14-2",
+      "17-5",
+      "17-4"
+    ],
+    "why": [
+      "〜としても: even supposing X, the outcome does not change. It must be hypothetical, and たとえ is the signal.",
+      "〜ものの needs a fact that has already happened. たとえ marks a supposition.",
+      "〜からには means 'now that' and needs a real fact, then resolve or duty. たとえ rules out a real fact.",
+      "〜ばかりに needs a real cause and a regretted result that already happened. たとえ makes this a supposition."
+    ],
+    "cue": [
+      "たとえ",
+      "間に合わないだろう"
+    ],
+    "tell": "たとえ + a supposition: としても.",
+    "lv": 1
+  },
+  {
+    "id": "7-L15-014",
+    "type": "p7",
+    "point": "15-6",
+    "s": "確かに昨日は雨だった（　　）、あそこまで客が少ないとは思わなかった。",
+    "en": "Granted it was raining yesterday, I still never thought there would be that few customers.",
+    "c": [
+      "にしても",
+      "としたら",
+      "にもかかわらず",
+      "ばかりに"
+    ],
+    "cp": [
+      "15-6",
+      "15-1",
+      "14-1",
+      "17-4"
+    ],
+    "why": [
+      "〜にしても can take a known fact: 'granted X, still...'. 確かに shows the rain really happened, and 〜とは思わなかった is the 'still'.",
+      "〜としたら sets up a supposition and needs a conclusion drawn from it. 確かに states a known fact, and 'I never thought it would be that quiet' is not a conclusion from rain.",
+      "〜にもかかわらず says the result defied the fact. But rain would explain few customers, not defy it.",
+      "〜ばかりに must lead straight to the bad result it caused. Here 〜とは思わなかった follows, which is the speaker's surprise, not the result."
+    ],
+    "cue": [
+      "確かに",
+      "昨日は雨だった"
+    ],
+    "tell": "確かに + a known fact, then 'still...': にしても. としたら only supposes and draws a conclusion.",
+    "lv": 2
+  },
+  {
+    "id": "7-L15-015",
+    "type": "p7",
+    "point": "15-6",
+    "s": "どの大学に（　　）、入学後に何を学びたいのかをはっきりさせておくべきだ。",
+    "en": "Whichever university you go to, you should be clear about what you want to study once you're there.",
+    "c": [
+      "進むにせよ",
+      "進もうものなら",
+      "進むからといって",
+      "進むどころか"
+    ],
+    "cp": [
+      "15-6",
+      "15-3",
+      "14-6",
+      "12-2"
+    ],
+    "why": [
+      "Question word + にせよ: whichever it is, the judgement holds. 〜べきだ (a judgement) follows naturally.",
+      "〜(よ)うものなら warns of a disaster. 'You should be clear about your goals' is advice, not a disaster.",
+      "〜からといって cannot take a question word (どの), and it needs a 'doesn't mean' ending.",
+      "〜どころか needs two things far apart on one scale. Going to university and having clear goals are not on one scale."
+    ],
+    "cue": [
+      "どの大学に",
+      "はっきりさせておくべきだ"
+    ],
+    "tell": "Question word (どの, 何, だれ) + にせよ／にしても + a judgement.",
+    "lv": 2
+  }
+]

@@ -1,0 +1,2347 @@
+[
+  {
+    "id": "7-L22-001",
+    "type": "p7",
+    "point": "22-1",
+    "set": "guess",
+    "s": "部長はこのところ、毎朝鼻歌を歌いながら出社してくる。新しい企画がよほど順調だ（　　）。",
+    "en": "Lately the manager hums to himself every morning as he comes in. His new project seems to be going extremely well.",
+    "c": [
+      "とみえる",
+      "に違いない",
+      "にきまっている",
+      "かねない"
+    ],
+    "cp": [
+      "22-1",
+      "22-5",
+      "22-6",
+      "22-2"
+    ],
+    "why": [
+      "〜とみえる: a guess about someone else from what you can see (his humming). It takes the plain form with だ kept: 順調だとみえる.",
+      "〜に違いない drops だ after a な-adjective (順調に違いない). 順調だに違いない is not a form.",
+      "〜にきまっている also drops だ (順調にきまっている). It cannot follow 順調だ.",
+      "〜かねない attaches to a verb stem and is for bad results only. It cannot follow 順調だ."
+    ],
+    "cue": [
+      "順調だ",
+      "鼻歌を歌いながら"
+    ],
+    "tell": "な-adjective + だ right before the blank: only とみえる keeps the だ (順調だとみえる).",
+    "lv": 1
+  },
+  {
+    "id": "7-L22-002",
+    "type": "p7",
+    "point": "22-1",
+    "set": "guess",
+    "s": "隣の席の二人は、昼休みもいつも一緒に過ごしている。よほど気が（　　）。",
+    "en": "The two people who sit next to me spend every lunch break together as well. They seem to get on extremely well.",
+    "c": [
+      "合うとみえる",
+      "合いかねない",
+      "合うおそれがある",
+      "合うまい"
+    ],
+    "cp": [
+      "22-1",
+      "22-2",
+      "22-3",
+      "22-4"
+    ],
+    "why": [
+      "〜とみえる: a guess about other people from evidence you can see. Here the evidence is that they spend every lunch break together.",
+      "〜かねない is only for a bad result. Getting on well is not bad.",
+      "〜おそれがある warns of a bad possibility, in news register. Getting on well is not a risk.",
+      "〜まい is a written guess that something will NOT happen. The evidence points the other way."
+    ],
+    "cue": [
+      "いつも一緒に過ごしている",
+      "よほど"
+    ],
+    "tell": "Evidence about other people + a neutral or good guess: とみえる. かねない and おそれがある are bad-only.",
+    "lv": 2
+  },
+  {
+    "id": "7-L22-003",
+    "type": "p7",
+    "point": "22-2",
+    "set": "kaneru",
+    "s": "そんなにスピードを出して運転していたら、いつか大きな事故を起こし（　　）よ。",
+    "en": "If you keep driving that fast, you could well cause a serious accident one day.",
+    "c": [
+      "かねない",
+      "かねる",
+      "がたい",
+      "っこない"
+    ],
+    "cp": [
+      "22-2",
+      "18-3",
+      "18-1",
+      null
+    ],
+    "why": [
+      "〜かねない: what someone is doing now could lead to something bad. It attaches to the verb stem: 起こしかねない.",
+      "〜かねる means 'cannot', a polite refusal of your own (お引き受けしかねます). It does not predict a bad result.",
+      "〜がたい means 'hard to' and goes with mind verbs (信じがたい). The speaker is warning that it could happen, not saying it is hard to do.",
+      "〜っこない means 'there's no way it will happen'. That is the opposite of a warning."
+    ],
+    "cue": [
+      "そんなにスピードを出して",
+      "いつか"
+    ],
+    "tell": "A warning that a bad result could follow from what someone is doing: かねない (might well), not かねる (cannot).",
+    "lv": 1
+  },
+  {
+    "id": "7-L22-004",
+    "type": "p7",
+    "point": "22-2",
+    "set": "kaneru",
+    "s": "A「部長、この資料、明日の会議で配ってもいいですか。」B「いや、まだ数字が確定していないから、今配ると誤解を（　　）。」",
+    "en": "A: Can I hand out this document at tomorrow's meeting? B: No, the figures aren't final yet, so handing it out now could cause misunderstanding.",
+    "c": [
+      "招きかねない",
+      "招きかねる",
+      "招くまい",
+      "招くに越したことはない"
+    ],
+    "cp": [
+      "22-2",
+      "18-3",
+      "22-4",
+      "23-5"
+    ],
+    "why": [
+      "〜かねない: handing it out now could lead to a bad result (misunderstanding). The cause, unconfirmed figures, is right in front of them.",
+      "〜かねる means 'cannot', a polite refusal. 'I am unable to cause misunderstanding' makes no sense.",
+      "〜まい is a written guess that it will NOT happen. B says いや and gives a reason to hold back, so B expects trouble.",
+      "〜に越したことはない means 'it is best if'. Nobody wants a misunderstanding."
+    ],
+    "cue": [
+      "いや",
+      "まだ数字が確定していないから"
+    ],
+    "tell": "A reason to hold back + the bad result it could cause: 〜かねない. 〜かねる means 'cannot'.",
+    "lv": 2
+  },
+  {
+    "id": "7-L22-005",
+    "type": "p7",
+    "point": "22-2",
+    "set": "kaneru",
+    "s": "メールへの返信が遅れると、取引先に不信感を（　　）ので、できるだけ早く対応してください。",
+    "en": "If we are slow to reply to emails, the client could well come to distrust us, so please respond as quickly as you can.",
+    "c": [
+      "持たれかねない",
+      "持たれかねる",
+      "持ちかねない",
+      "持たせかねる"
+    ],
+    "cp": [
+      "22-2",
+      "18-3",
+      "P3-6",
+      "18-3"
+    ],
+    "why": [
+      "Passive + かねない: the client may come to distrust us (取引先に不信感を持たれる). Slow replies are the cause in front of us, and the result is bad.",
+      "〜かねる means 'cannot'. 'We are unable to be distrusted' is nonsense.",
+      "Active 持つ makes us the ones who feel distrust, with the client as its target. Our own slow replies give us no reason to distrust the client.",
+      "Causative + かねる means 'we cannot make them distrust us'. Wrong on both counts."
+    ],
+    "cue": [
+      "返信が遅れると",
+      "取引先に"
+    ],
+    "tell": "Slow replies, so the client might distrust US: passive 持たれ + かねない (might well), not かねる (cannot).",
+    "lv": 3
+  },
+  {
+    "id": "7-L22-006",
+    "type": "p7",
+    "point": "22-3",
+    "set": "guess",
+    "s": "気象庁によると、台風の影響で、週末は沿岸部で高潮の（　　）とのことだ。",
+    "en": "According to the Meteorological Agency, the typhoon brings a risk of storm surges in coastal areas this weekend.",
+    "c": [
+      "おそれがある",
+      "かねない",
+      "に違いない",
+      "にきまっている"
+    ],
+    "cp": [
+      "22-3",
+      "22-2",
+      "22-5",
+      "22-6"
+    ],
+    "why": [
+      "〜おそれがある: the news-style warning of a bad possibility. It is the only choice that takes noun + の: 高潮のおそれがある.",
+      "〜かねない attaches to a verb stem (起こりかねない). It cannot follow 高潮の.",
+      "〜に違いない takes a bare noun (高潮に違いない), not の. It is also a confident guess, not a weather warning.",
+      "〜にきまっている is spoken and gut-level, and takes a bare noun. It cannot follow 高潮の."
+    ],
+    "cue": [
+      "高潮の",
+      "気象庁によると"
+    ],
+    "tell": "Noun + の + blank in a news report: 〜おそれがある. It is the only one that takes の.",
+    "lv": 1
+  },
+  {
+    "id": "7-L22-007",
+    "type": "p7",
+    "point": "22-3",
+    "set": "guess",
+    "s": "この電気ストーブは、長時間使い続けると内部の部品が過熱して（　　）として、メーカーが自主回収を始めた。",
+    "en": "The manufacturer has begun a voluntary recall of this electric heater, saying that with long use its internal parts can overheat and catch fire.",
+    "c": [
+      "発火するおそれがある",
+      "発火しかねる",
+      "発火するまい",
+      "発火するにすぎない"
+    ],
+    "cp": [
+      "22-3",
+      "18-3",
+      "22-4",
+      "23-3"
+    ],
+    "why": [
+      "〜おそれがある: the stiff, news-report way to state a risk of something bad. It is the standard wording for a product recall.",
+      "〜かねる means 'cannot'. 'It is unable to catch fire' contradicts the recall.",
+      "〜まい is a guess that it will NOT happen. A company does not recall a heater that surely won't catch fire.",
+      "〜にすぎない ('it merely catches fire') plays the danger down. A recall is issued because the risk is serious, not trivial."
+    ],
+    "cue": [
+      "自主回収",
+      "過熱して"
+    ],
+    "tell": "A news report about a possible danger: 〜おそれがある. かねる means 'cannot'; まい means 'surely not'.",
+    "lv": 2
+  },
+  {
+    "id": "7-L22-008",
+    "type": "p7",
+    "point": "22-4",
+    "set": "guess",
+    "s": "あの慎重な田中氏のことだから、契約書をよく読まずに署名することはある（　　）。",
+    "en": "Knowing how careful Mr Tanaka is, he would hardly sign a contract without reading it properly.",
+    "c": [
+      "まい",
+      "に違いない",
+      "とみえる",
+      "ものだ"
+    ],
+    "cp": [
+      "22-4",
+      "22-5",
+      "22-1",
+      "23-1"
+    ],
+    "why": [
+      "〜まい here is a written guess: surely not. Knowing how careful Tanaka is, the writer judges he would never sign without reading.",
+      "〜に違いない would say he certainly does sign without reading. That contradicts 慎重な.",
+      "〜とみえる reads evidence you can see. There is no evidence of careless signing, only his careful character, which points the other way.",
+      "〜ものだ (truth) needs a generic subject such as 人は. 〜のことだから must be followed by a guess about that person, not a general truth."
+    ],
+    "cue": [
+      "慎重な",
+      "のことだから"
+    ],
+    "tell": "Knowing the person + a negative guess: 〜まい = surely not. This is the guess まい, not the 'I won't' まい.",
+    "lv": 2
+  },
+  {
+    "id": "7-L22-009",
+    "type": "p7",
+    "point": "22-4",
+    "set": "monoka-mai",
+    "s": "若者の読書離れが話題になるが、問題は本そのものより、本を読む時間が減っている点にある（　　）。忙しい毎日の中で、本を開く余裕がないのだ。",
+    "en": "People talk about young people turning away from books, but surely the problem lies less in the books themselves than in the shrinking time to read them. In their busy lives, they have no room to open a book.",
+    "c": [
+      "のではあるまいか",
+      "のではあるまい",
+      "まいとしているのだろうか",
+      "のではあるまいし"
+    ],
+    "cp": [
+      "22-4",
+      "22-4",
+      "24-5",
+      "22-4"
+    ],
+    "why": [
+      "〜のではあるまいか: the writer's thesis, put as a rhetorical question ('is it not the case that…'). The next sentence backs the claim up.",
+      "〜のではあるまい denies it ('surely the problem is not there'). The next sentence supports the claim, so a denial makes no sense.",
+      "〜まいとしている means 'trying not to', the intention まい. It needs a person with a will; 問題 cannot intend anything.",
+      "〜ではあるまいし means 'it's not as if…' and leads into a rebuke in speech (子どもではあるまいし). It denies the very claim the next sentence supports."
+    ],
+    "cue": [
+      "話題になるが",
+      "忙しい毎日の中で"
+    ],
+    "tell": "A writer's claim, then a sentence backing it up: 〜のではあるまいか (written 'is it not that…').",
+    "lv": 3
+  },
+  {
+    "id": "7-L22-010",
+    "type": "p7",
+    "point": "22-5",
+    "set": "guess",
+    "s": "あの店の前には、平日でも毎日長い行列ができている。よほど評判の店（　　）。",
+    "en": "There's a long queue outside that shop every day, even on weekdays. It must be extremely popular.",
+    "c": [
+      "に違いない",
+      "にすぎない",
+      "おそれがある",
+      "かねない"
+    ],
+    "cp": [
+      "22-5",
+      "23-3",
+      "22-3",
+      "22-2"
+    ],
+    "why": [
+      "〜に違いない: a confident guess from grounds (a long queue every day). It takes a bare noun: 評判の店に違いない.",
+      "〜にすぎない means 'merely' and plays something down. よほど and the daily queue say the shop is special.",
+      "〜おそれがある needs の after a noun (店のおそれ), and it is only for bad possibilities.",
+      "〜かねない attaches to a verb stem, not a noun, and it is only for bad results."
+    ],
+    "cue": [
+      "毎日長い行列",
+      "よほど"
+    ],
+    "tell": "Clear grounds + a confident guess about a noun: noun + に違いない.",
+    "lv": 1
+  },
+  {
+    "id": "7-L22-011",
+    "type": "p7",
+    "point": "22-5",
+    "set": "guess",
+    "s": "この土器は、使われている土の種類から判断して、この地方で作られたものである（　　）。",
+    "en": "Judging from the type of clay used, this pottery must have been made in this region.",
+    "c": [
+      "に違いない",
+      "べきだ",
+      "おそれがある",
+      "に越したことはない"
+    ],
+    "cp": [
+      "22-5",
+      "23-7",
+      "22-3",
+      "23-5"
+    ],
+    "why": [
+      "〜に違いない: certain, based on stated grounds (the type of clay). It attaches to である in a written report.",
+      "〜べきだ is a moral 'should' about what ought to be done. It cannot state a conclusion drawn from evidence; 'this pottery ought to be local' is nonsense here.",
+      "〜おそれがある warns of something bad. Being made locally is not a danger.",
+      "〜に越したことはない means 'it would be best if'. The researcher is drawing a conclusion, not stating a preference."
+    ],
+    "cue": [
+      "から判断して",
+      "である"
+    ],
+    "tell": "Stated grounds (から判断して) + a firm conclusion: 〜に違いない. べきだ is a moral 'should', never a conclusion.",
+    "lv": 2
+  },
+  {
+    "id": "7-L22-012",
+    "type": "p7",
+    "point": "22-5",
+    "set": "guess",
+    "s": "警察は、犯行の手口から、犯人は社内の事情に詳しい人物（　　）、社員から話を聞いている。",
+    "en": "Judging from how the crime was carried out, the police believe the culprit must be someone who knows the company well, and are questioning employees.",
+    "c": [
+      "に違いないとみて",
+      "に越したことはないとみて",
+      "にすぎないとみて",
+      "ではあるまいとみて"
+    ],
+    "cp": [
+      "22-5",
+      "23-5",
+      "23-3",
+      "22-4"
+    ],
+    "why": [
+      "〜に違いないとみて: the police are sure from the evidence (the method), so they question the staff. に違いない states the firm conclusion; とみて says it is their judgement.",
+      "〜に越したことはない means 'it would be best if'. The police are drawing a conclusion from evidence, not stating what they would prefer.",
+      "〜にすぎない ('merely someone who knows the company') plays the point down, which gives no reason to question the staff.",
+      "〜ではあるまい ('surely not an insider') contradicts questioning the staff."
+    ],
+    "cue": [
+      "犯行の手口から",
+      "社員から話を聞いている"
+    ],
+    "tell": "Evidence (犯行の手口から) leads to a firm conclusion that drives action: に違いないとみて.",
+    "lv": 3
+  },
+  {
+    "id": "7-L22-013",
+    "type": "p7",
+    "point": "22-6",
+    "set": "guess",
+    "s": "A「明日の決勝、どっちが勝つと思う？」B「そりゃ、今年一度も負けていない青山高校のほうが強い（　　）よ。」",
+    "en": "A: Who do you think will win tomorrow's final? B: Aoyama High are obviously stronger. They haven't lost once all year.",
+    "c": [
+      "にきまってる",
+      "おそれがある",
+      "かねない",
+      "ものか"
+    ],
+    "cp": [
+      "22-6",
+      "22-3",
+      "22-2",
+      "12-3"
+    ],
+    "why": [
+      "〜にきまってる (spoken 〜にきまっている): 'obviously'. It takes an い-adjective directly and suits a casual chat (そりゃ).",
+      "〜おそれがある is a news-style warning about something bad. A team being strong is not a risk, and the register is wrong for a chat.",
+      "〜かねない attaches to a verb stem and is bad-only. It cannot follow 強い.",
+      "〜ものか denies the idea ('as if they're stronger!'). B's reason, a whole year unbeaten, points the other way."
+    ],
+    "cue": [
+      "そりゃ",
+      "一度も負けていない"
+    ],
+    "tell": "Casual chat + an obvious conclusion: 〜にきまってる. おそれがある and かねない are bad-only.",
+    "lv": 1
+  },
+  {
+    "id": "7-L22-014",
+    "type": "p7",
+    "point": "22-6",
+    "set": "guess",
+    "s": "A「来週三日間休みたいって、部長に頼んでみようかな。」B「この忙しい時期に？ だめだって言われる（　　）よ。」",
+    "en": "A: I might ask the manager for three days off next week. B: At this busy time? He's bound to say no.",
+    "c": [
+      "にきまってる",
+      "に越したことはない",
+      "ものか",
+      "まい"
+    ],
+    "cp": [
+      "22-6",
+      "23-5",
+      "12-3",
+      "22-4"
+    ],
+    "why": [
+      "〜にきまってる: a casual 'obviously', a gut judgement anyone would share. It suits a chat between colleagues.",
+      "〜に越したことはない means 'it is best if'. Being refused is not what anyone would call ideal.",
+      "〜ものか denies it ('as if he'd say no!'). B's この忙しい時期に？ shows that B expects a no.",
+      "〜まい is a written guess that it will NOT happen. It is the wrong register and the opposite meaning."
+    ],
+    "cue": [
+      "この忙しい時期に？",
+      "だめだって"
+    ],
+    "tell": "Casual talk + an obvious outcome: にきまってる. ものか and まい point the other way.",
+    "lv": 2
+  },
+  {
+    "id": "7-L23-001",
+    "type": "p7",
+    "point": "23-1",
+    "set": "monoda",
+    "s": "人は、失ってはじめて、それまで当たり前だったものの大切さに気づく（　　）。",
+    "en": "People only realise the value of what they took for granted once they have lost it.",
+    "c": [
+      "ものだ",
+      "ことだ",
+      "ことか",
+      "ものか"
+    ],
+    "cp": [
+      "23-1",
+      "24-2",
+      "26-6",
+      "12-3"
+    ],
+    "why": [
+      "〜ものだ (truth): with a generic subject (人は), it states how people are in general.",
+      "Verb + ことだ is advice to the listener and needs a verb you can choose to do. Noticing is not something you can be told to do.",
+      "〜ことか needs a question word such as どんなに or 何度. There is none.",
+      "〜ものか denies the idea ('as if people notice!'). That contradicts はじめて, which says they do notice in the end."
+    ],
+    "cue": [
+      "人は",
+      "はじめて"
+    ],
+    "tell": "Generic subject (人は) + how people are: 〜ものだ (truth).",
+    "lv": 1
+  },
+  {
+    "id": "7-L23-002",
+    "type": "p7",
+    "point": "23-1",
+    "set": "monoda",
+    "s": "親というのは、子どもがいくつになっても、つい心配して（　　）。",
+    "en": "Parents can't help worrying about their children, however old they get.",
+    "c": [
+      "しまうものだ",
+      "しまったものだ",
+      "しまうものではない",
+      "しまうことだ"
+    ],
+    "cp": [
+      "23-1",
+      "26-2A",
+      "24-3",
+      "24-2"
+    ],
+    "why": [
+      "〜ものだ (truth): 親というのは is a generic subject, and the sentence says how parents are. つい〜てしまう (can't help it) fits a truth.",
+      "た形 + ものだ is a fond memory of the speaker's own past habit. A statement about parents in general has no past.",
+      "〜ものではない is either a norm ('one shouldn't') or a negative truth ('parents don't'). Both clash with つい, which says the worrying happens anyway.",
+      "Verb + ことだ is advice to the listener and needs a deliberate action. つい〜てしまう is not deliberate."
+    ],
+    "cue": [
+      "親というのは",
+      "つい"
+    ],
+    "tell": "Generic subject (親というのは) + つい〜てしまう: a truth, 〜ものだ. Not a norm, not nostalgia.",
+    "lv": 2
+  },
+  {
+    "id": "7-L23-003",
+    "type": "p7",
+    "point": "23-1",
+    "set": "monoda",
+    "s": "先輩「新人のうちは、だれだって失敗する（　　）。そんなに落ち込まなくていいよ。」",
+    "en": "Senior colleague: Everyone makes mistakes while they're new. You don't need to feel so down.",
+    "c": [
+      "もんだよ",
+      "もんかよ",
+      "ことはないよ",
+      "もんじゃないよ"
+    ],
+    "cp": [
+      "23-1",
+      "12-3",
+      "24-4",
+      "24-3"
+    ],
+    "why": [
+      "Spoken もんだ = ものだ (truth). だれだって is a generic subject: everyone fails at first. That reassures the junior.",
+      "〜もんか denies the idea ('as if anyone fails!'). That cannot reassure someone who just failed.",
+      "〜ことはない means 'there's no need to' (or 'it never happens'). Neither 'nobody needs to fail' nor 'nobody fails' comforts someone who just did.",
+      "〜もんじゃない is a norm ('one shouldn't fail') or a denial ('not everyone fails'). Either way it undercuts the comfort that follows."
+    ],
+    "cue": [
+      "だれだって",
+      "落ち込まなくていいよ"
+    ],
+    "tell": "だれだって (anyone) + reassurance: spoken 〜もんだよ, a general truth.",
+    "lv": 3
+  },
+  {
+    "id": "7-L23-004",
+    "type": "p7",
+    "point": "23-2",
+    "set": "claim",
+    "s": "自分の都合で、何度も約束の時間を変えるのは、身勝手（　　）。",
+    "en": "Changing the meeting time again and again to suit yourself is just plain selfish.",
+    "c": [
+      "というものだ",
+      "ものだ",
+      "ことだ",
+      "に越したことはない"
+    ],
+    "cp": [
+      "23-2",
+      "23-1",
+      "26-5",
+      "23-5"
+    ],
+    "why": [
+      "〜というものだ: a common-sense verdict on a situation. It takes a な-adjective stem directly: 身勝手というものだ.",
+      "〜ものだ needs な after a な-adjective (身勝手なものだ). The bare stem cannot attach.",
+      "〜ことだ (exclamation) also needs な (身勝手なことだ). As written, it does not attach.",
+      "〜に越したことはない means 'it is best if'. Nobody calls being selfish the ideal, and the sentence is criticising."
+    ],
+    "cue": [
+      "身勝手",
+      "何度も"
+    ],
+    "tell": "Bare な-adjective + a verdict on someone's behaviour: 〜というものだ (身勝手というものだ).",
+    "lv": 1
+  },
+  {
+    "id": "7-L23-005",
+    "type": "p7",
+    "point": "23-2",
+    "set": "claim",
+    "s": "相手が本当に困っているときに、何も言わずにそっと手を貸す。それこそが本当の優しさ（　　）。",
+    "en": "When someone is really struggling, you quietly lend a hand without a word. That is what true kindness is.",
+    "c": [
+      "というものだ",
+      "にすぎない",
+      "というものではない",
+      "とみえる"
+    ],
+    "cp": [
+      "23-2",
+      "23-3",
+      "12-5",
+      "22-1"
+    ],
+    "why": [
+      "〜というものだ: 'that is what you call true kindness'. それこそ〜というものだ is a set pattern for a common-sense verdict.",
+      "〜にすぎない shrinks something to 'merely'. こそ singles it out as the real thing, so the two clash.",
+      "〜というものではない says 'it is not enough just to…'. It denies the very point that こそ stresses.",
+      "〜とみえる is a guess about someone's state from evidence. This is a definition, not a guess."
+    ],
+    "cue": [
+      "それこそが",
+      "本当の"
+    ],
+    "tell": "それこそ + a verdict on what something truly is: 〜というものだ.",
+    "lv": 2
+  },
+  {
+    "id": "7-L23-006",
+    "type": "p7",
+    "point": "23-3",
+    "set": "claim",
+    "s": "新しい育児休暇制度を利用した男性社員は、対象者千人のうち、わずか30人（　　）。",
+    "en": "Of the 1,000 eligible male employees, only 30 used the new childcare leave system.",
+    "c": [
+      "にすぎなかった",
+      "にほかならなかった",
+      "に越したことはなかった",
+      "というものだった"
+    ],
+    "cp": [
+      "23-3",
+      "23-4",
+      "23-5",
+      "23-2"
+    ],
+    "why": [
+      "〜にすぎない: 'only, no more than'. わずか 30 out of 1,000 is a small figure being played down.",
+      "〜にほかならない says 'it is exactly this and nothing else', an emphatic claim. It does not mark a small amount.",
+      "〜に越したことはない means 'it is best if'. It does not report a figure.",
+      "〜というものだ gives a common-sense verdict (無理というものだ). A head count is not a verdict."
+    ],
+    "cue": [
+      "わずか",
+      "千人のうち"
+    ],
+    "tell": "わずか + a small number: 〜にすぎない (no more than).",
+    "lv": 1
+  },
+  {
+    "id": "7-L23-007",
+    "type": "p7",
+    "point": "23-3",
+    "set": "claim",
+    "s": "賞をいただけたのは、チームの皆のおかげです。私はほんの少し手伝った（　　）。",
+    "en": "We won the award thanks to everyone on the team. I only helped a little.",
+    "c": [
+      "にすぎません",
+      "にほかなりません",
+      "というものです",
+      "に越したことはありません"
+    ],
+    "cp": [
+      "23-3",
+      "23-4",
+      "23-2",
+      "23-5"
+    ],
+    "why": [
+      "〜にすぎない: modest downplaying of your own part ('I only helped a little'). ほんの少し signals it.",
+      "〜にほかならない is an emphatic 'nothing other than' and attaches to nouns. It cannot follow 手伝った, and it is not modest.",
+      "〜というものだ gives a common-sense verdict on a situation. It does not describe your own small role.",
+      "〜に越したことはない ('best if') takes the present tense and states a preference. It cannot follow a past fact."
+    ],
+    "cue": [
+      "ほんの少し",
+      "皆のおかげです"
+    ],
+    "tell": "Modesty about your own part (ほんの少し): 〜にすぎません.",
+    "lv": 2
+  },
+  {
+    "id": "7-L23-008",
+    "type": "p7",
+    "point": "23-3",
+    "set": "claim",
+    "s": "政府はこれを「大改革」と呼んでいるが、中身をよく見れば、以前の制度の名前を変えた（　　）。",
+    "en": "The government calls this a 'major reform', but look closely and surely it is no more than the old system under a new name.",
+    "c": [
+      "にすぎないのではないだろうか",
+      "にほかならないのではないだろうか",
+      "に越したことはないのではないだろうか",
+      "というものではないだろうか"
+    ],
+    "cp": [
+      "23-3",
+      "23-4",
+      "23-5",
+      "23-2"
+    ],
+    "why": [
+      "〜にすぎない + のではないだろうか: 'surely it is merely a renaming'. The writer plays down the 大改革 claim, then softens the verdict.",
+      "〜にほかならない attaches to nouns and makes an emphatic claim. It cannot follow 変えた, and it cannot play anything down.",
+      "〜に越したことはない ('best if') needs the present tense and a preference. It makes no sense after a past action.",
+      "〜というものだ needs an evaluative word (無理・身勝手). 'Having renamed it' is a fact, not a verdict."
+    ],
+    "cue": [
+      "「大改革」と呼んでいるが",
+      "名前を変えた"
+    ],
+    "tell": "Debunking a big claim ('it's only a renaming'): 〜にすぎないのではないだろうか.",
+    "lv": 3
+  },
+  {
+    "id": "7-L23-009",
+    "type": "p7",
+    "point": "23-4",
+    "set": "claim",
+    "s": "子どもたちの笑顔こそ、私たち大人が守るべきもの（　　）。",
+    "en": "Children's smiles are, above all, what we adults must protect.",
+    "c": [
+      "にほかならない",
+      "にすぎない",
+      "に越したことはない",
+      "というものではない"
+    ],
+    "cp": [
+      "23-4",
+      "23-3",
+      "23-5",
+      "12-5"
+    ],
+    "why": [
+      "〜にほかならない: 'is nothing other than'. With こそ, it makes the writer's flat, emphatic claim.",
+      "〜にすぎない shrinks something to 'merely'. こそ lifts it up, so the two clash.",
+      "〜に越したことはない ('best if') is a hedge about what is preferable, and needs である after a noun. It cannot make this claim.",
+      "〜というものではない says 'it is not as if X is enough'. It denies what こそ stresses."
+    ],
+    "cue": [
+      "こそ",
+      "守るべきもの"
+    ],
+    "tell": "Noun + こそ + a flat claim: 〜にほかならない. こそ never pairs with にすぎない.",
+    "lv": 2
+  },
+  {
+    "id": "7-L23-010",
+    "type": "p7",
+    "point": "23-4",
+    "set": "claim",
+    "s": "本日、当社が創業五十周年を迎えることができましたのは、ひとえに皆様のご支援があった（　　）。",
+    "en": "That our company has been able to reach its 50th anniversary today is entirely thanks to your support.",
+    "c": [
+      "からにほかなりません",
+      "からにすぎません",
+      "からとは限りません",
+      "からに越したことはありません"
+    ],
+    "cp": [
+      "23-4",
+      "23-3",
+      null,
+      "23-5"
+    ],
+    "why": [
+      "〜からにほかならない: 'it is precisely because…'. With ひとえに (solely), it names the one true reason, politely, in a formal speech.",
+      "〜からにすぎない plays the reason down ('only because of your support'). That would insult the audience being thanked.",
+      "〜とは限らない means 'not necessarily'. It clashes with ひとえに (solely), which names one definite reason, and it would cast doubt on the support being thanked.",
+      "〜に越したことはない means 'it is best if'. It cannot state the reason for something that has already happened."
+    ],
+    "cue": [
+      "ひとえに",
+      "皆様のご支援"
+    ],
+    "tell": "〜のは、ひとえに〜から + a formal claim: からにほかなりません (precisely because).",
+    "lv": 3
+  },
+  {
+    "id": "7-L23-011",
+    "type": "p7",
+    "point": "23-5",
+    "set": "claim",
+    "s": "スマートフォンの画面は大きい（　　）が、大きすぎるとポケットに入らない。",
+    "en": "A bigger phone screen is better, but if it's too big, the phone won't fit in your pocket.",
+    "c": [
+      "に越したことはない",
+      "にすぎない",
+      "にほかならない",
+      "かねない"
+    ],
+    "cp": [
+      "23-5",
+      "23-3",
+      "23-4",
+      "22-2"
+    ],
+    "why": [
+      "〜に越したことはない: 'bigger is better, though not essential'. The が clause then gives the limit.",
+      "〜にすぎない ('merely big') plays something down. It sets up nothing for the が clause that follows.",
+      "〜にほかならない attaches to nouns and makes an emphatic claim. It cannot follow an い-adjective like 大きい.",
+      "〜かねない attaches to a verb stem and predicts something bad. It cannot follow 大きい."
+    ],
+    "cue": [
+      "大きすぎると"
+    ],
+    "tell": "'X is better, but too much X is a problem': 〜に越したことはないが.",
+    "lv": 1
+  },
+  {
+    "id": "7-L23-012",
+    "type": "p7",
+    "point": "23-5",
+    "set": "claim",
+    "s": "【アルバイト募集】接客の経験がある（　　）が、未経験の方にも丁寧に指導しますので、お気軽にご応募ください。",
+    "en": "[Part-time staff wanted] Customer service experience is a plus, but we also train beginners carefully, so please feel free to apply.",
+    "c": [
+      "に越したことはありません",
+      "にすぎません",
+      "にきまっています",
+      "ものがあります"
+    ],
+    "cp": [
+      "23-5",
+      "23-3",
+      "22-6",
+      "26-4"
+    ],
+    "why": [
+      "〜に越したことはない: experience is preferred but not required. The next clause welcomes beginners, which confirms the hedge.",
+      "〜にすぎない ('merely has experience') plays something down. It makes no sense in a job advert.",
+      "〜にきまっている is a spoken 'obviously'. The advert cannot assume every applicant has experience, and it welcomes beginners.",
+      "〜ものがある describes a felt quality (胸を打つものがある). Having experience is a plain fact."
+    ],
+    "cue": [
+      "未経験の方にも"
+    ],
+    "tell": "Preferred, not required (beginners welcome too): 〜に越したことはない.",
+    "lv": 2
+  },
+  {
+    "id": "7-L23-013",
+    "type": "p7",
+    "point": "23-6",
+    "set": "must",
+    "s": "台風で、新幹線も飛行機もすべて止まってしまった。今夜はこのホテルにもう一泊（　　）。",
+    "en": "Because of the typhoon, every bullet train and flight has stopped. There's nothing for it but to stay another night at this hotel.",
+    "c": [
+      "するしかない",
+      "せずにはいられない",
+      "することはない",
+      "するまい"
+    ],
+    "cp": [
+      "23-6",
+      "25-3",
+      "24-4",
+      "24-5"
+    ],
+    "why": [
+      "〜しかない: there is no other option. With every train and flight stopped, staying another night is the only choice.",
+      "〜ずにはいられない is an urge you can't hold back (笑わずにはいられない). Staying another night is not an emotional urge.",
+      "〜ことはない means 'there is no need to'. With every train and flight stopped, staying another night is exactly what the speaker has to do.",
+      "〜まい means 'I won't'. With no way to leave, refusing to stay contradicts the situation."
+    ],
+    "cue": [
+      "すべて止まってしまった",
+      "もう一泊"
+    ],
+    "tell": "Plans wrecked, only one way left: 〜しかない (nothing for it but to).",
+    "lv": 2
+  },
+  {
+    "id": "7-L23-014",
+    "type": "p7",
+    "point": "23-6",
+    "s": "A「駅前のあの店、今日だけ全品半額なんだって。」B「本当？ ずっと欲しかったコートも半額なら、これはもう買う（　　）ね。」",
+    "en": "A: That shop by the station has everything at half price, today only. B: Really? If the coat I've wanted for ages is half price too, I've just got to buy it.",
+    "c": [
+      "しかない",
+      "ことはない",
+      "ものか",
+      "まい"
+    ],
+    "cp": [
+      "23-6",
+      "24-4",
+      "24-6",
+      "24-5"
+    ],
+    "why": [
+      "〜しかない can be decisive and happy: 'I simply have to buy it'. ずっと欲しかった and 半額 make buying the obvious move.",
+      "〜ことはない means 'there's no need to buy it'. That contradicts B's excitement about a coat B has wanted for ages.",
+      "〜ものか is an emotional refusal ('I'm not buying it!'). It clashes with ずっと欲しかった.",
+      "〜まい means 'I won't buy it'. It also clashes with ずっと欲しかった."
+    ],
+    "cue": [
+      "ずっと欲しかった",
+      "これはもう"
+    ],
+    "tell": "Excited 'no question about it': これはもう〜しかない. しかない is not always reluctant.",
+    "lv": 2
+  },
+  {
+    "id": "7-L23-015",
+    "type": "p7",
+    "point": "23-7",
+    "s": "今回の事故について、会社は被害者に対してきちんと説明（　　）。",
+    "en": "The company ought to give the victims a proper explanation of this accident.",
+    "c": [
+      "すべきだ",
+      "せずにはいられない",
+      "することはない",
+      "しかねない"
+    ],
+    "cp": [
+      "23-7",
+      "25-3",
+      "24-4",
+      "22-2"
+    ],
+    "why": [
+      "〜べきだ: the speaker's opinion of what someone ought to do, here the company. する becomes すべき.",
+      "〜ずにはいられない is the speaker's own urge that cannot be held back. The sentence is about the company's duty, not anyone's urge.",
+      "〜ことはない means 'there is no need to'. It contradicts きちんと (properly).",
+      "〜かねない predicts a bad result. Explaining to the victims is not a bad result."
+    ],
+    "cue": [
+      "会社は",
+      "きちんと"
+    ],
+    "tell": "Your opinion of what someone else ought to do: すべきだ (する → すべき). ずにはいられない is your own urge.",
+    "lv": 2
+  },
+  {
+    "id": "7-L23-016",
+    "type": "p7",
+    "point": "23-7",
+    "s": "学生のうちに、やっておく（　　）ことは何だと思いますか。",
+    "en": "What do you think are the things you should do while you're still a student?",
+    "c": [
+      "べき",
+      "もの",
+      "はず",
+      "まい"
+    ],
+    "cp": [
+      "23-7",
+      "24-3",
+      null,
+      "24-5"
+    ],
+    "why": [
+      "べき can sit directly in front of a noun: やっておくべきこと (things one should do).",
+      "もの is itself a noun. It cannot be followed by another noun like こと.",
+      "はず needs の before a noun (はずの〜), and it means 'expected to', not 'ought to'.",
+      "まい (I won't) ends a sentence. In modern Japanese it does not modify a noun."
+    ],
+    "cue": [
+      "ことは何だと思いますか"
+    ],
+    "tell": "Verb + blank + noun: only べき modifies a noun directly (やっておくべきこと).",
+    "lv": 1
+  },
+  {
+    "id": "7-L23-017",
+    "type": "p7",
+    "point": "23-7",
+    "set": "claim",
+    "s": "あのとき、もっと早く医者に診てもらう（　　）と、今になって後悔している。",
+    "en": "Looking back now, I regret it: I should have seen a doctor much sooner.",
+    "c": [
+      "べきだった",
+      "ところだった",
+      "しかなかった",
+      "ことはなかった"
+    ],
+    "cp": [
+      "23-7",
+      "20-5",
+      "23-6",
+      "24-4"
+    ],
+    "why": [
+      "〜べきだった: 'I should have'. Regret about a past choice, cued by もっと早く and 後悔している.",
+      "〜ところだった means 'nearly did'. It describes a near miss, not a choice you regret not making.",
+      "〜しかなかった means 'I had no other option'. It contradicts もっと早く, which says a better choice was there.",
+      "〜ことはなかった means 'there was no need to'. Then there would be nothing to regret."
+    ],
+    "cue": [
+      "もっと早く",
+      "後悔している"
+    ],
+    "tell": "Regret about a past choice (もっと早く…後悔): 〜べきだった.",
+    "lv": 3
+  },
+  {
+    "id": "7-L24-001",
+    "type": "p7",
+    "point": "24-1",
+    "s": "我々の手で、この町の伝統を次の世代へ伝えていこう（　　）。",
+    "en": "Let us pass this town's traditions on to the next generation with our own hands.",
+    "c": [
+      "ではないか",
+      "ものか",
+      "ことか",
+      "べきだ"
+    ],
+    "cp": [
+      "24-1",
+      "24-6",
+      "26-6",
+      "23-7"
+    ],
+    "why": [
+      "〜(よ)うではないか: 'let us…', a speech-style call to a group. It is the only form that follows the volitional 伝えていこう.",
+      "〜ものか follows the dictionary form (伝えていくものか) and is a refusal. It cannot follow いこう.",
+      "〜ことか needs a question word and a plain form. It cannot follow いこう.",
+      "〜べきだ follows the dictionary form (伝えていくべきだ). It cannot follow いこう."
+    ],
+    "cue": [
+      "伝えていこう",
+      "我々の手で"
+    ],
+    "tell": "Volitional form + blank, calling on a group: 〜(よ)うではないか (let us).",
+    "lv": 1
+  },
+  {
+    "id": "7-L24-002",
+    "type": "p7",
+    "point": "24-1",
+    "s": "市長は演説の最後に、「市民の皆さん、力を合わせて、この町をもう一度元気に（　　）」と呼びかけた。",
+    "en": "At the end of his speech the mayor called out: 'Citizens, let us join forces and bring this town back to life once more.'",
+    "c": [
+      "しようではありませんか",
+      "するではありませんか",
+      "することはありませんか",
+      "するまいとしているではありませんか"
+    ],
+    "cp": [
+      "24-1",
+      null,
+      "24-4",
+      "24-5"
+    ],
+    "why": [
+      "Volitional + ではありませんか: 'let us…'. A mayor calling on 市民の皆さん at the end of a speech (呼びかけた) is exactly its use.",
+      "Dictionary form + ではないか points at a fact with surprise ('why, it does!'). It does not call anyone to act.",
+      "〜ことはありませんか asks 'do you ever…?' or 'is there no need to…?'. Neither is a call to action at the end of a speech.",
+      "〜まいとしている means 'we are trying not to'. Pointing out that the town is trying NOT to revive itself is the opposite of the mayor's call."
+    ],
+    "cue": [
+      "呼びかけた",
+      "市民の皆さん"
+    ],
+    "tell": "A speech calling on a crowd: volitional + ではありませんか. Dictionary form + ではないか is surprise.",
+    "lv": 3
+  },
+  {
+    "id": "7-L24-003",
+    "type": "p7",
+    "point": "24-2",
+    "set": "kotoda",
+    "s": "風邪を早く治したいなら、温かくしてゆっくり休む（　　）。",
+    "en": "If you want to get over your cold quickly, the thing to do is keep warm and get plenty of rest.",
+    "c": [
+      "ことだ",
+      "ことか",
+      "ものがある",
+      "ことはない"
+    ],
+    "cp": [
+      "24-2",
+      "26-6",
+      "26-4",
+      "24-4"
+    ],
+    "why": [
+      "Verb + ことだ: advice ('the thing to do is rest'). 〜たいなら sets up advice to the listener.",
+      "〜ことか needs a question word (どんなに・何度). There is none.",
+      "〜ものがある describes a felt quality with an impression word (つらいものがある). 休む is an action, not an impression.",
+      "〜ことはない means 'there's no need to rest'. That contradicts wanting to get better fast."
+    ],
+    "cue": [
+      "治したいなら"
+    ],
+    "tell": "〜たいなら + verb + blank: advice, 〜ことだ.",
+    "lv": 1
+  },
+  {
+    "id": "7-L24-004",
+    "type": "p7",
+    "point": "24-2",
+    "set": "kotoda",
+    "s": "人前で緊張せずに話せるようになりたければ、とにかく何度も経験を（　　）。",
+    "en": "If you want to be able to speak in front of people without getting nervous, the key is simply to get lots of practice.",
+    "c": [
+      "積むことだ",
+      "積んだことだ",
+      "積むことか",
+      "積むことはない"
+    ],
+    "cp": [
+      "24-2",
+      null,
+      "26-6",
+      "24-4"
+    ],
+    "why": [
+      "Dictionary form + ことだ: advice. 〜たければ sets up advice to the listener.",
+      "Advice ことだ has no past form. 積んだことだ cannot give advice.",
+      "〜ことか needs a question word such as どんなに. とにかく is not one.",
+      "〜ことはない means 'there's no need to'. It contradicts wanting to speak without nerves."
+    ],
+    "cue": [
+      "なりたければ",
+      "とにかく"
+    ],
+    "tell": "〜たければ + advice: dictionary form + ことだ. No past form, no question form.",
+    "lv": 2
+  },
+  {
+    "id": "7-L24-005",
+    "type": "p7",
+    "point": "24-2",
+    "set": "kotoda",
+    "s": "部長「同じミスを繰り返したくなければ、確認を（　　）。」",
+    "en": "Manager: If you don't want to repeat the same mistake, the thing is never to skip your checks.",
+    "c": [
+      "怠らないことだね",
+      "怠らないことだったね",
+      "怠らないことかね",
+      "怠らないことはないね"
+    ],
+    "cp": [
+      "24-2",
+      null,
+      "26-6",
+      "24-4"
+    ],
+    "why": [
+      "Negative advice: ない形 + ことだ. A manager advising a junior (〜たくなければ) is exactly its use; ね softens it.",
+      "Advice ことだ has no past form. ことだった cannot advise about what to do from now on.",
+      "〜ことか needs a question word and expresses strong feeling, not advice.",
+      "〜ないことはない is a double negative ('it's not that you don't'). It gives no advice."
+    ],
+    "cue": [
+      "繰り返したくなければ",
+      "部長"
+    ],
+    "tell": "Advice to a junior, 'don't': ない形 + ことだ. ことだった and ことか don't give advice.",
+    "lv": 3
+  },
+  {
+    "id": "7-L24-006",
+    "type": "p7",
+    "point": "24-3",
+    "set": "monoda",
+    "s": "母は、ご飯を残した息子に「食べ物を粗末にする（　　）」と言い聞かせた。",
+    "en": "When her son left food on his plate, the mother told him firmly, 'You must not waste food.'",
+    "c": [
+      "ものではありません",
+      "ものですから",
+      "ことはありません",
+      "ことでしょう"
+    ],
+    "cp": [
+      "24-3",
+      "16-2",
+      "24-4",
+      "26-6"
+    ],
+    "why": [
+      "〜ものではない (norm): 'one should not…', general good manners taught to a child. 言い聞かせた shows she is teaching him.",
+      "〜ものだから gives a personal excuse ('it's just that…'). The mother is laying down a rule, not making an excuse.",
+      "〜ことはない means 'there's no need to'. 'No need to waste food' is not a lesson in manners.",
+      "〜ことだろう needs a question word (どんなに). Without one it is only a guess, which makes no sense as a lesson."
+    ],
+    "cue": [
+      "言い聞かせた",
+      "ご飯を残した息子に"
+    ],
+    "tell": "Teaching someone general manners: 〜ものではない (one shouldn't).",
+    "lv": 2
+  },
+  {
+    "id": "7-L24-007",
+    "type": "p7",
+    "point": "24-3",
+    "set": "monoda",
+    "s": "お世話になった人には、きちんとお礼を言う（　　）。",
+    "en": "You should always properly thank the people who have helped you.",
+    "c": [
+      "ものだ",
+      "ものか",
+      "ものがある",
+      "ことか"
+    ],
+    "cp": [
+      "24-3",
+      "24-6",
+      "26-4",
+      "26-6"
+    ],
+    "why": [
+      "〜ものだ (norm): how people should behave in general. 'One should thank those who have helped you.'",
+      "〜ものか is an emotional refusal ('as if I'd thank them!'). It contradicts きちんと.",
+      "〜ものがある describes a felt quality with an impression word (心を打つものがある). お礼を言う is an action.",
+      "〜ことか needs a question word such as どんなに. There is none."
+    ],
+    "cue": [
+      "きちんと",
+      "お世話になった人には"
+    ],
+    "tell": "General good manners: dictionary form + ものだ (one should).",
+    "lv": 1
+  },
+  {
+    "id": "7-L24-008",
+    "type": "p7",
+    "point": "24-3",
+    "set": "monoda",
+    "s": "父は、友達から借りたゲームを汚してしまった私に、「人から借りた物は、借りたときよりきれいにして（　　）」と言った。",
+    "en": "When I got the game I'd borrowed from a friend dirty, my father told me, 'When you borrow something, you return it in better condition than you got it.'",
+    "c": [
+      "返すものだ",
+      "返すものではない",
+      "返すものか",
+      "返すものがある"
+    ],
+    "cp": [
+      "24-3",
+      "24-3",
+      "24-6",
+      "26-4"
+    ],
+    "why": [
+      "〜ものだ (norm): a rule for how anyone should behave, which the father is passing on after his son's mistake.",
+      "〜ものではない is the opposite rule: 'one should not return it cleaner'. That makes no sense as a lesson after the son dirtied the game.",
+      "〜ものか is a refusal ('as if I'd give it back!'). It makes no sense as a lesson to a child.",
+      "〜ものがある describes a felt quality (つらいものがある). Returning something is an action, not an impression."
+    ],
+    "cue": [
+      "汚してしまった私に",
+      "人から借りた物は"
+    ],
+    "tell": "A rule someone passes on ('one should…'): dictionary form + ものだ. ものではない is the opposite rule.",
+    "lv": 2
+  },
+  {
+    "id": "7-L24-009",
+    "type": "p7",
+    "point": "24-4",
+    "set": "kotoda",
+    "s": "このくらいの傷なら、わざわざ病院に行く（　　）よ。消毒しておけばすぐ治るから。",
+    "en": "For a cut this small, there's no need to go all the way to hospital. Just disinfect it and it'll soon heal.",
+    "c": [
+      "ことはない",
+      "ものだ",
+      "べきだ",
+      "しかない"
+    ],
+    "cp": [
+      "24-4",
+      "24-3",
+      "23-7",
+      "23-6"
+    ],
+    "why": [
+      "〜ことはない: 'there's no need to', reassuring someone who thinks they must. わざわざ and the next sentence (it will heal) both point to it.",
+      "〜ものだ (norm) says 'one goes to hospital'. That contradicts 'it will heal if you disinfect it'.",
+      "〜べきだ says 'you should go'. That contradicts the reassurance that follows.",
+      "〜しかない says hospital is the only option. The speaker has just given another: disinfecting it."
+    ],
+    "cue": [
+      "わざわざ",
+      "消毒しておけばすぐ治るから"
+    ],
+    "tell": "Reassurance, 'don't bother' (わざわざ): 〜ことはない.",
+    "lv": 2
+  },
+  {
+    "id": "7-L24-010",
+    "type": "p7",
+    "point": "24-4",
+    "s": "A「計画が遅れたのは私のせいです。申し訳ありません。」B「なにもそこまで自分を責める（　　）よ。みんなで決めたことなんだから。」",
+    "en": "A: The plan is behind schedule because of me. I'm so sorry. B: There's no need to be that hard on yourself. We all decided it together.",
+    "c": [
+      "ことはない",
+      "しかない",
+      "ことか",
+      "にきまっている"
+    ],
+    "cp": [
+      "24-4",
+      "23-6",
+      "26-6",
+      "22-6"
+    ],
+    "why": [
+      "なにも〜ことはない: 'there's no need to go that far'. B reassures A, who thinks they must take the blame.",
+      "〜しかない ('you have no choice but to blame yourself') contradicts なにも and B's reason that it was a group decision.",
+      "〜ことか needs a question word (どんなに). なにも is not one, and ことか is not reassurance.",
+      "〜にきまっている ('of course you blame yourself') contradicts B's reassurance."
+    ],
+    "cue": [
+      "なにも",
+      "みんなで決めたことなんだから"
+    ],
+    "tell": "なにも〜 + reassurance: 〜ことはない (no need to).",
+    "lv": 2
+  },
+  {
+    "id": "7-L24-011",
+    "type": "p7",
+    "point": "24-5",
+    "set": "monoka-mai",
+    "s": "週末のパーティーに行こうか行く（　　）か、朝からずっと迷っている。",
+    "en": "I've been dithering all morning over whether or not to go to the party this weekend.",
+    "c": [
+      "まい",
+      "ない",
+      "べき",
+      "もの"
+    ],
+    "cp": [
+      "24-5",
+      null,
+      "23-7",
+      "24-6"
+    ],
+    "why": [
+      "Volitional + か + dictionary form + まいか: 'whether to or not'. 行こうか行くまいか is the fixed pair.",
+      "The negative of 行く is 行かない. 行くないか does not exist.",
+      "行くべきか ('should I go?') does not pair with 行こうか. The pair needs the same verb as 'yes' and 'no'.",
+      "行くものか is a refusal ('I'm not going!'). It breaks the 〜(よ)うか〜まいか pair and clashes with 迷っている."
+    ],
+    "cue": [
+      "行こうか",
+      "迷っている"
+    ],
+    "tell": "〜(よ)うか + same verb + まいか: whether or not to (行こうか行くまいか).",
+    "lv": 1
+  },
+  {
+    "id": "7-L24-012",
+    "type": "p7",
+    "point": "24-5",
+    "set": "monoka-mai",
+    "s": "母を心配させ（　　）、入院したことは誰にも話さなかった。",
+    "en": "So as not to worry my mother, I told no one that I had been admitted to hospital.",
+    "c": [
+      "まいとして",
+      "まいとしても",
+      "ずにはいられず",
+      "ざるを得ず"
+    ],
+    "cp": [
+      "24-5",
+      "24-5",
+      "25-3",
+      "25-5"
+    ],
+    "why": [
+      "〜まいとして: 'trying not to', the intention まい. The speaker kept quiet on purpose so as not to worry their mother.",
+      "〜まいとしても means 'even if I try not to'. It needs a contrasting result after it, but keeping quiet is what the speaker did on purpose.",
+      "〜ずにはいられない is something you can't stop yourself doing. 'I couldn't help worrying her, so I told no one' makes no sense.",
+      "〜ざるを得ない means 'forced to'. 'I had to worry my mother, so I told no one' is illogical."
+    ],
+    "cue": [
+      "誰にも話さなかった"
+    ],
+    "tell": "Kept quiet so as not to cause something: stem + まいとして (trying not to).",
+    "lv": 3
+  },
+  {
+    "id": "7-L24-013",
+    "type": "p7",
+    "point": "24-6",
+    "set": "monoka-mai",
+    "s": "あの店の店員の態度はあまりにひどかった。あんな店、もう二度と行く（　　）。",
+    "en": "The staff at that shop were awful. I'm never going back there again.",
+    "c": [
+      "ものか",
+      "ことか",
+      "ものだ",
+      "ことだ"
+    ],
+    "cp": [
+      "24-6",
+      "26-6",
+      "24-3",
+      "24-2"
+    ],
+    "why": [
+      "〜ものか: an emotional refusal ('I'm never going back!'). 二度と and the bad service make the anger clear.",
+      "〜ことか needs a question word (どんなに・何度). There is none.",
+      "〜ものだ (norm) would say 'one should go to that shop'. That contradicts 二度と and the complaint.",
+      "Verb + ことだ is advice to go. That also contradicts 二度と."
+    ],
+    "cue": [
+      "二度と",
+      "ひどかった"
+    ],
+    "tell": "Anger + もう二度と + dictionary form: 〜ものか (I'm never ~ again).",
+    "lv": 1
+  },
+  {
+    "id": "7-L24-014",
+    "type": "p7",
+    "point": "24-6",
+    "set": "monoka-mai",
+    "s": "マラソンの途中で足が痛くなってきた。でも、ここで（　　）。最後まで走りきってみせる。",
+    "en": "Partway through the marathon my legs started to hurt. But I'm not dropping out here. I'll make it to the finish.",
+    "c": [
+      "棄権するものか",
+      "棄権するとみえる",
+      "棄権しないものか",
+      "棄権することか"
+    ],
+    "cp": [
+      "24-6",
+      "22-1",
+      "26-3",
+      "26-6"
+    ],
+    "why": [
+      "〜ものか: the speaker's own fierce refusal ('I'm not quitting here!'). The next sentence, 走りきってみせる, shows the resolve.",
+      "〜とみえる guesses about someone else from evidence. You never use it for your own decision.",
+      "〜ないものか is a wish for something hard ('isn't there some way…?') that is outside your control. Whether to quit is the speaker's own choice.",
+      "〜ことか needs a question word such as どんなに. There is none."
+    ],
+    "cue": [
+      "走りきってみせる",
+      "でも"
+    ],
+    "tell": "Your own fierce 'I won't!': dictionary form + ものか. とみえる is never about yourself.",
+    "lv": 2
+  },
+  {
+    "id": "7-L25-001",
+    "type": "p7",
+    "point": "25-1",
+    "set": "feeling",
+    "s": "第一志望の大学から合格の知らせが届いた。うれしくて（　　）。",
+    "en": "A letter came saying I'd got into my first-choice university. I'm so happy I can hardly contain myself.",
+    "c": [
+      "しかたがない",
+      "しかない",
+      "ほかない",
+      "いられない"
+    ],
+    "cp": [
+      "25-1",
+      "23-6",
+      "23-6",
+      "25-3"
+    ],
+    "why": [
+      "Adjective て形 + しかたがない: 'unbearably happy'. It expresses the speaker's own overwhelming feeling.",
+      "〜しかない ('no other option') follows a dictionary-form verb (帰るしかない). It cannot follow うれしくて.",
+      "〜(より)ほかない also follows a dictionary-form verb (待つよりほかない). It does not attach to an adjective's て形.",
+      "〜ずにはいられない needs a verb's ない stem (笑わずにはいられない). うれしくていられない is not a form."
+    ],
+    "cue": [
+      "うれしくて"
+    ],
+    "tell": "Feeling adjective + て + blank: しかたがない (unbearably). しかない and ほかない need a verb.",
+    "lv": 1
+  },
+  {
+    "id": "7-L25-002",
+    "type": "p7",
+    "point": "25-1",
+    "set": "feeling",
+    "s": "A「顔色が悪いけど、どうしたの？」B「朝から奥歯が（　　）んだ。」",
+    "en": "A: You look pale. What's wrong? B: My back tooth has been killing me since this morning.",
+    "c": [
+      "痛くてたまらない",
+      "痛くてたまらないらしい",
+      "痛いとみえる",
+      "痛いに越したことはない"
+    ],
+    "cp": [
+      "25-1",
+      "25-1",
+      "22-1",
+      "23-5"
+    ],
+    "why": [
+      "〜てたまらない: an unbearable physical sensation, said about yourself. B is describing their own pain.",
+      "らしい is a guess or hearsay about someone else. You feel your own toothache directly, so you don't say it 'seems' to hurt.",
+      "〜とみえる reads evidence about others. It is never used for your own state.",
+      "〜に越したことはない means 'it is best if'. Nobody prefers toothache."
+    ],
+    "cue": [
+      "どうしたの？",
+      "朝から"
+    ],
+    "tell": "Your own physical pain: 〜てたまらない, with no らしい or とみえる (those are for other people).",
+    "lv": 3
+  },
+  {
+    "id": "7-L25-003",
+    "type": "p7",
+    "point": "25-2",
+    "set": "feeling",
+    "s": "さっきから、誰かに後をつけられているような気がして（　　）。",
+    "en": "For a while now I've had the uneasy feeling that someone is following me.",
+    "c": [
+      "ならない",
+      "ほかならない",
+      "すぎない",
+      "違いない"
+    ],
+    "cp": [
+      "25-2",
+      "23-4",
+      "23-3",
+      "22-5"
+    ],
+    "why": [
+      "て形 + ならない: a feeling that wells up by itself and won't go away. 気がしてならない is its most common use.",
+      "〜にほかならない needs に and a noun before it. It cannot follow a て形.",
+      "〜にすぎない needs に before it. 気がしてすぎない is not Japanese.",
+      "〜に違いない needs に before it. て形 + 違いない is not a form."
+    ],
+    "cue": [
+      "気がして"
+    ],
+    "tell": "て + ならない is a feeling; に + ほかならない／すぎない／違いない is a judgement.",
+    "lv": 1
+  },
+  {
+    "id": "7-L25-004",
+    "type": "p7",
+    "point": "25-2",
+    "set": "feeling",
+    "s": "古いアルバムをめくるたびに、亡くなった祖母のことが（　　）。",
+    "en": "Every time I leaf through the old album, memories of my late grandmother come flooding back.",
+    "c": [
+      "思い出されてならない",
+      "思い出さずにはいられない",
+      "思い出さざるを得ない",
+      "思い出してたまらない"
+    ],
+    "cp": [
+      "25-2",
+      "25-3",
+      "25-5",
+      "25-1"
+    ],
+    "why": [
+      "Spontaneous passive (思い出される) + てならない: memories come back by themselves. 祖母のことが takes が, which fits 思い出される.",
+      "思い出す is active and takes を (祖母のことを), so it clashes with が. ずにはいられない is also about an action you can't hold back, not memories arriving.",
+      "ざるを得ない is a reluctant act forced by circumstances. Memories are not forced, and active 思い出す again clashes with が.",
+      "たまらない is for physical or immediate feelings (かゆい・眠い), and active 思い出して clashes with が."
+    ],
+    "cue": [
+      "祖母のことが",
+      "たびに"
+    ],
+    "tell": "〜が + spontaneous verb (思い出される・思われる) + てならない: feelings that arrive by themselves.",
+    "lv": 3
+  },
+  {
+    "id": "7-L25-005",
+    "type": "p7",
+    "point": "25-3",
+    "set": "must",
+    "s": "彼の話があまりにおもしろくて、会議中なのに笑わ（　　）。",
+    "en": "His story was so funny that I couldn't help laughing, even though we were in a meeting.",
+    "c": [
+      "ずにはいられなかった",
+      "ずにすんだ",
+      "ないわけにはいかなかった",
+      "ずじまいだった"
+    ],
+    "cp": [
+      "25-3",
+      null,
+      "25-4",
+      "20-6"
+    ],
+    "why": [
+      "〜ずにはいられない: you can't stop yourself. The story was so funny that the laugh came out even in a meeting.",
+      "〜ずにすむ means 'got away without having to'. The story was so funny that the laugh came out, so the speaker did not avoid it.",
+      "〜ないわけにはいかない comes from social duty. Nothing obliged the speaker to laugh in a meeting; quite the opposite.",
+      "〜ずじまいだ means 'never got round to it'. It contradicts あまりにおもしろくて and なのに, which say the laugh came out."
+    ],
+    "cue": [
+      "あまりにおもしろくて",
+      "会議中なのに"
+    ],
+    "tell": "A feeling too strong to hold back, even when you shouldn't (なのに): 〜ずにはいられない.",
+    "lv": 2
+  },
+  {
+    "id": "7-L25-006",
+    "type": "p7",
+    "point": "25-3",
+    "s": "被災地の様子をニュースで見て、私も何か協力（　　）気持ちになった。",
+    "en": "Seeing the disaster area on the news, I felt I couldn't stand by without doing something to help.",
+    "c": [
+      "せずにはいられない",
+      "しずにはいられない",
+      "さずにはいられない",
+      "するずにはいられない"
+    ],
+    "cp": [
+      "25-3",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "する becomes せず before にはいられない: 協力せずにはいられない (I can't stand by without helping).",
+      "しず is not a form. The ず form of する is せず.",
+      "さず belongs to verbs ending in す (話す → 話さず). 協力する is a する verb.",
+      "ず attaches to the ない stem, never to the dictionary form. するず does not exist."
+    ],
+    "cue": [
+      "協力"
+    ],
+    "tell": "する verbs take せず: 協力せずにはいられない.",
+    "lv": 1
+  },
+  {
+    "id": "7-L25-007",
+    "type": "p7",
+    "point": "25-4",
+    "set": "wake",
+    "s": "取引先の社長が、自分で釣った魚の料理を勧めてくれた。魚は苦手だが、ここは食べ（　　）。",
+    "en": "The client's president offered me a dish made from a fish he had caught himself. I don't like fish, but in this situation I can hardly refuse to eat it.",
+    "c": [
+      "ないわけにはいかない",
+      "るわけにはいかない",
+      "るわけがない",
+      "ないわけだ"
+    ],
+    "cp": [
+      "25-4",
+      "18-2",
+      "12-1",
+      "IV-10"
+    ],
+    "why": [
+      "〜ないわけにはいかない: 'I can't not do it', a social obligation. Turning down food that the client's president offers would be rude.",
+      "〜わけにはいかない without ない means 'I can't very well eat it'. That ignores the obligation, and there is no contrast with 苦手だが.",
+      "〜わけがない means 'there's no way I'd eat it'. It contradicts ここは, which signals giving in to the situation.",
+      "〜わけだ means 'so it follows'. 'So it follows that I don't eat it' does not follow from being offered the dish."
+    ],
+    "cue": [
+      "勧めてくれた",
+      "ここは"
+    ],
+    "tell": "Social pressure (someone important offers it) + 'I must': ないわけにはいかない. Without ない it means 'can't'.",
+    "lv": 2
+  },
+  {
+    "id": "7-L25-008",
+    "type": "p7",
+    "point": "25-4",
+    "set": "must",
+    "s": "あまり気が進まないが、部長が主催する勉強会なので、参加（　　）。",
+    "en": "I'm not really keen, but the study session is run by the department head, so I can't very well stay away.",
+    "c": [
+      "しないわけにはいかない",
+      "せずにはいられない",
+      "するわけにはいかない",
+      "するまい"
+    ],
+    "cp": [
+      "25-4",
+      "25-3",
+      "18-2",
+      "24-5"
+    ],
+    "why": [
+      "〜ないわけにはいかない: obliged by social duty. The session is run by the department head, so staying away is not an option.",
+      "〜ずにはいられない is an inner urge you can't hold back. It contradicts あまり気が進まない (I don't really want to).",
+      "〜わけにはいかない without ない means 'I can't very well take part'. That ignores the reason given: the boss runs the session.",
+      "〜まい means 'I won't take part'. After が (not keen, BUT) and なので (because the boss runs it), a refusal does not follow."
+    ],
+    "cue": [
+      "気が進まないが",
+      "部長が主催する勉強会なので"
+    ],
+    "tell": "Reluctant (気が進まない) but socially obliged: ないわけにはいかない. ずにはいられない is an inner urge.",
+    "lv": 2
+  },
+  {
+    "id": "7-L25-009",
+    "type": "p7",
+    "point": "25-4",
+    "s": "日頃から大変お世話になっている御社からのご依頼ですので、お引き受けし（　　）。",
+    "en": "As this request comes from your company, which has always been so good to us, we could hardly decline it.",
+    "c": [
+      "ないわけにはまいりません",
+      "ないわけにはいらっしゃいません",
+      "ないわけにはいかれません",
+      "ないわけにはおりません"
+    ],
+    "cp": [
+      "25-4",
+      "X-1",
+      "X-1",
+      "X-1"
+    ],
+    "why": [
+      "Humble まいる replaces いく: 〜ないわけにはまいりません. The writer is talking about their own obligation, so humble language fits.",
+      "いらっしゃる is honorific, for the other person's actions. It cannot describe the writer's own obligation.",
+      "いかれる is the honorific or passive of いく. You never raise your own action, and the humble form here is まいる.",
+      "おる is the humble form of いる, not いく. 〜わけにはいかない is built on いく."
+    ],
+    "cue": [
+      "お引き受けし",
+      "御社"
+    ],
+    "tell": "The keigo version of ないわけにはいかない, about yourself: 〜ないわけにはまいりません.",
+    "lv": 3
+  },
+  {
+    "id": "7-L25-010",
+    "type": "p7",
+    "point": "25-5",
+    "set": "must",
+    "s": "主力選手が二人もけがをしたため、次の試合では作戦を大きく変更（　　）。",
+    "en": "With two key players injured, we will have no choice but to change our tactics drastically for the next match.",
+    "c": [
+      "せざるを得ない",
+      "しざるを得ない",
+      "せずにはいられない",
+      "しまいとする"
+    ],
+    "cp": [
+      "25-5",
+      null,
+      "25-3",
+      "24-5"
+    ],
+    "why": [
+      "する becomes せざる: 変更せざるを得ない. Circumstances (the injuries) force an unwanted change.",
+      "しざる is not a form. ざる attaches like ず, so する becomes せざる.",
+      "〜ずにはいられない is an inner urge you can't hold back. Changing tactics after injuries is a forced decision, not an urge.",
+      "〜まいとする means 'try not to'. 'We try not to change' contradicts the injuries being given as the reason."
+    ],
+    "cue": [
+      "けがをしたため"
+    ],
+    "tell": "する verb + forced by circumstances: せざるを得ない (not しざる).",
+    "lv": 1
+  },
+  {
+    "id": "7-L25-011",
+    "type": "p7",
+    "point": "25-5",
+    "set": "must",
+    "s": "本当はその案には反対なのだが、多数決で決まった以上、従わ（　　）。",
+    "en": "To be honest I'm against that plan, but since it was decided by majority vote, I have no choice but to go along with it.",
+    "c": [
+      "ざるを得ない",
+      "ずにはいられない",
+      "ずにすむ",
+      "ずじまいだ"
+    ],
+    "cp": [
+      "25-5",
+      "25-3",
+      null,
+      "20-6"
+    ],
+    "why": [
+      "〜ざるを得ない: 'I have no choice but to', a reluctant act forced by circumstances. 本当は反対 shows the reluctance; 以上 gives the circumstance.",
+      "〜ずにはいられない is an urge from inside. The speaker is against the plan, so there is no urge to follow it.",
+      "〜ずにすむ means 'I get away without having to'. 以上 (now that it's decided) demands the opposite.",
+      "〜ずじまいだ means 'never got round to it' (a chance that has passed). It does not fit a decision just made."
+    ],
+    "cue": [
+      "本当は",
+      "以上"
+    ],
+    "tell": "Against it, but forced (以上): 〜ざるを得ない. In the ず family, ずにはいられない is an urge.",
+    "lv": 2
+  },
+  {
+    "id": "7-L25-012",
+    "type": "p7",
+    "point": "25-5",
+    "s": "誠に申し訳ございませんが、今回のご依頼はお断り（　　）。",
+    "en": "We are truly sorry, but we have no choice but to decline your request on this occasion.",
+    "c": [
+      "せざるを得ません",
+      "しかねます",
+      "なさらざるを得ません",
+      "せずにはいられません"
+    ],
+    "cp": [
+      "25-5",
+      "18-3",
+      "X-1",
+      "25-3"
+    ],
+    "why": [
+      "Humble お〜する + ざるを得ない: 'we are forced to decline'. 申し訳ございませんが shows the refusal is reluctant.",
+      "〜かねる means 'cannot'. お断りしかねます would mean 'we cannot decline', the opposite of what is meant.",
+      "なさる is honorific, for the other person's actions. Declining is the writer's own action, so it must stay humble (せざる).",
+      "〜ずにはいられない is an urge you can't hold back. 'We can't help refusing you' is rude and wrong in an apology."
+    ],
+    "cue": [
+      "申し訳ございませんが",
+      "お断り"
+    ],
+    "tell": "Polite, reluctant refusal: お断りせざるを得ません. お断りしかねます means you CAN'T refuse.",
+    "lv": 3
+  },
+  {
+    "id": "7-L26-001",
+    "type": "p7",
+    "point": "26-1",
+    "set": "monoda",
+    "s": "一度でいいから、本物のオーロラを自分の目で見てみ（　　）。",
+    "en": "Just once, I'd love to see a real aurora with my own eyes.",
+    "c": [
+      "たいものだ",
+      "たものだ",
+      "たいことだ",
+      "たことか"
+    ],
+    "cp": [
+      "26-1",
+      "26-2A",
+      "26-5",
+      "26-6"
+    ],
+    "why": [
+      "〜たいものだ: a heartfelt wish ('how I'd love to'). 一度でいいから (just once) marks a longing.",
+      "た形 + ものだ is a fond memory of a repeated habit. 一度でいいから shows it hasn't happened yet.",
+      "Exclamation ことだ goes with adjectives of feeling about a situation (ありがたいことだ). With たい it is not natural, and it does not voice a wish.",
+      "〜ことか needs a question word (どんなに・何度). There is none."
+    ],
+    "cue": [
+      "一度でいいから"
+    ],
+    "tell": "一度でいいから + longing: stem + たいものだ.",
+    "lv": 1
+  },
+  {
+    "id": "7-L26-002",
+    "type": "p7",
+    "point": "26-1",
+    "set": "monoda",
+    "s": "最近、電車の中で大声で電話をする人をよく見かける。もう少し周りに気を配って（　　）。",
+    "en": "Lately I often see people talking loudly on their phones on the train. I do wish they'd be a little more considerate of those around them.",
+    "c": [
+      "ほしいものだ",
+      "ほしいものか",
+      "ほしいことか",
+      "ほしいものではない"
+    ],
+    "cp": [
+      "26-1",
+      "12-3",
+      "26-6",
+      "24-3"
+    ],
+    "why": [
+      "〜てほしいものだ: a heartfelt general wish about how others behave. The writer is not asking anyone in particular.",
+      "〜ものか denies the idea ('as if I want that!'). It contradicts the writer's complaint.",
+      "〜ことか needs a question word such as どんなに. There is none.",
+      "〜ものではない is a norm ('one should not…'). 'One should not want them to be considerate' makes no sense."
+    ],
+    "cue": [
+      "もう少し",
+      "人をよく見かける"
+    ],
+    "tell": "A general wish about other people's behaviour: て形 + ほしいものだ.",
+    "lv": 2
+  },
+  {
+    "id": "7-L26-003",
+    "type": "p7",
+    "point": "26-2A",
+    "set": "monoda",
+    "s": "学生のころは、試験前になると友達と図書館に集まって、夜遅くまで勉強した（　　）。",
+    "en": "When I was a student, my friends and I would get together in the library before exams and study until late at night.",
+    "c": [
+      "ものだ",
+      "ことだ",
+      "ものがある",
+      "ことか"
+    ],
+    "cp": [
+      "26-2A",
+      "24-2",
+      "26-4",
+      "26-6"
+    ],
+    "why": [
+      "た形 + ものだ: a fond memory of a repeated past habit. 学生のころ and 〜になると (every time) mark the habit.",
+      "Advice ことだ takes the dictionary form and has no past. 勉強したことだ cannot give advice or recall a habit.",
+      "〜ものがある takes the present tense and an impression word (つらい・胸を打つ). It cannot follow 勉強した.",
+      "〜ことか needs a question word (どんなに・何度). There is none."
+    ],
+    "cue": [
+      "学生のころは",
+      "になると"
+    ],
+    "tell": "A past habit (〜ころは、〜になると) + た形: 〜たものだ (used to, fondly).",
+    "lv": 1
+  },
+  {
+    "id": "7-L26-004",
+    "type": "p7",
+    "point": "26-2A",
+    "set": "monoda",
+    "s": "私が子どもだったころは、雪が降ると近所の子どもたちと裏山へそり遊びに（　　）。",
+    "en": "When I was a child, whenever it snowed I'd go sledging on the hill behind our house with the neighbourhood kids.",
+    "c": [
+      "行ったものだ",
+      "行くものだ",
+      "行ったことだ",
+      "行ったところだ"
+    ],
+    "cp": [
+      "26-2A",
+      "23-1",
+      null,
+      null
+    ],
+    "why": [
+      "た形 + ものだ: 'I used to', a fond memory of a habit. 子どもだったころ and 雪が降ると (whenever it snowed) mark a repeated past habit.",
+      "Dictionary form + ものだ is a general truth or rule in the present. 私が子どもだったころ places this in the speaker's own past.",
+      "た形 + ことだ is not a way to recall a habit, and advice ことだ has no past.",
+      "〜たところだ means 'have just done'. It cannot describe a childhood habit."
+    ],
+    "cue": [
+      "子どもだったころは",
+      "雪が降ると"
+    ],
+    "tell": "A repeated habit in your own past: た形 + ものだ. Dictionary form + ものだ is a present truth or rule.",
+    "lv": 2
+  },
+  {
+    "id": "7-L26-005",
+    "type": "p7",
+    "point": "26-2A",
+    "set": "monoda",
+    "s": "入社したばかりのころは、先輩によく夜遅くまで飲みに付き合わ（　　）。",
+    "en": "When I had just joined the company, my seniors would often drag me out drinking until late at night.",
+    "c": [
+      "されたものだ",
+      "されたところだ",
+      "されるものだ",
+      "されたいものだ"
+    ],
+    "cp": [
+      "26-2A",
+      null,
+      "23-1",
+      "26-1"
+    ],
+    "why": [
+      "Causative-passive (付き合わされる: made to go along) + たものだ: a wry, fond memory of a repeated habit. 先輩に marks who made me go, and よく marks the habit.",
+      "〜たところだ means 'have just done'. よく (often) and 〜ころは (a period long past) call for a repeated habit, not something just finished.",
+      "Dictionary form + ものだ is a present truth. 入社したばかりのころ puts this in the speaker's past.",
+      "〜たいものだ is a wish for the future. Wishing to be dragged out drinking makes no sense, and 〜ころは is past."
+    ],
+    "cue": [
+      "入社したばかりのころは",
+      "先輩によく"
+    ],
+    "tell": "A past habit done to you: causative-passive + たものだ (付き合わされたものだ).",
+    "lv": 3
+  },
+  {
+    "id": "7-L26-006",
+    "type": "p7",
+    "point": "26-2B",
+    "set": "monoda",
+    "s": "留学生のリンさん、来日したころは挨拶もやっとだったのに、ずいぶん日本語が上手になった（　　）ね。",
+    "en": "When Lin, the exchange student, first came to Japan she could barely say hello, but her Japanese has really come on, hasn't it.",
+    "c": [
+      "ものだ",
+      "ことか",
+      "ものがある",
+      "というものだ"
+    ],
+    "cp": [
+      "26-2B",
+      "26-6",
+      "26-4",
+      "23-2"
+    ],
+    "why": [
+      "〜ものだ (marvelling): being struck by a change. ずいぶん and the contrast with how she started are the cues.",
+      "〜ことか needs a question word (どんなに・何と). ずいぶん is not one.",
+      "〜ものがある needs the present tense and an impression word. It cannot follow 上手になった.",
+      "〜というものだ gives a common-sense verdict with an evaluative word (無理・身勝手). 'Her Japanese has improved' is an observation, not a verdict."
+    ],
+    "cue": [
+      "ずいぶん",
+      "やっとだったのに"
+    ],
+    "tell": "ずいぶん + a change that impresses you: 〜ものだ (marvelling).",
+    "lv": 1
+  },
+  {
+    "id": "7-L26-007",
+    "type": "p7",
+    "point": "26-2B",
+    "set": "monoda",
+    "s": "久しぶりに生まれた町に帰ってみると、駅前には高いビルがずいぶん増えていた。この町も変わった（　　）。",
+    "en": "Going back to my home town after a long time, I found far more tall buildings in front of the station. How this town has changed.",
+    "c": [
+      "ものだ",
+      "ことか",
+      "というものだ",
+      "ものではない"
+    ],
+    "cp": [
+      "26-2B",
+      "26-6",
+      "23-2",
+      "24-3"
+    ],
+    "why": [
+      "〜ものだ (marvelling): the speaker is struck by how much the town has changed. ずいぶん in the previous sentence sets it up.",
+      "〜ことか needs a question word (どんなに・何と). There is none.",
+      "〜というものだ gives a common-sense verdict with an evaluative word (無理・身勝手). 'Has changed' is a plain observation.",
+      "〜ものではない (norm) says how people should not behave. A town changing is not behaviour."
+    ],
+    "cue": [
+      "ずいぶん増えていた",
+      "久しぶりに"
+    ],
+    "tell": "Back after a long time and struck by a change: 〜たものだ (marvelling).",
+    "lv": 2
+  },
+  {
+    "id": "7-L26-008",
+    "type": "p7",
+    "point": "26-2B",
+    "set": "monoda",
+    "s": "あの小さな町工場が、よくここまで大きな会社に育った（　　）、地元の人たちはみな感心している。",
+    "en": "Local people are all impressed at how that small backstreet workshop managed to grow into such a big company.",
+    "c": [
+      "ものだと",
+      "ものがあると",
+      "ものではないと",
+      "ことかと"
+    ],
+    "cp": [
+      "26-2B",
+      "26-4",
+      "24-3",
+      "26-6"
+    ],
+    "why": [
+      "よく〜ものだ: marvelling at a remarkable achievement, quoted with と before 感心している (are impressed).",
+      "〜ものがある needs the present tense and an impression word (胸を打つものがある). It cannot follow 育った.",
+      "〜ものではない (norm) takes the dictionary form and says how one should not behave. It cannot follow 育った, and it gives nothing to be impressed by.",
+      "〜ことか needs a question word (どんなに・何度). よく is not one."
+    ],
+    "cue": [
+      "よくここまで",
+      "感心している"
+    ],
+    "tell": "よく(ここまで)〜たものだ: marvelling at what someone achieved.",
+    "lv": 3
+  },
+  {
+    "id": "7-L26-009",
+    "type": "p7",
+    "point": "26-3",
+    "set": "wish",
+    "s": "何とかして、この色あせた古い写真を元どおりにできない（　　）。",
+    "en": "Isn't there some way to restore this faded old photograph to how it was?",
+    "c": [
+      "ものか",
+      "ことか",
+      "ものだ",
+      "ことだ"
+    ],
+    "cp": [
+      "26-3",
+      "26-6",
+      "23-1",
+      "24-2"
+    ],
+    "why": [
+      "〜ないものか: a hard wish dressed as a question ('isn't there some way…?'). 何とかして and the potential verb できない are the cues.",
+      "〜ことか needs a degree question word (どんなに・何度). 何とかして is not one.",
+      "〜ものだ (truth) would say 'such photos can't be restored', a general statement. It contradicts 何とかして, which shows the speaker wants it done.",
+      "Advice ことだ needs a deliberate action. A potential verb (できない) cannot take it."
+    ],
+    "cue": [
+      "何とかして",
+      "できない"
+    ],
+    "tell": "何とかして + potential verb + ないものか: isn't there some way?",
+    "lv": 1
+  },
+  {
+    "id": "7-L26-010",
+    "type": "p7",
+    "point": "26-3",
+    "set": "wish",
+    "s": "A「隣の工事、朝からずっとうるさいですね。」B「ええ。もう少し静かにしてもらえ（　　）。」",
+    "en": "A: The building work next door has been noisy all morning, hasn't it? B: Yes. Isn't there some way we could get them to keep it down a bit?",
+    "c": [
+      "ないものでしょうか",
+      "ないことでしょうか",
+      "ないものがあるでしょうか",
+      "ないわけにはいかないでしょうか"
+    ],
+    "cp": [
+      "26-3",
+      "26-6",
+      "26-4",
+      "25-4"
+    ],
+    "why": [
+      "〜ないものだろうか (polite: ないものでしょうか): a wish for something hard to change, put as a question. B cannot control the building work.",
+      "〜ことだろう expresses deep feeling and needs a question word (どんなに). It is not a wish.",
+      "〜ものがある describes a felt quality. 'Is there something they can't keep quiet?' means nothing here.",
+      "〜ないわけにはいかない is a social obligation ('must'). It cannot express a wish."
+    ],
+    "cue": [
+      "もう少し",
+      "うるさいですね"
+    ],
+    "tell": "A hard wish about something you can't control: potential verb + ないものでしょうか.",
+    "lv": 3
+  },
+  {
+    "id": "7-L26-011",
+    "type": "p7",
+    "point": "26-4",
+    "s": "知り合いが一人もいない町で暮らし始めるのは、やはり心細い（　　）。",
+    "en": "Starting a new life in a town where you don't know a single person is, as you'd expect, rather daunting.",
+    "c": [
+      "ものがある",
+      "ものか",
+      "ことか",
+      "というものだ"
+    ],
+    "cp": [
+      "26-4",
+      "12-3",
+      "26-6",
+      "23-2"
+    ],
+    "why": [
+      "〜ものがある: 'there is something lonely about it'. It turns the speaker's impression (心細い) into a felt quality.",
+      "〜ものか denies it ('as if it's lonely!'). That contradicts やはり (as you'd expect).",
+      "〜ことか needs a question word (どんなに). There is none.",
+      "〜というものだ gives a common-sense verdict and is not used with words for your own feelings. 心細い is a feeling."
+    ],
+    "cue": [
+      "心細い",
+      "やはり"
+    ],
+    "tell": "Your own impression word (心細い・つらい) + blank: 〜ものがある. というものだ refuses feeling words.",
+    "lv": 2
+  },
+  {
+    "id": "7-L26-012",
+    "type": "p7",
+    "point": "26-4",
+    "s": "社長が退任の日に社員に向けて語った言葉には、胸に迫る（　　）。",
+    "en": "The words the president spoke to his staff on the day he stepped down were deeply moving.",
+    "c": [
+      "ものがあった",
+      "ものだった",
+      "ことだった",
+      "ことか"
+    ],
+    "cp": [
+      "26-4",
+      "23-1",
+      "26-5",
+      "26-6"
+    ],
+    "why": [
+      "〜には〜ものがある: 'there was something moving in them'. には sets up a place where something exists, so it needs ある (here past: あった).",
+      "〜ものだった leaves 〜には with nothing to attach to. 'In his words was moving' is not a sentence.",
+      "〜ことだった also leaves 〜には hanging, and exclamation ことだ goes with an adjective, not a verb phrase like 胸に迫る.",
+      "〜ことか needs a question word such as どんなに. There is none."
+    ],
+    "cue": [
+      "言葉には",
+      "胸に迫る"
+    ],
+    "tell": "〜には + impression + blank: 〜ものがある (there is something ~ about it).",
+    "lv": 2
+  },
+  {
+    "id": "7-L26-013",
+    "type": "p7",
+    "point": "26-5",
+    "set": "kotoda",
+    "s": "毎年家族そろって海外旅行だなんて、うらやましい（　　）。",
+    "en": "A family trip abroad together every year? How enviable.",
+    "c": [
+      "ことだ",
+      "ことか",
+      "ことに",
+      "というものだ"
+    ],
+    "cp": [
+      "26-5",
+      "26-6",
+      "IV-7",
+      "23-2"
+    ],
+    "why": [
+      "Adjective + ことだ: an exclamation ('how enviable!'). うらやましい is the speaker's own subjective reaction.",
+      "〜ことか needs a question word (どんなに・何と). There is none.",
+      "〜ことに opens a sentence and must be followed by the fact (うらやましいことに、…). It cannot end the sentence.",
+      "〜というものだ is a verdict on a situation and is not used with words for your own feelings."
+    ],
+    "cue": [
+      "うらやましい",
+      "だなんて"
+    ],
+    "tell": "Feeling adjective + blank at the end: ことだ (how ~!). ことに goes at the front.",
+    "lv": 2
+  },
+  {
+    "id": "7-L26-014",
+    "type": "p7",
+    "point": "26-5",
+    "set": "kotoda",
+    "s": "長年続いてきた町の夏祭りが、担い手不足のため今年で終わるという。本当に（　　）。",
+    "en": "They say the town's long-running summer festival will end this year because there is nobody to carry it on. What a real shame.",
+    "c": [
+      "残念なことだ",
+      "残念がることだ",
+      "残念なことか",
+      "残念なことに"
+    ],
+    "cp": [
+      "26-5",
+      "24-2",
+      "26-6",
+      "IV-7"
+    ],
+    "why": [
+      "Adjective + ことだ: an exclamation of the speaker's own feeling ('what a shame'). 残念 is a な-adjective, so な comes before こと.",
+      "残念がる is a verb (and describes other people's feelings). Verb + ことだ is advice: 'you should act disappointed'.",
+      "〜ことか needs a question word such as どんなに. 本当に is not one.",
+      "〜ことに opens a sentence and must be followed by the fact (残念なことに、祭りが終わる). It cannot end the sentence."
+    ],
+    "cue": [
+      "本当に",
+      "今年で終わる"
+    ],
+    "tell": "Adjective → exclamation (残念なことだ). Verb → advice. Question word → ことか. ことに goes at the front.",
+    "lv": 2
+  },
+  {
+    "id": "7-L26-015",
+    "type": "p7",
+    "point": "26-5",
+    "set": "kotoda",
+    "s": "ご多忙の中、これほど多くの方にお集まりいただけたのは、まことに（　　）。",
+    "en": "That so many of you have come here despite your busy schedules is something we are truly grateful for.",
+    "c": [
+      "ありがたいことでございます",
+      "ありがたがることでございます",
+      "ありがたいことでございましょうか",
+      "ありがたいとのことでございます"
+    ],
+    "cp": [
+      "26-5",
+      "24-2",
+      "26-6",
+      "IV-9"
+    ],
+    "why": [
+      "Adjective + ことだ in very polite form: 'it is truly something to be grateful for'. まことに and the speaker's own gratitude fit the exclamation ことだ.",
+      "ありがたがる is a verb about other people's feelings, and verb + ことだ is advice. Neither fits the speaker's own thanks.",
+      "A question ending (〜でございましょうか) turns the thanks into doubt. A ことか-style exclamation would also need a question word such as どんなに.",
+      "〜とのことだ reports what someone else said. The speaker is expressing their own gratitude."
+    ],
+    "cue": [
+      "まことに",
+      "お集まりいただけた"
+    ],
+    "tell": "Your own deep thanks in a formal speech: ありがたいことでございます (adjective + ことだ).",
+    "lv": 3
+  },
+  {
+    "id": "7-L26-016",
+    "type": "p7",
+    "point": "26-6",
+    "set": "kotoda",
+    "s": "行方不明だった子どもが無事に見つかったと聞いて、家族はどんなに安心した（　　）。",
+    "en": "How relieved the family must have been to hear that their missing child had been found safe.",
+    "c": [
+      "ことだろう",
+      "ことだ",
+      "ものだ",
+      "ものがある"
+    ],
+    "cp": [
+      "26-6",
+      "26-5",
+      "26-2A",
+      "26-4"
+    ],
+    "why": [
+      "どんなに + ことだろう: 'how relieved they must have been'. The question word どんなに needs ことだろう or ことか to close it.",
+      "〜ことだ has no question ending. どんなに cannot be left open.",
+      "た形 + ものだ is a fond memory of a habit. どんなに cannot pair with it, and one-off relief is not a habit.",
+      "〜ものがある takes the present tense and cannot close a question word like どんなに."
+    ],
+    "cue": [
+      "どんなに"
+    ],
+    "tell": "どんなに／何度／いくら + blank: ことだろう or ことか (how very ~!).",
+    "lv": 1
+  },
+  {
+    "id": "7-L26-017",
+    "type": "p7",
+    "point": "26-6",
+    "set": "kotoda",
+    "s": "このプロジェクトを成功させるために、チームのみんなと何度夜遅くまで話し合った（　　）。",
+    "en": "To make this project a success, how many times the team and I talked late into the night!",
+    "c": [
+      "ことか",
+      "ことだ",
+      "ものだ",
+      "ことはない"
+    ],
+    "cp": [
+      "26-6",
+      "26-5",
+      "26-2A",
+      "24-4"
+    ],
+    "why": [
+      "何度 + ことか: 'how many times we talked late into the night!'. The question word 何度 needs ことか (or ことだろう).",
+      "〜ことだ cannot close a question word like 何度. Without か it is not an exclamation of degree.",
+      "た形 + ものだ recalls a habit, but a question word (何度) must be closed by か or だろう. 何度〜たものだ leaves 何度 hanging.",
+      "〜ことはない ('no need to') takes the dictionary form. It cannot follow a past verb or 何度."
+    ],
+    "cue": [
+      "何度"
+    ],
+    "tell": "A degree question word (何度) + past verb: 〜たことか (how many times!).",
+    "lv": 2
+  }
+]

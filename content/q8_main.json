@@ -1,0 +1,767 @@
+[
+  {
+    "id": "8-001",
+    "type": "p8",
+    "point": "P2-1",
+    "pre": "この活動は、",
+    "post": "続けていくつもりだ。",
+    "pieces": [
+      "たとえ",
+      "最後の",
+      "一人に",
+      "なっても"
+    ],
+    "star": 3,
+    "en": "I intend to keep this activity going, even if I end up being the last one left.",
+    "tell": "たとえ opens a concession and 〜ても closes it: たとえ…なっても.",
+    "why": "Anchor: たとえ goes first and calls for 〜ても, so なっても closes the clause. 最後の must sit right before the noun 一人, and 一人に links to なっても (〜になる). So: たとえ, 最後の, 一人に, なっても."
+  },
+  {
+    "id": "8-002",
+    "type": "p8",
+    "point": "P2-1",
+    "pre": "A「発表資料に一か所ミスがあったから、全部作り直そうと思うんだ。」　B「",
+    "post": "ないよ。そこだけ直せば十分だよ。」",
+    "pieces": [
+      "なにも",
+      "一から",
+      "作り直す",
+      "ことは"
+    ],
+    "star": 2,
+    "en": "A: There was one mistake in my slides, so I'm going to remake them all. B: There's no need to remake them from scratch. Fixing that one part is enough.",
+    "tell": "なにも at the start locks in 〜ことはない at the end: there's no need to.",
+    "why": "Anchor: なにも points to 〜ことはない, so ことは goes last, right before ない in the post. The verb 作り直す goes before ことは. 一から says how you remake, so it sits after なにも, right before the verb."
+  },
+  {
+    "id": "8-003",
+    "type": "p8",
+    "point": "P2-1",
+    "pre": "十年ぶりに帰った故郷の商店街は、",
+    "post": "ことか。",
+    "pieces": [
+      "なんと",
+      "寂しく",
+      "なって",
+      "しまった"
+    ],
+    "star": 1,
+    "en": "I went back to my hometown after ten years. How empty its shopping street has become!",
+    "tell": "なんと + description + ことか = how very ~! なんと comes before the description.",
+    "why": "Anchor: ことか in the post needs なんと earlier, so なんと goes first. Then the change: 寂しく + なって, and しまった joins ことか. So: なんと, 寂しく, なって, しまった."
+  },
+  {
+    "id": "8-004",
+    "type": "p8",
+    "point": "P2-1",
+    "pre": "申込書に",
+    "post": "、あとの手続きはこちらで行います。",
+    "pieces": [
+      "住所と",
+      "名前さえ",
+      "書いて",
+      "いただければ"
+    ],
+    "star": 2,
+    "en": "As long as you write your address and name on the form, we will take care of the rest of the procedure.",
+    "tell": "Noun + さえ + a ば-form = as long as: 名前さえ書いていただければ.",
+    "why": "Anchor: 名前さえ needs a ば-form later, which is いただければ. 書いて joins it: 書いていただければ. 住所と links two nouns, so it goes right before 名前さえ. So: 住所と, 名前さえ, 書いて, いただければ."
+  },
+  {
+    "id": "8-005",
+    "type": "p8",
+    "point": "P2-1",
+    "pre": "兄は、大学時代のボランティア活動",
+    "post": "進んだ。",
+    "pieces": [
+      "を",
+      "きっかけに",
+      "して",
+      "医療の道に"
+    ],
+    "star": 1,
+    "en": "My brother's volunteer work at university led him into a career in medicine.",
+    "tell": "〜を + noun + にして is one fixed shape: 活動をきっかけにして.",
+    "why": "The pre ends in a bare noun, so を comes first. を + きっかけに + して is the fixed shape 〜を〜にして. 医療の道に then goes right before the verb 進んだ. So: を, きっかけに, して, 医療の道に."
+  },
+  {
+    "id": "8-006",
+    "type": "p8",
+    "point": "P2-1",
+    "pre": "駅前の通りを端から端まで歩いてみたが、",
+    "post": "店はなかった。",
+    "pieces": [
+      "一軒",
+      "として",
+      "入りたいと",
+      "思える"
+    ],
+    "star": 2,
+    "en": "I walked the street by the station from one end to the other, but there was not a single shop I felt like going into.",
+    "tell": "一 + counter + として needs a negative later: 一軒として…なかった.",
+    "why": "Anchor: 一軒として needs a negative, and なかった in the post gives it. 入りたいと + 思える describe the shop, so they must sit right before 店. That leaves 一軒として at the front. So: 一軒, として, 入りたいと, 思える."
+  },
+  {
+    "id": "8-007",
+    "type": "p8",
+    "point": "P2-1",
+    "pre": "A「課長に冗談で『もう会社を辞めたい』って言っちゃった。」　B「それはまずいよ。",
+    "post": "いいことと悪いことがあるよ。」",
+    "pieces": [
+      "たとえ",
+      "冗談",
+      "にしても",
+      "言って"
+    ],
+    "star": 2,
+    "en": "A: I joked to my section chief that I want to quit. B: That's bad. Even as a joke, there are things you can say and things you can't.",
+    "tell": "たとえ looks ahead to にしても or ても: たとえ冗談にしても.",
+    "why": "Anchor: たとえ goes first and calls for にしても, which attaches to the noun 冗談. 言って joins the post to make 言っていいこと. So: たとえ, 冗談, にしても, 言って."
+  },
+  {
+    "id": "8-008",
+    "type": "p8",
+    "point": "P2-1",
+    "pre": "この祭りは、地域の住民どうしの交流",
+    "post": "秋に開かれている。",
+    "pieces": [
+      "を",
+      "目的",
+      "として",
+      "毎年"
+    ],
+    "star": 3,
+    "en": "This festival is held every autumn so that local residents can get to know each other.",
+    "tell": "〜を + noun + として is a fixed shape: 交流を目的として = with exchange as its aim.",
+    "why": "The pre ends in a bare noun, so を comes first. を + 目的 + として is the fixed shape 〜を〜として. 毎年 goes with the post: 毎年秋に開かれている. So: を, 目的, として, 毎年."
+  },
+  {
+    "id": "8-009",
+    "type": "p8",
+    "point": "P2-2",
+    "pre": "市長は記者会見で、",
+    "post": "考えを示した。",
+    "pieces": [
+      "被災地",
+      "への",
+      "支援を",
+      "続ける"
+    ],
+    "star": 0,
+    "en": "At a press conference, the mayor said he would continue support for the disaster area.",
+    "tell": "に becomes への before a noun, never にの: 被災地への支援.",
+    "why": "への joins two nouns, so it sits between 被災地 and 支援を. 支援を is the object of 続ける, and 続ける describes 考え in the post. So: 被災地, への, 支援を, 続ける."
+  },
+  {
+    "id": "8-010",
+    "type": "p8",
+    "point": "P2-2",
+    "pre": "来週は",
+    "post": "ので、資料の準備は今週中に済ませておきたい。",
+    "pieces": [
+      "取引先",
+      "との",
+      "打ち合わせが",
+      "続く"
+    ],
+    "star": 0,
+    "en": "Next week I have meeting after meeting with clients, so I want to finish preparing the materials this week.",
+    "tell": "と + の + noun: 取引先との打ち合わせ = a meeting with a client.",
+    "why": "との must sit between two nouns: 取引先との打ち合わせ. 打ち合わせが is the subject of 続く, and 続く connects to ので in the post. So: 取引先, との, 打ち合わせが, 続く."
+  },
+  {
+    "id": "8-011",
+    "type": "p8",
+    "point": "P2-2",
+    "pre": "【お願い】図書館",
+    "post": "ご遠慮ください。",
+    "pieces": [
+      "内",
+      "での",
+      "携帯電話の",
+      "通話は"
+    ],
+    "star": 1,
+    "en": "Notice: please do not make phone calls inside the library.",
+    "tell": "で + の before a noun: 図書館内での通話 = calls made inside the library.",
+    "why": "内 attaches to 図書館 in the pre. での then turns the place into a noun modifier. 携帯電話の goes before 通話は, the topic of ご遠慮ください. So: 内, での, 携帯電話の, 通話は."
+  },
+  {
+    "id": "8-012",
+    "type": "p8",
+    "point": "P2-2",
+    "pre": "新しい社長の発言",
+    "post": "日に日に強まっている。",
+    "pieces": [
+      "に",
+      "対する",
+      "社員の",
+      "反発は"
+    ],
+    "star": 1,
+    "en": "The staff's backlash against the new president's remarks is growing day by day.",
+    "tell": "Before a noun, に対して becomes に対する: 発言に対する反発.",
+    "why": "に joins 対する to make に対する, and that form needs a noun after it. The noun phrase is 社員の反発は, so 社員の comes next and 反発は last. So: に, 対する, 社員の, 反発は."
+  },
+  {
+    "id": "8-013",
+    "type": "p8",
+    "point": "P2-2",
+    "pre": "医師は、検査の",
+    "post": "患者に説明した。",
+    "pieces": [
+      "結果",
+      "に",
+      "基づいた",
+      "治療方針を"
+    ],
+    "star": 2,
+    "en": "The doctor explained to the patient a treatment plan based on the test results.",
+    "tell": "Before a noun, に基づいて becomes に基づいた or に基づく: 結果に基づいた方針.",
+    "why": "検査の needs a noun, so 結果 comes first. に + 基づいた is the noun-modifier form, so a noun must follow: 治療方針を, the object of 説明した. So: 結果, に, 基づいた, 治療方針を."
+  },
+  {
+    "id": "8-014",
+    "type": "p8",
+    "point": "P2-2",
+    "pre": "当社は今後、",
+    "post": "いく方針だ。",
+    "pieces": [
+      "アジア",
+      "における",
+      "販売網を",
+      "広げて"
+    ],
+    "star": 3,
+    "en": "From now on, our company plans to expand its sales network in Asia.",
+    "tell": "における is the noun-modifier form of において: アジアにおける販売網.",
+    "why": "における must be followed by a noun, so it links アジア and 販売網を. 販売網を is the object of 広げて, and 広げて joins いく in the post. So: アジア, における, 販売網を, 広げて."
+  },
+  {
+    "id": "8-015",
+    "type": "p8",
+    "point": "P2-2",
+    "pre": "労使双方は、三日間",
+    "post": "、ようやく合意に達した。",
+    "pieces": [
+      "に",
+      "わたる",
+      "話し合いの",
+      "末"
+    ],
+    "star": 2,
+    "en": "After three days of talks, management and the union finally reached an agreement.",
+    "tell": "Before a noun, にわたって becomes にわたる: 三日間にわたる話し合い.",
+    "why": "三日間 needs に, and に + わたる is the noun-modifier form, so a noun must follow: 話し合いの. 末 closes the phrase: 話し合いの末, after the talks. So: に, わたる, 話し合いの, 末."
+  },
+  {
+    "id": "8-016",
+    "type": "p8",
+    "point": "P2-2",
+    "pre": "近所の古い喫茶店の店主から、昔この町に有名な作家が住んでいた",
+    "post": "聞いた。",
+    "pieces": [
+      "という",
+      "意外な",
+      "話を",
+      "初めて"
+    ],
+    "star": 1,
+    "en": "From the owner of an old café near my home, I heard for the first time the surprising story that a famous writer once lived in this town.",
+    "tell": "Content + という + adjective + noun: the adjective sits right before the noun.",
+    "why": "Anchor: という links the content clause to a noun, so it comes first. An adjective added to that noun goes after という, right before the noun: 意外な話を. 初めて goes with the verb 聞いた. So: という, 意外な, 話を, 初めて."
+  },
+  {
+    "id": "8-017",
+    "type": "p8",
+    "point": "P2-3",
+    "pre": "A「佐藤さん、明日の約束を忘れてないかな。」　B「あんなに何度も手帳で",
+    "post": "ないよ。」",
+    "pieces": [
+      "確認して",
+      "いたんだから",
+      "忘れる",
+      "わけが"
+    ],
+    "star": 2,
+    "en": "A: I hope Sato hasn't forgotten tomorrow's appointment. B: He checked his planner so many times. There's no way he'll forget.",
+    "tell": "わけが + ない = there's no way: 忘れるわけがない.",
+    "why": "Anchor: わけが pairs with ない in the post, so it goes last. 忘れる must sit right before わけが. 確認して + いたんだから is the reason, so it comes first. So: 確認して, いたんだから, 忘れる, わけが."
+  },
+  {
+    "id": "8-018",
+    "type": "p8",
+    "point": "P2-3",
+    "pre": "命を助けてくれたあの人にお礼を言いたいのだが、名前も連絡先もわからないので、",
+    "post": "のだ。",
+    "pieces": [
+      "伝えたくても",
+      "伝え",
+      "ようが",
+      "ない"
+    ],
+    "star": 0,
+    "en": "I want to thank the person who saved my life, but I don't know their name or how to reach them. Even if I want to tell them, there's no way to.",
+    "tell": "ます-stem + ようがない = there's no way to do it: 伝えようがない.",
+    "why": "Anchor: よう attaches to the ます-stem, so 伝え + ようが + ない form one unit, and ない joins のだ. 伝えたくても, 'even if I want to', comes before that unit. So: 伝えたくても, 伝え, ようが, ない."
+  },
+  {
+    "id": "8-019",
+    "type": "p8",
+    "point": "P2-3",
+    "pre": "今回明らかになった不正は、この会社が",
+    "post": "にすぎない。",
+    "pieces": [
+      "抱える",
+      "問題の",
+      "ほんの",
+      "一部"
+    ],
+    "star": 2,
+    "en": "The fraud uncovered this time is only a tiny part of the problems this company has.",
+    "tell": "Noun + にすぎない = no more than: ほんの一部にすぎない.",
+    "why": "Anchor: にすぎない in the post needs a noun: 一部. ほんの must sit right before 一部. 抱える follows the subject この会社が and describes 問題の. So: 抱える, 問題の, ほんの, 一部."
+  },
+  {
+    "id": "8-020",
+    "type": "p8",
+    "point": "P2-3",
+    "pre": "台風が近づいているため、明日の花火大会は",
+    "post": "なった。",
+    "pieces": [
+      "延期",
+      "せ",
+      "ざるを",
+      "得なく"
+    ],
+    "star": 1,
+    "en": "Because a typhoon is approaching, tomorrow's fireworks festival has had to be postponed.",
+    "tell": "する becomes せ before ざるを得ない: 延期せざるを得ない.",
+    "why": "Anchor: ざるを + 得なく is the fixed ending, and 得なく joins なった. ざる attaches to the ない-stem, and for する that stem is せ. So: 延期, せ, ざるを, 得なく."
+  },
+  {
+    "id": "8-021",
+    "type": "p8",
+    "point": "P2-3",
+    "pre": "あの映画の最後の場面は、何度見ても",
+    "post": "ほど感動的だ。",
+    "pieces": [
+      "涙を",
+      "流さ",
+      "ずには",
+      "いられない"
+    ],
+    "star": 2,
+    "en": "The last scene of that film is so moving that I can't help crying, however many times I see it.",
+    "tell": "ない-stem + ずにはいられない = can't help doing it: 流さずにはいられない.",
+    "why": "Anchor: ずには pairs with いられない, and ず attaches to the ない-stem 流さ. 涙を is the object of 流す, so it comes first. いられない joins ほど in the post. So: 涙を, 流さ, ずには, いられない."
+  },
+  {
+    "id": "8-022",
+    "type": "p8",
+    "point": "1-5",
+    "pre": "営業部の山田さんは、電話を",
+    "post": "、もう次の取引先に電話をかけている。",
+    "pieces": [
+      "切る",
+      "か",
+      "切らないかの",
+      "うちに"
+    ],
+    "star": 2,
+    "en": "Yamada in sales is already calling the next client almost before he has hung up the phone.",
+    "tell": "Dictionary form + か + ない-form + かのうちに = almost before.",
+    "why": "The shape is 切るか切らないかのうちに: the plain verb, か, the negative with かの, then うちに. 電話を in the pre needs a verb, so 切る comes first. So: 切る, か, 切らないかの, うちに."
+  },
+  {
+    "id": "8-023",
+    "type": "p8",
+    "point": "2-1",
+    "pre": "家族で夕食を",
+    "post": "起きて、慌ててテーブルの下にもぐった。",
+    "pieces": [
+      "食べて",
+      "いる",
+      "最中に",
+      "地震が"
+    ],
+    "star": 1,
+    "en": "An earthquake struck right in the middle of our family dinner, and we quickly got under the table.",
+    "tell": "ている-form + 最中に = right in the middle of: 食べている最中に.",
+    "why": "Anchor: 最中に follows a noun + の or the ている form: 食べて + いる + 最中に. Then what happened: 地震が, the subject of 起きて in the post. So: 食べて, いる, 最中に, 地震が."
+  },
+  {
+    "id": "8-024",
+    "type": "p8",
+    "point": "3-5",
+    "pre": "【ご注意】この薬は、医師の診察を",
+    "post": "できません。",
+    "pieces": [
+      "受けて",
+      "から",
+      "でないと",
+      "購入"
+    ],
+    "star": 2,
+    "en": "Notice: this medicine can only be bought after a doctor has examined you.",
+    "tell": "て-form + からでないと needs a negative after it: …てからでないと〜できない.",
+    "why": "診察を needs its verb: 受けて. から + でないと attach to the て-form, and this shape calls for a negative. 購入 joins できません in the post. So: 受けて, から, でないと, 購入."
+  },
+  {
+    "id": "8-025",
+    "type": "p8",
+    "point": "4-1",
+    "pre": "この町には、国宝の",
+    "post": "数多く残っている。",
+    "pieces": [
+      "五重塔",
+      "を",
+      "はじめとする",
+      "古い建物が"
+    ],
+    "star": 3,
+    "en": "This town still has many old buildings, starting with its five-storied pagoda, a national treasure.",
+    "tell": "Before a noun, をはじめとして becomes をはじめとする: 五重塔をはじめとする建物.",
+    "why": "国宝の needs a noun: 五重塔. を + はじめとする is the noun-modifier form, so a noun must follow it: 古い建物が, the subject of 残っている. So: 五重塔, を, はじめとする, 古い建物が."
+  },
+  {
+    "id": "8-026",
+    "type": "p8",
+    "point": "5-4B",
+    "pre": "大事な会議がある朝",
+    "post": "のは、なぜだろう。",
+    "pieces": [
+      "に",
+      "限って",
+      "目覚まし時計が",
+      "鳴らない"
+    ],
+    "star": 3,
+    "en": "Why is it that my alarm clock fails to go off precisely on the mornings when I have an important meeting?",
+    "tell": "Noun + に限って + a bad result = of all times (bad luck).",
+    "why": "朝 in the pre needs に, and に + 限って gives 'of all times'. The bad luck follows: 目覚まし時計が + 鳴らない, which joins のは in the post. So: に, 限って, 目覚まし時計が, 鳴らない."
+  },
+  {
+    "id": "8-027",
+    "type": "p8",
+    "point": "6-4",
+    "pre": "この店のラーメンは、",
+    "post": "来る客にも人気がある。",
+    "pieces": [
+      "地元の",
+      "人たち",
+      "はもとより",
+      "遠くから"
+    ],
+    "star": 2,
+    "en": "This shop's ramen is popular with customers who come from far away, not to mention the locals.",
+    "tell": "A はもとより B にも: A goes without saying, and B too.",
+    "why": "Anchor: はもとより follows the obvious case, 地元の人たち, and 地元の must sit right before 人たち. 遠くから modifies 来る in the post, so it goes last. So: 地元の, 人たち, はもとより, 遠くから."
+  },
+  {
+    "id": "8-028",
+    "type": "p8",
+    "point": "7-2",
+    "pre": "駅前の再開発計画",
+    "post": "大きく分かれている。",
+    "pieces": [
+      "を",
+      "めぐって",
+      "住民の",
+      "意見が"
+    ],
+    "star": 2,
+    "en": "Residents are sharply divided over the plan to redevelop the area in front of the station.",
+    "tell": "〜をめぐって = over a disputed issue, followed by debate or division.",
+    "why": "The pre ends in a bare noun, so を comes first, then めぐって. 住民の modifies 意見が, the subject of 分かれている. So: を, めぐって, 住民の, 意見が."
+  },
+  {
+    "id": "8-029",
+    "type": "p8",
+    "point": "9-4",
+    "pre": "【会員募集】当ジムでは、お一人おひとりの",
+    "post": "ご提案いたします。",
+    "pieces": [
+      "目的",
+      "に",
+      "応じた",
+      "トレーニングを"
+    ],
+    "star": 2,
+    "en": "Members wanted: at our gym, we suggest training that matches each person's goals.",
+    "tell": "Before a noun, に応じて becomes に応じた: 目的に応じたトレーニング.",
+    "why": "お一人おひとりの needs a noun: 目的. Then に + 応じた, the noun-modifier form, which must be followed by a noun: トレーニングを, the object of ご提案いたします. So: 目的, に, 応じた, トレーニングを."
+  },
+  {
+    "id": "8-030",
+    "type": "p8",
+    "point": "10-4",
+    "pre": "最近は、",
+    "post": "使いこなす高齢者も増えてきた。",
+    "pieces": [
+      "スマートフォンや",
+      "タブレット",
+      "といった",
+      "機器を"
+    ],
+    "star": 2,
+    "en": "Recently, more elderly people have become skilled at using devices such as smartphones and tablets.",
+    "tell": "Examples + といった + a category noun: スマートフォンやタブレットといった機器.",
+    "why": "Anchor: といった must be followed by the category noun: 機器を. The examples come before it, and や links them: スマートフォンや + タブレット. 機器を is the object of 使いこなす. So: スマートフォンや, タブレット, といった, 機器を."
+  },
+  {
+    "id": "8-031",
+    "type": "p8",
+    "point": "11-3",
+    "pre": "その男の子は、",
+    "post": "水たまりで遊び続けた。",
+    "pieces": [
+      "服が",
+      "汚れるの",
+      "も",
+      "かまわず"
+    ],
+    "star": 0,
+    "en": "The boy kept playing in the puddles, not caring that his clothes were getting dirty.",
+    "tell": "Clause + のもかまわず = without caring about ~: 汚れるのもかまわず.",
+    "why": "Anchor: もかまわず attaches to a noun or a clause + の, so 汚れるの + も + かまわず. 服が is the subject of 汚れる, so it comes first. So: 服が, 汚れるの, も, かまわず."
+  },
+  {
+    "id": "8-032",
+    "type": "p8",
+    "point": "12-2",
+    "pre": "A「新しいダイエット、効果あった？」　B「それが、",
+    "post": "んだ。」",
+    "pieces": [
+      "やせる",
+      "どころか",
+      "太って",
+      "しまった"
+    ],
+    "star": 0,
+    "en": "A: Did the new diet work? B: Well, far from losing weight, I actually put it on.",
+    "tell": "A どころか B = far from A, the opposite B happened.",
+    "why": "Anchor: どころか follows the expected result, やせる, and leads to the opposite: 太って. しまった closes it and joins んだ. So: やせる, どころか, 太って, しまった."
+  },
+  {
+    "id": "8-033",
+    "type": "p8",
+    "point": "13-4",
+    "pre": "普段は無口な父だが、",
+    "post": "変わったように話し出す。",
+    "pieces": [
+      "釣りの",
+      "こと",
+      "となると",
+      "人が"
+    ],
+    "star": 3,
+    "en": "My father is usually a man of few words, but when it comes to fishing, he talks as if he were a different person.",
+    "tell": "Noun + (のこと)となると = when it comes to ~, someone changes.",
+    "why": "Anchor: となると follows a noun, here 釣りのこと: 釣りの + こと + となると. 人が goes with 変わったように in the post, a set phrase that cannot be split. So: 釣りの, こと, となると, 人が."
+  },
+  {
+    "id": "8-034",
+    "type": "p8",
+    "point": "14-6",
+    "pre": "A「資格試験に落ちてしまいました。もうあきらめようかな。」　B「一度",
+    "post": "必要はないよ。」",
+    "pieces": [
+      "失敗した",
+      "からといって",
+      "夢を",
+      "あきらめる"
+    ],
+    "star": 2,
+    "en": "A: I failed the qualification exam. Maybe I should give up. B: Failing once doesn't mean you have to give up your dream.",
+    "tell": "からといって sets up a denial at the end: 〜必要はない, 〜とは限らない.",
+    "why": "一度 in the pre needs a verb: 失敗した. からといって attaches to that plain form. 夢を is the object of あきらめる, and あきらめる joins 必要はない. So: 失敗した, からといって, 夢を, あきらめる."
+  },
+  {
+    "id": "8-035",
+    "type": "p8",
+    "point": "15-3",
+    "pre": "うちの部長は時間に厳しく、会議に一分でも",
+    "post": "ので、みんな早めに集まる。",
+    "pieces": [
+      "遅れ",
+      "ようものなら",
+      "大声で",
+      "どなられる"
+    ],
+    "star": 3,
+    "en": "Our department head is strict about time. Be even one minute late for a meeting and you get shouted at, so everyone arrives early.",
+    "tell": "Volitional form + ものなら = if you dared to ~, something bad follows.",
+    "why": "一分でも needs a verb: 遅れ. ようものなら attaches to it to make the volitional condition 遅れようものなら. The bad result follows: 大声で + どなられる. So: 遅れ, ようものなら, 大声で, どなられる."
+  },
+  {
+    "id": "8-036",
+    "type": "p8",
+    "point": "16-4",
+    "pre": "母は",
+    "post": "、何でも先回りして決めてしまう。",
+    "pieces": [
+      "子どもの",
+      "将来を",
+      "心配する",
+      "あまり"
+    ],
+    "star": 0,
+    "en": "My mother worries so much about her children's future that she decides everything for them in advance.",
+    "tell": "Dictionary form + あまり = out of too much ~: 心配するあまり.",
+    "why": "Anchor: あまり follows the dictionary form of a feeling verb: 心配する. 将来を is its object, and 子どもの must sit right before 将来を. So: 子どもの, 将来を, 心配する, あまり."
+  },
+  {
+    "id": "8-037",
+    "type": "p8",
+    "point": "18-2",
+    "pre": "友人から借りた大切な本なので、",
+    "post": "、カバーをかけて読んでいる。",
+    "pieces": [
+      "汚す",
+      "わけには",
+      "いかないと",
+      "思い"
+    ],
+    "star": 3,
+    "en": "It's a precious book I borrowed from a friend, so I keep a cover on it while I read, since I can't let it get dirty.",
+    "tell": "Dictionary form + わけにはいかない = I can't very well ~.",
+    "why": "Anchor: わけには pairs with いかない, and the dictionary form 汚す goes before it. いかないと + 思い closes the thought and links to the post. So: 汚す, わけには, いかないと, 思い."
+  },
+  {
+    "id": "8-038",
+    "type": "p8",
+    "point": "19-2",
+    "pre": "A「この絵、小学生が描いたんだって。」　B「へえ、",
+    "post": "顔負けの出来だね。」",
+    "pieces": [
+      "小学生が",
+      "描いた",
+      "にしては",
+      "大人"
+    ],
+    "star": 2,
+    "en": "A: I heard a primary school child painted this. B: Wow, for a child's painting, it would put an adult to shame.",
+    "tell": "〜にしては = for a ~ (the result is not what you'd expect).",
+    "why": "Anchor: にしては follows the plain form 描いた, and 小学生が is its subject. 大人 joins 顔負け in the post: 大人顔負け, good enough to shame adults. So: 小学生が, 描いた, にしては, 大人."
+  },
+  {
+    "id": "8-039",
+    "type": "p8",
+    "point": "20-4",
+    "pre": "引っ越し先は、家族で何度も",
+    "post": "に決めた。",
+    "pieces": [
+      "話し合った",
+      "末に",
+      "海の",
+      "近く"
+    ],
+    "star": 3,
+    "en": "After talking it over many times as a family, we chose a new home near the sea.",
+    "tell": "た-form + 末に = after a long process, finally: 話し合った末に.",
+    "why": "Anchor: 末に follows the た-form: 話し合った末に. The decision comes after: 海の + 近く, which joins に決めた in the post. So: 話し合った, 末に, 海の, 近く."
+  },
+  {
+    "id": "8-040",
+    "type": "p8",
+    "point": "21-3",
+    "pre": "A「あの店のパン、毎朝行列ができるらしいよ。」　B「わたしは一時間も",
+    "post": "なあ。」",
+    "pieces": [
+      "並んで",
+      "まで",
+      "食べたいとは",
+      "思わない"
+    ],
+    "star": 0,
+    "en": "A: Apparently there's a queue outside that bakery every morning. B: I wouldn't queue for an hour just to eat their bread.",
+    "tell": "て-form + まで = going so far as ~: 並んでまで食べたいとは思わない.",
+    "why": "Anchor: まで attaches to the て-form 並んで, meaning 'go as far as queuing'. Then the judgement: 食べたいとは + 思わない, which joins なあ. So: 並んで, まで, 食べたいとは, 思わない."
+  },
+  {
+    "id": "8-041",
+    "type": "p8",
+    "point": "22-2",
+    "pre": "SNSに軽い気持ちで書いた一言が、",
+    "post": "ので、注意が必要だ。",
+    "pieces": [
+      "思わぬ",
+      "トラブルに",
+      "つながり",
+      "かねない"
+    ],
+    "star": 1,
+    "en": "A single careless comment on social media could lead to unexpected trouble, so you need to be careful.",
+    "tell": "ます-stem + かねない = might well (lead to something bad).",
+    "why": "Anchor: かねない attaches to the ます-stem: つながり. つながる takes に, so トラブルに comes before it, and 思わぬ must sit right before トラブル. So: 思わぬ, トラブルに, つながり, かねない."
+  },
+  {
+    "id": "8-042",
+    "type": "p8",
+    "point": "23-5",
+    "pre": "住む部屋を選ぶなら、駅から",
+    "post": "ないが、家賃とのバランスも大切だ。",
+    "pieces": [
+      "近い",
+      "に",
+      "越した",
+      "ことは"
+    ],
+    "star": 2,
+    "en": "When choosing a flat, the closer to the station the better, but the balance with the rent matters too.",
+    "tell": "〜に越したことはない = nothing beats ~; it's best if ~.",
+    "why": "駅から needs an adjective: 近い. Then the fixed ending に + 越した + ことは, with ない in the post. So: 近い, に, 越した, ことは."
+  },
+  {
+    "id": "8-043",
+    "type": "p8",
+    "point": "25-1",
+    "pre": "A「来月から留学するんだって？」　B「うん。",
+    "post": "よ。」",
+    "pieces": [
+      "今から",
+      "楽しみで",
+      "たまらない",
+      "んだ"
+    ],
+    "star": 2,
+    "en": "A: I hear you're going to study abroad from next month. B: Yes. I'm already so excited I can hardly stand it.",
+    "tell": "て-form + たまらない = unbearably ~: 楽しみでたまらない.",
+    "why": "Anchor: たまらない attaches to a て-form, here 楽しみで. 今から, 'already', comes before it. んだ explains the feeling, so it goes last before よ. So: 今から, 楽しみで, たまらない, んだ."
+  },
+  {
+    "id": "8-044",
+    "type": "p8",
+    "point": "26-3",
+    "pre": "毎朝の満員電車には本当に疲れる。もう少し",
+    "post": "ものかと考えてしまう。",
+    "pieces": [
+      "楽に",
+      "通勤する",
+      "方法は",
+      "ない"
+    ],
+    "star": 2,
+    "en": "The packed trains every morning really wear me out. I keep wondering if there isn't some easier way to commute.",
+    "tell": "ない + ものか = isn't there some way to ~? (a wish).",
+    "why": "Anchor: ものか in the post is the wish form, so it follows ない. Before ない comes 方法は, and 通勤する describes 方法. 楽に describes 通勤する. So: 楽に, 通勤する, 方法は, ない."
+  },
+  {
+    "id": "8-045",
+    "type": "p8",
+    "point": "IV-11",
+    "pre": "この坂は、春になると桜が",
+    "post": "呼ばれるようになった。",
+    "pieces": [
+      "美しく",
+      "咲く",
+      "ことから",
+      "桜坂と"
+    ],
+    "star": 0,
+    "en": "This slope came to be called Sakurazaka because cherry trees bloom so beautifully along it in spring.",
+    "tell": "Plain form + ことから = from the fact that (the reason behind a name or judgement).",
+    "why": "桜が needs its verb: 美しく + 咲く. ことから follows the plain form and gives the reason. 桜坂と then joins 呼ばれる in the post. So: 美しく, 咲く, ことから, 桜坂と."
+  }
+]

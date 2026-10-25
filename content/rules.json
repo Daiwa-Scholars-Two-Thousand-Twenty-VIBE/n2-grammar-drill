@@ -1,0 +1,129 @@
+{
+  "sheets": [
+    {
+      "id": "locked",
+      "title": "Words that lock the ending",
+      "intro": "These arrive early in the sentence and decide how it must end. Spot one and you are predicting, not parsing.",
+      "cols": ["When you see", "The end will be", "Example"],
+      "rows": [
+        ["必ずしも", "partial denial: 〜とは限らない／〜わけではない", "高い店が必ずしもおいしいとは限らない。"],
+        ["全く・決して・少しも・めったに・たいして", "a negative", "彼は決して約束を破らない。"],
+        ["なにも", "〜ことはない (no need)", "なにも今日決めることはない。"],
+        ["まさか・恐らく・どうやら・きっと", "a guess: 〜だろう／〜ないだろう／〜らしい", "まさか彼が来ることはないだろう。"],
+        ["まるで・今にも", "〜ようだ／〜そうだ", "今にも雨が降り出しそうだ。"],
+        ["次第に・徐々に・ますます・一段と", "a change: 〜てくる／〜ていく／〜なる", "景気は次第に回復していくだろう。"],
+        ["いったい・果たして", "a question: 〜のか／〜だろうか", "いったい何が起きたのか。"],
+        ["たとえ・いくら・どんなに", "〜ても／〜としても／〜にしても", "たとえ反対されても、続けるつもりだ。"],
+        ["なぜなら・というのは", "〜からだ／〜ためである", "なぜなら、時間がなかったからだ。"],
+        ["〜の(は)…", "〜から(ため)である", "遅れたのは、事故があったためである。"],
+        ["〜かというと", "a denial of it: そんなことはない", "全部高いかというと、そうでもない。"],
+        ["うっかり・危うく", "〜ところだった", "危うく電車に乗り遅れるところだった。"],
+        ["一＋counter＋として", "a negative", "一人として欠席しなかった。"],
+        ["どんなに・何度・なんと ＋ 〜", "〜ことか／〜ことだろう", "どんなに心配したことか。"]
+      ]
+    },
+    {
+      "id": "connectives",
+      "title": "Connectives: what comes next",
+      "intro": "Each connective tells you the shape of the next sentence before you read it.",
+      "cols": ["Job", "Connectives", "Next sentence will…"],
+      "rows": [
+        ["Add the same evaluation", "しかも・そのうえ・さらに・そればかりか", "pile on more of the same, often stronger"],
+        ["Compare", "それに対して・一方", "show the other side"],
+        ["Another possibility", "あるいは・それとも", "offer an alternative"],
+        ["Result", "そのため・したがって・そこで・すると", "give the consequence (そこで = an action taken for that reason)"],
+        ["Sum up", "このように・こうして", "wrap up what was said"],
+        ["Reason", "なぜなら・というのは", "end in 〜からだ"],
+        ["Against expectation", "だが・ところが・それなのに・それでも", "go against what you'd expect (ところが = surprise)"],
+        ["Restate", "つまり・要するに・いわば", "say the same thing another way"],
+        ["Exception or footnote", "ただし・ただ・もっとも・なお", "add a condition, a caveat, a correction, extra info"],
+        ["Change topic", "さて・ところで", "move on"]
+      ]
+    },
+    {
+      "id": "register",
+      "title": "Formal written vs everyday spoken",
+      "intro": "Same meaning, different register. The exam tests which one fits the sentence.",
+      "cols": ["Meaning", "Formal written", "Everyday spoken"],
+      "rows": [
+        ["like", "〜ようだ", "〜みたいだ"],
+        ["when", "〜に際して・〜にあたって", "〜とき"],
+        ["in progress", "〜つつある", "〜ている"],
+        ["only", "〜のみ", "〜だけ"],
+        ["not only", "〜のみならず・〜はもとより", "〜だけじゃなくて・〜はもちろん"],
+        ["such as", "〜など・〜といった", "〜とか"],
+        ["if / even if", "〜であれば・〜であっても・〜にせよ", "〜だったら・〜だって・〜にしても"],
+        ["because", "〜ため・〜によって・〜につき", "〜ものだから・〜もので・〜ことだし"],
+        ["belittling", "〜など", "〜なんか・〜なんて"],
+        ["might", "〜おそれがある", "〜かもしれない"],
+        ["surely not", "〜まい・〜ではあるまいか", "〜ないんじゃない"],
+        ["must be", "〜に相違ない", "〜にきまっている"],
+        ["nothing but", "〜にほかならない", "絶対〜だ"],
+        ["have to", "〜ざるを得ない", "〜なくちゃ・〜なきゃ"],
+        ["without", "〜ことなく", "〜ないで"],
+        ["in / at", "〜において", "〜で"],
+        ["very", "非常に・極めて", "とても・すごく"],
+        ["gradually", "徐々に・次第に", "だんだん"],
+        ["but", "しかし・だが", "でも・けど"]
+      ]
+    },
+    {
+      "id": "families",
+      "title": "Same shape, different job",
+      "intro": "The forms that trip everyone up. Decide by what sits in front.",
+      "cols": ["Form", "If you see…", "It means"],
+      "rows": [
+        ["〜ものだ", "た形 in front (遊んだものだ)", "used to, fondly"],
+        ["〜ものだ", "a generic subject (人間は・世の中は)", "that's how things are"],
+        ["〜ものだ／ものではない", "advice about behaviour", "one should / shouldn't"],
+        ["〜ものだ", "よく・ずいぶん, an exclamation feel", "how ~ it is!"],
+        ["〜ことだ", "a verb in front", "advice: the thing to do is"],
+        ["〜ことだ", "an adjective in front", "how ~! (exclamation)"],
+        ["〜ことか", "a question word (どんなに・何度)", "how very ~!"],
+        ["〜わけだ", "a conclusion from what came before", "so it follows; no wonder"],
+        ["〜わけではない", "必ずしも, いつも, だれでも", "not entirely"],
+        ["〜わけがない", "certainty", "no way"],
+        ["〜わけにはいかない", "a social reason", "I can't very well"],
+        ["〜ないわけにはいかない", "an obligation", "I have to"],
+        ["〜まい", "someone else, a guess", "surely not"],
+        ["〜まい", "first person, a resolve", "I won't"],
+        ["〜ものか", "denying a fact", "as if!"],
+        ["〜ものか", "refusing to do it", "I'm not going to"],
+        ["〜次第", "verb ます-stem", "as soon as"],
+        ["〜次第だ", "a noun", "depends on"],
+        ["〜上で", "a past action", "after doing"],
+        ["〜上に", "an evaluation", "on top of that"],
+        ["〜にかかわらず", "no も", "regardless of"],
+        ["〜にもかかわらず", "with も", "even though"],
+        ["〜かねる", "a polite refusal", "cannot"],
+        ["〜かねない", "a bad possibility", "might well"]
+      ]
+    },
+    {
+      "id": "classical",
+      "title": "Five old words behind the grammar",
+      "intro": "Learn these five and about fifteen forms stop being arbitrary.",
+      "cols": ["Old word", "Modern meaning", "Forms built from it"],
+      "rows": [
+        ["ず", "〜ない", "もかまわず · を問わず · にかかわらず · にもかかわらず · ずじまい · ずにはいられない · ざるを得ない"],
+        ["べし", "〜なければならない", "べきだ · べきではない"],
+        ["まい", "〜ないだろう／〜ないつもりだ", "まい · ではあるまいか · (よ)うか〜まいか"],
+        ["つつ", "〜ながら／〜けれども", "つつ · つつある · つつも"],
+        ["せよ", "しろ", "にせよ"]
+      ]
+    },
+    {
+      "id": "nai",
+      "title": "Forms ending in ない: three families",
+      "intro": "Twenty-odd forms end in a negative. Sort them by what comes before the ない.",
+      "cols": ["Family", "Forms", "Meaning"],
+      "rows": [
+        ["に ＋ X ない", "に違いない · に相違ない · にすぎない · にほかならない · に越したことはない", "a judgement"],
+        ["て ＋ X ない", "てたまらない · てならない · てしかたがない", "an overwhelming feeling"],
+        ["わけ／よう／どころ ＋ ない", "わけがない · ようがない · どころではない", "impossibility"],
+        ["は／では ＋ ない", "わけではない · というものではない · ものではない · ことはない", "partial denial, norms, no need"],
+        ["いかない／いられない／得ない", "わけにはいかない · ずにはいられない · ざるを得ない", "can't avoid it / can't very well"]
+      ]
+    }
+  ]
+}

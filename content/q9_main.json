@@ -1,0 +1,1106 @@
+[
+  {
+    "id": "9-001",
+    "type": "p9",
+    "title": "棚の前の寄り道",
+    "intro": "以下は、新聞に載ったコラムである。",
+    "text": "駅前の小さな書店が、先月で店を閉じた。学生のころから三十年近く通った店である。今はインターネットで注文すれば、本は翌日には家に届く。わざわざ店まで足を運ぶ人が減ったのも無理はない。\n{1}、書店にはネットでは味わえない楽しみがあった。目当ての本を探しているうちに、ふと隣の棚の思いもよらない一冊に手が伸びる。料理の本を買いに来たはずが、気がつけば旅行記を抱えてレジに並んでいる。{2}こそが、私たちの読書の幅を広げてきたのである。\nネット書店にも「おすすめ」の機能はある。この機能は、過去に買った本をもとに、私たちの好みに合いそうな本を次々に{3}。便利ではあるが、そこに並ぶのは、結局、自分がすでに関心を持っている分野の{4}。\n知らない世界への入り口は、たいてい自分の関心の外にある。本との出会いをすべて機械に任せていては、私たちの世界はかえって狭くなってしまう{5}。シャッターの下りた店の前で、そんなことを考えた。",
+    "en": "A columnist reflects on a small bookshop closing. Bookshops let readers stumble on books they never expected, while online recommendations only offer more of what we already like. Leaving discovery to machines may end up making our world narrower.",
+    "qs": [
+      {
+        "point": "P3-10",
+        "c": [
+          "だが",
+          "そのうえ",
+          "つまり",
+          "そこで"
+        ],
+        "cp": [
+          "P3-10",
+          "P3-10",
+          "P3-10",
+          "P3-10"
+        ],
+        "why": [
+          "The first paragraph accepts that fewer people visit shops (無理はない). だが turns the argument: the next sentence names something only the shop could offer.",
+          "そのうえ adds another point in the same direction. The next sentence argues for bookshops, which is the opposite direction.",
+          "つまり restates what came before in other words. A pleasure the net cannot give is new content, not a restatement.",
+          "そこで introduces an action taken because of the situation. The next sentence describes a fact, not an action."
+        ],
+        "cue": [
+          "無理はない",
+          "ネットでは味わえない楽しみ"
+        ],
+        "tell": "Grant a point (無理はない), then show the other side: a contrast connective such as だが."
+      },
+      {
+        "point": "P3-11",
+        "c": [
+          "そうした偶然の出会い",
+          "そうした計画的な選び方",
+          "そうした店員の助言",
+          "そうした便利な仕組み"
+        ],
+        "cp": [
+          "P3-11",
+          "P3-11",
+          "P3-11",
+          "P3-11"
+        ],
+        "why": [
+          "そうした偶然の出会い rewords the sentence before: you reach for a book you never expected, right next to the one you wanted.",
+          "計画的な選び方 means planned choosing. The sentence before says the opposite: ふと and 思いもよらない.",
+          "No shop staff appear in the passage, so そうした has nothing to point back to.",
+          "便利な仕組み describes online ordering, which this paragraph is setting against the bookshop."
+        ],
+        "cue": [
+          "ふと隣の棚",
+          "思いもよらない一冊"
+        ],
+        "tell": "そうした + an abstract noun rewords the sentence before. ふと and 思いもよらない add up to 偶然."
+      },
+      {
+        "point": "P3-7",
+        "c": [
+          "紹介してくれる",
+          "紹介してもらう",
+          "紹介させられる",
+          "紹介してあげる"
+        ],
+        "cp": [
+          "P3-7",
+          "P3-7",
+          "P3-6",
+          "P3-7"
+        ],
+        "why": [
+          "The subject is この機能, the giver, and 私たちの好み shows the favour comes to us, the readers. てくれる keeps the viewpoint on our side.",
+          "てもらう needs the receiver as subject (私たちは機能に紹介してもらう). Here the subject is the feature, which is the giver.",
+          "させられる would mean the feature is forced to recommend books. Nothing forces it.",
+          "てあげる sends the favour away from our side. The books suit 私たちの好み, so we are the ones receiving them."
+        ],
+        "cue": [
+          "この機能は",
+          "私たちの好み"
+        ],
+        "tell": "Giver as subject, favour coming to us: 〜てくれる. 〜てもらう needs the receiver as subject."
+      },
+      {
+        "point": "23-3",
+        "c": [
+          "本にすぎない",
+          "本だとは限らない",
+          "本に越したことはない",
+          "本であるわけがない"
+        ],
+        "cp": [
+          "23-3",
+          "P3-1",
+          "23-5",
+          "12-1"
+        ],
+        "why": [
+          "にすぎない downplays: 'merely books in fields you already like'. It fits 便利ではあるが and 結局, which set up a limitation.",
+          "とは限らない means 'not necessarily'. But the feature works from your past purchases, so the books always come from fields you already like.",
+          "に越したことはない means this would be best. After 便利ではあるが the writer is pointing out a weakness, not praising.",
+          "わけがない flatly denies it. That contradicts the description just given: the feature picks books from your past purchases."
+        ],
+        "cue": [
+          "便利ではあるが",
+          "結局"
+        ],
+        "tell": "便利ではあるが + 結局 sets up a put-down: 〜にすぎない (merely)."
+      },
+      {
+        "point": "22-4",
+        "c": [
+          "のではあるまいか",
+          "んじゃないかな",
+          "わけではあるまい",
+          "ことはないだろう"
+        ],
+        "cp": [
+          "22-4",
+          "P3-12",
+          "12-4",
+          "24-4"
+        ],
+        "why": [
+          "のではあるまいか is the written way to put the writer's conclusion as a question: won't our world shrink? It matches the warning in 任せていては and かえって, and the column's である style.",
+          "んじゃないかな has the right meaning, but it is casual speech. A newspaper column in だ・である style needs the written form.",
+          "わけではあるまい denies it: surely it won't shrink. That cancels かえって and the whole argument.",
+          "ことはないだろう also says it won't shrink, which contradicts the column's point."
+        ],
+        "cue": [
+          "任せていては",
+          "かえって"
+        ],
+        "tell": "A column closes a warning (〜ていては, かえって) with its thesis: 〜のではあるまいか, the written のではないだろうか."
+      }
+    ]
+  },
+  {
+    "id": "9-002",
+    "type": "p9",
+    "title": "何もしない休日",
+    "intro": "以下は、雑誌に載ったコラムである。",
+    "text": "休日の過ごし方を尋ねたある調査で、「特に何もしない」と答えた人が三割を超えたという。せっかくの休みに{1}もったいない、と感じる人もいるだろう。\n私自身、以前はそう考えていた一人である。休みの日には朝から予定を詰め込み、映画、買い物、友人との食事と、一日に三つも四つも用事を入れていた。何もせずに一日が終わると、損をしたような気分になったものだ。{2}、ある年の夏、体調を崩して、一週間ほど家で寝て過ごすことになった。本を読む気力もなく、ただ窓の外を眺めるだけの毎日だった。それでも、熱が少しずつ下がる{3}、頭の中まで不思議と軽くなっていった。\nその一週間で、私は、休みとは何かをするための時間ではなく、自分を元に戻すための時間なのだと{4}。以前の私は、休みまで仕事のように片付けようとしていたのだろう。休日は、予定を多く詰め込めばいい{5}。何もしない一日にも、ちゃんと意味があるのである。",
+    "en": "A survey found that over 30 percent of people spend their days off doing nothing. The writer once filled every holiday with plans, until an illness forced a week of rest that left their mind clear. They conclude that a holiday is for restoring yourself, not for packing with plans.",
+    "qs": [
+      {
+        "point": "21-2",
+        "c": [
+          "何もしないなんて",
+          "何もしないどころか",
+          "何もしないにしては",
+          "何もしないばかりに"
+        ],
+        "cp": [
+          "21-2",
+          "12-2",
+          "19-2",
+          "17-4"
+        ],
+        "why": [
+          "なんて marks something the speaker looks down on or is shocked by, and a judgement follows: もったいない. Its casual tone is fine inside other people's quoted feelings.",
+          "どころか means 'far from it' and needs a stronger, opposite statement after it. もったいない is not one.",
+          "にしては compares a result with what you would expect from a starting point (for a beginner, he's good). Nothing is being measured here.",
+          "ばかりに blames one cause for a bad result that actually happened. もったいない is a judgement, not a result."
+        ],
+        "cue": [
+          "せっかくの休みに",
+          "もったいない"
+        ],
+        "tell": "The thing being looked down on, then a judgement such as もったいない: 〜なんて."
+      },
+      {
+        "point": "P3-10",
+        "c": [
+          "ところが",
+          "そのうえ",
+          "つまり",
+          "したがって"
+        ],
+        "cp": [
+          "P3-10",
+          "P3-10",
+          "P3-10",
+          "P3-10"
+        ],
+        "why": [
+          "ところが brings in a turn of events against what you would expect. The writer always kept busy, then an illness forced a week of doing nothing.",
+          "そのうえ piles on more of the same. Falling ill is a turn in the story, not another example of packed holidays.",
+          "つまり restates. The illness is a new event, not a rewording of the old habit.",
+          "したがって gives a logical result. Packing holidays with plans did not lead to the illness."
+        ],
+        "cue": [
+          "損をしたような気分になったものだ",
+          "ある年の夏"
+        ],
+        "tell": "An old habit, then a new event that breaks it: ところが."
+      },
+      {
+        "point": "9-1",
+        "c": [
+          "につれて",
+          "に先立って",
+          "限り",
+          "からといって"
+        ],
+        "cp": [
+          "9-1",
+          "IV-2",
+          "5-2",
+          "14-6"
+        ],
+        "why": [
+          "につれて links two gradual changes: as the fever slowly dropped, the writer's head grew lighter. 少しずつ and 〜ていった show both moving together.",
+          "に先立って means 'before', for a planned step taken ahead of an event (開会に先立って). A fever going down is not planned, and 少しずつ shows the two changes moving together, not one before the other.",
+          "限り means 'as long as' and sets a condition. It cannot lead into a past description of what happened.",
+          "からといって must end in a partial denial (〜わけではない). This sentence ends in a positive change."
+        ],
+        "cue": [
+          "少しずつ",
+          "軽くなっていった"
+        ],
+        "tell": "Gradual change paired with gradual change (少しずつ, 〜ていく): 〜につれて."
+      },
+      {
+        "point": "P3-6",
+        "c": [
+          "気づかされた",
+          "気づかせた",
+          "気づかれた",
+          "気づいてもらった"
+        ],
+        "cp": [
+          "P3-6",
+          "P3-6",
+          "P3-6",
+          "P3-7"
+        ],
+        "why": [
+          "The subject is 私. 気づかされた (causative-passive) means the experience made me realise something I had not seen. Essays use it to deliver their lesson.",
+          "気づかせた means I made someone else realise. Nobody else is involved.",
+          "気づかれた is a plain passive: someone noticed me. Here I am the one who realises.",
+          "気づいてもらった means someone realised it for me as a favour. The realisation is the writer's own."
+        ],
+        "cue": [
+          "その一週間で、私は"
+        ],
+        "tell": "Speaker as subject, an experience taught them something: 〜させられた (気づかされた)."
+      },
+      {
+        "point": "12-5",
+        "c": [
+          "というものではない",
+          "というものだ",
+          "というわけだ",
+          "ということだ"
+        ],
+        "cp": [
+          "12-5",
+          "23-2",
+          "IV-10",
+          "IV-9"
+        ],
+        "why": [
+          "というものではない says one condition does not guarantee a good result: packing a holiday with plans is not automatically right. The next sentence confirms it.",
+          "というものだ gives a common-sense verdict in favour: that is what holidays are for. The next sentence says the opposite.",
+          "というわけだ draws a conclusion from what came before. The writer's story led to the opposite conclusion.",
+          "ということだ would report the upshot as 'so you should pack them'. That contradicts the next sentence."
+        ],
+        "cue": [
+          "詰め込めばいい",
+          "ちゃんと意味がある"
+        ],
+        "tell": "〜ばいい, then a denial that it is enough: 〜というものではない."
+      }
+    ]
+  },
+  {
+    "id": "9-003",
+    "type": "p9",
+    "title": "失敗の話をしよう",
+    "intro": "以下は、教育について書かれたエッセイである。",
+    "text": "子どもや若い人に向けて、大人が自分の経験を語る場面は多い。講演会でも本でも、語られるのはたいてい「こうしてうまくいった」という成功の話である。どんな失敗をし、そこからどう立ち直ったのかが語られることは、意外なほど少ない。\n失敗を語りたがらない気持ちはわかる。恥ずかしいうえに、自分の評価を下げる{1}からだ。{2}、若い人にとって本当に役に立つのは、むしろ失敗の話のほうではないだろうか。\n成功の陰には、たいてい数えきれないほどの失敗がある。{3}を知らないまま成功談ばかりを{4}若者は、一度つまずいただけで、自分はもう駄目だと思い込んでしまいかねない。周りの大人は皆、最初からうまくいったように見えるからだ。\n失敗したからといって、人生が終わる{5}。大人がそのことを自分の言葉で伝えれば、若い人は失敗を恐れずに挑戦できるようになるはずだ。格好の悪い話こそ、次の世代への何よりの贈り物なのである。",
+    "en": "Adults mostly tell young people about their successes, partly because failures are embarrassing. The writer argues that failure stories are more useful, since young people who only hear about success may give up after one setback. Adults should say plainly that failing does not end a life.",
+    "qs": [
+      {
+        "point": "22-3",
+        "c": [
+          "おそれがある",
+          "にすぎない",
+          "に越したことはない",
+          "わけがない"
+        ],
+        "cp": [
+          "22-3",
+          "23-3",
+          "23-5",
+          "12-1"
+        ],
+        "why": [
+          "おそれがある names a risk of something bad. The risk of losing face is a reason adults avoid failure stories, so it fits before からだ.",
+          "にすぎない makes the harm sound small ('it merely lowers it'). That weakens the very reason the sentence is giving.",
+          "に越したことはない means 'it is best to lower it'. Nobody wants a lower reputation.",
+          "わけがない says there is no way it lowers it. Then there would be no reason to stay quiet."
+        ],
+        "cue": [
+          "恥ずかしいうえに",
+          "からだ"
+        ],
+        "tell": "A reason to avoid something is a bad possible outcome: 〜おそれがある."
+      },
+      {
+        "point": "P3-10",
+        "c": [
+          "それでも",
+          "そのうえ",
+          "なぜなら",
+          "つまり"
+        ],
+        "cp": [
+          "P3-10",
+          "P3-10",
+          "P3-10",
+          "P3-10"
+        ],
+        "why": [
+          "それでも keeps the claim despite what was just granted: I understand the reluctance, but even so, failure stories help more. むしろ in the same sentence confirms the turn.",
+          "そのうえ adds another reason in the same direction. The next sentence argues the other way.",
+          "なぜなら gives a reason and must end in 〜からだ. This sentence ends in 〜ではないだろうか.",
+          "つまり restates. The claim about failure stories is new, not a rewording of the reluctance."
+        ],
+        "cue": [
+          "気持ちはわかる",
+          "むしろ"
+        ],
+        "tell": "Grant a point (気持ちはわかる), then hold your view anyway: それでも."
+      },
+      {
+        "point": "P3-11",
+        "c": [
+          "その事実",
+          "その成功",
+          "この挑戦",
+          "あの失敗"
+        ],
+        "cp": [
+          "P3-11",
+          "P3-8",
+          "P3-8",
+          "P3-8"
+        ],
+        "why": [
+          "その事実 wraps up the whole sentence before as one idea: behind every success lie countless failures. This is what the young never learn.",
+          "その成功 would mean not knowing the success while hearing only success stories. That makes no sense.",
+          "No challenge has been mentioned yet. 挑戦 only comes in the last paragraph, and a demonstrative points back, not forward.",
+          "あの points to a memory shared by writer and reader. An essay has no such shared failure."
+        ],
+        "cue": [
+          "成功の陰には、たいてい数えきれないほどの失敗がある"
+        ],
+        "tell": "An abstract noun (事実) wraps up the whole previous sentence. In an essay, そ, not あ."
+      },
+      {
+        "point": "P3-6",
+        "c": [
+          "聞かされてきた",
+          "聞かせてきた",
+          "聞かれてきた",
+          "聞いてもらってきた"
+        ],
+        "cp": [
+          "P3-6",
+          "P3-6",
+          "P3-6",
+          "P3-7"
+        ],
+        "why": [
+          "Adults do the telling and the young are on the receiving end. 聞かされてきた (causative-passive) means they have been made to listen, whether they liked it or not.",
+          "聞かせてきた would make the young people the ones telling the stories. The first paragraph says adults tell them.",
+          "聞かれてきた means 'have been asked'. The young are listening, not being questioned.",
+          "聞いてもらってきた means someone listened to them as a favour. They are the listeners, not the speakers."
+        ],
+        "cue": [
+          "大人が自分の経験を語る",
+          "成功談ばかりを"
+        ],
+        "tell": "Others do the talking, you are made to listen: 〜させられる (聞かされる)."
+      },
+      {
+        "point": "12-4",
+        "c": [
+          "わけではない",
+          "に違いない",
+          "にすぎない",
+          "ほかない"
+        ],
+        "cp": [
+          "12-4",
+          "22-5",
+          "23-3",
+          "23-6"
+        ],
+        "why": [
+          "からといって sets up a partial denial: failing does not mean your life is over. わけではない completes it.",
+          "に違いない asserts that life must end. からといって cannot take a strong positive ending, and the claim contradicts the essay.",
+          "にすぎない ('life merely ends') makes no sense.",
+          "ほかない says there is no other outcome. That is the despair the essay warns against."
+        ],
+        "cue": [
+          "からといって"
+        ],
+        "tell": "〜からといって locks the ending: 〜わけではない or 〜とは限らない."
+      }
+    ]
+  },
+  {
+    "id": "9-004",
+    "type": "p9",
+    "title": "わかりやすさの落とし穴",
+    "intro": "以下は、新聞の投稿欄に載った意見文である。",
+    "text": "最近のテレビのニュースは、以前に比べて格段にわかりやすくなった。図やイラストを使い、難しい話題も数分で説明してくれる。忙しい現代人にとって、ありがたいことであるのは確かだ。\n{1}、わかりやすさには落とし穴もある。物事を単純に説明しようとすれば、どうしても切り捨てられる部分が出てくる。例外や細かい条件、立場によって異なる見方などである。実は、{2}にこそ、問題の本質が隠れていることが少なくない。\nわかりやすい説明に慣れると、人はすぐに理解できない話を「難しい」と言って避けるようになる。{3}、少し考えればわかることまで、だれかが説明してくれるのを待つようになる。これでは、考えることを他人に任せているのと同じだと{4}。\nもちろん、わかりやすさを求めること自体は悪いことではない。{5}、わかった気になることと、本当に理解することとは別なのである。",
+    "en": "TV news has become far easier to follow, which busy people welcome. But simple explanations cut out the parts where the real issue often lies, and people used to them stop thinking for themselves. Wanting clarity is fine, but feeling you understand is not the same as understanding.",
+    "qs": [
+      {
+        "point": "P3-10",
+        "c": [
+          "しかし",
+          "そのうえ",
+          "したがって",
+          "つまり"
+        ],
+        "cp": [
+          "P3-10",
+          "P3-10",
+          "P3-10",
+          "P3-10"
+        ],
+        "why": [
+          "The first paragraph grants that easy news is welcome (確かだ). しかし turns to the drawback: 落とし穴.",
+          "そのうえ adds another good point. The next sentence names a problem.",
+          "したがって gives a result of what came before. Being helpful does not lead logically to having a pitfall.",
+          "つまり restates. A pitfall is not a rewording of 'it is welcome'."
+        ],
+        "cue": [
+          "確かだ",
+          "落とし穴"
+        ],
+        "tell": "確かだ grants the point, then a problem follows: しかし."
+      },
+      {
+        "point": "P3-11",
+        "c": [
+          "説明から抜け落ちた部分",
+          "説明で強調された部分",
+          "説明に使われた図",
+          "説明の中心にある結論"
+        ],
+        "cp": [
+          "P3-11",
+          "P3-11",
+          "P3-11",
+          "P3-11"
+        ],
+        "why": [
+          "This rewords 切り捨てられる部分 from the sentence before: the parts that dropped out of the explanation. 隠れている fits, because they are no longer visible.",
+          "The emphasised parts are the most visible ones. Something cannot be 隠れている there.",
+          "The diagrams are on screen for everyone to see. The paragraph is about what was cut, not what was shown.",
+          "The conclusion is the centre of the explanation, fully visible. The writer is talking about what was cut away."
+        ],
+        "cue": [
+          "切り捨てられる部分",
+          "隠れている"
+        ],
+        "tell": "A concrete phrase from the paragraph (切り捨てられる部分) comes back reworded. Match the meaning."
+      },
+      {
+        "point": "P3-10",
+        "c": [
+          "そればかりか",
+          "それに対して",
+          "それでも",
+          "なぜなら"
+        ],
+        "cp": [
+          "P3-10",
+          "P3-10",
+          "P3-10",
+          "P3-10"
+        ],
+        "why": [
+          "そればかりか adds something worse in the same direction: people avoid hard topics, and they even wait to be told easy ones. まで confirms the step up.",
+          "それに対して sets two different things side by side. Both sentences describe the same bad habit.",
+          "それでも means 'even so', against expectation. The second habit follows naturally from the first.",
+          "なぜなら gives a reason and needs 〜からだ at the end. This sentence ends in 〜ようになる."
+        ],
+        "cue": [
+          "わかることまで"
+        ],
+        "tell": "Same direction but worse, often with まで: そればかりか."
+      },
+      {
+        "point": "25-5",
+        "c": [
+          "言わざるを得ない",
+          "言わなきゃならない",
+          "言うわけにはいかない",
+          "言うに越したことはない"
+        ],
+        "cp": [
+          "25-5",
+          "P3-12",
+          "18-2",
+          "23-5"
+        ],
+        "why": [
+          "ざるを得ない gives the writer's reluctant but firm verdict, in written style: the facts leave no other conclusion.",
+          "なきゃ is a spoken contraction. The essay is in written だ・である style, so the register breaks.",
+          "わけにはいかない means the writer cannot say it, for social reasons. The paragraph builds up to saying exactly this.",
+          "に越したことはない means 'it would be best to say'. The sentence is a verdict, not advice."
+        ],
+        "cue": [
+          "これでは"
+        ],
+        "tell": "これでは + a hard verdict in written style: 〜と言わざるを得ない. なきゃ is spoken."
+      },
+      {
+        "point": "P3-10",
+        "c": [
+          "ただ",
+          "したがって",
+          "ところで",
+          "それとも"
+        ],
+        "cp": [
+          "P3-10",
+          "P3-10",
+          "P3-10",
+          "P3-10"
+        ],
+        "why": [
+          "ただ adds a reservation to what was just said: seeking clarity is fine, but feeling you understand is not the same as understanding.",
+          "したがって gives a result. 'Clarity is not bad' does not lead to 'feeling and understanding differ'.",
+          "ところで changes the subject. The last sentence is the essay's main point, not a new topic.",
+          "それとも offers an alternative in a question. There is no question here."
+        ],
+        "cue": [
+          "もちろん",
+          "悪いことではない"
+        ],
+        "tell": "もちろん grants a point, then a reservation follows: ただ."
+      }
+    ]
+  },
+  {
+    "id": "9-005",
+    "type": "p9",
+    "title": "一夜漬けと睡眠",
+    "intro": "以下は、睡眠と記憶について説明した文章である。",
+    "text": "試験の前の晩に徹夜で勉強する、いわゆる「一夜漬け」をしたことのある人は多いだろう。眠る時間を削ってでも、少しでも多く覚えようというわけだ。ところが、睡眠に関する最近の研究{1}、この方法はあまり効率がよくないことがわかってきた。\n昼間に覚えたことは、すぐに脳に定着するわけではない。眠っている間に、脳はその日に得た情報を整理し、長く保存できる形に変えていると考えられている。{2}、睡眠を削ってしまうと、せっかく覚えたことが十分に{3}まま、試験の朝を迎えることになる。\nある実験では、新しい単語を覚えたあと、しっかり眠ったグループのほうが、徹夜したグループよりも翌日のテストの成績がよかったという。{4}、睡眠は単なる休息ではなく、学習の一部なのである。\nもちろん、長く眠った人が必ずしも高い成績をとる{5}。覚える努力をしたうえで、しっかり眠ることが大切なのだ。",
+    "en": "Many people cram all night before an exam, but research shows this is inefficient. The brain sorts and stores the day's learning during sleep, and in one experiment people who slept after learning new words scored better the next day. Sleep is part of learning, though sleeping longer alone does not guarantee good marks.",
+    "qs": [
+      {
+        "point": "16-1",
+        "c": [
+          "によって",
+          "にとって",
+          "に対して",
+          "にこたえて"
+        ],
+        "cp": [
+          "16-1",
+          "19-5",
+          "7-4A",
+          "7-5"
+        ],
+        "why": [
+          "によって marks the means or source of a finding: it was through recent research that this became clear. It suits formal explanation.",
+          "にとって gives someone's point of view and needs an evaluation after it (〜にとって大切だ). A research finding is not an evaluation.",
+          "に対して aims an action or attitude at a target. The research is the source of the finding, not its target.",
+          "にこたえて answers an expectation or request (期待にこたえて). 研究 is not that kind of noun."
+        ],
+        "cue": [
+          "わかってきた"
+        ],
+        "tell": "The source or means of a finding (研究によって〜がわかった): 〜によって."
+      },
+      {
+        "point": "P3-10",
+        "c": [
+          "したがって",
+          "ところが",
+          "それとも",
+          "もっとも"
+        ],
+        "cp": [
+          "P3-10",
+          "P3-10",
+          "P3-10",
+          "P3-10"
+        ],
+        "why": [
+          "The brain sorts memories during sleep, so cutting sleep leaves them unsorted. したがって leads from the fact to its logical result.",
+          "ところが introduces a surprise against expectation. The next sentence follows naturally from the one before.",
+          "それとも offers an alternative in a question. Nothing is being asked.",
+          "もっとも adds a correction or exception to what was said. The next sentence draws a result. It does not correct anything."
+        ],
+        "cue": [
+          "考えられている",
+          "睡眠を削ってしまうと"
+        ],
+        "tell": "A fact, then its logical consequence: したがって."
+      },
+      {
+        "point": "P3-6",
+        "c": [
+          "整理されない",
+          "整理しない",
+          "整理させない",
+          "整理してもらえない"
+        ],
+        "cp": [
+          "P3-6",
+          null,
+          "P3-6",
+          "P3-7"
+        ],
+        "why": [
+          "The subject is 覚えたこと, the thing being sorted. The brain does the sorting, so the passive is right, and the doer (脳) can go unsaid.",
+          "整理しない would make the memories do the sorting. The sentence before says the brain does it.",
+          "整理させない would mean the memories stop something else from sorting. That is meaningless.",
+          "てもらえない treats the memories like a person receiving a favour. An explanatory text does not talk about things that way."
+        ],
+        "cue": [
+          "脳はその日に得た情報を整理し",
+          "覚えたことが"
+        ],
+        "tell": "A thing as subject, the doer already known: passive (〜が整理される)."
+      },
+      {
+        "point": "P3-10",
+        "c": [
+          "つまり",
+          "ところが",
+          "それとも",
+          "ただし"
+        ],
+        "cp": [
+          "P3-10",
+          "P3-10",
+          "P3-10",
+          "P3-10"
+        ],
+        "why": [
+          "つまり turns the experiment's result into a general statement: in other words, sleep is part of learning.",
+          "ところが brings in a surprise against what came before. The conclusion agrees with the experiment.",
+          "それとも offers an alternative in a question. The sentence is a statement.",
+          "ただし adds an exception or condition to a rule. This sentence states the main conclusion, not an exception."
+        ],
+        "cue": [
+          "成績がよかったという",
+          "学習の一部なのである"
+        ],
+        "tell": "Evidence, then the same point stated in general terms: つまり."
+      },
+      {
+        "point": "P3-1",
+        "c": [
+          "とは限らない",
+          "に違いない",
+          "にほかならない",
+          "にきまっている"
+        ],
+        "cp": [
+          "P3-1",
+          "22-5",
+          "23-4",
+          "22-6"
+        ],
+        "why": [
+          "必ずしも locks the sentence into a partial denial. とは限らない completes it: sleeping long does not guarantee high marks.",
+          "に違いない is a confident positive guess. It cannot follow 必ずしも.",
+          "にほかならない is a flat positive claim, and it attaches to a noun, not a verb. It cannot follow 必ずしも.",
+          "にきまっている is a spoken 'obviously'. It clashes with 必ずしも and with the written register."
+        ],
+        "cue": [
+          "必ずしも"
+        ],
+        "tell": "必ずしも early in the sentence locks the end: 〜とは限らない or 〜わけではない."
+      }
+    ]
+  },
+  {
+    "id": "9-006",
+    "type": "p9",
+    "title": "ら抜き言葉",
+    "intro": "以下は、言葉について説明した文章である。",
+    "text": "「この映画は子どもでも見れる」「明日は何時に来れる？」。このように、可能の意味の「られる」から「ら」を抜いた言い方を、「ら抜き言葉」と呼ぶ。若い世代を中心に広く使われているが、テレビの字幕などでは、今も「見られる」「来られる」と直されることが多い。\nら抜き言葉を日本語の乱れだと批判する人は、今も少なくない。だが、筆者は必ずしも{1}は思わない。「見られる」という形は、「人に見られる」のような受身にも、「先生が見られる」のような尊敬にも使われる。{2}、可能の意味で使っても、どの意味なのかがすぐにはわからないことがある。その点、「見れる」なら可能の意味{3}伝わるので、誤解が起こりにくいのである。\n言葉は、これまでも使う人々の必要に応じて{4}。かつて誤りとされた言い方が、時代とともに認められるようになった例は、いくつもある。ら抜き言葉は、乱れというより、言葉が今も生きていることの表れ{5}。",
+    "en": "Forms like 見れる drop the ら from the potential ending and are often criticised as bad Japanese. The writer disagrees: 見られる can also be passive or honorific, while 見れる can only mean 'can see', so it avoids confusion. Language has always changed to meet its users' needs, and these forms show it is still alive.",
+    "qs": [
+      {
+        "point": "P3-8",
+        "c": [
+          "そう",
+          "こう",
+          "ああ",
+          "どう"
+        ],
+        "cp": [
+          "P3-8",
+          "P3-8",
+          "P3-8",
+          null
+        ],
+        "why": [
+          "そう points back to the opinion just reported (ら抜き言葉 is bad Japanese) so the writer can reject it. Denying someone else's view takes そ.",
+          "こう points to what the writer is about to say, or to their own idea. The opinion being denied belongs to other people.",
+          "ああ points to a memory shared by writer and reader. It is not used for an opinion in an explanatory text.",
+          "どう is a question word. どうは思わない is not Japanese."
+        ],
+        "cue": [
+          "批判する人は、今も少なくない"
+        ],
+        "tell": "Rejecting someone else's opinion just mentioned: そうは思わない. こう points forward."
+      },
+      {
+        "point": "P3-10",
+        "c": [
+          "そのため",
+          "ところが",
+          "それとも",
+          "さて"
+        ],
+        "cp": [
+          "P3-10",
+          "P3-10",
+          "P3-10",
+          "P3-10"
+        ],
+        "why": [
+          "見られる has three uses, and as a result its meaning is not always clear. そのため links the cause to its result.",
+          "ところが brings in a surprise. Unclear meaning is the expected result of one form having three uses.",
+          "それとも offers an alternative in a question. Nothing is being asked.",
+          "さて moves on to a new stage or topic. The writer is still explaining the same point."
+        ],
+        "cue": [
+          "受身にも",
+          "尊敬にも使われる"
+        ],
+        "tell": "A cause, then its natural result: そのため."
+      },
+      {
+        "point": "IV-13",
+        "c": [
+          "のみが",
+          "までが",
+          "さえ",
+          "なんか"
+        ],
+        "cp": [
+          "IV-13",
+          "21-3",
+          "21-5A",
+          "21-2"
+        ],
+        "why": [
+          "のみ (formal だけ) limits it to one meaning: 見れる can only mean 'can see', so nobody misreads it.",
+          "までが means 'this as well', which implies the other meanings also come across. That would cause misunderstanding.",
+          "さえ means 'even' and marks an extreme example. The point here is having only one meaning.",
+          "なんか looks down on what it marks, and it is spoken. Wrong meaning and wrong register."
+        ],
+        "cue": [
+          "誤解が起こりにくい"
+        ],
+        "tell": "Only one meaning gets through, in formal writing: 〜のみ."
+      },
+      {
+        "point": "P3-5",
+        "c": [
+          "変わってきた",
+          "変わっていく",
+          "変わってくる",
+          "変わっていこう"
+        ],
+        "cp": [
+          "P3-5",
+          "P3-5",
+          "P3-5",
+          null
+        ],
+        "why": [
+          "これまでも covers the time up to now. 〜てきた shows a change that has gone on from the past to the present.",
+          "〜ていく looks from now into the future. It clashes with これまでも.",
+          "変わってくる is non-past. これまでも needs a form that covers the past up to now.",
+          "〜(よ)う shows will. Language has no will, and the time is wrong as well."
+        ],
+        "cue": [
+          "これまでも"
+        ],
+        "tell": "これまで (up to now) takes 〜てきた. これから (from now on) takes 〜ていく."
+      },
+      {
+        "point": "23-4",
+        "c": [
+          "にほかならない",
+          "に越したことはない",
+          "というものではない",
+          "とは限らない"
+        ],
+        "cp": [
+          "23-4",
+          "23-5",
+          "12-5",
+          "P3-1"
+        ],
+        "why": [
+          "というより sets up the writer's real claim: not a corruption, but nothing other than a sign that the language is alive. にほかならない is a firm written claim.",
+          "に越したことはない means 'it would be best if'. The writer is saying what ら抜き言葉 is, not wishing for anything.",
+          "というものではない denies the claim. The whole passage argues for it.",
+          "とは限らない means 'not necessarily'. That weakens the conclusion the passage has built."
+        ],
+        "cue": [
+          "というより"
+        ],
+        "tell": "The writer's closing verdict on what something really is: 〜にほかならない (nothing other than)."
+      }
+    ]
+  },
+  {
+    "id": "9-007",
+    "type": "p9",
+    "title": "恩師への手紙",
+    "intro": "以下は、大学時代の先生に宛てた手紙である。",
+    "text": "山田先生\nご無沙汰しております。お変わりなくお過ごしでしょうか。\n先日、出張で久しぶりに大学のある町を訪ねました。駅前はすっかり様子が変わっていましたが、{1}喫茶店は、今も正門の前に残っていました。ゼミのあと、先生がよく連れて行ってくださった店です。窓際の席で、先生に論文の書き方を一から教えて{2}ことを、懐かしく思い出しました。\n正直に申し上げると、当時の私は、先生のご指導を少し厳しすぎると感じていました。何度書き直しても「まだ言いたいことが見えない」と言われ、そのたびに{3}。社会に出て、自分で企画書を書くようになって{4}、あのお言葉の意味がわかったのです。読む人に何を伝えたいのかがはっきりしなければ、どんなに長い文章も届きません。\n先生から学んだことを、今度は私が後輩たちに{5}と思っております。\n寒くなってまいりましたので、どうぞお体を大切になさってください。",
+    "en": "A former student writes to a university teacher after visiting the old town and finding the café where the teacher taught them to write papers. The student once found the teacher's comments too harsh, and only understood them after starting to write proposals at work. Now the student wants to pass the lesson on to younger colleagues.",
+    "qs": [
+      {
+        "point": "P3-8",
+        "c": [
+          "あの",
+          "この",
+          "その",
+          "どの"
+        ],
+        "cp": [
+          "P3-8",
+          "P3-8",
+          "P3-8",
+          null
+        ],
+        "why": [
+          "The writer and the teacher both know this café, and it has not been mentioned before. In a personal letter, あの points to a memory the two share.",
+          "この points to something near the writer now, or something just presented. The writer is not in the café while writing.",
+          "その points back to something already in the text. No café has been mentioned yet.",
+          "どの asks 'which café?'. The letter is not asking, and どの〜は is not grammatical."
+        ],
+        "cue": [
+          "先生がよく連れて行ってくださった店です"
+        ],
+        "tell": "A memory shared by writer and reader, not yet mentioned, in a personal letter: あの."
+      },
+      {
+        "point": "P3-7",
+        "c": [
+          "いただいた",
+          "くださった",
+          "さしあげた",
+          "いらっしゃった"
+        ],
+        "cp": [
+          "P3-7",
+          "P3-7",
+          "P3-7",
+          "X-1"
+        ],
+        "why": [
+          "先生に marks the teacher as the giver and the writer as the receiver. 教えていただいた is the humble form of 教えてもらった.",
+          "くださった needs the teacher as subject: 先生が教えてくださった, as in the sentence before. With 先生に the particle does not fit.",
+          "さしあげた means the writer did it for the teacher. The teaching went the other way.",
+          "教えていらっしゃった is an honorific 'was teaching'. It does not take 先生に, and it loses who received the favour."
+        ],
+        "cue": [
+          "窓際の席で、先生に"
+        ],
+        "tell": "Giver marked with に, the writer receives: 〜ていただく. Giver marked with が: 〜てくださる."
+      },
+      {
+        "point": "26-2A",
+        "c": [
+          "落ち込んだものです",
+          "落ち込むものです",
+          "落ち込みたいものです",
+          "落ち込むことです"
+        ],
+        "cp": [
+          "26-2A",
+          "23-1",
+          "26-1",
+          "24-2"
+        ],
+        "why": [
+          "た形 + ものだ looks back fondly on something that happened again and again. そのたびに shows it was a repeated past habit.",
+          "辞書形 + ものだ states a general truth about people (人は落ち込むものだ). This is the writer's own past.",
+          "たいものだ expresses a heartfelt wish. Nobody wishes to feel down.",
+          "辞書形 + ことだ gives advice: you should feel down. That makes no sense here."
+        ],
+        "cue": [
+          "当時の私は",
+          "そのたびに"
+        ],
+        "tell": "A repeated past habit, recalled fondly: た形 + ものだ."
+      },
+      {
+        "point": "3-1",
+        "c": [
+          "はじめて",
+          "以来",
+          "からでないと",
+          "まで"
+        ],
+        "cp": [
+          "3-1",
+          "3-4",
+          "3-5",
+          "21-3"
+        ],
+        "why": [
+          "てはじめて means 'only after': the writer understood only once they began writing proposals at work. わかったのです fits a new realisation.",
+          "て以来 needs a state that has continued from then until now (ずっと〜ている). A single moment of understanding is not one.",
+          "てからでないと must end in a negative (〜できない). This sentence ends in a positive: わかったのです.",
+          "てまで means 'going so far as', and criticises an extreme action. Starting a job is not extreme."
+        ],
+        "cue": [
+          "わかったのです"
+        ],
+        "tell": "An experience, then a realisation that was not possible before: 〜てはじめて."
+      },
+      {
+        "point": "P3-5",
+        "c": [
+          "伝えていきたい",
+          "伝えてきた",
+          "伝えていった",
+          "伝えてもらいたい"
+        ],
+        "cp": [
+          "P3-5",
+          "P3-5",
+          "P3-5",
+          "P3-7"
+        ],
+        "why": [
+          "今度は looks forward. 〜ていきたい is a wish to keep doing something from now on.",
+          "伝えてきた says it has already been done up to now. That clashes with 今度は.",
+          "伝えていった is past. The letter is stating a plan for the future.",
+          "伝えてもらいたい wants someone else to pass it on. The sentence says 私が."
+        ],
+        "cue": [
+          "今度は私が"
+        ],
+        "tell": "From now on, plus a continuing wish: 〜ていきたい."
+      }
+    ]
+  },
+  {
+    "id": "9-008",
+    "type": "p9",
+    "title": "急がば回れ",
+    "intro": "以下は、ある高校の卒業式で、校長が述べたあいさつである。",
+    "text": "卒業生の皆さん、卒業おめでとうございます。三年前の春、少し緊張した顔で入学してきた皆さんが、今日こうして巣立っていく姿を見て、胸がいっぱいです。\n{1}、今日は皆さんに、一つの言葉を贈りたいと思います。「急がば回れ」。急いでいるときほど、遠回りに見えても確実な方法を選んだほうが、結局は早く目的地に着く、という意味のことわざです。\n私がこの言葉を選んだのには、理由があります。{2}、私自身が若いころ、近道ばかりを探していたからです。早く結果を出そうと焦る私に、ある先輩は「君は答えを急ぎすぎる」と言いました。初めは納得できませんでしたが、{3}には、その後何度も{4}。\nこれから皆さんが進む道でも、周りの人が先に進んでいるように見えて、焦ることがあるでしょう。けれども、遠回りに見える道こそ、実は一番の近道{5}。皆さんの新しい一歩を、心から応援しています。",
+    "en": "A high school principal congratulates the graduates and gives them the saying 急がば回れ: the safe, longer route often gets you there sooner. When young, the principal always looked for shortcuts, and a senior's warning about rushing helped many times later. When others seem to be getting ahead, the long way may be the shortest.",
+    "qs": [
+      {
+        "point": "P3-10",
+        "c": [
+          "さて",
+          "しかも",
+          "すると",
+          "つまり"
+        ],
+        "cp": [
+          "P3-10",
+          "P3-10",
+          "P3-10",
+          "P3-10"
+        ],
+        "why": [
+          "さて moves a speech from the opening greetings to the main part. The principal now turns to the message.",
+          "しかも adds a point of the same kind to what came before. Giving a saying is not a further reason to feel moved.",
+          "すると reports what happened right after an action, in a story. Nothing is being narrated here.",
+          "つまり restates. Giving a saying is not a rewording of 'I am moved'."
+        ],
+        "cue": [
+          "卒業おめでとうございます",
+          "贈りたいと思います"
+        ],
+        "tell": "Greetings done, now the main point of a speech or letter: さて."
+      },
+      {
+        "point": "P3-10",
+        "c": [
+          "なぜなら",
+          "ところが",
+          "したがって",
+          "それとも"
+        ],
+        "cp": [
+          "P3-10",
+          "P3-10",
+          "P3-10",
+          "P3-10"
+        ],
+        "why": [
+          "理由があります promises a reason, and the sentence ends in 〜からです. なぜなら opens it.",
+          "ところが brings in a surprising turn. This sentence gives a reason, as からです shows.",
+          "したがって gives a result, not a reason. It cannot end in からです.",
+          "それとも offers an alternative in a question. Nothing is being asked."
+        ],
+        "cue": [
+          "理由があります",
+          "からです"
+        ],
+        "tell": "〜からです at the end: open the sentence with なぜなら."
+      },
+      {
+        "point": "P3-11",
+        "c": [
+          "その一言",
+          "その近道",
+          "その焦り",
+          "その先輩の失敗"
+        ],
+        "cp": [
+          "P3-11",
+          "P3-11",
+          "P3-11",
+          "P3-11"
+        ],
+        "why": [
+          "その一言 rewords the senior's remark 「君は答えを急ぎすぎる」. The speaker did not accept it at first, but it helped later.",
+          "Shortcuts are what the speech warns against. They cannot be what helped.",
+          "Impatience is the fault the senior pointed out. It did not help.",
+          "The senior's failure is never mentioned, so その has nothing to point back to."
+        ],
+        "cue": [
+          "「君は答えを急ぎすぎる」と言いました",
+          "初めは納得できませんでしたが"
+        ],
+        "tell": "A quoted remark comes back reworded as an abstract noun: その一言."
+      },
+      {
+        "point": "P3-6",
+        "c": [
+          "助けられました",
+          "助けました",
+          "助けてあげました",
+          "助けさせられました"
+        ],
+        "cp": [
+          "P3-6",
+          null,
+          "P3-7",
+          "P3-6"
+        ],
+        "why": [
+          "The speaker stays the subject, and the remark is the doer, marked with には. The passive 助けられました keeps the viewpoint on the speaker.",
+          "助けました would make the speaker help the remark. The help went the other way.",
+          "助けてあげました means the speaker helped someone as a favour. That reverses who helped whom.",
+          "助けさせられました means the speaker was forced to help someone. Nobody forced anything."
+        ],
+        "cue": [
+          "には、その後何度も"
+        ],
+        "tell": "Speaker as subject, a thing as the doer marked with 〜には: passive (助けられた)."
+      },
+      {
+        "point": "22-4",
+        "c": [
+          "なのではないでしょうか",
+          "であるわけではありません",
+          "にすぎません",
+          "とは限りません"
+        ],
+        "cp": [
+          "22-4",
+          "12-4",
+          "23-3",
+          "P3-1"
+        ],
+        "why": [
+          "The principal ends with a gentle but firm claim: isn't the long way really the shortest? のではないでしょうか is the polite spoken form of 〜ではあるまいか, and こそ calls for a claim like this.",
+          "わけではありません denies it. The whole speech argues that the long way is better.",
+          "にすぎません ('merely the shortest way') makes no sense.",
+          "とは限りません ('not always the shortest way') goes against the saying the speech is built on."
+        ],
+        "cue": [
+          "けれども",
+          "遠回りに見える道こそ"
+        ],
+        "tell": "A speaker's soft but firm claim: 〜のではないでしょうか. こそ needs a claim, not a denial."
+      }
+    ]
+  }
+]

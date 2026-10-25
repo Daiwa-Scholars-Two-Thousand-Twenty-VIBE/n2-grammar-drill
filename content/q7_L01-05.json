@@ -1,0 +1,2150 @@
+[
+  {
+    "id": "7-L01-001",
+    "type": "p7",
+    "point": "1-1",
+    "s": "当ホテルのプールをご利用の（　　）は、必ず水泳帽を着用してください。",
+    "en": "When using the hotel pool, please be sure to wear a swimming cap.",
+    "c": [
+      "際",
+      "最中",
+      "次第",
+      "限り"
+    ],
+    "cp": [
+      "1-1",
+      "2-1",
+      "3-3",
+      "4-5"
+    ],
+    "why": [
+      "〜の際は is the formal 'when' that notices use for an official action like ご利用. It takes a noun with の.",
+      "〜最中 is the middle of a short activity that gets interrupted. A pool rule is not about an interruption.",
+      "〜次第 'as soon as' takes a verb stem (利用し次第). It cannot follow a noun with の.",
+      "名の限り means 'to the very limit' (力の限り). It makes no sense with ご利用."
+    ],
+    "cue": [
+      "ご利用の",
+      "着用してください"
+    ],
+    "tell": "Notice + ご〜の + は + a rule: the formal 'when' is 〜の際は.",
+    "lv": 1
+  },
+  {
+    "id": "7-L01-002",
+    "type": "p7",
+    "point": "1-1",
+    "s": "お車で（　　）、近くの有料駐車場をご利用ください。",
+    "en": "If you are coming by car, please use one of the paid car parks nearby.",
+    "c": [
+      "ご来場の際は",
+      "ご来場になったとたん",
+      "ご来場になったかと思うと",
+      "ご来場の最中は"
+    ],
+    "cp": [
+      "1-1",
+      "1-3",
+      "1-4",
+      "2-1"
+    ],
+    "why": [
+      "ご〜の際は is the set notice phrase for 'when you do X'. A polite request (ご利用ください) follows it naturally.",
+      "〜たとたん reports a surprise that has already happened. It cannot be followed by a request like ご利用ください.",
+      "〜たかと思うと describes something you watched happen. It cannot be followed by a request like ご利用ください.",
+      "〜最中 needs an activity with some length (会議の最中). Arriving happens in a moment, so it has no middle."
+    ],
+    "cue": [
+      "お車で",
+      "ご利用ください"
+    ],
+    "tell": "Notice + a request to guests: ご〜の際は. とたん and かと思うと report past events and cannot take a request.",
+    "lv": 3
+  },
+  {
+    "id": "7-L01-003",
+    "type": "p7",
+    "point": "1-2",
+    "s": "このたびの事故（　　）、多くの皆様にご迷惑をおかけしたことを深くお詫び申し上げます。",
+    "en": "We deeply apologise to everyone for the trouble caused by this accident.",
+    "c": [
+      "に際して",
+      "にあたって",
+      "に限り",
+      "にわたって"
+    ],
+    "cp": [
+      "1-2",
+      "1-2",
+      "5-1",
+      "4-3"
+    ],
+    "why": [
+      "〜に際して is a neutral 'on the occasion of'. It also works for an unplanned, unwelcome event like an accident.",
+      "〜にあたって is for a milestone you plan and take on (開店・就任・出発). Nobody plans an accident, so it cannot take にあたって.",
+      "〜に限り is the 'only' of notices and shop offers (本日に限り). 'Only for this accident' makes no sense in an apology.",
+      "〜にわたって needs a large span of time or place (三か月にわたって). An accident is an event, not a span."
+    ],
+    "cue": [
+      "事故",
+      "お詫び申し上げます"
+    ],
+    "tell": "An unplanned, unwelcome event (事故・災害): に際して. にあたって needs a milestone you take on.",
+    "lv": 2
+  },
+  {
+    "id": "7-L01-004",
+    "type": "p7",
+    "point": "1-2",
+    "s": "新しい支店を開設する（　　）、地元の方々を招いて記念式典を行った。",
+    "en": "On opening the new branch, we invited local people and held a ceremony to mark it.",
+    "c": [
+      "にあたって",
+      "とたんに",
+      "限り",
+      "だけ"
+    ],
+    "cp": [
+      "1-2",
+      "1-3",
+      "5-2",
+      "4-6"
+    ],
+    "why": [
+      "〜にあたって marks a one-off, deliberate milestone like opening a branch. It takes a noun or a dictionary-form verb.",
+      "〜とたんに needs the た形 (開設したとたん), and it brings an unexpected result, not a planned ceremony.",
+      "〜限り 'as long as' links two lasting states. Opening a branch is a one-off action, not a state.",
+      "〜だけ 'as much as' repeats the same verb (食べたいだけ食べる). It has no 'on the occasion of' meaning."
+    ],
+    "cue": [
+      "開設する",
+      "記念式典を行った"
+    ],
+    "tell": "A one-off milestone, then a planned action because of it: 〜にあたって.",
+    "lv": 1
+  },
+  {
+    "id": "7-L01-005",
+    "type": "p7",
+    "point": "1-3",
+    "set": "instant",
+    "s": "私は疲れてベッドに（　　）、すぐに深い眠りに落ちてしまった。",
+    "en": "Exhausted, the instant I got into bed, I fell fast asleep.",
+    "c": [
+      "入ったとたんに",
+      "入ったかと思うと",
+      "入るにあたって",
+      "入る最中に"
+    ],
+    "cp": [
+      "1-3",
+      "1-4",
+      "1-2",
+      "2-1"
+    ],
+    "why": [
+      "〜たとたん(に): the instant you did something, a surprise followed. It works for your own action.",
+      "〜かと思うと is only for watching someone or something else. Here the subject is 私.",
+      "〜にあたって marks a one-off milestone (starting a job, opening a shop). Going to bed is not one.",
+      "〜最中に means 'in the middle of' an activity, and needs ている形 or a noun: 入っている最中."
+    ],
+    "cue": [
+      "私は",
+      "すぐに"
+    ],
+    "tell": "Your own sudden action plus an unexpected result: たとたん, not かと思うと.",
+    "lv": 2
+  },
+  {
+    "id": "7-L01-006",
+    "type": "p7",
+    "point": "1-3",
+    "set": "instant",
+    "s": "私は冷房の効いた店から外に（　　）、眼鏡が真っ白にくもってしまった。",
+    "en": "The instant I stepped out of the air-conditioned shop, my glasses fogged up completely.",
+    "c": [
+      "出たとたん",
+      "出たかと思うと",
+      "出次第",
+      "出ている最中に"
+    ],
+    "cp": [
+      "1-3",
+      "1-4",
+      "3-3",
+      "2-1"
+    ],
+    "why": [
+      "〜たとたん: the instant you did something, a surprise followed. It works for your own action, as here.",
+      "〜かと思うと describes someone or something else you are watching. It is never used for the speaker's own action (私は).",
+      "〜次第 'as soon as' must be followed by a plan or a request, never a past event. Foggy glasses were not planned.",
+      "〜最中 needs an activity with some length. Stepping outside takes a moment, so it has no middle."
+    ],
+    "cue": [
+      "私は",
+      "くもってしまった"
+    ],
+    "tell": "Your own instant action plus an unplanned result: 〜たとたん. かと思うと is only for others.",
+    "lv": 2
+  },
+  {
+    "id": "7-L01-007",
+    "type": "p7",
+    "point": "1-3",
+    "s": "テレビをつけた（　　）、大きな地震のニュースが目に飛び込んできた。",
+    "en": "The moment I turned on the TV, news of a big earthquake jumped out at me.",
+    "c": [
+      "とたん",
+      "次第",
+      "以来",
+      "上で"
+    ],
+    "cp": [
+      "1-3",
+      "3-3",
+      "3-4",
+      "3-2"
+    ],
+    "why": [
+      "た形 + とたん: right after a quick action, something unexpected happened. Shocking news fits.",
+      "〜次第 takes the verb stem (つけ次第), not the た形. It also cannot describe a past surprise.",
+      "〜以来 takes the て形 (つけて以来) and needs a state that lasts until now. One moment of news is not that.",
+      "〜た上で is a careful first step that leads to a planned second step. News you did not expect is not planned."
+    ],
+    "cue": [
+      "つけた",
+      "目に飛び込んできた"
+    ],
+    "tell": "た形 plus a sudden, unplanned event right after: 〜たとたん.",
+    "lv": 1
+  },
+  {
+    "id": "7-L01-008",
+    "type": "p7",
+    "point": "1-4",
+    "set": "instant",
+    "s": "うちの娘は、さっきまで大声で泣いていた（　　）、もうけろりとして笑っている。",
+    "en": "My daughter was bawling a minute ago, and now she is laughing as if nothing happened.",
+    "c": [
+      "かと思うと",
+      "とたん",
+      "最中に",
+      "次第"
+    ],
+    "cp": [
+      "1-4",
+      "1-3",
+      "2-1",
+      "3-3"
+    ],
+    "why": [
+      "〜かと思うと: you watch someone else do X, then at once something quite different. It accepts 〜ていた before it.",
+      "〜とたん needs a one-moment verb in た形 (泣き出したとたん). 泣いていた is an ongoing state, so the connection fails.",
+      "〜最中に means an activity was interrupted while still going on. Here the crying is already over.",
+      "〜次第 takes a verb stem and must be followed by a plan or a request. It cannot follow 泣いていた."
+    ],
+    "cue": [
+      "さっきまで",
+      "もう"
+    ],
+    "tell": "Someone else flips fast from X to Y (さっきまで〜ていた → もう〜): 〜かと思うと.",
+    "lv": 2
+  },
+  {
+    "id": "7-L01-009",
+    "type": "p7",
+    "point": "1-4",
+    "s": "隣の部屋の子どもたちは、やっと（　　）、また騒ぎ始めた。",
+    "en": "The kids in the next room finally went quiet, and then straight away they started making noise again.",
+    "c": [
+      "静かになったかと思ったら",
+      "静かになった上で",
+      "静かになるうちに",
+      "静かになり次第"
+    ],
+    "cp": [
+      "1-4",
+      "3-2",
+      "2-2B",
+      "3-3"
+    ],
+    "why": [
+      "〜たかと思ったら: you watch others do X, and the next moment Y. The kids are someone else, so it fits.",
+      "〜た上で is a careful first step before a planned second step. Nobody planned this noise.",
+      "〜うちに (change) describes a slow change while something goes on. 'While getting quiet, they got loud' contradicts itself, and the change here is sudden.",
+      "〜次第 must be followed by a plan or a request, never a past event like 騒ぎ始めた."
+    ],
+    "cue": [
+      "やっと",
+      "また"
+    ],
+    "tell": "Watching others: X, then at once back to Y. 〜たかと思ったら.",
+    "lv": 1
+  },
+  {
+    "id": "7-L01-010",
+    "type": "p7",
+    "point": "1-4",
+    "s": "A「新しく入った佐藤さん、どう？」B「それが、やっと仕事に（　　）、来月辞めるって言うんですよ。」",
+    "en": "A: How is Sato, the new hire? B: Well, just when he seemed to be getting used to the job, he says he is quitting next month.",
+    "c": [
+      "慣れてきたかと思ったら",
+      "慣れてき次第",
+      "慣れてくるうちに",
+      "慣れてきて以来"
+    ],
+    "cp": [
+      "1-4",
+      "3-3",
+      "2-2B",
+      "3-4"
+    ],
+    "why": [
+      "〜たかと思ったら: B watches someone else (佐藤さん) reach X, and then something unexpected comes at once.",
+      "〜次第 means 'as soon as X, I will do Y'. It cannot report a surprise that someone else sprang on you.",
+      "〜うちに (change) is followed by a slow change that crept in. Announcing he will quit is a sudden, deliberate statement.",
+      "〜て以来 must be followed by a state that has lasted until now. 来月辞める is about the future, which 以来 does not allow."
+    ],
+    "cue": [
+      "佐藤さん",
+      "やっと",
+      "って言うんですよ"
+    ],
+    "tell": "Someone else reaches X, then a surprise at once: 〜たかと思ったら.",
+    "lv": 2
+  },
+  {
+    "id": "7-L01-011",
+    "type": "p7",
+    "point": "1-5",
+    "s": "終了のチャイムが（　　）、学生たちは一斉に教室を飛び出していった。",
+    "en": "Almost before the end-of-class chime had rung, the students rushed out of the classroom all at once.",
+    "c": [
+      "鳴るか鳴らないかのうちに",
+      "鳴り次第",
+      "鳴りつつ",
+      "鳴った上で"
+    ],
+    "cp": [
+      "1-5",
+      "3-3",
+      "2-6",
+      "3-2"
+    ],
+    "why": [
+      "〜か〜ないかのうちに: the same verb, positive then negative. The next thing happens with almost no gap.",
+      "〜次第 must be followed by a plan or a request, never a past event like 飛び出していった.",
+      "〜つつ needs the same subject on both sides. The chime rings, but the students run.",
+      "〜た上で needs the same subject and a planned second step. A chime cannot prepare the students' exit."
+    ],
+    "cue": [
+      "チャイムが",
+      "学生たちは",
+      "飛び出していった"
+    ],
+    "tell": "Y happens almost before X is over: same verb, then its ない形: 〜か〜ないかのうちに.",
+    "lv": 1
+  },
+  {
+    "id": "7-L01-012",
+    "type": "p7",
+    "point": "1-5",
+    "s": "息子は朝ごはんを食べ終わるか（　　）、かばんをつかんで玄関を飛び出していった。",
+    "en": "My son had barely finished his breakfast before he grabbed his bag and dashed out the door.",
+    "c": [
+      "食べ終わらないかのうちに",
+      "食べ終わったかのうちに",
+      "食べ終わらなかったかのうちに",
+      "食べ終わるかのうちに"
+    ],
+    "cp": [
+      "1-5",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "The shape is fixed: verb + か + the same verb in ない形 + かのうちに. 食べ終わるか食べ終わらないかのうちに.",
+      "The second verb must be negative. 食べ終わったか is positive and past, which breaks the fixed shape.",
+      "The negative half stays non-past: 食べ終わらない, not 食べ終わらなかった.",
+      "Repeating the positive verb (食べ終わるか食べ終わるか) is not the pattern. The second half must be negative."
+    ],
+    "cue": [
+      "食べ終わるか"
+    ],
+    "tell": "After 〜るか, the blank needs the same verb in ない形 + かのうちに.",
+    "lv": 1
+  },
+  {
+    "id": "7-L02-001",
+    "type": "p7",
+    "point": "2-1",
+    "s": "大事な商談を行っている（　　）、突然誰かの携帯電話が大きな音で鳴り出した。",
+    "en": "Right in the middle of an important business meeting, someone's phone suddenly started ringing loudly.",
+    "c": [
+      "最中に",
+      "限り",
+      "つつ",
+      "次第"
+    ],
+    "cp": [
+      "2-1",
+      "5-2",
+      "2-6",
+      "3-3"
+    ],
+    "why": [
+      "ている + 最中に: right in the middle of a short activity, something unplanned broke in. 突然 is the signal.",
+      "〜限り 'as long as' links two lasting states, and no past tense may follow it. A phone that suddenly rang is neither.",
+      "〜つつ takes the ます stem (行いつつ), not ている, and needs the same subject. We hold the meeting, but the phone rings.",
+      "〜次第 takes the verb stem (行い次第), not ている, and must be followed by a plan or a request."
+    ],
+    "cue": [
+      "行っている",
+      "突然"
+    ],
+    "tell": "ている + 最中に + something that suddenly breaks in (突然).",
+    "lv": 2
+  },
+  {
+    "id": "7-L02-002",
+    "type": "p7",
+    "point": "2-1",
+    "s": "社長がスピーチを（　　）、会場の照明が突然すべて消えてしまった。",
+    "en": "Right in the middle of the president's speech, all the lights in the hall suddenly went out.",
+    "c": [
+      "なさっている最中に",
+      "なさりつつ",
+      "なさり次第",
+      "なさった上で"
+    ],
+    "cp": [
+      "2-1",
+      "2-6",
+      "3-3",
+      "3-2"
+    ],
+    "why": [
+      "〜ている最中に: right in the middle of an activity, something unplanned broke in. なさっている is the honorific of している.",
+      "〜つつ needs the same subject for both actions. The president speaks, but the lights go out.",
+      "〜次第 'as soon as' must be followed by a plan or a request, never a past event like 消えてしまった.",
+      "〜た上で is a careful first step and then a planned second step by the same person. A blackout is neither."
+    ],
+    "cue": [
+      "突然",
+      "消えてしまった"
+    ],
+    "tell": "Honorific ている形 + 最中に + a sudden interruption: なさっている最中に.",
+    "lv": 3
+  },
+  {
+    "id": "7-L02-003",
+    "type": "p7",
+    "point": "2-2A",
+    "s": "せっかく日本に留学しているのだから、日本に（　　）、できるだけ多くの観光地を訪れたい。",
+    "en": "Since I have this chance to study in Japan, I want to visit as many sights as I can while I am still here.",
+    "c": [
+      "いるうちに",
+      "いたとたんに",
+      "いる最中に",
+      "いて以来"
+    ],
+    "cp": [
+      "2-2A",
+      "1-3",
+      "2-1",
+      "3-4"
+    ],
+    "why": [
+      "〜うちに (before it changes): act while the chance is still open. A wish like 訪れたい follows naturally.",
+      "〜たとたん bans a wish or intention after it, and いる is not a one-moment verb.",
+      "〜最中 is the middle of a short activity that gets interrupted. Being in Japan is a long state, not an activity.",
+      "〜て以来 is followed by a state that has lasted until now. A wish for the future (訪れたい) is not allowed after it."
+    ],
+    "cue": [
+      "せっかく",
+      "訪れたい"
+    ],
+    "tell": "A window that will close (せっかく) + a wish or plan: 〜うちに.",
+    "lv": 2
+  },
+  {
+    "id": "7-L02-004",
+    "type": "p7",
+    "point": "2-2A",
+    "s": "暗く（　　）、子どもたちを家に帰らせてください。",
+    "en": "Please send the children home before it gets dark.",
+    "c": [
+      "ならないうちに",
+      "なったとたんに",
+      "なるうちに",
+      "なっている最中に"
+    ],
+    "cp": [
+      "2-2A",
+      "1-3",
+      "2-2B",
+      "2-1"
+    ],
+    "why": [
+      "ない形 + うちに: do it before the change happens. A request like 帰らせてください is exactly what follows this うちに.",
+      "〜たとたん cannot be followed by a request like 〜てください.",
+      "Dictionary form + うちに here would mean 'while it was getting dark, a change crept in'. That うちに refuses a request after it.",
+      "〜最中 is the middle of an activity that gets interrupted. Getting dark is a natural change, not an activity."
+    ],
+    "cue": [
+      "暗く",
+      "帰らせてください"
+    ],
+    "tell": "ない形 + うちに = before it changes, then a request: 暗くならないうちに.",
+    "lv": 3
+  },
+  {
+    "id": "7-L02-005",
+    "type": "p7",
+    "point": "2-2A",
+    "s": "このセールは明日までなので、在庫が（　　）早めに買っておいたほうがいいですよ。",
+    "en": "This sale ends tomorrow, so you should buy early while there is still stock.",
+    "c": [
+      "あるうちに",
+      "なくなり次第",
+      "ある最中に",
+      "あって以来"
+    ],
+    "cp": [
+      "2-2A",
+      "3-3",
+      "2-1",
+      "3-4"
+    ],
+    "why": [
+      "〜うちに: do it while the chance is still there. Advice to act (買っておいたほうがいい) follows.",
+      "〜次第 means 'as soon as'. Buying 'as soon as the stock runs out' is impossible.",
+      "〜最中 needs an activity in progress (〜ている最中). ある is a plain state.",
+      "〜て以来 is followed by a state that lasts until now. Advice to act soon cannot follow it."
+    ],
+    "cue": [
+      "明日までなので",
+      "早めに"
+    ],
+    "tell": "A chance that will run out + advice to act now: 〜うちに.",
+    "lv": 1
+  },
+  {
+    "id": "7-L02-006",
+    "type": "p7",
+    "point": "2-2B",
+    "set": "while",
+    "s": "最初は苦手だった納豆も、毎朝（　　）、だんだんおいしく感じるようになってきた。",
+    "en": "I used to dislike natto, but as I kept eating it every morning, I gradually came to find it tasty.",
+    "c": [
+      "食べているうちに",
+      "食べている最中に",
+      "食べたとたんに",
+      "食べ次第"
+    ],
+    "cp": [
+      "2-2B",
+      "2-1",
+      "1-3",
+      "3-3"
+    ],
+    "why": [
+      "〜ているうちに (change): while doing something for a while, a change crept in by itself. だんだん〜ようになってきた is that change.",
+      "〜最中に is followed by a sudden interruption. A slow change of taste over many mornings is not one.",
+      "〜たとたん marks one instant followed by a surprise. 毎朝 and だんだん describe a slow change over many mornings, so they clash.",
+      "〜次第 'as soon as' is followed by a plan or a request. だんだん shows a slow change, not a planned step."
+    ],
+    "cue": [
+      "毎朝",
+      "だんだん",
+      "ようになってきた"
+    ],
+    "tell": "Doing X again and again, then だんだん a change crept in: 〜ているうちに.",
+    "lv": 2
+  },
+  {
+    "id": "7-L02-007",
+    "type": "p7",
+    "point": "2-2B",
+    "s": "ネットで調べものをしている（　　）、いつの間にか外が明るくなっていた。",
+    "en": "While I was looking things up online, it got light outside before I knew it.",
+    "c": [
+      "うちに",
+      "限り",
+      "とたんに",
+      "次第"
+    ],
+    "cp": [
+      "2-2B",
+      "5-2",
+      "1-3",
+      "3-3"
+    ],
+    "why": [
+      "〜ているうちに (change): while doing something, a change happened without your noticing. いつの間にか is the signal.",
+      "〜限り 'as long as' links a lasting condition to a lasting result. It cannot lead into a change that has already happened (明るくなっていた).",
+      "〜とたんに needs a one-moment verb in た形 (調べたとたん). It cannot follow ている.",
+      "〜次第 takes a verb stem and is followed by a plan or a request, not a change you did not notice."
+    ],
+    "cue": [
+      "いつの間にか",
+      "なっていた"
+    ],
+    "tell": "ている + いつの間にか a change: 〜うちに. A sudden break-in would be 最中に.",
+    "lv": 2
+  },
+  {
+    "id": "7-L02-008",
+    "type": "p7",
+    "point": "2-2B",
+    "s": "A「田中さんとは最初、仲が悪かったんだよね？」B「うん。でも、一緒に仕事を（　　）、だんだんお互いのことがわかるようになったんだ。」",
+    "en": "A: You and Tanaka did not get on at first, right? B: Yes. But as we worked together, we gradually came to understand each other.",
+    "c": [
+      "しているうちに",
+      "している最中に",
+      "したとたんに",
+      "し次第"
+    ],
+    "cp": [
+      "2-2B",
+      "2-1",
+      "1-3",
+      "3-3"
+    ],
+    "why": [
+      "〜ているうちに (change): over a period of doing something, a change crept in. だんだん〜ようになった is that change.",
+      "〜最中に is followed by a sudden interruption, not a change that grows over time.",
+      "〜たとたん marks a single instant. だんだん shows the change took a long time.",
+      "〜次第 is followed by a plan or a request, never a past change like わかるようになった."
+    ],
+    "cue": [
+      "だんだん",
+      "わかるようになった"
+    ],
+    "tell": "Over a stretch of time, だんだん〜ようになった: 〜ているうちに.",
+    "lv": 1
+  },
+  {
+    "id": "7-L02-009",
+    "type": "p7",
+    "point": "2-3",
+    "s": "円安が止まらず、輸入品の価格はここ一年（　　）。",
+    "en": "With the yen still weakening, import prices have just kept rising over the past year.",
+    "c": [
+      "上がる一方だ",
+      "上がろうとしている",
+      "上がりつつ",
+      "上がった上で"
+    ],
+    "cp": [
+      "2-3",
+      "2-4",
+      "2-6",
+      "3-2"
+    ],
+    "why": [
+      "Dictionary form + 一方だ: a change keeps moving in one direction. ここ一年 shows it has been going on for a while.",
+      "〜(よ)うとしている is the moment just before a change starts. ここ一年 says the rise is already well under way.",
+      "〜つつ 'while doing' joins two actions and cannot end a sentence. It needs a main clause after it.",
+      "〜た上で is a first step before a planned next step. It cannot end a sentence about prices."
+    ],
+    "cue": [
+      "止まらず",
+      "ここ一年"
+    ],
+    "tell": "A change that keeps going one way and is already under way: 〜一方だ.",
+    "lv": 1
+  },
+  {
+    "id": "7-L02-010",
+    "type": "p7",
+    "point": "2-3",
+    "set": "change-stage",
+    "s": "若い人が都会へ出ていく流れが続いている。このままでは、地方の空き家は（　　）。",
+    "en": "Young people keep leaving for the cities. If nothing changes, empty houses in the regions will just keep increasing.",
+    "c": [
+      "増える一方だろう",
+      "増えつつあっただろう",
+      "増えようとしていた",
+      "増えている最中だろう"
+    ],
+    "cp": [
+      "2-3",
+      "2-5",
+      "2-4",
+      "2-1"
+    ],
+    "why": [
+      "〜一方だろう: a guess that the change will keep going one way. このままでは asks for exactly this kind of forecast.",
+      "つつあった is past. このままでは looks ahead, so a past form cannot answer it.",
+      "〜ようとしていた is past and means 'was about to'. It cannot be a forecast after このままでは.",
+      "〜最中 is for a short activity that gets interrupted. A housing trend is not an activity."
+    ],
+    "cue": [
+      "このままでは"
+    ],
+    "tell": "このままでは + a forecast of a one-way change: 〜一方だろう.",
+    "lv": 3
+  },
+  {
+    "id": "7-L02-011",
+    "type": "p7",
+    "point": "2-4",
+    "set": "change-stage",
+    "s": "長かった冬が終わり、庭の桜のつぼみが今にも（　　）。",
+    "en": "The long winter is over, and the cherry buds in the garden are just about to open.",
+    "c": [
+      "開こうとしている",
+      "開きつつある",
+      "開く一方だ",
+      "開いている最中だ"
+    ],
+    "cp": [
+      "2-4",
+      "2-5",
+      "2-3",
+      "2-1"
+    ],
+    "why": [
+      "Volitional form + としている: the moment just before a change starts. 今にも 'any second now' asks for this.",
+      "〜つつある is a change already under way. 今にも points to the moment before it starts, not during it.",
+      "〜一方だ is a change that keeps going one way over time. A bud opening once is not a trend.",
+      "〜最中 is the middle of an activity that gets interrupted. It does not fit 今にも or a flower bud."
+    ],
+    "cue": [
+      "今にも"
+    ],
+    "tell": "今にも + the moment before a change: 〜(よ)うとしている.",
+    "lv": 2
+  },
+  {
+    "id": "7-L02-012",
+    "type": "p7",
+    "point": "2-4",
+    "set": "change-stage",
+    "s": "（ニュース）注目の両国首脳による会談が、今まさに（　　）。",
+    "en": "(News) The closely watched summit between the two leaders is just about to begin.",
+    "c": [
+      "始まろうとしています",
+      "始めようとしています",
+      "始まっている最中です",
+      "始まる一方です"
+    ],
+    "cp": [
+      "2-4",
+      "2-4",
+      "2-1",
+      "2-3"
+    ],
+    "why": [
+      "〜(よ)うとしている: the moment just before something starts. 今まさに + intransitive 始まる (会談が) fits.",
+      "始める is transitive and needs someone doing it (〜を始める). With 会談が as the subject, the intransitive 始まる is needed.",
+      "始まる happens in one moment, and 始まっている is the state after it began. 〜最中 needs an activity under way (会談の最中).",
+      "〜一方だ is a change that keeps going one way. A meeting starting is a single event."
+    ],
+    "cue": [
+      "今まさに",
+      "会談が"
+    ],
+    "tell": "今まさに + a one-moment change, just before it: 〜ようとしている. Watch 自他.",
+    "lv": 3
+  },
+  {
+    "id": "7-L02-013",
+    "type": "p7",
+    "point": "2-5",
+    "set": "change-stage",
+    "s": "医師たちの懸命な治療により、患者の容体は少しずつ（　　）。",
+    "en": "Thanks to the doctors' hard work, the patient's condition is gradually improving.",
+    "c": [
+      "回復しつつある",
+      "回復しようとしている",
+      "回復しかねない",
+      "回復しつつ"
+    ],
+    "cp": [
+      "2-5",
+      "2-4",
+      "22-2",
+      "2-6"
+    ],
+    "why": [
+      "Verb stem + つつある: a change that is under way right now. 少しずつ shows a gradual change in progress.",
+      "〜(よ)うとしている is the moment just before a change starts. 少しずつ says the recovery has already begun.",
+      "〜かねない warns that something bad might happen. Recovery is good news, so it cannot take かねない.",
+      "〜つつ 'while doing' joins two actions and cannot end a sentence. Here it needs ある: つつある."
+    ],
+    "cue": [
+      "少しずつ"
+    ],
+    "tell": "少しずつ + a change in progress, formal: 〜つつある.",
+    "lv": 2
+  },
+  {
+    "id": "7-L02-014",
+    "type": "p7",
+    "point": "2-5",
+    "s": "専門家によると、この地域の森林は温暖化の影響で年々（　　）という。",
+    "en": "According to experts, the forests in this area are being lost year by year because of global warming.",
+    "c": [
+      "失われつつある",
+      "失われようとしている",
+      "失いつつある",
+      "失われている最中だ"
+    ],
+    "cp": [
+      "2-5",
+      "2-4",
+      "2-5",
+      "2-1"
+    ],
+    "why": [
+      "Passive + つつある: the forests are in the middle of being lost. 年々 shows a change already in progress.",
+      "〜ようとしている is the moment just before a change starts. 年々 says the loss has been going on for years.",
+      "失う is active and needs an object (〜を失う). 森林は is the thing being lost, so the passive 失われる is needed.",
+      "〜最中 is the middle of a short activity that gets interrupted. A trend over many years does not fit."
+    ],
+    "cue": [
+      "年々",
+      "森林は"
+    ],
+    "tell": "年々 + a change in progress, in the passive: 失われつつある.",
+    "lv": 3
+  },
+  {
+    "id": "7-L02-015",
+    "type": "p7",
+    "point": "2-6",
+    "set": "while",
+    "s": "当社では、製品の品質を（　　）、製造コストを下げる方法を検討しています。",
+    "en": "We are looking for ways to cut production costs while keeping the quality of our products.",
+    "c": [
+      "保ちつつ",
+      "保ったとたん",
+      "保ったかと思うと",
+      "保っている最中に"
+    ],
+    "cp": [
+      "2-6",
+      "1-3",
+      "1-4",
+      "2-1"
+    ],
+    "why": [
+      "Verb stem + つつ: formal ながら. The same company keeps the quality and looks for savings at the same time.",
+      "〜たとたん is followed by a sudden surprise, not by a planned piece of work like 検討しています.",
+      "〜たかと思うと describes someone else you watched, and what follows is something that happened. 検討しています is our own ongoing plan.",
+      "〜最中に is the middle of a short activity that gets interrupted. Keeping quality is an ongoing aim, and nothing breaks in."
+    ],
+    "cue": [
+      "当社では",
+      "検討しています"
+    ],
+    "tell": "Same subject, two things at once, formal: 〜つつ. A plan can follow it.",
+    "lv": 2
+  },
+  {
+    "id": "7-L02-016",
+    "type": "p7",
+    "point": "2-6",
+    "s": "私たちは今後も、お客様の声に耳を（　　）、より良いサービスを目指してまいります。",
+    "en": "We will keep listening closely to our customers as we work toward better service.",
+    "c": [
+      "傾けつつ",
+      "傾けつつある",
+      "傾けたかと思うと",
+      "傾けるうちに"
+    ],
+    "cp": [
+      "2-6",
+      "2-5",
+      "1-4",
+      "2-2B"
+    ],
+    "why": [
+      "Verb stem + つつ: formal 'while'. The same subject (私たち) listens and aims at the same time.",
+      "〜つつある describes a change in progress and ends a clause. Listening is an action, and a second action follows, so plain つつ is needed.",
+      "〜かと思うと is for watching someone else, and it bans intentions after it. Here 私たち state their own plan.",
+      "〜うちに (change) is followed by a change that crept in. It cannot be followed by a stated goal like 目指してまいります."
+    ],
+    "cue": [
+      "私たちは",
+      "目指してまいります"
+    ],
+    "tell": "Formal speech, same subject, two actions together: 〜つつ.",
+    "lv": 2
+  },
+  {
+    "id": "7-L03-001",
+    "type": "p7",
+    "point": "3-1",
+    "set": "after",
+    "s": "大きな病気を（　　）、健康の本当のありがたさに気づくことができた。",
+    "en": "Only after going through a serious illness was I able to see how precious good health really is.",
+    "c": [
+      "経験してはじめて",
+      "経験した上で",
+      "経験し次第",
+      "経験して以来"
+    ],
+    "cp": [
+      "3-1",
+      "3-2",
+      "3-3",
+      "3-4"
+    ],
+    "why": [
+      "て形 + はじめて: only after the experience did a realisation come that was impossible before. 気づく is the classic verb after it.",
+      "〜た上で is followed by a planned, deliberate step. You cannot plan a realisation.",
+      "〜次第 is followed by a plan or a request, never a past event like 気づくことができた.",
+      "〜て以来 is followed by a state that has gone on until now (ずっと〜ている). 気づくことができた is a one-time realisation."
+    ],
+    "cue": [
+      "気づくことができた"
+    ],
+    "tell": "An experience, then a realisation (気づく・わかる) that was impossible before: 〜てはじめて.",
+    "lv": 1
+  },
+  {
+    "id": "7-L03-002",
+    "type": "p7",
+    "point": "3-1",
+    "set": "after",
+    "s": "実際に自分で店を（　　）、商売の難しさが身にしみてわかった。",
+    "en": "Only after actually running a shop myself did I truly understand how hard business is.",
+    "c": [
+      "経営してみてはじめて",
+      "経営してみた上で",
+      "経営してみて以来",
+      "経営してみてからでないと"
+    ],
+    "cp": [
+      "3-1",
+      "3-2",
+      "3-4",
+      "3-5"
+    ],
+    "why": [
+      "〜てはじめて: only after doing it yourself did you understand. 身にしみてわかった is the new realisation.",
+      "〜た上で leads to a deliberate, planned step. Understanding is not something you choose to do.",
+      "〜て以来 needs a state that has continued until now (ずっと〜ている). わかった is a single realisation.",
+      "〜てからでないと must be followed by a negative (〜できない, 〜わからない). わかった is positive."
+    ],
+    "cue": [
+      "実際に",
+      "身にしみてわかった"
+    ],
+    "tell": "Hands-on experience, then わかった for the first time: 〜てはじめて.",
+    "lv": 2
+  },
+  {
+    "id": "7-L03-003",
+    "type": "p7",
+    "point": "3-2",
+    "s": "契約内容を十分に（　　）、こちらの書類にご署名をお願いいたします。",
+    "en": "Please check the terms of the contract thoroughly, and then sign this document.",
+    "c": [
+      "確認した上で",
+      "確認したとたん",
+      "確認して以来",
+      "確認したかと思うと"
+    ],
+    "cp": [
+      "3-2",
+      "1-3",
+      "3-4",
+      "1-4"
+    ],
+    "why": [
+      "た形 + 上で: a careful first step, then a deliberate second step. Checking the contract informs the signing.",
+      "〜たとたん cannot be followed by a request, and it brings a surprise, not a planned step.",
+      "〜て以来 is followed by a state that has lasted until now. A request cannot follow it.",
+      "〜かと思うと is for watching someone else, and it cannot be followed by a request."
+    ],
+    "cue": [
+      "十分に",
+      "ご署名をお願いいたします"
+    ],
+    "tell": "A careful first step, then a request for the next step: 〜た上で.",
+    "lv": 2
+  },
+  {
+    "id": "7-L03-004",
+    "type": "p7",
+    "point": "3-2",
+    "s": "申し訳ございませんが、この件は私の一存では決めかねますので、上司と（　　）。",
+    "en": "I am sorry, but I cannot decide this on my own, so I will discuss it with my manager and then get back to you.",
+    "c": [
+      "相談の上、改めてお返事いたします",
+      "相談したとたん、改めてお返事いたします",
+      "相談の上に、改めてお返事いたします",
+      "相談して以来、改めてお返事いたします"
+    ],
+    "cp": [
+      "3-2",
+      "1-3",
+      "6-5",
+      "3-4"
+    ],
+    "why": [
+      "名の上 (no で) is the stiff business form of 〜た上で: consult first, then reply. Same subject, planned second step.",
+      "〜たとたん bans the speaker's intention after it. お返事いたします is a promise.",
+      "〜上に means 'on top of that' and stacks two similar facts. Consulting and replying are steps in order, not a stack.",
+      "〜て以来 cannot be followed by a future action. お返事いたします is about the future."
+    ],
+    "cue": [
+      "私の一存では決めかねます",
+      "上司と"
+    ],
+    "tell": "Business promise: consult first, then act. 〜の上(で). 〜上に only stacks facts.",
+    "lv": 3
+  },
+  {
+    "id": "7-L03-005",
+    "type": "p7",
+    "point": "3-3",
+    "set": "instant",
+    "s": "詳しい日程が（　　）、改めてメールにてご連絡申し上げます。",
+    "en": "As soon as the detailed schedule is fixed, I will contact you again by email.",
+    "c": [
+      "決まり次第",
+      "決まったとたん",
+      "決まったかと思うと",
+      "決まりつつ"
+    ],
+    "cp": [
+      "3-3",
+      "1-3",
+      "1-4",
+      "2-6"
+    ],
+    "why": [
+      "Verb stem + 次第: as soon as X happens, I will do Y. It must be followed by an intention, like ご連絡申し上げます.",
+      "〜たとたん is followed by something unexpected. It bans the speaker's intention after it.",
+      "〜かと思うと describes something you watched happen, and it bans intention after it.",
+      "〜つつ joins two actions by the same subject. The schedule gets decided, but I send the email."
+    ],
+    "cue": [
+      "ご連絡申し上げます"
+    ],
+    "tell": "As soon as X, then MY promised action: verb stem + 次第.",
+    "lv": 2
+  },
+  {
+    "id": "7-L03-006",
+    "type": "p7",
+    "point": "3-3",
+    "set": "instant",
+    "s": "現在、ご入金の確認がまだ取れておりません。ご注文の商品は、ご入金を（　　）。",
+    "en": "We have not yet been able to confirm your payment. We will ship the item you ordered as soon as we confirm it.",
+    "c": [
+      "確認し次第、発送いたします",
+      "確認し次第、発送いたしました",
+      "確認したとたん、発送いたします",
+      "確認したかと思うと、発送いたします"
+    ],
+    "cp": [
+      "3-3",
+      "3-3",
+      "1-3",
+      "1-4"
+    ],
+    "why": [
+      "〜次第 + a promise about the future: as soon as payment is confirmed, we will ship. This is the standard business pattern.",
+      "〜次第 always looks forward, and the payment is not confirmed yet (まだ). A past ending like 発送いたしました cannot follow it.",
+      "〜たとたん is followed by an unexpected event. It cannot be followed by the speaker's own plan.",
+      "〜かと思うと is for watching someone else's actions. It cannot be followed by the speaker's own plan."
+    ],
+    "cue": [
+      "まだ取れておりません"
+    ],
+    "tell": "次第 + a future promise (〜いたします). Never a past ending after 次第.",
+    "lv": 3
+  },
+  {
+    "id": "7-L03-007",
+    "type": "p7",
+    "point": "3-3",
+    "set": "shidai",
+    "s": "雨が（　　）、中断していた工事を再開する予定です。",
+    "en": "We plan to restart the suspended building work as soon as the rain stops.",
+    "c": [
+      "やみ次第",
+      "やんだ次第",
+      "やむ次第",
+      "やみ次第では"
+    ],
+    "cp": [
+      "3-3",
+      null,
+      null,
+      "9-3"
+    ],
+    "why": [
+      "〜次第 'as soon as' takes the verb stem: やむ becomes やみ次第. A plan (再開する予定) follows.",
+      "次第 does not follow the た形 in this meaning. やんだ次第 is not the 'as soon as' pattern.",
+      "次第 does not follow the dictionary form here. The stem is needed: やみ.",
+      "〜次第では means 'depending on' and follows a noun (天候次第では). It does not mean 'as soon as'."
+    ],
+    "cue": [
+      "雨が",
+      "再開する予定です"
+    ],
+    "tell": "As soon as + a plan: verb ます-stem + 次第 (やみ次第).",
+    "lv": 1
+  },
+  {
+    "id": "7-L03-008",
+    "type": "p7",
+    "point": "3-4",
+    "set": "after",
+    "s": "社会人に（　　）、一冊も小説を読んでいない。",
+    "en": "I have not read a single novel since I started working.",
+    "c": [
+      "なって以来",
+      "なった上で",
+      "なってからでないと",
+      "なり次第"
+    ],
+    "cp": [
+      "3-4",
+      "3-2",
+      "3-5",
+      "3-3"
+    ],
+    "why": [
+      "て形 + 以来: from a past point until now, the same state has continued. 一冊も〜ていない is that state.",
+      "〜た上で is a careful first step before a planned second step. Not reading anything is not a planned step.",
+      "〜てからでないと means 'unless you do X first, you can't'. It needs 'cannot' after it, not a report of what has happened.",
+      "〜次第 looks forward and must be followed by a plan or a request. 読んでいない reports the time up to now."
+    ],
+    "cue": [
+      "一冊も",
+      "読んでいない"
+    ],
+    "tell": "A past starting point + 一度も／一冊も〜ていない up to now: 〜て以来.",
+    "lv": 2
+  },
+  {
+    "id": "7-L03-009",
+    "type": "p7",
+    "point": "3-4",
+    "s": "兄は大学を卒業して以来、（　　）。",
+    "en": "My older brother has lived in Tokyo ever since he graduated from university.",
+    "c": [
+      "ずっと東京で暮らしている",
+      "来年から東京で暮らすつもりだ",
+      "東京で暮らし始める",
+      "一度東京で暮らしてみたい"
+    ],
+    "cp": [
+      "3-4",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "〜て以来 is followed by a state that has run from that past point until now. ずっと〜ている is exactly that.",
+      "〜て以来 cannot be followed by a future plan. 来年から〜つもりだ looks ahead.",
+      "A plain non-past action (暮らし始める) is not a continuing state. After 〜て以来 you need 〜ている, 〜ていない or ずっと.",
+      "A wish (〜てみたい) looks to the future. After 〜て以来 only a state that continues up to now is allowed."
+    ],
+    "cue": [
+      "卒業して以来"
+    ],
+    "tell": "〜て以来 + ずっと〜ている or 一度も〜ていない. Never a plan or a wish after it.",
+    "lv": 3
+  },
+  {
+    "id": "7-L03-010",
+    "type": "p7",
+    "point": "3-5",
+    "set": "after",
+    "s": "上司の許可を（　　）、この予算を使うことはできません。",
+    "en": "You cannot use this budget unless you get your manager's permission first.",
+    "c": [
+      "取ってからでないと",
+      "取った上で",
+      "取り次第",
+      "取って以来"
+    ],
+    "cp": [
+      "3-5",
+      "3-2",
+      "3-3",
+      "3-4"
+    ],
+    "why": [
+      "て形 + からでないと: unless you do X first, Y cannot happen. The negative できません is required after it.",
+      "〜た上で is followed by a positive, deliberate action (使ってください). Here the ending is negative.",
+      "〜次第 'as soon as' is followed by a plan or a request. 'As soon as you get permission, you cannot use it' makes no sense.",
+      "〜て以来 describes a state since a past point. A rule about what you may do does not fit it."
+    ],
+    "cue": [
+      "できません"
+    ],
+    "tell": "Do X first, or else a negative (できない・無理だ): 〜てからでないと.",
+    "lv": 1
+  },
+  {
+    "id": "7-L03-011",
+    "type": "p7",
+    "point": "3-5",
+    "s": "A「この新しいシステム、今日から使ってもいいですか。」B「いや、研修を（　　）。」",
+    "en": "A: Can I start using this new system today? B: No, I cannot let you use it until you have done the training.",
+    "c": [
+      "受けてからでないと、使ってもらうわけにはいかないんです",
+      "受けてからでないと、すぐ使ってもらえるんです",
+      "受けた上で、使ってもらうわけにはいかないんです",
+      "受けたとたん、使ってもらうわけにはいかないんです"
+    ],
+    "cp": [
+      "3-5",
+      "3-5",
+      "3-2",
+      "1-3"
+    ],
+    "why": [
+      "〜てからでないと + a negative ending. 〜わけにはいかない 'I can't very well' supplies that negative.",
+      "〜てからでないと must be followed by a negative. すぐ使ってもらえる is positive.",
+      "〜た上で leads into a positive, planned step. 'After the training, I can't let you use it' contradicts itself.",
+      "〜たとたん marks a sudden, unexpected event. It does not state a rule about what must come first."
+    ],
+    "cue": [
+      "いや",
+      "研修を"
+    ],
+    "tell": "Unless X first + a negative ending (わけにはいかない・できない): 〜てからでないと.",
+    "lv": 3
+  },
+  {
+    "id": "7-L04-001",
+    "type": "p7",
+    "point": "4-1",
+    "s": "この博物館には、恐竜の化石（　　）、貴重な展示品が数多くそろっている。",
+    "en": "This museum has many valuable exhibits, dinosaur fossils among them.",
+    "c": [
+      "をはじめ",
+      "に際して",
+      "にわたって",
+      "を通じて"
+    ],
+    "cp": [
+      "4-1",
+      "1-2",
+      "4-3",
+      "4-4B"
+    ],
+    "why": [
+      "〜をはじめ names the leading example, then a group word that includes it (貴重な展示品が数多く).",
+      "〜に際して marks a one-off occasion (開会に際して). Dinosaur fossils are exhibits, not an occasion.",
+      "〜にわたって needs a large span of time or place (三年にわたって). Fossils are not a span.",
+      "〜を通じて means 'via' a go-between or 'throughout' a period. Neither fits a list of exhibits."
+    ],
+    "cue": [
+      "数多く"
+    ],
+    "tell": "A leading example + a group word that includes it (数多く・各国・など): 〜をはじめ.",
+    "lv": 1
+  },
+  {
+    "id": "7-L04-002",
+    "type": "p7",
+    "point": "4-1",
+    "s": "あの旅館は、料理（　　）、サービスや設備など、すべてが申し分ない。",
+    "en": "Everything about that inn is excellent, starting with the food and including the service and facilities.",
+    "c": [
+      "をはじめ",
+      "を通じて",
+      "に限り",
+      "にわたって"
+    ],
+    "cp": [
+      "4-1",
+      "4-4B",
+      "5-1",
+      "4-3"
+    ],
+    "why": [
+      "〜をはじめ puts the leading example first, then the rest of the group (サービスや設備など、すべて). The whole is praised.",
+      "〜を通じて means 'via' a go-between or 'throughout' a period. Food is neither, and it cannot open a list of good points.",
+      "〜に限り is the 'only' of notices (本日に限り). It cannot introduce a list of good points.",
+      "〜にわたって needs a large span (三日間にわたって). 料理 is not a span."
+    ],
+    "cue": [
+      "など",
+      "すべてが"
+    ],
+    "tell": "X first, then the rest of the group (〜など、すべて): 〜をはじめ.",
+    "lv": 2
+  },
+  {
+    "id": "7-L04-003",
+    "type": "p7",
+    "point": "4-2",
+    "s": "あの会社は面接官の（　　）高圧的で、入社したいという気持ちがすっかりなくなった。",
+    "en": "At that company, even the interviewer's manner was overbearing, and I completely lost any wish to join.",
+    "c": [
+      "態度からして",
+      "態度をはじめ",
+      "態度を通じて",
+      "態度にわたって"
+    ],
+    "cp": [
+      "4-2",
+      "4-1",
+      "4-4B",
+      "4-3"
+    ],
+    "why": [
+      "名 + からして: one detail already shows how bad the whole is. A complaint (高圧的) follows.",
+      "〜をはじめ needs a group word after it that includes the first item (多くの〜, 各国). There is none here.",
+      "〜を通じて means 'via' a go-between. An attitude is not a channel you reach someone through.",
+      "〜にわたって needs a large span of time or place. 態度 is not a span."
+    ],
+    "cue": [
+      "高圧的で",
+      "なくなった"
+    ],
+    "tell": "One detail proves the whole is bad: 名 + からして + criticism.",
+    "lv": 1
+  },
+  {
+    "id": "7-L04-004",
+    "type": "p7",
+    "point": "4-2",
+    "s": "この企画書はタイトル（　　）ありきたりで、中身にもあまり期待できそうにない。",
+    "en": "Even the title of this proposal is unoriginal, so I do not expect much from the contents.",
+    "c": [
+      "からして",
+      "をはじめ",
+      "に限り",
+      "を通じて"
+    ],
+    "cp": [
+      "4-2",
+      "4-1",
+      "5-1",
+      "4-4B"
+    ],
+    "why": [
+      "〜からして: if even a minor part (the title) is this bad, the rest probably is too. Criticism follows.",
+      "〜をはじめ needs a group word after it (タイトルをはじめ、すべてが). Here ありきたりで describes the title alone.",
+      "〜に限り is the 'only' of notices. The writer is not limiting anything, and 中身にも shows the doubt spreads.",
+      "〜を通じて means 'via' or 'throughout'. A title is not a channel or a period."
+    ],
+    "cue": [
+      "ありきたりで",
+      "中身にも"
+    ],
+    "tell": "A minor part (タイトル) is already bad, so the whole must be: 〜からして.",
+    "lv": 2
+  },
+  {
+    "id": "7-L04-005",
+    "type": "p7",
+    "point": "4-3",
+    "s": "台風による大雨は、九州から東北までの広い範囲（　　）、大きな被害をもたらした。",
+    "en": "The heavy rain from the typhoon caused severe damage across a wide area, from Kyushu to Tohoku.",
+    "c": [
+      "にわたって",
+      "に限って",
+      "をはじめ",
+      "に際して"
+    ],
+    "cp": [
+      "4-3",
+      "5-4A",
+      "4-1",
+      "1-2"
+    ],
+    "why": [
+      "〜にわたって covers a large span of place or time. 広い範囲 is exactly that kind of span.",
+      "〜に限って means 'on this one occasion, unusually'. A region is not an occasion.",
+      "〜をはじめ names a leading example of a group. 広い範囲 is not one member of a list.",
+      "〜に際して marks a one-off occasion (開会に際して). A stretch of land is not an occasion."
+    ],
+    "cue": [
+      "九州から東北までの広い範囲"
+    ],
+    "tell": "A big span of place, time or count + にわたって.",
+    "lv": 1
+  },
+  {
+    "id": "7-L04-006",
+    "type": "p7",
+    "point": "4-3",
+    "s": "十回（　　）話し合いの末、両社はようやく合意に達した。",
+    "en": "After talks that went on for ten rounds, the two companies finally reached an agreement.",
+    "c": [
+      "にわたる",
+      "を通じた",
+      "に限る",
+      "をはじめとする"
+    ],
+    "cp": [
+      "4-3",
+      "4-4A",
+      "5-1",
+      "4-1"
+    ],
+    "why": [
+      "〜にわたる + noun: a span of time, place or count. 十回 is a count, and 末 and ようやく show a long process.",
+      "〜を通じて 'throughout' needs a period of time (一年を通じて). A number of meetings is not a period.",
+      "〜に限る limits something to 'only' (十回に限る). That clashes with ようやく, which stresses how long it took.",
+      "〜をはじめとする needs a leading example of a group. 十回 is not a member of a list."
+    ],
+    "cue": [
+      "十回",
+      "ようやく"
+    ],
+    "tell": "A count, period or area + にわたる + noun: a long span.",
+    "lv": 2
+  },
+  {
+    "id": "7-L04-007",
+    "type": "p7",
+    "point": "4-4A",
+    "s": "この地方は年間（　　）降水量が少なく、晴れの日が多い。",
+    "en": "This region gets little rain all year round and has many sunny days.",
+    "c": [
+      "を通じて",
+      "に応じて",
+      "をはじめ",
+      "に限り"
+    ],
+    "cp": [
+      "4-4A",
+      "9-4",
+      "4-1",
+      "5-1"
+    ],
+    "why": [
+      "〜を通じて (throughout): the same state holds for a whole long period. 年間を通じて is the set phrase.",
+      "〜に応じて means adjusting to something that varies (予算・年齢). 年間 does not vary, and the rainfall is not adjusted to anything.",
+      "〜をはじめ names a leading example of a group. 年間 is not a member of a list.",
+      "〜に限り is the 'only' of notices. 'Only for the year' makes no sense in a description of climate."
+    ],
+    "cue": [
+      "年間",
+      "少なく"
+    ],
+    "tell": "A whole period + the same state all through it: 〜を通じて (年間を通じて).",
+    "lv": 2
+  },
+  {
+    "id": "7-L04-008",
+    "type": "p7",
+    "point": "4-4A",
+    "s": "この屋内プールは温水なので、季節を問わず一年（　　）泳ぐことができる。",
+    "en": "This indoor pool is heated, so you can swim there all year round, whatever the season.",
+    "c": [
+      "を通して",
+      "をはじめ",
+      "からして",
+      "に際して"
+    ],
+    "cp": [
+      "4-4A",
+      "4-1",
+      "4-2",
+      "1-2"
+    ],
+    "why": [
+      "〜を通して (throughout): the same state holds for the whole period. 季節を問わず confirms 'all year'.",
+      "〜をはじめ names a leading example of a group. 一年 is a period, not a member of a list.",
+      "〜からして picks a small detail to criticise the whole. The sentence is not a criticism.",
+      "〜に際して marks a one-off occasion. 一年 is a whole period, not an occasion."
+    ],
+    "cue": [
+      "季節を問わず"
+    ],
+    "tell": "A whole period, same state all through: 一年を通して.",
+    "lv": 1
+  },
+  {
+    "id": "7-L04-009",
+    "type": "p7",
+    "point": "4-4B",
+    "s": "彼とは直接の面識がなかったため、共通の友人（　　）連絡を取った。",
+    "en": "I did not know him personally, so I got in touch through a mutual friend.",
+    "c": [
+      "を通して",
+      "をはじめ",
+      "からして",
+      "にわたって"
+    ],
+    "cp": [
+      "4-4B",
+      "4-1",
+      "4-2",
+      "4-3"
+    ],
+    "why": [
+      "〜を通して (via): through a go-between person or medium. A mutual friend links you to him.",
+      "〜をはじめ names a leading example and then a group word. There is no group here.",
+      "〜からして picks a small detail to criticise the whole. Nothing is being criticised.",
+      "〜にわたって needs a large span of time or place. A friend is not a span."
+    ],
+    "cue": [
+      "直接の面識がなかった",
+      "連絡を取った"
+    ],
+    "tell": "Reaching someone through a person in between: 〜を通して.",
+    "lv": 1
+  },
+  {
+    "id": "7-L04-010",
+    "type": "p7",
+    "point": "4-4B",
+    "s": "弊社の新製品に関する情報は、今後もホームページ（　　）随時お知らせしてまいります。",
+    "en": "We will keep sharing news about our new products on our website whenever there is an update.",
+    "c": [
+      "を通じて",
+      "にわたって",
+      "をはじめ",
+      "に際して"
+    ],
+    "cp": [
+      "4-4B",
+      "4-3",
+      "4-1",
+      "1-2"
+    ],
+    "why": [
+      "〜を通じて (via): information reaches people through a medium. A website is that kind of channel.",
+      "〜にわたって needs a large span of time or place. A website is a channel, not a span.",
+      "〜をはじめ needs a group word after it (ホームページをはじめ、各種SNSで). None follows here.",
+      "〜に際して marks a one-off occasion. A website is not an occasion, and 随時 means 'whenever needed', not one time."
+    ],
+    "cue": [
+      "ホームページ",
+      "お知らせしてまいります"
+    ],
+    "tell": "Information sent through a medium (ホームページ・SNS・テレビ): 〜を通じて.",
+    "lv": 2
+  },
+  {
+    "id": "7-L04-011",
+    "type": "p7",
+    "point": "4-5",
+    "s": "選手たちは最後まで力の（　　）戦い抜き、観客から大きな拍手を受けた。",
+    "en": "The players fought with everything they had to the very end and got huge applause from the crowd.",
+    "c": [
+      "限り",
+      "最中",
+      "うち",
+      "際"
+    ],
+    "cp": [
+      "4-5",
+      "2-1",
+      "2-2A",
+      "1-1"
+    ],
+    "why": [
+      "名の + 限り: to the full limit of something. 力の限り 'with all one's strength' is the set phrase.",
+      "〜の最中 is the middle of an activity that gets interrupted. 力 is not an activity.",
+      "〜のうちに needs a period that will end. 力 is not a period of time.",
+      "〜の際 is a formal 'when' for an event or action. 力 is neither."
+    ],
+    "cue": [
+      "力の",
+      "戦い抜き"
+    ],
+    "tell": "To the full limit: 力の限り, できる限り, 知っている限り.",
+    "lv": 1
+  },
+  {
+    "id": "7-L04-012",
+    "type": "p7",
+    "point": "4-5",
+    "set": "kagiri",
+    "s": "この件について私が把握している（　　）情報を、すべて報告書にまとめました。",
+    "en": "I have put every piece of information I have on this matter into the report.",
+    "c": [
+      "限りの",
+      "限りでは",
+      "限りは",
+      "に限って"
+    ],
+    "cp": [
+      "4-5",
+      "5-3",
+      "5-2",
+      "5-4A"
+    ],
+    "why": [
+      "〜ている限りの + noun: all of it, up to the limit of what I have. It matches すべて.",
+      "〜限りでは hedges a judgement (as far as I know, X seems true). Here the writer reports their own action, not a hedged judgement.",
+      "〜限りは means 'as long as' and links two lasting states. It cannot describe a noun like 情報.",
+      "〜に限って follows a noun (今日に限って), not a verb, and means 'of all times'."
+    ],
+    "cue": [
+      "情報を",
+      "すべて"
+    ],
+    "tell": "Verb + 限りの + noun = all of it, to the limit (知っている限りの情報).",
+    "lv": 2
+  },
+  {
+    "id": "7-L04-013",
+    "type": "p7",
+    "point": "4-6",
+    "s": "今日は私のおごりだから、好きな（　　）注文していいよ。",
+    "en": "It is my treat today, so order as much as you like.",
+    "c": [
+      "だけ",
+      "うちに",
+      "最中",
+      "限りでは"
+    ],
+    "cp": [
+      "4-6",
+      "2-2A",
+      "2-1",
+      "5-3"
+    ],
+    "why": [
+      "好きなだけ: as much as you like. 〜だけ marks the full amount you want.",
+      "〜うちに means 'while the chance lasts'. 'While you like it, order' does not make sense.",
+      "〜最中 is the middle of an activity. 好きな is a feeling, not an activity.",
+      "〜限りでは needs an information word before it (知っている, 調べた). 好きな is not one."
+    ],
+    "cue": [
+      "好きな",
+      "注文していいよ"
+    ],
+    "tell": "好きなだけ・〜たいだけ・〜るだけ: as much as you want or can.",
+    "lv": 1
+  },
+  {
+    "id": "7-L04-014",
+    "type": "p7",
+    "point": "4-6",
+    "s": "A「締め切りまであと一週間しかないけど、大丈夫？」B「うーん、とにかく（　　）やってみます。」",
+    "en": "A: There is only a week left until the deadline. Will you be OK? B: Hmm, I will just do as much as I can.",
+    "c": [
+      "やれるだけ",
+      "やれただけ",
+      "やるうちに",
+      "やり次第"
+    ],
+    "cp": [
+      "4-6",
+      null,
+      "2-2B",
+      "3-3"
+    ],
+    "why": [
+      "Potential verb + だけ + the same verb: do as much as you can (やれるだけやる). The repeated verb is the signal.",
+      "やれた is past, but B is talking about what to do from now on. The potential form must stay non-past.",
+      "〜うちに (change) is followed by a change that crept in, not a plan like やってみます.",
+      "〜次第 'as soon as' needs something that will happen first. 'As soon as I do it, I will try doing it' makes no sense."
+    ],
+    "cue": [
+      "とにかく",
+      "やってみます"
+    ],
+    "tell": "Same verb twice, potential form first: やれるだけやる = as much as I can.",
+    "lv": 3
+  },
+  {
+    "id": "7-L05-001",
+    "type": "p7",
+    "point": "5-1",
+    "s": "本日午後六時までにご来店のお客様（　　）、全品二割引きとさせていただきます。",
+    "en": "Customers who visit the store by 6 p.m. today will get 20% off everything.",
+    "c": [
+      "に限り",
+      "に限らず",
+      "の限りでは",
+      "にわたって"
+    ],
+    "cp": [
+      "5-1",
+      "6-1",
+      "5-3",
+      "4-3"
+    ],
+    "why": [
+      "名 + に限り: only this group gets the special treatment. It is the standard phrase in shop notices.",
+      "〜に限らず means 'not only'. It would make the 6 p.m. cut-off pointless, since everyone would get the discount.",
+      "〜限りでは needs an information word before it (調べた限りでは) and hedges a judgement. A shop offer is not a hedge.",
+      "〜にわたって needs a large span of time or place. A group of customers is not a span."
+    ],
+    "cue": [
+      "午後六時までに",
+      "させていただきます"
+    ],
+    "tell": "Shop notice + a cut-off group that gets an offer: 〜に限り.",
+    "lv": 2
+  },
+  {
+    "id": "7-L05-002",
+    "type": "p7",
+    "point": "5-1",
+    "s": "先着五十名様（　　）、記念品を差し上げます。",
+    "en": "Only the first fifty visitors will receive a commemorative gift.",
+    "c": [
+      "に限り",
+      "にわたって",
+      "をはじめ",
+      "からして"
+    ],
+    "cp": [
+      "5-1",
+      "4-3",
+      "4-1",
+      "4-2"
+    ],
+    "why": [
+      "名 + に限り: only that group qualifies. 先着 'first to arrive' already sets the limit.",
+      "〜にわたって covers a long span of time, place or repeated events. A group of fifty guests is not a span.",
+      "〜をはじめ needs a group word after it that includes the first item. The sentence goes straight to the gift.",
+      "〜からして uses a small detail to criticise the whole. A gift offer is not a criticism."
+    ],
+    "cue": [
+      "先着五十名様"
+    ],
+    "tell": "Notice + a limited group (先着〜名様・予約の方): 〜に限り.",
+    "lv": 1
+  },
+  {
+    "id": "7-L05-003",
+    "type": "p7",
+    "point": "5-1",
+    "set": "kagiri",
+    "s": "（館内放送）開館記念日の今日（　　）。",
+    "en": "(Announcement) Today only, on our opening anniversary, admission is free.",
+    "c": [
+      "に限り、入館料が無料となります",
+      "に限って、入館料が無料となるはずがありません",
+      "の限りでは、入館料が無料となります",
+      "である限り、入館料が無料となります"
+    ],
+    "cp": [
+      "5-1",
+      "5-4C",
+      "5-3",
+      "5-2"
+    ],
+    "why": [
+      "〜に限り + the special rule that applies: today only, admission is free. This is the official notice pattern.",
+      "〜に限って + はずがない is for a trusted person who would never do wrong (彼に限って). 今日 is not a person, and an announcement does not deny its own offer.",
+      "〜限りでは needs an information word (調べた, 知っている) and hedges a judgement. An announcement is not a hedge.",
+      "〜である限り means 'as long as' a lasting state holds. A single day is not a lasting state."
+    ],
+    "cue": [
+      "館内放送",
+      "開館記念日の今日"
+    ],
+    "tell": "Announcement + a one-time exception: 〜に限り + what applies. に限って〜はずがない is for a trusted person.",
+    "lv": 3
+  },
+  {
+    "id": "7-L05-004",
+    "type": "p7",
+    "point": "5-2",
+    "set": "kagiri",
+    "s": "このチームは、今のエースが（　　）、優勝を狙えるだろう。",
+    "en": "As long as their current ace is on the team, they can aim for the title.",
+    "c": [
+      "いる限り",
+      "いる限りでは",
+      "いた限り",
+      "いるに限って"
+    ],
+    "cp": [
+      "5-2",
+      "5-3",
+      "5-2",
+      "5-4A"
+    ],
+    "why": [
+      "Non-past state + 限り: as long as X holds, Y holds. While the ace is there, the title is possible.",
+      "〜限りでは needs an information word (見た, 聞いた) and limits where a judgement comes from. いる is not information.",
+      "〜限り 'as long as' needs the present form before it. いた (past) breaks the condition.",
+      "〜に限って follows a noun (今日に限って). It cannot follow いる, and it means 'of all times'."
+    ],
+    "cue": [
+      "今のエースが",
+      "狙えるだろう"
+    ],
+    "tell": "As long as a state holds (present form) + 限り: いる限り.",
+    "lv": 2
+  },
+  {
+    "id": "7-L05-005",
+    "type": "p7",
+    "point": "5-2",
+    "s": "本人が心から（　　）、同じ失敗を繰り返すだろう。",
+    "en": "Unless he truly reflects on it himself, he will probably make the same mistake again.",
+    "c": [
+      "反省しない限り",
+      "反省しない限りでは",
+      "反省しなかった限り",
+      "反省し次第"
+    ],
+    "cp": [
+      "5-2",
+      "5-3",
+      null,
+      "3-3"
+    ],
+    "why": [
+      "ない形 + 限り = unless. As long as he does not reflect, the same mistake will come back.",
+      "〜限りでは needs an information word (調べた, 見た) and hedges a judgement. 反省しない is not information.",
+      "〜限り is a condition, so the verb before it stays non-past. 反省しなかった breaks it.",
+      "〜次第 means 'as soon as'. 'As soon as he reflects, he will repeat the mistake' is the opposite of the meaning."
+    ],
+    "cue": [
+      "心から",
+      "繰り返すだろう"
+    ],
+    "tell": "ない形 + 限り = unless, then a forecast: 〜ない限り〜だろう.",
+    "lv": 3
+  },
+  {
+    "id": "7-L05-006",
+    "type": "p7",
+    "point": "5-2",
+    "set": "kagiri",
+    "s": "プロの選手（　　）、結果で評価されるのは当然のことだ。",
+    "en": "As long as you are a professional athlete, it is only natural to be judged on results.",
+    "c": [
+      "である限り",
+      "の限り",
+      "だ限り",
+      "にしては"
+    ],
+    "cp": [
+      "5-2",
+      "4-5",
+      null,
+      "19-2"
+    ],
+    "why": [
+      "名 + である + 限り: as long as you are X. A noun needs である before 限り.",
+      "名の限り means 'to the full limit of' (力の限り). It does not mean 'as long as you are'.",
+      "だ cannot come before 限り. A noun takes である: 選手である限り.",
+      "〜にしては sets up a surprise: 'for X, it is unexpectedly Y'. 当然のことだ says the result is expected, so they clash."
+    ],
+    "cue": [
+      "プロの選手",
+      "当然のことだ"
+    ],
+    "tell": "Noun + である限り = as long as you are X. Not だ, not の.",
+    "lv": 2
+  },
+  {
+    "id": "7-L05-007",
+    "type": "p7",
+    "point": "5-3",
+    "s": "私の（　　）限りでは、そのような方針の変更はまだ正式に発表されていません。",
+    "en": "As far as I know, no such change in policy has been officially announced yet.",
+    "c": [
+      "知っている",
+      "知らない",
+      "知ろうとする",
+      "知りつつ"
+    ],
+    "cp": [
+      "5-3",
+      null,
+      null,
+      "14-4"
+    ],
+    "why": [
+      "An information verb + 限りでは: 'as far as my knowledge goes'. 知っている is the standard choice.",
+      "知らない is the opposite of an information source. 'As far as I don't know' makes no sense.",
+      "〜ようとする means 'try to'. Trying to know is not a source of information.",
+      "〜つつ cannot come before 限り. 知りつつ means 'even though I know' and links to a new clause."
+    ],
+    "cue": [
+      "限りでは",
+      "まだ正式に発表されていません"
+    ],
+    "tell": "Info verb (知っている・調べた・聞いた) + 限りでは + a careful statement.",
+    "lv": 1
+  },
+  {
+    "id": "7-L05-008",
+    "type": "p7",
+    "point": "5-3",
+    "s": "ニュースで（　　）、事故の原因はまだわかっていないようだ。",
+    "en": "From what I saw on the news, the cause of the accident still does not seem to be known.",
+    "c": [
+      "見た限りでは",
+      "見たとたん",
+      "見た上で",
+      "見ているうちに"
+    ],
+    "cp": [
+      "5-3",
+      "1-3",
+      "3-2",
+      "2-2B"
+    ],
+    "why": [
+      "見た + 限りでは: the claim is limited to what I saw. A hedged judgement (〜ようだ) follows.",
+      "〜たとたん is followed by a sudden, unexpected event. A hedged judgement about a cause is not an event.",
+      "〜た上で is followed by a deliberate action by the same person. 〜ようだ is a judgement, not an action.",
+      "〜ているうちに (change) is followed by a change that crept in. Here nothing changes, there is just a judgement."
+    ],
+    "cue": [
+      "ニュースで",
+      "ようだ"
+    ],
+    "tell": "Info source (見た・聞いた) + 限りでは + a hedge (〜ようだ・〜ない).",
+    "lv": 2
+  },
+  {
+    "id": "7-L05-009",
+    "type": "p7",
+    "point": "5-3",
+    "s": "社内で（　　）、新しい制度に反対している社員はほとんどいないようです。",
+    "en": "From what I have heard asking around the office, hardly any staff seem to oppose the new system.",
+    "c": [
+      "聞いて回った限りでは",
+      "聞いて回ったとたんに",
+      "聞いて回り次第",
+      "聞いて回る限りは"
+    ],
+    "cp": [
+      "5-3",
+      "1-3",
+      "3-3",
+      "5-2"
+    ],
+    "why": [
+      "〜た限りでは: 'as far as what I heard tells me'. The source is limited, so a hedge (〜ようです) follows.",
+      "〜たとたんに is followed by a sudden event, not a careful judgement about the whole office.",
+      "〜次第 looks forward to a plan or a request. 〜ようです reports a judgement about now.",
+      "〜限りは 'as long as' links two lasting states. 'As long as I keep asking, nobody opposes it' makes no sense."
+    ],
+    "cue": [
+      "ほとんどいないようです"
+    ],
+    "tell": "What I gathered (聞いて回った・調べた) + 限りでは + a hedged report.",
+    "lv": 3
+  },
+  {
+    "id": "7-L05-010",
+    "type": "p7",
+    "point": "5-4A",
+    "set": "kagiri",
+    "s": "いつもは時間に正確な部長が、今朝（　　）一時間も遅れて出社してきた。",
+    "en": "Our manager is always on time, but this morning of all mornings he came in a whole hour late.",
+    "c": [
+      "に限って",
+      "に限らず",
+      "限りでは",
+      "からして"
+    ],
+    "cp": [
+      "5-4A",
+      "6-1",
+      "5-3",
+      "4-2"
+    ],
+    "why": [
+      "名 + に限って: normally X, but on this one occasion it was different. いつもは is the signal.",
+      "〜に限らず means 'not only this morning'. That clashes with いつもは時間に正確, which says he is normally on time.",
+      "〜限りでは needs an information word (見た, 聞いた). 今朝 is not a source of information.",
+      "〜からして uses a small detail to criticise the whole. 今朝 is a time, not a detail of something."
+    ],
+    "cue": [
+      "いつもは"
+    ],
+    "tell": "いつもは X, but this time unusually Y: 〜に限って.",
+    "lv": 2
+  },
+  {
+    "id": "7-L05-011",
+    "type": "p7",
+    "point": "5-4A",
+    "s": "A「あれ、今日は自分でお弁当作ってきたの？」B「うん。いつもはコンビニなんだけど、今日（　　）早起きできたんだ。」",
+    "en": "A: Oh, did you make your own lunch today? B: Yes. I usually get something from the convenience store, but today, for once, I managed to get up early.",
+    "c": [
+      "に限って",
+      "に限らず",
+      "にわたって",
+      "をはじめ"
+    ],
+    "cp": [
+      "5-4A",
+      "6-1",
+      "4-3",
+      "4-1"
+    ],
+    "why": [
+      "名 + に限って (unusually): the normal pattern changed just this once. Here the change is a good one.",
+      "〜に限らず means 'not only today'. That clashes with いつもはコンビニ, which says B does not usually manage this.",
+      "〜にわたって needs a large span of time or place. 今日 is a single day.",
+      "〜をはじめ needs a group word after it that includes the first item. There is none."
+    ],
+    "cue": [
+      "いつもは",
+      "なんだけど"
+    ],
+    "tell": "いつもは〜けど + today, for once: 今日に限って. Not always bad luck.",
+    "lv": 2
+  },
+  {
+    "id": "7-L05-012",
+    "type": "p7",
+    "point": "5-4B",
+    "s": "新しい白いシャツを着た日に（　　）、うっかりカレーをこぼしてしまう。",
+    "en": "It is always on the day I wear a new white shirt that I spill curry on myself.",
+    "c": [
+      "限って",
+      "対して",
+      "際して",
+      "わたって"
+    ],
+    "cp": [
+      "5-4B",
+      "7-4A",
+      "1-2",
+      "4-3"
+    ],
+    "why": [
+      "日に限って: precisely on that day, bad luck strikes. 〜てしまう shows the speaker's frustration.",
+      "〜に対して aims an action or attitude at a target (客に対して丁寧だ). A day is not a target, and nothing is aimed at it.",
+      "〜に際して marks a formal, one-off occasion (開会に際して). It does not mean 'of all days'.",
+      "〜にわたって needs a large span of time or place. 日 here is one day, not a span."
+    ],
+    "cue": [
+      "こぼしてしまう"
+    ],
+    "tell": "On exactly the day I do X, bad luck (〜てしまう): 〜日に限って.",
+    "lv": 1
+  },
+  {
+    "id": "7-L05-013",
+    "type": "p7",
+    "point": "5-4B",
+    "s": "A「まだ帰らないの？」B「今日は早く帰ろうと思ってたのに、そういう日（　　）トラブルが起きるんだよね。」",
+    "en": "A: Aren't you going home yet? B: I meant to leave early today, but trouble always comes up on days like that.",
+    "c": [
+      "に限って",
+      "にわたって",
+      "からして",
+      "を通して"
+    ],
+    "cp": [
+      "5-4B",
+      "4-3",
+      "4-2",
+      "4-4A"
+    ],
+    "why": [
+      "そういう日に限って: on exactly the kind of day I need things to go well, trouble comes. A complaint about bad luck.",
+      "〜にわたって needs a large span of time or place (三日間にわたって). One kind of day is not a span.",
+      "〜からして uses a small detail to criticise the whole. A day is not a detail of something.",
+      "〜を通して 'throughout' needs a long period (一年を通して). One day is too short, and the meaning here is 'precisely then'."
+    ],
+    "cue": [
+      "思ってたのに",
+      "起きるんだよね"
+    ],
+    "tell": "I wanted X today, and of course trouble: そういう日に限って.",
+    "lv": 2
+  },
+  {
+    "id": "7-L05-014",
+    "type": "p7",
+    "point": "5-4B",
+    "set": "kagiri",
+    "s": "タクシーを拾いたい時（　　）。",
+    "en": "Just when you want to catch a taxi, not a single one comes by.",
+    "c": [
+      "に限って、一台も通らない",
+      "に際して、一台も通らない",
+      "に限って、一台も通らないはずがない",
+      "限りは、一台も通らない"
+    ],
+    "cp": [
+      "5-4B",
+      "1-2",
+      "5-4C",
+      "5-2"
+    ],
+    "why": [
+      "〜時に限って + a bad result: precisely when you need a taxi, none comes. This is the bad-luck complaint.",
+      "〜に際して marks a formal one-off occasion with an event noun (出発に際して). It does not follow 時, and it cannot voice bad luck.",
+      "〜に限って + はずがない is for a trusted person who surely would not do wrong (彼に限って). A moment in time is not a person you trust.",
+      "〜限りは 'as long as' takes a plain verb or adjective form directly (拾いたい限りは). It cannot follow the noun 時, and the meaning is wrong."
+    ],
+    "cue": [
+      "拾いたい時"
+    ],
+    "tell": "When I need X + に限って + a bad result. はずがない belongs to the trusted-person meaning.",
+    "lv": 3
+  },
+  {
+    "id": "7-L05-015",
+    "type": "p7",
+    "point": "5-4C",
+    "s": "あんなにまじめな田中さん（　　）、会社のお金を勝手に使うはずがない。",
+    "en": "Tanaka is so conscientious. He of all people would never use company money without permission.",
+    "c": [
+      "に限って",
+      "に対して",
+      "をはじめ",
+      "にわたって"
+    ],
+    "cp": [
+      "5-4C",
+      "7-4A",
+      "4-1",
+      "4-3"
+    ],
+    "why": [
+      "Trusted person + に限って + はずがない: X of all people would never do that.",
+      "〜に対して marks the target of an action (田中さんに対して失礼だ). Here 田中さん is the one who would act, not the target.",
+      "〜をはじめ needs a group word after it (田中さんをはじめ、社員の皆さん). There is no group here.",
+      "〜にわたって needs a large span of time or place. A person is not a span."
+    ],
+    "cue": [
+      "まじめな",
+      "はずがない"
+    ],
+    "tell": "A trusted person + に限って + はずがない／わけがない.",
+    "lv": 2
+  },
+  {
+    "id": "7-L05-016",
+    "type": "p7",
+    "point": "5-4C",
+    "set": "kagiri",
+    "s": "A「山田さん、大事な書類をなくしたらしいよ。」B「えっ、几帳面な山田さん（　　）。何かの間違いじゃない？」",
+    "en": "A: I hear Yamada lost some important documents. B: What? Careful Yamada would never make a mistake like that. Surely there has been a mix-up.",
+    "c": [
+      "に限って、そんなミスをするわけがないよ",
+      "に限って、そんなミスをしたに違いないよ",
+      "に限って、そんなミスをするわけにはいかないよ",
+      "の限りでは、そんなミスをするわけがないよ"
+    ],
+    "cp": [
+      "5-4C",
+      "5-4C",
+      "18-2",
+      "5-3"
+    ],
+    "why": [
+      "Trusted person + に限って + わけがない: B refuses to believe it. 何かの間違い confirms the denial.",
+      "This に限って must end in a denial. 〜に違いない accepts the mistake, which clashes with 何かの間違いじゃない？",
+      "〜わけにはいかない means 'cannot very well do it' about a choice someone faces. B is denying a fact, which needs わけがない.",
+      "〜の限りでは limits a claim to a source of information (調査の限りでは). A person is not an information source."
+    ],
+    "cue": [
+      "几帳面な",
+      "何かの間違いじゃない"
+    ],
+    "tell": "A trusted person + に限って + わけがない／はずがない: X of all people would never.",
+    "lv": 3
+  }
+]

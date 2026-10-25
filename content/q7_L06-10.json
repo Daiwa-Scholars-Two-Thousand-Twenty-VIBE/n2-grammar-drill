@@ -1,0 +1,1923 @@
+[
+  {
+    "id": "7-L06-001",
+    "type": "p7",
+    "point": "6-1",
+    "s": "本セミナーは、当社の会員（　　）、関心のある方ならどなたでもご参加いただけます。",
+    "en": "This seminar is not just for our members: anyone who is interested is welcome to attend.",
+    "c": [
+      "に限らず",
+      "に限り",
+      "に限って",
+      "にかけては"
+    ],
+    "cp": [
+      "6-1",
+      "5-1",
+      "5-4A",
+      "7-3"
+    ],
+    "why": [
+      "〜に限らず: not limited to X, a wider range is included too. Members first, then anyone at all (どなたでも).",
+      "〜に限り means 'only X', as a special exception. 'Members only' clashes with 'anyone who is interested'.",
+      "〜に限って picks out one case as unusual or unlucky ('of all times'). It cannot open the door to everyone.",
+      "〜にかけては names a skill where someone is the best. 会員 is not a skill, and nothing here is praise."
+    ],
+    "cue": [
+      "どなたでも"
+    ],
+    "tell": "X, then a wider-range word (どなたでも・いつも・みんな): に限らず, not に限り.",
+    "lv": 1
+  },
+  {
+    "id": "7-L06-002",
+    "type": "p7",
+    "point": "6-1",
+    "s": "A「駅前のカフェ、週末はいつも混んでるね。」B「週末（　　）、平日もけっこう混んでるんだよ。」",
+    "en": "A: The cafe by the station is always packed at weekends. B: Not just at weekends. It's pretty busy on weekdays too.",
+    "c": [
+      "に限らず",
+      "に限って",
+      "に限り",
+      "からして"
+    ],
+    "cp": [
+      "6-1",
+      "5-4A",
+      "5-1",
+      "4-2"
+    ],
+    "why": [
+      "〜に限らず: not limited to X. 平日も adds a wider range beyond weekends, and it is fine in casual speech.",
+      "〜に限って makes weekends the one special case. 平日も says weekdays are busy too, so the sentence contradicts itself.",
+      "〜に限り means 'only X'. 'Only at weekends' clashes with 平日も.",
+      "〜からして judges the whole from one small detail, usually as criticism. Weekends are not a detail, and 平日も widens the range instead."
+    ],
+    "cue": [
+      "平日も"
+    ],
+    "tell": "X, then a wider range with も (平日も・みんな): に限らず. に限り and に限って narrow it to X.",
+    "lv": 2
+  },
+  {
+    "id": "7-L06-003",
+    "type": "p7",
+    "point": "6-1",
+    "s": "この問題はこれまで都市部だけのものだと考えられてきたが、実は都市部（　　）ことが、今回の調査で明らかになった。",
+    "en": "This problem had long been thought to affect only cities, but the survey showed that it is in fact not limited to them: it is happening in rural areas too.",
+    "c": [
+      "に限らず、地方でも起きている",
+      "に限って、地方でも起きている",
+      "に限らず、地方では起きていない",
+      "に限り、地方でも起きている"
+    ],
+    "cp": [
+      "6-1",
+      "5-4A",
+      "6-1",
+      "5-1"
+    ],
+    "why": [
+      "〜に限らず opens the range beyond X, so the second half adds more places with も: 地方でも起きている.",
+      "〜に限って singles out X as the special or unlucky case. It cannot then add 地方でも.",
+      "After 〜に限らず the wider range must be included. 地方では起きていない takes it away again, so the sentence contradicts itself.",
+      "〜に限り means 'only in X', as on a notice. 'Only in cities' clashes with 'in rural areas too'."
+    ],
+    "cue": [
+      "だけのものだと考えられてきた",
+      "実は"
+    ],
+    "tell": "After に限らず the wider range must be included (〜も・〜でも). A negative after it contradicts.",
+    "lv": 3
+  },
+  {
+    "id": "7-L06-004",
+    "type": "p7",
+    "point": "6-2",
+    "set": "not-only",
+    "s": "新しい制度は、手続きを簡単にした（　　）、利用者の費用の負担も大きく減らした。",
+    "en": "The new system not only simplified the procedures but also greatly reduced the cost burden on users.",
+    "c": [
+      "のみならず",
+      "に限らず",
+      "はもとより",
+      "をはじめ"
+    ],
+    "cp": [
+      "6-2",
+      "6-1",
+      "6-4",
+      "4-1"
+    ],
+    "why": [
+      "〜のみならず attaches to a plain-form clause (簡単にした) as well as a noun. Formal 'not only… but also', with 〜も after.",
+      "〜に限らず attaches only to a noun. It cannot follow a verb like 簡単にした.",
+      "〜はもとより attaches only to a noun (or a noun plus a particle). 簡単にしたはもとより is broken.",
+      "〜をはじめ also needs a noun: the first example of a group (東京をはじめ). It cannot follow a verb."
+    ],
+    "cue": [
+      "簡単にした",
+      "負担も"
+    ],
+    "tell": "A verb clause before the blank rules out に限らず, はもとより, をはじめ (noun only). のみならず takes clauses.",
+    "lv": 1
+  },
+  {
+    "id": "7-L06-005",
+    "type": "p7",
+    "point": "6-2",
+    "s": "地球温暖化は、環境の問題（　　）、食料や経済にも深刻な影響を及ぼす社会全体の課題である。",
+    "en": "Global warming is not only an environmental problem: it is an issue for the whole of society, with serious effects on food and the economy as well.",
+    "c": [
+      "であるのみならず",
+      "であるのに対して",
+      "であるばかりに",
+      "である上で"
+    ],
+    "cp": [
+      "6-2",
+      "7-4B",
+      "17-4",
+      "3-2"
+    ],
+    "why": [
+      "〜のみならず is the formal 'not only', and a noun joins it through である. It matches the written ending 課題である.",
+      "〜のに対して contrasts two different things (A is X, whereas B is Y). Here one subject gets two points that add up (〜にも).",
+      "〜ばかりに means 'simply because of X, something bad happened'. There is no cause and bad result here.",
+      "〜上で means 'after doing X' or 'in doing X'. It does not add a second point."
+    ],
+    "cue": [
+      "課題である",
+      "経済にも"
+    ],
+    "tell": "Formal essay (〜である) + 'not only… but also' (〜にも): noun + であるのみならず.",
+    "lv": 2
+  },
+  {
+    "id": "7-L06-006",
+    "type": "p7",
+    "point": "6-3",
+    "s": "彼は無断で仕事を休んだ（　　）、連絡すら取ろうとしなかった。",
+    "en": "Not only did he skip work without telling anyone, he didn't even try to get in touch.",
+    "c": [
+      "ばかりか",
+      "上で",
+      "次第",
+      "からして"
+    ],
+    "cp": [
+      "6-3",
+      "3-2",
+      "3-3",
+      "4-2"
+    ],
+    "why": [
+      "〜ばかりか: X is already bad, and something even worse is piled on top, often with すら・さえ・まで.",
+      "〜上で means 'after doing X carefully, then the next step'. Skipping work is not a first step toward anything.",
+      "〜次第 (as soon as) attaches to the ます stem (休み次第) and must lead into a plan or request. Neither fits here.",
+      "〜からして attaches to a noun and means 'judging even from X'. It cannot follow a verb like 休んだ."
+    ],
+    "cue": [
+      "すら"
+    ],
+    "tell": "Bad, then even worse with すら・さえ・まで: ばかりか.",
+    "lv": 1
+  },
+  {
+    "id": "7-L06-007",
+    "type": "p7",
+    "point": "6-3",
+    "s": "A「先月入った中村さん、どう？」B「すごいよ。仕事が早い（　　）、先輩のミスまで見つけてくれるんだ。」",
+    "en": "A: How's Nakamura, who joined last month? B: Amazing. Not only is she fast, she even catches her seniors' mistakes.",
+    "c": [
+      "ばかりか",
+      "ばかりに",
+      "ばかりで",
+      "はもとより"
+    ],
+    "cp": [
+      "6-3",
+      "17-4",
+      null,
+      "6-4"
+    ],
+    "why": [
+      "〜ばかりか: X is already impressive, then something even more surprising (まで). It works in everyday speech.",
+      "〜ばかりに means 'just because of X, something bad happened'. Nothing bad happens here.",
+      "〜ばかりで means 'only X and nothing else', usually a complaint. It clashes with the praise that follows.",
+      "〜はもとより attaches to a noun (仕事はもとより). It cannot follow the adjective 早い directly."
+    ],
+    "cue": [
+      "まで",
+      "すごいよ"
+    ],
+    "tell": "A surprise on top of a surprise (まで) in casual speech: ばかりか. Not ばかりに (bad result) or ばかりで (only).",
+    "lv": 2
+  },
+  {
+    "id": "7-L06-008",
+    "type": "p7",
+    "point": "6-3",
+    "s": "この掃除機は音が静かなばかりか、（　　）。",
+    "en": "Not only is this vacuum cleaner quiet, its electricity costs are also amazingly low.",
+    "c": [
+      "電気代も驚くほど安い",
+      "ぜひ一度お試しください",
+      "吸い込む力はやや弱い",
+      "音が静かなのが特徴だ"
+    ],
+    "cp": [
+      "6-3",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "After 〜ばかりか comes a second point in the same direction that is even more notable, often with も or まで.",
+      "〜ばかりか cannot be followed by a request or invitation. お試しください is a request.",
+      "やや弱い is a minus point. 〜ばかりか adds something in the same direction, not a drawback.",
+      "This only repeats the first point. 〜ばかりか needs a new and bigger point."
+    ],
+    "cue": [
+      "ばかりか"
+    ],
+    "tell": "After ばかりか: a bigger point in the same direction (〜も・〜まで). No request, no drawback.",
+    "lv": 3
+  },
+  {
+    "id": "7-L06-009",
+    "type": "p7",
+    "point": "6-4",
+    "set": "not-only",
+    "s": "この祭りは、地元の住民に（　　）、海外からの旅行者にも広く知られている。",
+    "en": "This festival is well known to local residents, of course, and to travellers from abroad as well.",
+    "c": [
+      "はもとより",
+      "に限らず",
+      "をはじめ",
+      "上に"
+    ],
+    "cp": [
+      "6-4",
+      "6-1",
+      "4-1",
+      "6-5"
+    ],
+    "why": [
+      "〜はもとより can follow a noun plus a particle (住民にはもとより). The first group is obvious, and 〜にも adds another.",
+      "〜に限らず attaches straight to a noun. After the particle に it breaks: 住民にに限らず.",
+      "〜をはじめ also attaches straight to a noun, so 住民にをはじめ is broken.",
+      "〜上に needs a plain form or 名の, and it stacks qualities of one thing. It cannot follow the particle に or list groups of people."
+    ],
+    "cue": [
+      "住民に",
+      "旅行者にも"
+    ],
+    "tell": "Noun + particle + blank, then 〜にも: only はもとより can follow a particle.",
+    "lv": 1
+  },
+  {
+    "id": "7-L06-010",
+    "type": "p7",
+    "point": "6-4",
+    "s": "台風の接近に備え、水や食料（　　）、懐中電灯や携帯ラジオなども早めに準備しておいてください。",
+    "en": "With the typhoon approaching, please get ready early: water and food, of course, but also torches, portable radios and so on.",
+    "c": [
+      "はもとより",
+      "ばかりか",
+      "に限り",
+      "にかけては"
+    ],
+    "cp": [
+      "6-4",
+      "6-3",
+      "5-1",
+      "7-3"
+    ],
+    "why": [
+      "〜はもとより: X goes without saying (water and food), and 〜も adds more. A request may follow it.",
+      "〜ばかりか cannot be followed by a request (〜てください). It also needs a surprising step up, not a checklist.",
+      "〜に限り means 'only X'. It clashes with なども, which adds more items.",
+      "〜にかけては names a skill where someone is the best. Water and food are not skills."
+    ],
+    "cue": [
+      "準備しておいてください",
+      "なども"
+    ],
+    "tell": "Obvious item + 〜も + a request (〜てください): はもとより. ばかりか cannot take a request.",
+    "lv": 2
+  },
+  {
+    "id": "7-L06-011",
+    "type": "p7",
+    "point": "6-5",
+    "set": "ue",
+    "s": "このパソコンは性能が優れている（　　）、デザインも洗練されていて使いやすい。",
+    "en": "This computer performs superbly, and on top of that its design is refined and easy to use.",
+    "c": [
+      "上に",
+      "上で",
+      "反面",
+      "ばかりで"
+    ],
+    "cp": [
+      "6-5",
+      "3-2",
+      null,
+      null
+    ],
+    "why": [
+      "〜上に stacks two points with the same evaluation: good performance, plus good design (〜も).",
+      "〜上で means 'after doing X, then Y', a sequence. Performance and design are not steps.",
+      "〜反面 sets a plus against a minus. Both halves here are plus points.",
+      "〜ばかりで means 'only X and nothing else', a complaint. It clashes with デザインも."
+    ],
+    "cue": [
+      "デザインも"
+    ],
+    "tell": "Plus + plus (or minus + minus) with 〜も: 上に. 上で is a sequence, 反面 a contrast.",
+    "lv": 1
+  },
+  {
+    "id": "7-L06-012",
+    "type": "p7",
+    "point": "6-5",
+    "set": "ue",
+    "s": "この部屋は駅から遠い（　　）、日当たりも悪いので、家賃が安いのも当然だ。",
+    "en": "This flat is far from the station and gets little sun on top of that, so no wonder the rent is cheap.",
+    "c": [
+      "上に",
+      "上で",
+      "反面",
+      "わりに"
+    ],
+    "cp": [
+      "6-5",
+      "3-2",
+      null,
+      "19-1"
+    ],
+    "why": [
+      "〜上に stacks two minus points (far away, little sun). Same evaluation on both sides, joined by 〜も.",
+      "〜上で means 'after doing X'. 遠い is a state, not a step you take first.",
+      "〜反面 contrasts a plus with a minus. Here both points are minuses.",
+      "〜わりに means 'considering X, surprisingly Y'. Little sun is not a surprise given that the flat is far away."
+    ],
+    "cue": [
+      "日当たりも悪い"
+    ],
+    "tell": "Minus + minus (〜も): 上に. Check that both halves point the same way.",
+    "lv": 2
+  },
+  {
+    "id": "7-L06-013",
+    "type": "p7",
+    "point": "6-5",
+    "s": "この店の料理はおいしい上に、（　　）。",
+    "en": "The food at this restaurant is delicious, and the prices are reasonable too.",
+    "c": [
+      "値段も手ごろだ",
+      "店員の態度はいまひとつだ",
+      "ぜひ一度行ってみてください",
+      "駅からは少し遠い"
+    ],
+    "cp": [
+      "6-5",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "〜上に needs a second point with the same evaluation. Tasty food (plus) and fair prices (plus) match.",
+      "So-so service is a minus. 〜上に never joins a plus to a minus.",
+      "〜上に cannot be followed by a request or invitation (〜てください).",
+      "Being far from the station is a minus, so it does not stack with the plus of tasty food."
+    ],
+    "cue": [
+      "おいしい上に"
+    ],
+    "tell": "After 上に: another point with the same evaluation, often with 〜も. No request, no opposite.",
+    "lv": 3
+  },
+  {
+    "id": "7-L07-001",
+    "type": "p7",
+    "point": "7-1",
+    "s": "新製品の安全性（　　）ご質問は、お客様相談窓口までお寄せください。",
+    "en": "Please send any questions about the safety of the new product to our customer help desk.",
+    "c": [
+      "に関する",
+      "にこたえる",
+      "向けの",
+      "に沿った"
+    ],
+    "cp": [
+      "7-1",
+      "7-5",
+      "8-5",
+      "8-3"
+    ],
+    "why": [
+      "〜に関する + noun: about a broad theme. Questions about safety ask for information, which is what に関する is for.",
+      "〜にこたえる only takes expectations or requests (期待・要望). 安全性 is neither.",
+      "〜向けの means 'made for a target group'. 安全性 is not a group of people.",
+      "〜に沿った means 'in line with a plan or policy'. A question does not follow safety like a plan."
+    ],
+    "cue": [
+      "ご質問"
+    ],
+    "tell": "A theme + information words (質問・調査・資料): に関する.",
+    "lv": 1
+  },
+  {
+    "id": "7-L07-002",
+    "type": "p7",
+    "point": "7-1",
+    "set": "about",
+    "s": "今回のシステム障害の原因（　　）、社内の調査チームが詳しく調べている。",
+    "en": "An internal investigation team is looking closely into the cause of the recent system failure.",
+    "c": [
+      "に関して",
+      "にかけては",
+      "に対して",
+      "に応じて"
+    ],
+    "cp": [
+      "7-1",
+      "7-3",
+      "7-4A",
+      "9-4"
+    ],
+    "why": [
+      "〜に関して: about a broad theme, followed by an information verb (調べる・調査する・説明する).",
+      "〜にかけては praises a skill where someone is the best. A cause is not a skill.",
+      "〜に対して aims an action or feeling at a target (a person, a question). You do not 'investigate toward' a cause.",
+      "〜に応じて means 'adjusting to something that varies'. Nothing is being adjusted here."
+    ],
+    "cue": [
+      "詳しく調べている",
+      "調査チームが"
+    ],
+    "tell": "A topic + an information verb (調べる・調査する・説明する): に関して.",
+    "lv": 2
+  },
+  {
+    "id": "7-L07-003",
+    "type": "p7",
+    "point": "7-1",
+    "s": "来月の研修の日程（　　）、決まり次第、改めてご連絡いたします。",
+    "en": "As for the schedule for next month's training, we will contact you again as soon as it is decided.",
+    "c": [
+      "に関しましては",
+      "をめぐりましては",
+      "にかけましては",
+      "にこたえまして"
+    ],
+    "cp": [
+      "7-1",
+      "7-2",
+      "7-3",
+      "7-5"
+    ],
+    "why": [
+      "〜に関しましては is the polite form of に関しては: 'as for X', used in business emails to raise a topic.",
+      "〜をめぐって is for a dispute between several sides. Nobody is fighting over a training schedule.",
+      "〜にかけては praises a skill where someone is unbeatable. A schedule is not a skill.",
+      "〜にこたえて responds to an expectation or request (期待・要望). 日程 is neither."
+    ],
+    "cue": [
+      "ご連絡いたします",
+      "日程"
+    ],
+    "tell": "A business email raising a topic: 〜に関しましては (polite に関しては).",
+    "lv": 3
+  },
+  {
+    "id": "7-L07-004",
+    "type": "p7",
+    "point": "7-2",
+    "set": "about",
+    "s": "新工場の建設予定地（　　）、住民と市の間で対立が続いている。",
+    "en": "Residents and the city remain in conflict over the planned site for the new factory.",
+    "c": [
+      "をめぐって",
+      "に対して",
+      "にかけては",
+      "にこたえて"
+    ],
+    "cp": [
+      "7-2",
+      "7-4A",
+      "7-3",
+      "7-5"
+    ],
+    "why": [
+      "〜をめぐって: several parties disagree over X. 住民と市 and 対立 show the dispute.",
+      "〜に対して aims an action or attitude at one target. A conflict between two sides is not aimed at the site.",
+      "〜にかけては praises a skill where someone is the best. A building site is not a skill.",
+      "〜にこたえて means 'living up to an expectation or request'. A building site is neither."
+    ],
+    "cue": [
+      "住民と市の間で",
+      "対立"
+    ],
+    "tell": "Two or more sides + 対立・議論・争い: をめぐって.",
+    "lv": 1
+  },
+  {
+    "id": "7-L07-005",
+    "type": "p7",
+    "point": "7-2",
+    "s": "最後の一議席（　　）、三人の候補者が激しく争った。",
+    "en": "Three candidates fought fiercely over the last remaining seat.",
+    "c": [
+      "をめぐって",
+      "にかけては",
+      "にこたえて",
+      "に沿って"
+    ],
+    "cp": [
+      "7-2",
+      "7-3",
+      "7-5",
+      "8-3"
+    ],
+    "why": [
+      "〜をめぐって: several people compete or argue over X. 三人の候補者 and 争った mark the contest.",
+      "〜にかけては praises someone's skill where nobody beats them. A seat in parliament is not a skill.",
+      "〜にこたえて means living up to an expectation or request. 議席 is neither.",
+      "〜に沿って means following a plan, policy or route. Candidates do not follow a seat; they fight over it."
+    ],
+    "cue": [
+      "三人の候補者が",
+      "争った"
+    ],
+    "tell": "The prize several people fight over (議席・遺産・優勝) + 争う: をめぐって.",
+    "lv": 1
+  },
+  {
+    "id": "7-L07-006",
+    "type": "p7",
+    "point": "7-3",
+    "set": "about",
+    "s": "微妙な味の違いを見分けること（　　）、この店の料理長の右に出る者はいない。",
+    "en": "When it comes to telling subtle differences in flavour, nobody beats this restaurant's head chef.",
+    "c": [
+      "にかけては",
+      "をめぐって",
+      "に対して",
+      "にこたえて"
+    ],
+    "cp": [
+      "7-3",
+      "7-2",
+      "7-4A",
+      "7-5"
+    ],
+    "why": [
+      "〜にかけては: a skill, then 'nobody is better' (右に出る者はいない). It is always praise.",
+      "〜をめぐって is for a dispute between several sides. Nobody is arguing here.",
+      "〜に対して aims an action or feeling at a target. 右に出る者はいない is not aimed at anything.",
+      "〜にこたえて responds to an expectation or request. A tasting skill is neither."
+    ],
+    "cue": [
+      "右に出る者はいない"
+    ],
+    "tell": "A skill + 右に出る者はいない・誰にも負けない: にかけては.",
+    "lv": 1
+  },
+  {
+    "id": "7-L07-007",
+    "type": "p7",
+    "point": "7-3",
+    "s": "うちの兄は、料理の腕にかけては（　　）。",
+    "en": "When it comes to cooking, my older brother is confident he can match any professional.",
+    "c": [
+      "プロにも負けないと自信を持っている",
+      "まだまだ練習が必要だ",
+      "あまり興味がないらしい",
+      "毎週料理教室に通っている"
+    ],
+    "cp": [
+      "7-3",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "〜にかけては must lead to 'nobody beats them' or 'the best'. プロにも負けない is exactly that praise.",
+      "〜にかけては is always praise. Saying he still needs practice is criticism, so it cannot follow.",
+      "Having little interest says nothing about being the best. 〜にかけては needs a top-level judgement.",
+      "Going to a cooking class is just a habit. 〜にかけては needs 'nobody is better', not a plain fact."
+    ],
+    "cue": [
+      "料理の腕にかけては"
+    ],
+    "tell": "After にかけては comes top praise (誰にも負けない・一番だ). Criticism or plain facts do not fit.",
+    "lv": 3
+  },
+  {
+    "id": "7-L07-008",
+    "type": "p7",
+    "point": "7-4A",
+    "set": "about",
+    "s": "新入社員の中には、取引先の人（　　）友達のような話し方をする人もいて、困っている。",
+    "en": "Some of our new employees talk to people from client companies as if they were friends, which is a problem.",
+    "c": [
+      "に対して",
+      "に関して",
+      "をめぐって",
+      "にかけては"
+    ],
+    "cp": [
+      "7-4A",
+      "7-1",
+      "7-2",
+      "7-3"
+    ],
+    "why": [
+      "〜に対して aims an action or attitude at a person: the way you speak to clients.",
+      "〜に関して introduces a topic to research or explain. Speaking to someone is not discussing a topic.",
+      "〜をめぐって is for several sides arguing over X. Nobody is arguing over the clients.",
+      "〜にかけては praises a skill. 取引先の人 is not a skill, and this is a criticism."
+    ],
+    "cue": [
+      "話し方をする"
+    ],
+    "tell": "An action or way of speaking aimed at a person: に対して.",
+    "lv": 2
+  },
+  {
+    "id": "7-L07-009",
+    "type": "p7",
+    "point": "7-4A",
+    "set": "about",
+    "s": "部下（　　）厳しすぎる態度は、かえってやる気を失わせることがある。",
+    "en": "Being too harsh toward your staff can end up killing their motivation.",
+    "c": [
+      "に対する",
+      "に関する",
+      "をめぐる",
+      "向けの"
+    ],
+    "cp": [
+      "7-4A",
+      "7-1",
+      "7-2",
+      "8-5"
+    ],
+    "why": [
+      "〜に対する + noun: an attitude aimed at a person. 部下に対する態度 is 'your attitude toward your staff'.",
+      "〜に関する + noun means 'about a theme' (資料・調査). An attitude is not information about staff.",
+      "〜をめぐる + noun is for a dispute (争い・議論) among several sides. 態度 is not a dispute.",
+      "〜向けの + noun means 'made for a target group', like a product or a book. An attitude is not a product."
+    ],
+    "cue": [
+      "態度"
+    ],
+    "tell": "態度・気持ち・反応 aimed at someone: に対する. に関する is for information.",
+    "lv": 2
+  },
+  {
+    "id": "7-L07-010",
+    "type": "p7",
+    "point": "7-4B",
+    "set": "taishite",
+    "s": "兄が社交的で友人が多い（　　）、弟は物静かで、一人で本を読むのが好きだ。",
+    "en": "Whereas the older brother is sociable and has lots of friends, the younger one is quiet and likes reading on his own.",
+    "c": [
+      "のに対して",
+      "に対して",
+      "ばかりか",
+      "上に"
+    ],
+    "cp": [
+      "7-4B",
+      "7-4A",
+      "6-3",
+      "6-5"
+    ],
+    "why": [
+      "Clause + の + に対して: 'whereas'. Two people (兄が, 弟は) are set against each other with a clear difference.",
+      "Without の, に対して means 'toward' and needs a noun. It cannot follow the clause 多い.",
+      "〜ばかりか adds a bigger point in the same direction. Here the second half is the opposite of the first, about a different person.",
+      "〜上に stacks two points about the same subject with the same evaluation. It does not contrast two people."
+    ],
+    "cue": [
+      "兄が",
+      "弟は"
+    ],
+    "tell": "Two subjects (Aが…、Bは…) with a clear difference: clause + のに対して.",
+    "lv": 2
+  },
+  {
+    "id": "7-L07-011",
+    "type": "p7",
+    "point": "7-4B",
+    "set": "taishite",
+    "s": "この会社では、男性社員の育児休業の取得率が三割程度（　　）、女性社員はほぼ全員が取得している。",
+    "en": "At this company, only about 30% of male employees take childcare leave, whereas almost all female employees do.",
+    "c": [
+      "であるのに対して",
+      "であるに対して",
+      "であるのに対する",
+      "であるにしても"
+    ],
+    "cp": [
+      "7-4B",
+      "7-4A",
+      "7-4B",
+      "15-6"
+    ],
+    "why": [
+      "Noun + である + の + に対して: 'whereas'. Men (about 30%) and women (almost all) are clearly contrasted.",
+      "The の is missing. Without it, に対して means 'toward' and cannot follow である.",
+      "に対する must be followed by a noun (〜に対する意見). Here a clause follows, so it must be に対して.",
+      "〜にしても means 'even if X'. The sentence does not concede anything; it compares two groups."
+    ],
+    "cue": [
+      "女性社員は",
+      "男性社員の"
+    ],
+    "tell": "Two groups compared in a report: Xであるのに対して、Yは… Keep the の, and use て before a clause.",
+    "lv": 3
+  },
+  {
+    "id": "7-L07-012",
+    "type": "p7",
+    "point": "7-5",
+    "set": "respond",
+    "s": "地元ファンの大きな期待（　　）、選手たちは最後まで走り続け、見事な逆転勝利を収めた。",
+    "en": "Living up to the high hopes of their home fans, the players kept running to the end and pulled off a superb come-from-behind win.",
+    "c": [
+      "にこたえて",
+      "に応じて",
+      "をめぐって",
+      "に対して"
+    ],
+    "cp": [
+      "7-5",
+      "9-4",
+      "7-2",
+      "7-4A"
+    ],
+    "why": [
+      "〜にこたえて: act so as to live up to someone's hopes, cheers or requests (期待・声援・要望).",
+      "〜に応じて adjusts to something that varies (予算・体力) or accepts a request. 期待 does not take 応じる; you live up to it with こたえる.",
+      "〜をめぐって is for a dispute between several sides. Nobody is arguing about the fans' hopes.",
+      "〜に対して aims an action straight at a target. Winning the game is not aimed at the fans' hopes."
+    ],
+    "cue": [
+      "期待",
+      "見事な逆転勝利"
+    ],
+    "tell": "期待・声援・要望 + an action that lives up to it: にこたえて. 期待に応じる is not said.",
+    "lv": 2
+  },
+  {
+    "id": "7-L07-013",
+    "type": "p7",
+    "point": "7-5",
+    "s": "お客様からの多くのご要望に（　　）、来月より営業時間を夜十時まで延長することにいたしました。",
+    "en": "In response to many requests from our customers, we have decided to extend our opening hours to 10 p.m. from next month.",
+    "c": [
+      "お応えして",
+      "お応えになって",
+      "応えられて",
+      "お応えくださって"
+    ],
+    "cp": [
+      "7-5",
+      "X-1",
+      "X-1",
+      "P3-7"
+    ],
+    "why": [
+      "ご要望にこたえて, in humble form: お応えする. The shop is the one responding, so the humble form matches いたしました.",
+      "お〜になる is honorific. It raises the subject, but the subject is the shop itself. Never use honorifics for your own action.",
+      "応えられて reads as honorific, passive or potential. None of these is the shop's own humble action.",
+      "〜てくださる means someone else does something for us. The shop is responding, not the customers."
+    ],
+    "cue": [
+      "いたしました",
+      "お客様からの"
+    ],
+    "tell": "Our own response to customers' requests: ご要望にお応えして + a humble ending (いたしました).",
+    "lv": 3
+  },
+  {
+    "id": "7-L08-001",
+    "type": "p7",
+    "point": "8-1",
+    "s": "この映画は、実際に起きた事件（　　）作られたフィクションである。",
+    "en": "This film is a work of fiction based on a real incident.",
+    "c": [
+      "をもとにして",
+      "にこたえて",
+      "のもとで",
+      "向けに"
+    ],
+    "cp": [
+      "8-1",
+      "7-5",
+      "8-4",
+      "8-5"
+    ],
+    "why": [
+      "〜をもとにして: use X as source material to create something new. 作られた is the creation verb.",
+      "〜にこたえて means living up to an expectation or request (期待・要望). An incident is neither.",
+      "〜のもとで means 'under a person' (先生のもとで). An incident is not a person you work under.",
+      "〜向けに means 'made for a target group'. An incident is not an audience."
+    ],
+    "cue": [
+      "作られた",
+      "フィクション"
+    ],
+    "tell": "Source material + a creation verb (作る・書く・デザインする): をもとにして.",
+    "lv": 1
+  },
+  {
+    "id": "7-L08-002",
+    "type": "p7",
+    "point": "8-1",
+    "set": "basis",
+    "s": "その作家は、祖父が戦時中に家族へ送った手紙（　　）、一編の小説を書き上げた。",
+    "en": "The writer produced a novel based on the letters his grandfather sent to the family during the war.",
+    "c": [
+      "をもとに",
+      "のもとで",
+      "のもとに",
+      "向けに"
+    ],
+    "cp": [
+      "8-1",
+      "8-4",
+      "8-4",
+      "8-5"
+    ],
+    "why": [
+      "〜をもとに: the letters are source material for something new, a novel (書き上げた).",
+      "〜のもとで means 'under a person's guidance' (先生のもとで). Letters are not a person.",
+      "〜のもとに means 'under a condition' (管理・了解・名). Letters are not a condition you act under.",
+      "〜向けに means 'made for a target group'. Letters are not an audience."
+    ],
+    "cue": [
+      "書き上げた"
+    ],
+    "tell": "を + もと = source material for creating. の + もと = under a person or a condition.",
+    "lv": 2
+  },
+  {
+    "id": "7-L08-003",
+    "type": "p7",
+    "point": "8-1",
+    "s": "この絵本の物語は、作者が子どものころに祖母から聞いた昔話（　　）。",
+    "en": "Apparently, the story in this picture book is based on a folk tale the author heard from their grandmother as a child.",
+    "c": [
+      "をもとにしているそうだ",
+      "のもとにしているそうだ",
+      "に基づかれているそうだ",
+      "をもとにさせているそうだ"
+    ],
+    "cp": [
+      "8-1",
+      "8-4",
+      "8-2",
+      "8-1"
+    ],
+    "why": [
+      "〜をもとにしている: the folk tale is the source the story was built from. そうだ adds 'I hear'.",
+      "のもとに means 'under a condition' and never takes する. のもとにしている is broken.",
+      "基づく is intransitive, so it has no passive. The correct shape would be に基づいている.",
+      "〜させる (causative) means 'make someone do it'. Nobody is being made to do anything here."
+    ],
+    "cue": [
+      "昔話",
+      "物語は"
+    ],
+    "tell": "A story built from source material: 〜をもとにしている. Watch for fake passives and causatives.",
+    "lv": 3
+  },
+  {
+    "id": "7-L08-004",
+    "type": "p7",
+    "point": "8-2",
+    "set": "basis",
+    "s": "この国では、法律（　　）、飲酒運転をした者は厳しく罰せられる。",
+    "en": "In this country, anyone who drives drunk is severely punished in accordance with the law.",
+    "c": [
+      "に基づいて",
+      "にこたえて",
+      "に応じて",
+      "向けに"
+    ],
+    "cp": [
+      "8-2",
+      "7-5",
+      "9-4",
+      "8-5"
+    ],
+    "why": [
+      "〜に基づいて: act or judge by a fixed criterion. A law is the classic criterion for punishing someone.",
+      "〜にこたえて means living up to an expectation or request (期待・要望). A law is neither.",
+      "〜に応じて means 'adjusting to something that varies' (予算・年齢). The law is not a variable.",
+      "〜向けに means 'made for a target group'. The law is not an audience."
+    ],
+    "cue": [
+      "法律",
+      "罰せられる"
+    ],
+    "tell": "A rule or law + judge, punish or decide: に基づいて.",
+    "lv": 2
+  },
+  {
+    "id": "7-L08-005",
+    "type": "p7",
+    "point": "8-2",
+    "set": "basis",
+    "s": "委員会は、アンケートの結果（　　）、来年度の予算の配分を決定した。",
+    "en": "The committee decided how to allocate next year's budget on the basis of the survey results.",
+    "c": [
+      "に基づいて",
+      "向けに",
+      "のもとで",
+      "にこたえて"
+    ],
+    "cp": [
+      "8-2",
+      "8-5",
+      "8-4",
+      "7-5"
+    ],
+    "why": [
+      "〜に基づいて: use X as the criterion for a decision. 決定する is the deciding verb.",
+      "〜向けに means 'made for a target group'. Survey results are not an audience.",
+      "〜のもとで means 'under a person or a principle' (先生のもとで). Results are not someone you work under.",
+      "〜にこたえて responds to an expectation or request (要望にこたえて). Results do not ask for anything."
+    ],
+    "cue": [
+      "決定した"
+    ],
+    "tell": "Evidence as the yardstick for a judgement (判断する・決定する): に基づいて.",
+    "lv": 2
+  },
+  {
+    "id": "7-L08-006",
+    "type": "p7",
+    "point": "8-2",
+    "set": "basis",
+    "s": "本規則第五条（　　）、以下に該当する方の入場をお断りいたします。",
+    "en": "In accordance with Article 5 of these rules, we will refuse entry to anyone who falls under the following.",
+    "c": [
+      "に基づき",
+      "向けに",
+      "に応じ",
+      "にこたえ"
+    ],
+    "cp": [
+      "8-2",
+      "8-5",
+      "9-4",
+      "7-5"
+    ],
+    "why": [
+      "〜に基づき is the formal written form of に基づいて. The rule is the criterion for refusing entry.",
+      "〜向けに means 'made for a target group'. An article of the rules is not an audience.",
+      "〜に応じ means adjusting to something that varies (人数・年齢に応じ). An article of the rules does not vary.",
+      "〜にこたえ means living up to an expectation or request (要望にこたえ). An article of the rules is neither."
+    ],
+    "cue": [
+      "本規則第五条",
+      "お断りいたします"
+    ],
+    "tell": "A rule or article + an official decision on a notice: 〜に基づき.",
+    "lv": 2
+  },
+  {
+    "id": "7-L08-007",
+    "type": "p7",
+    "point": "8-3",
+    "s": "業務の混乱を防ぐため、作業は必ず安全マニュアル（　　）進めてください。",
+    "en": "To avoid confusion, always carry out the work in line with the safety manual.",
+    "c": [
+      "に沿って",
+      "向けに",
+      "をめぐって",
+      "にこたえて"
+    ],
+    "cp": [
+      "8-3",
+      "8-5",
+      "7-2",
+      "7-5"
+    ],
+    "why": [
+      "〜に沿って: follow a manual, plan or policy step by step without straying. 進める is the flow of work.",
+      "〜向けに means 'made for a target group'. A manual is not an audience.",
+      "〜をめぐって is for a dispute. Nobody is arguing over the manual.",
+      "〜にこたえて responds to an expectation or request. A manual is neither."
+    ],
+    "cue": [
+      "マニュアル",
+      "進めてください"
+    ],
+    "tell": "A manual, plan or policy + carrying on step by step (進める): に沿って.",
+    "lv": 1
+  },
+  {
+    "id": "7-L08-008",
+    "type": "p7",
+    "point": "8-3",
+    "set": "basis",
+    "s": "このマラソン大会のコースは川（　　）作られていて、走りながら両岸の桜を楽しむことができる。",
+    "en": "The course of this marathon runs along the river, so runners can enjoy the cherry blossoms on both banks.",
+    "c": [
+      "に沿って",
+      "をもとに",
+      "に基づいて",
+      "のもとで"
+    ],
+    "cp": [
+      "8-3",
+      "8-1",
+      "8-2",
+      "8-4"
+    ],
+    "why": [
+      "〜に沿って also means 'along' something long: a river, a road, a coast. The course follows the river.",
+      "〜をもとに is for source material you create from. A river is not material for a course.",
+      "〜に基づいて is for a criterion you judge by (法律・データ). A river is not a criterion.",
+      "〜のもとで means 'under a person'. A river is not a person."
+    ],
+    "cue": [
+      "川",
+      "両岸の"
+    ],
+    "tell": "Something long you follow (川・道・方針・マニュアル): に沿って.",
+    "lv": 1
+  },
+  {
+    "id": "7-L08-009",
+    "type": "p7",
+    "point": "8-3",
+    "s": "お客様のご希望に（　　）、スタッフ一同、心を込めてお手伝いいたします。",
+    "en": "All of our staff will do our very best to help, so that we can meet your wishes.",
+    "c": [
+      "沿えるよう",
+      "沿われるよう",
+      "お沿いになるよう",
+      "沿ってもらえるよう"
+    ],
+    "cp": [
+      "8-3",
+      "X-1",
+      "X-1",
+      "P3-7"
+    ],
+    "why": [
+      "ご希望に沿う = meet the customer's wishes. 沿える (can meet) + よう (so that) states the staff's own aim.",
+      "沿われる would be honorific or passive. Staff never raise their own action with honorifics.",
+      "お〜になる is honorific. It cannot describe the staff's own action.",
+      "〜てもらう means someone else does it for you. The staff are the ones who must meet the wishes."
+    ],
+    "cue": [
+      "スタッフ一同",
+      "いたします"
+    ],
+    "tell": "Our promise to customers: ご希望・ご期待に沿えるよう + a humble ending.",
+    "lv": 3
+  },
+  {
+    "id": "7-L08-010",
+    "type": "p7",
+    "point": "8-4",
+    "set": "basis",
+    "s": "厳しい指導で知られる名監督（　　）、選手たちは毎日の練習に励んでいる。",
+    "en": "Under a famous coach known for his strict training, the players work hard at practice every day.",
+    "c": [
+      "のもとで",
+      "に基づいて",
+      "をもとに",
+      "に沿って"
+    ],
+    "cp": [
+      "8-4",
+      "8-2",
+      "8-1",
+      "8-3"
+    ],
+    "why": [
+      "Person + のもとで: under that person's guidance, then an action verb (励む・学ぶ).",
+      "〜に基づいて needs a criterion such as a law or data. A coach is a person you train under, not a yardstick.",
+      "〜をもとに is for source material you create from. A coach is not material.",
+      "〜に沿って follows a plan or a manual. A person is not a plan."
+    ],
+    "cue": [
+      "名監督",
+      "励んでいる"
+    ],
+    "tell": "Training or working under a person (先生・監督・師匠) + an action verb: のもとで.",
+    "lv": 2
+  },
+  {
+    "id": "7-L08-011",
+    "type": "p7",
+    "point": "8-4",
+    "set": "basis",
+    "s": "かつては「教育」という名（　　）、子どもへの体罰が当然のように行われていた。",
+    "en": "In the past, physical punishment of children was carried out as a matter of course in the name of 'education'.",
+    "c": [
+      "のもとに",
+      "をもとに",
+      "に沿って",
+      "を通じて"
+    ],
+    "cp": [
+      "8-4",
+      "8-1",
+      "8-3",
+      "4-4B"
+    ],
+    "why": [
+      "〜の名のもとに: 'in the name of'. のもとに takes a condition or situation noun such as 名, 管理 or 了解.",
+      "〜をもとに is for source material you create from. A name is not material, and punishment creates nothing.",
+      "〜に沿って means following a plan or policy. 名 is not a plan you follow.",
+      "〜を通じて means 'via' a go-between or 'throughout' a period. A name is neither."
+    ],
+    "cue": [
+      "という名"
+    ],
+    "tell": "Condition nouns (名・管理・了解) take のもとに: 〜の名のもとに = in the name of.",
+    "lv": 2
+  },
+  {
+    "id": "7-L08-012",
+    "type": "p7",
+    "point": "8-4",
+    "set": "basis",
+    "s": "彼は高校を卒業した後、有名な陶芸家（　　）十年間修業を積んだ。",
+    "en": "After finishing high school, he trained for ten years under a famous potter.",
+    "c": [
+      "のもとで",
+      "をもとに",
+      "に沿って",
+      "向けに"
+    ],
+    "cp": [
+      "8-4",
+      "8-1",
+      "8-3",
+      "8-5"
+    ],
+    "why": [
+      "Person + のもとで: train or study under that person. 修業を積む is the action.",
+      "〜をもとに is for source material you create from. A potter is a person, not material.",
+      "〜に沿って means following a plan or policy. A person is not a plan.",
+      "〜向けに means 'made for a target group'. He trained under the potter, not for him."
+    ],
+    "cue": [
+      "陶芸家",
+      "修業を積んだ"
+    ],
+    "tell": "Studying or training under a master: person + のもとで.",
+    "lv": 1
+  },
+  {
+    "id": "7-L08-013",
+    "type": "p7",
+    "point": "8-5",
+    "s": "このプログラミングの入門書は、専門用語をできるだけ使わず、IT初心者（　　）書かれている。",
+    "en": "This introductory programming book avoids jargon as far as possible and is written for IT beginners.",
+    "c": [
+      "向けに",
+      "をもとに",
+      "にとって",
+      "として"
+    ],
+    "cp": [
+      "8-5",
+      "8-1",
+      "19-5",
+      "19-4"
+    ],
+    "why": [
+      "〜向けに: deliberately made for a target group. Avoiding jargon shows the writer aimed the book at beginners.",
+      "〜をもとに names the source material a work is built from. Beginners are the readers, not the material.",
+      "〜にとって means 'from X's point of view' and is followed by an evaluation (大切だ・難しい). 書かれている is not one.",
+      "〜として means 'in the role of'. The book was not written in the role of a beginner."
+    ],
+    "cue": [
+      "専門用語をできるだけ使わず",
+      "書かれている"
+    ],
+    "tell": "Written or made on purpose for a target group (書く・作る・開発する): noun + 向けに.",
+    "lv": 2
+  },
+  {
+    "id": "7-L08-014",
+    "type": "p7",
+    "point": "8-5",
+    "s": "当店では、小さなお子様（　　）、量を少なめにしたメニューもご用意しております。",
+    "en": "We also offer a menu with smaller portions for young children.",
+    "c": [
+      "向けに",
+      "次第で",
+      "をめぐって",
+      "にかけては"
+    ],
+    "cp": [
+      "8-5",
+      "9-3",
+      "7-2",
+      "7-3"
+    ],
+    "why": [
+      "〜向けに: made for a target group. The smaller portions are designed for young children.",
+      "〜次第で means 'depending on X'. Nothing here varies with the children.",
+      "〜をめぐって is for a dispute between several sides. Nobody is arguing about children.",
+      "〜にかけては praises a skill where someone is the best. Children are not a skill."
+    ],
+    "cue": [
+      "量を少なめにした"
+    ],
+    "tell": "A product or service designed for a group of people: noun + 向け(に・の).",
+    "lv": 1
+  },
+  {
+    "id": "7-L09-001",
+    "type": "p7",
+    "point": "9-1",
+    "s": "台風が列島に（　　）、次第に風雨が強まり、波も高くなってきた。",
+    "en": "As the typhoon approached the islands, the wind and rain gradually grew stronger and the waves rose higher.",
+    "c": [
+      "近づくにつれて",
+      "近づく次第",
+      "近づいた上で",
+      "近づいたとたん"
+    ],
+    "cp": [
+      "9-1",
+      "3-3",
+      "3-2",
+      "1-3"
+    ],
+    "why": [
+      "〜につれて: as one thing changes step by step, another changes with it. 次第に and 〜てきた show gradual change.",
+      "〜次第 (as soon as) attaches to the ます stem (近づき次第) and must lead into a plan or request, not a natural change.",
+      "〜上で means 'after doing X carefully, then Y'. A typhoon does not take deliberate steps.",
+      "〜たとたん marks one instant followed by a surprise. 次第に and 〜てきた show a slow change, so they clash."
+    ],
+    "cue": [
+      "次第に",
+      "高くなってきた"
+    ],
+    "tell": "Change ↔ gradual change (次第に・〜てきた): dictionary form + につれて.",
+    "lv": 1
+  },
+  {
+    "id": "7-L09-002",
+    "type": "p7",
+    "point": "9-1",
+    "s": "A「最近、ケーキをあまり食べなくなったね。」B「うん、年を取る（　　）、だんだん甘いものが苦手になってきたんだ。」",
+    "en": "A: You don't eat much cake these days. B: No. As I've got older, I've gradually gone off sweet things.",
+    "c": [
+      "につれて",
+      "限り",
+      "次第で",
+      "一方で"
+    ],
+    "cp": [
+      "9-1",
+      "5-2",
+      "9-3",
+      null
+    ],
+    "why": [
+      "〜につれて: as X progresses, Y changes bit by bit (だんだん). It sits naturally in casual speech.",
+      "〜限り 'as long as' links two lasting states. It cannot lead into a change that has already happened (苦手になってきた).",
+      "〜次第で means 'depending on X' and attaches to a noun. 年を取る is a verb, and nothing depends on it.",
+      "〜一方で sets two different things side by side. Ageing and losing a sweet tooth move together; they are not a contrast."
+    ],
+    "cue": [
+      "だんだん",
+      "なってきたんだ"
+    ],
+    "tell": "Gradual change on both sides (だんだん〜てきた): につれて. No will or plan after it.",
+    "lv": 2
+  },
+  {
+    "id": "7-L09-003",
+    "type": "p7",
+    "point": "9-1",
+    "s": "子どもが成長するにつれて、（　　）。",
+    "en": "As our children grew up, we gradually spent less time talking together as a family.",
+    "c": [
+      "親子で話す時間は少しずつ減っていった",
+      "もっと広い家に引っ越そうと思っている",
+      "子どもは春に小学校に入学した",
+      "家族でもっと旅行に行きましょう"
+    ],
+    "cp": [
+      "9-1",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "After 〜につれて comes a natural change that moves along with the first one: 少しずつ減っていった.",
+      "〜につれて cannot be followed by the speaker's will or plan (〜よう・〜たい・〜つもり).",
+      "Starting school is a single event, not a gradual change. 〜につれて links change to change.",
+      "〜につれて cannot be followed by an invitation or request (〜ましょう)."
+    ],
+    "cue": [
+      "成長するにつれて"
+    ],
+    "tell": "After につれて: a natural, gradual change. No will (〜よう), no invitation (〜ましょう), no one-off event.",
+    "lv": 3
+  },
+  {
+    "id": "7-L09-004",
+    "type": "p7",
+    "point": "9-2",
+    "set": "as-changes",
+    "s": "新しい駅の開業（　　）、駅周辺の土地の値段が大きく上がった。",
+    "en": "With the opening of the new station, land prices around it rose sharply.",
+    "c": [
+      "に伴って",
+      "につれて",
+      "次第で",
+      "に応じて"
+    ],
+    "cp": [
+      "9-2",
+      "9-1",
+      "9-3",
+      "9-4"
+    ],
+    "why": [
+      "〜に伴って: a change seen as one whole (the opening) brings another change with it. Formal, and fits a news style.",
+      "〜につれて needs a gradual change before it (増える・進む). 開業 is a one-off event, not a gradual change.",
+      "〜次第で means 'depending on X'. The rise in prices did not depend on how the opening turned out.",
+      "〜に応じて means 'adjusting to something that varies'. An opening is not a variable."
+    ],
+    "cue": [
+      "開業"
+    ],
+    "tell": "A one-off change (開業・移転・合併) bringing other changes: に伴って. につれて needs a gradual change.",
+    "lv": 2
+  },
+  {
+    "id": "7-L09-005",
+    "type": "p7",
+    "point": "9-2",
+    "set": "as-changes",
+    "s": "本社の移転（　　）、電話番号とファクス番号が下記のとおり変わります。",
+    "en": "Due to the relocation of our head office, our telephone and fax numbers will change as follows.",
+    "c": [
+      "に伴い",
+      "につれ",
+      "に応じ",
+      "にかけて"
+    ],
+    "cp": [
+      "9-2",
+      "9-1",
+      "9-4",
+      null
+    ],
+    "why": [
+      "〜に伴い (formal に伴って): one change (the move) brings another with it. Standard wording on notices.",
+      "〜につれ links two gradual changes. A move is one event, and the numbers do not change little by little.",
+      "〜に応じ means 'adjusting to something that varies'. A move is not a variable.",
+      "〜にかけて marks a span from one point to another (春から夏にかけて). It does not mark a cause."
+    ],
+    "cue": [
+      "移転",
+      "変わります"
+    ],
+    "tell": "On a notice: 移転・改装・変更 + に伴い + what changes.",
+    "lv": 2
+  },
+  {
+    "id": "7-L09-006",
+    "type": "p7",
+    "point": "9-2",
+    "s": "この町では、人口の減少に伴って、（　　）。",
+    "en": "In this town, primary schools are being merged as the population falls.",
+    "c": [
+      "小学校の統合が進められている",
+      "地域の行事にもっと参加しよう",
+      "古い寺や神社が多く残っている",
+      "町の人口は約二万人だ"
+    ],
+    "cp": [
+      "9-2",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "〜に伴って needs a change on both sides. A falling population brings another change: schools being merged.",
+      "This is a call to act (〜よう). 〜に伴って links two changes; it is not followed by the speaker's will.",
+      "Having many old temples is a fixed state, not a change brought about by the falling population.",
+      "A population figure is a fact, not a change. 〜に伴って needs something that changes."
+    ],
+    "cue": [
+      "減少に伴って"
+    ],
+    "tell": "Change + に伴って + another change. A fixed fact or the speaker's will does not fit.",
+    "lv": 3
+  },
+  {
+    "id": "7-L09-007",
+    "type": "p7",
+    "point": "9-3",
+    "s": "入社試験に合格できるかどうかは、筆記試験と面接の（　　）。",
+    "en": "Whether you pass the company's entrance exam depends on the results of the written test and the interview.",
+    "c": [
+      "結果次第だ",
+      "結果次第で",
+      "結果に沿って",
+      "結果をもとに"
+    ],
+    "cp": [
+      "9-3",
+      "9-3",
+      "8-3",
+      "8-1"
+    ],
+    "why": [
+      "Noun + 次第だ: 'depends on X'. 〜かどうかは … 次第だ is the standard frame, and it ends the sentence.",
+      "〜次第で needs a clause after it (次第で決まる). The sentence ends at the blank.",
+      "〜に沿って must lead into an action that follows a plan. It cannot end a sentence, and results are not a plan.",
+      "〜をもとに must lead into a creation verb (作る). It cannot end the sentence."
+    ],
+    "cue": [
+      "かどうかは"
+    ],
+    "tell": "〜かどうかは + noun + 次第だ: 'whether … depends on X'.",
+    "lv": 1
+  },
+  {
+    "id": "7-L09-008",
+    "type": "p7",
+    "point": "9-3",
+    "s": "明日の試合を行うかどうかは、朝の天気（　　）決めます。",
+    "en": "We'll decide whether to hold tomorrow's match depending on the weather in the morning.",
+    "c": [
+      "次第で",
+      "次第に",
+      "につれて",
+      "に限って"
+    ],
+    "cp": [
+      "9-3",
+      null,
+      "9-1",
+      "5-4A"
+    ],
+    "why": [
+      "Noun + 次第で: the decision depends on the weather. 〜かどうか shows the outcome could go either way.",
+      "次第に is an adverb meaning 'gradually'. 'Decide gradually the weather' makes no sense.",
+      "〜につれて links two gradual changes. Deciding once in the morning is not a gradual change.",
+      "〜に限って means 'on that occasion of all times', usually a complaint. It does not mean 'depending on'."
+    ],
+    "cue": [
+      "かどうかは",
+      "決めます"
+    ],
+    "tell": "Noun + 次第で + 決める・変わる: 'depending on'. 次第に just means 'gradually'.",
+    "lv": 2
+  },
+  {
+    "id": "7-L09-009",
+    "type": "p7",
+    "point": "9-3",
+    "s": "この薬の効き方は、その人の体質次第で、（　　）。",
+    "en": "How well this medicine works depends on each person's constitution: it works well for some and hardly at all for others.",
+    "c": [
+      "よく効く人もいれば、ほとんど効かない人もいる",
+      "だれにでも同じように効く",
+      "飲めば必ず三日で治る",
+      "毎食後に飲む必要がある"
+    ],
+    "cp": [
+      "9-3",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "After 〜次第で comes a result that varies with X. 'Works for some, not for others' is exactly that variation.",
+      "'Works the same for everyone' denies any variation, so it contradicts 次第で.",
+      "'Always cures in three days' is a fixed result. 次第で says the result is not fixed.",
+      "How often to take it is an instruction, not a result that depends on the person's constitution."
+    ],
+    "cue": [
+      "体質次第で"
+    ],
+    "tell": "After 次第で: a result that changes with X (〜もいれば〜もいる). A fixed result contradicts it.",
+    "lv": 3
+  },
+  {
+    "id": "7-L09-010",
+    "type": "p7",
+    "point": "9-4",
+    "set": "respond",
+    "s": "お客様の年齢や（　　）、最適な保険プランをご提案いたします。",
+    "en": "We will suggest the best insurance plan for you according to your age and budget.",
+    "c": [
+      "ご予算に応じて",
+      "ご予算にこたえて",
+      "ご予算をめぐって",
+      "ご予算にかけては"
+    ],
+    "cp": [
+      "9-4",
+      "7-5",
+      "7-2",
+      "7-3"
+    ],
+    "why": [
+      "〜に応じて: adjust to something that varies from person to person (年齢・予算). The plan changes to match.",
+      "〜にこたえて only takes expectations or requests (期待・要望). A budget is a variable, not a request.",
+      "〜をめぐって is for a dispute between several sides. Nobody is arguing over the budget.",
+      "〜にかけては praises a skill where someone is the best. A budget is not a skill."
+    ],
+    "cue": [
+      "年齢や",
+      "最適な"
+    ],
+    "tell": "Adjust to something that varies (年齢・予算・体力): に応じて. にこたえて is for expectations.",
+    "lv": 2
+  },
+  {
+    "id": "7-L09-011",
+    "type": "p7",
+    "point": "9-4",
+    "set": "respond",
+    "s": "この料理教室では、参加者の経験（　　）、初級・中級・上級の三つのクラスを用意している。",
+    "en": "This cooking school offers three classes, beginner, intermediate and advanced, to match participants' experience.",
+    "c": [
+      "に応じて",
+      "にこたえて",
+      "をめぐって",
+      "にかけては"
+    ],
+    "cp": [
+      "9-4",
+      "7-5",
+      "7-2",
+      "7-3"
+    ],
+    "why": [
+      "〜に応じて: match something that varies. Experience differs from person to person, so there are three levels.",
+      "〜にこたえて only takes expectations or requests (期待・要望). Experience is neither.",
+      "〜をめぐって is for a dispute between several sides. Nobody is arguing.",
+      "〜にかけては praises someone who is the best at a skill. Offering three classes is not praise."
+    ],
+    "cue": [
+      "三つのクラス"
+    ],
+    "tell": "Several options to match something that varies (経験・年齢・予算): に応じて.",
+    "lv": 2
+  },
+  {
+    "id": "7-L09-012",
+    "type": "p7",
+    "point": "9-5",
+    "s": "学生時代のアルバムを（　　）、仲間たちと過ごした懐かしい日々を思い出す。",
+    "en": "Whenever I look at my old school album, I remember the happy days I spent with my friends.",
+    "c": [
+      "見るにつけて",
+      "見る一方だ",
+      "見る最中に",
+      "見るばかりに"
+    ],
+    "cp": [
+      "9-5",
+      "2-3",
+      "2-1",
+      "17-4"
+    ],
+    "why": [
+      "Dictionary form + につけて: every time I do X, a feeling or memory rises up. 思い出す is a movement of the heart.",
+      "〜一方だ means 'keeps on ~ing' and ends a sentence. It cannot link to a second clause.",
+      "〜最中に needs the ている form or 名の (見ている最中に), and it is for an interruption, not a memory.",
+      "〜ばかりに means 'just because of X, something bad happened'. Remembering happy days is not a bad result."
+    ],
+    "cue": [
+      "思い出す"
+    ],
+    "tell": "Every time I do X + a feeling (思い出す・心配になる): dictionary form + につけて.",
+    "lv": 1
+  },
+  {
+    "id": "7-L09-013",
+    "type": "p7",
+    "point": "9-5",
+    "s": "隣に住むおばあさんは、何か（　　）うちの子どもたちのことを気にかけてくれる。",
+    "en": "The old lady next door looks out for our children at every opportunity.",
+    "c": [
+      "につけて",
+      "につれて",
+      "にかけては",
+      "に限って"
+    ],
+    "cp": [
+      "9-5",
+      "9-1",
+      "7-3",
+      "5-4A"
+    ],
+    "why": [
+      "何かにつけて is a set phrase: 'at every opportunity'. In this phrase, what follows need not be a feeling.",
+      "〜につれて links two gradual changes and follows a change verb. 何か is not a change.",
+      "〜にかけては praises a skill where someone is the best. 何か is not a skill.",
+      "〜に限って picks out one special case, often in a complaint. 何かに限って is not a phrase."
+    ],
+    "cue": [
+      "何か"
+    ],
+    "tell": "何か + につけて = at every opportunity. A fixed phrase worth learning whole.",
+    "lv": 2
+  },
+  {
+    "id": "7-L09-014",
+    "type": "p7",
+    "point": "9-5",
+    "s": "最近の物価高のニュースを見るにつけ、（　　）。",
+    "en": "Every time I see news about rising prices these days, I start to worry about how I will live in old age.",
+    "c": [
+      "老後の生活が心配になる",
+      "すぐに節約を始めることにしている",
+      "毎日家計簿をつけている",
+      "物価は去年より五パーセント上がった"
+    ],
+    "cp": [
+      "9-5",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "After 〜につけ comes a feeling that rises by itself each time (心配になる・思い出す). Worry about old age is exactly that.",
+      "Deciding to start saving is a deliberate rule you follow. 〜につけ is followed by a feeling, not a decision.",
+      "Keeping a household account book every day is a habit. It does not rise each time you see the news.",
+      "'Prices rose 5% on last year' is a plain fact. It is not a feeling that comes each time."
+    ],
+    "cue": [
+      "見るにつけ"
+    ],
+    "tell": "After につけ: a feeling or memory (思い出す・心配になる). Not an action, not a plain fact.",
+    "lv": 3
+  },
+  {
+    "id": "7-L10-001",
+    "type": "p7",
+    "point": "10-1",
+    "set": "lists",
+    "s": "引っ越しの前の週は、荷造り（　　）役所での手続きやらで、ゆっくり眠る暇もなかった。",
+    "en": "The week before the move, what with packing and paperwork at the city office, I didn't even have time to sleep properly.",
+    "c": [
+      "やら",
+      "というか",
+      "にせよ",
+      "といった"
+    ],
+    "cp": [
+      "10-1",
+      "10-2",
+      "10-3",
+      "10-4"
+    ],
+    "why": [
+      "〜やら〜やら(で): a messy pile of jobs that wore you out. The second やら in 手続きやらで completes the pair.",
+      "〜というか〜というか gives two labels for ONE impression and needs というか twice. Packing and paperwork are separate jobs.",
+      "〜にせよ〜にせよ means 'whether X or Y' and leads to a judgement. It does not pair with やら, and nothing is being weighed.",
+      "〜といった wraps up examples before a category noun. Packing is not an example of paperwork at the city office."
+    ],
+    "cue": [
+      "手続きやらで",
+      "暇もなかった"
+    ],
+    "tell": "A pile of chores + 大変だった・暇もなかった: 〜やら〜やらで.",
+    "lv": 1
+  },
+  {
+    "id": "7-L10-002",
+    "type": "p7",
+    "point": "10-1",
+    "set": "lists",
+    "s": "社長から急に表彰されて、（　　）、どんな顔をすればいいのかわからなかった。",
+    "en": "When the company president suddenly gave me an award, I felt so pleased and so embarrassed that I didn't know what face to make.",
+    "c": [
+      "うれしいやら照れくさいやら",
+      "うれしいにせよ照れくさいにせよ",
+      "うれしいだの照れくさいだの",
+      "うれしいばかりか照れくさくて"
+    ],
+    "cp": [
+      "10-1",
+      "10-3",
+      "IV-12",
+      "6-3"
+    ],
+    "why": [
+      "〜やら〜やら lists mixed feelings that hit you all at once and leave you flustered.",
+      "〜にせよ〜にせよ means 'whether X or Y' and leads to a judgement or advice. Here both feelings happened together.",
+      "〜だの〜だの lists things someone keeps saying, with irritation. Nobody is complaining here.",
+      "〜ばかりか adds a bigger step in the same direction. Embarrassment is not a bigger kind of happiness."
+    ],
+    "cue": [
+      "どんな顔をすればいいのかわからなかった"
+    ],
+    "tell": "Mixed feelings all at once that leave you flustered: 〜やら〜やら.",
+    "lv": 2
+  },
+  {
+    "id": "7-L10-003",
+    "type": "p7",
+    "point": "10-2",
+    "set": "lists",
+    "s": "彼の遠慮のない発言は、率直（　　）無礼というか、聞く人によって受け止め方が大きく分かれる。",
+    "en": "His blunt remarks are frank, or perhaps rude: people take them very differently depending on who is listening.",
+    "c": [
+      "というか",
+      "やら",
+      "にせよ",
+      "といった"
+    ],
+    "cp": [
+      "10-2",
+      "10-1",
+      "10-3",
+      "10-4"
+    ],
+    "why": [
+      "〜というか〜というか: two labels for one thing, because neither fits perfectly. The second というか completes the pair.",
+      "〜やら〜やら lists separate things that pile up. It does not pair with というか, and his remarks are one thing.",
+      "〜にせよ〜にせよ means 'whether X or Y' and needs the same form twice. It does not pair with というか.",
+      "〜といった wraps up examples before a category noun. 無礼 is not a category that 率直 belongs to."
+    ],
+    "cue": [
+      "無礼というか"
+    ],
+    "tell": "One thing, two possible labels, and you can't decide: 〜というか〜というか.",
+    "lv": 1
+  },
+  {
+    "id": "7-L10-004",
+    "type": "p7",
+    "point": "10-2",
+    "set": "lists",
+    "s": "うちの祖父は、（　　）、九十歳を過ぎても一人で山に登ろうとする。",
+    "en": "My grandfather is full of energy, or maybe just reckless: even past ninety, he still tries to climb mountains on his own.",
+    "c": [
+      "元気というか無茶というか",
+      "元気やら無茶やら",
+      "元気にせよ無茶にせよ",
+      "元気だの無茶だの"
+    ],
+    "cp": [
+      "10-2",
+      "10-1",
+      "10-3",
+      "IV-12"
+    ],
+    "why": [
+      "〜というか〜というか: two labels for one person's behaviour, because the speaker can't decide which fits.",
+      "〜やら〜やら lists several separate things that pile up and overwhelm you. Here one habit is being described.",
+      "〜にせよ〜にせよ means 'whether X or Y' and leads to a judgement or advice. The sentence just describes him.",
+      "〜だの〜だの lists things someone keeps saying, with irritation. Nobody is being quoted here."
+    ],
+    "cue": [
+      "一人で山に登ろうとする"
+    ],
+    "tell": "One person or event, two labels that half fit: 〜というか〜というか.",
+    "lv": 2
+  },
+  {
+    "id": "7-L10-005",
+    "type": "p7",
+    "point": "10-3",
+    "s": "提案に（　　）、会議ではその理由をはっきり説明するべきだ。",
+    "en": "Whether you are for or against the proposal, you should explain your reasons clearly at the meeting.",
+    "c": [
+      "賛成するにせよ反対するにせよ",
+      "賛成するやら反対するやら",
+      "賛成するというか反対するというか",
+      "賛成するばかりか反対するばかりか"
+    ],
+    "cp": [
+      "10-3",
+      "10-1",
+      "10-2",
+      "6-3"
+    ],
+    "why": [
+      "〜にせよ〜にせよ: whichever of two opposite options you take, the same rule holds. べきだ is that judgement.",
+      "〜やら〜やら lists a messy pile of things that happened. It does not set up two options.",
+      "〜というか〜というか gives two labels for one impression. For and against are opposite choices, not two labels.",
+      "〜ばかりか adds a bigger step to a first point. It never pairs with itself, and you cannot be both for and against."
+    ],
+    "cue": [
+      "べきだ"
+    ],
+    "tell": "Two opposite options + a rule for both (べきだ・必要がある): 〜にせよ〜にせよ.",
+    "lv": 2
+  },
+  {
+    "id": "7-L10-006",
+    "type": "p7",
+    "point": "10-3",
+    "s": "来月の研修会について、参加するにしても参加しないにしても、（　　）。",
+    "en": "About next month's training session: whether or not you attend, please be sure to reply by the end of this week.",
+    "c": [
+      "今週中に必ず返事をしてください",
+      "参加者は全部で三十人だった",
+      "結局、参加することにした",
+      "どちらにするかまだ迷っている"
+    ],
+    "cp": [
+      "10-3",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "After 〜にしても〜にしても comes something that holds either way: a judgement, advice or a request.",
+      "A past headcount is a plain fact. It is not something that applies whichever option you choose.",
+      "Deciding to attend picks one option. 〜にしても〜にしても needs a point that holds for both.",
+      "The pair has already set aside which option you pick. Saying you are still undecided goes back on that."
+    ],
+    "cue": [
+      "参加するにしても参加しないにしても"
+    ],
+    "tell": "After 〜にしても〜にしても: a point valid for both options, often advice or a request.",
+    "lv": 3
+  },
+  {
+    "id": "7-L10-007",
+    "type": "p7",
+    "point": "10-4",
+    "set": "lists",
+    "s": "この地域では、りんごやぶどう（　　）果物の栽培が盛んだ。",
+    "en": "Fruit such as apples and grapes is widely grown in this region.",
+    "c": [
+      "といった",
+      "やら",
+      "というか",
+      "にせよ"
+    ],
+    "cp": [
+      "10-4",
+      "10-1",
+      "10-2",
+      "10-3"
+    ],
+    "why": [
+      "〜といった + noun: wraps up examples (りんご, ぶどう) into a category (果物). Often with や before it.",
+      "〜やら needs a pair (〜やら〜やら) and a sense of chaos. It cannot link examples to a category noun.",
+      "〜というか gives two labels for one impression and comes in a pair. It cannot sit before a noun.",
+      "〜にせよ means 'whether X or Y' and comes in a pair. It cannot link examples to a category."
+    ],
+    "cue": [
+      "果物",
+      "りんごや"
+    ],
+    "tell": "Examples (A や B) + といった + a category noun.",
+    "lv": 1
+  },
+  {
+    "id": "7-L10-008",
+    "type": "p7",
+    "point": "10-4",
+    "set": "lists",
+    "s": "「おもてなし」という言葉は、相手の気持ちを考えて行動する（　　）意味で使われることが多い。",
+    "en": "The word 'omotenashi' is often used to mean something like acting with the other person's feelings in mind.",
+    "c": [
+      "といった",
+      "というか",
+      "やら",
+      "にしても"
+    ],
+    "cp": [
+      "10-4",
+      "10-2",
+      "10-1",
+      "10-3"
+    ],
+    "why": [
+      "〜といった + noun can also give one rough example of what a word means: 〜といった意味 = 'a meaning like ~'.",
+      "〜というか gives two uncertain labels and comes in a pair. It cannot sit before a noun like 意味.",
+      "〜やら lists chaotic things in a pair. It cannot describe a noun like 意味.",
+      "〜にしても means 'whether' or 'even if' and leads into a judgement. It cannot describe 意味."
+    ],
+    "cue": [
+      "意味で使われる"
+    ],
+    "tell": "Roughly what a word means: 〜といった意味. といった must be followed by a noun.",
+    "lv": 2
+  }
+]

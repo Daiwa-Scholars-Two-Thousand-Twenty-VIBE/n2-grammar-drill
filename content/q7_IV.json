@@ -1,0 +1,966 @@
+[
+  {
+    "id": "7-IV-001",
+    "type": "p7",
+    "point": "IV-1",
+    "s": "本年度の卒業式は、3月20日午前10時より、本校体育館（　　）挙行いたします。",
+    "en": "This year's graduation ceremony will be held in the school gymnasium from 10 a.m. on 20 March.",
+    "c": [
+      "において",
+      "にわたって",
+      "に際して",
+      "に対して"
+    ],
+    "cp": [
+      "IV-1",
+      "4-3",
+      "1-2",
+      "7-4A"
+    ],
+    "why": [
+      "〜において is the formal written で: it marks the place where an event is held. 体育館 is the venue and 挙行いたします is the event.",
+      "〜にわたって needs a large span of time, place or count (三日間・全国). One gymnasium is a single venue, not a span.",
+      "〜に際して attaches to an occasion or action (卒業・出発), not to a place. 体育館に際して means nothing.",
+      "〜に対して marks the target of an action or attitude. Holding a ceremony is not aimed at the gym."
+    ],
+    "cue": [
+      "本校体育館",
+      "挙行いたします"
+    ],
+    "tell": "Place of a formal event + 行う／開催する／挙行する: において, the written で.",
+    "lv": 1
+  },
+  {
+    "id": "7-IV-002",
+    "type": "p7",
+    "point": "IV-1",
+    "s": "近年、医療の分野（　　）も、AIの活用が急速に進んでいる。",
+    "en": "In recent years, the use of AI has been advancing rapidly in the medical field as well.",
+    "c": [
+      "において",
+      "にとって",
+      "をめぐって",
+      "に対して"
+    ],
+    "cp": [
+      "IV-1",
+      "19-5",
+      "7-2",
+      "7-4A"
+    ],
+    "why": [
+      "〜において marks the field where something happens (医療の分野において). It is the formal written で, so 分野でも would say the same thing in speech.",
+      "〜にとって gives someone's standpoint and needs an evaluation after it (大切だ・課題だ). 進んでいる is an event, not an evaluation.",
+      "〜をめぐって needs a dispute after it (議論・対立). Nothing is being argued over here.",
+      "〜に対して needs an action or attitude aimed at a target. AI use advancing is not aimed at the field."
+    ],
+    "cue": [
+      "分野",
+      "進んでいる"
+    ],
+    "tell": "Field or area (分野・業界・現代社会) + something happening there: において.",
+    "lv": 1
+  },
+  {
+    "id": "7-IV-003",
+    "type": "p7",
+    "point": "IV-1",
+    "s": "江戸時代（　　）庶民の食生活は、現代人が想像するよりずっと豊かだったという。",
+    "en": "Ordinary people's diet in the Edo period is said to have been far richer than people today imagine.",
+    "c": [
+      "における",
+      "に対する",
+      "をめぐる",
+      "にとっての"
+    ],
+    "cp": [
+      "IV-1",
+      "7-4A",
+      "7-2",
+      "19-5"
+    ],
+    "why": [
+      "〜における is the noun-modifying form of において: 'in (a period)' + noun. 江戸時代における食生活 = the diet in the Edo period. In speech this would be 江戸時代の.",
+      "〜に対する needs a target of an action or attitude (質問に対する答え). A diet is not aimed at a period.",
+      "〜をめぐる goes with dispute nouns (議論・争い). 食生活 is not a dispute.",
+      "〜にとっての gives a person's or group's standpoint. A period of history does not judge anything."
+    ],
+    "cue": [
+      "江戸時代",
+      "食生活"
+    ],
+    "tell": "Period or field + noun: における (the noun form of において).",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-004",
+    "type": "p7",
+    "point": "IV-2",
+    "set": "formal-when",
+    "s": "大きな地震（　　）、井戸の水位が急に下がるなどの異変が見られることがあるという。",
+    "en": "It is said that before a large earthquake, strange signs such as well water suddenly dropping can sometimes be seen.",
+    "c": [
+      "に先立って",
+      "にあたって",
+      "にわたって",
+      "に応じて"
+    ],
+    "cp": [
+      "IV-2",
+      "1-2",
+      "4-3",
+      "9-4"
+    ],
+    "why": [
+      "〜に先立って means 'before X, coming ahead of it'. In news and science writing it also covers a sign that precedes a natural event (地震に先立つ前兆). The signs come before the quake.",
+      "〜にあたって needs a deliberate, positive milestone that someone undertakes (開店・入学). An earthquake is neither deliberate nor positive.",
+      "〜にわたって needs a large span (三年・全国). An earthquake is a single event, not a span.",
+      "〜に応じて means adjusting to something that varies (予算に応じて). The signs are not adjusted to the quake; they come before it."
+    ],
+    "cue": [
+      "地震",
+      "異変が見られる"
+    ],
+    "tell": "Something that happens BEFORE an event: に先立って. にあたって is a planned, positive milestone.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-005",
+    "type": "p7",
+    "point": "IV-2",
+    "s": "国際会議の本会議（　　）準備会合が、前日に都内のホテルで開かれた。",
+    "en": "A preparatory meeting ahead of the main session of the international conference was held the day before at a hotel in Tokyo.",
+    "c": [
+      "に先立つ",
+      "にわたる",
+      "に対する",
+      "に基づく"
+    ],
+    "cp": [
+      "IV-2",
+      "4-3",
+      "7-4A",
+      "8-2"
+    ],
+    "why": [
+      "〜に先立つ + noun = the noun that comes before X. The preparatory meeting was held the day before the main session.",
+      "〜にわたる needs a large span before it (十年にわたる). 本会議 is a single event, not a span.",
+      "〜に対する needs a target of an action or attitude (質問に対する答え). A meeting held beforehand is not aimed at the session.",
+      "〜に基づく means 'based on' a criterion. The preparatory meeting came first, so it cannot be based on the main session."
+    ],
+    "cue": [
+      "準備会合",
+      "前日に"
+    ],
+    "tell": "A preparatory step that comes before an event + noun: に先立つ.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-006",
+    "type": "p7",
+    "point": "IV-3",
+    "s": "暦の上では春（　　）、朝晩はまだコートが手放せない。",
+    "en": "It may be spring by the calendar, but in the mornings and evenings I still can't do without a coat.",
+    "c": [
+      "とはいいながら",
+      "だけあって",
+      "だからといって",
+      "としたら"
+    ],
+    "cp": [
+      "IV-3",
+      "19-3",
+      "14-6",
+      "15-1"
+    ],
+    "why": [
+      "〜とはいいながら: it is called X, but the reality is different. Spring in name, still cold in fact.",
+      "〜だけあって means 'no wonder', and the result must match X (春だけあって暖かい). Here the result goes against spring.",
+      "〜からといって must be followed by a denial of the expected conclusion (〜とは限らない・わけではない). 手放せない is a plain fact, not that denial.",
+      "〜としたら is a pure supposition followed by a judgement. 暦の上では春 is already true, not supposed."
+    ],
+    "cue": [
+      "暦の上では",
+      "まだ"
+    ],
+    "tell": "X in name (暦の上では・肩書きは), reality differs: とはいいながら.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-007",
+    "type": "p7",
+    "point": "IV-3",
+    "s": "肩書きは部長（　　）、部下は一人もいないし、仕事の中身も入社当時とほとんど変わらない。",
+    "en": "My title may be department manager, but I don't have a single subordinate, and my work has hardly changed since I joined.",
+    "c": [
+      "とはいいながら",
+      "だけに",
+      "のことだから",
+      "にかけては"
+    ],
+    "cp": [
+      "IV-3",
+      "17-3",
+      "17-2",
+      "7-3"
+    ],
+    "why": [
+      "〜とはいいながら: the label says X, but the reality falls short. A manager with no staff.",
+      "〜だけに: precisely because of X, a fitting result follows. Having no staff does not fit being a manager.",
+      "〜のことだから needs a person we know well and a guess after it (〜だろう). 部長 here is a title, and the ending is a fact.",
+      "〜にかけては needs a skill and 'nobody beats them'. 部長 is not a skill."
+    ],
+    "cue": [
+      "肩書きは",
+      "部下は一人もいない"
+    ],
+    "tell": "A title or name, then a reality that doesn't match: とはいいながら.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-008",
+    "type": "p7",
+    "point": "IV-4",
+    "s": "燃費の面（　　）、この車は同じクラスの中で最も優れている。",
+    "en": "In terms of fuel economy, this car is the best in its class.",
+    "c": [
+      "からすると",
+      "にとって",
+      "をめぐって",
+      "に応じて"
+    ],
+    "cp": [
+      "IV-4",
+      "19-5",
+      "7-2",
+      "9-4"
+    ],
+    "why": [
+      "〜からすると gives a neutral basis for a judgement. 燃費の面 is the criterion and 最も優れている is the verdict.",
+      "〜にとって takes a person or group whose standpoint it is (私にとって). 燃費の面 is an aspect, not a person.",
+      "〜をめぐって needs a dispute after it. Nobody is arguing here.",
+      "〜に応じて means adjusting to something that varies. Nothing is being adjusted."
+    ],
+    "cue": [
+      "燃費の面",
+      "最も優れている"
+    ],
+    "tell": "A criterion (〜の面・〜の点・性能) + a verdict: からすると／からいうと.",
+    "lv": 1
+  },
+  {
+    "id": "7-IV-009",
+    "type": "p7",
+    "point": "IV-4",
+    "set": "kara-judge",
+    "s": "利用者（　　）、手続きが簡単になるのは何よりありがたいことだ。",
+    "en": "For users, nothing is more welcome than simpler procedures.",
+    "c": [
+      "からすると",
+      "からして",
+      "にしては",
+      "をはじめ"
+    ],
+    "cp": [
+      "IV-4",
+      "4-2",
+      "19-2",
+      "4-1"
+    ],
+    "why": [
+      "〜からすると with a person = judging from that person's position. Users are the basis, and the judgement is neutral to positive.",
+      "〜からして means 'even X, so the rest too' (社長からして遅刻する) or picks one telling detail. It never marks whose point of view it is, and users are the obvious people to benefit, so 'even users' makes no sense.",
+      "〜にしては needs a fixed value and a surprising result (初心者にしては上手だ). Nothing here is surprising for a user.",
+      "〜をはじめ needs a group word after it that includes X (〜など多くの人). There is no group here."
+    ],
+    "cue": [
+      "利用者",
+      "ありがたい"
+    ],
+    "tell": "Whose point of view (利用者・親): からすると. からして means 'even X' or one telling detail.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-010",
+    "type": "p7",
+    "point": "IV-5",
+    "s": "【図書館利用上の注意】館内では携帯電話をマナーモードに設定し、通話は所定の場所で（　　）。",
+    "en": "[Library rules] Inside the library, set your phone to silent mode. Phone calls must be made in the designated area.",
+    "c": [
+      "行うこと",
+      "行ったこと",
+      "行わないこと",
+      "行うことはない"
+    ],
+    "cp": [
+      "IV-5",
+      null,
+      "IV-5",
+      "24-4"
+    ],
+    "why": [
+      "Verb + こと at the end of a line is a posted rule on a notice or handout. The heading 【〜の注意】 marks a rule list, and 所定の場所 is where calls are allowed.",
+      "Rule こと takes the dictionary or ない form. 行ったこと is past and means 'the fact that calls were made', not a rule.",
+      "行わないこと is also a rule form, but it would ban calls in the very place set aside for them (所定の場所).",
+      "〜ことはない means 'there is no need to'. It would tell users they need not use the designated area, which undoes the rule."
+    ],
+    "cue": [
+      "【図書館利用上の注意】",
+      "所定の場所で"
+    ],
+    "tell": "A notice listing rules: dictionary or ない form + こと (〜すること／〜しないこと). Never past.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-011",
+    "type": "p7",
+    "point": "IV-5",
+    "s": "〈校外学習の持ち物〉当日は雨具と水筒を必ず（　　）。",
+    "en": "[What to bring on the field trip] On the day, be sure to bring rain gear and a water bottle.",
+    "c": [
+      "持参すること",
+      "持参しないこと",
+      "持参することだ",
+      "持参することはない"
+    ],
+    "cp": [
+      "IV-5",
+      "IV-5",
+      "24-2",
+      "24-4"
+    ],
+    "why": [
+      "Verb + こと is the instruction form on a school handout or list of rules. 必ず + こと = this is required.",
+      "〜ないこと is also a rule form, but it would ban the very items on a list of things to bring (持ち物). 必ず also does not pair with a negative.",
+      "〜ことだ is one person's advice to another ('the thing to do is…'), often after 〜たいなら. A handout of required items states rules with bare こと.",
+      "〜ことはない means 'there is no need to'. That contradicts 必ず."
+    ],
+    "cue": [
+      "〈校外学習の持ち物〉",
+      "必ず"
+    ],
+    "tell": "Handout heading + 必ず: the rule form verb + こと, not advice ことだ.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-012",
+    "type": "p7",
+    "point": "IV-6",
+    "s": "彼女は30年間、一日も（　　）店を開け続け、地域の人々に親しまれてきた。",
+    "en": "For thirty years she kept the shop open without missing a single day, and became much loved by the local people.",
+    "c": [
+      "休むことなく",
+      "休むどころか",
+      "休んだあげく",
+      "休むことから"
+    ],
+    "cp": [
+      "IV-6",
+      "12-2",
+      "20-3",
+      "IV-11"
+    ],
+    "why": [
+      "〜ことなく is the formal written ないで: without doing X. 一日も needs a negative, and ことなく supplies it.",
+      "〜どころか means 'far from X, the opposite'. 一日も must be followed by a negative, and どころか is not one.",
+      "〜たあげく means a long ordeal ending badly. It cannot follow 一日も, and opening the shop is not a bad end.",
+      "〜ことから gives the grounds for a name or conclusion. Resting is not the reason she kept the shop open."
+    ],
+    "cue": [
+      "一日も",
+      "開け続け"
+    ],
+    "tell": "一日も／一度も + without ~ing, in writing: 辞書形 + ことなく.",
+    "lv": 1
+  },
+  {
+    "id": "7-IV-013",
+    "type": "p7",
+    "point": "IV-6",
+    "s": "その選手は、ひざのけがを周囲に（　　）、最後まで試合に出続けた。",
+    "en": "The player kept playing to the end of the match without telling anyone about his knee injury.",
+    "c": [
+      "知らせることなく",
+      "知らせたところ",
+      "知らせるにつれて",
+      "知らせたばかりに"
+    ],
+    "cp": [
+      "IV-6",
+      "20-1",
+      "9-1",
+      "17-4"
+    ],
+    "why": [
+      "〜ことなく: he did the main action without doing X. He kept playing and never told anyone.",
+      "〜たところ is followed by what turned out, not by the same person's own planned action. 出続けた is his own choice.",
+      "〜につれて links two gradual changes. Telling people is not a gradual change, and playing on is a deliberate act.",
+      "〜ばかりに: one cause led to a bad result the speaker regrets. Telling people did not make him keep playing."
+    ],
+    "cue": [
+      "周囲に",
+      "出続けた"
+    ],
+    "tell": "Did the main action while NOT doing X (formal): ことなく.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-014",
+    "type": "p7",
+    "point": "IV-6",
+    "s": "この詩は、作者の死後も人々に（　　）、百年以上にわたって読み継がれてきた。",
+    "en": "This poem was not forgotten even after the poet died, and has been handed down and read for over a hundred years.",
+    "c": [
+      "忘れられることなく",
+      "忘れることなく",
+      "忘れさせることなく",
+      "忘れさせられることなく"
+    ],
+    "cp": [
+      "IV-6",
+      "P3-6",
+      "P3-6",
+      "P3-6"
+    ],
+    "why": [
+      "The subject is この詩, and people are the ones who might forget it. So the passive 忘れられる + ことなく: without being forgotten by people.",
+      "忘れる is active. With the poem as subject, the poem would be doing the forgetting, and 人々に would have no role.",
+      "忘れさせる is causative: the poem would make someone forget something. That is the opposite of the meaning.",
+      "忘れさせられる is causative-passive: the poem would be made to forget by people. A poem cannot forget."
+    ],
+    "cue": [
+      "この詩は",
+      "人々に"
+    ],
+    "tell": "Thing as subject + 人々に + ことなく: use the passive (忘れられることなく).",
+    "lv": 3
+  },
+  {
+    "id": "7-IV-031",
+    "type": "p7",
+    "point": "IV-6",
+    "set": "formal-swap",
+    "s": "彼は誰にも相談する（　　）、長年勤めた会社を一人で辞める決断をした。",
+    "en": "Without consulting anyone, he decided on his own to leave the company he had worked at for years.",
+    "c": [
+      "ことなく",
+      "のみで",
+      "において",
+      "とのことで"
+    ],
+    "cp": [
+      "IV-6",
+      "IV-13",
+      "IV-1",
+      "IV-9"
+    ],
+    "why": [
+      "〜ことなく is the formal written ないで: he decided without consulting anyone. 誰にも needs a negative, and ことなく supplies it.",
+      "〜のみ means 'only'. 'Only consulting' contradicts 一人で, and 誰にも still needs a negative.",
+      "〜において attaches to a noun (a place, field or period), not to a verb, and it adds no negative.",
+      "〜とのことで passes on what someone said. Nobody is being quoted, and it does not give 誰にも its negative."
+    ],
+    "cue": [
+      "誰にも",
+      "一人で"
+    ],
+    "tell": "誰にも／一度も + formal 'without': 辞書形 + ことなく.",
+    "lv": 1
+  },
+  {
+    "id": "7-IV-015",
+    "type": "p7",
+    "point": "IV-7",
+    "s": "驚いた（　　）、十年前に失くした指輪が、古いコートのポケットから出てきた。",
+    "en": "To my surprise, a ring I lost ten years ago turned up in the pocket of an old coat.",
+    "c": [
+      "ことに",
+      "ものの",
+      "あまり",
+      "あげく"
+    ],
+    "cp": [
+      "IV-7",
+      "14-2",
+      "16-4",
+      "20-3"
+    ],
+    "why": [
+      "Emotion verb in た形 + ことに puts the speaker's reaction first, then the fact (驚いたことに = to my surprise).",
+      "〜ものの: X is true, but the expected follow-up didn't happen. Being surprised sets up no expectation that the ring would stay lost.",
+      "〜あまり: too much of a feeling leads to an abnormal result by the same person (驚いたあまり声が出なかった). The ring turning up is not caused by the surprise.",
+      "〜あげく needs a long ordeal ending badly. Being surprised is not an ordeal, and finding the ring is good news."
+    ],
+    "cue": [
+      "驚いた",
+      "出てきた"
+    ],
+    "tell": "Emotion first (驚いた・残念な・幸いな) + ことに, then the fact.",
+    "lv": 1
+  },
+  {
+    "id": "7-IV-016",
+    "type": "p7",
+    "point": "IV-7",
+    "set": "koto-forms",
+    "s": "残念な（　　）、楽しみにしていた花火大会は、強風のため中止になった。",
+    "en": "Sadly, the fireworks display we had been looking forward to was cancelled because of strong winds.",
+    "c": [
+      "ことに",
+      "ことから",
+      "ことは",
+      "ことか"
+    ],
+    "cp": [
+      "IV-7",
+      "IV-11",
+      "IV-8",
+      "26-6"
+    ],
+    "why": [
+      "ナ形な + ことに: the speaker's feeling comes first (残念なことに = sadly), then the event.",
+      "〜ことから gives the grounds for a conclusion. Feeling sad is not why the event was cancelled; the wind is.",
+      "〜ことは needs the same word again and が (残念なことは残念だが). Here a new clause follows.",
+      "〜ことか needs a question word (どんなに) and ends the sentence. Here the sentence carries on."
+    ],
+    "cue": [
+      "残念な",
+      "中止になった"
+    ],
+    "tell": "Feeling adjective + ことに opens the sentence: 'sadly, …'.",
+    "lv": 1
+  },
+  {
+    "id": "7-IV-017",
+    "type": "p7",
+    "point": "IV-8",
+    "s": "A「その本、もう読んだ？」B「買ったことは（　　）、忙しくてまだ最初の数ページしか読んでいないんだ。」",
+    "en": "A: \"Have you read that book yet?\" B: \"I did buy it, but I've been busy and have only read the first few pages.\"",
+    "c": [
+      "買ったんだけど",
+      "買うんだけど",
+      "買わないんだけど",
+      "買ったんだから"
+    ],
+    "cp": [
+      "IV-8",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "〜ことは〜が repeats the same word in the same form: 買ったことは買った + けど. I grant that much, then the real point follows.",
+      "The repeated word must match the first one. 買った then 買う breaks the pattern, and the book is already bought.",
+      "買わない contradicts 買ったことは. The pattern concedes X, it does not deny it.",
+      "〜から gives a reason. The pattern needs a concession (が・けど) before the contrast that follows."
+    ],
+    "cue": [
+      "買ったことは",
+      "まだ最初の数ページしか"
+    ],
+    "tell": "Xことは + the same X + が／けど: 'I did X, but…'.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-018",
+    "type": "p7",
+    "point": "IV-8",
+    "set": "koto-forms",
+    "s": "この方法は確かに手間がかかる（　　）かかるが、一度覚えてしまえば、誰でも同じ結果が出せる。",
+    "en": "This method does take effort, admittedly, but once you've learned it, anyone can get the same result.",
+    "c": [
+      "ことは",
+      "ことに",
+      "ことから",
+      "ことなく"
+    ],
+    "cp": [
+      "IV-8",
+      "IV-7",
+      "IV-11",
+      "IV-6"
+    ],
+    "why": [
+      "The same verb appears on both sides (かかる…かかるが). That repetition is the 〜ことは〜が shape: concede, then stress what follows.",
+      "〜ことに needs an emotion word before it (驚いたことに). かかる is not an emotion.",
+      "〜ことから gives grounds for a conclusion. 'Because it takes effort, it takes effort' says nothing.",
+      "〜ことなく means 'without'. 'Without taking effort, it takes effort' contradicts itself."
+    ],
+    "cue": [
+      "確かに",
+      "かかるが"
+    ],
+    "tell": "Same word twice around the blank + が: 〜ことは〜が.",
+    "lv": 1
+  },
+  {
+    "id": "7-IV-019",
+    "type": "p7",
+    "point": "IV-9",
+    "s": "部長、先ほど田村商事の佐藤様からお電話がありました。道路が混んでいて、約束の時間に30分ほど遅れる（　　）。",
+    "en": "Sir, there was a call from Mr Sato at Tamura Trading a moment ago. He said the roads are busy and he will be about 30 minutes late.",
+    "c": [
+      "とのことでした",
+      "そうでした",
+      "とみえました",
+      "に違いありませんでした"
+    ],
+    "cp": [
+      "IV-9",
+      null,
+      "22-1",
+      "22-5"
+    ],
+    "why": [
+      "〜とのことだ passes on a message from a named source (佐藤様). It can go into the past: とのことでした. This is the standard way to relay a phone message.",
+      "Hearsay そうだ after a dictionary form has no past tense. 遅れるそうでした is not possible; you would need 遅れるそうです.",
+      "〜とみえる is your own guess from what you see. You are passing on what Mr Sato said, not guessing.",
+      "〜に違いない is your own certainty from grounds. The details (30分ほど) came from the caller, so this is a relayed message, not your judgement."
+    ],
+    "cue": [
+      "佐藤様からお電話がありました"
+    ],
+    "tell": "Relaying a named person's message, past tense: とのことでした. Hearsay そうだ has no past.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-020",
+    "type": "p7",
+    "point": "IV-9",
+    "s": "気象庁によると、今年の梅雨明けは平年より10日ほど早かった（　　）。",
+    "en": "According to the Japan Meteorological Agency, this year's rainy season ended about ten days earlier than usual.",
+    "c": [
+      "ということだ",
+      "わけだ",
+      "ものだ",
+      "ことだ"
+    ],
+    "cp": [
+      "IV-9",
+      "IV-10",
+      "26-2B",
+      "26-5"
+    ],
+    "why": [
+      "〜によると names a source, and the ending must be hearsay. 〜ということだ reports what that source said.",
+      "〜わけだ draws a conclusion from what was just said. There is no premise here, only a source.",
+      "〜ものだ (marvelling) is the speaker's own feeling. It does not report information from a source.",
+      "〜ことだ after a verb is advice, and after an adjective is an exclamation. Neither reports a source."
+    ],
+    "cue": [
+      "気象庁によると"
+    ],
+    "tell": "〜によると／〜の話では + a hearsay ending: ということだ, とのことだ, そうだ.",
+    "lv": 1
+  },
+  {
+    "id": "7-IV-021",
+    "type": "p7",
+    "point": "IV-9",
+    "s": "友人の話では、駅前の古い映画館が今月末で閉館する（　　）、最後に一度見に行くつもりだ。",
+    "en": "My friend says the old cinema by the station is closing at the end of this month, so I plan to go and see one last film there.",
+    "c": [
+      "とのことなので",
+      "にきまっているので",
+      "わけではないので",
+      "にすぎないので"
+    ],
+    "cp": [
+      "IV-9",
+      "22-6",
+      "12-4",
+      "23-3"
+    ],
+    "why": [
+      "〜の話では names a source, so the clause must be hearsay. とのこと + なので: since I hear it is closing, I'll go once more.",
+      "〜にきまっている is the speaker's own gut certainty. It clashes with 友人の話では, which marks someone else's information.",
+      "〜わけではない is a partial denial. If it is not closing, there is no reason to go 'one last time'.",
+      "〜にすぎない means 'merely'. Closing is not being played down, and 'merely closing' gives no reason to go."
+    ],
+    "cue": [
+      "友人の話では",
+      "最後に一度"
+    ],
+    "tell": "〜の話では + reason: とのことなので. A source needs a hearsay ending, not your own judgement.",
+    "lv": 3
+  },
+  {
+    "id": "7-IV-022",
+    "type": "p7",
+    "point": "IV-10",
+    "set": "wake",
+    "s": "A「山田さん、10年もアメリカに住んでいたんだって。」B「へえ、それで英語の発音があんなにきれいな（　　）。」",
+    "en": "A: \"Apparently Yamada lived in America for ten years.\" B: \"Oh, so that's why her English pronunciation is so good.\"",
+    "c": [
+      "わけだ",
+      "わけではない",
+      "わけがない",
+      "わけにはいかない"
+    ],
+    "cp": [
+      "IV-10",
+      "12-4",
+      "12-1",
+      "18-2"
+    ],
+    "why": [
+      "〜わけだ: a conclusion that follows from what was just said. Ten years in America, so of course the pronunciation is good. それで signals this.",
+      "〜わけではない is a partial denial. それで introduces an explanation, not a denial.",
+      "〜わけがない means 'there's no way'. It contradicts the reason B has just been given.",
+      "〜わけにはいかない needs a dictionary-form verb and means 'I can't very well do it'. It cannot follow an adjective like きれいな."
+    ],
+    "cue": [
+      "それで"
+    ],
+    "tell": "それで／道理で／だから + a conclusion that follows: わけだ.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-023",
+    "type": "p7",
+    "point": "IV-10",
+    "set": "wake",
+    "s": "つまり、売り上げが伸びたのは新商品のおかげではなく、値下げの効果だった（　　）。",
+    "en": "In other words, sales went up not because of the new product but because of the price cut.",
+    "c": [
+      "というわけだ",
+      "というわけではない",
+      "わけがない",
+      "わけにはいかない"
+    ],
+    "cp": [
+      "IV-10",
+      "12-4",
+      "12-1",
+      "18-2"
+    ],
+    "why": [
+      "つまり sums up, and 〜というわけだ states the conclusion that follows: it was the price cut.",
+      "〜というわけではない would deny the conclusion that つまり is introducing. The sentence would undo itself.",
+      "〜わけがない says 'there's no way it was'. That contradicts つまり and the ではなく contrast.",
+      "〜わけにはいかない needs a dictionary-form verb and means 'can't very well'. It cannot follow だった."
+    ],
+    "cue": [
+      "つまり"
+    ],
+    "tell": "つまり／ということは + the conclusion: (という)わけだ. Three わけ: it follows, not entirely, no way.",
+    "lv": 3
+  },
+  {
+    "id": "7-IV-024",
+    "type": "p7",
+    "point": "IV-10",
+    "s": "A「あの店、来月で閉店するらしいよ。」B「道理で、最近どの商品も半額になっている（　　）。」",
+    "en": "A: \"I hear that shop is closing next month.\" B: \"No wonder everything there has been half price lately.\"",
+    "c": [
+      "わけだ",
+      "わけがない",
+      "わけではない",
+      "ものか"
+    ],
+    "cp": [
+      "IV-10",
+      "12-1",
+      "12-4",
+      "12-3"
+    ],
+    "why": [
+      "道理で means 'no wonder', and it locks in 〜わけだ: the closing explains the half-price sale.",
+      "〜わけがない denies flatly. It contradicts 道理で, which accepts the explanation.",
+      "〜わけではない is a partial denial. 道理で introduces something that makes sense, not a denial.",
+      "〜ものか is an angry 'as if!'. It denies a fact, the opposite of 道理で."
+    ],
+    "cue": [
+      "道理で"
+    ],
+    "tell": "道理で locks in わけだ: 'no wonder'.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-025",
+    "type": "p7",
+    "point": "IV-11",
+    "set": "koto-forms",
+    "s": "この坂は、春になると両側の桜が一斉に咲いてトンネルのようになる（　　）、地元では「花のトンネル坂」と呼ばれている。",
+    "en": "Because the cherry trees on both sides bloom all at once in spring and form a kind of tunnel, locals call this slope 'Flower Tunnel Hill'.",
+    "c": [
+      "ことから",
+      "ことに",
+      "ことなく",
+      "ことは"
+    ],
+    "cp": [
+      "IV-11",
+      "IV-7",
+      "IV-6",
+      "IV-8"
+    ],
+    "why": [
+      "〜ことから gives the grounds for a name or conclusion. The blossom tunnel is why the slope got its name.",
+      "〜ことに needs an emotion word before it (驚いたことに). なる is not an emotion.",
+      "〜ことなく means 'without'. The name comes from the tunnel, so 'without becoming a tunnel' makes no sense.",
+      "〜ことは needs the same word again and が (なることはなるが). Here a reason is needed."
+    ],
+    "cue": [
+      "と呼ばれている"
+    ],
+    "tell": "Reason for a name (〜と呼ばれる・〜という名がついた): ことから／ところから.",
+    "lv": 1
+  },
+  {
+    "id": "7-IV-026",
+    "type": "p7",
+    "point": "IV-11",
+    "s": "現場に残された足跡が男の靴と一致した（　　）、警察は男が事件に関わっているとみて調べを進めている。",
+    "en": "Because footprints left at the scene matched the man's shoes, police believe he was involved and are investigating.",
+    "c": [
+      "ことから",
+      "にもかかわらず",
+      "あまり",
+      "だけあって"
+    ],
+    "cp": [
+      "IV-11",
+      "14-1",
+      "16-4",
+      "19-3"
+    ],
+    "why": [
+      "〜ことから gives the grounds for a judgement. The match is the evidence, and 関わっているとみて is the police's conclusion. Standard news style.",
+      "〜にもかかわらず means 'even though'. The match supports the suspicion, it does not go against it.",
+      "〜あまり needs too much of a feeling or state, then an abnormal result. 一致した is not a matter of degree.",
+      "〜だけあって is deserved praise ('no wonder'). A police suspicion is not praise."
+    ],
+    "cue": [
+      "一致した",
+      "とみて"
+    ],
+    "tell": "Evidence + a judgement (〜とみて・〜とわかった): ことから.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-027",
+    "type": "p7",
+    "point": "IV-12",
+    "set": "lists",
+    "s": "引っ越しの日、彼女は荷物が多すぎる（　　）、トラックが小さいだの、業者に文句ばかり言っていた。",
+    "en": "On moving day she did nothing but complain to the movers: too much luggage, the truck's too small, and so on.",
+    "c": [
+      "だの",
+      "やら",
+      "というか",
+      "なり"
+    ],
+    "cp": [
+      "IV-12",
+      "10-1",
+      "10-2",
+      null
+    ],
+    "why": [
+      "〜だの〜だの lists complaints in a fed-up way, and 文句ばかり confirms it. The second item already has だの, so the first must match.",
+      "〜やら pairs only with やら (〜やら〜やら). It also sums up a messy situation the speaker went through, not someone's list of complaints.",
+      "〜というか〜というか gives two labels for one impression. These are separate complaints, and the pair does not match だの.",
+      "〜なり〜なり offers choices ('either X or Y'). It does not list complaints, and the pair does not match だの."
+    ],
+    "cue": [
+      "小さいだの",
+      "文句ばかり"
+    ],
+    "tell": "A fed-up list of complaints: 〜だの〜だの. The two markers must match.",
+    "lv": 1
+  },
+  {
+    "id": "7-IV-028",
+    "type": "p7",
+    "point": "IV-12",
+    "set": "lists",
+    "s": "客の中には、料理が冷めている（　　）、店員の態度が悪いだの、細かいことにまで文句をつける人もいる。",
+    "en": "Some customers complain about every little thing: the food's gone cold, the staff are rude.",
+    "c": [
+      "だの",
+      "といった",
+      "というか",
+      "にしても"
+    ],
+    "cp": [
+      "IV-12",
+      "10-4",
+      "10-2",
+      "10-3"
+    ],
+    "why": [
+      "〜だの〜だの lists complaints with a note of annoyance. 文句をつける confirms it.",
+      "〜といった must be followed directly by a category noun (〜といった不満). Here a comma and a second item follow.",
+      "〜というか gives two labels for one impression and pairs with というか. These are two separate complaints.",
+      "〜にしても〜にしても means 'either way, the same result'. These are complaints, not alternatives."
+    ],
+    "cue": [
+      "悪いだの",
+      "文句をつける"
+    ],
+    "tell": "Someone's complaints listed with annoyance: 〜だの〜だの + 文句・不満.",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-029",
+    "type": "p7",
+    "point": "IV-13",
+    "s": "本日の工場見学は、事前にお申し込みいただいた方（　　）ご参加いただけます。当日の受け付けは行っておりませんので、ご了承ください。",
+    "en": "Today's factory tour is open only to those who registered in advance. We are not accepting registrations on the day, so we ask for your understanding.",
+    "c": [
+      "のみ",
+      "に限らず",
+      "を問わず",
+      "はもとより"
+    ],
+    "cp": [
+      "IV-13",
+      "6-1",
+      "11-1",
+      "6-4"
+    ],
+    "why": [
+      "〜のみ is the formal だけ: only those who registered. The next sentence (no same-day registration) confirms the limit.",
+      "〜に限らず means 'not only X, a wider group too'. That clashes with refusing same-day visitors.",
+      "〜を問わず needs a width word or a pair (年齢を問わず). 申し込みいただいた方 is one group, and the notice limits entry.",
+      "〜はもとより means 'X of course, and Y too'. There is no Y, and the notice limits entry."
+    ],
+    "cue": [
+      "当日の受け付けは行っておりません"
+    ],
+    "tell": "Formal notice limiting to one group: のみ (formal だけ).",
+    "lv": 2
+  },
+  {
+    "id": "7-IV-030",
+    "type": "p7",
+    "point": "IV-13",
+    "set": "not-only",
+    "s": "この奨学金の選考は書類審査（　　）行われ、面接は実施しない。",
+    "en": "Selection for this scholarship is by documents only; there is no interview.",
+    "c": [
+      "のみで",
+      "のみならず",
+      "はもとより",
+      "に限らず"
+    ],
+    "cp": [
+      "IV-13",
+      "6-2",
+      "6-4",
+      "6-1"
+    ],
+    "why": [
+      "〜のみ is the formal written だけ. Selection is by documents only, and 面接は実施しない confirms it.",
+      "〜のみならず means 'not only'. It implies a second stage, but there is no interview.",
+      "〜はもとより means 'X of course, and Y too'. There is no Y.",
+      "〜に限らず means 'not limited to X'. The selection is limited to documents."
+    ],
+    "cue": [
+      "面接は実施しない"
+    ],
+    "tell": "のみ = only. のみならず = not only. Check whether the sentence limits or adds.",
+    "lv": 2
+  }
+]

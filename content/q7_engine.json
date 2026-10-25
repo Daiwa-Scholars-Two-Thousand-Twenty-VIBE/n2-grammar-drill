@@ -1,0 +1,1235 @@
+[
+  {
+    "id": "7-EN-001",
+    "type": "p7",
+    "point": "P3-1",
+    "set": "text",
+    "s": "高い授業料を払ったからといって、必ずしも英語が話せるように（　　）。",
+    "en": "Paying high tuition fees doesn't necessarily mean you'll be able to speak English.",
+    "c": [
+      "なるとは限らない",
+      "なるに違いない",
+      "なるに決まっている",
+      "なるはずだ"
+    ],
+    "cp": [
+      "P3-1",
+      "22-5",
+      "22-6",
+      null
+    ],
+    "why": [
+      "必ずしも locks in a partial denial at the end: 〜とは限らない (or 〜わけではない). からといって points the same way.",
+      "〜に違いない is a confident certainty. 必ずしも cannot end in a positive certainty.",
+      "〜にきまっている is a gut 'obviously'. 必ずしも needs a negative ending, not a confident one.",
+      "〜はずだ is a confident expectation. 必ずしも needs とは限らない or わけではない."
+    ],
+    "cue": [
+      "必ずしも",
+      "からといって"
+    ],
+    "tell": "必ずしも → 〜とは限らない／〜わけではない. Spot it early and skip every positive ending.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-002",
+    "type": "p7",
+    "point": "P3-1",
+    "set": "text",
+    "s": "まさか、あの真面目な田中さんが会社のお金を（　　）。",
+    "en": "I never dreamed that serious Mr Tanaka had been embezzling company money.",
+    "c": [
+      "使い込んでいたとは思わなかった",
+      "使い込んでいたに違いない",
+      "使い込んでいたはずだ",
+      "使い込んでいたのは当然だ"
+    ],
+    "cp": [
+      "P3-1",
+      "22-5",
+      null,
+      null
+    ],
+    "why": [
+      "まさか expresses disbelief and locks in an ending like 〜とは思わなかった or 〜ないだろう.",
+      "〜に違いない is confident certainty. It clashes with the shock of まさか.",
+      "〜はずだ says it was expected. まさか and 真面目な say the opposite.",
+      "〜のは当然だ means 'naturally'. That is the opposite of まさか's disbelief."
+    ],
+    "cue": [
+      "まさか",
+      "真面目な"
+    ],
+    "tell": "まさか → disbelief ending: 〜とは思わなかった／〜ないだろう. Never a confident one.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-003",
+    "type": "p7",
+    "point": "P3-1",
+    "set": "text",
+    "s": "まだ予選なのに、会場は割れるような歓声に包まれ、まるで優勝が（　　）。",
+    "en": "It was only the qualifying round, yet the arena erupted in deafening cheers, as if the championship had already been won.",
+    "c": [
+      "決まったかのようだった",
+      "決まったそうだった",
+      "決まったらしかった",
+      "決まったに違いなかった"
+    ],
+    "cp": [
+      "P3-1",
+      null,
+      null,
+      "22-5"
+    ],
+    "why": [
+      "まるで locks in a likeness: 〜ようだ／〜みたいだ, often 〜かのようだ ('as if'). The title was not really decided; it only felt that way.",
+      "Hearsay そうだ has no past form, and まるで needs a likeness, not a report.",
+      "〜らしい is an inference that something is actually true. まるで marks something that only looks like it.",
+      "〜に違いない states certainty that it happened. まだ予選 shows it had not."
+    ],
+    "cue": [
+      "まるで",
+      "まだ予選なのに"
+    ],
+    "tell": "まるで → 〜ようだ／〜みたいだ (〜かのようだ = as if). Not らしい or そうだ.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-004",
+    "type": "p7",
+    "point": "P3-1",
+    "set": "text",
+    "s": "こんな夜中に、いったい誰が玄関のチャイムを（　　）。",
+    "en": "Who on earth is ringing the doorbell at this time of night?",
+    "c": [
+      "鳴らしているのだろう",
+      "鳴らしているはずだ",
+      "鳴らしているに違いない",
+      "鳴らしているようだ"
+    ],
+    "cp": [
+      "P3-1",
+      null,
+      "22-5",
+      null
+    ],
+    "why": [
+      "いったい + a question word locks in a question ending: 〜のだろう(か) or 〜のか.",
+      "〜はずだ is a statement of expectation. いったい誰が needs a question.",
+      "〜に違いない is a statement of certainty. You cannot be certain about someone you are asking 'who?' about.",
+      "〜ようだ is a statement of how things seem. いったい needs a question ending."
+    ],
+    "cue": [
+      "いったい誰が"
+    ],
+    "tell": "いったい／果たして + question word → 〜のだろう(か)／〜のか.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-005",
+    "type": "p7",
+    "point": "P3-1",
+    "set": "text",
+    "s": "私はこの計画に反対だ。なぜなら、地元の住民の声が一度も（　　）。",
+    "en": "I am against this plan, because the local residents have never once been listened to.",
+    "c": [
+      "聞かれていないからだ",
+      "聞かれていないわけがない",
+      "聞かれていないに越したことはない",
+      "聞かれていないものだ"
+    ],
+    "cp": [
+      "P3-1",
+      "12-1",
+      "23-5",
+      "23-1"
+    ],
+    "why": [
+      "なぜなら opens a reason and locks in 〜から(ため)だ at the end of the sentence.",
+      "〜わけがない means 'there's no way'. It gives no reason, and it would deny the very complaint.",
+      "〜に越したことはない means 'it's best if'. It turns the complaint into a wish and gives no reason.",
+      "〜ものだ states a general truth. なぜなら needs the reason for this objection."
+    ],
+    "cue": [
+      "なぜなら"
+    ],
+    "tell": "なぜなら／というのは → 〜からだ／〜ためだ at the end.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-006",
+    "type": "p7",
+    "point": "P3-2",
+    "set": "text",
+    "s": "電車を（　　）、網棚の上に置いた荷物を忘れないように気をつけてください。",
+    "en": "When you get off the train, be careful not to forget any luggage you put on the overhead rack.",
+    "c": [
+      "降りるとき",
+      "降りたとき",
+      "降りてから",
+      "降りたあとで"
+    ],
+    "cp": [
+      "P3-2",
+      "P3-2",
+      null,
+      null
+    ],
+    "why": [
+      "Inner-clause tense follows the order of events. You take your luggage BEFORE stepping off, so the inner verb stays in dictionary form: 降りるとき.",
+      "降りたとき = once you are off the train. By then the luggage is already left behind.",
+      "〜てから = after getting off. Too late to take the luggage down from the rack.",
+      "〜たあとで = after getting off. Same problem: the luggage is still on the train."
+    ],
+    "cue": [
+      "網棚の上に置いた荷物"
+    ],
+    "tell": "Inner event comes AFTER the main one → dictionary form (降りるとき = just before getting off).",
+    "lv": 2
+  },
+  {
+    "id": "7-EN-007",
+    "type": "p7",
+    "point": "P3-2",
+    "set": "text",
+    "s": "先月、久しぶりに北海道の実家に（　　）、父の髪がすっかり白くなっていて驚いた。",
+    "en": "Last month, when I went back to my parents' home in Hokkaido for the first time in ages, I was surprised to find my father's hair had gone completely white.",
+    "c": [
+      "帰ったとき",
+      "帰るとき",
+      "帰る前に",
+      "帰ろうとしたとき"
+    ],
+    "cp": [
+      "P3-2",
+      "P3-2",
+      null,
+      "2-4"
+    ],
+    "why": [
+      "I could only see my father's hair once I had arrived home. The inner event comes first, so it takes た形: 帰ったとき.",
+      "帰るとき = while setting off or still on the way. My father was at the house, so I could not have seen him yet.",
+      "帰る前に = before the trip home. I saw my father after arriving, not before leaving.",
+      "〜ようとしたとき = just as I was about to set off. Still before the trip, so I could not have seen him."
+    ],
+    "cue": [
+      "父の髪が",
+      "驚いた"
+    ],
+    "tell": "Main event happens after arrival (seeing Dad at home) → た形 + とき. 〜るとき = still on the way.",
+    "lv": 2
+  },
+  {
+    "id": "7-EN-008",
+    "type": "p7",
+    "point": "P3-2",
+    "set": "text",
+    "s": "この薬は、食事を（　　）あとで、コップ一杯の水と一緒に飲んでください。",
+    "en": "Take this medicine after your meal, with a glass of water.",
+    "c": [
+      "した",
+      "する",
+      "している",
+      "しない"
+    ],
+    "cp": [
+      "P3-2",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "あと always takes た形, even about the future: the meal is done first, then the medicine.",
+      "Dictionary form goes with 前 (食事をする前に), not with あと.",
+      "している means during the meal. あと needs the meal to be finished.",
+      "しないあとで makes no sense: you cannot be 'after not eating'."
+    ],
+    "cue": [
+      "あとで"
+    ],
+    "tell": "〜たあと(で) always, even for the future. 〜る前(に) always, even for the past.",
+    "lv": 1
+  },
+  {
+    "id": "7-EN-009",
+    "type": "p7",
+    "point": "P3-2",
+    "set": "text",
+    "s": "来週の会議で（　　）資料は、前日までに全員に配っておいてください。",
+    "en": "Please hand out the materials for next week's meeting to everyone by the day before.",
+    "c": [
+      "使う",
+      "使った",
+      "使っていた",
+      "使ってきた"
+    ],
+    "cp": [
+      "P3-2",
+      null,
+      null,
+      "P3-5"
+    ],
+    "why": [
+      "The handout goes out first and the meeting uses it later. The inner event comes after the main one, so dictionary form: 使う資料.",
+      "使った would mean the meeting had already used them. Then they could not be handed out the day before.",
+      "使っていた describes use going on in the past. Next week's meeting has not happened yet.",
+      "使ってきた means 'have been using up to now'. A meeting next week has no history yet."
+    ],
+    "cue": [
+      "来週の会議で",
+      "前日までに"
+    ],
+    "tell": "Noun-modifying clause: tense follows order of events. Used later than the main action → る形.",
+    "lv": 2
+  },
+  {
+    "id": "7-EN-010",
+    "type": "p7",
+    "point": "P3-3",
+    "set": "text",
+    "s": "駅に（　　）、すぐに電話をください。車で迎えに行きますから。",
+    "en": "As soon as you get to the station, give me a call. I'll come and pick you up by car.",
+    "c": [
+      "着いたら",
+      "着くと",
+      "着けば",
+      "着いても"
+    ],
+    "cp": [
+      "P3-3",
+      "P3-3",
+      "P3-3",
+      null
+    ],
+    "why": [
+      "The main clause is a request (〜ください). たら accepts a request, wish or intention, and it means 'once you've arrived'.",
+      "と cannot be followed by a request, wish or intention. It is for natural, automatic results.",
+      "ば after an action verb cannot be followed by a request. 着けば、電話をください is unnatural.",
+      "〜ても means 'even if'. 'Even if you arrive, call me' makes no sense."
+    ],
+    "cue": [
+      "電話をください"
+    ],
+    "tell": "Request, wish or 〜よう after the condition → たら (or なら). と and ば are out.",
+    "lv": 2
+  },
+  {
+    "id": "7-EN-011",
+    "type": "p7",
+    "point": "P3-3",
+    "set": "text",
+    "s": "A「コンサートのチケット、もう買ったよ。」B「もう（　　）、当日は早めに会場に行ったほうがいいよ。グッズ売り場がかなり混むらしいから。」",
+    "en": "A: \"I've already bought the concert ticket.\" B: \"If you've already bought it, you'd better get to the venue early on the day. The merch stand gets really crowded, apparently.\"",
+    "c": [
+      "買ったのなら",
+      "買うなら",
+      "買えば",
+      "買うと"
+    ],
+    "cp": [
+      "P3-3",
+      "P3-3",
+      "P3-3",
+      "P3-3"
+    ],
+    "why": [
+      "The ticket is already bought, so this is a known fact (確定). For something already done, なら becomes 〜たのなら.",
+      "買うなら means 'if you are going to buy'. It treats the purchase as not done yet, but A has already bought it.",
+      "ば is hypothetical and cannot take advice after an action verb. It also clashes with もう.",
+      "と cannot be followed by advice (ほうがいい), and it treats buying as a general condition."
+    ],
+    "cue": [
+      "もう買ったよ",
+      "ほうがいい"
+    ],
+    "tell": "Already happened + advice → 〜たのなら. 〜るなら treats it as not done yet.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-012",
+    "type": "p7",
+    "point": "P3-3",
+    "set": "text",
+    "s": "秋に京都へ（　　）、ホテルは早めに予約しておいたほうがいいですよ。紅葉の時期はすぐに満室になりますから。",
+    "en": "If you're going to Kyoto in autumn, you'd better book a hotel early. Everywhere fills up in the autumn-leaves season.",
+    "c": [
+      "行くなら",
+      "行ったら",
+      "行けば",
+      "行くと"
+    ],
+    "cp": [
+      "P3-3",
+      "P3-3",
+      "P3-3",
+      "P3-3"
+    ],
+    "why": [
+      "なら takes up the listener's plan and gives advice to act on BEFORE it happens. You book the hotel before the trip, so 行くなら.",
+      "行ったら = once you have arrived. Booking early has to happen before the trip, so たら puts the events in the wrong order.",
+      "ば after an action verb cannot take advice like 〜ほうがいい, and it also puts the trip before the booking.",
+      "と marks an automatic result and cannot be followed by advice like 〜ほうがいい."
+    ],
+    "cue": [
+      "早めに",
+      "予約しておいた"
+    ],
+    "tell": "Advice to act on before the plan (book, prepare, check) → 〜るなら. 〜たら puts the plan first.",
+    "lv": 2
+  },
+  {
+    "id": "7-EN-013",
+    "type": "p7",
+    "point": "P3-3",
+    "set": "text",
+    "s": "どんなに（　　）、試験が終わるまではゲームは我慢しよう。",
+    "en": "However much I want to play games, I'll hold off until the exams are over.",
+    "c": [
+      "やりたくても",
+      "やりたいのに",
+      "やりたければ",
+      "やりたいと"
+    ],
+    "cp": [
+      "P3-3",
+      null,
+      "P3-3",
+      "P3-3"
+    ],
+    "why": [
+      "どんなに pairs with 〜ても, and 〜ても can be followed by the speaker's will (我慢しよう).",
+      "のに cannot be followed by the speaker's will or intention. With 〜しよう, use ても.",
+      "やりたければ means 'if you want to play'. That points toward playing, the opposite of 我慢しよう, and どんなに needs ても.",
+      "と cannot be followed by the speaker's will, and どんなに needs ても."
+    ],
+    "cue": [
+      "どんなに",
+      "我慢しよう"
+    ],
+    "tell": "どんなに → 〜ても. のに refuses the speaker's will; ても accepts it.",
+    "lv": 2
+  },
+  {
+    "id": "7-EN-014",
+    "type": "p7",
+    "point": "P3-4",
+    "set": "engine",
+    "s": "旅行先の駅で、私はうっかりカメラ（　　）、そのまま気づかずにホテルへ戻ってしまった。",
+    "en": "At a station on my trip, I carelessly dropped my camera and went back to the hotel without noticing.",
+    "c": [
+      "を落として",
+      "が落ちて",
+      "を落とされて",
+      "が落とされて"
+    ],
+    "cp": [
+      "P3-4",
+      "P3-4",
+      "P3-6",
+      "P3-6"
+    ],
+    "why": [
+      "うっかり marks my own carelessness, so use the transitive: カメラを落とした = I dropped it, my fault. A sequence 〜て also keeps the same subject (私) on both sides.",
+      "が落ちて focuses on the camera falling by itself. It hides whose fault it was, and the subject would jump from the camera to 私 across a sequence 〜て.",
+      "を落とされて is a suffering passive: someone else dropped it on me. うっかり says the carelessness was mine.",
+      "が落とされて makes the camera the target of someone else's action. That clashes with 私は and うっかり."
+    ],
+    "cue": [
+      "私は",
+      "うっかり"
+    ],
+    "tell": "Own carelessness (うっかり・つい) → 他動詞 (〜を落とした). Same subject across a sequence 〜て.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-015",
+    "type": "p7",
+    "point": "P3-4",
+    "set": "engine",
+    "s": "コーヒーのしみを洗剤でいくらこすっても、（　　）。",
+    "en": "However hard I scrubbed the coffee stain with detergent, it wouldn't come out.",
+    "c": [
+      "落ちなかった",
+      "落とさなかった",
+      "落とされなかった",
+      "落とさせなかった"
+    ],
+    "cp": [
+      "P3-4",
+      "P3-4",
+      "P3-6",
+      "P3-6"
+    ],
+    "why": [
+      "The result of an attempt goes with the intransitive: I tried, but the stain did not come out (落ちなかった).",
+      "落とさなかった means I chose not to remove it. That contradicts いくらこすっても.",
+      "落とされなかった is passive: it was not removed by someone. Nobody else is acting here.",
+      "落とさせなかった is causative: I did not let someone remove it. Nobody else is involved."
+    ],
+    "cue": [
+      "いくらこすっても"
+    ],
+    "tell": "Tried hard, it didn't work → 自動詞 for the result (落ちなかった・開かなかった).",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-016",
+    "type": "p7",
+    "point": "P3-4",
+    "set": "engine",
+    "s": "風もないのに、閉めたはずの窓がひとりでに（　　）。",
+    "en": "Even though there was no wind, the window I was sure I had shut opened by itself.",
+    "c": [
+      "開いた",
+      "開けた",
+      "開けられた",
+      "開かせた"
+    ],
+    "cp": [
+      "P3-4",
+      "P3-4",
+      "P3-6",
+      "P3-6"
+    ],
+    "why": [
+      "ひとりでに ('by itself') means no one did it. The change of the thing itself takes the intransitive: 窓が開いた.",
+      "開ける is transitive and needs someone doing it. ひとりでに rules that out, and 窓が does not fit a transitive verb.",
+      "開けられた is passive: someone opened it. That contradicts ひとりでに.",
+      "開かせた is causative: someone made it open. ひとりでに rules out any causer."
+    ],
+    "cue": [
+      "ひとりでに"
+    ],
+    "tell": "No doer (ひとりでに・自然に) → 自動詞 (窓が開いた).",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-017",
+    "type": "p7",
+    "point": "P3-4",
+    "set": "engine",
+    "s": "A「どうしたの？」B「このジャムの瓶、ふたが固くてなかなか（　　）んだ。ちょっと開けてくれない？」",
+    "en": "A: \"What's up?\" B: \"The lid on this jam jar is so tight it just won't open. Could you open it for me?\"",
+    "c": [
+      "あかない",
+      "あけない",
+      "あけさせない",
+      "あけていない"
+    ],
+    "cp": [
+      "P3-4",
+      "P3-4",
+      "P3-6",
+      null
+    ],
+    "why": [
+      "The intransitive negative works as a potential: the lid won't open. ふたが + あかない is the natural way to say something won't budge.",
+      "あけない is transitive and means I am choosing not to open it. B is asking for help, so B wants it open.",
+      "あけさせない is causative: the lid won't let anyone open it. A lid cannot give or refuse permission.",
+      "あけていない means I haven't opened it yet. It reports what I did, not that the lid is stuck, and ふたが needs an intransitive."
+    ],
+    "cue": [
+      "ふたが固くて",
+      "開けてくれない"
+    ],
+    "tell": "Won't budge (ふたが・ドアが) → 自動詞 negative as a potential: あかない.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-018",
+    "type": "p7",
+    "point": "P3-5",
+    "set": "engine",
+    "s": "少子化が進むなか、この町の小学校の児童数は、今後さらに（　　）だろう。",
+    "en": "With the birth rate falling, the number of pupils at this town's primary schools is likely to drop even further from now on.",
+    "c": [
+      "減っていく",
+      "減ってきた",
+      "減っていった",
+      "減ってきている"
+    ],
+    "cp": [
+      "P3-5",
+      "P3-5",
+      "P3-5",
+      "P3-5"
+    ],
+    "why": [
+      "〜ていく = a change moving away from now into the future. 今後 + だろう fix the time as 'from now on'.",
+      "減ってきた = a change up to now. 今後 points forward.",
+      "減っていった = a change that went on in the past. 今後 points forward.",
+      "減ってきている = a change running up to the present. It cannot describe what happens 今後."
+    ],
+    "cue": [
+      "今後",
+      "だろう"
+    ],
+    "tell": "今後・これから → 〜ていく. 今まで・ずっと → 〜てきた.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-019",
+    "type": "p7",
+    "point": "P3-5",
+    "set": "engine",
+    "s": "この店は創業以来100年間、ずっと同じ味を（　　）。",
+    "en": "Ever since it was founded a hundred years ago, this shop has kept the same flavour.",
+    "c": [
+      "守り続けてきた",
+      "守り続けていく",
+      "守り続けていった",
+      "守り続けてくる"
+    ],
+    "cp": [
+      "P3-5",
+      "P3-5",
+      "P3-5",
+      "P3-5"
+    ],
+    "why": [
+      "以来 = from a past point up to now. 〜てきた brings a continuing action up to the speaker's present.",
+      "〜ていく points from now into the future. 以来 looks back from the past to now.",
+      "〜ていった is a past change moving away. 以来 needs a line that reaches now.",
+      "〜てくる (non-past) describes something from now on. A hundred years up to now needs 〜てきた."
+    ],
+    "cue": [
+      "創業以来",
+      "ずっと"
+    ],
+    "tell": "以来・今まで・ずっと (past up to now) → 〜てきた.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-020",
+    "type": "p7",
+    "point": "P3-5",
+    "set": "engine",
+    "s": "会議が終わると、社員たちは一人また一人と会議室を（　　）、最後には私と部長だけが残った。",
+    "en": "When the meeting ended, the staff left the meeting room one after another, until only the manager and I remained.",
+    "c": [
+      "出ていき",
+      "出てき",
+      "入っていき",
+      "入ってき"
+    ],
+    "cp": [
+      "P3-5",
+      "P3-5",
+      "P3-5",
+      "P3-5"
+    ],
+    "why": [
+      "The speaker stays inside the room (私と部長だけが残った). People leaving move away from the speaker: 出ていく.",
+      "出てくる = come out toward the speaker, which puts the speaker outside the room. But 私 stayed inside.",
+      "入っていく = go into the room. The meeting has ended and people are leaving.",
+      "入ってくる = come into the room toward the speaker. People were leaving, not arriving."
+    ],
+    "cue": [
+      "会議が終わると",
+      "私と部長だけが残った"
+    ],
+    "tell": "Find the speaker. Inside, people leave → 〜ていく. Outside, people come out → 〜てくる.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-021",
+    "type": "p7",
+    "point": "P3-5",
+    "set": "engine",
+    "s": "台所のほうから、カレーのおいしそうなにおいが（　　）。",
+    "en": "A delicious smell of curry came drifting from the kitchen.",
+    "c": [
+      "してきた",
+      "していった",
+      "させてきた",
+      "されてきた"
+    ],
+    "cp": [
+      "P3-5",
+      "P3-5",
+      "P3-6",
+      "P3-6"
+    ],
+    "why": [
+      "A smell or sound reaching the speaker moves toward them: 〜てくる. においがしてきた = a smell came to me.",
+      "〜ていく moves away from the speaker. A smell you notice is arriving, not leaving.",
+      "させてきた is causative: someone made the smell. においが is the subject, so there is no causer.",
+      "されてきた is passive. においがする is not something done to the smell."
+    ],
+    "cue": [
+      "台所のほうから"
+    ],
+    "tell": "Smells, sounds, feelings reaching you → 〜てくる (においがしてきた・聞こえてきた).",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-022",
+    "type": "p7",
+    "point": "P3-6",
+    "set": "engine",
+    "s": "戦争を生き抜いた祖父の話に、平和とは何かを改めて（　　）。",
+    "en": "My grandfather's story of surviving the war made me think afresh about what peace really is.",
+    "c": [
+      "考えさせられた",
+      "考えさせた",
+      "考えられた",
+      "考えた"
+    ],
+    "cp": [
+      "P3-6",
+      "P3-6",
+      "P3-6",
+      null
+    ],
+    "why": [
+      "Causative-passive 〜させられた = something moved me to think. The story, marked with に, is the cause, and I am the thinker. Very common in essays.",
+      "考えさせた is causative: I made someone think. There is nobody here for me to make think.",
+      "考えられた is passive or potential. 'Was thought by the story' or 'was able to think' does not fit 話に as the cause.",
+      "考えた is plain active. It cannot take the cause with に (話に考えた is wrong)."
+    ],
+    "cue": [
+      "祖父の話に",
+      "改めて"
+    ],
+    "tell": "Cause + に + a thought that rose in me → 〜させられた (考えさせられた・反省させられた).",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-023",
+    "type": "p7",
+    "point": "P3-6",
+    "set": "engine",
+    "s": "新人のころは、毎朝誰よりも早く出社して、先輩たちの机を（　　）ものだ。",
+    "en": "When I was new, I used to come in before anyone else every morning and was made to wipe down the senior staff's desks.",
+    "c": [
+      "拭かされた",
+      "拭かせた",
+      "拭かれた",
+      "拭いてもらった"
+    ],
+    "cp": [
+      "P3-6",
+      "P3-6",
+      "P3-6",
+      "P3-7"
+    ],
+    "why": [
+      "As the newcomer, I was made to do it: causative-passive 拭かされた. 〜たものだ looks back on a past habit.",
+      "拭かせた = I made someone else wipe. The newcomer who comes in earliest is the one doing the chore.",
+      "拭かれた is passive: the desks were wiped, or someone wiped them on me. It loses the point that I did the wiping.",
+      "拭いてもらった = someone wiped for me. But I came in early to do it myself."
+    ],
+    "cue": [
+      "新人のころは",
+      "先輩たちの机"
+    ],
+    "tell": "Made to do it by people above you → causative-passive 〜させられる (拭かされた).",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-024",
+    "type": "p7",
+    "point": "P3-6",
+    "set": "engine",
+    "s": "徹夜で仕上げたレポートの上に、弟にコーヒーを（　　）、一から書き直すはめになった。",
+    "en": "My little brother spilled coffee all over the report I'd stayed up all night finishing, and I ended up having to rewrite it from scratch.",
+    "c": [
+      "こぼされて",
+      "こぼさせて",
+      "こぼして",
+      "こぼれて"
+    ],
+    "cp": [
+      "P3-6",
+      "P3-6",
+      "P3-4",
+      "P3-4"
+    ],
+    "why": [
+      "The speaker suffered from someone else's action: passive with the doer marked by に (弟にこぼされて). はめになった confirms the harm.",
+      "こぼさせて is causative: I made my brother spill it. Nobody makes someone ruin their own report.",
+      "こぼして is active: I spilled it. Then 弟に has no role.",
+      "こぼれて is intransitive and cannot take コーヒーを. It also hides who did it."
+    ],
+    "cue": [
+      "弟に",
+      "はめになった"
+    ],
+    "tell": "Someone else's act harms you → passive (Xに〜される). はめになる confirms it.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-025",
+    "type": "p7",
+    "point": "P3-6",
+    "set": "engine",
+    "s": "子どもが自分で選んだ道なら、親としては好きなように（　　）と思う。",
+    "en": "If it's a path my child chose for themselves, as a parent I want to let them do it their own way.",
+    "c": [
+      "やらせてやりたい",
+      "やらされたい",
+      "やってあげたい",
+      "やられたい"
+    ],
+    "cp": [
+      "P3-6",
+      "P3-6",
+      "P3-7",
+      "P3-6"
+    ],
+    "why": [
+      "Causative of permission (〜させる) + 〜てやる: the parent lets the child do it. 子どもが自分で選んだ道 shows the child is the one acting.",
+      "やらされたい = want to be made to do it. The parent is not the one being pushed.",
+      "やってあげたい = the parent wants to do it for the child. But it is the child's own path.",
+      "やられたい is passive: want to have it done to me. That makes no sense here."
+    ],
+    "cue": [
+      "子どもが自分で選んだ道",
+      "親としては"
+    ],
+    "tell": "Letting someone do it (permission) → 〜させる (やらせてやる). 〜てあげる means you do it yourself.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-026",
+    "type": "p7",
+    "point": "P3-7",
+    "set": "engine",
+    "s": "せっかくの休日なのに、朝6時に上司からの電話で（　　）。",
+    "en": "It was my precious day off, but I was woken at 6 a.m. by a call from my boss.",
+    "c": [
+      "起こされた",
+      "起こしてもらった",
+      "起こしてくれた",
+      "起こしてあげた"
+    ],
+    "cp": [
+      "P3-7",
+      "P3-7",
+      "P3-7",
+      "P3-7"
+    ],
+    "why": [
+      "An unwelcome act done to the speaker takes the passive. せっかくの休日なのに shows it was unwanted.",
+      "〜てもらった = a favour I wanted. A 6 a.m. call on a day off is not one.",
+      "〜てくれた = someone kindly did it for me. It clashes with なのに.",
+      "〜てあげた = I did it for someone. The call woke me, not the other way round."
+    ],
+    "cue": [
+      "せっかくの休日なのに"
+    ],
+    "tell": "Unwelcome → passive (起こされた). Welcome → 〜てもらった／〜てくれた.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-027",
+    "type": "p7",
+    "point": "P3-7",
+    "set": "engine",
+    "s": "引っ越しのとき、大学時代の友人が二人も手伝いに来て（　　）、予定より早く終わった。",
+    "en": "When I moved house, two of my old university friends came to help, so we finished earlier than planned.",
+    "c": [
+      "くれて",
+      "もらって",
+      "あげて",
+      "いただいて"
+    ],
+    "cp": [
+      "P3-7",
+      "P3-7",
+      "P3-7",
+      "P3-7"
+    ],
+    "why": [
+      "友人が is the subject and the speaker receives the help. Giver as subject, me as receiver → 〜てくれる.",
+      "〜てもらう needs the receiver (me) as subject and the giver with に (友人に来てもらって). Here 友人が is the subject.",
+      "〜てあげる sends the favour away from the speaker. Friends helping me move comes toward me.",
+      "〜ていただく is the humble もらう: it needs 友人に, not 友人が, and it is far too formal for your own friends in a plain-style account."
+    ],
+    "cue": [
+      "友人が"
+    ],
+    "tell": "Xが + a favour for me → 〜てくれる. Xに + a favour for me → 〜てもらう.",
+    "lv": 2
+  },
+  {
+    "id": "7-EN-028",
+    "type": "p7",
+    "point": "P3-7",
+    "set": "engine",
+    "s": "いとこの由美は、近所に住む大学の先生に頼んで、自分の書いた英語の作文を（　　）そうだ。",
+    "en": "I hear my cousin Yumi asked a university professor who lives nearby to look over an English essay she had written.",
+    "c": [
+      "見てもらった",
+      "見てあげた",
+      "見てくれた",
+      "見られた"
+    ],
+    "cp": [
+      "P3-7",
+      "P3-7",
+      "P3-7",
+      "P3-7"
+    ],
+    "why": [
+      "由美 is closer to the speaker than the professor, so she is the subject. She asked and received the favour: 先生に見てもらった.",
+      "〜てあげた = 由美 did a favour for the professor. But it is her own essay and she asked for help.",
+      "〜てくれた needs the giver as subject and the speaker's side receiving. 由美は is the subject, so she would be the giver.",
+      "見られた (passive) would mean the reading was unwanted. 頼んで shows she wanted it."
+    ],
+    "cue": [
+      "先生に頼んで",
+      "自分の書いた"
+    ],
+    "tell": "Person closer to you as subject + 頼んで → 〜てもらう. Passive would mean it was unwanted.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-029",
+    "type": "p7",
+    "point": "P3-7",
+    "set": "engine",
+    "s": "寝ぐせのついた頭のまま歩いていたら、同僚に写真を（　　）、社内のチャットに載せられてしまった。",
+    "en": "I was walking around with bed hair, and a colleague snapped a photo of me and posted it in the company chat.",
+    "c": [
+      "撮られて",
+      "撮ってもらって",
+      "撮ってくれて",
+      "撮ってあげて"
+    ],
+    "cp": [
+      "P3-7",
+      "P3-7",
+      "P3-7",
+      "P3-7"
+    ],
+    "why": [
+      "An unwelcome act by someone else takes the passive: 同僚に撮られて. 載せられてしまった confirms it.",
+      "〜てもらって = a favour I asked for. Nobody asks to be photographed with bed hair.",
+      "〜てくれて = someone kindly did it for me. It clashes with 載せられてしまった.",
+      "〜てあげて = I did it for the colleague. The colleague took the photo, not me."
+    ],
+    "cue": [
+      "寝ぐせのついた頭",
+      "載せられてしまった"
+    ],
+    "tell": "Same act, opposite feeling: unwelcome → 〜られる; welcome → 〜てもらう.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-030",
+    "type": "p7",
+    "point": "X-1",
+    "set": "engine",
+    "s": "部長、来月の新商品発表会の司会ですが、ぜひ私に（　　）。",
+    "en": "About hosting next month's new product launch: would you please let me take it on?",
+    "c": [
+      "担当させていただけないでしょうか",
+      "担当していただけないでしょうか",
+      "担当させてあげられないでしょうか",
+      "担当してもよろしいでしょうか"
+    ],
+    "cp": [
+      "X-1",
+      "X-1",
+      "P3-7",
+      "X-1"
+    ],
+    "why": [
+      "I want to do it and need the manager's permission: causative (let me do it) + いただけないでしょうか. 私に marks me as the one who will do it.",
+      "担当していただけないでしょうか asks the manager to take it on himself. ぜひ私に shows I want the job.",
+      "〜てあげる sends a favour away from the speaker, as when you plead for someone else (彼に担当させてあげてください). A favour coming to me takes いただく or くださる.",
+      "担当してもよろしいでしょうか asks permission for my own action, but then the doer is 私が, not 私に. 私に only works with the causative 〜させる."
+    ],
+    "cue": [
+      "ぜひ私に"
+    ],
+    "tell": "I want to do it, you must permit: 私に〜させていただけないでしょうか.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-031",
+    "type": "p7",
+    "point": "X-1",
+    "set": "engine",
+    "s": "では、明日の午後2時に、私が御社に（　　）。",
+    "en": "Then I will come to your office tomorrow at 2 p.m.",
+    "c": [
+      "伺います",
+      "いらっしゃいます",
+      "おいでになります",
+      "お越しになります"
+    ],
+    "cp": [
+      "X-1",
+      "X-1",
+      "X-1",
+      "X-1"
+    ],
+    "why": [
+      "The action is mine (私が): going to the client's office. Humble language (謙譲): 伺う.",
+      "いらっしゃる is honorific (尊敬). It raises the doer, so it cannot describe my own visit.",
+      "おいでになる is also honorific. Never use it for yourself.",
+      "お越しになる is honorific for someone else's coming. My own visit needs humble language."
+    ],
+    "cue": [
+      "私が",
+      "御社に"
+    ],
+    "tell": "My action → 謙譲 (伺う・参る). Their action → 尊敬 (いらっしゃる・お越しになる).",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-032",
+    "type": "p7",
+    "point": "X-1",
+    "set": "engine",
+    "s": "先生が来週の学会で（　　）資料を、事前に拝見してもよろしいでしょうか。",
+    "en": "May I see, in advance, the materials you will be using at next week's conference?",
+    "c": [
+      "お使いになる",
+      "お使いする",
+      "使わせていただく",
+      "お使いいただく"
+    ],
+    "cp": [
+      "X-1",
+      "X-1",
+      "X-1",
+      "X-1"
+    ],
+    "why": [
+      "先生が is the doer, so use honorific language (尊敬): お〜になる.",
+      "お〜する is humble (謙譲), for my own actions. The professor is the one using the materials.",
+      "使わせていただく means I use something with permission. The professor is the user.",
+      "お〜いただく means I receive the favour of someone using it. Its subject is the receiver, so it cannot follow 先生が."
+    ],
+    "cue": [
+      "先生が"
+    ],
+    "tell": "Xが + their action → お〜になる. お〜する and させていただく are for your own actions.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-033",
+    "type": "p7",
+    "point": "X-1",
+    "set": "engine",
+    "s": "それでは、本日の講師をご紹介します。山本先生は、長年、海外で日本語教育に携わって（　　）。",
+    "en": "Now let me introduce today's speaker. Professor Yamamoto has worked in Japanese language teaching overseas for many years.",
+    "c": [
+      "いらっしゃいました",
+      "おりました",
+      "参りました",
+      "いただきました"
+    ],
+    "cp": [
+      "X-1",
+      "X-1",
+      "X-1",
+      "X-1"
+    ],
+    "why": [
+      "The host describes the guest speaker's career to the audience, so honorific: 〜ていらっしゃる (尊敬 of いる).",
+      "おる is humble (謙譲). It is for yourself or your own side, not an honoured guest.",
+      "参る is humble for going or coming, and it would lower the guest.",
+      "〜ていただく means someone did the speaker a favour. Teaching overseas for years was not a favour to the host."
+    ],
+    "cue": [
+      "本日の講師",
+      "山本先生は"
+    ],
+    "tell": "Introducing a guest's career → 尊敬 〜ていらっしゃる. おる and 参る are for your own side.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-034",
+    "type": "p7",
+    "point": "X-1",
+    "set": "engine",
+    "s": "お電話ありがとうございます。あいにく部長の田中は、ただいま会議に（　　）。終わり次第、こちらからお電話いたします。",
+    "en": "Thank you for calling. I'm afraid our manager, Tanaka, is in a meeting right now. We will call you back as soon as it finishes.",
+    "c": [
+      "出ております",
+      "出ていらっしゃいます",
+      "出ておいでです",
+      "出られています"
+    ],
+    "cp": [
+      "X-1",
+      "X-1",
+      "X-1",
+      "X-1"
+    ],
+    "why": [
+      "To an outside caller, your own company counts as 'my side', so your own boss gets humble おる. 部長の田中 (no title after the name, no さん) shows this.",
+      "いらっしゃる raises the boss in front of an outsider. To people outside the company, your own staff take humble forms.",
+      "おいでだ is honorific and has the same problem.",
+      "〜られる is honorific too. Your own boss is lowered, not raised, when you speak to a client."
+    ],
+    "cue": [
+      "お電話ありがとうございます",
+      "部長の田中は"
+    ],
+    "tell": "To outsiders, your own company's people count as 'me': 部長の田中は〜ております.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-035",
+    "type": "p7",
+    "point": "X-1",
+    "set": "engine",
+    "s": "本日は誠に勝手ながら、店内改装のため、午後6時で閉店（　　）。",
+    "en": "We apologise for the inconvenience, but today we will close at 6 p.m. for store renovations.",
+    "c": [
+      "させていただきます",
+      "していただきます",
+      "なさいます",
+      "してくださいます"
+    ],
+    "cp": [
+      "X-1",
+      "X-1",
+      "X-1",
+      "X-1"
+    ],
+    "why": [
+      "Closing is the shop's own action, done with the customers' indulgence. 〜させていただきます is the humble 'we will, with your leave'. 誠に勝手ながら sets this up.",
+      "〜していただきます means the customers will do the closing. Closing is the shop's action.",
+      "なさる is honorific for someone else's action. The shop cannot raise its own act.",
+      "〜てくださる means someone does it for us. Nobody closes the shop for the shop."
+    ],
+    "cue": [
+      "誠に勝手ながら"
+    ],
+    "tell": "Our own action, done with your leave (勝手ながら) → 〜させていただきます.",
+    "lv": 3
+  },
+  {
+    "id": "7-EN-036",
+    "type": "p7",
+    "point": "P3-9",
+    "set": "text",
+    "s": "先日、駅のホームで電車を待っていると、見知らぬ女性（　　）「このかばん、あなたのですか」と声をかけてきた。",
+    "en": "The other day, while I was waiting for a train on the platform, a woman I had never seen before came up to me and asked, \"Is this bag yours?\"",
+    "c": [
+      "が",
+      "は",
+      "も",
+      "なら"
+    ],
+    "cp": [
+      "P3-9",
+      "P3-9",
+      null,
+      null
+    ],
+    "why": [
+      "見知らぬ女性 enters the story for the first time. A new person or a new event in a story takes が.",
+      "は marks someone already known, or someone set against another person. This woman is a stranger who has only just appeared.",
+      "も means 'too' and needs someone else who also spoke to me. Nobody else has been mentioned.",
+      "なら takes up a topic someone has just raised (that woman? well, she…). Nobody has asked about her."
+    ],
+    "cue": [
+      "見知らぬ女性",
+      "待っていると"
+    ],
+    "tell": "Someone or something appears in the story for the first time → が. は is for what is already known.",
+    "lv": 2
+  },
+  {
+    "id": "7-EN-037",
+    "type": "p7",
+    "point": "P3-9",
+    "set": "text",
+    "s": "前の上司は細かいことまで指示する人だったが、今の上司（　　）部下に仕事を任せて、ほとんど口を出さない人だ。",
+    "en": "My last boss told us what to do down to the smallest detail, but my current boss leaves the work to us and hardly ever interferes.",
+    "c": [
+      "は",
+      "が",
+      "も",
+      "を"
+    ],
+    "cp": [
+      "P3-9",
+      "P3-9",
+      null,
+      null
+    ],
+    "why": [
+      "Two bosses are set side by side, and the second half says what kind of person the current one is. A contrast, and a description of someone already known, both take は.",
+      "が before 〜人だ singles the current boss out as 'the one who is like that', as if answering 'which boss?'. Nobody asked that.",
+      "も means 'also'. The previous boss was the opposite type, so 'also' contradicts the first half.",
+      "を marks the object of a verb. 今の上司 is the one who leaves the work to others, and 任せる already has its object, 仕事を."
+    ],
+    "cue": [
+      "前の上司は",
+      "だったが"
+    ],
+    "tell": "Aは…だが、B（ ）…: two things in contrast → は on both. が singles B out; も means 'the same'.",
+    "lv": 2
+  },
+  {
+    "id": "7-EN-038",
+    "type": "p7",
+    "point": "P3-12",
+    "s": "今回の調査結果から判断すると、本計画は根本から見直さ（　　）と考える。",
+    "en": "Judging from the results of this survey, we believe there is no choice but to rethink this plan from the ground up.",
+    "c": [
+      "ざるを得ない",
+      "なきゃいけない",
+      "ないとまずい",
+      "なくちゃならない"
+    ],
+    "cp": [
+      "P3-12",
+      "P3-12",
+      "P3-12",
+      "P3-12"
+    ],
+    "why": [
+      "ざるを得ない is the written way to say 'have no choice but to'. 本計画 and 〜と考える mark a formal report in である style.",
+      "なきゃ is a spoken contraction of なければ. The meaning is close, but a written report cannot use it.",
+      "〜ないとまずい ('it'd be bad if we didn't') is casual speech. It does not belong in a report.",
+      "なくちゃ is a spoken contraction of なくては. A report needs the full written form."
+    ],
+    "cue": [
+      "本計画",
+      "と考える"
+    ],
+    "tell": "Formal report → no contractions: ざるを得ない (or なければならない), never なきゃ or なくちゃ.",
+    "lv": 2
+  },
+  {
+    "id": "7-EN-039",
+    "type": "p7",
+    "point": "P3-12",
+    "s": "検討の結果、この方法は費用の面では決して効率的（　　）、安全性の高さを考えれば採用する価値があると判断した。",
+    "en": "After review, we concluded that although this method is by no means cost-efficient, its high level of safety makes it worth adopting.",
+    "c": [
+      "ではないが",
+      "じゃないが",
+      "ではないけど",
+      "じゃないけど"
+    ],
+    "cp": [
+      "P3-12",
+      "P3-12",
+      "P3-12",
+      "P3-12"
+    ],
+    "why": [
+      "では + ない + が keeps every piece in written style. 検討の結果 and 判断した mark a formal report.",
+      "じゃ is the spoken contraction of では. Even with が after it, a report cannot use it.",
+      "けど is spoken. In formal writing the contrast takes が (or けれども).",
+      "Both じゃ and けど are spoken, so this is the fully casual version."
+    ],
+    "cue": [
+      "検討の結果",
+      "と判断した"
+    ],
+    "tell": "Formal report → check every piece: では not じゃ, が not けど. One spoken bit spoils it.",
+    "lv": 3
+  }
+]

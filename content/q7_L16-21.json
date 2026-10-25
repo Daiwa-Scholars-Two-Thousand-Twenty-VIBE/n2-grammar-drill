@@ -1,0 +1,2711 @@
+[
+  {
+    "id": "7-L16-001",
+    "type": "p7",
+    "point": "16-1",
+    "s": "電話（　　）お問い合わせは、平日の午前9時から午後5時まで受け付けております。",
+    "en": "Telephone enquiries are accepted on weekdays from 9 a.m. to 5 p.m.",
+    "c": [
+      "による",
+      "によって",
+      "について",
+      "にとって"
+    ],
+    "cp": [
+      "16-1",
+      "16-1",
+      null,
+      "19-5"
+    ],
+    "why": [
+      "名＋による＋名: 'by means of'. A noun follows the blank (お問い合わせ), so you need the noun-modifying form. Everyday tools are fine in this form: 電話による問い合わせ.",
+      "によって links to a verb or a whole clause. It cannot sit straight in front of a noun.",
+      "について means 'about', and before a noun it needs の (についての). 'Enquiries about the telephone' is not the meaning either.",
+      "にとって means 'from X's standpoint' and goes with a person. A phone has no standpoint, and it cannot sit before a noun without の."
+    ],
+    "cue": [
+      "お問い合わせ"
+    ],
+    "tell": "A noun straight after the blank → による, not によって. 電話による問い合わせ is fine.",
+    "lv": 1
+  },
+  {
+    "id": "7-L16-002",
+    "type": "p7",
+    "point": "16-1",
+    "s": "システム障害（　　）、昨夜から一部のATMが利用できない状態が続いている。",
+    "en": "Because of a system failure, some ATMs have been out of service since last night.",
+    "c": [
+      "により",
+      "による",
+      "によっては",
+      "にとって"
+    ],
+    "cp": [
+      "16-1",
+      "16-1",
+      null,
+      "19-5"
+    ],
+    "why": [
+      "により is the stiff written form of によって: 'because of'. It links a cause to the clause after it, as in news and official reports.",
+      "による must be followed by a noun (システム障害による停止). Here a comma and a whole clause follow.",
+      "によっては means 'depending on the case' and sets up 'in some cases'. This sentence reports one actual situation that started last night.",
+      "にとって means 'from X's standpoint' and needs a person or group with a viewpoint. A system failure has none."
+    ],
+    "cue": [
+      "昨夜から",
+      "続いている"
+    ],
+    "tell": "Cause + a clause, in formal writing → により／によって. による needs a noun after it.",
+    "lv": 2
+  },
+  {
+    "id": "7-L16-003",
+    "type": "p7",
+    "point": "16-2",
+    "s": "すみません、目覚まし時計が鳴らなかった（　　）、遅刻してしまいました。",
+    "en": "I'm sorry. It's just that my alarm clock didn't go off, so I ended up being late.",
+    "c": [
+      "ものですから",
+      "ものの",
+      "ものなら",
+      "ことだし"
+    ],
+    "cp": [
+      "16-2",
+      "14-2",
+      "15-2",
+      "17-1"
+    ],
+    "why": [
+      "〜ものだから (polite: ものですから) gives a personal excuse: 'the thing is, ~'. It fits an apology that starts with すみません.",
+      "ものの means 'although'. 'Although the alarm didn't ring, I was late' is backwards: being late is the expected result.",
+      "ものなら means 'if only I could' and takes a dictionary or potential form (戻れるものなら). It cannot follow a past form like 鳴らなかった.",
+      "ことだし gives a light reason and must lead to 'let's' or 'I'll'. An apology for being late is not that."
+    ],
+    "cue": [
+      "すみません",
+      "遅刻してしまいました"
+    ],
+    "tell": "An apology plus your reason → ものですから, the polite excuse form.",
+    "lv": 1
+  },
+  {
+    "id": "7-L16-004",
+    "type": "p7",
+    "point": "16-2",
+    "s": "お返事が遅くなり、申し訳ありません。先週は出張で（　　）。",
+    "en": "I'm sorry for the late reply. It's just that I was away on a business trip last week.",
+    "c": [
+      "留守にしておりましたもので",
+      "留守にしていらっしゃったもので",
+      "留守にしておりましたものの",
+      "留守にしておりましたことですし"
+    ],
+    "cp": [
+      "16-2",
+      "16-2",
+      "14-2",
+      "17-1"
+    ],
+    "why": [
+      "〜もので is the excuse form (like ものだから), and it can end the sentence, trailing off politely. おりました is humble, right for your own action.",
+      "いらっしゃる is honorific. You never use it for your own action, so the keigo is wrong even though the excuse form is right.",
+      "ものの means 'although' and needs a second half. Left hanging, 'although I was away' explains nothing.",
+      "ことですし is a light reason that leads to a suggestion ('so let's ~'). It cannot close an apology."
+    ],
+    "cue": [
+      "申し訳ありません"
+    ],
+    "tell": "Apologising for your own delay → humble verb + もので. Never honorific for yourself.",
+    "lv": 3
+  },
+  {
+    "id": "7-L16-005",
+    "type": "p7",
+    "point": "16-2",
+    "s": "A「もう会議、始まってますよ。」　B「申し訳ありません。駅前の道がひどく混んでいた（　　）。」",
+    "en": "A: 'The meeting's already started.' B: 'I'm so sorry. It's just that the road by the station was terribly busy.'",
+    "c": [
+      "ものですから",
+      "ものですか",
+      "ものでしょうか",
+      "ものですね"
+    ],
+    "cp": [
+      "16-2",
+      "12-3",
+      null,
+      "26-2A"
+    ],
+    "why": [
+      "ものですから is the polite excuse form. It often ends the sentence and leaves 'so I'm late' unsaid.",
+      "ものですか is the polite 'as if!': an angry denial (12課-3). It makes no sense right after an apology.",
+      "ものでしょうか asks 'I wonder whether ~?'. B is giving a reason, not asking a question.",
+      "た形＋ものだ is fond nostalgia: 'the road used to be so busy, didn't it'. That does not explain why B is late."
+    ],
+    "cue": [
+      "申し訳ありません"
+    ],
+    "tell": "Sorry + a reason, sentence trails off → ものですから. ものですか is 'as if!'.",
+    "lv": 3
+  },
+  {
+    "id": "7-L16-006",
+    "type": "p7",
+    "point": "16-3",
+    "set": "reason1",
+    "s": "先輩が丁寧に教えてくださった（　　）、初めての仕事も無事に終えることができた。",
+    "en": "Thanks to my senior teaching me so carefully, I managed to finish my first job without any trouble.",
+    "c": [
+      "おかげで",
+      "せいで",
+      "あまり",
+      "につき"
+    ],
+    "cp": [
+      "16-3",
+      "16-3",
+      "16-4",
+      "16-5"
+    ],
+    "why": [
+      "〜おかげで: X led to a good result. Finishing the job without trouble is good, and 教えてくださった shows thanks.",
+      "せいで blames X for a bad result. Finishing without trouble is good.",
+      "あまり means 'out of too much ~' and leads to an abnormal, usually bad, result. Careful teaching is not an excess, and the result is good.",
+      "につき attaches to a noun on a notice (工事につき休業). It cannot follow a verb like 教えてくださった."
+    ],
+    "cue": [
+      "無事に終えることができた"
+    ],
+    "tell": "Good result → おかげで. Bad result → せいで. This rule never changes.",
+    "lv": 1
+  },
+  {
+    "id": "7-L16-007",
+    "type": "p7",
+    "point": "16-3",
+    "s": "引っ越しの疲れが出た（　　）、今朝から少し熱っぽい。",
+    "en": "Maybe because the tiredness from moving has caught up with me, I've felt a bit feverish since this morning.",
+    "c": [
+      "せいか",
+      "おかげか",
+      "からには",
+      "ことだし"
+    ],
+    "cp": [
+      "16-3",
+      "16-3",
+      "17-5",
+      "17-1"
+    ],
+    "why": [
+      "〜せいか: 'perhaps because of ~', with a bad result. Feeling feverish is bad, and か softens the cause to a guess.",
+      "おかげか needs a good result. Feeling feverish is not one.",
+      "からには ('now that ~') must lead to resolve or duty (〜つもりだ, 〜べきだ). A report of how you feel is neither.",
+      "ことだし must lead to 'let's' or 'I'll'. Nothing is being proposed."
+    ],
+    "cue": [
+      "熱っぽい"
+    ],
+    "tell": "Bad result, cause only guessed → せいか. Good result → おかげか.",
+    "lv": 1
+  },
+  {
+    "id": "7-L16-008",
+    "type": "p7",
+    "point": "16-3",
+    "s": "最近、夜ぐっすり眠れるようになった。妻に言われて寝る前のスマホをやめた（　　）。妻には感謝している。",
+    "en": "Lately I've been sleeping soundly at night. It may be thanks to giving up my phone before bed, as my wife suggested. I'm grateful to her.",
+    "c": [
+      "おかげかもしれない",
+      "せいかもしれない",
+      "あまりかもしれない",
+      "おかげなものか"
+    ],
+    "cp": [
+      "16-3",
+      "16-3",
+      "16-4",
+      "12-3"
+    ],
+    "why": [
+      "おかげ marks the cause of a good result, and かもしれない makes it a modest guess. Sleeping well is good, and 感謝している confirms the thanks.",
+      "せい points at a cause with blame, or at best neutrally. It cannot carry the thanks that 妻には感謝している expresses.",
+      "〜あまり needs a feeling taken too far (心配のあまり) and must lead on to its result. It cannot end a sentence with かもしれない.",
+      "〜ものか is an angry 'as if!' that rejects the cause. The speaker is offering the cause and thanking his wife for it."
+    ],
+    "cue": [
+      "ぐっすり眠れるようになった",
+      "感謝している"
+    ],
+    "tell": "A good change + thanks + a guessed cause → おかげかもしれない. せい never carries thanks.",
+    "lv": 3
+  },
+  {
+    "id": "7-L16-009",
+    "type": "p7",
+    "point": "16-4",
+    "s": "試験の結果が心配な（　　）、ゆうべはほとんど眠れなかった。",
+    "en": "I was so worried about my exam results that I barely slept last night.",
+    "c": [
+      "あまり",
+      "おかげで",
+      "ものの",
+      "ことだし"
+    ],
+    "cp": [
+      "16-4",
+      "16-3",
+      "14-2",
+      "17-1"
+    ],
+    "why": [
+      "〜あまり: so much of a feeling that an abnormal, usually bad, result followed. 心配な＋あまり, then barely sleeping.",
+      "おかげで needs a good result. Not sleeping is bad.",
+      "ものの means 'although'. 'Although I was worried, I barely slept' is backwards: losing sleep is what worry causes.",
+      "ことだし must lead to 'let's' or 'I'll'. A sleepless night is a report, not a plan."
+    ],
+    "cue": [
+      "心配な",
+      "ほとんど眠れなかった"
+    ],
+    "tell": "A strong feeling + an abnormal result → あまり. Look for 心配・緊張・喜び in front.",
+    "lv": 1
+  },
+  {
+    "id": "7-L16-010",
+    "type": "p7",
+    "point": "16-4",
+    "s": "失敗を恐れる（　　）、新しいことに挑戦できない若者が増えているという。",
+    "en": "It is said that more and more young people are so afraid of failing that they can't try anything new.",
+    "c": [
+      "あまり",
+      "からには",
+      "ことだし",
+      "だけあって"
+    ],
+    "cp": [
+      "16-4",
+      "17-5",
+      "17-1",
+      "19-3"
+    ],
+    "why": [
+      "〜あまり: so much of a feeling (fear of failure) that it causes an abnormal result. 恐れる is a feeling verb in the plain affirmative, which あまり needs.",
+      "からには ('now that ~') must lead to resolve or duty. 'Can't try anything new' is the opposite of resolve.",
+      "ことだし must lead to 'let's' or 'I'll'. This sentence reports a social trend.",
+      "だけあって praises a result that lives up to its cause. Being unable to try new things is not praise."
+    ],
+    "cue": [
+      "恐れる",
+      "挑戦できない"
+    ],
+    "tell": "Feeling verb + an abnormal, unwanted result → あまり. からには and ことだし need a plan after.",
+    "lv": 2
+  },
+  {
+    "id": "7-L16-011",
+    "type": "p7",
+    "point": "16-5",
+    "set": "reason1",
+    "s": "【お知らせ】本日は館内工事（　　）、午後3時で閉館いたします。",
+    "en": "Notice: Due to construction work in the building, we will close at 3 p.m. today.",
+    "c": [
+      "につき",
+      "のおかげで",
+      "のあまり",
+      "に応じて"
+    ],
+    "cp": [
+      "16-5",
+      "16-3",
+      "16-4",
+      "9-4"
+    ],
+    "why": [
+      "名＋につき: the reason for a current arrangement, on signs and notices. 【お知らせ】 tells you this is a notice.",
+      "おかげで credits X for a good result. Closing early is bad news for visitors, so おかげ does not fit.",
+      "あまり follows a strong feeling or state (緊張のあまり). Construction work is not a feeling.",
+      "に応じて means 'adjusting to' a variable (予算に応じて). Closing at 3 p.m. is not an adjustment to the works."
+    ],
+    "cue": [
+      "【お知らせ】",
+      "閉館いたします"
+    ],
+    "tell": "A notice or sign giving the reason for today's arrangement → 名＋につき.",
+    "lv": 1
+  },
+  {
+    "id": "7-L16-012",
+    "type": "p7",
+    "point": "16-5",
+    "s": "【臨時休業のお知らせ】設備点検（　　）、11月3日は終日休業いたします。",
+    "en": "Notice of temporary closure: owing to an equipment inspection, we will be closed all day on 3 November.",
+    "c": [
+      "につき",
+      "なものですから",
+      "にもかかわらず",
+      "であるばかりに"
+    ],
+    "cp": [
+      "16-5",
+      "16-2",
+      "14-1",
+      "17-4"
+    ],
+    "why": [
+      "につき is the notice form: 'owing to ~, this is the arrangement'. The heading tells you it is a notice.",
+      "ものですから is a spoken, personal excuse. A posted notice does not make excuses.",
+      "〜にもかかわらず needs a result that goes against the fact. An inspection is exactly why a place closes, so there is no contrast.",
+      "ばかりに means one cause led to a regretted result, and it cannot be followed by the writer's own decision (休業いたします)."
+    ],
+    "cue": [
+      "【臨時休業のお知らせ】"
+    ],
+    "tell": "Notice heading + noun reason → につき. ものですから is a spoken excuse.",
+    "lv": 2
+  },
+  {
+    "id": "7-L16-013",
+    "type": "p7",
+    "point": "16-5",
+    "set": "reason1",
+    "s": "【お客様へ】誠に勝手ながら、（　　）。",
+    "en": "To our customers: We apologise for any inconvenience, but owing to staff training we will open at 2 p.m. today.",
+    "c": [
+      "従業員研修につき、本日は午後2時からの営業とさせていただきます",
+      "従業員研修につき、本日は午後2時から営業してくださいませ",
+      "従業員研修なものですから、本日は午後2時からの営業とさせていただきます",
+      "従業員研修のあまり、本日は午後2時からの営業とさせていただきます"
+    ],
+    "cp": [
+      "16-5",
+      "16-5",
+      "16-2",
+      "16-4"
+    ],
+    "why": [
+      "Notice style: 名＋につき, then the shop's own decision in humble form (〜とさせていただきます).",
+      "〜てくださいませ asks the reader to do it. Customers do not open the shop, so the request is aimed at the wrong person.",
+      "ものですから is a spoken excuse. On a posted notice it sounds like someone chatting at the counter.",
+      "〜あまり needs a feeling or state taken too far (心配のあまり). Staff training is an event, not an excess."
+    ],
+    "cue": [
+      "【お客様へ】",
+      "誠に勝手ながら"
+    ],
+    "tell": "Notice to customers → 名＋につき + 〜させていただきます. No spoken excuses.",
+    "lv": 3
+  },
+  {
+    "id": "7-L17-001",
+    "type": "p7",
+    "point": "17-1",
+    "set": "reason2",
+    "s": "みんなそろった（　　）、そろそろ会議を始めましょうか。",
+    "en": "Everyone's here now, so shall we get the meeting started?",
+    "c": [
+      "ことだし",
+      "だけに",
+      "ものだから",
+      "ばかりに"
+    ],
+    "cp": [
+      "17-1",
+      "17-3",
+      "16-2",
+      "17-4"
+    ],
+    "why": [
+      "〜ことだし: a light reason that nudges toward a plan. It is followed by 'let's', 'shall we' or 'I'll', like 始めましょうか.",
+      "だけに leads to a state that fits the reason. It cannot be followed by an invitation.",
+      "ものだから is a personal excuse. It cannot be followed by an invitation or the speaker's intention.",
+      "ばかりに leads to a regretted bad result. It cannot be followed by an invitation."
+    ],
+    "cue": [
+      "始めましょうか"
+    ],
+    "tell": "Light reason + 'shall we / let's' → ことだし. ものだから, ばかりに and だけに refuse it.",
+    "lv": 1
+  },
+  {
+    "id": "7-L17-002",
+    "type": "p7",
+    "point": "17-1",
+    "set": "reason2",
+    "s": "今日は天気もいい（　　）、お昼は公園で食べようか。",
+    "en": "The weather's nice today too, so shall we have lunch in the park?",
+    "c": [
+      "ことだし",
+      "からには",
+      "だけに",
+      "ばかりに"
+    ],
+    "cp": [
+      "17-1",
+      "17-5",
+      "17-3",
+      "17-4"
+    ],
+    "why": [
+      "〜ことだし gives one light reason among others (note the も) and leads to a casual suggestion: 食べようか.",
+      "からには also takes a plan after it, but it needs a weighty premise that commits you (引き受けたからには). Nice weather commits no one to anything.",
+      "だけに leads to a state that fits the reason. It cannot be followed by a suggestion.",
+      "ばかりに leads to a regretted bad result and cannot be followed by a suggestion."
+    ],
+    "cue": [
+      "天気もいい",
+      "食べようか"
+    ],
+    "tell": "〜も + a light reason + a casual 'shall we' → ことだし. からには needs a serious commitment.",
+    "lv": 2
+  },
+  {
+    "id": "7-L17-003",
+    "type": "p7",
+    "point": "17-1",
+    "s": "A「課長、そろそろ終わりにしませんか。」　B「そうだな。（　　）、今日は早めに切り上げるか。」",
+    "en": "A: 'Shall we call it a day, sir?' B: 'Right. We've still got time before the deadline, so let's finish early today.'",
+    "c": [
+      "締め切りまでまだ余裕もあることだし",
+      "締め切りまでまだ余裕もあるからといって",
+      "締め切りまでまだ余裕もあるものの",
+      "締め切りまでまだ余裕もあるだけに"
+    ],
+    "cp": [
+      "17-1",
+      "14-6",
+      "14-2",
+      "17-3"
+    ],
+    "why": [
+      "ことだし gives a light reason and leads to the speaker's decision or suggestion, here 切り上げるか ('let's wrap up').",
+      "からといって means 'just because ~ (it doesn't follow)'. It needs a denial after it, such as 〜とは限らない.",
+      "ものの means 'although'. Spare time supports stopping early, so 'although' is backwards, and ものの cannot lead to a suggestion.",
+      "だけに leads to a state that fits the reason. It cannot be followed by a suggestion like 〜か."
+    ],
+    "cue": [
+      "切り上げるか"
+    ],
+    "tell": "Long choices: read the ending first. A suggestion (〜か, 〜よう) after a light reason → ことだし.",
+    "lv": 3
+  },
+  {
+    "id": "7-L17-004",
+    "type": "p7",
+    "point": "17-2",
+    "s": "時間に正確な山田さん（　　）、きっと約束の10分前には来ているだろう。",
+    "en": "Knowing how punctual Yamada is, they'll surely be there ten minutes before the agreed time.",
+    "c": [
+      "のことだから",
+      "だけあって",
+      "のおかげで",
+      "ばかりに"
+    ],
+    "cp": [
+      "17-2",
+      "19-3",
+      "16-3",
+      "17-4"
+    ],
+    "why": [
+      "人＋のことだから: judging from that person's character, I guess this. きっと〜だろう is the guess.",
+      "だけあって praises something already shown. It cannot be followed by a guess like だろう.",
+      "おかげで reports a good result that really happened. A guess about what someone will do is not a result.",
+      "ばかりに leads to a regretted bad result, and after a noun it needs である (山田さんであるばかりに)."
+    ],
+    "cue": [
+      "時間に正確な",
+      "きっと",
+      "だろう"
+    ],
+    "tell": "A person + their character + a guess (きっと〜だろう) → のことだから.",
+    "lv": 2
+  },
+  {
+    "id": "7-L17-005",
+    "type": "p7",
+    "point": "17-2",
+    "s": "A「田中さん、まだ来ないね。」　B「あの人（　　）、また寝坊でもしたんじゃない？」",
+    "en": "A: 'Tanaka's still not here.' B: 'Knowing them, they've probably overslept again, haven't they?'",
+    "c": [
+      "のことだから",
+      "だけあって",
+      "のおかげで",
+      "にしては"
+    ],
+    "cp": [
+      "17-2",
+      "19-3",
+      "16-3",
+      "19-2"
+    ],
+    "why": [
+      "人＋のことだから: knowing this person's habits, B makes a guess. また and 〜んじゃない？ show a guess about typical behaviour.",
+      "だけあって praises something already shown. It cannot lead to a guess.",
+      "おかげで needs a good result that really happened. Oversleeping is neither.",
+      "にしては means the result is surprising for that person. また ('again') says oversleeping is typical, not surprising."
+    ],
+    "cue": [
+      "また",
+      "んじゃない？"
+    ],
+    "tell": "Person + a guess based on their usual habits (また〜んじゃない？) → のことだから.",
+    "lv": 2
+  },
+  {
+    "id": "7-L17-006",
+    "type": "p7",
+    "point": "17-3",
+    "s": "この店は人気が高い（　　）、週末は予約なしではまず入れない。",
+    "en": "Precisely because this restaurant is so popular, you can hardly get in at weekends without a booking.",
+    "c": [
+      "だけに",
+      "にしては",
+      "ものの",
+      "からといって"
+    ],
+    "cp": [
+      "17-3",
+      "19-2",
+      "14-2",
+      "14-6"
+    ],
+    "why": [
+      "〜だけに: because of X, a fitting state follows, often stronger than usual. A popular place is naturally hard to get into.",
+      "にしては needs a result that is surprising for X. Being full is exactly what you expect of a popular restaurant.",
+      "ものの means 'although'. 'Although it's popular, you can't get in' is backwards.",
+      "からといって means 'just because ~' and needs a denial after it (〜とは限らない). 'You can hardly get in' is not one."
+    ],
+    "cue": [
+      "人気が高い",
+      "まず入れない"
+    ],
+    "tell": "Reason → a fitting, expected state (often stronger than usual) → だけに.",
+    "lv": 2
+  },
+  {
+    "id": "7-L17-007",
+    "type": "p7",
+    "point": "17-3",
+    "set": "dakeni",
+    "s": "この旅行は半年も前から楽しみにしていた（　　）、台風で中止になったときは本当にがっかりした。",
+    "en": "Precisely because I'd been looking forward to this trip for six months, I was really disappointed when the typhoon cancelled it.",
+    "c": [
+      "だけに",
+      "だけあって",
+      "にしては",
+      "からには"
+    ],
+    "cp": [
+      "17-3",
+      "19-3",
+      "19-2",
+      "17-5"
+    ],
+    "why": [
+      "〜だけに: because of X, the feeling is all the stronger. Six months of looking forward made the disappointment bigger.",
+      "だけあって leads to praise that the cause deserves. Disappointment is not praise.",
+      "〜にしては needs a result that is surprising for X. Disappointment is exactly what six months of looking forward leads you to expect.",
+      "からには ('now that ~') must lead to resolve or duty. A past feeling of disappointment is neither."
+    ],
+    "cue": [
+      "半年も前から",
+      "本当にがっかりした"
+    ],
+    "tell": "A reason that makes the feeling stronger → だけに. Praise that lives up to the cause → だけあって.",
+    "lv": 2
+  },
+  {
+    "id": "7-L17-008",
+    "type": "p7",
+    "point": "17-3",
+    "set": "dakeni",
+    "s": "父は（　　）、一人で山に登らせるのは心配だ。",
+    "en": "Given my father's age, I'm worried about letting him climb mountains on his own.",
+    "c": [
+      "年が年だけに",
+      "年が年だけあって",
+      "年が年なばかりに",
+      "年が年のわりに"
+    ],
+    "cp": [
+      "17-3",
+      "19-3",
+      "17-4",
+      "19-1"
+    ],
+    "why": [
+      "〜が〜だけに is a fixed pattern: the same word twice means 'given how far X goes'. 年が年だけに = at his age, so it is worrying.",
+      "だけあって leads to praise. 心配だ is worry, not praise.",
+      "ばかりに needs a regretted result that already happened, and it does not form the XがX pattern.",
+      "わりに means the result is off the level you'd expect. Worry is exactly what his age leads you to expect."
+    ],
+    "cue": [
+      "心配だ"
+    ],
+    "tell": "XがXだけに (年が年だけに, 時期が時期だけに) + worry or caution → だけに.",
+    "lv": 3
+  },
+  {
+    "id": "7-L17-009",
+    "type": "p7",
+    "point": "17-4",
+    "set": "reason2",
+    "s": "傘を持たずに出かけた（　　）、ずぶぬれになって風邪までひいてしまった。",
+    "en": "All because I went out without an umbrella, I got soaked and even caught a cold.",
+    "c": [
+      "ばかりに",
+      "以上は",
+      "あまり",
+      "ことだし"
+    ],
+    "cp": [
+      "17-4",
+      "17-5",
+      "16-4",
+      "17-1"
+    ],
+    "why": [
+      "〜ばかりに: that one thing led to a bad result you regret. 〜てしまった carries the regret.",
+      "以上は ('now that ~') must lead to resolve or duty. Getting soaked is neither.",
+      "あまり needs a feeling or state taken too far (心配なあまり). Going out without an umbrella is not an excess.",
+      "ことだし must lead to 'let's' or 'I'll'. This is a report of a bad outcome."
+    ],
+    "cue": [
+      "風邪までひいてしまった"
+    ],
+    "tell": "One small cause → a regretted bad result (〜てしまった) → ばかりに.",
+    "lv": 1
+  },
+  {
+    "id": "7-L17-010",
+    "type": "p7",
+    "point": "17-4",
+    "s": "私が玄関の鍵をかけ忘れた（　　）、留守中に泥棒に入られてしまった。",
+    "en": "All because I forgot to lock the front door, a burglar got in while I was out.",
+    "c": [
+      "ばかりに",
+      "ばかりなのに",
+      "あまり",
+      "ものの"
+    ],
+    "cp": [
+      "17-4",
+      null,
+      "16-4",
+      "14-2"
+    ],
+    "why": [
+      "〜ばかりに: a single cause led to a bad result you regret. Forgetting to lock up let the burglar in.",
+      "たばかりなのに means 'I had only just done it, and yet'. That reading makes no sense with a burglary.",
+      "あまり needs a feeling or state taken too far (心配なあまり). Forgetting to lock up is a slip, not an excess.",
+      "〜ものの means 'although'. Forgetting to lock up is the cause of the burglary, not something it happened in spite of."
+    ],
+    "cue": [
+      "かけ忘れた",
+      "入られてしまった"
+    ],
+    "tell": "Your own slip + a regretted result → ばかりに. Not たばかりなのに (had just done) or あまり (too much).",
+    "lv": 3
+  },
+  {
+    "id": "7-L17-011",
+    "type": "p7",
+    "point": "17-4",
+    "set": "reason2",
+    "s": "子どもを有名な私立中学に入れたい（　　）、収入の半分近くを塾代に使っている家庭もあるそうだ。",
+    "en": "Apparently some families spend nearly half their income on cram school because they want so badly to get their child into a famous private junior high.",
+    "c": [
+      "ばかりに",
+      "からには",
+      "だけに",
+      "ことだし"
+    ],
+    "cp": [
+      "17-4",
+      "17-5",
+      "17-3",
+      "17-1"
+    ],
+    "why": [
+      "〜たいばかりに: wanting something so badly that people do something out of the ordinary. This use of ばかりに does not need a bad result.",
+      "からには must lead to the speaker's resolve, duty or advice. This sentence reports what some families do.",
+      "だけに leads to a state that naturally fits the reason. Spending half your income is an unusual action, not a fitting state.",
+      "ことだし must lead to 'let's' or 'I'll'. This is hearsay about other families (そうだ)."
+    ],
+    "cue": [
+      "入れたい",
+      "収入の半分近く"
+    ],
+    "tell": "〜たい + ばかりに → wanting it so much that you go to extremes.",
+    "lv": 2
+  },
+  {
+    "id": "7-L17-012",
+    "type": "p7",
+    "point": "17-5",
+    "s": "代表に選ばれた（　　）、チームのために全力を尽くすつもりです。",
+    "en": "Now that I've been chosen to represent the team, I intend to give it everything I've got.",
+    "c": [
+      "からには",
+      "ものだから",
+      "ばかりに",
+      "あまり"
+    ],
+    "cp": [
+      "17-5",
+      "16-2",
+      "17-4",
+      "16-4"
+    ],
+    "why": [
+      "〜からには: now that X is a fact, I will do what it demands. つもりです is the resolve.",
+      "ものだから gives a personal excuse and cannot be followed by the speaker's intention.",
+      "ばかりに leads to a regretted bad result and cannot be followed by an intention.",
+      "あまり needs an excessive feeling, and it cannot be followed by an intention either."
+    ],
+    "cue": [
+      "全力を尽くすつもりです"
+    ],
+    "tell": "Now that X + resolve (つもりだ, 〜なければ) → からには／以上は.",
+    "lv": 1
+  },
+  {
+    "id": "7-L17-013",
+    "type": "p7",
+    "point": "17-5",
+    "s": "教師である（　　）、生徒の前で不確かなことを断言するべきではない。",
+    "en": "As a teacher, you shouldn't state uncertain things as fact in front of your students.",
+    "c": [
+      "以上",
+      "ばかりに",
+      "ものだから",
+      "おかげで"
+    ],
+    "cp": [
+      "17-5",
+      "17-4",
+      "16-2",
+      "16-3"
+    ],
+    "why": [
+      "〜以上: given X, this is what naturally follows. It leads to duty or a judgement, here べきではない.",
+      "ばかりに leads to a regretted result that already happened. A rule about how teachers should act is not that.",
+      "ものだから is a personal excuse. It does not set up a rule of conduct.",
+      "おかげで reports a good result. 'Should not' is a rule, not a result."
+    ],
+    "cue": [
+      "べきではない"
+    ],
+    "tell": "A status or fact + should / must (べきだ, なければならない) → 以上／からには.",
+    "lv": 2
+  },
+  {
+    "id": "7-L17-014",
+    "type": "p7",
+    "point": "17-5",
+    "s": "課長「（　　）、最後まで責任を持ってやり遂げてもらいたい。」",
+    "en": "Section chief: 'Now that you've volunteered for this, I want you to take responsibility and see it through.'",
+    "c": [
+      "自分から手を挙げたからには",
+      "自分から手を挙げたばかりに",
+      "自分から手を挙げたものの",
+      "自分から手を挙げたにしては"
+    ],
+    "cp": [
+      "17-5",
+      "17-4",
+      "14-2",
+      "19-2"
+    ],
+    "why": [
+      "からには: now that you volunteered, you are expected to see it through. It leads naturally to a request like 〜てもらいたい.",
+      "ばかりに leads to a regretted bad result. It cannot be followed by a request.",
+      "ものの ('although') cannot be followed by a request, and 'although you volunteered' points the wrong way.",
+      "にしては needs a surprising evaluation ('for someone who volunteered, ~'). A request is not an evaluation."
+    ],
+    "cue": [
+      "やり遂げてもらいたい"
+    ],
+    "tell": "Read the ending: a request or resolve (〜てもらいたい, 〜つもりだ) → からには.",
+    "lv": 3
+  },
+  {
+    "id": "7-L18-001",
+    "type": "p7",
+    "point": "18-1",
+    "set": "cant",
+    "s": "あの真面目な彼が無断で会社を休んだとは、にわかには（　　）。",
+    "en": "That someone as conscientious as him would skip work without notice is hard to believe at first.",
+    "c": [
+      "信じがたい",
+      "信じ得る",
+      "信じかねない",
+      "信じるどころではない"
+    ],
+    "cp": [
+      "18-1",
+      "18-6",
+      "22-2",
+      "18-5"
+    ],
+    "why": [
+      "〜がたい: hard to do, for mind and speech verbs (信じがたい, 理解しがたい). にわかには ('not right away') goes with it.",
+      "信じ得る means 'it is possible to believe'. にわかには needs an ending with a negative sense.",
+      "かねない means 'might well (do something bad)'. 'Might well believe it' makes no sense here.",
+      "どころではない means there is no time or room for something (忙しくて旅行どころではない). Nothing is crowding out belief."
+    ],
+    "cue": [
+      "とは",
+      "にわかには"
+    ],
+    "tell": "Shock (〜とは) + believe / understand / forgive → 信じがたい・理解しがたい.",
+    "lv": 1
+  },
+  {
+    "id": "7-L18-002",
+    "type": "p7",
+    "point": "18-1",
+    "set": "cant",
+    "s": "夕日に染まる山々の美しさには、言葉では（　　）ものがある。",
+    "en": "There is something about the beauty of the mountains glowing in the sunset that is hard to put into words.",
+    "c": [
+      "表しがたい",
+      "表しかねない",
+      "表すわけにはいかない",
+      "表すどころではない"
+    ],
+    "cp": [
+      "18-1",
+      "22-2",
+      "18-2",
+      "18-5"
+    ],
+    "why": [
+      "〜がたい attaches to speech and mind verbs: 表しがたい = 'hard to put into words'. 〜ものがある voices the writer's feeling.",
+      "かねない means 'might well (cause something bad)'. Beauty that 'might well be expressed' makes no sense.",
+      "わけにはいかない is a social or moral block on your own action. Nothing social stops you describing a sunset.",
+      "どころではない means there is no time or room for it. Nothing is crowding out the description."
+    ],
+    "cue": [
+      "言葉では",
+      "ものがある"
+    ],
+    "tell": "Words fail, beyond belief → 表しがたい・信じがたい. Mind and speech verbs + がたい.",
+    "lv": 2
+  },
+  {
+    "id": "7-L18-003",
+    "type": "p7",
+    "point": "18-2",
+    "set": "cant",
+    "s": "明日は大事なプレゼンがあるので、少し熱があるくらいで（　　）。",
+    "en": "I have an important presentation tomorrow, so I can't very well take the day off over a slight fever.",
+    "c": [
+      "休むわけにはいかない",
+      "休みかねない",
+      "休まないわけにはいかない",
+      "休み得ない"
+    ],
+    "cp": [
+      "18-2",
+      "22-2",
+      "25-4",
+      "18-6"
+    ],
+    "why": [
+      "〜わけにはいかない: you could, but duty stops you. くらいで ('over something as small as') says a slight fever is no excuse.",
+      "かねない means 'might well (do something bad)'. That contradicts the speaker's reasoning.",
+      "〜ないわけにはいかない means 'I have no choice but to', here 'I must take the day off'. That clashes with くらいで, which calls the fever trivial.",
+      "得ない means an event cannot possibly happen. It is not used for one person's choice about their own day."
+    ],
+    "cue": [
+      "大事なプレゼン",
+      "くらいで"
+    ],
+    "tell": "A duty + a trivial excuse (〜くらいで) → 〜わけにはいかない: I could, but I mustn't.",
+    "lv": 2
+  },
+  {
+    "id": "7-L18-004",
+    "type": "p7",
+    "point": "18-2",
+    "set": "cant",
+    "s": "断ろうと思えば断れるが、恩のある先輩の頼みなので、そう簡単には（　　）。",
+    "en": "I could refuse if I wanted to, but it's a request from a senior I owe a lot to, so I can't very well turn it down that easily.",
+    "c": [
+      "断るわけにはいかない",
+      "断りようがない",
+      "断りかねない",
+      "断るどころではない"
+    ],
+    "cp": [
+      "18-2",
+      "18-4",
+      "22-2",
+      "18-5"
+    ],
+    "why": [
+      "〜わけにはいかない: you are able, but a social or moral reason (a senior you owe) stops you.",
+      "ようがない means there is no way at all. The first clause says you could refuse if you wanted.",
+      "かねない means 'might well (do something bad)'. That contradicts そう簡単には.",
+      "どころではない means there is no time or room for something you'd like to do. Nothing is crowding out a refusal; a sense of obligation is stopping it."
+    ],
+    "cue": [
+      "断ろうと思えば断れるが",
+      "恩のある"
+    ],
+    "tell": "'I could if I wanted' + someone I owe → わけにはいかない. Not ようがない (no method).",
+    "lv": 2
+  },
+  {
+    "id": "7-L18-005",
+    "type": "p7",
+    "point": "18-2",
+    "set": "wake",
+    "s": "一度引き受けた以上、途中で（　　）。",
+    "en": "Once I've taken something on, I can't very well give up halfway.",
+    "c": [
+      "投げ出すわけにはいかない",
+      "投げ出さないわけにはいかない",
+      "投げ出すわけではない",
+      "投げ出したわけだ"
+    ],
+    "cp": [
+      "18-2",
+      "25-4",
+      "12-4",
+      "IV-10"
+    ],
+    "why": [
+      "以上 leads to duty. わけにはいかない = 'I can't very well' quit halfway, because I took it on.",
+      "ないわけにはいかない means 'I have no choice but to', here 'I must quit'. That is the opposite of the commitment.",
+      "わけではない is a partial denial ('it's not that I'll quit'). It corrects a misunderstanding; it does not follow from 'since I took it on'.",
+      "わけだ means 'so it follows that I quit'. That contradicts 引き受けた以上."
+    ],
+    "cue": [
+      "引き受けた以上"
+    ],
+    "tell": "以上／からには + 'I can't very well ~' → 〜わけにはいかない. Watch for an extra ない.",
+    "lv": 3
+  },
+  {
+    "id": "7-L18-006",
+    "type": "p7",
+    "point": "18-3",
+    "set": "kaneru",
+    "s": "申し訳ございませんが、規則により、お客様の個人情報に関するご質問にはお答えし（　　）。",
+    "en": "We apologise, but under our rules we are unable to answer questions about customers' personal information.",
+    "c": [
+      "かねます",
+      "かねません",
+      "ようがありません",
+      "そうにありません"
+    ],
+    "cp": [
+      "18-3",
+      "22-2",
+      "18-4",
+      null
+    ],
+    "why": [
+      "〜かねる: 'I'm not in a position to'. It is the standard polite refusal in business: お答えしかねます.",
+      "かねません means 'might well (do something bad)'. 'We might well answer' is the opposite of a refusal.",
+      "ようがありません means there is no way at all. The staff have the information; a rule stops them giving it.",
+      "〜そうにありません is a prediction ('it doesn't look as if we will'). A refusal on the company's behalf is not a guess."
+    ],
+    "cue": [
+      "申し訳ございませんが",
+      "規則により"
+    ],
+    "tell": "Business apology + refusal → 〜かねます. かねません means the opposite: might well.",
+    "lv": 2
+  },
+  {
+    "id": "7-L18-007",
+    "type": "p7",
+    "point": "18-3",
+    "set": "kaneru",
+    "s": "誠に恐縮ですが、ご依頼の日程では（　　）。",
+    "en": "We are very sorry, but we are unable to accommodate the schedule you requested.",
+    "c": [
+      "対応いたしかねます",
+      "対応いたしかねません",
+      "ご対応なさりかねます",
+      "ご対応いただきかねます"
+    ],
+    "cp": [
+      "18-3",
+      "22-2",
+      "18-3",
+      "18-3"
+    ],
+    "why": [
+      "Humble いたす + かねます: the polite business way to say 'we cannot'. It fits 誠に恐縮ですが.",
+      "かねません means 'we might well (do something bad)'. It turns the refusal into a warning.",
+      "なさる is honorific, for the other person's actions. You cannot use it to refuse on your own behalf.",
+      "いただく means you receive the other side's action: 'we cannot have you handle it'. Your company is the one declining, so the roles are backwards."
+    ],
+    "cue": [
+      "誠に恐縮ですが"
+    ],
+    "tell": "Declining a client → 〜いたしかねます. Humble for yourself; かねません flips the meaning.",
+    "lv": 3
+  },
+  {
+    "id": "7-L18-008",
+    "type": "p7",
+    "point": "18-3",
+    "set": "cant",
+    "s": "当店では、お客様のご都合による返品・交換には（　　）。あらかじめご了承ください。",
+    "en": "We are unable to accept returns or exchanges made for customers' own reasons. Thank you for your understanding.",
+    "c": [
+      "応じかねます",
+      "応じかねません",
+      "応じるどころではありません",
+      "応じるまでもありません"
+    ],
+    "cp": [
+      "18-3",
+      "22-2",
+      "18-5",
+      null
+    ],
+    "why": [
+      "〜かねます: the shop's polite 'we cannot', used for a fixed policy. ご了承ください ('please understand') confirms it is a refusal.",
+      "かねません means 'we might well (do it)'. A policy notice does not warn that it might accept returns.",
+      "どころではない means there is no time or room for it. A return policy is not about being too busy.",
+      "〜までもありません means 'there is no need even to ~'. A refusal is not a statement that something is unnecessary."
+    ],
+    "cue": [
+      "ご了承ください"
+    ],
+    "tell": "Shop policy + ご了承ください → 〜かねます, the polite business 'no'.",
+    "lv": 2
+  },
+  {
+    "id": "7-L18-009",
+    "type": "p7",
+    "point": "18-4",
+    "set": "cant",
+    "s": "彼の連絡先を知らないので、会議の時間が変わったことを（　　）。",
+    "en": "I don't know his contact details, so I have no way of letting him know the meeting time has changed.",
+    "c": [
+      "伝えようがない",
+      "伝えがたい",
+      "伝えかねない",
+      "伝えるわけにはいかない"
+    ],
+    "cp": [
+      "18-4",
+      "18-1",
+      "22-2",
+      "18-2"
+    ],
+    "why": [
+      "〜ようがない: there is no method at all. Without his contact details, there is no way to tell him.",
+      "がたい means emotionally hard to say. The problem is missing contact details, not feelings.",
+      "かねない means 'might well (do something bad)'. That makes no sense here.",
+      "わけにはいかない is a social or moral block. Nothing social stops you; you simply have no means."
+    ],
+    "cue": [
+      "連絡先を知らないので"
+    ],
+    "tell": "No means at all (no address, no tools, no information) → 〜ようがない.",
+    "lv": 1
+  },
+  {
+    "id": "7-L18-010",
+    "type": "p7",
+    "point": "18-4",
+    "set": "cant",
+    "s": "鍵は私がずっとポケットに入れていたのだから、ほかの人が勝手に部屋に（　　）。",
+    "en": "I had the key in my pocket the whole time, so there's no way anyone else could have got into the room.",
+    "c": [
+      "入りようがない",
+      "入りかねない",
+      "入り得る",
+      "入るわけにはいかない"
+    ],
+    "cp": [
+      "18-4",
+      "22-2",
+      "18-6",
+      "18-2"
+    ],
+    "why": [
+      "〜ようがない can also mean 'it cannot possibly be': with the only key in my pocket, nobody had any way in.",
+      "かねない means 'might well happen'. のだから gives a reason that rules entry out, not in.",
+      "入り得る means 'it is possible to get in'. That contradicts the reasoning that the key never left my pocket.",
+      "わけにはいかない is the speaker's own social or moral block. The point here is that there was no means."
+    ],
+    "cue": [
+      "ずっとポケットに入れていたのだから"
+    ],
+    "tell": "No means at all, so it cannot have happened → 〜ようがない (close to はずがない).",
+    "lv": 2
+  },
+  {
+    "id": "7-L18-011",
+    "type": "p7",
+    "point": "18-4",
+    "set": "cant",
+    "s": "A「この時計、修理していただけますか。」　B「申し訳ございません。部品がもう製造されていないので、（　　）。」",
+    "en": "A: 'Could you repair this watch?' B: 'I'm very sorry. The parts are no longer made, so there's no way to fix it.'",
+    "c": [
+      "直しようがございません",
+      "直すわけにはまいりません",
+      "直しかねないです",
+      "直し得ます"
+    ],
+    "cp": [
+      "18-4",
+      "18-2",
+      "22-2",
+      "18-6"
+    ],
+    "why": [
+      "〜ようがない: no method at all. With no parts being made, repair is impossible. ございません is the polite form for a customer.",
+      "わけにはまいりません means 'we could, but we shouldn't'. The reason given is missing parts, so the shop simply can't.",
+      "かねない means 'might well (do something bad)'. It does not answer a request.",
+      "直し得ます means 'repair is possible'. That contradicts 申し訳ございません and the missing parts."
+    ],
+    "cue": [
+      "部品がもう製造されていないので"
+    ],
+    "tell": "Physically no means (no parts, no address) → ようがない, even in keigo: 〜ようがございません.",
+    "lv": 3
+  },
+  {
+    "id": "7-L18-012",
+    "type": "p7",
+    "point": "18-5",
+    "set": "dokoro",
+    "s": "引っ越しの準備で忙しくて、友達とゆっくり食事をする（　　）。",
+    "en": "I'm so busy getting ready for the move that a leisurely meal with friends is out of the question.",
+    "c": [
+      "どころではない",
+      "どころか",
+      "というものではない",
+      "ほどではない"
+    ],
+    "cp": [
+      "18-5",
+      "12-2",
+      "12-5",
+      null
+    ],
+    "why": [
+      "〜どころではない: the situation leaves no room for it. 忙しくて gives the lack of time.",
+      "どころか means 'far from ~, (in fact)…' and needs a second clause after it. It cannot end the sentence.",
+      "というものではない says a general rule does not hold ('it's not as if ~ is enough'). There is no general rule here.",
+      "ほどではない means 'not as much as ~' and compares degrees. Nothing is being compared with a meal."
+    ],
+    "cue": [
+      "忙しくて"
+    ],
+    "tell": "Busy, noisy, broke or ill + something you'd like to do → どころではない.",
+    "lv": 1
+  },
+  {
+    "id": "7-L18-013",
+    "type": "p7",
+    "point": "18-5",
+    "set": "dokoro",
+    "s": "A「週末、花見に行かない？」　B「ごめん、来週が締め切りで、花見（　　）んだ。」",
+    "en": "A: 'Want to go cherry-blossom viewing at the weekend?' B: 'Sorry, my deadline's next week, so cherry blossoms are out of the question.'",
+    "c": [
+      "どころじゃない",
+      "どころか",
+      "にすぎない",
+      "ばかりじゃない"
+    ],
+    "cp": [
+      "18-5",
+      "12-2",
+      "23-3",
+      null
+    ],
+    "why": [
+      "〜どころじゃない (spoken どころではない): no room for it. The deadline crowds out the outing.",
+      "どころか means 'far from ~, (even)…' and needs a second clause. It cannot end the sentence before んだ.",
+      "にすぎない means 'merely'. 'It's merely cherry-blossom viewing' does not explain why B is saying no.",
+      "ばかりじゃない means 'not only'. B is not adding anything; B is turning the invitation down."
+    ],
+    "cue": [
+      "締め切りで"
+    ],
+    "tell": "Deadline, no money or ill + an outing → 〜どころじゃない. どころか needs a second clause.",
+    "lv": 2
+  },
+  {
+    "id": "7-L18-014",
+    "type": "p7",
+    "point": "18-6",
+    "set": "cant",
+    "s": "どんなに注意していても、事故は起こり（　　）ことだ。",
+    "en": "No matter how careful you are, accidents are something that can happen.",
+    "c": [
+      "得る",
+      "得ない",
+      "がたい",
+      "かねる"
+    ],
+    "cp": [
+      "18-6",
+      "18-6",
+      "18-1",
+      "18-3"
+    ],
+    "why": [
+      "〜得る (うる): it is possible as an event. どんなに注意していても says accidents can still happen. 起こり得る is a set phrase.",
+      "得ない means 'impossible'. どんなに〜ても signals that accidents still can happen.",
+      "がたい is for mind and speech verbs (信じがたい). Accidents do not 'find it hard' to happen.",
+      "かねる is a person's polite 'I cannot' (お答えしかねます). An accident is not a person declining."
+    ],
+    "cue": [
+      "どんなに注意していても"
+    ],
+    "tell": "Possible as an event (起こり得る・あり得る) → 得る. Not for a person's skill.",
+    "lv": 1
+  },
+  {
+    "id": "7-L18-015",
+    "type": "p7",
+    "point": "18-6",
+    "s": "A「部長、まだ来てないね。遅刻かな。」　B「部長が遅刻なんて、（　　）よ。いつも30分前には来ている人なんだから。」",
+    "en": "A: 'The manager's not here yet. Running late?' B: 'The manager, late? Impossible. He always arrives 30 minutes early.'",
+    "c": [
+      "あり得ない",
+      "ありかねない",
+      "あるわけにはいかない",
+      "ありがたい"
+    ],
+    "cp": [
+      "18-6",
+      "22-2",
+      "18-2",
+      null
+    ],
+    "why": [
+      "あり得ない (えない): 'that's impossible'. B's reason, that the manager always comes 30 minutes early, rules lateness out.",
+      "ありかねない would mean 'it might well happen'. B's reason points the other way.",
+      "わけにはいかない is your own social or moral block. Nobody here is choosing not to do something.",
+      "ありがたい is a separate word meaning 'grateful'. It only looks like あり + がたい."
+    ],
+    "cue": [
+      "いつも30分前には来ている"
+    ],
+    "tell": "'That can't happen' about an event → あり得ない. Note: ありがたい means grateful.",
+    "lv": 2
+  },
+  {
+    "id": "7-L19-001",
+    "type": "p7",
+    "point": "19-1",
+    "set": "considering",
+    "s": "父は年齢の（　　）体力があって、毎週末のように山に登っている。",
+    "en": "For his age, my father has a lot of stamina and goes climbing in the mountains almost every weekend.",
+    "c": [
+      "わりに",
+      "にしては",
+      "だけあって",
+      "おかげで"
+    ],
+    "cp": [
+      "19-1",
+      "19-2",
+      "19-3",
+      "16-3"
+    ],
+    "why": [
+      "名＋の＋わりに: with a scale word like 年齢, the result is off the level you'd expect. Lots of stamina is unexpected at his age.",
+      "にしては attaches straight to a noun (二十歳にしては), never after の. 年齢の＋にしては is broken.",
+      "だけあって also attaches straight to a noun, never after の. It also praises a result the cause leads you to expect.",
+      "年齢のおかげで would mean his age gave him stamina. Age is the reason to expect less stamina, not more."
+    ],
+    "cue": [
+      "年齢の"
+    ],
+    "tell": "Scale word + の (年齢の・値段の) + an unexpected result → わりに. にしては takes no の.",
+    "lv": 1
+  },
+  {
+    "id": "7-L19-002",
+    "type": "p7",
+    "point": "19-1",
+    "set": "considering",
+    "s": "あれほど心配していた（　　）、手術は一時間ほどで無事に終わった。",
+    "en": "Considering how worried I'd been, the operation was over safely in about an hour.",
+    "c": [
+      "わりに",
+      "からといって",
+      "だけあって",
+      "だけに"
+    ],
+    "cp": [
+      "19-1",
+      "14-6",
+      "19-3",
+      "17-3"
+    ],
+    "why": [
+      "〜わりに compares two levels: how much I worried and how the operation went. The result was far lighter than the worry.",
+      "〜からといって needs a 'doesn't mean' ending (〜とは限らない). Here a plain report of how the operation went follows.",
+      "だけあって praises a result that the cause leads you to expect. Worry does not make an operation go smoothly.",
+      "だけに leads to a state that fits the cause. A quick, smooth operation does not follow from worrying."
+    ],
+    "cue": [
+      "あれほど心配していた"
+    ],
+    "tell": "How much of one thing vs how another turned out (心配した → あっさり終わった) → わりに.",
+    "lv": 2
+  },
+  {
+    "id": "7-L19-003",
+    "type": "p7",
+    "point": "19-1",
+    "s": "あの店のラーメンは、一時間も並んだ（　　）、味はごく普通だった。",
+    "en": "Considering we queued for a whole hour, the ramen at that shop tasted pretty ordinary.",
+    "c": [
+      "わりに",
+      "だけあって",
+      "だけに",
+      "ばかりに"
+    ],
+    "cp": [
+      "19-1",
+      "19-3",
+      "17-3",
+      "17-4"
+    ],
+    "why": [
+      "〜わりに: the result is below the level the effort led you to expect. An hour's queue for an ordinary taste.",
+      "だけあって praises a result that lives up to the cause. 'Just ordinary' is not praise.",
+      "だけに leads to a fitting state or feeling, often a stronger one (だけにがっかりした). An ordinary taste does not follow from queueing.",
+      "ばかりに means the cause itself produced a bad result. Queueing did not make the ramen ordinary."
+    ],
+    "cue": [
+      "一時間も並んだ",
+      "ごく普通だった"
+    ],
+    "tell": "Effort or price vs a result below that level → わりに. だけあって is only for results that live up to it.",
+    "lv": 2
+  },
+  {
+    "id": "7-L19-004",
+    "type": "p7",
+    "point": "19-2",
+    "s": "この料理は、料理を始めて一か月の人が作った（　　）、とてもよくできている。",
+    "en": "For something made by a person who only started cooking a month ago, this dish is really well done.",
+    "c": [
+      "にしては",
+      "だけあって",
+      "だけに",
+      "からには"
+    ],
+    "cp": [
+      "19-2",
+      "19-3",
+      "17-3",
+      "17-5"
+    ],
+    "why": [
+      "〜にしては: judged against a specific fact (made by a one-month beginner), the result is surprisingly good.",
+      "だけあって needs a cause that explains the quality (a professional made it). A one-month beginner does not.",
+      "だけに leads to a state the cause makes natural. Good cooking is not what a beginner leads you to expect.",
+      "からには ('now that ~') must lead to resolve or duty. 'It's well made' is an evaluation."
+    ],
+    "cue": [
+      "一か月の人が作った",
+      "とてもよくできている"
+    ],
+    "tell": "A specific fact that lowers expectations + a surprisingly good result → にしては.",
+    "lv": 1
+  },
+  {
+    "id": "7-L19-005",
+    "type": "p7",
+    "point": "19-2",
+    "set": "considering",
+    "s": "三日続けて同じ人と駅でばったり会うなんて、偶然（　　）できすぎている。",
+    "en": "Bumping into the same person at the station three days in a row is too neat to be a coincidence.",
+    "c": [
+      "にしては",
+      "のわりに",
+      "だけあって",
+      "だけに"
+    ],
+    "cp": [
+      "19-2",
+      "19-1",
+      "19-3",
+      "17-3"
+    ],
+    "why": [
+      "〜にしては: 'for something that is supposedly X'. 偶然にしてはできすぎている = too neat to be a coincidence.",
+      "わりに needs a scale word with degrees (値段・年齢). 偶然 is a fixed label, not a scale.",
+      "だけあって praises a result that the cause leads you to expect. Here the speaker doubts the label.",
+      "だけに leads to a state that naturally fits the cause. A coincidence does not naturally make things 'too neat'."
+    ],
+    "cue": [
+      "偶然",
+      "できすぎている"
+    ],
+    "tell": "A fixed label you doubt (偶然・冗談) + 'too ~' → にしては. わりに needs a scale word.",
+    "lv": 2
+  },
+  {
+    "id": "7-L19-006",
+    "type": "p7",
+    "point": "19-2",
+    "set": "considering",
+    "s": "A「この論文、本当に学部の二年生が書いたの？」　B「うん、（　　）よね。」",
+    "en": "A: 'Did a second-year undergraduate really write this paper?' B: 'Yes, it's well written for a second-year, isn't it?'",
+    "c": [
+      "二年生にしてはよく書けている",
+      "二年生だけあってよく書けている",
+      "二年生にとってよく書けている",
+      "二年生にしてはよく書けていない"
+    ],
+    "cp": [
+      "19-2",
+      "19-3",
+      "19-5",
+      "19-2"
+    ],
+    "why": [
+      "にしては: judged against what you expect of a second-year student, the paper is surprisingly good. A's 本当に shows the surprise.",
+      "だけあって praises a result the cause explains. Being a second-year student does not explain high quality.",
+      "にとって gives a standpoint for an evaluation ('easy for students'). It does not measure quality against an expectation.",
+      "The form is right but the meaning is flipped. A's surprised question means the paper is good, not bad."
+    ],
+    "cue": [
+      "本当に"
+    ],
+    "tell": "Surprise against a low expectation (本当に〜が書いたの？) → 〜にしては + a good result.",
+    "lv": 3
+  },
+  {
+    "id": "7-L19-007",
+    "type": "p7",
+    "point": "19-3",
+    "set": "considering",
+    "s": "さすがプロの料理人（　　）、包丁の使い方が見事だ。",
+    "en": "As you'd expect of a professional chef, their knife work is superb.",
+    "c": [
+      "だけあって",
+      "にしては",
+      "わりに",
+      "にとって"
+    ],
+    "cp": [
+      "19-3",
+      "19-2",
+      "19-1",
+      "19-5"
+    ],
+    "why": [
+      "〜だけあって: the result lives up to the cause, and it is praise. さすが almost always signals it.",
+      "にしては means the result is surprising. That clashes with さすが ('as you'd expect').",
+      "わりに also means the result is off the expected level, and after a noun it needs の (料理人のわりに).",
+      "にとって gives someone's standpoint for an evaluation. It does not explain why the knife work is good."
+    ],
+    "cue": [
+      "さすが",
+      "見事だ"
+    ],
+    "tell": "さすが + praise that the cause explains → だけあって.",
+    "lv": 1
+  },
+  {
+    "id": "7-L19-008",
+    "type": "p7",
+    "point": "19-3",
+    "set": "considering",
+    "s": "十年間パリで修業した（　　）、彼の作るデザートはどれも本格的だ。",
+    "en": "He trained in Paris for ten years, and it shows: every dessert he makes is the real thing.",
+    "c": [
+      "だけあって",
+      "ばかりに",
+      "にしては",
+      "わりに"
+    ],
+    "cp": [
+      "19-3",
+      "17-4",
+      "19-2",
+      "19-1"
+    ],
+    "why": [
+      "〜だけあって: the result lives up to the cause, as praise. Ten years of training in Paris explains authentic desserts.",
+      "ばかりに means one cause led to a bad, regretted result. Authentic desserts are not a bad result.",
+      "にしては means the result is surprising. Authentic desserts are exactly what ten years in Paris leads you to expect.",
+      "わりに means the result is off the expected level. Here it matches the level."
+    ],
+    "cue": [
+      "十年間パリで修業した",
+      "本格的だ"
+    ],
+    "tell": "Training or status + a result that matches it, as praise → だけあって.",
+    "lv": 2
+  },
+  {
+    "id": "7-L19-009",
+    "type": "p7",
+    "point": "19-3",
+    "s": "この旅館は料理もサービスも申し分ない。一泊五万円もする（　　）。",
+    "en": "The food and service at this inn are faultless. It's well worth the 50,000 yen a night.",
+    "c": [
+      "だけのことはある",
+      "ほどのことはない",
+      "わけがない",
+      "ことはない"
+    ],
+    "cp": [
+      "19-3",
+      null,
+      "12-1",
+      "24-4"
+    ],
+    "why": [
+      "〜だけのことはある: it lives up to the price. 申し分ない ('faultless') is the praise that the price explains.",
+      "ほどのことはない means 'it's not worth that much'. That contradicts 申し分ない.",
+      "わけがない would deny that it costs 50,000 yen. Praising the food and service gives no reason to doubt the price.",
+      "ことはない means 'there's no need to'. 'There's no need for it to cost 50,000 yen' does not fit the praise."
+    ],
+    "cue": [
+      "申し分ない",
+      "もする"
+    ],
+    "tell": "Praise + a high price or status, at the end of the sentence → 〜だけのことはある.",
+    "lv": 3
+  },
+  {
+    "id": "7-L19-010",
+    "type": "p7",
+    "point": "19-4",
+    "set": "viewpoint",
+    "s": "彼女は大学時代、交換留学生（　　）一年間フランスで過ごした。",
+    "en": "At university, she spent a year in France as an exchange student.",
+    "c": [
+      "として",
+      "にとって",
+      "にしたら",
+      "にしては"
+    ],
+    "cp": [
+      "19-4",
+      "19-5",
+      "19-6",
+      "19-2"
+    ],
+    "why": [
+      "名＋として: in the role or status of. An action verb (過ごした) can follow it.",
+      "にとって gives a standpoint for an evaluation and cannot be followed by an action like 過ごした.",
+      "にしたら guesses at someone's feelings (〜だろう). This is a plain fact about what she did.",
+      "にしては needs a surprising evaluation ('for an exchange student, ~'). Spending a year in France is not one."
+    ],
+    "cue": [
+      "過ごした"
+    ],
+    "tell": "Role or status + an action → として. にとって cannot take an action after it.",
+    "lv": 1
+  },
+  {
+    "id": "7-L19-011",
+    "type": "p7",
+    "point": "19-4",
+    "set": "viewpoint",
+    "s": "この寺は、国の重要文化財（　　）大切に保存されている。",
+    "en": "This temple is carefully preserved as a nationally designated Important Cultural Property.",
+    "c": [
+      "として",
+      "にとって",
+      "にしたら",
+      "のことだから"
+    ],
+    "cp": [
+      "19-4",
+      "19-5",
+      "19-6",
+      "17-2"
+    ],
+    "why": [
+      "名＋として: in the status of. The temple is preserved in its capacity as an Important Cultural Property.",
+      "にとって gives someone's standpoint for an evaluation. It cannot be followed by an action like 保存されている, and a status is not a standpoint.",
+      "にしたら puts you in someone's shoes to guess their feelings. A cultural property has no feelings.",
+      "のことだから attaches to a person and leads to a guess about them. This is a fact about a temple, not a guess."
+    ],
+    "cue": [
+      "大切に保存されている"
+    ],
+    "tell": "A status or label + what is done to it (保存される・知られている) → として.",
+    "lv": 2
+  },
+  {
+    "id": "7-L19-012",
+    "type": "p7",
+    "point": "19-5",
+    "s": "毎朝の散歩は、退職した父（　　）大切な楽しみの一つになっている。",
+    "en": "Morning walks have become one of my retired father's precious pleasures.",
+    "c": [
+      "にとって",
+      "として",
+      "をめぐって",
+      "にかけては"
+    ],
+    "cp": [
+      "19-5",
+      "19-4",
+      "7-2",
+      "7-3"
+    ],
+    "why": [
+      "名＋にとって: from that person's standpoint, this is how something rates. An evaluation (大切な楽しみ) follows.",
+      "として means 'in the role of'. The walk is not playing the role of a retired father.",
+      "をめぐって means 'over' a dispute or debate (計画をめぐって対立). There is no dispute.",
+      "にかけては means 'when it comes to (a skill), nobody beats them'. There is no skill here."
+    ],
+    "cue": [
+      "大切な楽しみ"
+    ],
+    "tell": "A person + an evaluation (大切だ・難しい・ありがたい) → にとって.",
+    "lv": 1
+  },
+  {
+    "id": "7-L19-013",
+    "type": "p7",
+    "point": "19-5",
+    "set": "viewpoint",
+    "s": "植物（　　）、水と日光は欠かせないものだ。",
+    "en": "For plants, water and sunlight are essential.",
+    "c": [
+      "にとって",
+      "として",
+      "にしたら",
+      "にしては"
+    ],
+    "cp": [
+      "19-5",
+      "19-4",
+      "19-6",
+      "19-2"
+    ],
+    "why": [
+      "名＋にとって: from X's standpoint, how something rates. 欠かせない ('essential') is an evaluation, and にとって works for living things too.",
+      "として means 'in the role of'. 'As a plant, water is essential' mixes up the roles.",
+      "にしたら imagines someone's feelings and usually ends in a guess (〜だろう). Plants have no feelings to imagine, and this is a plain fact.",
+      "にしては needs a surprising evaluation ('for a plant, ~'). Needing water is not surprising."
+    ],
+    "cue": [
+      "欠かせないものだ"
+    ],
+    "tell": "From X's standpoint + an evaluation (欠かせない・大切だ) → にとって. にしたら guesses feelings.",
+    "lv": 2
+  },
+  {
+    "id": "7-L19-014",
+    "type": "p7",
+    "point": "19-5",
+    "set": "viewpoint",
+    "s": "在宅勤務の制度は、子育て中の社員（　　）。",
+    "en": "The work-from-home system is a welcome one for employees who are raising children.",
+    "c": [
+      "にとってありがたいものだ",
+      "としてありがたがっている",
+      "にとって利用している",
+      "にしてはありがたいものだ"
+    ],
+    "cp": [
+      "19-5",
+      "19-4",
+      "19-5",
+      "19-2"
+    ],
+    "why": [
+      "にとって + an evaluation: from the standpoint of employees raising children, the system is welcome.",
+      "The topic is the system (制度は). A system cannot 'appreciate' anything, and として is about roles, not standpoints.",
+      "にとって cannot be followed by an action verb like 利用している. Use it only with an evaluation.",
+      "にしては needs a surprising result for something of that kind. The system is not an employee, so there is nothing to compare."
+    ],
+    "cue": [
+      "在宅勤務の制度は"
+    ],
+    "tell": "にとって + an adjective or evaluation, never + an action verb. Check what the topic (〜は) is.",
+    "lv": 3
+  },
+  {
+    "id": "7-L19-015",
+    "type": "p7",
+    "point": "19-6",
+    "s": "子どもは喜んでいるが、毎日弁当を作る母親（　　）、けっこう大変だろう。",
+    "en": "The kids are happy, but for the mother who makes their packed lunches every day, it must be pretty hard work.",
+    "c": [
+      "にしてみれば",
+      "にしては",
+      "だけあって",
+      "をめぐって"
+    ],
+    "cp": [
+      "19-6",
+      "19-2",
+      "19-3",
+      "7-2"
+    ],
+    "why": [
+      "名＋にしてみれば: in someone else's shoes, guessing their feelings. The guess (〜だろう) follows.",
+      "にしては needs a surprising evaluation ('for a mother, ~'). Finding daily lunch-making hard is not surprising.",
+      "だけあって praises something already shown and cannot be followed by a guess like だろう.",
+      "をめぐって means 'over' a dispute. There is no dispute."
+    ],
+    "cue": [
+      "子どもは喜んでいるが",
+      "だろう"
+    ],
+    "tell": "Another person's position + a guess at their feelings (〜だろう) → にしたら／にしてみれば.",
+    "lv": 2
+  },
+  {
+    "id": "7-L19-016",
+    "type": "p7",
+    "point": "19-6",
+    "s": "会社にとっては経費の削減になるが、急に交通費の支給を打ち切られる社員（　　）、納得できないだろう。",
+    "en": "For the company it cuts costs, but employees whose travel allowance is suddenly stopped probably can't accept it.",
+    "c": [
+      "にしたら",
+      "にしては",
+      "のことだから",
+      "だけあって"
+    ],
+    "cp": [
+      "19-6",
+      "19-2",
+      "17-2",
+      "19-3"
+    ],
+    "why": [
+      "名＋にしたら: in that group's shoes, guessing how they feel. 納得できないだろう is the guess.",
+      "にしては needs a surprising evaluation ('for an employee, ~'). Being unhappy about losing travel pay is not surprising.",
+      "のことだから attaches to one person you know and guesses from their character. Employees in general have no shared character to go on.",
+      "だけあって praises a result already shown. It cannot be followed by a guess like だろう."
+    ],
+    "cue": [
+      "納得できないだろう"
+    ],
+    "tell": "Contrast two sides, then guess the other side's feelings (〜だろう) → にしたら.",
+    "lv": 2
+  },
+  {
+    "id": "7-L20-001",
+    "type": "p7",
+    "point": "20-1",
+    "set": "outcome",
+    "s": "駅の忘れ物センターに問い合わせ（　　）、財布が届けられていることがわかった。",
+    "en": "When I contacted the station's lost-property office, I found out my wallet had been handed in.",
+    "c": [
+      "たところ",
+      "たきり",
+      "た末に",
+      "たあげく"
+    ],
+    "cp": [
+      "20-1",
+      "20-2",
+      "20-4",
+      "20-3"
+    ],
+    "why": [
+      "〜たところ: I did one thing, and this is what turned out. 〜ことがわかった is the discovery.",
+      "たきり means 'did ~ and nothing since'. It needs a state that never moved on, not a discovery.",
+      "た末に needs a long, hard process before it. One enquiry is not that.",
+      "たあげく needs a long ordeal and a disappointing end. One call is quick, and finding the wallet is good news."
+    ],
+    "cue": [
+      "ことがわかった"
+    ],
+    "tell": "One action + what it revealed (〜ことがわかった) → たところ.",
+    "lv": 1
+  },
+  {
+    "id": "7-L20-002",
+    "type": "p7",
+    "point": "20-1",
+    "set": "outcome",
+    "s": "新しいアプリを社員50人に試してもらった（　　）、8割以上が「使いやすい」と答えた。",
+    "en": "When we had fifty employees try the new app, more than 80 percent said it was easy to use.",
+    "c": [
+      "ところ",
+      "ところで",
+      "あげく",
+      "きり"
+    ],
+    "cp": [
+      "20-1",
+      null,
+      "20-3",
+      "20-2"
+    ],
+    "why": [
+      "〜たところ: one action, then the result it produced. This is a typical report style: 試してもらったところ、〜と答えた.",
+      "たところで means 'even if you do ~, it's no use' and needs a negative or futile ending. Here the result is positive.",
+      "あげく needs a long ordeal and a disappointing end. A trial with a good response is neither.",
+      "きり means 'did ~ and nothing happened after'. Here something clearly followed."
+    ],
+    "cue": [
+      "と答えた"
+    ],
+    "tell": "Report style: did X once, here is the result → たところ. たところで means 'it's no use'.",
+    "lv": 2
+  },
+  {
+    "id": "7-L20-003",
+    "type": "p7",
+    "point": "20-1",
+    "set": "outcome",
+    "s": "先日、御社の新製品について（　　）、すぐにご丁寧な回答をいただき、ありがとうございました。",
+    "en": "Thank you for the prompt and courteous reply when I enquired about your new product the other day.",
+    "c": [
+      "お問い合わせしたところ",
+      "お問い合わせになったところ",
+      "お問い合わせしたあげく",
+      "お問い合わせするところ"
+    ],
+    "cp": [
+      "20-1",
+      "20-1",
+      "20-3",
+      null
+    ],
+    "why": [
+      "〜たところ: I made one enquiry and a reply came. お〜する is the humble form for your own action.",
+      "お〜になる is honorific, for the other side's actions. You made the enquiry, so it must be humble.",
+      "あげく needs a long ordeal and a disappointing end. A quick, polite reply is good news.",
+      "Dictionary form + ところ means 'I was just about to'. The enquiry has already been made and answered."
+    ],
+    "cue": [
+      "すぐにご丁寧な回答をいただき"
+    ],
+    "tell": "Business thanks: humble past + たところ (お問い合わせしたところ), then the result.",
+    "lv": 3
+  },
+  {
+    "id": "7-L20-004",
+    "type": "p7",
+    "point": "20-2",
+    "set": "outcome",
+    "s": "兄は三年前に海外へ行った（　　）、一度も日本に帰ってきていない。",
+    "en": "My older brother went abroad three years ago and hasn't been back to Japan once since.",
+    "c": [
+      "きり",
+      "ところ",
+      "あげく",
+      "末に"
+    ],
+    "cp": [
+      "20-2",
+      "20-1",
+      "20-3",
+      "20-4"
+    ],
+    "why": [
+      "〜たきり: after that action, nothing changed. The expected next step (coming home) never came: 一度も〜ていない.",
+      "たところ needs a discovery or result straight after the action. A long, unchanged absence is not that.",
+      "あげく needs a long, hard process before it. Going abroad once is a single event.",
+      "末に also needs a long, hard process and leads to a decision. Neither fits."
+    ],
+    "cue": [
+      "一度も",
+      "帰ってきていない"
+    ],
+    "tell": "Did ~ once + nothing since (一度も〜ていない) → たきり.",
+    "lv": 1
+  },
+  {
+    "id": "7-L20-005",
+    "type": "p7",
+    "point": "20-2",
+    "set": "outcome",
+    "s": "A「山田さんとは最近会ってる？」　B「ううん、去年の同窓会で（　　）。元気かなあ。」",
+    "en": "A: 'Have you seen Yamada lately?' B: 'No, not since the reunion last year. I wonder how they're doing.'",
+    "c": [
+      "会ったきりだよ",
+      "会ったところだよ",
+      "会わずじまいだよ",
+      "会うところだったよ"
+    ],
+    "cp": [
+      "20-2",
+      null,
+      "20-6",
+      "20-5"
+    ],
+    "why": [
+      "〜たきりだ: met once, and not since. 元気かなあ shows B has not seen Yamada since then.",
+      "たところだ means 'I just did it a moment ago'. That clashes with 去年 ('last year').",
+      "ずじまい means 'never got round to it'. B did meet Yamada at the reunion.",
+      "ところだった means 'nearly did, but didn't'. B did meet Yamada."
+    ],
+    "cue": [
+      "去年の同窓会で",
+      "元気かなあ"
+    ],
+    "tell": "Met once, not since (元気かなあ) → 会ったきりだ.",
+    "lv": 3
+  },
+  {
+    "id": "7-L20-006",
+    "type": "p7",
+    "point": "20-3",
+    "set": "outcome",
+    "s": "さんざん待たされた（　　）、結局その日は診察してもらえなかった。",
+    "en": "After being kept waiting for ages, in the end I wasn't even seen by the doctor that day.",
+    "c": [
+      "あげく",
+      "きり",
+      "ところ",
+      "とたん"
+    ],
+    "cp": [
+      "20-3",
+      "20-2",
+      "20-1",
+      "1-3"
+    ],
+    "why": [
+      "〜たあげく: after a long ordeal, a disappointing end. さんざん and 結局 are the signals.",
+      "たきり means 'did ~ and nothing since'. Here there is a clear end result.",
+      "たところ is for one action and its discovery, not a long ordeal.",
+      "たとたん means 'the instant ~'. さんざん ('for ages') clashes with an instant."
+    ],
+    "cue": [
+      "さんざん",
+      "結局"
+    ],
+    "tell": "さんざん／いろいろ + 結局 + a disappointing end → あげく.",
+    "lv": 1
+  },
+  {
+    "id": "7-L20-007",
+    "type": "p7",
+    "point": "20-3",
+    "set": "outcome",
+    "s": "友人は居酒屋で夜中まで飲んで騒いだ（　　）、店の前で寝込んでしまった。",
+    "en": "My friend drank and partied at the izakaya until midnight, and ended up passing out in front of the place.",
+    "c": [
+      "あげく",
+      "以上",
+      "きり",
+      "とたん"
+    ],
+    "cp": [
+      "20-3",
+      "17-5",
+      "20-2",
+      "1-3"
+    ],
+    "why": [
+      "〜たあげく: after a long stretch of something, a bad end. Hours of drinking ended with falling asleep outside.",
+      "〜以上 ('now that ~') must lead to resolve, duty or a judgement. Passing out is an accident, not any of those.",
+      "きり means 'did ~ and nothing since'. Here a new event follows.",
+      "とたん means 'the instant ~'. 夜中まで ('until midnight') describes a long stretch, not an instant."
+    ],
+    "cue": [
+      "夜中まで",
+      "寝込んでしまった"
+    ],
+    "tell": "A long stretch of something + an embarrassing or bad end (〜てしまった) → あげく.",
+    "lv": 2
+  },
+  {
+    "id": "7-L20-008",
+    "type": "p7",
+    "point": "20-3",
+    "set": "outcome",
+    "s": "どのコースにするか一週間も悩んだ（　　）、申し込みの締め切りを過ぎてしまった。",
+    "en": "After agonising for a whole week over which course to take, I ended up missing the application deadline.",
+    "c": [
+      "あげく",
+      "とたん",
+      "ところ",
+      "きり"
+    ],
+    "cp": [
+      "20-3",
+      "1-3",
+      "20-1",
+      "20-2"
+    ],
+    "why": [
+      "〜たあげく: after a long struggle, a bad end. A week of agonising ended with a missed deadline.",
+      "たとたん means 'the instant ~'. 一週間も ('a whole week') describes a long stretch, not an instant.",
+      "たところ needs one deliberate action and what it revealed. A week of worrying is not a single try.",
+      "きり means 'did ~ and nothing since'. Here something did follow: the deadline passed."
+    ],
+    "cue": [
+      "一週間も悩んだ",
+      "過ぎてしまった"
+    ],
+    "tell": "Long struggle (一週間も悩んだ) + an unwanted end (〜てしまった) → あげく.",
+    "lv": 2
+  },
+  {
+    "id": "7-L20-009",
+    "type": "p7",
+    "point": "20-4",
+    "set": "outcome",
+    "s": "家族と何度も話し合った（　　）、会社を辞めて実家の店を継ぐ決心がついた。",
+    "en": "After talking it over with my family many times, I finally made up my mind to quit my job and take over the family shop.",
+    "c": [
+      "末に",
+      "ついでに",
+      "きり",
+      "ところ"
+    ],
+    "cp": [
+      "20-4",
+      null,
+      "20-2",
+      "20-1"
+    ],
+    "why": [
+      "〜た末に: after a long process, it finally landed on a decision. 決心がついた ('I made up my mind') is that decision.",
+      "ついでに means 'while you're at it', for something done on the side. Making up your mind is the whole point of the talks, not a side errand.",
+      "たきり means 'did ~ and nothing since'. Here something clearly followed.",
+      "たところ is for one action and what it revealed. 何度も話し合った is a long process, and a decision is not a discovery."
+    ],
+    "cue": [
+      "何度も",
+      "決心がついた"
+    ],
+    "tell": "A long process + a decision or settled outcome (決めた・決心がついた) → 末に.",
+    "lv": 2
+  },
+  {
+    "id": "7-L20-010",
+    "type": "p7",
+    "point": "20-4",
+    "s": "両社は半年にわたる交渉の（　　）、ついに業務提携で合意した。",
+    "en": "After six months of negotiations, the two companies finally agreed on a business partnership.",
+    "c": [
+      "末",
+      "あげく",
+      "最中に",
+      "ついでに"
+    ],
+    "cp": [
+      "20-4",
+      "20-3",
+      "2-1",
+      null
+    ],
+    "why": [
+      "名＋の＋末: after a long, hard process, a final outcome. ついに合意した ('finally agreed') is that outcome.",
+      "あげく usually leads to a disappointing end. ついに welcomes a deal both sides wanted, which is a good result.",
+      "最中に means 'right in the middle of', for an interruption. Agreeing is the end of the talks, not an interruption.",
+      "ついでに means 'while you're at it', for something done on the side. Six months of talks are not a side errand."
+    ],
+    "cue": [
+      "半年にわたる",
+      "ついに"
+    ],
+    "tell": "名の末(に) + ついに + an agreement or decision → 末. A bad, wasted end → あげく.",
+    "lv": 2
+  },
+  {
+    "id": "7-L20-011",
+    "type": "p7",
+    "point": "20-4",
+    "set": "outcome",
+    "s": "何度も試作を（　　）、ようやく納得のいく商品が完成した。",
+    "en": "After making prototype after prototype, we finally completed a product we were happy with.",
+    "c": [
+      "重ねた末に",
+      "重ねたあげく",
+      "重ねる末に",
+      "重ねたきりで"
+    ],
+    "cp": [
+      "20-4",
+      "20-3",
+      "20-4",
+      "20-2"
+    ],
+    "why": [
+      "た形＋末に: after much effort, at last a result. ようやく ('at last') and a satisfying product fit 末に.",
+      "あげく usually leads to a disappointing end. ようやく and 納得のいく mark a result you are happy with.",
+      "末に attaches to the た形 or to 名＋の. The dictionary form 重ねる cannot come before it.",
+      "たきり means 'did ~ and nothing since'. Here something clearly followed: the product was finished."
+    ],
+    "cue": [
+      "ようやく",
+      "納得のいく"
+    ],
+    "tell": "Long effort + ようやく + a good, final result → た形＋末に.",
+    "lv": 3
+  },
+  {
+    "id": "7-L20-012",
+    "type": "p7",
+    "point": "20-5",
+    "set": "outcome",
+    "s": "同僚が気づいてくれなかったら、うっかり大事な書類をシュレッダーに（　　）。",
+    "en": "If my colleague hadn't noticed, I would have carelessly put an important document through the shredder.",
+    "c": [
+      "かけるところだった",
+      "かけたところだった",
+      "かけたきりだった",
+      "かけずじまいだった"
+    ],
+    "cp": [
+      "20-5",
+      null,
+      "20-2",
+      "20-6"
+    ],
+    "why": [
+      "辞書形＋ところだった: it nearly happened, but didn't. 〜なかったら says the colleague stopped it.",
+      "た形＋ところだった means 'I had just done it'. Then the shredding did happen, which 〜なかったら rules out.",
+      "たきりだった means 'did ~ and nothing since'. It does not mean a near miss.",
+      "ずじまいだった means 'meant to, but never did', with regret. Here the speaker is relieved, not regretful."
+    ],
+    "cue": [
+      "気づいてくれなかったら",
+      "うっかり"
+    ],
+    "tell": "うっかり／危うく + 〜なかったら → dictionary form + ところだった (a near miss).",
+    "lv": 3
+  },
+  {
+    "id": "7-L20-013",
+    "type": "p7",
+    "point": "20-5",
+    "set": "outcome",
+    "s": "電車の中でつい居眠りをして、危うく降りる駅を（　　）。",
+    "en": "I dozed off on the train and very nearly missed my stop.",
+    "c": [
+      "乗り過ごすところだった",
+      "乗り過ごしたところだった",
+      "乗り過ごさずじまいだった",
+      "乗り過ごしたきりだった"
+    ],
+    "cp": [
+      "20-5",
+      null,
+      "20-6",
+      "20-2"
+    ],
+    "why": [
+      "危うく + 辞書形＋ところだった: I very nearly missed my stop, but didn't.",
+      "た形＋ところだった means 'I had just missed it'. 危うく says it did not actually happen.",
+      "ずじまい means 'I meant to, but never did'. Nobody means to miss their stop.",
+      "たきりだった means 'did it and nothing since'. That is not a near miss."
+    ],
+    "cue": [
+      "危うく"
+    ],
+    "tell": "危うく → 辞書形 + ところだった. た形 + ところだ means it has just happened.",
+    "lv": 2
+  },
+  {
+    "id": "7-L20-014",
+    "type": "p7",
+    "point": "20-6",
+    "set": "outcome",
+    "s": "京都に一週間もいたのに、忙しくて有名なお寺には一つも（　　）。",
+    "en": "I was in Kyoto for a whole week, yet I was so busy I never got round to visiting a single famous temple.",
+    "c": [
+      "行かずじまいだった",
+      "行ったきりだった",
+      "行くところだった",
+      "行ったあげくだった"
+    ],
+    "cp": [
+      "20-6",
+      "20-2",
+      "20-5",
+      "20-3"
+    ],
+    "why": [
+      "〜ずじまいだ: meant to, never did, and the chance has gone. のに and 一つも show the regret.",
+      "たきりだった means 'went once and nothing since'. 一つも ('not a single one') says the speaker never went.",
+      "ところだった means 'nearly went'. 一つも needs a negative, and a near miss is not the point.",
+      "あげく links two clauses ('after ~, in the end ~'). It does not end a sentence like this."
+    ],
+    "cue": [
+      "のに",
+      "一つも"
+    ],
+    "tell": "のに + a chance that's now gone + 一つも／結局 → 〜ずじまいだった.",
+    "lv": 2
+  },
+  {
+    "id": "7-L20-015",
+    "type": "p7",
+    "point": "20-6",
+    "set": "outcome",
+    "s": "卒業後に連絡しようと思いながら、結局一度も（　　）、彼は海外へ引っ越してしまった。",
+    "en": "I kept meaning to get in touch after graduation, but I never once did, and then he moved abroad.",
+    "c": [
+      "連絡せずじまいで",
+      "連絡しずじまいで",
+      "連絡しないじまいで",
+      "連絡したきりで"
+    ],
+    "cp": [
+      "20-6",
+      "20-6",
+      "20-6",
+      "20-2"
+    ],
+    "why": [
+      "する verbs take せず: 連絡せずじまい. Meant to get in touch, never did, and now he has moved away.",
+      "しず is not a real form. する becomes せず before じまい.",
+      "じまい follows the ず form (ない → ず), not ない itself. 〜ないじまい does not exist.",
+      "たきり means 'got in touch once and nothing since'. 一度も ('not even once') says there was no contact at all."
+    ],
+    "cue": [
+      "思いながら",
+      "一度も"
+    ],
+    "tell": "する → せずじまい (never しずじまい). Meant to, never did, chance gone.",
+    "lv": 1
+  },
+  {
+    "id": "7-L21-001",
+    "type": "p7",
+    "point": "21-1",
+    "set": "extreme",
+    "s": "自分が使った食器（　　）、自分で洗いなさい。",
+    "en": "At the very least, wash the dishes you used yourself.",
+    "c": [
+      "くらい",
+      "さえ",
+      "までして",
+      "として"
+    ],
+    "cp": [
+      "21-1",
+      "21-5A",
+      "21-3",
+      "21-4"
+    ],
+    "why": [
+      "〜くらい: the bare minimum, so surely you can manage it. It suits a scolding command like 〜なさい.",
+      "さえ ('even') cannot be followed by an order or request. 〜なさい is an order.",
+      "までして needs a shocking means (借金までして). Washing your own dishes is not one.",
+      "として in this lesson only works in the fixed frame 一＋counter＋として〜ない."
+    ],
+    "cue": [
+      "洗いなさい"
+    ],
+    "tell": "A small, obvious duty + a command (〜なさい) → くらい: at least do that.",
+    "lv": 1
+  },
+  {
+    "id": "7-L21-002",
+    "type": "p7",
+    "point": "21-1",
+    "set": "extreme",
+    "s": "忙しいのはわかるけど、（　　）。",
+    "en": "I know you're busy, but you could at least have given me a call.",
+    "c": [
+      "電話一本くらいくれてもいいじゃない",
+      "電話一本さえくれてもいいじゃない",
+      "電話一本くらいくれなくてもいいじゃない",
+      "電話一本までくれてもいいじゃない"
+    ],
+    "cp": [
+      "21-1",
+      "21-5A",
+      "21-1",
+      "21-3"
+    ],
+    "why": [
+      "くらい + 〜てもいいじゃない: 'you could at least have called'. One call is the trivial minimum, and けど sets up the complaint.",
+      "さえ ('even') cannot be followed by a request or complaint like 〜てもいいじゃない.",
+      "The form is right but the meaning is flipped. 'You don't even need to call' does not follow 'I know you're busy, but'.",
+      "まで points at something extreme ('even going so far as'). One phone call is not extreme."
+    ],
+    "cue": [
+      "忙しいのはわかるけど"
+    ],
+    "tell": "'I know ~, but you could at least ~' → small thing + くらい + 〜てもいいじゃない.",
+    "lv": 3
+  },
+  {
+    "id": "7-L21-003",
+    "type": "p7",
+    "point": "21-2",
+    "set": "extreme",
+    "s": "私（　　）、まだまだ未熟者で、人に教えられるような立場ではありません。",
+    "en": "Someone like me is still very inexperienced. I'm in no position to teach others.",
+    "c": [
+      "なんか",
+      "さえ",
+      "くらい",
+      "まで"
+    ],
+    "cp": [
+      "21-2",
+      "21-5A",
+      "21-1",
+      "21-3"
+    ],
+    "why": [
+      "〜なんか: the speaker rates X as low value, including themselves, as modesty (私なんか).",
+      "さえ ('even I') suggests everyone else is worse still. That is not the point here.",
+      "くらい marks a bare minimum ('at least'). It cannot put yourself down.",
+      "まで ('even I, of all people') points at a surprising extreme, not a modest self-image."
+    ],
+    "cue": [
+      "未熟者で"
+    ],
+    "tell": "Putting yourself down (私なんか・私など) → など／なんか.",
+    "lv": 1
+  },
+  {
+    "id": "7-L21-004",
+    "type": "p7",
+    "point": "21-2",
+    "s": "あんな無責任な人の意見（　　）、参考にする必要はない。",
+    "en": "There's no need to take the opinion of someone that irresponsible into account.",
+    "c": [
+      "など",
+      "どころか",
+      "として",
+      "にしては"
+    ],
+    "cp": [
+      "21-2",
+      "12-2",
+      "21-4",
+      "19-2"
+    ],
+    "why": [
+      "〜など: the speaker rates X as worthless. あんな無責任な人 ('someone that irresponsible') shows the scorn.",
+      "〜どころか needs a second, stronger item after it (意見どころか顔も見たくない). Here nothing follows it but the verdict.",
+      "として in this lesson only works in the frame 一＋counter＋として〜ない.",
+      "にしては needs a surprising evaluation of X ('for his opinion, it's ~'). 'No need to consult it' is advice, not an evaluation."
+    ],
+    "cue": [
+      "あんな無責任な人"
+    ],
+    "tell": "Scorn for X (あんな人の〜) + no need / don't bother → など・なんか.",
+    "lv": 2
+  },
+  {
+    "id": "7-L21-005",
+    "type": "p7",
+    "point": "21-3",
+    "s": "弟は睡眠時間を（　　）毎晩ゲームを続けている。体を壊さないか心配だ。",
+    "en": "My younger brother goes as far as cutting into his sleep to play games every night. I'm worried he'll damage his health.",
+    "c": [
+      "削ってまで",
+      "削ってさえ",
+      "削ったきり",
+      "削ったあげく"
+    ],
+    "cp": [
+      "21-3",
+      "21-5A",
+      "20-2",
+      "20-3"
+    ],
+    "why": [
+      "〜てまで: someone goes as far as an extreme means, and the speaker is critical or worried. 心配だ shows the worry.",
+      "さえ attaches to nouns or works in 〜さえ〜ば. Vてさえ cannot mean 'going as far as'.",
+      "たきり means 'did ~ and nothing since'. It does not describe a means to an end.",
+      "あげく needs a long ordeal before it and a disappointing end after it. Cutting sleep is the means, not an ordeal that ends in gaming."
+    ],
+    "cue": [
+      "心配だ"
+    ],
+    "tell": "Someone else's extreme means + the speaker's criticism or worry → 〜てまで.",
+    "lv": 2
+  },
+  {
+    "id": "7-L21-006",
+    "type": "p7",
+    "point": "21-3",
+    "set": "extreme",
+    "s": "いくら給料が上がっても、毎日終電まで（　　）出世したくはない。",
+    "en": "However much my pay went up, I wouldn't want a promotion badly enough to work until the last train every day.",
+    "c": [
+      "残業してまで",
+      "残業してでも",
+      "残業してさえ",
+      "残業したあげく"
+    ],
+    "cp": [
+      "21-3",
+      "21-6",
+      "21-5A",
+      "20-3"
+    ],
+    "why": [
+      "〜てまで + a negative wish: 'I don't want it badly enough to go that far'. てまで carries the speaker's criticism of the extreme means.",
+      "てでも means 'even if it takes ~, I will' and must lead to a positive wish or resolve. 'Even if it takes overtime, I don't want it' contradicts itself.",
+      "Vてさえ cannot mean 'going so far as'. さえ attaches to nouns or works in 〜さえ〜ば.",
+      "あげく reports a disappointing past end. It cannot lead to a wish about the future."
+    ],
+    "cue": [
+      "出世したくはない"
+    ],
+    "tell": "Extreme means + a NEGATIVE wish (〜たくない) → てまで. A positive resolve → てでも.",
+    "lv": 2
+  },
+  {
+    "id": "7-L21-007",
+    "type": "p7",
+    "point": "21-4",
+    "set": "extreme",
+    "s": "説明会には50人以上が参加したが、質問する人は一人（　　）いなかった。",
+    "en": "More than fifty people came to the information session, but not a single one asked a question.",
+    "c": [
+      "として",
+      "まで",
+      "なんか",
+      "くらい"
+    ],
+    "cp": [
+      "21-4",
+      "21-3",
+      "21-2",
+      "21-1"
+    ],
+    "why": [
+      "一＋counter＋として＋negative: not a single one. 一人として〜いなかった.",
+      "まで ('even') points at an extreme. One person is not an extreme.",
+      "なんか dismisses X as worthless. The point is that nobody asked.",
+      "くらい means 'at least one'. It cannot build a total zero with いなかった."
+    ],
+    "cue": [
+      "一人",
+      "いなかった"
+    ],
+    "tell": "一人／一度／何一つ + として + negative → not a single one.",
+    "lv": 1
+  },
+  {
+    "id": "7-L21-008",
+    "type": "p7",
+    "point": "21-4",
+    "set": "extreme",
+    "s": "祖父は四十年間、自分の店を一日（　　）休まなかったそうだ。",
+    "en": "Apparently my grandfather didn't close his shop for a single day in forty years.",
+    "c": [
+      "として",
+      "くらい",
+      "まで",
+      "ずつ"
+    ],
+    "cp": [
+      "21-4",
+      "21-1",
+      "21-3",
+      null
+    ],
+    "why": [
+      "一日として＋negative: not a single day. The fixed frame is 一＋counter＋として〜ない.",
+      "一日くらい means 'at least a day'. It suits 'you could take at least a day off', not 'never closed once'.",
+      "まで ('even') points at an extreme. One day is the smallest unit, not an extreme.",
+      "ずつ means 'each' or 'one at a time'. It cannot make a total zero."
+    ],
+    "cue": [
+      "四十年間",
+      "休まなかった"
+    ],
+    "tell": "一日／一度 + として + negative = not even one. Learn the frame as a template.",
+    "lv": 1
+  },
+  {
+    "id": "7-L21-009",
+    "type": "p7",
+    "point": "21-5A",
+    "set": "extreme",
+    "s": "祖母は最近目が悪くなって、大きな字の新聞（　　）読めなくなってしまった。",
+    "en": "My grandmother's eyesight has got worse lately, and now she can't even read the large-print newspaper.",
+    "c": [
+      "さえ",
+      "くらい",
+      "として",
+      "までして"
+    ],
+    "cp": [
+      "21-5A",
+      "21-1",
+      "21-4",
+      "21-3"
+    ],
+    "why": [
+      "〜さえ ('even'): even the easiest case fails, so everything else obviously does. Large print is the easiest thing to read.",
+      "くらい ('at least') belongs in advice or criticism (新聞くらい読みなさい). This is a sad statement of fact.",
+      "として only works in the frame 一＋counter＋として〜ない.",
+      "までして needs a shocking means someone used (借金までして). Reading a newspaper is not a means here."
+    ],
+    "cue": [
+      "大きな字の",
+      "読めなくなってしまった"
+    ],
+    "tell": "Even the easiest case fails, stated as a plain fact → さえ. No commands or intentions after.",
+    "lv": 1
+  },
+  {
+    "id": "7-L21-010",
+    "type": "p7",
+    "point": "21-5A",
+    "set": "extreme",
+    "s": "専門家（　　）予測できなかったのだから、素人の私たちにわかるはずがない。",
+    "en": "If even the experts couldn't predict it, there's no way amateurs like us could know.",
+    "c": [
+      "でさえ",
+      "こそ",
+      "なんか",
+      "くらい"
+    ],
+    "cp": [
+      "21-5A",
+      null,
+      "21-2",
+      "21-1"
+    ],
+    "why": [
+      "〜でさえ: 'even (being) X'. If even the experts failed, ordinary people obviously can't know. It marks the subject where が would go.",
+      "こそ stresses 'X and no one else'. 'It was the experts, of all people, who couldn't' does not lead to 'so we can't either'.",
+      "なんか belittles X. The argument needs the experts to be the strongest case, not a worthless one.",
+      "くらい marks a trivial minimum. Experts are the strongest case here, not the smallest."
+    ],
+    "cue": [
+      "素人の私たちにわかるはずがない"
+    ],
+    "tell": "If even the strongest case failed, the rest surely can't → でさえ.",
+    "lv": 2
+  },
+  {
+    "id": "7-L21-011",
+    "type": "p7",
+    "point": "21-5B",
+    "s": "この薬（　　）飲めば、二、三日で熱は下がるでしょう。",
+    "en": "As long as you take this medicine, your fever should go down in two or three days.",
+    "c": [
+      "さえ",
+      "まで",
+      "なんか",
+      "として"
+    ],
+    "cp": [
+      "21-5B",
+      "21-3",
+      "21-2",
+      "21-4"
+    ],
+    "why": [
+      "〜さえ〜ば: meet this one condition and nothing else is needed. The conditional 飲めば comes later.",
+      "まで ('even this medicine') adds an extreme case instead of naming the one thing needed.",
+      "なんか dismisses the medicine as worthless. The speaker is recommending it.",
+      "として only works in the frame 一＋counter＋として〜ない."
+    ],
+    "cue": [
+      "飲めば"
+    ],
+    "tell": "さえ + a conditional later (〜ば・〜なら・〜たら) → 'as long as'.",
+    "lv": 1
+  },
+  {
+    "id": "7-L21-012",
+    "type": "p7",
+    "point": "21-5B",
+    "s": "道が混んで（　　）、駅から空港までは30分もかからない。",
+    "en": "As long as the roads aren't busy, it takes less than 30 minutes from the station to the airport.",
+    "c": [
+      "さえいなければ",
+      "さえいれば",
+      "いるからには",
+      "いるばかりに"
+    ],
+    "cp": [
+      "21-5B",
+      "21-5B",
+      "17-5",
+      "17-4"
+    ],
+    "why": [
+      "Vてさえいなければ: 'as long as the roads aren't busy'. No traffic is the only condition for a short trip.",
+      "さえいれば says 'as long as the roads ARE busy', which gets the logic backwards.",
+      "からには must lead to resolve or duty. 'It takes under 30 minutes' is a fact.",
+      "ばかりに leads to a regretted bad result. A short trip is not bad."
+    ],
+    "cue": [
+      "30分もかからない"
+    ],
+    "tell": "Vて + さえ + いなければ／いれば: one condition. Check which way round the logic goes.",
+    "lv": 3
+  },
+  {
+    "id": "7-L21-013",
+    "type": "p7",
+    "point": "21-6",
+    "s": "どんなに高くても、借金を（　　）、あのギターだけは絶対に買うつもりだ。",
+    "en": "However expensive it is, I'm definitely going to buy that guitar, even if it means borrowing money.",
+    "c": [
+      "してでも",
+      "したばかりに",
+      "したあげく",
+      "してさえ"
+    ],
+    "cp": [
+      "21-6",
+      "17-4",
+      "20-3",
+      "21-5A"
+    ],
+    "why": [
+      "〜てでも: ready to use a means you normally wouldn't. It leads to the speaker's wish or intention: 買うつもりだ.",
+      "ばかりに leads to a regretted result that already happened. It cannot be followed by an intention.",
+      "あげく reports a disappointing past end after a long ordeal. It cannot lead to an intention.",
+      "Vてさえ cannot mean 'even if it means', and さえ cannot be followed by the speaker's intention."
+    ],
+    "cue": [
+      "どんなに高くても",
+      "買うつもりだ"
+    ],
+    "tell": "An extreme means + your own wish or plan (〜たい・〜つもりだ) → 〜てでも.",
+    "lv": 1
+  },
+  {
+    "id": "7-L21-014",
+    "type": "p7",
+    "point": "21-6",
+    "set": "extreme",
+    "s": "どんな手を使って（　　）、今度の大会では必ず優勝してみせる。",
+    "en": "Whatever it takes, I'm going to win the next tournament. Just watch me.",
+    "c": [
+      "でも",
+      "まで",
+      "さえ",
+      "こそ"
+    ],
+    "cp": [
+      "21-6",
+      "21-3",
+      "21-5A",
+      null
+    ],
+    "why": [
+      "Vて＋でも: 'whatever it takes'. どんな手を使ってでも is a fixed pairing, and 〜てみせる is the speaker's resolve.",
+      "てまで criticises one specific extreme means. どんな ('any means at all') does not name one, and the speaker is not criticising.",
+      "Vてさえ cannot mean 'even if it means', and さえ cannot be followed by the speaker's resolve.",
+      "Vてこそ means 'only by doing ~' (努力してこそ). 'Only by using any trick' makes no sense with どんな."
+    ],
+    "cue": [
+      "どんな手を",
+      "優勝してみせる"
+    ],
+    "tell": "どんな〜て + でも + your resolve (〜てみせる・〜たい) → てでも. てまで is criticism.",
+    "lv": 2
+  }
+]
