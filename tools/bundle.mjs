@@ -6,13 +6,15 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
-import { ROOT, CONTENT, loadCatalog, questionFiles, readJSON, validateItems } from "./lib.mjs";
+import { ROOT, CONTENT, loadCatalog, questionFiles, readJSON, validateItems, validateKanji } from "./lib.mjs";
 
 const report = process.argv.includes("--report");
 const catalog = loadCatalog();
 const rules = readJSON(path.join(CONTENT, "rules.json"));
+const kanjiFile = path.join(CONTENT, "kanji.json");
+const kanji = fs.existsSync(kanjiFile) ? readJSON(kanjiFile) : { tiers: [], glyphs: {}, kanji: [] };
 const seen = new Set();
-const errors = [];
+const errors = [...validateKanji(kanji)];
 const web = [];
 const anki = [];
 
@@ -56,6 +58,9 @@ const data = {
   sets: catalog.sets.sets,
   sheets: rules.sheets,
   questions: web,
+  kanji: kanji.kanji,
+  kanjiTiers: kanji.tiers,
+  glyphs: kanji.glyphs,
 };
 const json = JSON.stringify(data);
 const version = crypto.createHash("sha1").update(json).digest("hex").slice(0, 8);
@@ -65,5 +70,6 @@ fs.writeFileSync(path.join(ROOT, "js", "data.js"), out);
 const byType = (t) => web.filter((q) => q.type === t).length;
 console.log(`✓ js/data.js ${version}: ${byType("p7")} 問題7 · ${byType("p8")} 問題8 · ${byType("p9")} 問題9 passages · ${catalog.points.points.length} points · ${catalog.sets.sets.length} sets`);
 console.log(`  Anki pool (not in web bundle): ${anki.length} items`);
+console.log(`  Kanji gap: ${kanji.kanji.length} kanji · ${kanji.kanji.reduce((a, x) => a + x.words.length, 0)} words`);
 if (thin.length) console.log(`  Points with fewer than 2 web questions: ${thin.join(", ")}`);
 if (report) for (const [id, c] of Object.entries(cover)) console.log(`  ${id.padEnd(6)} p7 ${c.p7}  p8 ${c.p8}  p9 ${c.p9}`);

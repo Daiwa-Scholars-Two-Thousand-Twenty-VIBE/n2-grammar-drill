@@ -2,7 +2,8 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import path from "node:path";
-import { loadCatalog, questionFiles, readJSON, validateItems } from "../tools/lib.mjs";
+import fs from "node:fs";
+import { CONTENT, loadCatalog, questionFiles, readJSON, validateItems, validateKanji } from "../tools/lib.mjs";
 
 const catalog = loadCatalog();
 const files = questionFiles();
@@ -58,4 +59,13 @@ test("問題8 star slots are spread out", { skip: !web.some((q) => q.type === "p
   const p8 = web.filter((q) => q.type === "p8");
   const counts = [0, 1, 2, 3].map((k) => p8.filter((q) => q.star === k).length);
   assert.ok(Math.max(...counts) <= p8.length * 0.6, `star positions too uneven: ${counts}`);
+});
+
+const kanjiFile = path.join(CONTENT, "kanji.json");
+test("kanji.json validates and every tier is used", { skip: !fs.existsSync(kanjiFile) && "no kanji.json" }, () => {
+  const data = readJSON(kanjiFile);
+  assert.deepEqual(validateKanji(data), []);
+  for (const t of data.tiers) assert.ok(data.kanji.some((x) => x.tier === t.id), `tier ${t.id} is empty`);
+  const ranks = data.kanji.map((x) => x.rank);
+  assert.deepEqual(ranks, [...ranks].sort((a, b) => a - b), "kanji are stored in rank order");
 });

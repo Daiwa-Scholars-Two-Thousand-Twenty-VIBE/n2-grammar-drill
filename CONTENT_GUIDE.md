@@ -110,6 +110,36 @@ All content files are **strict JSON** (no comments, no trailing commas). Run `no
 - Choices may be long phrases, as in real papers.
 - `cue` substrings must appear verbatim in `text`.
 
+## Kanji schema
+
+`content/kanji.json` holds `tiers`, `glyphs` (meaning and one reading for every look-alike and every kanji used in a wrong spelling, so the feedback can say what the wrong kanji means) and `kanji`, stored in rank order.
+
+```json
+{
+  "k": "暮", "rank": 96, "tier": 1, "mean": "make a living; evening",
+  "on": ["ボ"], "kun": ["く(れる)", "く(らす)"], "wk": 33, "papers": 6,
+  "look": ["墓", "幕", "募"],
+  "words": [
+    {
+      "w": "暮らす", "r": "くらす", "en": "to live, to get by", "pos": "v",
+      "s": "祖父は今も山の小さな村で一人で暮らしている。",
+      "t": "暮らして", "tr": "くらして",
+      "rx": ["ぐらして", "ぼらして", "こらして"],
+      "wx": ["墓らして", "幕らして", "募らして"],
+      "se": "My grandfather still lives alone in a small mountain village."
+    }
+  ]
+}
+```
+
+| Field | Rule |
+|---|---|
+| `words` | 2 or 3, the ones an N2 reader meets most. |
+| `s`, `t` | `t` is the underlined part of `s`, exactly once. The kanji `k` must not appear in `s` outside `t`, or the 表記 question gives itself away. |
+| `tr`, `rx` | The reading of `t` and three wrong ones. Only the kanji part changes: all four end in the same kana. None may be a valid reading of the word. |
+| `wx` | Three wrong spellings of `t`: look-alike or same-sound kanji, same kana. None may be a real spelling of the same word (暖かい and 温かい are both real). |
+| `pos` | `n`, `v`, `adj`, `na`, `adv` or `other`. Meaning questions draw their wrong answers from other words with the same `pos`. |
+
 ## The quality bar
 
 1. **One right answer.** Every distractor must be wrong by a rule you can name. If a native speaker could defend a distractor, change it. This is the most important rule.

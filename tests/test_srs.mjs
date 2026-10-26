@@ -137,3 +137,73 @@ test("set drills put contrasting questions first; pair drills lead with the pair
   const pair = S.buildPairDrill({ a: "a", b: "b", questions: qs, rng: S.mulberry32(7) }).map((q) => q.id);
   assert.equal(pair[0], "x1");
 });
+
+// ---------- kanji ----------
+const EN = { 驚く: "to be surprised", 驚き: "surprise", 暮らす: "to live", 暮れる: "to get dark", 範囲: "range", 模範: "model", 込む: "to be crowded", 申し込む: "to apply", 省略: "omission", 略す: "to abbreviate" };
+const kw = (w, pos = "v") => ({ w, r: "よみ", en: EN[w], pos, s: `文の${w}です。`, t: w, tr: "よみ", rx: ["よに", "よみい", "ようみ"], wx: ["甲", "乙", "丙"], se: "x" });
+const kanji = [
+  { k: "驚", wk: 31, tier: 1, words: [kw("驚く"), kw("驚き", "n")] },
+  { k: "暮", wk: 33, tier: 1, words: [kw("暮らす"), kw("暮れる")] },
+  { k: "範", wk: 42, tier: 1, words: [kw("範囲", "n"), kw("模範", "n")] },
+  { k: "込", wk: 28, tier: 2, words: [kw("込む"), kw("申し込む")] },
+  { k: "略", wk: 29, tier: 2, words: [kw("省略", "n"), kw("略す")] },
+];
+
+test("kanji answers go to their own store and never touch the grammar quota", () => {
+  const st = S.emptyState();
+  S.record(st, { qid: "kr:驚:0", point: "驚", ok: true, secs: 5, type: "kr", today: T, store: "kanji", firstBox: 1 });
+  assert.equal(st.kanji["驚"].box, 1);
+  assert.equal(st.kanji["驚"].due, S.addDays(T, 1));
+  assert.equal(S.newToday(st, T), 0);
+  assert.equal(S.newToday(st, T, "kanji"), 1);
+  assert.equal(st.days[T], undefined);
+  assert.equal(st.kdays[T].n, 1);
+});
+
+test("kanji daily: teaching card first, its question at least three items later", () => {
+  const st = S.emptyState();
+  const { items, counts } = S.buildKanjiDaily({ state: st, kanji, today: T, size: 10, newPerDay: 3, rng: S.mulberry32(8) });
+  assert.equal(counts.fresh, 3);
+  const intros = items.filter((q) => q.type === "kn").map((q) => q.k);
+  assert.deepEqual(intros, ["驚", "暮", "範"]);
+  for (const k of intros) {
+    const a = items.findIndex((q) => q.type === "kn" && q.k === k);
+    const b = items.findIndex((q) => q.type !== "kn" && q.k === k);
+    assert.ok(b > a, `${k} question after its card`);
+    assert.ok(items[b].taught);
+    assert.ok(["kr", "km"].includes(items[b].type), "no writing question before the kanji is known");
+  }
+});
+
+test("kanji daily skips kanji the WaniKani level covers, and puts due ones first", () => {
+  const st = S.emptyState();
+  S.record(st, { qid: "kr:略:0", point: "略", ok: false, secs: 5, type: "kr", today: T, store: "kanji" });
+  const day2 = S.addDays(T, 1);
+  const { items } = S.buildKanjiDaily({ state: st, kanji, today: day2, size: 10, newPerDay: 10, wkLevel: 31, rng: S.mulberry32(9) });
+  const intros = items.filter((q) => q.type === "kn").map((q) => q.k);
+  assert.deepEqual(intros, ["暮", "範"], "驚 (31) and 込 (28) are WaniKani's");
+  assert.ok(items.some((q) => q.type !== "kn" && q.k === "略"), "the due kanji is reviewed");
+});
+
+test("kanji questions: right answer first, meaning choices share the part of speech", () => {
+  const rng = S.mulberry32(10);
+  const r = S.kanjiQuestion({ kanji, x: kanji[0], wi: 0, type: "kr", rng });
+  assert.deepEqual(r.c, ["よみ", "よに", "よみい", "ようみ"]);
+  const w = S.kanjiQuestion({ kanji, x: kanji[0], wi: 0, type: "kw", rng });
+  assert.equal(w.c[0], "驚く");
+  const m = S.kanjiQuestion({ kanji, x: kanji[0], wi: 0, type: "km", rng });
+  assert.equal(m.c[0], "to be surprised");
+  assert.equal(new Set(m.c).size, 4);
+  const verbs = new Set(kanji.flatMap((x) => x.words.filter((v) => v.pos === "v").map((v) => v.en)));
+  for (const c of m.c) assert.ok(verbs.has(c));
+});
+
+test("kanji review rotates shapes: the least-seen shape comes next", () => {
+  const st = S.emptyState();
+  st.qs["kr:暮:0"] = { seen: 2, right: 2 };
+  st.qs["kr:暮:1"] = { seen: 2, right: 2 };
+  st.qs["km:暮:0"] = { seen: 1, right: 1 };
+  st.qs["km:暮:1"] = { seen: 1, right: 1 };
+  const q = S.pickKanjiQuestion({ state: st, kanji, x: kanji[1], box: 3, rng: S.mulberry32(11) });
+  assert.equal(q.type, "kw");
+});

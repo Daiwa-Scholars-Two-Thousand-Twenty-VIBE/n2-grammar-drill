@@ -12,7 +12,8 @@
   // Days until a point is due again, indexed by box.
   const INTERVALS = [0, 1, 2, 4, 8, 16];
   // Target seconds per item. 25 s for 問題7 is the usual N2 pace benchmark.
-  const TARGET = { p7: 25, p8: 50, p9: 60 };
+  // Kanji items (kr reading, kw writing, km meaning) should be near-instant: 12 s.
+  const TARGET = { p7: 25, p8: 50, p9: 60, kr: 12, kw: 12, km: 12 };
 
   const pad = (n) => String(n).padStart(2, "0");
   function dayStr(d) {
@@ -52,32 +53,36 @@
     return s[Math.floor(s.length / 2)];
   };
 
+  // Grammar lives in `points` and `days`; kanji in `kanji` and `kdays`, same shape.
   function emptyState() {
-    return { v: 2, points: {}, qs: {}, conf: {}, days: {} };
+    return { v: 2, points: {}, qs: {}, conf: {}, days: {}, kanji: {}, kdays: {} };
   }
-  function pointState(state, id) {
-    return state.points[id] || (state.points[id] = { box: 0, due: null, seen: 0, right: 0, streak: 0, times: [] });
+  function pointState(state, id, store = "points") {
+    const box = state[store] || (state[store] = {});
+    return box[id] || (box[id] = { box: 0, due: null, seen: 0, right: 0, streak: 0, times: [] });
   }
 
   // Record one answer. Only the first answer of the day for a point can move it up a box;
   // later answers the same day (re-asks, extra practice, set drills) can still drop it.
   // `chosenPoint` is the point behind the wrong choice, if any: that pair is logged as a
   // mix-up and the confused point comes back tomorrow too. `slow` (a hint was used) stops promotion.
-  function record(state, { qid, point, ok, secs, type, chosenPoint, slow = false, today }) {
-    const p = pointState(state, point);
+  // `store` is "points" for grammar or "kanji". `firstBox` is where a fast right answer on first
+  // sight lands: 3 (already known) unless the item was just taught, when 1 is the honest box.
+  function record(state, { qid, point, ok, secs, type, chosenPoint, slow = false, today, store = "points", firstBox = 3 }) {
+    const p = pointState(state, point, store);
     const fast = !slow && secs <= TARGET[type] * 1.2;
     const first = p.seen === 0;
     const again = p.last === today;
     p.seen++;
     p.last = today;
     if (first) p.first = today;
-    if (type === "p7") p.times = [...p.times, Math.round(secs)].slice(-5);
+    if (type === "p7" || store === "kanji") p.times = [...p.times, Math.round(secs)].slice(-5);
     if (ok) {
       p.right++;
       p.streak++;
       if (!again) {
         if (!fast) p.box = Math.max(p.box, 1);
-        else if (first) p.box = 3; // right and quick on first sight: already known
+        else if (first) p.box = firstBox;
         else p.box = Math.min(p.box + 1, INTERVALS.length - 1);
         p.due = addDays(today, fast ? INTERVALS[p.box] : 1);
       }
@@ -100,24 +105,25 @@
       else q.wrong = today;
       q.last = today;
     }
-    const d = state.days[today] || (state.days[today] = { n: 0, right: 0, secs: 0 });
+    const days = store === "kanji" ? state.kdays || (state.kdays = {}) : state.days;
+    const d = days[today] || (days[today] = { n: 0, right: 0, secs: 0 });
     d.n++;
     if (ok) d.right++;
     d.secs += Math.round(secs);
     return p;
   }
 
-  // How many points were met for the first time today (for the daily new-point quota).
-  function newToday(state, today) {
-    return Object.values(state.points).filter((p) => p.first === today).length;
+  // How many points (or kanji) were met for the first time today (for the daily new quota).
+  function newToday(state, today, store = "points") {
+    return Object.values(state[store] || {}).filter((p) => p.first === today).length;
   }
 
   // new · learning · solid · auto (automatic) · weak
-  function status(p) {
+  function status(p, target = TARGET.p7) {
     if (!p || !p.seen) return "new";
     if (p.streak === 0) return "weak";
     if (p.seen >= 3 && p.right / p.seen < 0.6) return "weak";
-    if (p.box >= 4 && p.streak >= 2 && (!p.times.length || median(p.times) <= TARGET.p7)) return "auto";
+    if (p.box >= 4 && p.streak >= 2 && (!p.times.length || median(p.times) <= target)) return "auto";
     if (p.box >= 3) return "solid";
     return "learning";
   }
@@ -267,6 +273,99 @@
     return interleave(hits, (q) => q.set || q.point, rng).slice(0, max);
   }
 
+  // ---------- kanji ----------
+  // The unit of memory is the KANJI. Each review asks about one of its words, in one of three
+  // shapes: kr reading (問題1, pick the reading of the underlined word), kw writing (問題2, pick
+  // the kanji for a word written in kana) and km meaning (pick the English for the word alone).
+  const KTYPES = ["kr", "kw", "km"];
+  const kqid = (type, k, wi) => `${type}:${k}:${wi}`;
+  const content = (s) => new Set(String(s).toLowerCase().split(/[^a-z]+/).filter((x) => x.length > 2 && !["the", "and", "for", "something", "someone", "with"].includes(x)));
+
+  // Three English meanings to set against the right one: same part of speech, other kanji,
+  // no shared content word (so "to live" never sits beside "to live in").
+  const meaningPools = new WeakMap();
+  function meaningChoices(kanji, x, word, rng) {
+    if (!meaningPools.has(kanji)) meaningPools.set(kanji, kanji.flatMap((y) => y.words.map((w) => ({ k: y.k, en: w.en, pos: w.pos }))));
+    const mine = content(word.en);
+    const cands = meaningPools.get(kanji).filter((m) => m.pos === word.pos && m.k !== x.k && m.en !== word.en && ![...content(m.en)].some((t) => mine.has(t)));
+    const out = [];
+    for (const m of shuffle(cands, rng)) {
+      if (out.length === 3) break;
+      if (!out.includes(m.en)) out.push(m.en);
+    }
+    return out.length === 3 ? out : null;
+  }
+
+  // One question on kanji `x`, word `wi`. c[0] is always right; the app shuffles.
+  function kanjiQuestion({ kanji, x, wi, type, rng = Math.random }) {
+    const w = x.words[wi];
+    const base = { id: kqid(type, x.k, wi), type, point: x.k, k: x.k, wi };
+    if (type === "kr") return { ...base, c: [w.tr, ...w.rx] };
+    if (type === "kw") return { ...base, c: [w.t, ...w.wx] };
+    const others = meaningChoices(kanji, x, w, rng);
+    return others ? { ...base, c: [w.en, ...others] } : { ...base, type: "kr", id: kqid("kr", x.k, wi), c: [w.tr, ...w.rx] };
+  }
+
+  // Pick the shape this kanji has seen least, then its least-seen word for that shape.
+  // Writing (問題2) waits until the kanji reaches box 2: telling 暮 from 墓 needs the kanji first.
+  function pickKanjiQuestion({ state, kanji, x, box = 0, rng = Math.random }) {
+    const seen = (t, wi) => (state.qs[kqid(t, x.k, wi)] || { seen: 0 }).seen;
+    const words = x.words.map((_, wi) => wi);
+    const types = box >= 2 ? KTYPES : ["kr", "km"];
+    const byType = (t) => words.reduce((a, wi) => a + seen(t, wi), 0);
+    const minT = Math.min(...types.map(byType));
+    const ts = types.filter((t) => byType(t) === minT);
+    const type = ts[Math.floor(rng() * ts.length)];
+    const minW = Math.min(...words.map((wi) => seen(type, wi)));
+    const ws = words.filter((wi) => seen(type, wi) === minW);
+    return kanjiQuestion({ kanji, x, wi: ws[Math.floor(rng() * ws.length)], type, rng });
+  }
+
+  // Today's kanji: due kanji first, then up to `newPerDay` new ones in list order (the list is
+  // sorted most useful first). Kanji at or below `wkLevel` are never introduced: WaniKani has
+  // them. Each new kanji gets a teaching card, then its first question a few items later.
+  // `topUp` fills spare places with the weakest kanji not yet due (for extra practice).
+  function buildKanjiDaily({ state, kanji, today, size = 25, newPerDay = 8, wkLevel = 0, topUp = false, rng = Math.random }) {
+    const ks = (k) => (state.kanji || {})[k];
+    const seen = kanji.filter((x) => ks(x.k) && ks(x.k).seen);
+    const fresh = kanji.filter((x) => (!ks(x.k) || !ks(x.k).seen) && !(x.wk && x.wk <= wkLevel));
+    const due = seen
+      .filter((x) => ks(x.k).due <= today)
+      .sort((a, b) => (ks(a.k).due < ks(b.k).due ? -1 : ks(a.k).due > ks(b.k).due ? 1 : ks(a.k).box - ks(b.k).box));
+    const nNew = Math.min(newPerDay, fresh.length, size);
+    const rev = due.slice(0, size - nNew);
+    if (topUp && rev.length + nNew < size) {
+      const ahead = seen.filter((x) => !rev.includes(x)).sort((a, b) => ks(a.k).box - ks(b.k).box || (ks(a.k).due < ks(b.k).due ? -1 : 1));
+      rev.push(...ahead.slice(0, size - nNew - rev.length));
+    }
+    const news = fresh.slice(0, nNew);
+
+    const reviews = shuffle(rev.map((x) => pickKanjiQuestion({ state, kanji, x, box: ks(x.k).box, rng })), rng);
+    const pending = [];
+    const out = [];
+    let ni = 0;
+    while (ni < news.length || reviews.length || pending.length) {
+      if (pending.length && (out.length >= pending[0].at || (ni >= news.length && !reviews.length))) {
+        out.push(pending.shift().item);
+      } else if (ni < news.length && (!reviews.length || rng() < (news.length - ni) / (news.length - ni + reviews.length))) {
+        const x = news[ni++];
+        out.push({ id: `kn:${x.k}`, type: "kn", point: x.k, k: x.k });
+        pending.push({ at: out.length + 3, item: { ...pickKanjiQuestion({ state, kanji, x, box: 0, rng }), taught: true } });
+      } else {
+        out.push(reviews.shift());
+      }
+    }
+    return { items: out, counts: { due: Math.min(due.length, size - nNew), dueTotal: due.length, fresh: news.length } };
+  }
+
+  // Every word of one kanji in every shape, for drilling a single kanji.
+  function buildKanjiDrill({ kanji, x, rng = Math.random, max = 9 }) {
+    const qs = [];
+    x.words.forEach((_, wi) => KTYPES.forEach((type) => qs.push(kanjiQuestion({ kanji, x, wi, type, rng }))));
+    const uniq = [...new Map(qs.map((q) => [q.id, q])).values()];
+    return shuffle(uniq, rng).slice(0, max);
+  }
+
   // The next JLPT: first Sunday of July or December, whichever is next.
   function nextExam(from = new Date()) {
     const firstSunday = (y, m) => {
@@ -288,5 +387,6 @@
     INTERVALS, TARGET, dayStr, addDays, daysBetween, mulberry32, shuffle, median,
     emptyState, record, newToday, status, mixups, interleave, indexByPoint,
     buildDaily, buildMock, buildSetDrill, buildPointDrill, buildPairDrill, buildCustom, nextExam,
+    kanjiQuestion, pickKanjiQuestion, buildKanjiDaily, buildKanjiDrill,
   };
 });

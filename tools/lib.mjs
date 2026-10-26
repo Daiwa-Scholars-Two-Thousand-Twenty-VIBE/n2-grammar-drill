@@ -63,6 +63,55 @@ function checkCue(err, where, cue, text) {
   }
 }
 
+// content/kanji.json: { tiers, glyphs, kanji }. Each kanji has 2 or 3 words; each word has a
+// sentence `s` holding the target `t` once, its reading `tr`, three wrong readings `rx` (same
+// trailing kana) and three wrong spellings `wx` (only kanji changed).
+const HIRA = /^[ぁ-ゖー]+$/;
+const KANJI = /[一-鿿々]/;
+const POS = new Set(["n", "v", "adj", "na", "adv", "other"]);
+const trailingKana = (s) => /[ぁ-ゖー]*$/.exec(s)[0];
+
+export function validateKanji(data) {
+  const errors = [];
+  const err = (m) => errors.push(m);
+  if (!data || !Array.isArray(data.kanji) || !Array.isArray(data.tiers) || typeof data.glyphs !== "object") return ["kanji.json: needs tiers, glyphs and kanji"];
+  const tiers = new Set(data.tiers.map((t) => t.id));
+  const seen = new Set();
+  data.kanji.forEach((x, i) => {
+    const where = `kanji[${i}] ${x && x.k}`;
+    if (!x || typeof x.k !== "string" || [...x.k].length !== 1) return err(`${where}: k must be one kanji`);
+    if (seen.has(x.k)) err(`${where}: duplicate kanji`);
+    seen.add(x.k);
+    if (!tiers.has(x.tier)) err(`${where}: unknown tier ${x.tier}`);
+    if (typeof x.mean !== "string" || !x.mean.trim()) err(`${where}: missing mean`);
+    if (!Array.isArray(x.on) || !Array.isArray(x.kun)) err(`${where}: on and kun must be lists`);
+    if (!Array.isArray(x.look)) err(`${where}: look must be a list`);
+    else for (const g of x.look) if (!data.glyphs[g]) err(`${where}: no glyph entry for look-alike ${g}`);
+    if (!Array.isArray(x.words) || x.words.length < 2 || x.words.length > 3) return err(`${where}: needs 2 or 3 words`);
+    x.words.forEach((w, j) => {
+      const at = `${where} word ${j} ${w.w}`;
+      for (const f of ["w", "r", "en", "pos", "s", "t", "tr", "se"]) if (typeof w[f] !== "string" || !w[f]) return err(`${at}: missing ${f}`);
+      if (!POS.has(w.pos)) err(`${at}: bad pos ${w.pos}`);
+      if (!HIRA.test(w.r) || !HIRA.test(w.tr)) err(`${at}: r and tr must be hiragana`);
+      if (w.s.split(w.t).length !== 2) err(`${at}: t must appear once in s`);
+      if (!w.t.includes(x.k)) err(`${at}: t must contain ${x.k}`);
+      if (w.s.replace(w.t, "").includes(x.k)) err(`${at}: ${x.k} leaks outside t`);
+      const suf = trailingKana(w.t);
+      if (!Array.isArray(w.rx) || w.rx.length !== 3 || new Set([w.tr, ...w.rx]).size !== 4) err(`${at}: rx needs 3 distinct wrong readings`);
+      else for (const r of w.rx) if (!HIRA.test(r) || !r.endsWith(suf)) err(`${at}: rx ${r} must be hiragana ending in ${suf}`);
+      if (!Array.isArray(w.wx) || w.wx.length !== 3 || new Set([w.t, ...w.wx]).size !== 4) err(`${at}: wx needs 3 distinct wrong spellings`);
+      else
+        for (const s of w.wx) {
+          if ([...s].length !== [...w.t].length) err(`${at}: wx ${s} must match the length of ${w.t}`);
+          else if ([...s].some((ch, n) => ch !== [...w.t][n] && !(KANJI.test(ch) && KANJI.test([...w.t][n])))) err(`${at}: wx ${s} may only change kanji`);
+          for (const ch of s) if (KANJI.test(ch) && !w.t.includes(ch) && !data.glyphs[ch]) err(`${at}: no glyph entry for ${ch}`);
+        }
+      checkEnglish(err, at, w.en, w.se, x.mean);
+    });
+  });
+  return errors;
+}
+
 export function validateItems(items, file, catalog, seenIds = new Set()) {
   const errors = [];
   const warnings = [];

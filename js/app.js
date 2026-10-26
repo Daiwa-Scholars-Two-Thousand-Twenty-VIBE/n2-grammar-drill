@@ -7,10 +7,18 @@
   const S = window.SRS;
   const app = document.getElementById("app");
   const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2" };
-  const DEFAULTS = { upto: "all", size: 20, newPerDay: 12, timer: true, eink: false, sound: false, examDate: "" };
+  const DEFAULTS = { upto: "all", size: 20, newPerDay: 12, timer: true, eink: false, sound: false, examDate: "", wk: 27, kNew: 10, kSize: 30 };
   // Seconds the real paper allows, roughly: 問題7 and 問題8 per item, 問題9 per passage.
   const MOCK_SECS = { p7: 25, p8: 50, p9: 360 };
-  const TYPE_NAME = { p7: "問題7 · 文法形式の判断", p8: "問題8 · 文の組み立て", p9: "問題9 · 文章の文法" };
+  const TYPE_NAME = {
+    p7: "問題7 · 文法形式の判断",
+    p8: "問題8 · 文の組み立て",
+    p9: "問題9 · 文章の文法",
+    kr: "漢字 · 読み (like 問題1)",
+    kw: "漢字 · 表記 (like 問題2)",
+    km: "漢字 · 意味",
+    kn: "漢字 · new",
+  };
   const STATUS = {
     new: ["○", "New"],
     learning: ["◔", "Learning"],
@@ -54,9 +62,15 @@
     }
   }
   const pointsOfQ = (q) => (q.type === "p9" ? q.qs.map((b) => b.point) : [q.point]);
+  const K = D.kanji || [];
+  const kanjiOf = new Map(K.map((x) => [x.k, x]));
+  const isK = (q) => q.type[0] === "k";
 
   const today = () => S.dayStr(new Date());
   const status = (id) => S.status(state.points[id]);
+  const kstatus = (k) => S.status(state.kanji[k], S.TARGET.kr);
+  // Kanji your WaniKani level already covers are left out of new introductions.
+  const inGap = (x) => !(x.wk && x.wk <= settings.wk);
 
   // Which lessons count, from the "I have studied up to" setting. null means everything.
   function covered() {
@@ -171,6 +185,7 @@
   let last = null; // the finished quiz, for the results screen
   const browse = { q: "", f: "all" };
   const setFilter = { f: "all" };
+  const kbrowse = { q: "", f: "all" };
 
   function screenOf() {
     return location.hash.replace(/^#\/?/, "").split("/").map(decodeURIComponent);
@@ -211,6 +226,9 @@
       case "custom":
         html = viewCustom();
         break;
+      case "kanji":
+        html = viewKanji();
+        break;
       case "settings":
         html = viewSettings();
         break;
@@ -248,10 +266,11 @@
   }
 
   function dayStreak() {
+    const studied = (d) => state.days[d] || state.kdays[d];
     let d = today();
-    if (!state.days[d]) d = S.addDays(d, -1);
+    if (!studied(d)) d = S.addDays(d, -1);
     let n = 0;
-    while (state.days[d]) {
+    while (studied(d)) {
       n++;
       d = S.addDays(d, -1);
     }
@@ -315,9 +334,18 @@
       ["browse", "索", "All points", "Search, check your status, drill one"],
       ["rules", "表", "Cheat sheets", "Locked endings, connectives, register"],
       ["custom", "選", "Custom drill", "Pick lessons and question types"],
+      ...(K.length ? [["kanji", "漢", "Kanji gap", `${K.length} exam kanji WaniKani teaches after level 27`]] : []),
     ]
-      .map(([act, g, b, s]) => `<button class="mode" data-act="${act === "sets" || act === "browse" || act === "rules" || act === "custom" ? "nav" : act}" data-to="${act}"><span class="glyph">${g}</span><b>${b}</b><small>${s}</small></button>`)
+      .map(([act, g, b, s]) => `<button class="mode" data-act="${["sets", "browse", "rules", "custom", "kanji"].includes(act) ? "nav" : act}" data-to="${act}"><span class="glyph">${g}</span><b>${b}</b><small>${s}</small></button>`)
       .join("");
+
+    const kc = kanjiCounts();
+    const kanjiCard = K.length
+      ? `<div class="card ktoday"><div><span class="kicker">Kanji gap</span>
+          <p class="small muted" style="margin:0">${kc.n ? `${kc.n - kc.nNew} due · ${kc.nNew} new` : `All caught up. ${kc.met}/${kc.gap} met.`}</p></div>
+          ${kc.n ? `<button class="btn primary" data-act="kanji-today">Kanji: ${kc.n}, about ${Math.max(1, Math.round((kc.n * 15 + kc.nNew * 20) / 60))} min</button>` : `<button class="btn" data-act="nav" data-to="kanji">Open</button>`}
+        </div>`
+      : "";
 
     const firstTime = !seen
       ? `<div class="card"><h3>How this works</h3><ul class="small" style="margin:0;padding-left:18px">
@@ -331,6 +359,7 @@
     return `${header()}
       ${firstTime}
       ${todayCard}
+      ${kanjiCard}
       <div class="stats">
         <div><b>${seen}/${pts.length}</b>points met</div>
         <div><b>${counts.auto}</b>automatic</div>
@@ -342,7 +371,7 @@
       <div class="card"><h3>Progress by section</h3><div class="bars">${bars}</div>
         <div class="legend">${["auto", "solid", "learning", "weak"].map((s) => `<span><i class="st-${s}"></i>${STATUS[s][1]}</span>`).join("")}<span><i style="border:1px solid var(--line)"></i>Not met</span></div>
       </div>
-      <p class="foot">${D.points.length} points · ${D.questions.length} questions · data ${esc(D.version)}${settings.upto !== "all" ? ` · studying up to ${esc(lessonLabel(settings.upto))}` : ""}<br>
+      <p class="foot">${D.points.length} points · ${D.questions.length} questions${K.length ? ` · ${K.length} kanji` : ""} · data ${esc(D.version)}${settings.upto !== "all" ? ` · studying up to ${esc(lessonLabel(settings.upto))}` : ""}<br>
         <button class="linkish" data-act="nav" data-to="settings">Settings and backup</button> · <a href="${REPO}" target="_blank" rel="noopener">Source</a></p>`;
   }
 
@@ -368,6 +397,30 @@
     }
   }
 
+  function kanjiCounts() {
+    const t = today();
+    const ks = (k) => state.kanji[k];
+    const met = K.filter((x) => ks(x.k) && ks(x.k).seen).length;
+    const due = K.filter((x) => ks(x.k) && ks(x.k).seen && ks(x.k).due <= t).length;
+    const fresh = K.filter((x) => (!ks(x.k) || !ks(x.k).seen) && inGap(x)).length;
+    const newLeft = Math.min(fresh, Math.max(0, settings.kNew - S.newToday(state, t, "kanji")));
+    const n = Math.min(settings.kSize, due + newLeft);
+    const nNew = Math.min(newLeft, Math.max(n - due, Math.floor(n / 4)));
+    return { met, due, fresh, newLeft, n, nNew, gap: K.filter(inGap).length };
+  }
+
+  function startKanji(kind) {
+    const args = { state, kanji: K, today: today(), wkLevel: settings.wk };
+    if (kind === "kanji-today") {
+      const c = kanjiCounts();
+      begin("kanji", "Kanji", S.buildKanjiDaily({ ...args, size: c.n, newPerDay: c.nNew }).items);
+    } else if (kind === "kanji-more") {
+      begin("kanji", "New kanji", S.buildKanjiDaily({ ...args, size: 5, newPerDay: 5 }).items);
+    } else {
+      begin("kanji", "Weakest kanji", S.buildKanjiDaily({ ...args, size: settings.kSize, newPerDay: 0, topUp: true }).items);
+    }
+  }
+
   function startPassage() {
     const ps = pool().filter((q) => q.type === "p9");
     if (!ps.length) return toast("No passages in your study range yet.");
@@ -382,7 +435,8 @@
   function startItem() {
     const q = cur();
     sess.t0 = Date.now();
-    sess.answered = null;
+    // A teaching card has nothing to answer: it is "answered" as soon as it shows, so Next works.
+    sess.answered = q.type === "kn" ? { intro: true } : null;
     sess.hint = false;
     sess.order = S.shuffle([0, 1, 2, 3]);
     if (q.type === "p8") sess.built = [];
@@ -404,6 +458,7 @@
       return `${Math.floor(left / 60)}:${String(Math.floor(left % 60)).padStart(2, "0")}`;
     }
     const q = cur();
+    if (q.type === "kn") return "new";
     if (sess.answered) return fmtSecs(sess.answered.secs);
     if (!settings.timer || settings.eink) return `aim ${S.TARGET[q.type]} s`;
     return `${Math.floor((Date.now() - sess.t0) / 1000)} s`;
@@ -430,15 +485,15 @@
     const q = cur();
     const n = sess.items.length;
     const pct = Math.round((sess.i / n) * 100);
-    const canHint = !sess.mock && !sess.answered && !sess.hint && q.type !== "p8";
-    const body = q.type === "p7" ? qP7(q) : q.type === "p8" ? qP8(q) : qP9(q);
+    const canHint = !sess.mock && !sess.answered && !sess.hint && q.type !== "p8" && !isK(q);
+    const body = isK(q) ? qK(q) : q.type === "p7" ? qP7(q) : q.type === "p8" ? qP8(q) : qP9(q);
     return `<div class="qbar">
         <button class="quit" data-act="quit">✕ ${sess.mock ? "End" : "Stop"}</button>
         <div class="progress"><span style="width:${pct}%"></span></div>
         <span>${sess.i + 1}/${n}</span><span class="clock">${clockText()}</span>
       </div>
       <div class="card">
-        <div class="qtype"><span class="tag">${TYPE_NAME[q.type]}${sess.answered ? ` · ${esc(q.id)}` : ""}</span>${canHint ? `<button class="linkish small" data-act="hint">Show the cue <kbd>H</kbd></button>` : ""}</div>
+        <div class="qtype"><span class="tag">${TYPE_NAME[q.type]}${sess.answered && q.type !== "kn" ? ` · ${esc(q.id)}` : ""}</span>${canHint ? `<button class="linkish small" data-act="hint">Show the cue <kbd>H</kbd></button>` : ""}</div>
         ${body}
       </div>`;
   }
@@ -556,8 +611,115 @@
     </div>`;
   }
 
+  // ---------- kanji items ----------
+  // The sentence with the target word underlined, in kanji or (for 表記) in kana.
+  function kSentence(w, kana) {
+    const i = w.s.indexOf(w.t);
+    return `${esc(w.s.slice(0, i))}<u class="tgt">${esc(kana ? w.tr : w.t)}</u>${esc(w.s.slice(i + w.t.length))}`;
+  }
+
+  // Name the trap a wrong reading fell into, the way the exam builds them.
+  function trapName(right, wrong) {
+    const plain = (s) => s.normalize("NFD").replace(/[゙゚]/g, "").normalize("NFC");
+    const short = (s) => s.replace(/っ/g, "").replace(/(?<=[おこそとのほもよろごぞどぼぽょ])う|(?<=[えけせてねへめれげぜでべぺ])い|ー/g, "");
+    if (short(right) === short(wrong)) return right.replace(/[^っ]/g, "") !== wrong.replace(/[^っ]/g, "") ? "Small っ trap: check the double consonant." : "Long vowel trap: check the length.";
+    if (plain(right) === plain(wrong)) {
+      const i = [...right].findIndex((ch, n) => ch !== [...wrong][n]);
+      return `Voicing trap: ${[...right][i]}, not ${[...wrong][i]}.`;
+    }
+    if (plain(short(right)) === plain(short(wrong))) return "Voicing and length trap.";
+    return "A different reading: this one belongs to another word or another kanji.";
+  }
+
+  // One kanji at a glance: meaning, readings, where it shows up, its words and its look-alikes.
+  function kanjiStrip(x, { words = true } = {}) {
+    const st = kstatus(x.k);
+    const looks = (x.look || []).filter((g) => D.glyphs[g]).map((g) => `<span class="jp">${esc(g)}</span> ${esc(D.glyphs[g].m)}`).join(" · ");
+    return `<div class="kstrip">
+        <button class="kglyph jp" data-act="kanji" data-k="${esc(x.k)}" title="Open the card">${esc(x.k)}</button>
+        <div><b>${esc(x.mean)}</b>
+          <div class="small muted jp">${esc([...x.on, ...x.kun].join("、"))}</div>
+          <div class="small muted">${glyph(st)} ${STATUS[st][1]} · WaniKani ${x.wk ? `level ${x.wk}` : "does not teach it"}${x.papers ? ` · in ${x.papers} of 17 past N2 papers` : ""}</div></div>
+      </div>
+      ${words ? `<ul class="kwords">${x.words.map((w) => `<li><span class="jp">${esc(w.w)}</span> <span class="jp muted">${esc(w.r)}</span> ${esc(w.en)}</li>`).join("")}</ul>` : ""}
+      ${looks ? `<p class="small"><b>Don't confuse:</b> ${looks}</p>` : ""}`;
+  }
+
+  function qK(q) {
+    const x = kanjiOf.get(q.k);
+    if (q.type === "kn") {
+      const w = x.words[0];
+      return `<div class="kintro">${kanjiStrip(x)}
+          <div class="sentence">${kSentence(w, false)}</div>
+          <div class="en">${esc(w.se)}</div>
+          <p class="small muted">Say each word aloud once. Its first question comes in a few items.</p>
+          <div class="row"><button class="btn primary" data-act="next">Got it <kbd>Enter</kbd></button>
+          <button class="btn" data-act="know">I know this: test me now <kbd>K</kbd></button></div></div>`;
+    }
+    const w = x.words[q.wi];
+    const a = sess.answered;
+    const prompt =
+      q.type === "km"
+        ? `<div class="kword jp">${esc(w.w)}</div><p class="small muted">What does it mean?</p>`
+        : `<div class="sentence">${kSentence(w, q.type === "kw")}</div>
+           <p class="small muted">${q.type === "kr" ? "How is the underlined word read?" : "Which kanji spell the underlined word?"}</p>`;
+    return `${prompt}<div class="choices ${q.type === "km" ? "en-choices" : ""}">${choiceButtons(q, a)}</div>${a ? feedbackK(q, a, true) : ""}`;
+  }
+
+  function feedbackK(q, a, next) {
+    const x = kanjiOf.get(q.k);
+    const w = x.words[q.wi];
+    const target = S.TARGET[q.type];
+    const verdict = a.ok
+      ? `<div class="verdict good">Right · ${fmtSecs(a.secs)}${a.secs > target * 1.2 ? ` <span class="muted small">(slow, so it comes back tomorrow)</span>` : ""}</div>`
+      : `<div class="verdict bad">Not this time. The answer is ${esc(q.c[0])}.</div>`;
+    let why = "";
+    if (!a.ok && a.orig > 0) {
+      const wrong = q.c[a.orig];
+      if (q.type === "kr") why = trapName(q.c[0], wrong);
+      else if (q.type === "kw") {
+        const odd = [...wrong].filter((ch) => !w.t.includes(ch) && D.glyphs[ch]);
+        why = odd.length ? `${odd.map((ch) => `${ch} is “${D.glyphs[ch].m}” (${D.glyphs[ch].r})`).join("; ")}. The word needs ${[...w.t].filter((ch) => !wrong.includes(ch)).join("")}.` : "Same sound, wrong kanji.";
+      } else {
+        const owner = K.flatMap((y) => y.words).find((v) => v.en === wrong);
+        if (owner) why = `That one is ${owner.w} (${owner.r}).`;
+      }
+    }
+    return `<div class="feedback">
+      ${verdict}
+      ${why ? `<p class="small">${esc(why)}</p>` : ""}
+      <div class="kans"><span class="kword jp">${esc(w.w)}</span><span><b class="jp">${esc(w.r)}</b><br>${esc(w.en)}</span></div>
+      <div class="sentence small-s">${kSentence(w, false)}</div>
+      <div class="en">${esc(w.se)}</div>
+      ${kanjiStrip(x)}
+      ${next ? `<button class="btn primary wide" data-act="next">Next <kbd>Enter</kbd></button>` : ""}
+    </div>`;
+  }
+
+  // "I know this": swap the teaching card for its question now, and drop the later copy.
+  function knowIt() {
+    if (!sess || cur().type !== "kn") return;
+    const k = cur().k;
+    const j = sess.items.findIndex((it, n) => n > sess.i && it.k === k && it.taught);
+    const q = j > 0 ? sess.items.splice(j, 1)[0] : S.pickKanjiQuestion({ state, kanji: K, x: kanjiOf.get(k) });
+    sess.items[sess.i] = { ...q, taught: false };
+    startItem();
+    paintQuiz(false);
+  }
+
+  // A missed kanji comes back once later in the session, through another word or shape.
+  function requeueK(q) {
+    if (sess.mode === "review" || sess.requeued.has(q.k)) return;
+    sess.requeued.add(q.k);
+    const ahead = new Set(sess.items.slice(sess.i).map((it) => it.id));
+    const opts = S.buildKanjiDrill({ kanji: K, x: kanjiOf.get(q.k), max: 99 }).filter((it) => !ahead.has(it.id) && it.type !== "kw");
+    const again = opts.find((it) => it.wi !== q.wi) || opts.find((it) => it.id !== q.id) || q;
+    sess.items.splice(Math.min(sess.i + 4, sess.items.length), 0, again);
+  }
+
   function record(q, point, ok, secs, chosenPoint, qid) {
-    S.record(state, { qid: qid || q.id, point, ok, secs, type: q.type, chosenPoint, slow: sess.hint, today: today() });
+    const k = isK(q);
+    S.record(state, { qid: qid || q.id, point, ok, secs, type: q.type, chosenPoint, slow: sess.hint, today: today(), store: k ? "kanji" : "points", firstBox: q.taught ? 1 : 3 });
     saveState();
     beep(ok);
   }
@@ -572,9 +734,10 @@
     const ok = orig === 0;
     const secs = (Date.now() - sess.t0) / 1000;
     const qid = q.type === "p9" ? `${q.id}#${sess.blank + 1}` : q.id;
-    record(q, b.point, ok, secs, ok ? null : b.cp[orig], qid);
-    sess.res.push({ qid: q.id, blank: q.type === "p9" ? sess.blank : null, ok, secs, orig, order: sess.order.slice() });
+    record(q, b.point, ok, secs, ok || !b.cp ? null : b.cp[orig], qid);
+    sess.res.push({ qid: q.id, blank: q.type === "p9" ? sess.blank : null, ok, secs, orig, order: sess.order.slice(), item: isK(q) ? q : null });
     if (!ok && q.type === "p7") requeue(b.point);
+    if (!ok && isK(q)) requeueK(q);
     if (sess.mock) return advance();
     sess.answered = { orig, ok, secs };
     paintQuiz(false);
@@ -680,10 +843,19 @@
   function viewResults() {
     const r = last;
     const res = r.res;
-    const typeOf = (x) => qById.get(x.qid).type;
+    const itemOf = (x) => x.item || qById.get(x.qid);
+    const typeOf = (x) => itemOf(x).type;
     const used = (r.ended - r.started) / 1000;
     let top;
-    if (r.mock) {
+    if (r.mode === "kanji") {
+      const ok = res.filter((x) => x.ok).length;
+      const med = res.length ? S.median(res.map((x) => x.secs)) : null;
+      const slow = res.filter((x) => x.ok && x.secs > S.TARGET.kr * 1.2).length;
+      const taught = r.items.filter((q) => q.type === "kn").length;
+      top = `<div class="card"><span class="kicker">${esc(r.title)}</span>
+        <div class="score">${ok}<small> / ${res.length} right</small></div>
+        <p class="muted small">${taught ? `${taught} new kanji. ` : ""}${med !== null ? `Typical time: ${fmtSecs(med)} (aim for ${S.TARGET.kr} s). ` : ""}${slow ? `${slow} right but slow: those come back tomorrow. ` : ""}Time ${fmtSecs(used)}.</p></div>`;
+    } else if (r.mock) {
       const of = (t) => res.filter((x) => typeOf(x) === t);
       const s7 = of("p7").filter((x) => x.ok).length;
       const s8 = of("p8").filter((x) => x.starOk).length;
@@ -707,6 +879,12 @@
     const missed = [...new Set(res.filter((x) => !x.ok && typeOf(x) !== "p9").map((x) => x.qid))];
     const rows = res
       .map((x) => {
+        if (x.item) {
+          const q = x.item;
+          const w = kanjiOf.get(q.k).words[q.wi];
+          const body = `<div class="choices">${q.c.map((c, i) => `<div class="choice ${i === 0 ? "right" : i === x.orig ? "wrong" : "dim"}"><span>${esc(c)}</span></div>`).join("")}</div>${feedbackK(q, x, false)}`;
+          return `<details><summary><span class="mark ${x.ok ? "good" : "bad"}">${x.ok ? "✓" : "✕"}</span><span class="form jp">${esc(w.w)} <span class="muted small">${esc(TYPE_NAME[q.type].split(" · ")[1].split(" ")[0])}</span></span><span class="t">${fmtSecs(x.secs)}</span></summary>${body}</details>`;
+        }
         const q = qById.get(x.qid);
         const b = q.type === "p9" ? q.qs[x.blank] : q;
         const p = pointById.get(b.point);
@@ -726,7 +904,7 @@
         ${missed.length ? `<button class="btn primary" data-act="again">Go again on the ${missed.length} I missed</button>` : ""}
         <button class="btn" data-act="nav" data-to="home">Home</button>
       </div>
-      <h3>Every question</h3><p class="muted small">Tap one to see the cue, the tell and why each choice fails.</p>
+      <h3>Every question</h3><p class="muted small">${r.mode === "kanji" ? "Tap one to see the word in its sentence, the trap you fell into and the kanji." : "Tap one to see the cue, the tell and why each choice fails."}</p>
       <div class="res">${rows}</div>`;
   }
 
@@ -855,6 +1033,95 @@
     begin("custom", "Custom", S.buildCustom({ questions: qs, points: D.points, lessons, types, max }));
   }
 
+  // ---------- kanji ----------
+  function kanjiTiles() {
+    const q = kbrowse.q.trim().toLowerCase();
+    let out = "";
+    for (const tier of D.kanjiTiers) {
+      const xs = K.filter((x) => x.tier === tier.id).filter((x) => {
+        const st = kstatus(x.k);
+        if (kbrowse.f === "wk" ? inGap(x) : kbrowse.f !== "all" && (st !== kbrowse.f || !inGap(x))) return false;
+        return !q || `${x.k} ${x.mean} ${x.words.map((w) => `${w.w} ${w.r} ${w.en}`).join(" ")}`.toLowerCase().includes(q);
+      });
+      if (!xs.length) continue;
+      out += `<div class="lesson-h">${esc(tier.name)} · ${xs.length}</div><div class="ktiles">${xs
+        .map((x) => {
+          const st = inGap(x) ? kstatus(x.k) : "wk";
+          return `<button class="ktile jp ${st}" data-act="kanji" data-k="${esc(x.k)}" title="${esc(x.mean)}">${esc(x.k)}</button>`;
+        })
+        .join("")}</div>`;
+    }
+    return out || `<p class="muted">No kanji match.</p>`;
+  }
+
+  function viewKanji() {
+    const c = kanjiCounts();
+    const gap = K.filter(inGap);
+    const counts = { new: 0, learning: 0, solid: 0, auto: 0, weak: 0 };
+    for (const x of gap) counts[kstatus(x.k)]++;
+    const done = state.kdays[today()] ? state.kdays[today()].n : 0;
+    const todayCard = c.n
+      ? `<div class="card today">
+          <div><span class="kicker">Kanji · today</span><h2>${c.met ? "Your kanji review is ready" : "Start here"}</h2>
+          <p class="muted small">Each new kanji gets a short teaching card, then a question a few items later. After that it comes back just before you would forget it, through a different word each time.</p></div>
+          <div class="counts"><div><b>${c.n - c.nNew}</b>due</div><div><b>${c.nNew}</b>new</div><div><b>${done}</b>answered today</div></div>
+          <button class="btn primary wide go" data-act="kanji-today">Start: ${c.n} kanji</button>
+        </div>`
+      : `<div class="card today"><div><span class="kicker">Kanji · today</span><h2>All caught up</h2>
+          <p class="muted small">${done} answered today. ${c.fresh} kanji in your gap not met yet.</p></div>
+          <div class="row">${c.fresh ? `<button class="btn" data-act="kanji-more">5 more new kanji</button>` : ""}${c.met ? `<button class="btn" data-act="kanji-weak">Practise my weakest</button>` : ""}</div></div>`;
+    const bars = D.kanjiTiers
+      .map((tier) => {
+        const xs = gap.filter((x) => x.tier === tier.id);
+        if (!xs.length) return "";
+        const k = { auto: 0, solid: 0, learning: 0, weak: 0, new: 0 };
+        xs.forEach((x) => k[kstatus(x.k)]++);
+        const w = (n) => ((n / xs.length) * 100).toFixed(1);
+        return `<div><div class="lab"><span>${esc(tier.name)}</span><span>${k.auto + k.solid}/${xs.length}</span></div>
+          <div class="bar">${["auto", "solid", "learning", "weak", "new"].map((s) => (k[s] ? `<span class="${s}" style="width:${w(k[s])}%"></span>` : "")).join("")}</div></div>`;
+      })
+      .join("");
+    const f = (key, label) => `<button class="${kbrowse.f === key ? "on" : ""}" data-act="kanji-filter" data-f="${key}">${label}</button>`;
+    return `${header()}${back()}
+      <h2>Kanji gap</h2>
+      <p class="muted small">${K.length} kanji that real N2 papers use but WaniKani teaches after level 27, most useful first. Ranked by how many of 17 past N2 papers each one appears in. Kanji at or below your WaniKani level (${settings.wk}, change it in <button class="linkish" data-act="nav" data-to="settings">Settings</button>) are left out.</p>
+      ${todayCard}
+      <div class="stats">
+        <div><b>${c.met}/${gap.length}</b>kanji met</div>
+        <div><b>${counts.auto + counts.solid}</b>solid or better</div>
+        <div><b>${counts.weak}</b>weak</div>
+        <div><b>${c.fresh}</b>still new</div>
+      </div>
+      <div class="card"><h3>Progress by tier</h3><div class="bars">${bars}</div>
+        <div class="legend">${["auto", "solid", "learning", "weak"].map((s) => `<span><i class="st-${s}"></i>${STATUS[s][1]}</span>`).join("")}<span><i style="border:1px solid var(--line)"></i>Not met</span></div></div>
+      <input class="search" id="ksearch" type="search" placeholder="Search: 驚, surprise, おどろく…" value="${esc(kbrowse.q)}" autocomplete="off">
+      <div class="filters">${f("all", "All")}${f("weak", "Weak")}${f("new", "New")}${f("learning", "Learning")}${f("solid", "Solid")}${f("auto", "Automatic")}${f("wk", "Covered by WaniKani")}</div>
+      <div id="klist">${kanjiTiles()}</div>`;
+  }
+
+  function openKanji(k) {
+    const x = kanjiOf.get(k);
+    if (!x) return;
+    closeModal();
+    const ks = state.kanji[k];
+    const rec = ks && ks.seen ? `${ks.right}/${ks.seen} right${ks.due ? ` · next ${esc(fmtDate(ks.due))}` : ""}` : "Not met yet";
+    const tier = D.kanjiTiers.find((t) => t.id === x.tier);
+    const el = document.createElement("div");
+    el.className = "overlay";
+    el.dataset.act = "close-modal";
+    el.innerHTML = `<div class="card sheet" role="dialog" aria-label="${esc(x.k)}">
+      <div class="row" style="justify-content:space-between"><span class="kicker">Kanji gap · #${x.rank}${tier ? ` · ${esc(tier.name)}` : ""}</span><button class="linkish" data-act="close-modal">Close</button></div>
+      ${kanjiStrip(x, { words: false })}
+      <p class="small muted">${rec}</p>
+      ${x.words
+        .map((w) => `<div class="kex"><div><span class="jp kw">${esc(w.w)}</span> <span class="jp muted">${esc(w.r)}</span> · ${esc(w.en)}</div>
+          <div class="ex jp">${kSentence(w, false)}</div><div class="muted small">${esc(w.se)}</div></div>`)
+        .join("")}
+      ${!sess ? `<button class="btn primary wide" data-act="kanji-drill" data-k="${esc(x.k)}">Drill this kanji</button>` : ""}
+    </div>`;
+    document.body.appendChild(el);
+  }
+
   // ---------- settings ----------
   function viewSettings() {
     const upto = [`<option value="all" ${settings.upto === "all" ? "selected" : ""}>Everything (the whole book)</option>`, lessonOptions(settings.upto)].join("");
@@ -870,6 +1137,11 @@
         <div class="field"><label for="s-sound">Sound on answer</label><input id="s-sound" type="checkbox" ${settings.sound ? "checked" : ""} data-set="sound"></div>
         <div class="field"><label for="s-exam">Exam date<small>Empty means the next JLPT${exam ? ` (${esc(fmtDate(exam))})` : ""}.</small></label><input id="s-exam" type="date" value="${esc(settings.examDate)}" data-set="examDate"></div>
       </div>
+      ${K.length ? `<div class="card"><h3>Kanji gap</h3>
+        <div class="field"><label for="s-wk">My WaniKani level<small>Kanji WaniKani teaches at or below this level are not introduced. The list starts at level 28, so 27 or lower means all of it.</small></label><input id="s-wk" type="number" min="0" max="60" value="${settings.wk}" data-set="wk"></div>
+        <div class="field"><label for="s-knew">New kanji per day<small>10 a day meets the first 250 in under four weeks.</small></label><input id="s-knew" type="number" min="0" max="30" value="${settings.kNew}" data-set="kNew"></div>
+        <div class="field"><label for="s-ksize">Kanji per review</label><input id="s-ksize" type="number" min="5" max="80" value="${settings.kSize}" data-set="kSize"></div>
+      </div>` : ""}
       <div class="card"><h3>Your progress</h3>
         <p class="muted small">Progress lives in this browser only. Export it to move to another device or to keep a backup.</p>
         <div class="row">
@@ -936,13 +1208,27 @@
       if (!groups.has(b.point)) groups.set(b.point, []);
       groups.get(b.point).push({ line, tell: b.tell, rec, en: q.en });
     }
-    if (!groups.size) return toast("No misses yet.");
+    // Kanji misses: one line per word, grouped by kanji.
+    const kmiss = new Map();
+    for (const [qid, rec] of Object.entries(state.qs)) {
+      const m = /^k[rwm]:(.):(\d+)$/u.exec(qid);
+      if (!rec.wrong || !m || !kanjiOf.has(m[1])) continue;
+      const w = kanjiOf.get(m[1]).words[Number(m[2])];
+      if (!w) continue;
+      if (!kmiss.has(m[1])) kmiss.set(m[1], new Map());
+      kmiss.get(m[1]).set(w.w, `- ${w.w}（${w.r}）${w.en}: ${w.s}`);
+    }
+    if (!groups.size && !kmiss.size) return toast("No misses yet.");
     const order = D.points.map((p) => p.id).filter((id) => groups.has(id));
     let md = `# N2 grammar misses\n\nExported ${today()} from N2 文法ドリル.\n`;
     for (const id of order) {
       const p = pointById.get(id);
       md += `\n## ${p.form} (${p.en})\n\n${p.tell}\n\n`;
       for (const g of groups.get(id)) md += `- ${g.line}\n  - ${g.tell} (right ${g.rec.right} of ${g.rec.seen})\n`;
+    }
+    if (kmiss.size) {
+      md += `\n# Kanji misses\n`;
+      for (const x of K.filter((y) => kmiss.has(y.k))) md += `\n## ${x.k} (${x.mean})\n\n${[...kmiss.get(x.k).values()].join("\n")}\n`;
     }
     download(`n2-grammar-misses-${today()}.md`, md, "text/markdown");
   }
@@ -1029,9 +1315,24 @@
       case "quit":
         return quit();
       case "again": {
-        const missed = [...new Set(last.res.filter((x) => !x.ok && qById.get(x.qid).type !== "p9").map((x) => x.qid))].map((id) => qById.get(id));
-        return begin("review", "Missed ones", S.shuffle(missed));
+        const misses = last.res.filter((x) => !x.ok && (x.item || qById.get(x.qid)).type !== "p9");
+        const byId = new Map(misses.map((x) => [x.qid, x.item || qById.get(x.qid)]));
+        return begin("review", "Missed ones", S.shuffle([...byId.values()]));
       }
+      case "kanji-today":
+      case "kanji-more":
+      case "kanji-weak":
+        return startKanji(a.act);
+      case "kanji-drill":
+        closeModal();
+        return begin("kanji", a.k, S.buildKanjiDrill({ kanji: K, x: kanjiOf.get(a.k) }));
+      case "kanji":
+        return openKanji(a.k);
+      case "know":
+        return knowIt();
+      case "kanji-filter":
+        kbrowse.f = a.f;
+        return render();
       case "point":
         return openPoint(a.id);
       case "close-modal":
@@ -1066,6 +1367,12 @@
   });
 
   document.addEventListener("input", (e) => {
+    if (e.target.id === "ksearch") {
+      kbrowse.q = e.target.value;
+      const list = document.getElementById("klist");
+      if (list) list.innerHTML = kanjiTiles();
+      return;
+    }
     if (e.target.id !== "search") return;
     browse.q = e.target.value;
     const list = document.getElementById("plist");
@@ -1097,6 +1404,7 @@
         return unslot(sess.built.length - 1);
       }
       if (e.key === "h" || e.key === "H") return hint();
+      if (e.key === "k" || e.key === "K") return knowIt();
       if (e.key === "Escape") return quit();
     } else if (e.key === "Escape" && screen && screen !== "home") {
       nav("home");

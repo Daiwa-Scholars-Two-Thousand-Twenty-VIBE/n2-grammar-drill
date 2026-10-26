@@ -424,6 +424,50 @@ td.jp, td .jp { font-family: var(--jp); }
 .tabs button { flex: none; border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 6px 12px; font-size: 0.85rem; }
 .tabs button.on { background: var(--fg); color: var(--bg); border-color: var(--fg); }
 
+/* Kanji gap */
+.ktoday { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.ktoday .btn { flex: none; }
+u.tgt { text-decoration: underline 2px; text-underline-offset: 6px; font-weight: 700; }
+.sentence.small-s { font-size: 1.05rem; margin: 0; }
+.kword { font-family: var(--jp); font-size: 2rem; font-weight: 700; line-height: 1.3; margin: 4px 0 8px; }
+.kans { display: flex; gap: 14px; align-items: center; }
+.kans .kword { margin: 0; }
+.kstrip { display: flex; gap: 14px; align-items: center; }
+.kglyph {
+  flex: none;
+  width: 72px;
+  height: 72px;
+  font-size: 2.6rem;
+  line-height: 1;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel-2);
+}
+.kwords { margin: 0; padding-left: 18px; font-size: 0.92rem; }
+.kwords li { margin: 2px 0; }
+.kintro { display: grid; gap: 12px; }
+.kintro .sentence { margin: 0; }
+.kex { padding: 10px 0; border-top: 1px solid var(--line); }
+.kex .kw { font-weight: 700; font-size: 1.1rem; }
+.en-choices .choice { font-family: var(--ui); font-size: 1rem; }
+.ktiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(46px, 1fr)); gap: 6px; }
+.ktile {
+  height: 46px;
+  font-size: 1.4rem;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+}
+.ktile:hover { border-color: var(--accent); }
+.ktile.learning { border-color: var(--learning); }
+.ktile.solid { border-color: var(--solid); background: color-mix(in srgb, var(--solid) 12%, var(--panel)); }
+.ktile.auto { border-color: var(--auto); background: color-mix(in srgb, var(--auto) 22%, var(--panel)); }
+.ktile.weak { border-color: var(--weak); border-width: 2.5px; }
+.ktile.wk { opacity: 0.35; }
+body.eink .ktile.auto, body.eink .ktile.solid { background: #fff; border-width: 3px; }
+body.eink .ktile.weak { border-style: dashed; }
+#klist .lesson-h { margin-top: 16px; }
+
 /* Point sheet */
 .sheet .form { font-size: 1.5rem; font-weight: 700; margin: 0; }
 .sheet dl { display: grid; grid-template-columns: 7em 1fr; gap: 6px 10px; margin: 12px 0; font-size: 0.92rem; }
