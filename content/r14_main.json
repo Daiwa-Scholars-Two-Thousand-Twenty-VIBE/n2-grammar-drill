@@ -1,0 +1,420 @@
+[
+  {
+    "id": "r14-001",
+    "type": "r14",
+    "title": "さくら市民会館　冬の講座のご案内",
+    "intro": "右のページは、ある市民会館の講座の案内である。",
+    "blocks": [
+      { "h": "冬の講座　受講者募集" },
+      { "p": "さくら市民会館では、1月から3月まで、次の六つの講座を開きます。初めての方も、どうぞお気軽にお申し込みください。" },
+      {
+        "table": [
+          ["講座名", "日時", "回数", "定員", "受講料"],
+          ["やさしい書道", "毎週火曜　10:00〜12:00", "全10回", "15名", "6,000円"],
+          ["はじめての中国語", "毎週水曜　19:00〜20:30", "全10回", "20名", "8,000円"],
+          ["スマートフォン入門", "毎週木曜　14:00〜15:30", "全5回", "12名", "3,000円"],
+          ["季節の家庭料理", "第2・第4土曜　10:00〜13:00", "全6回", "16名", "7,000円（材料費は別に1回500円）"],
+          ["写真を楽しむ", "毎週日曜　14:00〜16:00", "全8回", "20名", "5,000円"],
+          ["ヨガで体ほぐし", "毎週金曜　19:00〜20:00", "全10回", "25名", "6,000円"]
+        ]
+      },
+      { "h": "申し込み方法" },
+      {
+        "ul": [
+          "申し込み期間は、12月1日から12月15日までです。",
+          "会館の受付、または電話でお申し込みください。電話での受け付けは、平日の9:00〜17:00です。",
+          "定員を超えた場合は抽選とし、結果は12月20日までにはがきでお知らせします。",
+          "受講料は、初回の講座の日に受付でお支払いください。"
+        ]
+      },
+      { "note": "※さくら市内にお住まいの方、または市内に通勤・通学している方以外は、受講料が各講座1,000円高くなります。" },
+      { "note": "※65歳以上で市内にお住まいの方は、受講料が半額になります。材料費は割引の対象外です。初回に、年齢が分かるものをお持ちください。" },
+      { "note": "※「スマートフォン入門」には、ご自分のスマートフォンをお持ちください。" }
+    ],
+    "en": "A city hall lists six winter courses with days, times and fees. People who neither live, work nor study in the city pay 1,000 yen more, and city residents aged 65 or over pay half the course fee, but not the cost of ingredients.",
+    "qs": [
+      {
+        "q": "みどり市に住み、みどり市内の会社に勤めている森さん（40歳）は、平日は18時に仕事が終わるが、金曜日の夜は毎週会議がある。土曜日と日曜日は家族の用事で出かけられない。森さんが受けられる講座と受講料の組み合わせとして正しいものはどれか。",
+        "c": [
+          "「はじめての中国語」で、受講料は9,000円",
+          "「はじめての中国語」で、受講料は8,000円",
+          "「ヨガで体ほぐし」で、受講料は7,000円",
+          "「写真を楽しむ」で、受講料は6,000円"
+        ],
+        "why": [
+          "He is free only on weekday evenings, which leaves 中国語 (Wednesday 19:00) and ヨガ (Friday 19:00). Friday is out, so 中国語. He lives and works in みどり市, not さくら市, so the first ※ adds 1,000円: 8,000 + 1,000 = 9,000円.",
+          "Right course, wrong fee. He neither lives nor works in さくら市, so the 1,000円 extra applies.",
+          "ヨガ is on Friday evening, when he has a meeting every week.",
+          "写真 is on Sunday, and he cannot go out at weekends."
+        ],
+        "cue": ["毎週水曜　19:00〜20:30", "受講料が各講座1,000円高くなります"],
+        "tell": "Cut the courses by the person's free time, then read the ※ on where they live and work before the fee."
+      },
+      {
+        "q": "さくら市に住んでいる山本さん（70歳）は、「季節の家庭料理」に申し込み、全6回に出席するつもりだ。山本さんがこの講座のために払う金額は、全部でいくらか。",
+        "c": ["6,500円", "3,500円", "10,000円", "5,000円"],
+        "why": [
+          "受講料 7,000円 is halved for a city resident aged 65 or over: 3,500円. 材料費 is 500円 × 6 classes = 3,000円, and the ※ says it is not discounted. 3,500 + 3,000 = 6,500円.",
+          "This leaves out the 材料費, 500円 for each of the 6 classes.",
+          "This forgets the half price for city residents aged 65 or over: 7,000 + 3,000.",
+          "This halves the 材料費 too. The ※ says 材料費は割引の対象外."
+        ],
+        "cue": ["材料費は別に1回500円", "材料費は割引の対象外です"],
+        "tell": "Add every cost in the table cell, then apply the ※ discount only to what it covers."
+      }
+    ]
+  },
+  {
+    "id": "r14-002",
+    "type": "r14",
+    "title": "あおぞら国際交流財団　留学生奨学金のご案内",
+    "intro": "右のページは、ある財団の奨学金の募集案内である。",
+    "blocks": [
+      { "h": "2027年度　外国人留学生奨学金　奨学生募集" },
+      { "p": "あおぞら国際交流財団では、日本の大学・大学院で学ぶ外国人留学生を対象に、2027年度の奨学生を次のとおり募集します。奨学金を返す必要はありません。" },
+      {
+        "table": [
+          ["種類", "対象", "支給額（月額）", "支給期間", "採用人数"],
+          ["A　学部奨学金", "大学の学部に在籍する方", "50,000円", "1年間", "20名"],
+          ["B　大学院奨学金", "大学院の修士課程または博士課程に在籍する方", "80,000円", "1年間", "10名"],
+          ["C　研究奨励奨学金", "大学院の博士課程に在籍する方", "120,000円", "2年間", "3名"]
+        ]
+      },
+      { "h": "応募資格（次のすべてに当てはまる方）" },
+      {
+        "ul": [
+          "2027年4月1日の時点で、日本の大学または大学院に在籍し、在留資格が「留学」である方",
+          "2027年4月1日の時点で35歳未満の方",
+          "ほかの団体から、月額50,000円以上の奨学金を受けていない方"
+        ]
+      },
+      { "h": "応募方法" },
+      {
+        "ul": [
+          "応募期間：2027年1月8日〜2月5日（必着）",
+          "次の①〜④の書類を、在籍している大学の留学生担当窓口に提出してください。財団への直接の郵送や持参は受け付けません。",
+          "①申請書（財団のホームページからダウンロードできます）　②成績証明書　③指導教員の推薦書　④在留カードのコピー（両面）"
+        ]
+      },
+      { "note": "※Cに応募する方は、①〜④に加えて、研究計画書（2,000字程度）を提出してください。" },
+      { "note": "※A・B・Cのうち、応募できるのは一つだけです。なお、Cの選考で不採用となった方は、自動的にBの選考の対象となります。" },
+      { "note": "※選考結果は、3月下旬に大学を通してお知らせします。" }
+    ],
+    "en": "A foundation offers three grants for international students in Japan: one for undergraduates, one for graduate students and a larger one for doctoral students. Applicants must meet status, age and other-award limits, apply for only one grant, and send papers through their university.",
+    "qs": [
+      {
+        "q": "2027年1月現在、東西大学の博士課程1年生で、在留資格が「留学」のグエンさん（27歳）は、ほかの団体から月額30,000円の奨学金を受けている。支給額（月額）がいちばん多い奨学金に応募したい。グエンさんがすることとして正しいものはどれか。",
+        "c": [
+          "①〜④の書類と研究計画書を、東西大学の留学生担当窓口に提出する。",
+          "①〜④の書類だけを、東西大学の留学生担当窓口に提出する。",
+          "①〜④の書類と研究計画書を、財団に直接郵送する。",
+          "BとCの両方に応募するため、それぞれの申請書と研究計画書を、東西大学の留学生担当窓口に提出する。"
+        ],
+        "why": [
+          "The highest monthly amount is C, 120,000円, open to doctoral students. He qualifies: 留学 status, 27 is under 35, and his other award of 30,000円 is under the 50,000円 limit. C needs ①〜④ plus a 研究計画書, all handed in through his university office.",
+          "This misses the 研究計画書, which the ※ requires for C.",
+          "Papers must go through the university office. The 財団 does not accept post sent to it directly.",
+          "Only one of A, B and C may be applied for. A C applicant who is not chosen moves to the B selection anyway."
+        ],
+        "cue": ["研究計画書（2,000字程度）を提出してください", "応募できるのは一つだけです", "財団への直接の郵送や持参は受け付けません"],
+        "tell": "Pick the grant from the table, then read every ※ for extra papers, limits and where to hand them in."
+      },
+      {
+        "q": "次の4人は、2027年1月現在、いずれも日本の大学または大学院に在籍しており、4月以降も在籍を続ける予定である。この奨学金に応募できるのは誰か。",
+        "c": [
+          "修士課程1年生で、在留資格は「留学」、ほかの団体から月額40,000円の奨学金を受けている28歳のリンさん",
+          "学部3年生で、在留資格は「留学」、ほかの団体から月額60,000円の奨学金を受けている22歳のアリさん",
+          "博士課程2年生で、在留資格は「留学」、ほかの奨学金は受けていない36歳のサラさん",
+          "学部2年生で、在留資格は「家族滞在」、ほかの奨学金は受けていない20歳のジョンさん"
+        ],
+        "why": [
+          "リンさん is a master's student with 留学 status, aged 28 (under 35), and her other award of 40,000円 is under 50,000円. She meets every condition and can apply for B.",
+          "アリさん gets 60,000円 a month from another body. Only people getting under 50,000円 may apply.",
+          "サラさん is 36. Applicants must be under 35 on 1 April 2027.",
+          "ジョンさん's status is 家族滞在. Only 留学 status qualifies."
+        ],
+        "cue": ["在留資格が「留学」である方", "35歳未満の方", "月額50,000円以上の奨学金を受けていない方"],
+        "tell": "Test each person against every 応募資格 line in turn: status, age, other awards. One line knocks out each."
+      }
+    ]
+  },
+  {
+    "id": "r14-003",
+    "type": "r14",
+    "title": "カフェ・ミモザ　スタッフ募集",
+    "intro": "右のページは、あるカフェのアルバイト募集の広告である。",
+    "blocks": [
+      { "h": "カフェ・ミモザ　アルバイトスタッフ募集" },
+      { "p": "駅前のカフェ・ミモザで、一緒に働いてくれる方を募集しています。経験のない方も、先輩スタッフが丁寧に教えますので安心してください。" },
+      {
+        "table": [
+          ["仕事", "勤務時間", "時給", "勤務日数"],
+          ["ホール（注文・配膳）", "10:00〜15:00", "1,150円", "週3日以上"],
+          ["ホール（注文・配膳）", "17:00〜21:00", "1,200円", "週3日以上"],
+          ["キッチン（調理）", "8:00〜13:00", "1,200円", "週2日以上"],
+          ["ベーカリー（パン作り）", "5:00〜9:00", "1,300円", "週2日以上（土・日のどちらかを含む）"],
+          ["閉店作業（片付け・清掃）", "20:00〜23:00", "1,200円", "週2日以上"]
+        ]
+      },
+      { "h": "待遇" },
+      {
+        "ul": [
+          "交通費は、1日500円まで実費を支給します。",
+          "勤務の日は、店のパンと飲み物を無料でどうぞ。",
+          "制服は店で貸し出します。"
+        ]
+      },
+      { "h": "応募方法" },
+      {
+        "ul": [
+          "店長の田中まで、お電話でご連絡ください（受付時間　14:00〜17:00）。面接の日時をお知らせします。",
+          "面接には、写真を貼った履歴書をお持ちください。"
+        ]
+      },
+      { "note": "※18歳未満の方は、22:00から翌朝5:00までの間は勤務できません。" },
+      { "note": "※22:00以降の勤務は、時給が25%増しになります。" },
+      { "note": "※働き始めてから最初の1か月は研修期間とし、時給は表の金額より50円低くなります。" }
+    ],
+    "en": "A cafe lists five part-time shifts with hours, pay and days a week. Under-18s cannot work after 22:00, pay rises 25% after 22:00, travel is paid up to 500 yen a day, and the first month pays 50 yen an hour less.",
+    "qs": [
+      {
+        "q": "高校2年生のサトシさん（17歳）は、平日の17時以降なら働けるが、土曜日と日曜日は部活動があって働けない。サトシさんが応募できる仕事と、働き始めて最初の1か月の時給の組み合わせとして正しいものはどれか。",
+        "c": [
+          "ホール（17:00〜21:00）で、時給1,150円",
+          "ホール（17:00〜21:00）で、時給1,200円",
+          "閉店作業（20:00〜23:00）で、時給1,150円",
+          "キッチン（8:00〜13:00）で、時給1,150円"
+        ],
+        "why": [
+          "He can work only on weekdays from 17:00, which leaves the evening ホール shift and 閉店作業. He is 17, and the ※ bars under-18s from work after 22:00, so ホール. The first month is training, 50円 less than 1,200円: 1,150円.",
+          "Right job, but the first month is training, so the rate is 50円 lower than the table.",
+          "閉店作業 runs to 23:00. Under-18s cannot work after 22:00.",
+          "キッチン runs 8:00〜13:00, when he is at school. He can only work from 17:00."
+        ],
+        "cue": ["18歳未満の方は、22:00から翌朝5:00までの間は勤務できません", "時給は表の金額より50円低くなります"],
+        "tell": "Match the shift to their free hours, then check the ※ for an age limit and the training rate."
+      },
+      {
+        "q": "大学生のエミさん（20歳）は、閉店作業の仕事をしている。働き始めて2か月目のある日、20:00から23:00まで働いた。この日の交通費は往復400円だった。この日にエミさんが受け取る金額は、交通費も含めて全部でいくらか。",
+        "c": ["4,300円", "3,900円", "4,000円", "4,900円"],
+        "why": [
+          "It is her second month, so there is no training cut: 1,200円 an hour. 20:00〜22:00 is 2 × 1,200 = 2,400円. 22:00〜23:00 is 25% more, 1,500円. Pay is 3,900円, plus 400円 travel (under the 500円 cap): 4,300円.",
+          "This leaves out the 400円 travel cost, which the cafe pays up to 500円 a day.",
+          "This pays all 3 hours at 1,200円 and forgets the 25% extra after 22:00.",
+          "This adds 25% to all 3 hours. Only the hour after 22:00 gets it."
+        ],
+        "cue": ["22:00以降の勤務は、時給が25%増しになります", "交通費は、1日500円まで実費を支給します"],
+        "tell": "Split the shift at 22:00, check whether the training rate still applies, then add travel up to the cap."
+      }
+    ]
+  },
+  {
+    "id": "r14-004",
+    "type": "r14",
+    "title": "ひがし市民体育館　トレーニングルーム利用案内",
+    "intro": "右のページは、ある市民体育館のトレーニングルームの利用案内である。",
+    "blocks": [
+      { "h": "トレーニングルームのご利用について" },
+      { "p": "トレーニングルームは、高校生以上の方がご利用いただけます。初めて利用する方は、必ず「初回講習」（約60分）を受けてください。講習を受けた方には「利用者カード」をお渡しします。" },
+      {
+        "table": [
+          ["曜日", "初回講習の開始時間", "定員"],
+          ["火曜日・木曜日", "10:00／19:00", "各回5名"],
+          ["土曜日・日曜日", "14:00", "各回8名"]
+        ]
+      },
+      { "p": "初回講習は予約制です。受講する日の前日までに、電話または体育館の受付で予約してください。受講料は500円です。" },
+      {
+        "table": [
+          ["区分", "1回券", "回数券（11回分）", "月額パス"],
+          ["一般", "400円", "4,000円", "3,500円"],
+          ["高校生・65歳以上", "200円", "2,000円", "1,800円"]
+        ]
+      },
+      {
+        "ul": [
+          "開館時間は9:00〜21:00です（入場は20:30まで）。毎週月曜日は休館日です。",
+          "1回の利用は2時間までです。",
+          "室内用の運動靴をお持ちください。外で履いてきた靴では利用できません。",
+          "回数券と月額パスは、利用者カードをお持ちの方だけが購入できます。"
+        ]
+      },
+      { "note": "※月額パスは、ひがし市内にお住まいの方、または市内に通勤・通学している方だけが購入できます。" },
+      { "note": "※高校生・65歳以上の料金で利用する方は、学生証や運転免許証など、年齢や身分が分かるものを受付で見せてください。" },
+      { "note": "※回数券の有効期限は、購入した日から6か月です。" }
+    ],
+    "en": "A city gym explains that first-time users must book and take a one-hour induction before they get a user card. It lists ticket prices, with lower rates for high school students and people aged 65 or over, and monthly passes only for people who live, work or study in the city.",
+    "qs": [
+      {
+        "q": "ひがし市内に住む会社員の大川さん（35歳）は、トレーニングルームを初めて利用したい。平日は18時まで仕事があり、土曜日と日曜日は毎週予定が入っている。大川さんが最初にしなければならないことはどれか。",
+        "c": [
+          "受講したい日の前日までに、火曜日か木曜日の19時からの初回講習を、電話か受付で予約する。",
+          "火曜日か木曜日の19時に体育館へ行き、その場で受付に初回講習を申し込む。",
+          "体育館の受付で月額パスを買ってから、初回講習を予約する。",
+          "受講したい日の前日までに、火曜日か木曜日の10時からの初回講習を、電話か受付で予約する。"
+        ],
+        "why": [
+          "A first-time user must take the 初回講習, and it must be booked by the day before. He is free only on weekday evenings, so the 19:00 class on Tuesday or Thursday.",
+          "Turning up on the day is too late. The 講習 must be booked by the day before.",
+          "Passes are sold only to people who already have a 利用者カード, and the card comes after the 講習.",
+          "The 10:00 class is during his working hours. He is free only after 18:00 on weekdays."
+        ],
+        "cue": ["受講する日の前日までに、電話または体育館の受付で予約してください", "10:00／19:00", "利用者カードをお持ちの方だけが購入できます"],
+        "tell": "For a first visit, find what must happen before anything else (講習, booking), then fit it to their free time."
+      },
+      {
+        "q": "ひがし市の隣のにし町に住む石井さん（66歳）は、仕事はしておらず、トレーニングルームの利用者カードをすでに持っている。今月はトレーニングルームを12回利用するつもりだ。いちばん安く利用できる方法はどれか。",
+        "c": [
+          "回数券を1冊と1回券を1枚買い、2,200円払う。",
+          "月額パスを買い、1,800円払う。",
+          "回数券を1冊買い、2,000円払う。",
+          "回数券を1冊と1回券を1枚買い、4,400円払う。"
+        ],
+        "why": [
+          "He is 66, so the 65歳以上 prices apply. He lives in にし町 and does not work, so he cannot buy a 月額パス. One 回数券 (11 uses, 2,000円) plus one 1回券 (200円) covers 12 visits for 2,200円, less than 12 single tickets (2,400円).",
+          "月額パス is sold only to people who live, work or study in ひがし市. He lives in にし町 and does not work.",
+          "One 回数券 gives only 11 uses. He plans to go 12 times.",
+          "This is the 一般 price. At 66 he pays the 65歳以上 rate."
+        ],
+        "cue": ["ひがし市内にお住まいの方、または市内に通勤・通学している方だけが購入できます", "高校生・65歳以上", "回数券（11回分）"],
+        "tell": "Find the price row for their age, cross out tickets the ※ bars them from, then count the visits."
+      }
+    ]
+  },
+  {
+    "id": "r14-005",
+    "type": "r14",
+    "title": "シェアハウス「ひまわりハウス」入居者募集",
+    "intro": "右のページは、あるシェアハウスの入居者募集の案内である。",
+    "blocks": [
+      { "h": "ひまわりハウス　入居者募集（12月10日現在）" },
+      { "p": "みなみ台駅から歩いて8分、全5室のシェアハウスです。キッチン、リビング、洗濯機は共用で、各部屋にはベッド、机、エアコンが付いています。" },
+      {
+        "table": [
+          ["部屋", "階", "広さ", "家賃（月額）", "入居できる日"],
+          ["101号室", "1階", "7畳", "49,000円", "3月1日から"],
+          ["102号室", "1階", "6畳", "48,000円", "すぐに入居可"],
+          ["103号室", "1階", "9畳", "52,000円", "すぐに入居可"],
+          ["201号室", "2階", "7畳・ベランダ付き", "55,000円", "すぐに入居可"],
+          ["202号室", "2階", "5畳", "42,000円", "1月15日から"]
+        ]
+      },
+      { "h": "費用" },
+      {
+        "ul": [
+          "共益費：月額10,000円（水道・電気・ガス代とインターネット代を含みます）",
+          "保証金：家賃の1か月分（退去のときに、部屋の修理にかかった費用を引いてお返しします）",
+          "礼金・仲介手数料はかかりません。",
+          "家賃と共益費は、毎月27日までに翌月分をお振り込みください。"
+        ]
+      },
+      { "h": "入居の条件" },
+      {
+        "ul": [
+          "契約期間は6か月以上です。6か月未満で退去する場合は、違約金として家賃の1か月分をいただきます。",
+          "2階は女性専用です。",
+          "ペットは飼えません。室内は禁煙です。",
+          "入居日の1週間前までに、管理会社の面談を受けていただきます（オンラインでも可）。"
+        ]
+      },
+      { "note": "※学生の方（大学院生・専門学校生を含みます）は、共益費が月額5,000円になります。お申し込みの際に、学生証のコピーを提出してください。" }
+    ],
+    "en": "A five-room share house lists each room's floor, size, rent and move-in date. The second floor is for women only, students (graduate students included) pay a lower shared-costs fee, there is a deposit but no key money, and everyone must have an interview a week before moving in.",
+    "qs": [
+      {
+        "q": "大学院生のハンさん（男性、26歳）は、1月中にシェアハウスに入居したい。家賃と共益費を合わせて、毎月55,000円以内にしたい。ハンさんが選べる部屋はどれか。",
+        "c": ["102号室", "101号室", "202号室", "103号室"],
+        "why": [
+          "He is a man, so only the 1st floor. 101号室 is free only from 3月1日, too late. The ※ counts 大学院生 as students, so he pays 5,000円 共益費, so 102号室 costs 48,000 + 5,000 = 53,000円, within 55,000円. Without the student rate it would be 58,000円.",
+          "101号室 is not free until 3月1日. He wants to move in during January.",
+          "202号室 is on the 2nd floor, which is for women only.",
+          "103号室 costs 52,000 + 5,000 = 57,000円, over his 55,000円 even at the student rate."
+        ],
+        "cue": ["2階は女性専用です", "学生の方（大学院生・専門学校生を含みます）は、共益費が月額5,000円になります", "3月1日から"],
+        "tell": "Cut rooms by the floor rule and move-in date, then add 共益費 with the student ※ before checking budget."
+      },
+      {
+        "q": "会社員のミラさん（女性、29歳）は、ベランダのある部屋に入居したい。今は大阪に住んでいて、引っ越しの日まではシェアハウスのある町に来られない。ミラさんが入居する前にしなければならないこととして、正しいものはどれか。",
+        "c": [
+          "入居日の1週間前までにオンラインで管理会社の面談を受け、保証金として55,000円を用意する。",
+          "入居する日に管理会社へ行って面談を受け、保証金として55,000円を用意する。",
+          "入居日の1週間前までにオンラインで管理会社の面談を受け、保証金と礼金として110,000円を用意する。",
+          "入居日の1週間前までにオンラインで管理会社の面談を受け、学生証のコピーを提出する。"
+        ],
+        "why": [
+          "Only 201号室 has a balcony, and its 2nd floor suits a woman. The 面談 must be done a week before moving in, and online is allowed. The 保証金 is one month's rent: 55,000円.",
+          "The 面談 must be done at least a week before moving in, not on the day.",
+          "There is no 礼金. Only the 保証金 of 55,000円 is needed.",
+          "The 学生証 copy is only for the student rate. She is a 会社員."
+        ],
+        "cue": ["入居日の1週間前までに、管理会社の面談を受けていただきます（オンラインでも可）", "礼金・仲介手数料はかかりません", "保証金：家賃の1か月分"],
+        "tell": "List what must happen before moving in (interview, money), then check whether each ※ applies to this person."
+      }
+    ]
+  },
+  {
+    "id": "r14-006",
+    "type": "r14",
+    "title": "あおば市　粗大ごみの出し方",
+    "intro": "右のページは、ある市の粗大ごみの出し方についてのお知らせである。",
+    "blocks": [
+      { "h": "粗大ごみの出し方" },
+      { "p": "家具や自転車など、一辺の長さが30cmを超えるものは粗大ごみです。ふだんのごみ置き場には出せませんので、次の手順で出してください。" },
+      {
+        "ul": [
+          "①　粗大ごみ受付センターに、電話またはインターネットで申し込む（収集日の7日前まで）。収集日と出す場所をお知らせします。",
+          "②　市内のコンビニエンスストアやスーパーで「粗大ごみ処理券」を買い、品物の見やすいところに貼る。",
+          "③　収集日の朝8時30分までに、決められた場所に出す。"
+        ]
+      },
+      {
+        "table": [
+          ["品目", "手数料（1点）"],
+          ["いす（1脚）", "300円"],
+          ["布団（1枚）", "300円"],
+          ["自転車", "600円"],
+          ["ソファー（1人用）", "600円"],
+          ["ソファー（2人用以上）", "1,200円"],
+          ["タンス（高さ100cm未満）", "600円"],
+          ["タンス（高さ100cm以上）", "1,200円"]
+        ]
+      },
+      { "note": "※処理券は300円券と600円券の2種類です。手数料の金額になるように組み合わせて貼ってください。" },
+      { "note": "※エアコン、テレビ、冷蔵庫、洗濯機は粗大ごみとして出せません。買った店かメーカーに引き取りを依頼してください。" },
+      { "note": "※一度に申し込めるのは10点までです。" },
+      { "note": "※70歳以上の方だけで暮らしている世帯で、品物を外に運び出すのが難しい場合は、市の職員が家の中から運び出します。希望する方は、申し込みの際にお伝えください。運び出しの費用はかかりませんが、処理券は必要です。" }
+    ],
+    "en": "A city explains how to throw out large items: apply at least 7 days ahead, buy and attach fee stickers, and put the items out by 8:30 on collection day. Air conditioners, TVs, fridges and washing machines are not accepted, and staff carry items out free for households of people aged 70 or over.",
+    "qs": [
+      {
+        "q": "あおば市に住む山口さんは、引っ越しの前に、いす2脚、高さ120cmのタンス1つ、1人用のソファー1つ、冷蔵庫1台を処分したい。粗大ごみとして出せるものをすべて出す場合、処理券は全部でいくら分必要か。",
+        "c": ["2,400円", "1,800円", "2,100円", "3,000円"],
+        "why": [
+          "The 冷蔵庫 cannot go out as 粗大ごみ, so leave it out. Chairs: 300円 × 2 = 600円. A 120cm chest is 100cm以上: 1,200円. A 1-person sofa: 600円. Total 2,400円.",
+          "This prices the chest as under 100cm (600円). At 120cm it is 1,200円.",
+          "This counts the chairs once. いす is 300円 per chair, so two cost 600円.",
+          "This uses the 2-person sofa price (1,200円). His is a 1-person sofa: 600円."
+        ],
+        "cue": ["冷蔵庫、洗濯機は粗大ごみとして出せません", "タンス（高さ100cm以上）", "いす（1脚）"],
+        "tell": "Strike out what the ※ bans first, then match each item to its exact table row, size and count."
+      },
+      {
+        "q": "あおば市で一人暮らしをしている田中さん（75歳）は、腰が悪く、重いものを運ぶことができない。家の中にある1人用のソファー1つと布団1枚を、粗大ごみとして出したい。田中さんがすることとして正しいものはどれか。",
+        "c": [
+          "収集日の7日前までに申し込み、そのときに運び出しを希望すると伝えて、900円分の処理券を品物に貼っておく。",
+          "収集日の7日前までに申し込み、そのときに運び出しを希望すると伝える。運び出してもらうので、処理券は買わなくてよい。",
+          "申し込みはせずに、900円分の処理券を品物に貼って、収集日の朝に職員が運び出しに来るのを待つ。",
+          "収集日の前日までに申し込み、そのときに運び出しを希望すると伝えて、900円分の処理券を品物に貼っておく。"
+        ],
+        "why": [
+          "She is 75 and lives alone, so the last ※ lets staff carry the items out for free if she asks when she applies. She still needs 処理券: sofa 600円 + futon 300円 = 900円. Applications close 7 days before collection.",
+          "Carrying is free, but the ※ says 処理券 are still needed.",
+          "Every item must be applied for first (step ①). Staff come to carry things out only if you ask when you apply.",
+          "Applications must be made 7 days before collection, not the day before."
+        ],
+        "cue": ["収集日の7日前まで", "運び出しの費用はかかりませんが、処理券は必要です", "申し込みの際にお伝えください"],
+        "tell": "Follow the numbered steps in order, then check the ※ for who gets help and what they still pay."
+      }
+    ]
+  }
+]

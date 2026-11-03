@@ -117,7 +117,14 @@ a { color: var(--accent); }
 .muted { color: var(--muted); }
 .small { font-size: 0.85rem; }
 
-.wrap { max-width: 760px; margin: 0 auto; padding: 16px 16px 64px; }
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 16px max(16px, env(safe-area-inset-right)) 64px max(16px, env(safe-area-inset-left));
+}
+/* Room for the tab bar, so it never covers the last card. */
+body.has-tabs .wrap { padding-bottom: calc(88px + env(safe-area-inset-bottom)); }
+.center { text-align: center; }
 
 /* Header */
 .top {
@@ -223,6 +230,125 @@ a { color: var(--accent); }
 .bar .new { background: transparent; }
 .legend { display: flex; gap: 12px; flex-wrap: wrap; font-size: 0.75rem; color: var(--muted); margin-top: 8px; }
 .legend i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; vertical-align: 0; }
+
+/* Today: the day's blocks, one tick each */
+.blocks { display: grid; gap: 8px; }
+.block {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  min-height: 56px;
+  padding: 10px 12px;
+  text-align: left;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+button.block:hover { border-color: var(--accent); }
+.block b { display: block; font-size: 0.98rem; }
+.block small { display: block; color: var(--muted); font-size: 0.8rem; }
+.block .meta { font-size: 0.82rem; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.block.done { background: var(--panel-2); }
+.block.done b { color: var(--muted); }
+.tick {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.tick.on { background: var(--good); border-color: var(--good); color: var(--panel); }
+
+/* Tab bar: fixed to the bottom, as wide as the content on a big screen */
+.tabbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  max-width: 760px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  background: var(--panel);
+  border-top: 1px solid var(--line);
+}
+.tabbar button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  min-height: 56px;
+  padding: 6px 4px;
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  box-shadow: inset 0 2px 0 transparent;
+}
+.tabbar button .jp { font-size: 1.05rem; font-weight: 600; line-height: 1.2; }
+.tabbar button:hover { color: var(--fg); }
+.tabbar button.on { color: var(--accent); font-weight: 700; box-shadow: inset 0 3px 0 var(--accent); }
+@media (min-width: 761px) {
+  .tabbar { border: 1px solid var(--line); border-bottom: 0; border-radius: var(--radius) var(--radius) 0 0; box-shadow: var(--shadow); }
+}
+body.has-tabs .toast { bottom: calc(76px + env(safe-area-inset-bottom)); }
+body.eink .tabbar { border-top-width: 2px; }
+
+/* Rows that are just a title and an arrow (Practice, Library) */
+.item.two { grid-template-columns: minmax(0, 1fr) auto; }
+.item.two .meta { font-size: 1.1rem; }
+
+/* Progress: answers per day. One series, thin bars on a baseline. */
+.chart {
+  display: flex;
+  gap: 4px;
+  height: 120px;
+  margin-top: 6px;
+  border-bottom: 1px solid var(--line);
+}
+.chart .col {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.chart .b { width: 100%; max-width: 12px; background: var(--accent); border-radius: 4px 4px 0 0; }
+.chart .col:hover .b { opacity: 0.75; }
+.chart .v { font-size: 0.72rem; line-height: 1; margin-bottom: 4px; color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums; }
+.chart-days { display: flex; gap: 4px; margin-top: 4px; }
+.chart-days span { flex: 1; min-width: 0; text-align: center; font-size: 0.7rem; color: var(--muted); }
+.chart-days .today { color: var(--fg); font-weight: 700; }
+.stats.tight { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); margin: 0; }
+.stats.tight div { background: var(--panel-2); }
+
+/* Sync */
+.sync-note { margin: 0 0 14px; }
+.steps { margin: 0 0 10px; padding-left: 20px; }
+.steps li { margin: 4px 0; }
+.warnline { border-left: 3px solid var(--warn); background: var(--panel-2); padding: 6px 10px; border-radius: 0 8px 8px 0; margin: 0 0 12px; }
+.token-row { display: flex; gap: 8px; }
+.token-row input {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+#sync-msg { margin: 6px 0 0; min-height: 1.2em; }
 
 .mix { display: grid; gap: 6px; }
 .mix button {
@@ -450,6 +576,46 @@ u.tgt { text-decoration: underline 2px; text-underline-offset: 6px; font-weight:
 .kex { padding: 10px 0; border-top: 1px solid var(--line); }
 .kex .kw { font-weight: 700; font-size: 1.1rem; }
 .en-choices .choice { font-family: var(--ui); font-size: 1rem; }
+
+/* Vocab (問題3, 5, 6) and 情報検索 (問題14) */
+.long-choices .choice { font-size: 1rem; line-height: 1.7; align-items: flex-start; }
+.long-choices .choice .num { margin-top: 3px; }
+.vlist { display: grid; gap: 4px; }
+.vlist .vrow { display: grid; grid-template-columns: 1.2em minmax(0, 1fr) minmax(0, 1.2fr); gap: 8px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 0.92rem; }
+.vlist .vrow .muted { font-size: 0.82rem; }
+details.vgroup { margin-top: 10px; }
+details.vgroup summary { cursor: pointer; font-weight: 600; font-size: 0.92rem; }
+.notice {
+  max-height: 56vh;
+  overflow-y: auto;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel-2);
+  margin-bottom: 14px;
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+.notice .intro { color: var(--muted); font-size: 0.85rem; margin-bottom: 8px; font-family: var(--ui); }
+.notice .doc { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; }
+.notice .title { font-weight: 700; font-size: 1.08rem; text-align: center; margin-bottom: 8px; }
+.notice h4 { margin: 12px 0 4px; font-size: 1rem; }
+.notice p { margin: 6px 0; }
+.notice ul { margin: 6px 0; padding-left: 20px; }
+.notice ul.steps { list-style: none; padding-left: 0; }
+.notice .note { font-size: 0.9rem; }
+.notice .twrap { overflow-x: auto; margin: 8px 0; }
+.notice table { font-size: 0.9rem; }
+.notice th, .notice td { border: 1px solid var(--line); padding: 6px 8px; font-family: var(--jp); }
+.notice th { text-transform: none; letter-spacing: 0; font-size: 0.85rem; color: var(--fg); background: var(--panel-2); white-space: nowrap; }
+.notice td { min-width: 4.5em; }
+/* On a phone the notice sits three boxes deep: thinner padding gives the tables room. */
+@media (max-width: 520px) {
+  .notice { padding: 8px; }
+  .notice .doc { padding: 10px; }
+  .notice th, .notice td { padding: 5px 6px; }
+}
+.rq { font-size: 1.08rem; line-height: 1.8; margin: 0 0 12px; }
 .ktiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(46px, 1fr)); gap: 6px; }
 .ktile {
   height: 46px;

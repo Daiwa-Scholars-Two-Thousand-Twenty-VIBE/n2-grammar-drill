@@ -1,0 +1,572 @@
+[
+  {
+    "id": "v5-001",
+    "type": "v5",
+    "w": "あいにく",
+    "r": "あいにく",
+    "m": "unfortunately, as bad luck would have it",
+    "s": "週末に海へ行く予定だったが、あいにく台風が来て中止になった。",
+    "t": "あいにく",
+    "en": "We planned to go to the beach at the weekend, but unfortunately a typhoon came and it was called off.",
+    "c": ["運悪く", "予想どおり", "久しぶりに", "急に"],
+    "why": [
+      "あいにく means unluckily, at a bad time for you: 運悪く says the same in plainer words.",
+      "予想どおり means 'just as expected'. あいにく says nothing about expecting it, only that it was bad luck.",
+      "久しぶりに means 'for the first time in a while'. あいにく is not about how often.",
+      "急に means 'suddenly'. あいにく is about bad luck, not speed."
+    ],
+    "tell": "あいにく = 運悪く／残念なことに: bad luck, bad timing.",
+    "lv": 1
+  },
+  {
+    "id": "v5-002",
+    "type": "v5",
+    "w": "いきなり",
+    "r": "いきなり",
+    "m": "suddenly, without warning",
+    "s": "会議の途中で、部長がいきなり席を立って部屋を出ていった。",
+    "t": "いきなり",
+    "en": "In the middle of the meeting, the manager suddenly stood up and walked out of the room.",
+    "c": ["突然", "静かに", "ゆっくり", "わざと"],
+    "why": [
+      "いきなり means suddenly, with no warning: 突然 is the plain word for the same thing.",
+      "静かに means quietly. いきなり is about no warning, not about noise.",
+      "ゆっくり means slowly, close to the opposite of a sudden move.",
+      "わざと means on purpose. いきなり says nothing about intent."
+    ],
+    "tell": "いきなり = 突然: without any warning.",
+    "lv": 1
+  },
+  {
+    "id": "v5-003",
+    "type": "v5",
+    "w": "かつて",
+    "r": "かつて",
+    "m": "once, formerly",
+    "s": "この辺りには、かつて大きな自動車工場があった。",
+    "t": "かつて",
+    "en": "There was once a big car factory around here.",
+    "c": ["以前", "たしか", "長年", "すでに"],
+    "why": [
+      "かつて means 'once, at some time in the past', and suggests it is gone now: 以前 is the everyday word.",
+      "たしか means 'if I remember right'. It is about the speaker's memory, not the time.",
+      "長年 means 'for many years'. It gives a length of time, not 'formerly'.",
+      "すでに means 'already'. It says something happened earlier than expected, not that it belongs to the past."
+    ],
+    "tell": "かつて = 以前／昔: once, in the past, but not now.",
+    "lv": 1
+  },
+  {
+    "id": "v5-004",
+    "type": "v5",
+    "w": "しきりに",
+    "r": "しきりに",
+    "m": "repeatedly, again and again",
+    "s": "電車の中で、隣の席の人がさっきからしきりに時計を見ている。",
+    "t": "しきりに",
+    "en": "On the train, the person next to me has been checking the time again and again.",
+    "c": ["何度も", "じっと", "こっそり", "不安そうに"],
+    "why": [
+      "しきりに means again and again, over and over: 何度も says it plainly.",
+      "じっと means staring without moving. しきりに is many separate looks, not one long one.",
+      "こっそり means secretly. しきりに is about how often, not whether anyone notices.",
+      "不安そうに describes a feeling. しきりに only says it keeps happening, whatever the mood."
+    ],
+    "tell": "しきりに = 何度も: over and over, again and again.",
+    "lv": 2
+  },
+  {
+    "id": "v5-005",
+    "type": "v5",
+    "w": "じっくり",
+    "r": "じっくり",
+    "m": "carefully, taking one's time",
+    "s": "大事な契約なので、サインする前に内容をじっくり読んでください。",
+    "t": "じっくり",
+    "en": "This is an important contract, so please read it carefully before you sign.",
+    "c": ["時間をかけて", "急いで", "声に出して", "もう一度"],
+    "why": [
+      "じっくり means slowly and carefully, taking your time: 時間をかけて says the same.",
+      "急いで means in a hurry, the opposite of じっくり.",
+      "声に出して means reading aloud. じっくり is about time and care, not voice.",
+      "もう一度 means one more time. じっくり is about one careful reading, not a repeat."
+    ],
+    "tell": "じっくり = 時間をかけて: slowly, carefully, thoroughly.",
+    "lv": 1
+  },
+  {
+    "id": "v5-006",
+    "type": "v5",
+    "w": "ようやく",
+    "r": "ようやく",
+    "m": "at last, finally",
+    "s": "三か月続いた駅前の工事がようやく終わり、道が通りやすくなった。",
+    "t": "ようやく",
+    "en": "The roadworks in front of the station, which went on for three months, are finally over, and the street is easier to get through.",
+    "c": ["やっと", "思ったより早く", "予定どおり", "いったん"],
+    "why": [
+      "ようやく means 'at last, after a long wait or effort': やっと is the everyday word.",
+      "思ったより早く means 'sooner than expected', close to the opposite of ようやく.",
+      "予定どおり means 'on schedule'. ようやく says the wait felt long, not that it kept to the plan.",
+      "いったん means 'for now, for a moment'. ようやく is about the long wait before the end."
+    ],
+    "tell": "ようやく = やっと: at last, after a long wait.",
+    "lv": 1
+  },
+  {
+    "id": "v5-007",
+    "type": "v5",
+    "w": "とっくに",
+    "r": "とっくに",
+    "m": "long ago, long since",
+    "s": "急いで駅に向かったが、最終電車はとっくに出たあとだった。",
+    "t": "とっくに",
+    "en": "I hurried to the station, but the last train had left long before.",
+    "c": ["ずっと前に", "ちょうど", "予定どおり", "なぜか"],
+    "why": [
+      "とっくに means 'long ago, well before now': ずっと前に says it plainly.",
+      "ちょうど here means 'just', a moment before. とっくに is the opposite: long before.",
+      "予定どおり means 'on schedule'. とっくに says nothing about the timetable.",
+      "なぜか means 'for some reason'. とっくに is about time, not cause."
+    ],
+    "tell": "とっくに = ずっと前に: long since, well before now.",
+    "lv": 1
+  },
+  {
+    "id": "v5-008",
+    "type": "v5",
+    "w": "ひとまず",
+    "r": "ひとまず",
+    "m": "for now, for the time being",
+    "s": "「もう遅いし、続きは明日にして、今日はひとまず帰ろうよ。」",
+    "t": "ひとまず",
+    "en": "It's late, so let's leave the rest until tomorrow and go home for now.",
+    "c": ["とりあえず", "まっすぐ", "急いで", "一緒に"],
+    "why": [
+      "ひとまず means 'for now, as a first step', with more to come later: とりあえず is the everyday word.",
+      "まっすぐ means going straight home without stopping. ひとまず is about 'for now', not the route.",
+      "急いで means in a hurry. ひとまず says nothing about speed.",
+      "一緒に means together. ひとまず says nothing about who goes."
+    ],
+    "tell": "ひとまず = とりあえず: for now, until the next step.",
+    "lv": 1
+  },
+  {
+    "id": "v5-009",
+    "type": "v5",
+    "w": "あらかじめ",
+    "r": "あらかじめ",
+    "m": "in advance, beforehand",
+    "s": "会議で使う資料は、あらかじめ参加者全員にメールで送っておきます。",
+    "t": "あらかじめ",
+    "en": "We will email the meeting materials to all participants in advance.",
+    "c": ["前もって", "後で", "まとめて", "念のため"],
+    "why": [
+      "あらかじめ means beforehand, before the event: 前もって says the same in plainer words.",
+      "後で means later. あらかじめ is before, the opposite.",
+      "まとめて means 'all at once, in one go'. It is about how, not when.",
+      "念のため means 'just in case'. It gives a reason, not a time."
+    ],
+    "tell": "あらかじめ = 前もって: before the event, in advance.",
+    "lv": 1
+  },
+  {
+    "id": "v5-010",
+    "type": "v5",
+    "w": "ぐったり",
+    "r": "ぐったり",
+    "m": "exhausted, limp",
+    "s": "暑い中、一日中外で作業をしたので、帰るころにはぐったりしていた。",
+    "t": "ぐったりしていた",
+    "en": "I worked outside all day in the heat, so by the time I went home I was completely worn out.",
+    "c": ["とても疲れていた", "いらいらしていた", "お腹がすいていた", "日に焼けていた"],
+    "why": [
+      "ぐったりする means so tired that your body goes limp: とても疲れていた is the plain version.",
+      "いらいらする means irritated. ぐったり is about having no energy, not about mood.",
+      "お腹がすく means hungry. A long hot day can cause both, but ぐったり means worn out.",
+      "日に焼ける means getting sunburned or tanned. That is about skin, not tiredness."
+    ],
+    "tell": "ぐったりする = とても疲れて力がない: worn out, limp.",
+    "lv": 1
+  },
+  {
+    "id": "v5-011",
+    "type": "v5",
+    "w": "ありふれた",
+    "r": "ありふれた",
+    "m": "commonplace, ordinary",
+    "s": "社長に新商品のアイデアを出したが、ありふれた案だと言われてしまった。",
+    "t": "ありふれた",
+    "en": "I pitched a new product idea to the company president, but was told it was a run-of-the-mill idea.",
+    "c": ["どこにでもある", "お金のかかる", "実現が難しい", "わかりにくい"],
+    "why": [
+      "ありふれた means common, nothing special: どこにでもある (found anywhere) says it plainly.",
+      "お金のかかる means expensive. ありふれた is about being ordinary, not about cost.",
+      "実現が難しい means hard to carry out. An ordinary idea is usually easy to carry out.",
+      "わかりにくい means hard to understand. Ordinary ideas are usually easy to follow."
+    ],
+    "tell": "ありふれた = どこにでもある／珍しくない: ordinary, commonplace.",
+    "lv": 2
+  },
+  {
+    "id": "v5-012",
+    "type": "v5",
+    "w": "頑丈",
+    "r": "がんじょう",
+    "m": "sturdy, solidly built",
+    "s": "引っ越しのときに、祖父が使っていた頑丈な机を譲ってもらった。",
+    "t": "頑丈な",
+    "en": "When I moved house, I was given the sturdy desk my grandfather used to use.",
+    "c": ["丈夫な", "高価な", "便利な", "おしゃれな"],
+    "why": [
+      "頑丈 means solid and hard to break: 丈夫 is the everyday word for the same thing.",
+      "高価 means expensive. A sturdy desk can be cheap.",
+      "便利 means handy or convenient. That is about use, not strength.",
+      "おしゃれ means stylish. It is about looks, not how strong it is."
+    ],
+    "tell": "頑丈な = 丈夫な: strongly built, hard to break.",
+    "lv": 1
+  },
+  {
+    "id": "v5-013",
+    "type": "v5",
+    "w": "慎重",
+    "r": "しんちょう",
+    "m": "careful, cautious",
+    "s": "部長は、新しく取引を始める会社を慎重に選んでいるようだ。",
+    "t": "慎重に",
+    "en": "The manager seems to be choosing very carefully which new company to do business with.",
+    "c": ["注意深く", "一人で", "急いで", "楽しそうに"],
+    "why": [
+      "慎重 means careful, taking time to avoid mistakes: 注意深く (carefully) is the plain version.",
+      "一人で means alone. 慎重 is about how carefully, not who decides.",
+      "急いで means in a hurry, close to the opposite of 慎重に.",
+      "楽しそうに describes mood. 慎重 says nothing about enjoying it."
+    ],
+    "tell": "慎重に = 注意深く／よく考えて: carefully, to avoid mistakes.",
+    "lv": 1
+  },
+  {
+    "id": "v5-014",
+    "type": "v5",
+    "w": "率直",
+    "r": "そっちょく",
+    "m": "frank, candid",
+    "s": "新しい企画について、皆さんの率直な意見を聞かせてください。",
+    "t": "率直な",
+    "en": "Please give me your honest opinions on the new project.",
+    "c": ["正直な", "詳しい", "前向きな", "専門的な"],
+    "why": [
+      "率直 means frank, saying what you really think: 正直な (honest) is the plain word.",
+      "詳しい means detailed. A frank opinion can be one short sentence.",
+      "前向きな means positive. A frank opinion may well be negative.",
+      "専門的な means technical or expert. 率直 is about honesty, not expertise."
+    ],
+    "tell": "率直な = 正直な／遠慮のない: frank, holding nothing back.",
+    "lv": 1
+  },
+  {
+    "id": "v5-015",
+    "type": "v5",
+    "w": "妥当",
+    "r": "だとう",
+    "m": "reasonable, appropriate",
+    "s": "専門家の多くは、今回の値上げを妥当な判断だと見ている。",
+    "t": "妥当な",
+    "en": "Most experts see this price rise as a reasonable decision.",
+    "c": ["適切な", "大胆な", "意外な", "厳しい"],
+    "why": [
+      "妥当 means reasonable and right for the situation: 適切な says it in plainer words.",
+      "大胆な means bold, taking a risk. A reasonable decision is usually not a bold one.",
+      "意外な means surprising. 妥当 is about being sensible, not about surprise.",
+      "厳しい means harsh or strict. 妥当 says the decision fits the facts, not that it is tough."
+    ],
+    "tell": "妥当な = 適切な／もっともな: reasonable, fits the situation.",
+    "lv": 2
+  },
+  {
+    "id": "v5-016",
+    "type": "v5",
+    "w": "器用",
+    "r": "きよう",
+    "m": "skilful with one's hands, handy",
+    "s": "兄は器用で、壊れたいすや棚もすぐに自分で直してしまう。",
+    "t": "器用で",
+    "en": "My older brother is good with his hands, and quickly fixes broken chairs and shelves himself.",
+    "c": ["細かい作業が得意で", "せっかちで", "お金を使いたがらなくて", "力が強くて"],
+    "why": [
+      "器用 means skilful with your hands: 細かい作業が得意 (good at fine work) says it plainly.",
+      "せっかち means impatient. It could explain fixing things at once, but it is not about skill.",
+      "お金を使いたがらない means stingy. It could explain not paying for repairs, but it is not about skill.",
+      "力が強い means physically strong. 器用 is about fine skill, not strength."
+    ],
+    "tell": "器用 = 手先が上手／細かい作業が得意: good with your hands.",
+    "lv": 1
+  },
+  {
+    "id": "v5-017",
+    "type": "v5",
+    "w": "余計",
+    "r": "よけい",
+    "m": "unnecessary, uncalled-for",
+    "s": "初めて会う取引先との会議では、余計なことは言わないほうがいい。",
+    "t": "余計な",
+    "en": "In a first meeting with a new client, it is better not to say anything unnecessary.",
+    "c": ["必要のない", "難しい", "個人的な", "失礼な"],
+    "why": [
+      "余計 means more than is needed: 必要のない (unnecessary) is the plain version.",
+      "難しい means difficult. 余計なこと can be very simple.",
+      "個人的な means personal or private. 余計 is about not being needed, whatever the topic.",
+      "失礼な means rude. Something unnecessary is not always rude."
+    ],
+    "tell": "余計な = 必要のない／余分な: more than is needed.",
+    "lv": 1
+  },
+  {
+    "id": "v5-018",
+    "type": "v5",
+    "w": "まれ",
+    "r": "まれ",
+    "m": "rare",
+    "s": "医師によると、この年齢でこの病気になるのはまれなケースだそうだ。",
+    "t": "まれな",
+    "en": "According to the doctor, getting this illness at this age is a rare case.",
+    "c": ["めったにない", "よくある", "難しい", "危険な"],
+    "why": [
+      "まれ means rare, hardly ever happening: めったにない says it plainly.",
+      "よくある means common, the opposite of まれ.",
+      "難しい means difficult. A rare case is not always a hard one.",
+      "危険な means dangerous. まれ is about how often, not how serious."
+    ],
+    "tell": "まれな = めったにない: rare, hardly ever seen.",
+    "lv": 1
+  },
+  {
+    "id": "v5-019",
+    "type": "v5",
+    "w": "仕上げる",
+    "r": "しあげる",
+    "m": "to finish, complete",
+    "s": "明日の朝の会議に間に合うように、今夜中にこの報告書を仕上げるつもりだ。",
+    "t": "仕上げる",
+    "en": "I plan to finish this report tonight so it is ready for tomorrow morning's meeting.",
+    "c": ["完成させる", "読み直す", "印刷する", "提出する"],
+    "why": [
+      "仕上げる means to finish something off, to complete it: 完成させる says that plainly.",
+      "読み直す means to read again. You can reread a report that is not finished.",
+      "印刷する means to print. Printing is not the same as finishing the writing.",
+      "提出する means to hand in. You finish a report first, then hand it in."
+    ],
+    "tell": "仕上げる = 完成させる: finish off, complete.",
+    "lv": 1
+  },
+  {
+    "id": "v5-020",
+    "type": "v5",
+    "w": "見合わせる",
+    "r": "みあわせる",
+    "m": "to hold off, put on hold",
+    "s": "雨の予報が出ていたので、週末のバーベキューは見合わせることにした。",
+    "t": "見合わせる",
+    "en": "Rain was forecast, so we decided to hold off on the weekend barbecue.",
+    "c": ["やめておく", "早めに始める", "屋根の下でする", "少人数でする"],
+    "why": [
+      "見合わせる means to hold off and not go ahead for now: やめておく says it plainly. Train notices use it too: 運転を見合わせています.",
+      "早めに始める means starting earlier. The barbecue would still go ahead.",
+      "屋根の下でする means moving it under a roof. It would still go ahead.",
+      "少人数でする means doing it with fewer people. It would still go ahead."
+    ],
+    "tell": "見合わせる = やめておく／しばらく止める: hold off for now.",
+    "lv": 2
+  },
+  {
+    "id": "v5-021",
+    "type": "v5",
+    "w": "取り寄せる",
+    "r": "とりよせる",
+    "m": "to order in, have something sent",
+    "s": "近くの店には置いていなかったので、ネットで北海道のチーズを取り寄せた。",
+    "t": "取り寄せた",
+    "en": "The shops nearby did not stock it, so I ordered some Hokkaido cheese online.",
+    "c": ["注文して送ってもらった", "探して見つけた", "見比べて選んだ", "調べて買いに行った"],
+    "why": [
+      "取り寄せる means to order something and have it sent to you: 注文して送ってもらう spells it out.",
+      "探して見つける means to search and find. Finding it online is not the same as having it sent.",
+      "見比べて選ぶ means to compare and pick. That is a step before ordering, not the ordering itself.",
+      "調べて買いに行く means you look it up, then go to buy it. With 取り寄せる it comes to you."
+    ],
+    "tell": "取り寄せる = 注文して送ってもらう: order in, have it delivered.",
+    "lv": 2
+  },
+  {
+    "id": "v5-022",
+    "type": "v5",
+    "w": "打ち切る",
+    "r": "うちきる",
+    "m": "to cut off, call off partway",
+    "s": "両社の交渉は三時間に及んだが、結論が出ないまま打ち切られた。",
+    "t": "打ち切られた",
+    "en": "Talks between the two companies went on for three hours, but were called off without a conclusion.",
+    "c": ["中止された", "延長された", "翌日も続けられた", "休憩に入った"],
+    "why": [
+      "打ち切る means to stop something partway and not continue: 中止する is the plain word.",
+      "延長する means to make it run longer, the opposite of cutting it off.",
+      "翌日も続けられた means the talks went on the next day, so they did not end.",
+      "休憩に入る means to take a break. After a break, the talks carry on."
+    ],
+    "tell": "打ち切る = 途中でやめる／中止する: cut off, call off.",
+    "lv": 2
+  },
+  {
+    "id": "v5-023",
+    "type": "v5",
+    "w": "言い張る",
+    "r": "いいはる",
+    "m": "to insist",
+    "s": "弟は、リビングの花瓶を割ったのは自分ではないと言い張った。",
+    "t": "言い張った",
+    "en": "My younger brother insisted that he was not the one who broke the vase in the living room.",
+    "c": ["強く言い続けた", "小さな声で言った", "嘘をついた", "母に話した"],
+    "why": [
+      "言い張る means to keep insisting and refuse to back down: 強く言い続ける says that plainly.",
+      "小さな声で言う means saying it quietly. 言い張る is forceful and repeated.",
+      "嘘をつく means to lie. 言い張る says nothing about whether it is true.",
+      "母に話す means telling your mother. 言い張る is about how firmly you say it, not who hears."
+    ],
+    "tell": "言い張る = 強く言い続ける: insist, refuse to back down.",
+    "lv": 2
+  },
+  {
+    "id": "v5-024",
+    "type": "v5",
+    "w": "立て替える",
+    "r": "たてかえる",
+    "m": "to pay for someone, to be paid back later",
+    "s": "「ホテル代はどうした？」「とりあえず私が四人分まとめて立て替えておいたよ。」",
+    "t": "立て替えて",
+    "en": "What did you do about the hotel bill? For now, I covered it for all four of us.",
+    "c": ["代わりに払って", "集めて", "計算して", "確認して"],
+    "why": [
+      "立て替える means to pay for someone for now, expecting to be paid back: 代わりに払う says that. おごる would mean no payback.",
+      "集める means to collect money from people. The money moves the other way.",
+      "計算する means to work out the amount. No money changes hands.",
+      "確認する means to check it. Nothing is paid."
+    ],
+    "tell": "立て替える = 代わりに払っておく, and get the money back later.",
+    "lv": 2
+  },
+  {
+    "id": "v5-025",
+    "type": "v5",
+    "w": "心がける",
+    "r": "こころがける",
+    "m": "to make a point of, keep in mind",
+    "s": "健康のために、エレベーターではなく階段を使うように心がけている。",
+    "t": "心がけている",
+    "en": "For my health, I make a point of taking the stairs instead of the lift.",
+    "c": ["気をつけている", "言われている", "勧めている", "頼んでいる"],
+    "why": [
+      "心がける means to keep something in mind and make an effort to do it: 気をつけている is the plain version.",
+      "言われている means someone has told you to. 心がける is your own effort.",
+      "勧めている means you recommend it to other people. 心がける is about yourself.",
+      "頼んでいる means you are asking someone else to do it. 心がける is your own habit."
+    ],
+    "tell": "〜ように心がける = 〜ように気をつける: make a point of doing it.",
+    "lv": 2
+  },
+  {
+    "id": "v5-026",
+    "type": "v5",
+    "w": "キャンセル",
+    "r": "きゃんせる",
+    "m": "cancel",
+    "s": "体調を崩したので、来週の歯医者の予約をキャンセルした。",
+    "t": "キャンセルした",
+    "en": "I was not feeling well, so I cancelled my dentist appointment for next week.",
+    "c": ["取り消した", "変更した", "確認した", "入れた"],
+    "why": [
+      "キャンセルする means to call off a booking: 取り消す is the Japanese word for it.",
+      "変更する means to change it, for example to another day. The booking still exists.",
+      "確認する means to check or confirm it. The booking stays.",
+      "予約を入れる means to make a booking, the opposite."
+    ],
+    "tell": "キャンセルする = 取り消す: call off a booking.",
+    "lv": 1
+  },
+  {
+    "id": "v5-027",
+    "type": "v5",
+    "w": "ブーム",
+    "r": "ぶーむ",
+    "m": "boom, craze",
+    "s": "最近、若い人の間で、昔ながらの喫茶店巡りがちょっとしたブームになっている。",
+    "t": "ブーム",
+    "en": "Lately, visiting old-style coffee shops has become something of a craze among young people.",
+    "c": ["流行", "問題", "息抜き", "ぜいたく"],
+    "why": [
+      "ブーム means a boom or craze, something suddenly popular with many people: 流行 is the Japanese word.",
+      "問題 means a problem. A craze is about popularity, not trouble.",
+      "息抜き means a short break to relax. That is why someone might do it, not the fact that many people do.",
+      "ぜいたく means a luxury or treat. It is about cost, not popularity."
+    ],
+    "tell": "ブーム = 流行: a craze, something suddenly popular.",
+    "lv": 1
+  },
+  {
+    "id": "v5-028",
+    "type": "v5",
+    "w": "ストップ",
+    "r": "すとっぷ",
+    "m": "stop, halt",
+    "s": "台風の影響で、市内の工場では生産が一時ストップしている。",
+    "t": "ストップしている",
+    "en": "Because of the typhoon, production at factories in the city has temporarily stopped.",
+    "c": ["止まっている", "遅れている", "減っている", "混乱している"],
+    "why": [
+      "ストップする means to stop: 止まる is the plain Japanese word. Nothing is being made for now.",
+      "遅れる means to fall behind schedule. Production is still going on.",
+      "減る means to go down. Some production is still going on.",
+      "混乱する means to be thrown into confusion. Things are disrupted, but not stopped."
+    ],
+    "tell": "ストップする = 止まる／止める: stop, come to a halt.",
+    "lv": 1
+  },
+  {
+    "id": "v5-029",
+    "type": "v5",
+    "w": "いきさつ",
+    "r": "いきさつ",
+    "m": "the circumstances, how something came about",
+    "s": "新しく来た部長に、プロジェクトが中止になったいきさつを説明した。",
+    "t": "いきさつ",
+    "en": "I explained to the new manager how the project came to be cancelled.",
+    "c": ["事情", "結果", "影響", "時期"],
+    "why": [
+      "いきさつ means how something came about, the chain of events behind it: 事情 (the circumstances) is the closest plain word here. The exact synonym is 経緯 (けいい), and いきさつ is often written 経緯.",
+      "結果 means the result, what came after. いきさつ is what came before.",
+      "影響 means the effect on other things. That also comes after the event.",
+      "時期 means when it happened. いきさつ is the story of how, not the date."
+    ],
+    "tell": "いきさつ = 事情／経緯: how it came to this, the background story.",
+    "lv": 2
+  },
+  {
+    "id": "v5-030",
+    "type": "v5",
+    "w": "案の定",
+    "r": "あんのじょう",
+    "m": "just as expected (usually something bad)",
+    "s": "週末のセールに行ってみたら、案の定、店の中は人でいっぱいだった。",
+    "t": "案の定",
+    "en": "I went to the weekend sale and, just as I expected, the shop was packed.",
+    "c": ["思ったとおり", "意外にも", "珍しく", "なぜか"],
+    "why": [
+      "案の定 means 'just as I thought', usually about something unwelcome: 思ったとおり is the plain version.",
+      "意外にも means 'surprisingly', the opposite of 案の定.",
+      "珍しく means 'unusually, for once'. 案の定 means it was exactly what you expected.",
+      "なぜか means 'for some reason'. 案の定 means you saw it coming."
+    ],
+    "tell": "案の定 = 思ったとおり／予想どおり: just as feared.",
+    "lv": 2
+  }
+]

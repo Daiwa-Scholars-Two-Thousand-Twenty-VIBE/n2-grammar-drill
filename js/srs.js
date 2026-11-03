@@ -13,7 +13,11 @@
   const INTERVALS = [0, 1, 2, 4, 8, 16];
   // Target seconds per item. 25 s for 問題7 is the usual N2 pace benchmark.
   // Kanji items (kr reading, kw writing, km meaning) should be near-instant: 12 s.
-  const TARGET = { p7: 25, p8: 50, p9: 60, kr: 12, kw: 12, km: 12 };
+  // Vocab: 語形成 (v3) is one affix, 言い換え (v5) one word, 用法 (v6) four sentences to read.
+  // 情報検索 (r14) is per question, and the first one includes reading the notice.
+  const TARGET = { p7: 25, p8: 50, p9: 60, kr: 12, kw: 12, km: 12, v3: 20, v5: 25, v6: 45, r14: 240 };
+  // Which day log each store writes to.
+  const DAYS = { points: "days", kanji: "kdays", vocab: "vdays", reading: "rdays" };
 
   const pad = (n) => String(n).padStart(2, "0");
   function dayStr(d) {
@@ -53,9 +57,10 @@
     return s[Math.floor(s.length / 2)];
   };
 
-  // Grammar lives in `points` and `days`; kanji in `kanji` and `kdays`, same shape.
+  // Grammar lives in `points` and `days`; kanji in `kanji` and `kdays`; vocab in `vocab` and
+  // `vdays`; 情報検索 answers in `reading` and `rdays`. Same shape everywhere.
   function emptyState() {
-    return { v: 2, points: {}, qs: {}, conf: {}, days: {}, kanji: {}, kdays: {} };
+    return { v: 2, points: {}, qs: {}, conf: {}, days: {}, kanji: {}, kdays: {}, vocab: {}, vdays: {}, reading: {}, rdays: {} };
   }
   function pointState(state, id, store = "points") {
     const box = state[store] || (state[store] = {});
@@ -66,7 +71,7 @@
   // later answers the same day (re-asks, extra practice, set drills) can still drop it.
   // `chosenPoint` is the point behind the wrong choice, if any: that pair is logged as a
   // mix-up and the confused point comes back tomorrow too. `slow` (a hint was used) stops promotion.
-  // `store` is "points" for grammar or "kanji". `firstBox` is where a fast right answer on first
+  // `store` is "points" for grammar, "kanji", "vocab" or "reading". `firstBox` is where a fast right answer on first
   // sight lands: 3 (already known) unless the item was just taught, when 1 is the honest box.
   function record(state, { qid, point, ok, secs, type, chosenPoint, slow = false, today, store = "points", firstBox = 3 }) {
     const p = pointState(state, point, store);
@@ -76,7 +81,7 @@
     p.seen++;
     p.last = today;
     if (first) p.first = today;
-    if (type === "p7" || store === "kanji") p.times = [...p.times, Math.round(secs)].slice(-5);
+    if (type === "p7" || store !== "points") p.times = [...p.times, Math.round(secs)].slice(-5);
     if (ok) {
       p.right++;
       p.streak++;
@@ -105,7 +110,8 @@
       else q.wrong = today;
       q.last = today;
     }
-    const days = store === "kanji" ? state.kdays || (state.kdays = {}) : state.days;
+    const dk = DAYS[store] || "days";
+    const days = state[dk] || (state[dk] = {});
     const d = days[today] || (days[today] = { n: 0, right: 0, secs: 0 });
     d.n++;
     if (ok) d.right++;
@@ -366,6 +372,63 @@
     return shuffle(uniq, rng).slice(0, max);
   }
 
+  // ---------- vocabulary (問題3, 5, 6) and 情報検索 (問題14) ----------
+  // Each vocab item is its own unit of memory: one stem and affix, one word in a sentence, or one
+  // word in four sentences. Same boxes as grammar, kept in the `vocab` store.
+  const VTYPES = ["v3", "v5", "v6"];
+
+  // Take the groups in turn (one of each type, then the next of each), keeping order inside a group.
+  function roundRobin(items, keyOf) {
+    const groups = new Map();
+    for (const x of items) {
+      const k = keyOf(x);
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(x);
+    }
+    const out = [];
+    for (let i = 0; out.length < items.length; i++) for (const g of groups.values()) if (i < g.length) out.push(g[i]);
+    return out;
+  }
+
+  // Today's vocab: due items first, then up to `newPerDay` new ones, easiest first and taking the
+  // three types in turn. `types` narrows it to some types (a 語形成-only drill). `topUp` fills spare
+  // places with the weakest items not yet due.
+  function buildVocabDaily({ state, items, today, size = 20, newPerDay = 10, types = null, topUp = false, rng = Math.random }) {
+    const vs = (id) => (state.vocab || {})[id];
+    const mine = items.filter((x) => !types || types.has(x.type));
+    const seen = mine.filter((x) => vs(x.id) && vs(x.id).seen);
+    const fresh = roundRobin(mine.filter((x) => !vs(x.id) || !vs(x.id).seen).sort((a, b) => (a.lv || 1) - (b.lv || 1)), (x) => x.type);
+    const due = seen
+      .filter((x) => vs(x.id).due <= today)
+      .sort((a, b) => (vs(a.id).due < vs(b.id).due ? -1 : vs(a.id).due > vs(b.id).due ? 1 : vs(a.id).box - vs(b.id).box));
+    const nNew = Math.min(newPerDay, fresh.length, size);
+    const pick = due.slice(0, size - nNew);
+    pick.push(...fresh.slice(0, nNew));
+    if (topUp && pick.length < size) {
+      const ahead = seen.filter((x) => !pick.includes(x)).sort((a, b) => vs(a.id).box - vs(b.id).box || (vs(a.id).due < vs(b.id).due ? -1 : 1));
+      pick.push(...ahead.slice(0, size - pick.length));
+    }
+    return {
+      items: interleave(pick, (x) => x.type, rng),
+      counts: { due: Math.min(due.length, size - nNew), dueTotal: due.length, fresh: nNew },
+    };
+  }
+
+  // A vocabulary section in paper order: 問題3, then 問題5, then 問題6, `n` of each, least-seen first.
+  function buildVocabMock({ state, items, n = 5, rng = Math.random }) {
+    const seen = (q) => (state.qs[q.id] ? state.qs[q.id].seen : 0);
+    return VTYPES.flatMap((t) => shuffle(items.filter((x) => x.type === t), rng).sort((a, b) => seen(a) - seen(b)).slice(0, n));
+  }
+
+  // The 情報検索 notice met least often (by its first question), ties broken at random.
+  function pickPassage({ state, passages, rng = Math.random }) {
+    if (!passages.length) return null;
+    const seen = (p) => (state.qs[`${p.id}#1`] ? state.qs[`${p.id}#1`].seen : 0);
+    const min = Math.min(...passages.map(seen));
+    const tied = passages.filter((p) => seen(p) === min);
+    return tied[Math.floor(rng() * tied.length)];
+  }
+
   // The next JLPT: first Sunday of July or December, whichever is next.
   function nextExam(from = new Date()) {
     const firstSunday = (y, m) => {
@@ -383,10 +446,39 @@
     return null;
   }
 
+  // Combine two copies of progress (phone and laptop) without losing either. Records only grow, so per id
+  // the copy that has seen more is the newer one; day logs and mix-ups keep the larger count. Ties keep a's.
+  function mergeStates(a, b) {
+    const out = emptyState();
+    const has = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
+    // A copy one level deep (arrays like `times` too), so the result shares nothing with the inputs.
+    const copy = (r) => (r && typeof r === "object" ? Object.fromEntries(Object.entries(r).map(([k, x]) => [k, Array.isArray(x) ? x.slice() : x])) : r);
+    // Every key of either side's map; b's entry replaces a's only when `bWins` says so.
+    const join = (store, bWins) => {
+      const x = (a && a[store]) || {};
+      const y = (b && b[store]) || {};
+      for (const [id, r] of Object.entries(x)) out[store][id] = copy(r);
+      for (const [id, r] of Object.entries(y)) if (!has(x, id) || bWins(x[id], r)) out[store][id] = copy(r);
+    };
+    const seen = (r) => (r && r.seen) || 0;
+    const last = (r) => (r && r.last) || "";
+    const due = (r) => (r && r.due) || "";
+    // A full tie on seen and last goes to the earlier due date (a mix-up pulls it forward), so both devices agree.
+    const newer = (r, s) =>
+      seen(s) > seen(r) || (seen(s) === seen(r) && (last(s) > last(r) || (last(s) === last(r) && due(s) !== "" && due(s) < due(r))));
+    for (const store of ["points", "kanji", "vocab", "reading", "qs"]) join(store, newer);
+    const n = (d) => (d && d.n) || 0;
+    for (const store of ["days", "kdays", "vdays", "rdays"]) join(store, (d, e) => n(e) > n(d));
+    join("conf", (c, d) => (d || 0) > (c || 0));
+    return out;
+  }
+
   return {
     INTERVALS, TARGET, dayStr, addDays, daysBetween, mulberry32, shuffle, median,
     emptyState, record, newToday, status, mixups, interleave, indexByPoint,
     buildDaily, buildMock, buildSetDrill, buildPointDrill, buildPairDrill, buildCustom, nextExam,
     kanjiQuestion, pickKanjiQuestion, buildKanjiDaily, buildKanjiDrill,
+    VTYPES, buildVocabDaily, buildVocabMock, pickPassage,
+    mergeStates,
   };
 });

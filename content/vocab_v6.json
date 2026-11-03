@@ -1,0 +1,577 @@
+[
+  {
+    "id": "v6-001",
+    "type": "v6",
+    "w": "手間",
+    "r": "てま",
+    "m": "time and effort, trouble (that a task takes)",
+    "stem": "手間",
+    "c": [
+      "手作りのギョーザは手間がかかるが、家族が喜ぶので月に一度は作っている。",
+      "今週末は手間があるので、久しぶりに友達と映画を見に行くつもりだ。",
+      "海外の口座にお金を送ると、銀行に手間を払う必要がある。",
+      "彼女は料理の手間がいいので、短い時間で何品も作ってしまう。"
+    ],
+    "fix": [null, "時間", "手数料", "手際"],
+    "why": [
+      "Right: 手間 is the time and effort a job takes. Homemade gyoza need a lot of it, so 手間がかかる fits.",
+      "Spare time you have is 時間 or 暇. 手間 is the effort a task costs you, not free time.",
+      "Money a bank charges is 手数料. You cannot pay 手間.",
+      "Being quick and skilled at a task is 手際がいい. 手間 is an amount of effort, so it cannot be いい."
+    ],
+    "tell": "手間 is the effort a task costs: 手間がかかる, 手間を省く. Not free time, a fee or skill.",
+    "lv": 1
+  },
+  {
+    "id": "v6-002",
+    "type": "v6",
+    "w": "見当",
+    "r": "けんとう",
+    "m": "a rough guess, an idea of what something is",
+    "stem": "見当",
+    "c": [
+      "箱の中に何が入っているのか、重さだけではまったく見当がつかなかった。",
+      "新しい制度を導入するかどうか、来月の会議で見当することになった。",
+      "初めて全国大会に出場する選手たちの見当を、町の人々が心から祈っている。",
+      "先週、市内の工場を見当させてもらい、製品ができるまでの流れがよく分かった。"
+    ],
+    "fix": [null, "検討する", "健闘", "見学"],
+    "why": [
+      "Right: 見当 is a rough guess. 見当がつかない means you cannot even begin to guess.",
+      "Discussing whether to do something is 検討する. It sounds the same, but 見当 is a guess and is not used with する like this.",
+      "Fighting hard in a contest is 健闘, also read けんとう: 健闘を祈る. You cannot wish someone a guess.",
+      "Visiting a factory to see how it works is 見学. 見当 has nothing to do with visiting."
+    ],
+    "tell": "見当 is a rough guess: 見当がつく, 見当をつける. 検討 (discuss) and 健闘 (fight hard) only sound the same.",
+    "lv": 2
+  },
+  {
+    "id": "v6-003",
+    "type": "v6",
+    "w": "余裕",
+    "r": "よゆう",
+    "m": "room to spare (time, money or mind), leeway",
+    "stem": "余裕",
+    "c": [
+      "電車が遅れることもあるので、時間に余裕を持って家を出た。",
+      "昨日作ったカレーの余裕があるので、今日の昼はそれを温めて食べよう。",
+      "頼まれてもいないのに余裕なことを言って、友人を怒らせてしまった。",
+      "定年後の余裕の過ごし方について、市が講座を開いている。"
+    ],
+    "fix": [null, "残り", "余計な", "余暇"],
+    "why": [
+      "Right: 余裕 is spare room, here spare time. 時間に余裕を持つ means leaving early enough.",
+      "Food left over is 残り. 余裕 is spare capacity, not leftovers.",
+      "Saying something nobody needed is 余計なこと. 余裕 means spare room, which makes no sense here.",
+      "Leisure time and how you spend it is 余暇. 余裕の過ごし方 is not said."
+    ],
+    "tell": "余裕 is spare room in time, money or mind: 余裕がある, 余裕を持って. Not leftovers or leisure.",
+    "lv": 1
+  },
+  {
+    "id": "v6-004",
+    "type": "v6",
+    "w": "中断",
+    "r": "ちゅうだん",
+    "m": "interruption, stopping partway (for a while)",
+    "stem": "中断",
+    "c": [
+      "激しい雷雨のため試合は一時間ほど中断されたが、雨がやむと再開された。",
+      "台風が近づいているため、明日予定していた花火大会は中断となった。",
+      "どちらの案を採用するか、最終的な中断は部長に任せることにした。",
+      "信号のない場所で道路を中断するのは危険です。"
+    ],
+    "fix": [null, "中止", "判断", "横断する"],
+    "why": [
+      "Right: 中断 stops something already under way, usually for a while. The game stopped, then restarted.",
+      "Tomorrow's event has not started, so it cannot be interrupted. Calling it off in advance is 中止.",
+      "A decision is 判断. 中断 only means stopping something partway.",
+      "Crossing a road is 横断する. 中断 cannot take a road as its object."
+    ],
+    "tell": "中断 stops something already in progress, usually for a while. An event called off in advance is 中止.",
+    "lv": 2
+  },
+  {
+    "id": "v6-005",
+    "type": "v6",
+    "w": "発揮",
+    "r": "はっき",
+    "m": "showing (an ability or power you have)",
+    "stem": "発揮",
+    "c": [
+      "彼女は本番に強く、大事な試合になるほど実力を発揮する。",
+      "試験の結果は、来週の月曜日に学校のホームページで発揮される。",
+      "仕事で疲れた日は、カラオケで大声を出してストレスを発揮している。",
+      "お世話になった先生に、感謝の気持ちを手紙で発揮した。"
+    ],
+    "fix": [null, "発表される", "発散している", "表した"],
+    "why": [
+      "Right: 発揮 is showing an ability you have. 実力を発揮する is the standard phrase.",
+      "Making results public is 発表. 発揮 is about ability, not news.",
+      "Letting off stress is 発散. You do not 発揮 stress.",
+      "Showing a feeling in words is 表す or 伝える. 発揮 is for ability or power, not feelings."
+    ],
+    "tell": "発揮 is showing an ability or power you have: 実力・能力・効果を発揮する. Not news, stress or feelings.",
+    "lv": 1
+  },
+  {
+    "id": "v6-006",
+    "type": "v6",
+    "w": "用心",
+    "r": "ようじん",
+    "m": "care, caution (against danger)",
+    "stem": "用心",
+    "c": [
+      "この辺りは夜になると人通りが少ないので、用心したほうがいい。",
+      "午後から用心があるので、打ち合わせは午前中にしていただけますか。",
+      "授業中に騒いでいた生徒を、先生が厳しく用心した。",
+      "夕食の用心ができたので、二階にいる子どもたちを呼んだ。"
+    ],
+    "fix": [null, "用事", "注意した", "用意"],
+    "why": [
+      "Right: 用心 is being on guard against danger. A quiet street at night calls for it.",
+      "Something you have to go and do is 用事. 用心 is caution, not an errand.",
+      "A teacher telling a student off is 注意する. 用心 is guarding yourself, never scolding someone.",
+      "Getting a meal ready is 用意. 用心 has nothing to do with preparing things."
+    ],
+    "tell": "用心 is guarding yourself against danger or trouble: 夜道に用心する, 火の用心. Not errands or scolding.",
+    "lv": 2
+  },
+  {
+    "id": "v6-007",
+    "type": "v6",
+    "w": "普及",
+    "r": "ふきゅう",
+    "m": "spreading into general use, becoming widespread",
+    "stem": "普及",
+    "c": [
+      "スマートフォンの普及によって、紙の地図を持ち歩く人はずいぶん減った。",
+      "冬休みの直前に、インフルエンザが学校中に普及した。",
+      "地震で止まっていた電車は、夜になってようやく普及した。",
+      "暑い日のマラソンでは、こまめに水分を普及することが大切だ。"
+    ],
+    "fix": [null, "広がった", "復旧した", "補給する"],
+    "why": [
+      "Right: 普及 is something useful spreading through society until most people have it, like smartphones.",
+      "A disease spreading is 広がる or 流行する. 普及 is for useful things people choose to take up.",
+      "Train services coming back after a stop is 復旧. It sounds close to 普及 but means restore.",
+      "Taking in water during a race is 補給. 普及 never takes water as its object."
+    ],
+    "tell": "普及 is something useful (a product, a system, a habit) spreading through society. Not disease or repairs.",
+    "lv": 1
+  },
+  {
+    "id": "v6-008",
+    "type": "v6",
+    "w": "取り扱う",
+    "r": "とりあつかう",
+    "m": "to handle; (of a shop) to deal in, stock",
+    "stem": "取り扱",
+    "c": [
+      "この店では、地元の農家が育てた野菜や果物を取り扱っている。",
+      "町全体で、ごみを減らす活動に取り扱っている。",
+      "玄関の電球が切れたので、新しいものに取り扱った。",
+      "レジの前で、かばんから財布を取り扱って代金を払った。"
+    ],
+    "fix": [null, "取り組んでいる", "取り替えた", "取り出して"],
+    "why": [
+      "Right: 取り扱う can mean a shop deals in a product. 野菜を取り扱っている means the shop sells them.",
+      "Working hard at an activity is 〜に取り組む. 取り扱う takes を and means handling something.",
+      "Swapping an old bulb for a new one is 取り替える.",
+      "Taking something out of a bag is 取り出す."
+    ],
+    "tell": "取り扱う is handling goods or matters, or a shop dealing in a product. Not tackle, replace or take out.",
+    "lv": 1
+  },
+  {
+    "id": "v6-009",
+    "type": "v6",
+    "w": "見落とす",
+    "r": "みおとす",
+    "m": "to overlook, to miss (something that was there to see)",
+    "stem": "見落と",
+    "c": [
+      "何度も確認したのに、計算の間違いを一か所見落としていた。",
+      "山の上の展望台から、明かりのついた夜の町を見落とした。",
+      "留学する友人を見落とすために、朝早く空港へ向かった。",
+      "提出する前に、念のためもう一度レポートを見落とした。"
+    ],
+    "fix": [null, "見下ろした", "見送る", "見直した"],
+    "why": [
+      "Right: 見落とす is failing to notice something that was there to see, such as a mistake.",
+      "Looking down at a view from a height is 見下ろす. Be careful: English 'overlook' can mean this, but 見落とす cannot.",
+      "Going to see someone off is 見送る. Nobody goes to an airport in order to miss a friend.",
+      "Checking your work again is 見直す. 見落とす is the failure that 見直す is meant to prevent."
+    ],
+    "tell": "見落とす is failing to notice something that was there to see, like a mistake or a sign.",
+    "lv": 1
+  },
+  {
+    "id": "v6-010",
+    "type": "v6",
+    "w": "備える",
+    "r": "そなえる",
+    "m": "to prepare for (something that may happen); to be equipped with",
+    "stem": "備え",
+    "c": [
+      "台風に備えて、ベランダの植木鉢を部屋の中に入れておいた。",
+      "仕事から帰ると、母が温かい夕食を備えてくれていた。",
+      "祖父はこの商店街に店を備えて、もう五十年になる。",
+      "面接の前に、トイレの鏡の前で髪を備えた。"
+    ],
+    "fix": [null, "用意して", "構えて", "整えた"],
+    "why": [
+      "Right: 備える is getting ready for something that may happen. 台風に備えて means in case the typhoon hits.",
+      "Getting a meal ready to eat is 用意する or 準備する. 備える is about a possible future event, not cooking.",
+      "Setting up and running a shop in a place is 店を構える, a fixed phrase.",
+      "Tidying your hair is 髪を整える."
+    ],
+    "tell": "備える is getting ready for something that may happen later (地震に備える), or being equipped with something.",
+    "lv": 2
+  },
+  {
+    "id": "v6-011",
+    "type": "v6",
+    "w": "生じる",
+    "r": "しょうじる",
+    "m": "to arise, to come about (problems, differences)",
+    "stem": "生じ",
+    "c": [
+      "説明が十分でなかったため、二人の間に誤解が生じてしまった。",
+      "先月、姉夫婦に元気な男の子が生じた。",
+      "この工場では、一日に約二百台の自動車を生じている。",
+      "彼女は留学の経験を生じて、通訳の仕事をしている。"
+    ],
+    "fix": [null, "生まれた", "生産して", "生かして"],
+    "why": [
+      "Right: 生じる is a problem or difference coming into being. 誤解が生じる is a common pairing.",
+      "A baby is 生まれる. 生じる is for abstract things like problems and changes, never people.",
+      "Making goods in a factory is 生産する. 生じる is something coming about by itself; it never takes products as its object.",
+      "Putting experience to good use is 経験を生かす. 生じる means come about, not make use of."
+    ],
+    "tell": "生じる is a problem, change or difference coming into being: 誤解・問題・差が生じる. Not babies or products.",
+    "lv": 2
+  },
+  {
+    "id": "v6-012",
+    "type": "v6",
+    "w": "補う",
+    "r": "おぎなう",
+    "m": "to make up for (a shortage), to supplement",
+    "stem": "補",
+    "c": [
+      "人手が足りない分を補うため、週末だけアルバイトを二人雇った。",
+      "彼は犯した罪を補うために、長い年月をかけて被害者に謝罪を続けた。",
+      "一晩中降り続いた雪が、町全体を白く補っていた。",
+      "川でおぼれかけていた子どもを、近くにいた男性が補った。"
+    ],
+    "fix": [null, "償う", "覆って", "助けた"],
+    "why": [
+      "Right: 補う is filling in what is missing. 人手が足りない分を補う means covering the staff shortage.",
+      "Making amends for a crime is 罪を償う. 補う fills a gap; it does not pay for wrongdoing.",
+      "Snow covering a town is 覆う (おおう). 補う fills a gap; it does not mean cover.",
+      "Saving a person in danger is 助ける. 補う is for shortages, not people."
+    ],
+    "tell": "補う is filling in what is missing or short: 不足を補う, 栄養を補う. Not covering, rescuing or atoning.",
+    "lv": 2
+  },
+  {
+    "id": "v6-013",
+    "type": "v6",
+    "w": "譲る",
+    "r": "ゆずる",
+    "m": "to give up (something of yours) to another person, to hand over",
+    "stem": "譲",
+    "c": [
+      "バスの中で、杖をついたお年寄りに席を譲った。",
+      "明日必ず返すから、その傘をちょっと譲ってくれない？",
+      "受付で名前を言ってから、係の人に申込書を譲った。",
+      "約束を破った私を、彼女はなかなか譲ってくれなかった。"
+    ],
+    "fix": [null, "貸して", "渡した", "許して"],
+    "why": [
+      "Right: 譲る is giving up something of yours so another person can have it. A seat is the classic case.",
+      "If you will give it back tomorrow, it is a loan: 貸す. With 譲る the other person keeps it.",
+      "Handing a form to a member of staff is 渡す. You are not giving up something of yours for them to keep.",
+      "Forgiving someone is 許す (ゆるす). It sounds close to 譲る (ゆずる) but means forgive."
+    ],
+    "tell": "譲る is giving up something of yours so another person can have it: a seat, a turn, a right, a possession.",
+    "lv": 1
+  },
+  {
+    "id": "v6-014",
+    "type": "v6",
+    "w": "偏る",
+    "r": "かたよる",
+    "m": "to be lopsided, unbalanced or biased",
+    "stem": "偏",
+    "c": [
+      "一人暮らしを始めてから、食事が肉料理ばかりに偏りがちだ。",
+      "大きな地震のあと、隣の古い家が少し偏ってしまった。",
+      "会社の帰りにスーパーに偏って、牛乳と卵を買った。",
+      "兄は大学に入ってから、親に偏らずに自分で学費を払っている。"
+    ],
+    "fix": [null, "傾いて", "寄って", "頼らずに"],
+    "why": [
+      "Right: 偏る is being lopsided toward one side. Eating only meat is a 偏った diet.",
+      "A building leaning over is 傾く. 偏る is about balance or bias, not a physical tilt.",
+      "Stopping off somewhere on the way is 寄る. 偏る only shares the sound よる.",
+      "Depending on someone is 頼る (たよる). It is easy to mix up with 偏る (かたよる)."
+    ],
+    "tell": "偏る is being lopsided toward one side: 栄養・意見・人数が偏る. Do not mix it up with 頼る or 寄る.",
+    "lv": 2
+  },
+  {
+    "id": "v6-015",
+    "type": "v6",
+    "w": "収める",
+    "r": "おさめる",
+    "m": "to achieve (a result); to put neatly into a container",
+    "stem": "収め",
+    "c": [
+      "彼女の初めての個展は大きな成功を収め、作品はすべて売れた。",
+      "強い風で書類が飛ばないように、手で上から収めた。",
+      "兄は去年、三回目の試験でやっと運転免許を収めた。",
+      "甘いのが好きなので、コーヒーに砂糖を二つ収めた。"
+    ],
+    "fix": [null, "押さえた", "取った", "入れた"],
+    "why": [
+      "Right: 収める can mean to achieve a result. 成功を収める is a fixed phrase.",
+      "Holding paper down with your hand is 押さえる (おさえる). It sounds close but means press down.",
+      "Getting a licence is 免許を取る. 収める is not used for qualifications.",
+      "Putting sugar in coffee is 入れる. 収める is fitting something neatly into a space made to hold it, like a box."
+    ],
+    "tell": "収める is getting a result (成功・勝利を収める) or fitting something neatly into a box or a photo.",
+    "lv": 2
+  },
+  {
+    "id": "v6-016",
+    "type": "v6",
+    "w": "素朴",
+    "r": "そぼく",
+    "m": "simple and unpretentious, plain (in a warm way)",
+    "stem": "素朴",
+    "c": [
+      "この村の料理は素朴な味だが、どこか懐かしさを感じさせる。",
+      "彼は先輩の注意を素朴に聞き入れ、すぐに態度を改めた。",
+      "彼女には子どものころから、ピアニストとしての素朴があった。",
+      "食べ物を素朴にしてはいけないと、祖母によく言われた。"
+    ],
+    "fix": [null, "素直に", "素質", "粗末に"],
+    "why": [
+      "Right: 素朴 is plain and unpolished in a warm way. 素朴な味 is simple home-style flavour.",
+      "Taking advice without arguing is 素直に聞き入れる. 素朴 is not about obedience.",
+      "A natural talent for something is 素質. 素朴 shares the kanji 素 but describes plain, unpolished things and people, not ability.",
+      "Treating food carelessly is 粗末にする, a fixed phrase."
+    ],
+    "tell": "素朴 is plain and unpolished in a warm way: 素朴な味・暮らし・疑問. Not talent, obedience or careless treatment.",
+    "lv": 2
+  },
+  {
+    "id": "v6-017",
+    "type": "v6",
+    "w": "円満",
+    "r": "えんまん",
+    "m": "harmonious, amicable, without conflict",
+    "stem": "円満",
+    "c": [
+      "話し合いを重ねた結果、隣の家とのトラブルは円満に解決した。",
+      "朝の電車はいつも円満で、座れたことは一度もない。",
+      "このレストランには、六人で座れる円満なテーブルがある。",
+      "今回泊まったホテルには、とても円満している。"
+    ],
+    "fix": [null, "満員", "丸い", "満足して"],
+    "why": [
+      "Right: 円満 means no conflict. 円満に解決する is settling a dispute on good terms.",
+      "A train packed with people is 満員.",
+      "A round table is 丸いテーブル. 円満 contains 円, but it describes relationships, not shapes.",
+      "Being pleased with something is 満足する. 円満 is a な-adjective and never takes する."
+    ],
+    "tell": "円満 describes relationships or settlements with no conflict: 円満な家庭, 円満に解決する.",
+    "lv": 2
+  },
+  {
+    "id": "v6-018",
+    "type": "v6",
+    "w": "大げさ",
+    "r": "おおげさ",
+    "m": "exaggerated, overblown",
+    "stem": "大げさ",
+    "c": [
+      "少し指を切っただけなのに、弟は大げさに痛がって母を呼んだ。",
+      "この指輪は祖母から受け継いだ大げさなものなので、毎日はつけない。",
+      "細かい点は来週詰めることにして、今日は大げさな予定だけ決めた。",
+      "昨夜からの大雪の影響で、今朝は電車のダイヤが大げさに乱れた。"
+    ],
+    "fix": [null, "大切な", "大まかな", "大幅に"],
+    "why": [
+      "Right: 大げさ is acting as if something is bigger than it is. A small cut and a big fuss fit.",
+      "Precious is 大切. 大げさ is about exaggeration, never value.",
+      "Rough, without details, is 大まか. A rough plan is 大まかな予定.",
+      "A large change in a schedule or a number is 大幅に: ダイヤが大幅に乱れる. 大げさ is making things seem bigger than they are."
+    ],
+    "tell": "大げさ is making something sound bigger than it is: 大げさに言う・騒ぐ. It is about how people talk or act.",
+    "lv": 1
+  },
+  {
+    "id": "v6-019",
+    "type": "v6",
+    "w": "険しい",
+    "r": "けわしい",
+    "m": "steep, rugged; (of a face) stern",
+    "stem": "険し",
+    "c": [
+      "頂上に近づくにつれて、山道はますます険しくなっていった。",
+      "父は時間に険しく、約束に一分でも遅れるとひどく怒る。",
+      "道路でボール遊びをするのは険しいから、公園でやりなさい。",
+      "夜になると雨はいっそう険しくなり、川の水があふれそうになった。"
+    ],
+    "fix": [null, "厳しく", "危ない", "激しく"],
+    "why": [
+      "Right: 険しい is steep and hard to climb. A mountain path near the top fits.",
+      "Strict about time is 時間に厳しい. 厳しい and 険しい look alike, but only 厳しい describes rules and people.",
+      "Dangerous is 危ない. 険しい describes steep ground or a stern face, even though 危険 shares its kanji.",
+      "Heavy rain is 激しい雨. 険しい is not used for weather."
+    ],
+    "tell": "険しい is steep and hard to climb, or a hard, tense face: 険しい山道, 険しい表情. Strict people are 厳しい.",
+    "lv": 2
+  },
+  {
+    "id": "v6-020",
+    "type": "v6",
+    "w": "手軽",
+    "r": "てがる",
+    "m": "easy, simple, needing little effort or cost",
+    "stem": "手軽",
+    "c": [
+      "このパスタは電子レンジだけで手軽に作れるので、忙しい日の昼によく作る。",
+      "うちの社長は手軽な人で、新入社員にも自分から話しかけてくれる。",
+      "重い荷物をホテルに預けて、手軽になってから町の観光に出かけた。",
+      "よく考えずに手軽な発言をして、相手を傷つけてしまった。"
+    ],
+    "fix": [null, "気さくな", "身軽に", "軽率な"],
+    "why": [
+      "Right: 手軽 is easy to do with little effort or cost. Pasta made with just a microwave fits.",
+      "A friendly, easy-to-talk-to person is 気さく. 手軽 describes tasks and things that take little effort, never people.",
+      "Free of heavy luggage is 身軽.",
+      "Speaking without thinking is 軽率な発言. 手軽 is about effort, not carelessness."
+    ],
+    "tell": "手軽 is easy to do or get, with little effort or cost: 手軽に作れる. Never people or attitudes (気さく, 気軽).",
+    "lv": 2
+  },
+  {
+    "id": "v6-021",
+    "type": "v6",
+    "w": "いっせいに",
+    "r": "いっせいに",
+    "m": "all at once, all together (many people or things)",
+    "stem": "いっせいに",
+    "c": [
+      "スタートの合図が鳴ると、ランナーたちはいっせいに走り出した。",
+      "日曜日は、妹といっせいに駅前のデパートへ買い物に行った。",
+      "よほどのどが渇いていたのか、彼はコップの水をいっせいに飲みほした。",
+      "薬を飲んだのに、夜になって痛みがいっせいにひどくなった。"
+    ],
+    "fix": [null, "いっしょに", "いっきに", "いっそう"],
+    "why": [
+      "Right: いっせいに is many people doing the same thing at the same moment. Runners at the start fit.",
+      "Going somewhere with one other person is いっしょに.",
+      "One person drinking all in one go is いっきに. いっせいに needs many people or things.",
+      "Getting even worse is いっそう. いっせいに is about timing, not degree."
+    ],
+    "tell": "いっせいに is many people or things doing the same thing at once. One person is いっきに or いっしょに.",
+    "lv": 1
+  },
+  {
+    "id": "v6-022",
+    "type": "v6",
+    "w": "いまさら",
+    "r": "いまさら",
+    "m": "now (when it is too late), after all this time",
+    "stem": "いまさら",
+    "c": [
+      "試験は明日なのだから、いまさら慌てて勉強しても間に合わない。",
+      "いまさら駅に着いたところなので、あと十分ほどでそちらに行きます。",
+      "いまさらの日曜日に、みんなで食事でもしませんか。",
+      "朝から降り出した雨は、夜になってもいまさら降り続いている。"
+    ],
+    "fix": [null, "たった今", "今度の", "まだ"],
+    "why": [
+      "Right: いまさら means 'now, when it is too late'. Cramming the night before cannot help.",
+      "Something that has only just happened is たった今.",
+      "A coming day is 今度の日曜日. いまさら looks back at a moment that has passed, never ahead.",
+      "Rain that has not stopped is まだ降り続いている. いまさら does not mean still."
+    ],
+    "tell": "いまさら means 'now, when it is too late': the moment has passed (いまさら〜ても).",
+    "lv": 2
+  },
+  {
+    "id": "v6-023",
+    "type": "v6",
+    "w": "たちまち",
+    "r": "たちまち",
+    "m": "instantly, in no time",
+    "stem": "たちまち",
+    "c": [
+      "その店のパンはテレビで紹介されると、たちまち評判になった。",
+      "先週、駅のホームでたちまち高校時代の友人に会った。",
+      "資料の準備ができたら、たちまち会議室に来てください。",
+      "休みの日には、たちまち一人で映画を見に行くことがある。"
+    ],
+    "fix": [null, "たまたま", "すぐに", "ときどき"],
+    "why": [
+      "Right: たちまち is a result that happens in no time. A shop becoming famous right after TV fits.",
+      "Meeting someone by chance is たまたま. It sounds similar but is about luck, not speed.",
+      "A request needs すぐに. たちまち describes what happened, so it cannot go with 〜てください.",
+      "Something you do now and then is ときどき. たちまち is one quick change, not a habit."
+    ],
+    "tell": "たちまち is a result that happens in no time, often spreading: たちまち売り切れる. No requests or habits.",
+    "lv": 2
+  },
+  {
+    "id": "v6-024",
+    "type": "v6",
+    "w": "せめて",
+    "r": "せめて",
+    "m": "at least (the minimum you hope for)",
+    "stem": "せめて",
+    "c": [
+      "忙しくて旅行は無理だとしても、せめて週末くらいはゆっくり休みたい。",
+      "昨日の花火大会には、せめて一万人は来ていたはずだ。",
+      "せめて朝早く起きてお弁当を作ったのに、家に忘れてきてしまった。",
+      "何度も失敗したが、五回目の挑戦でせめて資格試験に合格した。"
+    ],
+    "fix": [null, "少なくとも", "せっかく", "やっと"],
+    "why": [
+      "Right: せめて is the minimum you hope for, so it ends in a wish: 休みたい.",
+      "Estimating a crowd is 少なくとも. せめて is a wish, not a guess at a fact.",
+      "Effort that came to nothing is せっかく〜のに.",
+      "Finally succeeding after many tries is やっと."
+    ],
+    "tell": "せめて is 'at least' as a wish: the minimum you hope for. It usually ends in 〜たい, 〜てほしい or a request.",
+    "lv": 2
+  },
+  {
+    "id": "v6-025",
+    "type": "v6",
+    "w": "いったん",
+    "r": "いったん",
+    "m": "once, for the moment (before doing something else)",
+    "stem": "いったん",
+    "c": [
+      "雨が強くなってきたので、いったん家に戻り、傘を持って出直した。",
+      "京都には、学生のころにいったん行ったことがある。",
+      "何度電話をかけても、彼にはいったんつながらない。",
+      "彼が怒っていると思ったのは、いったん私の思い込みだった。"
+    ],
+    "fix": [null, "一度", "いっこうに", "単に"],
+    "why": [
+      "Right: いったん is 'for now, first': go home once, then set out again.",
+      "Past experience is 一度行ったことがある. いったん does not count how many times.",
+      "Not at all, however hard you try, is いっこうに〜ない.",
+      "Merely is 単に. いったん is about steps in time, not 'only'."
+    ],
+    "tell": "いったん is 'for now, first': stop or do one thing before going on (いったん戻る), or 'once' a change starts.",
+    "lv": 2
+  }
+]

@@ -6,7 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
-import { ROOT, CONTENT, loadCatalog, questionFiles, readJSON, validateItems, validateKanji } from "./lib.mjs";
+import { ROOT, CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, readJSON, validateItems, validateKanji, validateVocab, validatePassages } from "./lib.mjs";
 
 const report = process.argv.includes("--report");
 const catalog = loadCatalog();
@@ -23,6 +23,20 @@ for (const file of questionFiles()) {
   const res = validateItems(items, file, catalog, seen);
   errors.push(...res.errors);
   (path.basename(file).startsWith("anki_") ? anki : web).push(...items);
+}
+
+// Vocab (問題3, 5, 6) and 情報検索 notices (問題14) have their own schemas and are not tied to grammar points.
+const vocab = [];
+for (const file of vocabFiles()) {
+  const items = readJSON(file);
+  errors.push(...validateVocab(items, file, seen));
+  if (Array.isArray(items)) vocab.push(...items);
+}
+const passages = [];
+for (const file of passageFiles()) {
+  const list = readJSON(file);
+  errors.push(...validatePassages(list, file, seen));
+  if (Array.isArray(list)) passages.push(...list);
 }
 
 // The same sentence must not appear twice anywhere (web or deck).
@@ -61,6 +75,8 @@ const data = {
   kanji: kanji.kanji,
   kanjiTiers: kanji.tiers,
   glyphs: kanji.glyphs,
+  vocab,
+  passages,
 };
 const json = JSON.stringify(data);
 const version = crypto.createHash("sha1").update(json).digest("hex").slice(0, 8);
@@ -71,5 +87,7 @@ const byType = (t) => web.filter((q) => q.type === t).length;
 console.log(`✓ js/data.js ${version}: ${byType("p7")} 問題7 · ${byType("p8")} 問題8 · ${byType("p9")} 問題9 passages · ${catalog.points.points.length} points · ${catalog.sets.sets.length} sets`);
 console.log(`  Anki pool (not in web bundle): ${anki.length} items`);
 console.log(`  Kanji gap: ${kanji.kanji.length} kanji · ${kanji.kanji.reduce((a, x) => a + x.words.length, 0)} words`);
+const vType = (t) => vocab.filter((q) => q.type === t).length;
+console.log(`  Vocab: ${vType("v3")} 問題3 · ${vType("v5")} 問題5 · ${vType("v6")} 問題6 · ${passages.length} 問題14 notices`);
 if (thin.length) console.log(`  Points with fewer than 2 web questions: ${thin.join(", ")}`);
 if (report) for (const [id, c] of Object.entries(cover)) console.log(`  ${id.padEnd(6)} p7 ${c.p7}  p8 ${c.p8}  p9 ${c.p9}`);

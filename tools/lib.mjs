@@ -34,6 +34,16 @@ export function questionFiles() {
     .map((f) => path.join(CONTENT, f));
 }
 
+// Vocab items (問題3, 5, 6) live in content/vocab_*.json, 情報検索 notices in content/r14_*.json.
+const listFiles = (re) =>
+  fs
+    .readdirSync(CONTENT)
+    .filter((f) => re.test(f))
+    .sort()
+    .map((f) => path.join(CONTENT, f));
+export const vocabFiles = () => listFiles(/^vocab_.*\.json$/);
+export const passageFiles = () => listFiles(/^r14_.*\.json$/);
+
 const count = (hay, needle) => hay.split(needle).length - 1;
 
 function checkEnglish(err, where, ...texts) {
@@ -107,6 +117,101 @@ export function validateKanji(data) {
           for (const ch of s) if (KANJI.test(ch) && !w.t.includes(ch) && !data.glyphs[ch]) err(`${at}: no glyph entry for ${ch}`);
         }
       checkEnglish(err, at, w.en, w.se, x.mean);
+    });
+  });
+  return errors;
+}
+
+// Four distinct choices with a note each and a tell, for items that have no grammar points behind them.
+function checkPlain(err, where, q) {
+  if (!Array.isArray(q.c) || q.c.length !== 4 || q.c.some((x) => typeof x !== "string" || !x.trim())) return err(`${where}: c must be 4 non-empty choices`);
+  if (new Set(q.c).size !== 4) err(`${where}: duplicate choices`);
+  if (!Array.isArray(q.why) || q.why.length !== 4 || q.why.some((x) => typeof x !== "string" || !x.trim())) err(`${where}: why must have 4 non-empty notes`);
+  if (typeof q.tell !== "string" || !q.tell.trim()) err(`${where}: missing tell`);
+  else if (q.tell.length > 160) err(`${where}: tell is ${q.tell.length} chars (keep it under ~110)`);
+  checkEnglish(err, where, q.why || [], q.tell || "");
+}
+
+// 問題3 語形成 (v3): one blank right before or after the stem; c[0] completes the word `w`.
+// 問題5 言い換え (v5): `t` is the underlined part of `s`; every choice replaces it.
+// 問題6 用法 (v6): four sentences, each holding `stem`; `fix` names the word each wrong one needed.
+const KANA = /^[ぁ-ゖァ-ヺー・]+$/;
+export function validateVocab(items, file, seenIds = new Set()) {
+  const errors = [];
+  const name = path.basename(file);
+  if (!Array.isArray(items)) return [`${name}: top level must be an array`];
+  items.forEach((q, i) => {
+    const where = `${name}[${i}] ${q && q.id ? q.id : "(no id)"}`;
+    const err = (m) => errors.push(m);
+    if (!q || typeof q !== "object") return err(`${where}: not an object`);
+    if (!q.id) err(`${where}: missing id`);
+    else if (seenIds.has(q.id)) err(`${where}: duplicate id`);
+    else seenIds.add(q.id);
+    if (!["v3", "v5", "v6"].includes(q.type)) return err(`${where}: type must be v3, v5 or v6`);
+    for (const f of ["w", "r", "m"]) if (typeof q[f] !== "string" || !q[f].trim()) err(`${where}: missing ${f}`);
+    if (typeof q.r === "string" && !KANA.test(q.r)) err(`${where}: r must be kana`);
+    if (![1, 2].includes(q.lv)) err(`${where}: lv must be 1 or 2`);
+    checkPlain(err, where, q);
+    if (q.type !== "v6") {
+      if (typeof q.s !== "string" || !q.s) return err(`${where}: missing s`);
+      if (typeof q.en !== "string" || !q.en.trim()) err(`${where}: missing en`);
+    }
+    if (q.type === "v3") {
+      if (count(q.s, BLANK) !== 1) err(`${where}: s must contain exactly one ${BLANK}`);
+      else if (Array.isArray(q.c) && !q.s.replace(BLANK, q.c[0]).includes(q.w)) err(`${where}: s with c[0] in the blank does not contain ${q.w}`);
+      if (Array.isArray(q.c) && q.c.some((x) => [...x].length > 3)) err(`${where}: 語形成 choices are affixes (3 characters at most)`);
+    } else if (q.type === "v5") {
+      if (typeof q.t !== "string" || !q.t || count(q.s, q.t) !== 1) err(`${where}: t must appear exactly once in s`);
+    } else {
+      if (typeof q.stem !== "string" || !q.stem || !String(q.w).includes(q.stem)) err(`${where}: stem must be part of w`);
+      else if (Array.isArray(q.c)) q.c.forEach((x, j) => { if (!x.includes(q.stem)) err(`${where}: c[${j}] does not use ${q.stem}`); });
+      if (!Array.isArray(q.fix) || q.fix.length !== 4 || q.fix[0] !== null || q.fix.slice(1).some((x) => typeof x !== "string" || !x.trim())) err(`${where}: fix must be [null, and three words]`);
+    }
+    checkEnglish(err, where, q.m || "", q.en || "");
+  });
+  return errors;
+}
+
+// 情報検索 notices: blocks of h, p, note (strings), ul (strings) or table (rows of equal length).
+export function noticeText(p) {
+  return (p.blocks || []).flatMap((b) => (b.table ? b.table.flat() : b.ul ? b.ul : [b.h || b.p || b.note || ""])).join("\n");
+}
+export function validatePassages(list, file, seenIds = new Set()) {
+  const errors = [];
+  const name = path.basename(file);
+  if (!Array.isArray(list)) return [`${name}: top level must be an array`];
+  list.forEach((p, i) => {
+    const where = `${name}[${i}] ${p && p.id ? p.id : "(no id)"}`;
+    const err = (m) => errors.push(m);
+    if (!p || typeof p !== "object") return err(`${where}: not an object`);
+    if (!p.id) err(`${where}: missing id`);
+    else if (seenIds.has(p.id)) err(`${where}: duplicate id`);
+    else seenIds.add(p.id);
+    if (p.type !== "r14") err(`${where}: type must be r14`);
+    for (const f of ["title", "en"]) if (typeof p[f] !== "string" || !p[f].trim()) err(`${where}: missing ${f}`);
+    checkEnglish(err, where, p.en || "");
+    if (!Array.isArray(p.blocks) || !p.blocks.length) return err(`${where}: needs blocks`);
+    p.blocks.forEach((b, j) => {
+      const keys = Object.keys(b || {});
+      const at = `${where} block ${j}`;
+      if (keys.length !== 1) return err(`${at}: one key per block`);
+      const [k] = keys;
+      if (["h", "p", "note"].includes(k)) {
+        if (typeof b[k] !== "string" || !b[k].trim()) err(`${at}: ${k} must be text`);
+      } else if (k === "ul") {
+        if (!Array.isArray(b.ul) || !b.ul.length || b.ul.some((x) => typeof x !== "string" || !x.trim())) err(`${at}: ul must be a list of text`);
+      } else if (k === "table") {
+        if (!Array.isArray(b.table) || b.table.length < 2 || b.table.some((r) => !Array.isArray(r) || r.length !== b.table[0].length || r.some((c) => typeof c !== "string"))) err(`${at}: table needs a header and rows of equal length`);
+      } else err(`${at}: unknown block type ${k}`);
+    });
+    const text = noticeText(p);
+    if (!Array.isArray(p.qs) || p.qs.length < 1 || p.qs.length > 3) return err(`${where}: qs must have 1 to 3 questions`);
+    p.qs.forEach((q, k) => {
+      const at = `${where} q${k + 1}`;
+      if (typeof q.q !== "string" || !q.q.trim()) err(`${at}: missing q`);
+      checkPlain(err, at, q);
+      if (!Array.isArray(q.cue) || q.cue.length < 1 || q.cue.length > 3) err(`${at}: cue must list 1 to 3 substrings`);
+      else for (const c of q.cue) if (typeof c !== "string" || !c || !text.includes(c)) err(`${at}: cue "${c}" is not in the notice`);
     });
   });
   return errors;

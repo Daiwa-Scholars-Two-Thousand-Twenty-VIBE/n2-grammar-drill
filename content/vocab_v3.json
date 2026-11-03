@@ -1,0 +1,542 @@
+[
+  {
+    "id": "v3-001",
+    "type": "v3",
+    "w": "諸外国",
+    "r": "しょがいこく",
+    "m": "foreign countries (in general)",
+    "s": "日本の少子化対策は、（　　）外国に比べて遅れていると言われることが多い。",
+    "en": "Japan's measures against the falling birth rate are often said to lag behind those of other countries.",
+    "c": ["諸", "各", "全", "多"],
+    "why": [
+      "諸外国: foreign countries in general. 諸 means 'the various, the many' and sounds formal: 諸問題, 諸費用.",
+      "各外国 is not a word. 各 means 'each' and joins short words: 各国, 各地.",
+      "全外国 is not a word. 全 means 'all of': 全国, 全世界.",
+      "多外国 is not a word. 多 means 'many' in words like 多機能, 多目的."
+    ],
+    "tell": "外国 takes 諸: 諸外国, the formal 'other countries', like 諸問題.",
+    "lv": 1
+  },
+  {
+    "id": "v3-002",
+    "type": "v3",
+    "w": "諸事情",
+    "r": "しょじじょう",
+    "m": "various circumstances",
+    "s": "（　　）事情により、本日の営業は午後三時までとさせていただきます。",
+    "en": "Due to various circumstances, we will close at 3 p.m. today.",
+    "c": ["諸", "各", "多", "総"],
+    "why": [
+      "諸事情: various circumstances. 諸 + noun means 'the various ...'. Shops write 諸事情により when they do not want to give the exact reason.",
+      "各事情 is not a word. 各 means 'each one separately': 各家庭, 各駅.",
+      "多事情 is not a word. 多 means 'many' in words like 多人数, 多機能.",
+      "総事情 is not a word. 総 means 'total, all added up': 総人口, 総額."
+    ],
+    "tell": "事情 takes 諸: 諸事情により, the stock phrase on notices for 'for various reasons'.",
+    "lv": 2
+  },
+  {
+    "id": "v3-003",
+    "type": "v3",
+    "w": "高性能",
+    "r": "こうせいのう",
+    "m": "high-performance",
+    "s": "このパソコンは（　　）性能なのに、値段は他の機種の半分ほどだ。",
+    "en": "This computer is high-performance, yet it costs about half as much as other models.",
+    "c": ["高", "多", "最", "上"],
+    "why": [
+      "高性能: high-performance. 高 + noun means a high level of it: 高品質, 高価格.",
+      "多性能 is not a word. 多 counts how many: 多機能 (many functions), 多目的.",
+      "最性能 is not a word. 最 marks the very top and joins words like 最先端, 最上階.",
+      "上性能 is not a word. 上 as a prefix means 'upper': 上半期, 上半身."
+    ],
+    "tell": "性能 takes 高: 高性能, like 高品質 and 高価格. 'Many functions' is 多機能.",
+    "lv": 1
+  },
+  {
+    "id": "v3-004",
+    "type": "v3",
+    "w": "高収入",
+    "r": "こうしゅうにゅう",
+    "m": "high income",
+    "s": "（　　）収入の仕事でも、残業が多すぎて体を壊しては意味がない。",
+    "en": "Even a well-paid job is pointless if so much overtime ruins your health.",
+    "c": ["高", "多", "上", "最"],
+    "why": [
+      "高収入: high income. 高 + noun means a high level of it: 高学歴, 高水準.",
+      "多収入 is not a word. 多 counts how many: 多人数, 多目的.",
+      "上収入 is not a word. 上 as a prefix means 'upper': 上半期, 上半身.",
+      "最収入 is not a word. 最 marks the very top of a scale: 最新, 最先端."
+    ],
+    "tell": "収入 takes 高: 高収入, the opposite of 低収入.",
+    "lv": 1
+  },
+  {
+    "id": "v3-005",
+    "type": "v3",
+    "w": "無計画",
+    "r": "むけいかく",
+    "m": "unplanned, with no plan",
+    "s": "（　　）計画にお金を使っていると、給料日の前に財布が空になってしまう。",
+    "en": "If you spend money with no plan, your wallet will be empty before payday.",
+    "c": ["無", "不", "非", "未"],
+    "why": [
+      "無計画: with no plan at all. 無 + noun means the thing is missing: 無関係, 無表情.",
+      "不計画 is not a word. 不 negates qualities and states: 不正確, 不便.",
+      "非計画 is not a word. 非 puts something outside a category: 非公開, 非常識.",
+      "未計画 is not a word. 未 means 'not yet done': 未完成, 未定."
+    ],
+    "tell": "計画 takes 無: 無計画に, acting with no plan at all.",
+    "lv": 1
+  },
+  {
+    "id": "v3-006",
+    "type": "v3",
+    "w": "不慣れ",
+    "r": "ふなれ",
+    "m": "unfamiliar, not used to",
+    "s": "（　　）慣れな土地での一人暮らしは、最初の数か月がいちばん大変だった。",
+    "en": "Living alone somewhere unfamiliar was hardest in the first few months.",
+    "c": ["不", "無", "未", "非"],
+    "why": [
+      "不慣れ: not used to something, unfamiliar. 不 negates states and qualities: 不自由, 不安定.",
+      "無慣れ is not a word. 無 goes with nouns for things you have or lack: 無関係, 無料.",
+      "未慣れ is not a word. 未 means 'not yet done' and goes with action nouns: 未完成, 未使用.",
+      "非慣れ is not a word. 非 means 'outside this category': 非公開, 非常口."
+    ],
+    "tell": "慣れ takes 不: 不慣れな, like 不自由 and 不安定.",
+    "lv": 1
+  },
+  {
+    "id": "v3-007",
+    "type": "v3",
+    "w": "非公式",
+    "r": "ひこうしき",
+    "m": "unofficial",
+    "s": "両国の担当大臣は、正式な会議の前日に（　　）公式に会っていたことが明らかになった。",
+    "en": "It came out that the two countries' ministers had met unofficially the day before the formal talks.",
+    "c": ["非", "不", "無", "未"],
+    "why": [
+      "非公式: unofficial. 非 means 'not belonging to the category': 非公開, 非常識.",
+      "不公式 is not a word. 不 negates qualities and states: 不正確, 不自然.",
+      "無公式 is not a word. 無 means something is missing: 無関心, 無料.",
+      "未公式 is not a word. 未 means 'not yet done': 未定, 未完成."
+    ],
+    "tell": "公式 takes 非: 非公式 (unofficial), like 非公開 and 非常識.",
+    "lv": 1
+  },
+  {
+    "id": "v3-008",
+    "type": "v3",
+    "w": "未解決",
+    "r": "みかいけつ",
+    "m": "unsolved",
+    "s": "その事件は発生から二十年以上たった今も、（　　）解決のままだ。",
+    "en": "More than twenty years on, the case is still unsolved.",
+    "c": ["未", "不", "無", "非"],
+    "why": [
+      "未解決: not solved yet. 未 + action noun means it has not happened yet: 未完成, 未払い.",
+      "不解決 is not a word. 不 negates qualities and states: 不便, 不正確.",
+      "無解決 is not a word. 無 means something is missing altogether: 無関係, 無表情.",
+      "非解決 is not a word. 非 puts something outside a category: 非公開, 非売品."
+    ],
+    "tell": "解決 takes 未: 未解決. 未 + action noun means it is still waiting to happen.",
+    "lv": 1
+  },
+  {
+    "id": "v3-009",
+    "type": "v3",
+    "w": "再提出",
+    "r": "さいていしゅつ",
+    "m": "resubmission, handing in again",
+    "s": "申請書の内容に誤りがありましたので、今月末までに（　　）提出してください。",
+    "en": "There was an error in your application form, so please resubmit it by the end of this month.",
+    "c": ["再", "未", "前", "副"],
+    "why": [
+      "再提出: handing something in again. 再 + action noun means doing it again: 再確認, 再発行.",
+      "未提出 is a real word, but it means 'not handed in yet'. It names a state, so 未提出してください does not work.",
+      "前提出 is not a word. 前 means 'previous, former': 前社長, 前年度.",
+      "副提出 is not a word. 副 means 'secondary, deputy': 副社長, 副業."
+    ],
+    "tell": "Doing it again: 再 + action noun. 再提出, like 再確認 and 再発行.",
+    "lv": 1
+  },
+  {
+    "id": "v3-010",
+    "type": "v3",
+    "w": "副作用",
+    "r": "ふくさよう",
+    "m": "side effect",
+    "s": "この薬はよく効くが、眠くなるなどの（　　）作用が出ることがある。",
+    "en": "This medicine works well, but it can cause side effects such as drowsiness.",
+    "c": ["副", "反", "準", "半"],
+    "why": [
+      "副作用: side effect. 副 means 'secondary, on the side': 副社長, 副産物.",
+      "反作用 is a real word, but it means 'reaction' in physics (作用と反作用). It is not used for medicine.",
+      "準作用 is not a word. 準 means 'next to, nearly': 準会員, 準急.",
+      "半作用 is not a word. 半 means 'half': 半額, 半年."
+    ],
+    "tell": "A medicine's unwanted effects: 副作用. 副 = secondary, as in 副社長 and 副業.",
+    "lv": 1
+  },
+  {
+    "id": "v3-011",
+    "type": "v3",
+    "w": "準決勝",
+    "r": "じゅんけっしょう",
+    "m": "semifinal",
+    "s": "日本代表は（　　）決勝で強豪チームに敗れ、決勝には進めなかった。",
+    "en": "Japan's national team lost to a strong side in the semifinal and did not reach the final.",
+    "c": ["準", "半", "副", "前"],
+    "why": [
+      "準決勝: semifinal, the round just before the final. 準 means 'one step below': 準優勝, 準会員.",
+      "半決勝 is not a word in Japanese, though Chinese uses it. 半 means 'half': 半分, 半年.",
+      "副決勝 is not a word. 副 means 'deputy, secondary': 副社長, 副業.",
+      "前決勝 is not a word. 前 means 'previous, former': 前社長, 前年度."
+    ],
+    "tell": "The round before the final is 準決勝. 準 = one step below, as in 準優勝 (runner-up).",
+    "lv": 2
+  },
+  {
+    "id": "v3-012",
+    "type": "v3",
+    "w": "半透明",
+    "r": "はんとうめい",
+    "m": "semi-transparent",
+    "s": "燃えるごみは、中身が見える（　　）透明の袋に入れて出してください。",
+    "en": "Please put burnable rubbish out in a semi-transparent bag, so the contents can be seen.",
+    "c": ["半", "不", "無", "準"],
+    "why": [
+      "半透明: semi-transparent, partly see-through. 半 means 'half, partly': 半額, 半袖.",
+      "不透明 is a real word, but it means opaque, the opposite of 中身が見える.",
+      "無透明 is not a word. 無 means something is missing: 無料, 無関係.",
+      "準透明 is not a word. 準 means 'one step below': 準優勝, 準会員."
+    ],
+    "tell": "A bag you can partly see into is 半透明. 不透明 means you cannot see through it.",
+    "lv": 2
+  },
+  {
+    "id": "v3-013",
+    "type": "v3",
+    "w": "超大型",
+    "r": "ちょうおおがた",
+    "m": "extra-large, super-sized",
+    "s": "（　　）大型の台風が接近しているため、明日の午前の便はすべて欠航となった。",
+    "en": "An extremely large typhoon is approaching, so all flights tomorrow morning have been cancelled.",
+    "c": ["超", "高", "過", "極"],
+    "why": [
+      "超大型: extra large, beyond ordinary 大型. 超 means 'super, beyond': 超満員, 超特急.",
+      "高大型 is not a word. 高 + noun means a high level: 高品質, 高水準.",
+      "過大型 is not a word. 過 means 'too much': 過労, 過半数. 過大 is a word, but 過大型 is not.",
+      "極大型 is not a word. 極 means 'extremely' only in set words: 極秘, 極上. Typhoon sizes go 大型, then 超大型."
+    ],
+    "tell": "大型 takes 超 for 'extra large': 超大型の台風, like 超満員.",
+    "lv": 1
+  },
+  {
+    "id": "v3-014",
+    "type": "v3",
+    "w": "初対面",
+    "r": "しょたいめん",
+    "m": "meeting for the first time",
+    "s": "（　　）対面の相手と話すときは、まず天気や趣味の話から始めることにしている。",
+    "en": "When I talk to someone I have just met, I always start with the weather or hobbies.",
+    "c": ["初", "新", "前", "元"],
+    "why": [
+      "初対面: meeting someone for the first time. 初 means 'first': 初日, 初出場.",
+      "新対面 is not a word. 新 means 'new' and goes with things: 新製品, 新学期.",
+      "前対面 is not a word. 前 means 'previous, former': 前社長, 前年度.",
+      "元対面 is not a word. 元 means 'former' for a role someone once held: 元社長, 元選手."
+    ],
+    "tell": "対面 takes 初: 初対面, the first time you meet someone.",
+    "lv": 1
+  },
+  {
+    "id": "v3-015",
+    "type": "v3",
+    "w": "真夜中",
+    "r": "まよなか",
+    "m": "the middle of the night",
+    "s": "（　　）夜中に隣の部屋から大きな音がして、目が覚めてしまった。",
+    "en": "A loud noise from the next room woke me up in the middle of the night.",
+    "c": ["真", "正", "最", "全"],
+    "why": [
+      "真夜中: the middle of the night. 真 (ま) stresses 'right in the middle, fully': 真冬, 真正面.",
+      "正夜中 is not a word. 正 means 'proper, main': 正社員, 正門.",
+      "最夜中 is not a word. 最 marks the top of a scale: 最新, 最先端.",
+      "全夜中 is not a word. 全 means 'all of': 全国, 全員."
+    ],
+    "tell": "夜中 takes 真 (ま): 真夜中, like 真冬 and 真正面.",
+    "lv": 1
+  },
+  {
+    "id": "v3-016",
+    "type": "v3",
+    "w": "オフィス街",
+    "r": "おふぃすがい",
+    "m": "business district",
+    "s": "昼休みのオフィス（　　）では、どの店にも会社員の長い列ができている。",
+    "en": "At lunchtime in the business district, every restaurant has a long queue of office workers.",
+    "c": ["街", "地", "区", "町"],
+    "why": [
+      "オフィス街: a business district. 〜街 (がい) is an area full of one kind of place: 商店街, 繁華街.",
+      "オフィス地 is not a word. 〜地 means land used for something: 住宅地, 観光地.",
+      "オフィス区 is not a word. 〜区 is an official zone: 選挙区, 学区.",
+      "オフィス町 is not a word. 〜町 (まち) is a town of a certain type: 城下町, 港町."
+    ],
+    "tell": "An area packed with one kind of place takes 〜街 (がい): オフィス街, 商店街.",
+    "lv": 1
+  },
+  {
+    "id": "v3-017",
+    "type": "v3",
+    "w": "住宅街",
+    "r": "じゅうたくがい",
+    "m": "residential area",
+    "s": "このあたりは夜になると人通りの少ない住宅（　　）なので、一人で歩くのは少し怖い。",
+    "en": "This is a residential area with few people about at night, so walking alone here is a little scary.",
+    "c": ["街", "区", "層", "網"],
+    "why": [
+      "住宅街: a residential area, streets lined with houses. 〜街 (がい) is an area full of one kind of place: 商店街, 学生街. 住宅地 means much the same.",
+      "住宅区 is Chinese, not Japanese. Japanese says 住宅地区 or 住宅地. 〜区 is an official zone: 選挙区, 学区.",
+      "住宅層 is not a word. 〜層 is a group of people: 若者層, 高齢者層.",
+      "住宅網 is not a word. 〜網 is a network: 交通網, 情報網."
+    ],
+    "tell": "Streets of houses are a 住宅街. 〜街 (がい) = an area of one kind: 商店街, 繁華街.",
+    "lv": 1
+  },
+  {
+    "id": "v3-018",
+    "type": "v3",
+    "w": "実用化",
+    "r": "じつようか",
+    "m": "putting into practical use",
+    "s": "空を飛ぶ車が実用（　　）されるまでには、まだ時間がかかりそうだ。",
+    "en": "It will probably be a while yet before flying cars are put into practical use.",
+    "c": ["化", "性", "的", "式"],
+    "why": [
+      "実用化: putting something into real use. 〜化 turns a noun into a change, and takes する or される: 自動化, 高齢化.",
+      "実用性 is a real word, 'practicality', but it names a quality. It cannot take される.",
+      "実用的 is a real word, 'practical', but it is a な-adjective. 実用的される is not Japanese.",
+      "実用式 is not a word. 〜式 means 'type, method': 和式, 自動式."
+    ],
+    "tell": "Noun + される, 'be made into X': 〜化. 実用化される, 自動化される.",
+    "lv": 1
+  },
+  {
+    "id": "v3-019",
+    "type": "v3",
+    "w": "満足感",
+    "r": "まんぞくかん",
+    "m": "sense of satisfaction",
+    "s": "長い山道を最後まで歩ききったときは、大きな満足（　　）を味わった。",
+    "en": "When I made it to the end of the long mountain trail, I felt a great sense of satisfaction.",
+    "c": ["感", "度", "性", "力"],
+    "why": [
+      "満足感: a feeling of satisfaction. 〜感 is a feeling: 安心感, 達成感.",
+      "満足度 is a real word, but it is a measured level, as in a 顧客満足度 survey. You cannot 味わう a score.",
+      "満足性 is not a word. 〜性 is a quality or nature: 安全性, 可能性.",
+      "満足力 is not a word. 〜力 is an ability: 集中力, 想像力."
+    ],
+    "tell": "A feeling you 味わう or 感じる takes 〜感: 満足感, 達成感.",
+    "lv": 2
+  },
+  {
+    "id": "v3-020",
+    "type": "v3",
+    "w": "価値観",
+    "r": "かちかん",
+    "m": "values, sense of values",
+    "s": "結婚生活を長く続けるには、お金の使い方についての価値（　　）が近いことが大切だ。",
+    "en": "For a marriage to last, it matters that you share similar values about spending money.",
+    "c": ["観", "感", "性", "力"],
+    "why": [
+      "価値観: your values, how you judge what matters. 〜観 is a way of seeing things: 人生観, 世界観.",
+      "価値感 is a common misspelling. 〜感 is a feeling: 安心感, 達成感. A set of values is a view, so 〜観.",
+      "価値性 is not a word. 〜性 is a quality: 安全性, 重要性.",
+      "価値力 is not a word. 〜力 is an ability: 判断力, 記憶力."
+    ],
+    "tell": "A view of life takes 〜観 (view), not 〜感 (feeling): 価値観, 人生観.",
+    "lv": 2
+  },
+  {
+    "id": "v3-021",
+    "type": "v3",
+    "w": "投票率",
+    "r": "とうひょうりつ",
+    "m": "voter turnout",
+    "s": "今回の選挙では若い世代の投票（　　）が上がり、前回を五ポイント上回った。",
+    "en": "Turnout among young voters rose in this election, five points higher than last time.",
+    "c": ["率", "度", "量", "額"],
+    "why": [
+      "投票率: voter turnout, the share of people who voted. 〜率 is a rate or percentage: 合格率, 失業率.",
+      "投票度 is not a word. 〜度 is a degree or level: 満足度, 知名度.",
+      "投票量 is not a word. 〜量 is an amount: 生産量, 降水量.",
+      "投票額 is not a word. 〜額 is a sum of money: 金額, 予算額."
+    ],
+    "tell": "A share in percent or points takes 〜率: 投票率, 合格率, 失業率.",
+    "lv": 1
+  },
+  {
+    "id": "v3-022",
+    "type": "v3",
+    "w": "手数料",
+    "r": "てすうりょう",
+    "m": "fee, service charge",
+    "s": "夜九時以降にコンビニのATMでお金を引き出すと、手数（　　）がかかる。",
+    "en": "If you take money out of a convenience store ATM after 9 p.m., you pay a fee.",
+    "c": ["料", "代", "費", "賃"],
+    "why": [
+      "手数料: a fee for a service, such as a bank charge. 〜料 is a set charge for using something: 入場料, 送料.",
+      "手数代 is not a word. 〜代 is what you pay for a specific thing, mostly in speech: 電気代, バス代.",
+      "手数費 is not a word. 〜費 is a cost or expense, often in a budget: 交通費, 医療費.",
+      "手数賃 is not a word. 〜賃 is payment for rent, transport or labour: 家賃, 運賃."
+    ],
+    "tell": "A fixed charge for a service takes 〜料: 手数料, 入場料, 送料.",
+    "lv": 1
+  },
+  {
+    "id": "v3-023",
+    "type": "v3",
+    "w": "生活費",
+    "r": "せいかつひ",
+    "m": "living expenses",
+    "s": "一人暮らしを始めてから、毎月の生活（　　）をアプリで記録するようにしている。",
+    "en": "Since I started living alone, I have been tracking my monthly living costs in an app.",
+    "c": ["費", "代", "料", "賃"],
+    "why": [
+      "生活費: living expenses. 〜費 is a cost or expense, often in a budget: 交通費, 医療費.",
+      "生活代 is not a word. 〜代 is what you pay for a specific thing: 電気代, バス代.",
+      "生活料 is not a word. 〜料 is a set charge for a service: 入場料, 使用料.",
+      "生活賃 is not a word. 〜賃 is payment for rent, transport or labour: 家賃, 運賃."
+    ],
+    "tell": "Costs in a household budget take 〜費: 生活費, 交通費, 医療費.",
+    "lv": 1
+  },
+  {
+    "id": "v3-024",
+    "type": "v3",
+    "w": "病気がち",
+    "r": "びょうきがち",
+    "m": "often ill, sickly",
+    "s": "子どものころは病気（　　）で、学校を休むことが多かった。",
+    "en": "As a child I was often ill and missed a lot of school.",
+    "c": ["がち", "気味", "だらけ", "連れ"],
+    "why": [
+      "病気がち: often ill. 〜がち means something tends to happen again and again, usually something bad: 留守がち, 遅れがち.",
+      "病気気味 is not a set phrase. 〜気味 means 'a bit, slightly' (疲れ気味, 太り気味). It gives a degree, and 休むことが多かった is about how often.",
+      "病気だらけ is not a word. 〜だらけ means covered in or full of: 泥だらけ, 間違いだらけ.",
+      "病気連れ is not a word. 〜連れ means 'with someone in tow': 子ども連れ, 家族連れ."
+    ],
+    "tell": "Happens often over a long time (休むことが多かった): 〜がち. 病気がち, 留守がち.",
+    "lv": 2
+  },
+  {
+    "id": "v3-025",
+    "type": "v3",
+    "w": "風邪気味",
+    "r": "かぜぎみ",
+    "m": "having a slight cold",
+    "s": "今朝から少し風邪（　　）なので、今日の飲み会は欠席させてください。",
+    "en": "I have had a bit of a cold since this morning, so please excuse me from tonight's drinks.",
+    "c": ["気味", "がち", "だらけ", "済み"],
+    "why": [
+      "風邪気味: having a slight cold. 〜気味 means a slight touch of something: 疲れ気味, 太り気味.",
+      "〜がち means something keeps happening over a long time: 留守がち, 遅れがち. 今朝から少し is about right now, so it does not fit.",
+      "風邪だらけ is not a word. 〜だらけ means covered in: 泥だらけ, 傷だらけ.",
+      "風邪済み is not a word. 〜済み means already done: 支払い済み, 確認済み."
+    ],
+    "tell": "A slight symptom right now (今朝から, 少し): 〜気味. 風邪気味, 疲れ気味.",
+    "lv": 2
+  },
+  {
+    "id": "v3-026",
+    "type": "v3",
+    "w": "使用済み",
+    "r": "しようずみ",
+    "m": "used, already used",
+    "s": "使用（　　）の電池は、店の入り口にある回収箱に入れてください。",
+    "en": "Please put used batteries in the collection box at the shop entrance.",
+    "c": ["済み", "中", "明け", "付き"],
+    "why": [
+      "使用済み: already used. 〜済み (ずみ) means the action is finished: 支払い済み, 確認済み.",
+      "使用中 is a real word, but it means 'in use', as on a toilet door. Batteries still in use do not go in the box.",
+      "使用明け is not a word. 〜明け means just after a period ends: 休み明け, 梅雨明け.",
+      "使用付き is not a word. 〜付き means 'comes with': 朝食付き, 保証付き."
+    ],
+    "tell": "Already done, finished with: 〜済み. 使用済み, 支払い済み.",
+    "lv": 1
+  },
+  {
+    "id": "v3-027",
+    "type": "v3",
+    "w": "十年ぶり",
+    "r": "じゅうねんぶり",
+    "m": "for the first time in ten years",
+    "s": "駅のホームで偶然、高校の同級生と十年（　　）に再会した。",
+    "en": "On the station platform, I happened to run into a high-school classmate for the first time in ten years.",
+    "c": ["ぶり", "おき", "明け", "連れ"],
+    "why": [
+      "十年ぶり: for the first time in ten years. 〜ぶり marks the gap since the last time: 久しぶり, 三年ぶり.",
+      "十年おき is real but means 'every ten years', a repeating pattern. A chance meeting (偶然) happens once.",
+      "十年明け is not a word. 〜明け means right after a period ends: 連休明け, 年明け.",
+      "十年連れ is not a word. 〜連れ means 'with someone in tow': 家族連れ, 子ども連れ."
+    ],
+    "tell": "Gap since the last time + に: 〜ぶり. 十年ぶりに会う. 〜おき means 'every'.",
+    "lv": 2
+  },
+  {
+    "id": "v3-028",
+    "type": "v3",
+    "w": "線路沿い",
+    "r": "せんろぞい",
+    "m": "along the railway line",
+    "s": "「新しい部屋はどう？」「線路（　　）だから、朝早くから電車の音がうるさくて。」",
+    "en": "How is the new flat? It is right along the railway line, so the trains are noisy from early morning.",
+    "c": ["沿い", "付き", "離れ", "明け"],
+    "why": [
+      "線路沿い: along the railway line. 〜沿い (ぞい) means running alongside something long: 川沿い, 海沿い.",
+      "線路付き could only mean 'comes with tracks', as in a toy train set. 〜付き means 'comes with': 駐車場付き, 朝食付き.",
+      "線路離れ is not a word. 〜離れ means people drifting away from something: 車離れ, 活字離れ.",
+      "線路明け is not a word. 〜明け means right after a period ends: 休み明け, 梅雨明け."
+    ],
+    "tell": "Along something long (川, 線路, 道): 〜沿い. 線路沿い, 川沿い.",
+    "lv": 1
+  },
+  {
+    "id": "v3-029",
+    "type": "v3",
+    "w": "人手不足",
+    "r": "ひとでぶそく",
+    "m": "staff shortage",
+    "s": "人手（　　）のため、当面の間、日曜日を定休日とさせていただきます。",
+    "en": "Due to a staff shortage, we will be closed on Sundays for the time being.",
+    "c": ["不足", "離れ", "切れ", "済み"],
+    "why": [
+      "人手不足: a shortage of workers. 〜不足 (ぶそく) means not enough of something: 運動不足, 睡眠不足.",
+      "人手離れ is not a word. 〜離れ means people drifting away from something: 車離れ, 活字離れ.",
+      "人手切れ is not a word. 〜切れ means something has run out: 電池切れ, 期限切れ.",
+      "人手済み is not a word. 〜済み means already done: 支払い済み, 確認済み."
+    ],
+    "tell": "Not enough of something: 〜不足 (ぶそく). 人手不足, 運動不足.",
+    "lv": 1
+  },
+  {
+    "id": "v3-030",
+    "type": "v3",
+    "w": "折りたたみ式",
+    "r": "おりたたみしき",
+    "m": "folding type",
+    "s": "この自転車は折りたたみ（　　）なので、袋に入れれば電車にも持ち込める。",
+    "en": "This bike folds up, so you can take it on the train in a bag.",
+    "c": ["式", "製", "風", "流"],
+    "why": [
+      "折りたたみ式: the folding type. 〜式 means 'the type that works this way': 自動式, 和式.",
+      "折りたたみ製 is not a word. 〜製 says what a thing is made of, or where: 木製, 日本製.",
+      "折りたたみ風 is not a word. 〜風 means 'in the style of, looking like': 和風, 洋風.",
+      "折りたたみ流 is not a word. 〜流 means a personal or school way of doing things: 自己流, 日本流."
+    ],
+    "tell": "How a thing works (folding, automatic): 〜式. 折りたたみ式, 自動式.",
+    "lv": 1
+  }
+]

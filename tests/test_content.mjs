@@ -3,7 +3,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import path from "node:path";
 import fs from "node:fs";
-import { CONTENT, loadCatalog, questionFiles, readJSON, validateItems, validateKanji } from "../tools/lib.mjs";
+import { CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, readJSON, validateItems, validateKanji, validateVocab, validatePassages } from "../tools/lib.mjs";
 
 const catalog = loadCatalog();
 const files = questionFiles();
@@ -68,4 +68,20 @@ test("kanji.json validates and every tier is used", { skip: !fs.existsSync(kanji
   for (const t of data.tiers) assert.ok(data.kanji.some((x) => x.tier === t.id), `tier ${t.id} is empty`);
   const ranks = data.kanji.map((x) => x.rank);
   assert.deepEqual(ranks, [...ranks].sort((a, b) => a - b), "kanji are stored in rank order");
+});
+
+const vocab = vocabFiles().flatMap((f) => readJSON(f));
+test("vocab files validate, and each type has enough for a mock section", { skip: !vocab.length && "no vocab yet" }, () => {
+  const seen = new Set();
+  const errors = vocabFiles().flatMap((f) => validateVocab(readJSON(f), f, seen));
+  assert.deepEqual(errors, []);
+  for (const t of ["v3", "v5", "v6"]) assert.ok(vocab.filter((q) => q.type === t).length >= 5, `need 5+ ${t} items for a mock`);
+  const words = vocab.map((q) => `${q.type}:${q.w}`);
+  assert.equal(new Set(words).size, words.length, "the same word is tested twice in one type");
+});
+
+test("情報検索 notices validate", { skip: !passageFiles().length && "no notices yet" }, () => {
+  const seen = new Set();
+  const errors = passageFiles().flatMap((f) => validatePassages(readJSON(f), f, seen));
+  assert.deepEqual(errors, []);
 });

@@ -207,3 +207,46 @@ test("kanji review rotates shapes: the least-seen shape comes next", () => {
   const q = S.pickKanjiQuestion({ state: st, kanji, x: kanji[1], box: 3, rng: S.mulberry32(11) });
   assert.equal(q.type, "kw");
 });
+
+// ---------- vocab and 情報検索 ----------
+const v = (id, type, lv = 1) => ({ id, type, lv });
+const vocab = [v("a3", "v3"), v("b3", "v3", 2), v("c3", "v3"), v("a5", "v5"), v("b5", "v5"), v("a6", "v6"), v("b6", "v6"), v("c6", "v6")];
+
+test("vocab answers go to their own store and day log", () => {
+  const st = S.emptyState();
+  S.record(st, { qid: "a3", point: "a3", ok: true, secs: 8, type: "v3", today: T, store: "vocab" });
+  assert.equal(st.vocab.a3.box, 3);
+  assert.equal(st.vdays[T].n, 1);
+  assert.equal(st.days[T], undefined);
+  assert.equal(S.newToday(st, T, "vocab"), 1);
+  S.record(st, { qid: "r14-001#1", point: "r14-001#1", ok: false, secs: 200, type: "r14", today: T, store: "reading" });
+  assert.equal(st.rdays[T].n, 1);
+  assert.equal(st.vocab["r14-001#1"], undefined);
+});
+
+test("vocab daily: due first, then new ones easiest first, taking the types in turn", () => {
+  const st = S.emptyState();
+  S.record(st, { qid: "b6", point: "b6", ok: false, secs: 30, type: "v6", today: T, store: "vocab" });
+  const day2 = S.addDays(T, 1);
+  const { items, counts } = S.buildVocabDaily({ state: st, items: vocab, today: day2, size: 4, newPerDay: 3, rng: S.mulberry32(12) });
+  assert.equal(counts.due, 1);
+  assert.equal(counts.fresh, 3);
+  assert.deepEqual(items.map((q) => q.id).sort(), ["a3", "a5", "a6", "b6"]);
+  const types = S.buildVocabDaily({ state: S.emptyState(), items: vocab, today: T, size: 3, newPerDay: 3, types: new Set(["v3"]) }).items;
+  assert.deepEqual(types.map((q) => q.id).sort(), ["a3", "b3", "c3"]);
+});
+
+test("vocab mock: five of each type, in paper order", () => {
+  const many = ["v3", "v5", "v6"].flatMap((t) => Array.from({ length: 7 }, (_, i) => v(`${t}-${i}`, t)));
+  const items = S.buildVocabMock({ state: S.emptyState(), items: many, rng: S.mulberry32(13) });
+  assert.deepEqual(items.map((q) => q.type), [..."33333", ..."55555", ..."66666"].map((n) => `v${n}`));
+});
+
+test("情報検索: the least-seen notice comes next", () => {
+  const st = S.emptyState();
+  st.qs["r1#1"] = { seen: 2, right: 1 };
+  st.qs["r2#1"] = { seen: 1, right: 1 };
+  const p = S.pickPassage({ state: st, passages: [{ id: "r1" }, { id: "r2" }, { id: "r3" }], rng: S.mulberry32(14) });
+  assert.equal(p.id, "r3");
+  assert.equal(S.pickPassage({ state: st, passages: [] }), null);
+});
