@@ -1590,6 +1590,9 @@
   // Progress travels between devices through one secret gist on the learner's own GitHub account.
   // js/sync.js talks to GitHub and merges; this part decides when, applies the result and shows how it went.
   const TOKEN_URL = "https://github.com/settings/tokens/new?scopes=gist&description=N2%20drill%20sync";
+  // Off github.io (the Vercel copy), sync goes through the site's own relay, so it still works on
+  // networks that block GitHub. Served locally over http there is no relay: go to GitHub directly.
+  const SYNC_PROXY = location.protocol === "https:" && !location.hostname.endsWith(".github.io") ? "api/gh" : undefined;
   const LOCAL_ONLY = ["eink"]; // about this screen, so each device keeps its own
   let syncing = false;
   let syncAgain = false; // asked for while a sync was running: run once more after it
@@ -1663,7 +1666,7 @@
     if (!token) return msg("Paste the token first.");
     msg("Checking the token…");
     try {
-      const login = await G.gistClient({ token }).checkToken();
+      const login = await G.gistClient({ token, proxy: SYNC_PROXY }).checkToken();
       Object.assign(sync, { token, login, gist: "", last: 0 });
       saveSync();
       syncErr = "";
@@ -1728,7 +1731,7 @@
     const token = sync.token;
     const stale = () => sync.token !== token; // turned off or reconnected meanwhile
     const wasRefused = syncRefused;
-    const gh = G.gistClient({ token });
+    const gh = G.gistClient({ token, proxy: SYNC_PROXY });
     let changed = false;
     try {
       let id = sync.gist || (await gh.findGist());

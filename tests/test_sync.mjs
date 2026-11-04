@@ -148,6 +148,24 @@ test("a fetch that rejects means offline: status 0", async () => {
   });
 });
 
+test("with a proxy, every call (raw_url too) goes through it with the GitHub URL as ?url=", async () => {
+  const data = { app: "n2-grammar-drill", v: 1, state: S.emptyState() };
+  const raw = "https://gist.githubusercontent.com/learner/abc/raw/def/" + FILE;
+  const via = (u) => "api/gh?url=" + encodeURIComponent(u);
+  const fetch = fakeFetch((url) => {
+    if (url === via(`${API}/gists/abc`)) return reply({ id: "abc", files: { [FILE]: { content: "", truncated: true, raw_url: raw } } });
+    if (url === via(raw)) return reply(JSON.stringify(data));
+    return reply({ id: "abc", login: "learner" });
+  });
+  const c = gistClient({ token: TOKEN, fetch, proxy: "api/gh" });
+  assert.equal(await c.checkToken(), "learner");
+  assert.deepEqual(await c.read("abc"), data);
+  await c.write("abc", "{}");
+  assert.deepEqual(fetch.calls.map((x) => x.url), [via(`${API}/user`), via(`${API}/gists/abc`), via(raw), via(`${API}/gists/abc`)]);
+  assert.equal(fetch.calls[0].headers.Authorization, `Bearer ${TOKEN}`);
+  assert.equal(fetch.calls[3].method, "PATCH");
+});
+
 // ---------- mergeStates ----------
 
 const rec = (seen, last, extra = {}) => ({ box: 2, due: "2026-11-05", seen, right: seen, streak: 1, times: [10], last, first: "2026-10-01", ...extra });

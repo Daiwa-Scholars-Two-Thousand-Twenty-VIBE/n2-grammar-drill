@@ -25,13 +25,16 @@
     return fail(status, `GitHub error ${status}`);
   }
 
-  function gistClient({ token, fetch = globalThis.fetch } = {}) {
+  // `proxy` is the address of a relay on the page's own site (api/gh.mjs on Vercel) that passes
+  // each call on to GitHub, for networks that block GitHub. Without it the calls go straight there.
+  function gistClient({ token, fetch = globalThis.fetch, proxy } = {}) {
+    const route = (url) => (proxy ? `${proxy}?url=${encodeURIComponent(url)}` : url);
     // Fetch, check the status and read the body as text: `{ status, text }`. `no-store` so a read
     // never comes from the browser cache (GitHub lets browsers keep API replies for 60 s).
     async function send(url, init) {
       let res, text;
       try {
-        res = await fetch(url, { cache: "no-store", ...init });
+        res = await fetch(route(url), { cache: "no-store", ...init });
         if (res.ok) text = await res.text();
       } catch (e) {
         throw fail(0, "Offline or GitHub unreachable");
