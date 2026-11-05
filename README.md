@@ -6,7 +6,7 @@ A free drill for the JLPT N2. Grammar is the core. Around it sit the vocabulary 
 
 A copy also runs on Vercel, for networks that block GitHub (see [Hosting on Vercel](#hosting-on-vercel)).
 
-It works on a phone, a laptop or an e-ink reader. No account. Progress stays in your browser. Syncing it between devices is optional (see below).
+It works on a phone, a laptop or an e-ink reader, and keeps working offline once you have opened it. No account. Progress stays in your browser. Syncing it between devices is optional (see below).
 
 ## What it trains
 
@@ -55,6 +55,8 @@ Your top mix-ups (for example, "you reached for 〜にしては when it was 〜�
 
 Keys: `1` to `4` to answer, `Enter` for next, `H` to show the cue before answering (it then counts as slow), `Esc` to stop.
 
+After a wrong answer, Next waits 1.5 seconds while a bar fills along it, so a quick second `Enter` cannot skip the tell and the reasons. Holding `Enter` down never skips it either. **Settings → Pause after a miss** changes the wait (none, 1, 1.5 or 3 seconds).
+
 問題8 is scored the way the paper scores it: the piece in the ★ slot decides it. The full order is always shown afterwards.
 
 ## Using it for a month
@@ -80,6 +82,7 @@ WaniKani teaches kanji in its own order, so at level 27 you know about 950 kanji
 - **Each kanji has 2 or 3 words** in an example sentence. A new kanji gets a teaching card first, then its first question a few items later.
 - **Three question shapes:** the reading of an underlined word (like 問題1, with the exam's voicing, long-vowel and small っ traps), the right kanji for a word in kana (like 問題2, with look-alike kanji), and the meaning.
 - **Same scheduling as grammar:** the kanji is the unit; each review uses a different word. Aim for 12 seconds a question.
+- **Sound parts.** About half the kanji are built on a part that gives their on'yomi: 簡 has 門, read カン as in 間 and 関. The kanji card, the teaching card and the answer show that part and other kanji read the same way, the ones you already know from WaniKani first. It helps you guess the reading of a kanji you have never met.
 - **Settings → My WaniKani level** leaves out kanji you have already reached in WaniKani. **New kanji per day** defaults to 10.
 
 ## Vocabulary and 情報検索
@@ -111,6 +114,15 @@ Import it with File → Import in Anki. About 15 new cards a day gets you throug
 ## Progress and privacy
 
 Everything is stored in your browser's local storage. Nothing is sent anywhere unless you turn on sync (next section). To move to another device by hand, use **Settings → Export progress**, then **Import progress** on the other device. **Download my misses as notes** gives you a markdown file of every question you have missed, grouped by grammar point.
+
+## Offline and on your home screen
+
+Open the drill once while online and it keeps a copy of itself in the browser. After that it opens and runs with no connection: on a plane, on the subway, or on an e-reader with Wi-Fi off. Progress is saved as usual and syncs (if it is on) when you are back online.
+
+To install it like an app, use **Add to Home Screen** (iPhone Safari: Share → Add to Home Screen) or the install button in Chrome's address bar.
+
+- Online, it always loads the newest version from the site. The saved copy is only used when the network fails.
+- Sync calls and the sync relay are never saved, so a device never merges with an old copy of your progress.
 
 ## Sync between devices
 
@@ -156,6 +168,8 @@ There is no build step for the page. Open `index.html` in a browser, or serve th
 python3 -m http.server 8000
 ```
 
+Offline support (`sw.js`) only runs on `http://localhost` or https, not from `file://`. When the page starts loading a new file, add it to `FILES` in `sw.js`; `tests/test_offline.mjs` fails until you do.
+
 ## Adding or fixing questions
 
 Questions live in `content/` as JSON. Read **[CONTENT_GUIDE.md](CONTENT_GUIDE.md)** first: it has the schema for every item type (grammar, vocab, 情報検索) and the quality bar (one defensible answer, distractors from the confusable set, natural Japanese, original sentences only). For vocab, a wrong choice must be wrong in every sense of the word. For 情報検索, every `cue` must appear word for word in the notice.
@@ -165,6 +179,7 @@ node tools/validate.mjs            # check the grammar question files (q7, q8, q
 node tools/bundle.mjs --report     # validate everything (grammar, kanji, vocab, notices), rebuild js/data.js, print coverage per point
 node --test tests/*.mjs            # scheduler, sync, relay and content tests
 uv run --with genanki python tools/build_anki.py   # rebuild the Anki deck
+python3 -I tools/build_sound_parts.py              # rebuild js/sound.js after changing the kanji list
 ```
 
 Use the `tests/*.mjs` glob. On Node 26, `node --test tests/` runs 0 tests and still exits 0, so it looks like a pass.
@@ -186,11 +201,15 @@ Commit the regenerated `js/data.js` (and the `.apkg` if you changed the Anki que
 | `js/app.js` | The screens: the four tabs, quizzes, Settings and the sync card |
 | `api/gh.mjs` | The sync relay for the Vercel copy (a Vercel Function; GitHub Pages ignores it) |
 | `js/data.js` | Generated by `tools/bundle.mjs`. Do not edit by hand |
+| `js/sound.js` | Sound parts for the kanji gap. Generated by `tools/build_sound_parts.py` (CC BY-SA 4.0, see Notes). Do not edit by hand |
+| `sw.js`, `manifest.webmanifest` | Offline support and the home screen icon |
 | `tools/lib.mjs` | The validators for every content type |
 | `tools/bundle.mjs` | Validates everything and writes `js/data.js` |
-| `tests/` | `test_srs.mjs`, `test_sync.mjs`, `test_content.mjs`, `test_proxy.mjs` |
+| `tools/build_sound_parts.py` | Writes `js/sound.js` from Kanjium and WaniKani's public level pages |
+| `tests/` | `test_srs.mjs`, `test_sync.mjs`, `test_content.mjs`, `test_proxy.mjs`, `test_offline.mjs` |
 
 ## Notes
 
 - All example sentences are original. None are copied from the textbook or from past papers. Lesson numbers and titles follow 新完全マスター N2 文法 so you can use the two side by side. Buy the book; this drill does not replace it and is not affiliated with its publisher or with the JLPT.
+- Sound parts in `js/sound.js` are adapted from the [Kanjium](https://github.com/mifunetoshiro/kanjium) database by Uros O., under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); that file keeps the licence. Kanjium draws on KANJIDIC by the Electronic Dictionary Research and Development Group. The WaniKani level next to each kanji comes from WaniKani's public level pages.
 - Mistakes happen. If an answer looks wrong or two choices both seem to work, open an issue with the question id (shown in exported notes).

@@ -1,0 +1,15 @@
+{
+  "name": "N2 文法ドリル · JLPT N2 grammar drill",
+  "short_name": "N2 文法ドリル",
+  "description": "JLPT N2 grammar, vocab and kanji drill: exam-style questions, look-alike drills, spaced review, timed mocks.",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f5f1",
+  "theme_color": "#f6f5f1",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

@@ -176,6 +176,21 @@ body.has-tabs .wrap { padding-bottom: calc(88px + env(safe-area-inset-bottom)); 
 .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .btn.wide { width: 100%; }
 .btn:disabled { opacity: 0.45; cursor: default; }
+/* After a miss, Next waits a moment; a bar fills along it meanwhile (still, in e-ink mode). */
+.btn.held { position: relative; overflow: hidden; opacity: 0.55; cursor: default; }
+.btn.held::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: hold var(--hold) linear var(--hold-at) forwards;
+}
+@keyframes hold { to { transform: scaleX(1); } }
 .btn kbd { font-size: 0.72rem; opacity: 0.7; font-family: var(--ui); }
 .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
 .row > .btn { flex: 1 1 auto; }
@@ -571,6 +586,7 @@ u.tgt { text-decoration: underline 2px; text-underline-offset: 6px; font-weight:
 }
 .kwords { margin: 0; padding-left: 18px; font-size: 0.92rem; }
 .kwords li { margin: 2px 0; }
+.sound small { font-size: 0.75em; color: var(--muted); margin-left: 1px; }
 .kintro { display: grid; gap: 12px; }
 .kintro .sentence { margin: 0; }
 .kex { padding: 10px 0; border-top: 1px solid var(--line); }

@@ -8,7 +8,7 @@
   const G = window.Sync || null; // gist sync (js/sync.js). Missing means sync stays off.
   const app = document.getElementById("app");
   const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1" };
-  const DEFAULTS = { upto: "all", size: 20, newPerDay: 12, timer: true, eink: false, sound: false, examDate: "", wk: 27, kNew: 10, kSize: 30, vNew: 10, vSize: 20 };
+  const DEFAULTS = { upto: "all", size: 20, newPerDay: 12, timer: true, eink: false, sound: false, missPause: 1500, examDate: "", wk: 27, kNew: 10, kSize: 30, vNew: 10, vSize: 20 };
   // Seconds the real paper allows, roughly: 問題7 and 問題8 per item, 問題9 per passage, vocab per item.
   const MOCK_SECS = { p7: 25, p8: 50, p9: 360, v3: 20, v5: 25, v6: 45 };
   const TYPE_NAME = {
@@ -89,6 +89,7 @@
   const pointsOfQ = (q) => (q.type === "p9" ? q.qs.map((b) => b.point) : [q.point]);
   const K = D.kanji || [];
   const kanjiOf = new Map(K.map((x) => [x.k, x]));
+  const SOUND = window.N2_SOUND || {}; // js/sound.js, the sound part of each gap kanji that has one
   const isK = (q) => q.type[0] === "k";
   const V = D.vocab || [];
   const vById = new Map(V.map((q) => [q.id, q]));
@@ -821,8 +822,36 @@
       ${en ? `<div class="en">${esc(en)}</div>` : ""}
       <ul class="why">${whys}</ul>
       ${setBlock(b, set)}
-      ${next ? `<button class="btn primary wide" data-act="next">${nextLabel} <kbd>Enter</kbd></button>` : ""}
+      ${next ? nextButton(nextLabel) : ""}
     </div>`;
+  }
+
+  // After a miss, Next waits a moment (Settings: none to 3 seconds), so a quick second Enter cannot
+  // skip past the tell and the reason each choice fails. A bar fills along the button meanwhile.
+  const held = { timer: null, end: 0, ms: 0 };
+  function holdNext() {
+    clearHold();
+    const ms = Number(settings.missPause) || 0;
+    if (ms <= 0) return;
+    held.ms = ms;
+    held.end = Date.now() + ms;
+    held.timer = setTimeout(() => {
+      clearHold();
+      const b = app.querySelector(".btn.held");
+      if (b) {
+        b.classList.remove("held");
+        b.removeAttribute("aria-disabled");
+      }
+    }, ms);
+  }
+  function clearHold() {
+    clearTimeout(held.timer);
+    held.timer = null;
+  }
+  function nextButton(label = "Next") {
+    if (!held.timer) return `<button class="btn primary wide" data-act="next">${label} <kbd>Enter</kbd></button>`;
+    const at = held.ms - Math.max(0, held.end - Date.now()); // a repaint carries the bar on from here
+    return `<button class="btn primary wide held" data-act="next" aria-disabled="true" style="--hold:${held.ms}ms;--hold-at:-${at}ms">${label} <kbd>Enter</kbd></button>`;
   }
 
   function feedback8(q, a, next) {
@@ -842,7 +871,7 @@
       <p class="small">${esc(q.why)}</p>
       <div>${chip(q.point)}</div>
       ${setBlock(q, q.set)}
-      ${next ? `<button class="btn primary wide" data-act="next">Next <kbd>Enter</kbd></button>` : ""}
+      ${next ? nextButton() : ""}
     </div>`;
   }
 
@@ -877,7 +906,25 @@
           <div class="small muted">${glyph(st)} ${STATUS[st][1]} · WaniKani ${x.wk ? `level ${x.wk}` : "does not teach it"}${x.papers ? ` · in ${x.papers} of 17 past N2 papers` : ""}</div></div>
       </div>
       ${words ? `<ul class="kwords">${x.words.map((w) => `<li><span class="jp">${esc(w.w)}</span> <span class="jp muted">${esc(w.r)}</span> ${esc(w.en)}</li>`).join("")}</ul>` : ""}
+      ${soundLine(x)}
       ${looks ? `<p class="small"><b>Don't confuse:</b> ${looks}</p>` : ""}`;
+  }
+
+  // The sound part (音符): 簡 has 門, read カン as in 間 and 関. Kanji you have reached in WaniKani come
+  // first; the rest are muted. It helps with an unknown kanji's on'yomi on the reading questions.
+  function soundLine(x) {
+    const s = SOUND[x.k];
+    if (!s) return "";
+    const [part, reads, family] = s;
+    const known = (f) => f[2] > 0 && f[2] <= settings.wk;
+    const many = reads.length > 1; // 緒 shares ショ and チョ with 者, so each kin shows its reading
+    const kin = [...family.filter(known), ...family.filter((f) => !known(f))]
+      .slice(0, 6)
+      .map((f) => `<span class="jp${known(f) ? "" : " muted"}" title="${esc(f[1])}${f[2] ? ` · WaniKani level ${f[2]}` : ""}">${esc(f[0])}${many ? `<small>${esc(f[1])}</small>` : ""}</span>`)
+      .join(" ");
+    const r = `<span class="jp">${esc(reads.join("・"))}</span>`;
+    const lead = part === x.k ? `<span class="jp">${esc(part)}</span> is one itself, read ${r}` : `<span class="jp">${esc(part)}</span> gives ${r}`;
+    return `<p class="small sound"><b>Sound part:</b> ${lead}, as in ${kin}</p>`;
   }
 
   function qK(q) {
@@ -927,7 +974,7 @@
       <div class="sentence small-s">${kSentence(w, false)}</div>
       <div class="en">${esc(w.se)}</div>
       ${kanjiStrip(x)}
-      ${next ? `<button class="btn primary wide" data-act="next">Next <kbd>Enter</kbd></button>` : ""}
+      ${next ? nextButton() : ""}
     </div>`;
   }
 
@@ -1038,6 +1085,7 @@
     if (!ok && isV(q)) requeueV(q);
     if (sess.mock) return advance();
     sess.answered = { orig, ok, secs };
+    if (!ok) holdNext();
     paintQuiz(false);
   }
 
@@ -1065,6 +1113,7 @@
     if (!ok) requeue(q.point);
     if (sess.mock) return advance();
     sess.answered = { ok, starOk: ok, orderOk, secs };
+    if (!ok) holdNext();
     paintQuiz(false);
   }
 
@@ -1085,6 +1134,7 @@
   }
 
   function advance() {
+    if (held.timer) return;
     const q = cur();
     if (isMulti(q) && sess.blank < q.qs.length - 1) {
       sess.blank++;
@@ -1127,6 +1177,7 @@
 
   function quit() {
     if (!sess) return;
+    clearHold();
     if (sess.mock) {
       if (confirm("End the mock now? Anything unanswered counts as wrong.")) finishMock();
       return;
@@ -1407,7 +1458,8 @@
       <div class="card"><h3>Progress by tier</h3><div class="bars">${bars}</div>${legend()}</div>
       <input class="search" id="ksearch" type="search" placeholder="Search: 驚, surprise, おどろく…" value="${esc(kbrowse.q)}" autocomplete="off">
       <div class="filters">${f("all", "All")}${f("weak", "Weak")}${f("new", "New")}${f("learning", "Learning")}${f("solid", "Solid")}${f("auto", "Automatic")}${f("wk", "Covered by WaniKani")}</div>
-      <div id="klist">${kanjiTiles()}</div>`;
+      <div id="klist">${kanjiTiles()}</div>
+      ${Object.keys(SOUND).length ? `<p class="muted small">Sound parts come from the <a href="https://github.com/mifunetoshiro/kanjium" target="_blank" rel="noopener">Kanjium</a> database by Uros O. (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>).</p>` : ""}`;
   }
 
   function openKanji(k) {
@@ -1460,6 +1512,7 @@
   }
 
   // ---------- settings ----------
+  const PAUSES = [[0, "None"], [1000, "1 second"], [1500, "1.5 seconds"], [3000, "3 seconds"]];
   function viewSettings() {
     const upto = [`<option value="all" ${settings.upto === "all" ? "selected" : ""}>Everything (the whole book)</option>`, lessonOptions(settings.upto)].join("");
     const exam = S.nextExam();
@@ -1472,6 +1525,7 @@
         <div class="field"><label for="s-timer">Show the timer</label><input id="s-timer" type="checkbox" ${settings.timer ? "checked" : ""} data-set="timer"></div>
         <div class="field"><label for="s-eink">E-ink mode<small>Black on white, no animation, no ticking clock. For Boox and similar screens.</small></label><input id="s-eink" type="checkbox" ${settings.eink ? "checked" : ""} data-set="eink"></div>
         <div class="field"><label for="s-sound">Sound on answer</label><input id="s-sound" type="checkbox" ${settings.sound ? "checked" : ""} data-set="sound"></div>
+        <div class="field"><label for="s-pause">Pause after a miss<small>Next waits this long after a wrong answer, so a quick Enter cannot skip the reason.</small></label><select id="s-pause" data-set="missPause" data-num>${PAUSES.map(([ms, label]) => `<option value="${ms}" ${Number(settings.missPause) === ms ? "selected" : ""}>${label}</option>`).join("")}</select></div>
         <div class="field"><label for="s-exam">Exam date<small>Empty means the next JLPT${exam ? ` (${esc(fmtDate(exam))})` : ""}.</small></label><input id="s-exam" type="date" value="${esc(settings.examDate)}" data-set="examDate"></div>
       </div>
       ${K.length ? `<div class="card"><h3>Kanji gap</h3>
@@ -1504,7 +1558,8 @@
       const n = Number(el.value);
       if (!Number.isFinite(n)) return;
       settings[key] = Math.max(Number(el.min), Math.min(Number(el.max), Math.round(n)));
-    } else settings[key] = el.value;
+    } else if ("num" in el.dataset) settings[key] = Number(el.value);
+    else settings[key] = el.value;
     saveSettings();
     document.body.classList.toggle("eink", !!settings.eink);
   }
@@ -1993,6 +2048,7 @@
       }
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
+        if (e.repeat) return; // a held-down key does not race past the feedback it just opened
         if (sess.answered) return advance();
         if (q.type === "p8") return check();
         return;
@@ -2022,5 +2078,9 @@
     Promise.resolve(navigator.storage?.persist?.()).catch(() => {});
   } catch (e) {
     // Not supported here; progress is still saved.
+  }
+  // Offline support (sw.js). Browsers allow it on https and localhost only, so file:// skips it.
+  if ("serviceWorker" in navigator && window.isSecureContext && location.protocol !== "file:") {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
   }
 })();

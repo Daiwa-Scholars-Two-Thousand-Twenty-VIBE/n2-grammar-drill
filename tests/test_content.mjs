@@ -85,3 +85,25 @@ test("情報検索 notices validate", { skip: !passageFiles().length && "no noti
   const errors = passageFiles().flatMap((f) => validatePassages(readJSON(f), f, seen));
   assert.deepEqual(errors, []);
 });
+
+const soundFile = path.join(CONTENT, "..", "js", "sound.js");
+test("sound parts match the kanji gap", { skip: !fs.existsSync(soundFile) && "no js/sound.js" }, () => {
+  const window = {};
+  new Function("window", fs.readFileSync(soundFile, "utf8"))(window);
+  const gap = new Map(readJSON(kanjiFile).kanji.map((x) => [x.k, x]));
+  const entries = Object.entries(window.N2_SOUND);
+  assert.ok(entries.length >= 100, "most phono-semantic gap kanji have a sound part");
+  for (const [k, [part, reads, family]] of entries) {
+    assert.ok(gap.has(k), `${k} is not in the kanji gap`);
+    assert.ok(part && reads.length && family.length, `${k}: part, readings and family`);
+    for (const r of reads) assert.ok(gap.get(k).on.includes(r), `${k}: ${r} is not one of its on'yomi`);
+    const kin = family.map((f) => f[0]);
+    assert.equal(new Set(kin).size, kin.length, `${k}: a kanji twice in its family`);
+    for (const [ch, r, level] of family) {
+      assert.notEqual(ch, k, `${k} is in its own family`);
+      assert.ok(reads.includes(r), `${k}: ${ch} is listed with ${r}, which ${k} does not share`);
+      assert.ok(Number.isInteger(level) && level >= 0 && level <= 60, `${k}: ${ch} has WaniKani level ${level}`);
+      if (gap.has(ch)) assert.equal(level, gap.get(ch).wk, `${ch}: WaniKani level differs from kanji.json`);
+    }
+  }
+});
