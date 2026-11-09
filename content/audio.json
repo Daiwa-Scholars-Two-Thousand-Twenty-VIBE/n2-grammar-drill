@@ -1,0 +1,40 @@
+{
+ "l1-001": {
+  "secs": 55.2,
+  "h": "1852dffd69",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "heard": 0.963
+ },
+ "l1-005": {
+  "secs": 75.8,
+  "h": "c217be4e28",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "heard": 0.969
+ },
+ "l4-001": {
+  "secs": 16.1,
+  "h": "c5f9dbb913",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 0.952
+ }
+}

@@ -1,0 +1,861 @@
+[
+  {
+    "id": "r11-001",
+    "type": "r11",
+    "genre": "エッセイ",
+    "text": "財布を整理していたら、レシートが二十枚以上出てきた。コンビニで買ったお茶や、駅の売店で買った雑誌のものまである。家計簿をつけているわけでもないのに、なぜ私はこんなものを取っておくのだろうか。\n思い返してみると、きっかけははっきりしている。以前、買ったばかりの電気ポットが三日で壊れたとき、レシートを捨ててしまっていたために、交換してもらえなかったのだ。それ以来、レシートを捨てると何か損をするような気がして、[[つい財布に入れたままにしてしまう]]。\nしかし、よく考えてみれば、お茶や雑誌を返品することはまずない。私が財布にため込んでいるのは、必要な紙というより、「損をしたくない」という気持ちそのものなのかもしれない。\n先日、友人にこの話をしたところ、彼女は毎晩レシートを見ながら、その日に使ったお金を手帳に書き写しているという。書き終えたら、すぐに捨ててしまうそうだ。[[そういう使い方]]をする人にとって、レシートは一日を振り返るための材料なのだろう。\n同じ一枚の紙でも、その扱い方は人によってまったく違う。財布にたまったレシートは、その人がお金とどう付き合っているかを、意外なほどよく表しているのではないだろうか。",
+    "en": "The writer keeps receipts because a kettle once could not be exchanged without one, though what they really keep is a fear of losing out. A friend copies each day's spending into a notebook and then throws the receipts away. How people treat receipts shows how they deal with money.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①つい財布に入れたままにしてしまうとあるが、それはなぜか。",
+        "c": [
+          "前にレシートがなくて交換を断られ、捨てると損をする気がするから",
+          "家計簿をつけていて、買った物をすべて記録しておきたいから",
+          "友人のように、毎晩その日の出費を手帳に書き写したいから",
+          "お茶や雑誌のような安い物でも、買った後に返品することがよくあるから"
+        ],
+        "why": [
+          "The sentence just before the underline gives it: the kettle could not be exchanged without a receipt, and since then throwing one away feels like a loss (損をするような気がして).",
+          "Turned round. The text says 家計簿をつけているわけでもない: they do not keep accounts.",
+          "Said in the text, but not the answer. Copying the day's spending is the friend's habit in para 4, not the writer's reason.",
+          "Turned round. Para 3 says returning tea or a magazine almost never happens (まずない)."
+        ],
+        "cue": [
+          "レシートを捨ててしまっていたために、交換してもらえなかったのだ",
+          "レシートを捨てると何か損をするような気がして"
+        ],
+        "skill": "reason",
+        "tell": "それ以来 links a past event to a habit. The reason sits in the sentence just before the underline."
+      },
+      {
+        "q": "②そういう使い方とは、どのような使い方か。",
+        "c": [
+          "その日の出費を手帳に写すのに使い、済んだら捨てるという使い方",
+          "返品や交換に備えて、しばらくの間は財布に入れておくという使い方",
+          "一か月分をまとめて、家計簿に貼って保存しておくという使い方",
+          "損をしないように、大事なものだけを選んで残すという使い方"
+        ],
+        "why": [
+          "そういう points back to the friend in the two sentences before: she copies the day's spending into a notebook from the receipts, then throws them away at once.",
+          "Said in the text, but not the answer. Keeping receipts in case of a return is the writer's own way, from para 2.",
+          "Sounds right, not in the text. Nobody pastes receipts into an account book; the writer does not even keep one.",
+          "Sounds right, not in the text. Nobody in the text sorts receipts and keeps only the important ones."
+        ],
+        "cue": [
+          "その日に使ったお金を手帳に書き写している",
+          "書き終えたら、すぐに捨ててしまうそうだ"
+        ],
+        "skill": "ref",
+        "tell": "そういう + noun points back to the sentence or two just before it. Read that part, not the writer's own habit."
+      },
+      {
+        "q": "この文章で筆者が最も言いたいことは何か。",
+        "c": [
+          "レシートをどう扱うかには、その人のお金に対する姿勢が表れる",
+          "レシートは、返品や交換に備えて必ず取っておくべきだ",
+          "使い道のないレシートは、ためずにその日のうちに捨てたほうがいい",
+          "レシートを書き写す習慣をつければ、むだづかいが減る"
+        ],
+        "why": [
+          "The last paragraph: receipts show how a person deals with money (お金とどう付き合っているか). The writer's habit and the friend's habit are two examples of this.",
+          "One example as the main point. The kettle story explains the writer's habit; the writer even doubts it in para 3.",
+          "Sounds right, not in the text. The writer never tells anyone to throw receipts away.",
+          "Sounds right, not in the text. The friend's notebook is about looking back on the day, not spending less."
+        ],
+        "cue": [
+          "その人がお金とどう付き合っているかを、意外なほどよく表している"
+        ],
+        "skill": "gist",
+        "tell": "The writer's habit and a friend's habit are examples. The main point is the general line in the last paragraph."
+      }
+    ]
+  },
+  {
+    "id": "r11-002",
+    "type": "r11",
+    "genre": "コラム",
+    "text": "フィルムカメラの時代、写真は一枚一枚が貴重だった。一本のフィルムで撮れるのはせいぜい三十数枚で、現像にもお金がかかる。だから人々は、旅行や誕生日など特別な日にだけカメラを持ち出し、シャッターを押す前にじっくりと構図を考えたものだ。\n今はどうだろう。スマートフォンがあれば、いつでも何枚でも撮れる。駅の時刻表や会議のホワイトボード、買おうか迷っている服まで撮っておく人も多い。写真は思い出を残すためのものから、[[メモの代わり]]にもなるものへと変わったのである。\n撮る枚数が増えた分、一枚一枚の写真を見返す機会は減った。私のスマートフォンにも一万枚近い写真が入っているが、ほとんどは撮ったきり一度も開いていない。[[撮ること自体が目的になっている]]と言ってもいいだろう。\n一方で、気軽に撮れるようになったからこそ生まれた楽しみもある。何気ない日常の一コマを撮りためておくと、数年後に見返したとき、当時の暮らしが驚くほど生き生きとよみがえってくる。特別な日の写真だけでは、こうはいかない。\n写真の役割が広がった今、大切なのは撮る量ではなく、撮った写真とどう向き合うかなのだろう。",
+    "en": "In the film era each photo was precious and taken only on special days. Now phones let people photograph anything, even as a memo, and most pictures are never looked at again. Yet everyday shots can bring a past life back years later, so what matters is how we treat the photos we take.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①メモの代わりとあるが、その例として合うものはどれか。",
+        "c": [
+          "買い物に出る前に、冷蔵庫の中を撮っておく",
+          "家族の誕生日に、全員で並んで記念写真を撮る",
+          "旅先の景色を、構図をよく考えてから一枚だけ撮る",
+          "子どもの成長を残すため、毎年同じ場所で写真を撮る"
+        ],
+        "why": [
+          "The examples before the underline are timetables, whiteboards and clothes: things photographed to remember a fact, not a moment. A shot of the fridge to check what to buy is the same use.",
+          "Said in the text, but not the answer. A birthday photo is the old use: keeping a memory of a special day.",
+          "Said in the text, but not the answer. Thinking about the framing before one shot is how people took photos in the film era.",
+          "Sounds close, but this keeps a memory, the old role (思い出を残すためのもの), not a note of information."
+        ],
+        "cue": [
+          "駅の時刻表や会議のホワイトボード、買おうか迷っている服まで撮っておく"
+        ],
+        "skill": "example",
+        "tell": "Find the writer's own examples next to the underline, name what they share, then pick the choice with that same use."
+      },
+      {
+        "q": "②撮ること自体が目的になっているとは、どういうことか。",
+        "c": [
+          "写真を撮っても、それを後で見ることはほとんどないということ",
+          "撮りたいものを決めてから、カメラを向ける人が減ったということ",
+          "写真を撮るのが楽しくて、趣味にする人が増えたということ",
+          "特別な日だけでなく、毎日のように写真を撮るということ"
+        ],
+        "why": [
+          "The sentence before explains it: most of the writer's ten thousand photos have never been opened since they were taken (撮ったきり一度も開いていない). Taking them is the end of it.",
+          "Sounds right, not in the text. The text never says people stop choosing what to shoot.",
+          "Sounds right, not in the text. Nothing is said about photography as a hobby.",
+          "Said in the text, but not the answer. People do take photos every day, but the underline is about never looking at them."
+        ],
+        "cue": [
+          "ほとんどは撮ったきり一度も開いていない"
+        ],
+        "skill": "meaning",
+        "tell": "For 〜とはどういうことか, read the sentence just before the underline. It usually says the same thing in plainer words."
+      },
+      {
+        "q": "筆者は、今の写真のあり方をどのように見ているか。",
+        "c": [
+          "見返されない写真が増えたが、日常を残すという楽しみも生まれた",
+          "昔のように、写真は旅行や誕生日など特別な日にだけ撮るほうがよい",
+          "メモの代わりに写真を撮るのは、本来の使い方ではない",
+          "特別な日の写真より、日常の写真のほうが価値がある"
+        ],
+        "why": [
+          "Paras 3 and 4 set two sides against each other with 一方で: photos are seldom looked at again, but casual shots of daily life bring the past back later.",
+          "Sounds right, not in the text. The writer describes the film era but never says we should go back to it.",
+          "Sounds right, not in the text. The writer reports the memo use without judging it.",
+          "Too wide. The writer only says special-day photos alone cannot do this (こうはいかない), not that daily photos are worth more."
+        ],
+        "cue": [
+          "撮る枚数が増えた分、一枚一枚の写真を見返す機会は減った",
+          "気軽に撮れるようになったからこそ生まれた楽しみもある"
+        ],
+        "skill": "contrast",
+        "tell": "When the writer puts 一方で between two paragraphs, the view is both sides together. A choice with only one side is a trap."
+      }
+    ]
+  },
+  {
+    "id": "r11-003",
+    "type": "r11",
+    "genre": "エッセイ",
+    "text": "四十歳を過ぎてから、スペイン語を習い始めた。仕事で南米の取引先とやり取りすることになったのがきっかけだ。始めてみると、覚えたはずの単語が翌週にはもう出てこない。子どものころならもっと楽に覚えられたのにと、何度も思った。確かに、発音を身につけるには若いほうが有利だと言われる。大人の耳と口は、母語の音にすっかり慣れてしまっているからだ。\nしかし、半年ほどたったころ、大人なりの強みにも気づいた。新しい文法を習うたびに、日本語や英語ではどう言うだろうと、自然に比べている自分がいる。これまでに身につけた言葉が、[[新しい言葉を受け止める網]]のような役割を果たしているのだ。仕組みさえ分かれば、子どもが何年もかけて覚えることを、短い期間で使えるようになる場面もある。\nもう一つの強みは、何のために学ぶのかがはっきりしていることだ。取引先と雑談ができるようになりたいという目標があるからこそ、[[疲れて帰った夜でも机に向かえる]]。\n大人の学習は、子どものようにはいかない。だが、それは劣っているということではなく、進み方が違うということなのだろう。若さを失ったことを嘆くより、大人だからこそ持っているものを生かして学べばいい。今はそう考えている。",
+    "en": "The writer began Spanish after forty and at first envied children's memory. Later they found adult strengths: the languages they already know help them take in new grammar, and a clear goal keeps them studying. Adults learn differently, not worse, and should use what they have.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "①新しい言葉を受け止める網とは、どういうことか。",
+        "c": [
+          "すでに知っている言葉が、新しい言葉を理解する助けになること",
+          "母語の音に慣れているため、新しい発音が身につきにくいこと",
+          "知っている言葉と混ざって、新しい単語が覚えにくくなること",
+          "覚えたはずの単語が、少し時間がたつと出てこなくなること"
+        ],
+        "why": [
+          "The net is the languages the writer already has. Comparing new grammar with Japanese and English catches it and makes it quicker to use (短い期間で使えるようになる).",
+          "Said in the text, but not the answer. This is the weakness the writer grants earlier with 確かに.",
+          "Turned round. The old languages help; the text never says they get in the way.",
+          "Said in the text, but not the answer. Forgetting words is the early trouble, not what the net stands for."
+        ],
+        "cue": [
+          "日本語や英語ではどう言うだろうと、自然に比べている",
+          "これまでに身につけた言葉"
+        ],
+        "skill": "metaphor",
+        "tell": "For a likeness (〜のような), find what each part stands for in the sentences around it. Here 網 = the languages already known."
+      },
+      {
+        "q": "②疲れて帰った夜でも机に向かえるのはなぜか。",
+        "c": [
+          "取引先と気軽に話したいという、はっきりした目標があるから",
+          "子どものころと比べて、覚えるのに時間がかかるから",
+          "ほかの言葉と比べながら学ぶことが、だんだん楽しくなってきたから",
+          "単語を忘れないうちに、毎日復習する必要があるから"
+        ],
+        "why": [
+          "からこそ gives the reason: the goal of being able to chat with the clients. The paragraph calls this knowing what you are learning for.",
+          "Said in the text, but not the answer. Slow memory is a weakness from the start; it does not explain the study at night.",
+          "Sounds right, not in the text. The writer compares languages but never says it became fun.",
+          "Sounds right, not in the text. Forgetting words is mentioned, but no daily review is."
+        ],
+        "cue": [
+          "取引先と雑談ができるようになりたいという目標があるからこそ"
+        ],
+        "skill": "reason",
+        "tell": "Look for から, ので or からこそ in the same sentence as the underline. からこそ marks the reason the writer stresses."
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "大人は、大人ならではの強みを生かして語学に取り組めばよい",
+          "経験の多い大人のほうが、子どもよりも語学に向いている",
+          "語学は若いうちに始めなければ、なかなか上達は望めない",
+          "大人は覚えが悪いので、時間をかけて学ぶしかない"
+        ],
+        "why": [
+          "The last paragraph: adult learning is not worse, only different, so use what adults have (大人だからこそ持っているもの).",
+          "Too wide. Adults can sometimes use a point quickly (場面もある), but the writer calls adult learning different, not better: 進み方が違う.",
+          "The view the writer argues against. Youth helps pronunciation (確かに…と言われる), but the essay goes on to show what adults do better.",
+          "Turned round. The writer says it is not that adults are worse (劣っているということではなく)."
+        ],
+        "cue": [
+          "大人だからこそ持っているものを生かして学べばいい"
+        ],
+        "skill": "claim",
+        "tell": "確かに…しかし: what follows しかし is the writer's view. The view before it is a trap."
+      }
+    ]
+  },
+  {
+    "id": "r11-004",
+    "type": "r11",
+    "genre": "論説",
+    "text": "「もったいない」は、物を大切にする日本人の心を表す言葉として、海外で紹介されることもある。食べ物を残さない、まだ使える物を捨てない。多くの人は子どものころ、そう教えられて育ったはずだ。\nところが最近、この言葉が少し違う場面で使われるのをよく耳にする。「せっかく買ったのだから、使わないともったいない」「会費を払ったのだから、行かないともったいない」。そこで惜しまれているのは物そのものではなく、すでに払ったお金である。\n[[こうした使い方]]には落とし穴もある。たとえば、自分にまったく合わなかった習い事を、一年分の月謝を払ったからという理由で続けるとしよう。続けても、払ったお金が戻ってくるわけではない。それどころか、時間と気力まで失うことになる。これでは、[[もったいないことを重ねている]]ようなものだ。\nこのような例を見ると、「もったいない」はもう時代に合わない言葉のように思えるかもしれない。しかし、本当にそうだろうか。本来この言葉は、物や時間が持っている価値を生かしきれないことを惜しむ気持ちを表していた。そう考えれば、合わない習い事に費やす時間こそ「もったいない」と言うべきだろう。\nこの言葉を、払ったお金への未練としてではなく、今あるものの価値を生かすための言葉として使い直したいものである。",
+    "en": "もったいない used to mean not wasting things, but now people often use it about money already spent, which can trap them in things that do not suit them. The writer argues the word is not out of date: its real sense is regret at not making use of value, so it should be used that way again.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "①こうした使い方とは、どのような使い方か。",
+        "c": [
+          "払ったお金をむだにしないために、何かをするときの使い方",
+          "食べ物や物を捨てずに、最後まで大切に使うときの使い方",
+          "物や時間の価値を生かしきれないことを、惜しむときの使い方",
+          "日本人の心を、海外の人に紹介するときの使い方"
+        ],
+        "why": [
+          "こうした points back to para 2: 'I bought it, so I must use it', 'I paid, so I must go'. What is regretted there is money already paid (すでに払ったお金).",
+          "Said in the text, but not the answer. This is the old use from para 1.",
+          "Said in the text, but not the answer. This is the original sense the writer wants back, in para 4.",
+          "Said in the text, but not the answer. Para 1 mentions this, but it is not a way of using the word in daily life."
+        ],
+        "cue": [
+          "そこで惜しまれているのは物そのものではなく、すでに払ったお金である"
+        ],
+        "skill": "ref",
+        "tell": "こうした at the start of a paragraph points back to the whole of the paragraph before, often its last sentence."
+      },
+      {
+        "q": "②もったいないことを重ねているとは、どういうことか。",
+        "c": [
+          "お金を惜しんだせいで、時間や気力までむだにしているということ",
+          "払ったお金を取り戻そうとして、さらにお金を使っているということ",
+          "合わない習い事をやめて、払った月謝をむだにしているということ",
+          "物を大切にする気持ちが、人々の間で薄れてきているということ"
+        ],
+        "why": [
+          "The money is already lost, and staying in the class loses time and energy too (時間と気力まで失う). One waste is added to another.",
+          "Sounds right, not in the text. Nobody spends more money in the example.",
+          "Turned round. The person in the example keeps going; quitting is what the writer would prefer.",
+          "Sounds right, not in the text. The writer does not say people care less about things."
+        ],
+        "cue": [
+          "払ったお金が戻ってくるわけではない",
+          "時間と気力まで失うことになる"
+        ],
+        "skill": "meaning",
+        "tell": "重ねる means adding one more of the same. Find the first loss and the second loss in the sentences before the underline."
+      },
+      {
+        "q": "この文章で筆者が最も言いたいことは何か。",
+        "c": [
+          "「もったいない」は今も、ものの価値を生かす言葉として使える",
+          "「もったいない」は、今の時代にはもう合わない言葉になった",
+          "お金を払って始めたことは、最後まで続けるべきだ",
+          "物を大切にする「もったいない」の心を、海外にもっと伝えていくべきだ"
+        ],
+        "why": [
+          "The writer asks 本当にそうだろうか and answers in the last paragraph: use the word again to make the most of what we have now (今あるものの価値を生かすための言葉).",
+          "The view the writer argues against. It is the idea raised with 〜ように思えるかもしれない, then rejected.",
+          "Turned round. This is the thinking the writer calls a trap (落とし穴).",
+          "Sounds right, not in the text. Para 1 says the word is known abroad, but the writer asks for nothing about that."
+        ],
+        "cue": [
+          "本当にそうだろうか",
+          "今あるものの価値を生かすための言葉として使い直したい"
+        ],
+        "skill": "question",
+        "tell": "When the writer asks 〜だろうか, the answer to that question is the point. The view asked about is usually the trap."
+      }
+    ]
+  },
+  {
+    "id": "r11-005",
+    "type": "r11",
+    "genre": "コラム",
+    "text": "私の住む町の駅前には、小さな商店街があります。八百屋、魚屋、豆腐屋、それに昔からある文房具店。郊外に大型スーパーができてから客は減りましたが、多くの店が今も営業を続けています。\n先日、豆腐屋で買い物をしていると、店のご主人に「今日は冷えるから、湯豆腐なんかどう？」と勧められました。ちょうど夕飯を何にするか迷っていたので、そのとおりにすることにしました。すると、隣にいた年配の女性が「ねぎなら、角の八百屋が安いわよ」と教えてくれたのです。\nスーパーなら、必要な物はほとんど一か所でそろいますし、値段も安いことが多いでしょう。けれども、そこで店員と話をすることはめったにありません。商店街では、買い物のついでに[[ちょっとした会話]]が生まれます。店の人は常連客の顔を覚えていて、しばらく姿を見ないと[[「元気だった？」と声をかけてくれます]]。\n一人暮らしの高齢者が増える中、こうした会話が、地域の人の様子を知るきっかけにもなっていると聞きます。商店街は、ただ物を売り買いするだけの場所ではないのです。便利さや安さでは、大きな店にかなわないかもしれません。それでも、人と人とをつなぐ場所として、小さな店が果たしている役割は決して小さくないと思います。",
+    "en": "Small shops on the writer's local shopping street lost customers to a big supermarket. Shopping there brings small talk with owners and other shoppers, which also helps people keep an eye on the elderly. The writer thinks these shops matter as places that connect people.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①ちょっとした会話とあるが、その例として合うものはどれか。",
+        "c": [
+          "魚屋の主人が客に、今日はどの魚がおいしいかを教える",
+          "商店街の店主たちが集まって、祭りの準備を話し合う",
+          "大型スーパーで、必要な物を一か所でまとめて買いそろえる",
+          "文房具店の主人が、問屋に電話で品物を注文する"
+        ],
+        "why": [
+          "The talk is born while shopping (買い物のついでに), between shop and customer, like the tofu seller suggesting 湯豆腐. A fishmonger telling a customer what is good today is the same kind.",
+          "Sounds close, but this is a meeting among shop owners, not talk that comes up while someone is shopping.",
+          "Said in the text, but not the answer. Buying everything in one place is the supermarket side, where people rarely talk.",
+          "Sounds close, but this is business with a supplier, not a chat with a customer."
+        ],
+        "cue": [
+          "買い物のついでに",
+          "今日は冷えるから、湯豆腐なんかどう？"
+        ],
+        "skill": "example",
+        "tell": "Ask who talks to whom and when in the writer's examples. The right choice keeps all three the same."
+      },
+      {
+        "q": "②「元気だった？」と声をかけてくれますとあるが、だれがだれに声をかけるのか。",
+        "c": [
+          "店の人が、しばらく店に来なかった常連の客に",
+          "常連の客が、しばらく店を閉めていた店の人に",
+          "年配の客が、一人暮らしをしている近所の人に",
+          "筆者が、豆腐屋で偶然知り合った年配の女性に"
+        ],
+        "why": [
+          "The subject is 店の人 at the start of the sentence. 姿を見ない means the shop has not seen the regular customer for a while.",
+          "Turned round. It is the customer who has not been seen, not the shop that was closed.",
+          "Sounds right, not in the text. Elderly people living alone are mentioned in para 4, but not as the ones who speak.",
+          "Said in the text, but not the answer. The older woman is from para 2 and she spoke to the writer, not the other way."
+        ],
+        "cue": [
+          "店の人は常連客の顔を覚えていて、しばらく姿を見ないと"
+        ],
+        "skill": "who",
+        "tell": "Trace the sentence back to its は or が. The subject often sits at the start, many words before the underlined verb."
+      },
+      {
+        "q": "この文章で筆者が最も言いたいことは何か。",
+        "c": [
+          "商店街の店は、物を売るだけでなく、地域の人どうしの関係を支えている",
+          "商店街の店は、値段や品ぞろえでも大型スーパーに負けていない",
+          "高齢者のために、商店街に人が集まれる場所を作るべきだ",
+          "夕飯の献立に迷ったときは、店の人に相談するとよい"
+        ],
+        "why": [
+          "The last two paragraphs: a shopping street is not only a place to buy and sell, and its shops have a real role in linking people (人と人とをつなぐ).",
+          "Turned round. The writer grants that small shops lose on price and convenience (大きな店にかなわない).",
+          "Sounds right, not in the text. The writer mentions elderly people but asks for nothing to be built.",
+          "One example as the main point. The tofu story is one example of the talk, not the message."
+        ],
+        "cue": [
+          "ただ物を売り買いするだけの場所ではない",
+          "人と人とをつなぐ場所として"
+        ],
+        "skill": "gist",
+        "tell": "それでも in the last paragraph marks the writer's point after a concession. The story in the middle is only an example."
+      }
+    ]
+  },
+  {
+    "id": "r11-006",
+    "type": "r11",
+    "genre": "解説",
+    "text": "寝る前にベッドの中でスマートフォンを見るのが習慣になっている人は多い。しかし、この習慣が眠りの質を下げる原因になることは、意外に知られていない。\nまず、画面から出る光の影響がある。人の体は、夜になって周りが暗くなると、眠気を誘うホルモンを出す仕組みになっている。ところが、寝る直前まで明るい画面を見つめていると、[[体はまだ昼間だと勘違いしてしまう]]。その結果、ホルモンが十分に出ず、なかなか寝つけなくなるのである。\n問題は光だけではない。動画や友人からのメッセージは、次々と新しい刺激を与えてくる。脳は[[そのたび]]に反応し、休む準備に入ることができない。「あと一本だけ」と思って見始めた動画のせいで、気がつくと一時間たっていたという経験のある人もいるだろう。\nでは、どうすればよいのか。専門家の多くは、寝る一時間前には画面を見るのをやめるよう勧めている。それが難しければ、スマートフォンを寝室の外で充電するだけでも効果があるという。手の届くところになければ、つい手に取ることもないからだ。目覚ましには、別に時計を用意すればよい。\n眠りは、翌日の集中力や体の調子に直接かかわる。毎晩の小さな習慣を見直すことが、よい眠りへの第一歩になるのである。",
+    "en": "Using a phone in bed harms sleep in two ways: the bright screen stops the body making a sleep hormone, and new videos and messages keep the brain busy. Experts suggest stopping an hour before bed or charging the phone outside the bedroom.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①体はまだ昼間だと勘違いしてしまうとあるが、それはなぜか。",
+        "c": [
+          "眠る直前まで、画面の強い光を浴びているから",
+          "動画やメッセージが、次々と新しい刺激を与えるから",
+          "眠気を誘うホルモンが、十分に出なくなっているから",
+          "夜になっても、部屋の明かりを消さずに寝ているから"
+        ],
+        "why": [
+          "The underline follows 寝る直前まで明るい画面を見つめていると: the screen's light, late at night, is the cause.",
+          "Said in the text, but not the answer. Videos and messages are the second problem, in para 3, and they act on the brain.",
+          "Turned round. The hormone shortage is the result (その結果), not the cause.",
+          "Sounds right, not in the text. Room lights are never mentioned; the light comes from the screen."
+        ],
+        "cue": [
+          "寝る直前まで明るい画面を見つめていると"
+        ],
+        "skill": "reason",
+        "tell": "〜と before the underline often states the condition that causes it. その結果 after it gives the effect, which is a trap."
+      },
+      {
+        "q": "②そのたびとは、どのようなときか。",
+        "c": [
+          "動画やメッセージから、新しい刺激を受けたとき",
+          "寝る前に、明るい画面の光が目に入ったとき",
+          "眠気を誘うホルモンが、体の中で出されたとき",
+          "自分から友人に、メッセージを送ろうとしたとき"
+        ],
+        "why": [
+          "そのたび points back to the sentence before: each time videos and messages give a new stimulus (次々と新しい刺激を与えてくる).",
+          "Said in the text, but not the answer. Screen light is the first problem, in para 2.",
+          "Said in the text, but not the answer. The hormone belongs to para 2 and the body, not the brain's reactions.",
+          "Half right. Messages are there, but the text is about messages coming in from friends, not ones you send."
+        ],
+        "cue": [
+          "動画や友人からのメッセージは、次々と新しい刺激を与えてくる"
+        ],
+        "skill": "ref",
+        "tell": "その〜 points to the sentence just before. Check that the choice keeps who acts on whom, not only the words."
+      },
+      {
+        "q": "この文章で最も言いたいことは何か。",
+        "c": [
+          "寝る前のスマートフォンとの付き合い方を変えれば、眠りはよくなる",
+          "よく眠るためには、スマートフォンを持たないほうがいい",
+          "眠りの質が下がるのは、画面から出る光だけが原因である",
+          "眠れないときは、無理に寝ようとせず、いったん起きているほうがいい"
+        ],
+        "why": [
+          "The text names two causes, gives small fixes, and closes on 毎晩の小さな習慣を見直すこと as the first step to good sleep.",
+          "Too wide. The fixes are an hour without screens or charging outside the bedroom, not giving up the phone.",
+          "Turned round. Para 3 opens with 問題は光だけではない.",
+          "Sounds right, not in the text. Nothing is said about getting up when you cannot sleep."
+        ],
+        "cue": [
+          "毎晩の小さな習慣を見直すことが、よい眠りへの第一歩になる"
+        ],
+        "skill": "gist",
+        "tell": "In an explanation, the last sentence usually sums up. Check each choice for words like だけ or 持たない that go too far."
+      }
+    ]
+  },
+  {
+    "id": "r11-007",
+    "type": "r11",
+    "genre": "解説",
+    "text": "買い物に出かける前、旅行の準備をするとき、仕事を始める朝。私たちはさまざまな場面でリストを作る。なぜ人は、わざわざ紙やスマートフォンにやるべきことを書き出すのだろうか。\n一つ目の理由は、人の記憶には限りがあるということだ。人が一度に頭の中にとどめておける情報は、思ったより少ないと言われている。牛乳、卵、電池と覚えたつもりでも、店に着いたころには、どれか一つを忘れていたりする。書いておけば、その心配はない。\nしかし、リストの役割はそれだけではない。片付いていないことがいくつも頭の中にあると、人は[[「何か忘れていないか」と気にし続ける]]。それ自体が、思った以上に心の負担になるのだ。書き出してしまえば、頭はその心配から解放され、目の前のことに集中できるようになる。\nさらに、終わった項目に線を引くことにも意味がある。小さな作業でも、一つ片付けるたびに達成感が得られ、次に取りかかる意欲がわいてくる。わざとすぐに終わる項目をリストに入れておき、[[それ]]を真っ先に消すという人もいるほどだ。\nつまり、リストは忘れないための道具であると同時に、心を軽くし、次の行動を後押ししてくれる道具でもあるのだ。",
+    "en": "People make lists because memory is limited, but also because unfinished tasks held in the head weigh on the mind. Crossing items off gives a sense of achievement that drives the next task. So a list helps us remember, eases the mind and pushes us to act.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①「何か忘れていないか」と気にし続けるとあるが、その例として合うものはどれか。",
+        "c": [
+          "会議の準備中も、何かやり残したことがある気がして落ち着かない",
+          "買い物のメモを見ながら、店で必要な物を一つずつ順にかごに入れる",
+          "旅行の前日に、かばんに入れた持ち物から順に線を引く",
+          "作業を一つ終えるたびに、次に取りかかる意欲がわいてくる"
+        ],
+        "why": [
+          "The underline is about unfinished things held in the head while you do something else, which blocks focus on the task in front of you. A vague feeling of having left something undone, while preparing for a meeting, is that.",
+          "Sounds close, but the list is already written, so the worry has gone. This is the cure, not the problem.",
+          "Sounds close, but this is crossing items off, the third point in para 4.",
+          "Said in the text, but not the answer. This is the sense of achievement from para 4."
+        ],
+        "cue": [
+          "片付いていないことがいくつも頭の中にある",
+          "目の前のことに集中できるようになる"
+        ],
+        "skill": "example",
+        "tell": "Name the situation the underline describes in your own words first, then find the choice that is a new case of it."
+      },
+      {
+        "q": "②それとは何か。",
+        "c": [
+          "リストにわざと入れておいた、すぐに終わる項目",
+          "リストの中で、いちばん時間がかかりそうな項目",
+          "前の日に終わらせることができずに残った項目",
+          "終わった項目に線を引いたときに得られる達成感"
+        ],
+        "why": [
+          "それ points back within the same sentence: the item that ends quickly, put on the list on purpose (わざとすぐに終わる項目).",
+          "Turned round. The item is one that ends quickly, not one that takes long.",
+          "Sounds right, not in the text. Items left from the day before are never mentioned.",
+          "Said in the text, but not the answer. 達成感 is the reason for doing it, but you cannot cross out a feeling (消す)."
+        ],
+        "cue": [
+          "わざとすぐに終わる項目をリストに入れておき"
+        ],
+        "skill": "ref",
+        "tell": "それ often points back inside its own sentence. Test each choice in place of それ with the verb after it (消す)."
+      },
+      {
+        "q": "この文章で筆者が最も言いたいことは何か。",
+        "c": [
+          "リストは記憶を補うだけでなく、気持ちを楽にし、行動する力にもなる",
+          "人の記憶には限りがあるので、やるべきことは何でも書き出しておくべきだ",
+          "すぐに終わる項目を入れると、仕事の量そのものが減る",
+          "終わった項目に線を引かなければ、リストを作る意味はない"
+        ],
+        "why": [
+          "The writer asks なぜ…書き出すのだろうか in para 1 and answers with つまり in the last line: a list is a tool for remembering and also for easing the mind and pushing us to act.",
+          "Half right. Limited memory is only the first reason (一つ目の理由), and the text never says to write down everything.",
+          "Sounds right, not in the text. The easy item gives a sense of achievement; the work does not shrink.",
+          "Too wide. Crossing off is one more benefit (さらに), not a condition for lists to work."
+        ],
+        "cue": [
+          "なぜ人は、わざわざ紙やスマートフォンにやるべきことを書き出すのだろうか",
+          "心を軽くし、次の行動を後押ししてくれる道具でもある"
+        ],
+        "skill": "question",
+        "tell": "A question in the first paragraph is answered in the last. つまり there sums up all the reasons, not just the first one."
+      }
+    ]
+  },
+  {
+    "id": "r11-008",
+    "type": "r11",
+    "genre": "論説",
+    "text": "子どもは褒めて育てるのがよいと、よく言われる。叱られてばかりいる子どもは自信をなくしやすい、というのがその理由だ。私も基本的にはこの考えに賛成である。ただ、褒め方には気をつける必要があると思う。\nある実験で、同じ問題を解いた子どもたちを二つのグループに分け、一方には「頭がいいね」、もう一方には「よく頑張ったね」と声をかけたそうだ。その後、次に解く問題として難しいものと易しいもののどちらかを選ばせたところ、[[「頭がいい」と褒められた子どもの多くは、易しい問題を選んだ]]という。間違えれば、頭がいいという評価を失ってしまう。それが怖かったのだろう。\n能力を褒められた子どもにとって、褒め言葉はいつの間にか[[守らなければならないもの]]に変わってしまうことがある。一方、努力を褒められた子どもは、うまくいかなくても、もう一度頑張ればいいと考えることができる。\nもちろん、結果を喜んではいけないということではない。テストでよい点を取ったら、一緒に喜べばいい。大切なのは、「すごいね」で済ませずに、どこを工夫したのか、何を続けてきたのかに目を向けて言葉をかけることだ。\n褒めることは、子どもに「あなたをちゃんと見ている」と伝えることでもある。だとすれば、親が見るべきなのは結果だけでなく、そこに至るまでの過程なのではないだろうか。",
+    "en": "The writer agrees children should be praised but warns about how. In an experiment, children praised as clever chose easy problems, afraid of losing that label, while those praised for effort could try again. Parents should praise the effort and ideas behind a result, not only the result.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "①「頭がいい」と褒められた子どもの多くは、易しい問題を選んだとあるが、筆者はなぜだと考えているか。",
+        "c": [
+          "間違えると、頭がいいと思われなくなるのが心配だったから",
+          "難しい問題を解くだけの力が、自分にはないと分かっていたから",
+          "もう一度、努力したことを褒めてもらいたかったから",
+          "易しい問題のほうが早く終わって楽だと考えたから"
+        ],
+        "why": [
+          "The next two sentences give the writer's guess: a mistake would lose them the label 'clever', and they were afraid of that (それが怖かったのだろう).",
+          "Sounds right, not in the text. Both groups had solved the same problems; nothing says they lacked the skill.",
+          "Said in the text, but not the answer. Effort was praised in the other group, not this one.",
+          "Sounds right, not in the text. Speed and ease are never given as a reason."
+        ],
+        "cue": [
+          "間違えれば、頭がいいという評価を失ってしまう。それが怖かったのだろう"
+        ],
+        "skill": "reason",
+        "tell": "筆者はなぜだと考えているか: look for the writer's guess after the fact, often ending in 〜のだろう."
+      },
+      {
+        "q": "②守らなければならないものとは、どういうことか。",
+        "c": [
+          "褒められて得た評価を失うまいとして、それに縛られてしまうこと",
+          "親に褒められた言葉を、いつまでも覚えておこうとすること",
+          "褒めてもらうために、親の言いつけをよく聞くようになること",
+          "うまくいかなくても、もう一度頑張ればいいと考えられるようになること"
+        ],
+        "why": [
+          "Para 2 showed it: the 'clever' label became something to protect, so the children avoided hard problems. Praise turns into a weight they must not lose.",
+          "Sounds close, but this reads 守る too literally. The point is protecting a label, not remembering words.",
+          "Sounds right, not in the text. Obeying parents is never mentioned.",
+          "Said in the text, but not the answer. This is the children praised for effort (一方), the other side."
+        ],
+        "cue": [
+          "頭がいいという評価を失ってしまう"
+        ],
+        "skill": "meaning",
+        "tell": "An underline in one paragraph is often explained by the example just before it. Ignore the choice that copies the 一方 side."
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "子どもを褒めるときは、結果に至るまでの努力や工夫にも目を向けるべきだ",
+          "子どもの頭のよさを褒めると、難しいことに挑戦するようになる",
+          "テストでよい点を取っても、結果そのものを褒めてはいけない",
+          "褒めすぎると子どもは自信をなくすので、褒めるのは控えるべきだ"
+        ],
+        "why": [
+          "Para 4 and the last line: look at what the child worked out and kept doing, the process (過程), not only the result.",
+          "Turned round. The experiment shows these children chose the easy problems.",
+          "Turned round. The writer says もちろん…ということではない: share the joy of a good mark.",
+          "Turned round. The text says children who are only scolded lose confidence, and the writer agrees with praising."
+        ],
+        "cue": [
+          "どこを工夫したのか、何を続けてきたのかに目を向けて言葉をかけることだ",
+          "結果だけでなく、そこに至るまでの過程"
+        ],
+        "skill": "claim",
+        "tell": "〜のではないだろうか and 大切なのは〜だ mark the writer's view. もちろん…ではない kills an over-strong choice."
+      }
+    ]
+  },
+  {
+    "id": "r11-009",
+    "type": "r11",
+    "genre": "エッセイ",
+    "text": "翻訳の仕事をしていると、「辞書があれば誰にでもできるのでは」と言われることがある。確かに、単語の意味を調べて置き換えるだけなら、今では機械でもかなりのことができる。しかし、私が一日の大半を費やしているのは、辞書を引くことではない。\n例えば、小説の中で登場人物が「結構です」と言ったとする。これは「いりません」という断りにもなれば、「それで十分です」という満足にもなる。どちらなのかは、前後の場面や人物の性格から判断するしかない。しかも英語にするときは、丁寧に断っているのか、冷たく突き放しているのかによって、選ぶ言葉がまた変わってくる。\n私はよく、翻訳を[[川の向こう岸へ荷物を運ぶ仕事]]にたとえる。中身は一つも落とさず、壊さずに届けなければならない。だが、向こう岸の道は形が違うので、同じ箱のままでは運べないことが多い。中身を守るために、あえて箱を詰め替えるのである。\n先日、私が訳した本の読者から出版社に手紙が届いた。「翻訳だと気づかずに読んでいた」とあったそうだ。担当者がその手紙を原作者に送ると、[[ずいぶん喜んでいた]]と聞いた。\n翻訳者の名前は、表紙の隅に小さく載るだけだ。それでも、読者が作品そのものを楽しんでくれたなら、それ以上の褒め言葉はない。つまり、目立たないことこそが、よい翻訳の証なのだと私は思う。",
+    "en": "A translator explains that the work is not looking words up but judging meaning and tone from context. They compare it to carrying goods across a river: the contents must arrive whole, even if the box has to change. A reader who forgot it was a translation is the best praise, because a good translation goes unnoticed.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "①川の向こう岸へ荷物を運ぶ仕事とあるが、筆者は翻訳をどのような仕事だと考えているか。",
+        "c": [
+          "元の意味を損なわないよう、伝える言葉の形を変えて届ける仕事",
+          "元の文の言葉を一つも変えずに、そのまま別の言語へ移す仕事",
+          "作者の考えを、読者に分かりやすいように説明し直して伝える仕事",
+          "辞書で単語の意味を調べ、正しい言葉に置き換えていく仕事"
+        ],
+        "why": [
+          "The contents (meaning) must arrive whole, but the box (the wording) is repacked to fit the other bank's road (the other language).",
+          "Turned round. The text says the same box often cannot be used (同じ箱のままでは運べない).",
+          "Sounds right, not in the text. Nothing says the translator explains or simplifies the author's ideas.",
+          "The view the writer argues against: the 辞書があれば誰にでもできる idea set up in para 1."
+        ],
+        "cue": [
+          "中身は一つも落とさず、壊さずに届けなければならない",
+          "あえて箱を詰め替える"
+        ],
+        "skill": "metaphor",
+        "tell": "Map each part of the likeness: 中身 = meaning, 箱 = wording. The right choice says the image in plain terms."
+      },
+      {
+        "q": "②ずいぶん喜んでいたとあるが、だれが何を喜んでいたのか。",
+        "c": [
+          "原作者が、読者に翻訳だと気づかれずに読まれたことを喜んでいた",
+          "筆者が、読者から直接手紙を受け取れたことを喜んでいた",
+          "読者が、翻訳とは思えないほど自然な本に出会えたことを喜んでいた",
+          "出版社の担当者が、訳した本がよく売れたことを喜んでいた"
+        ],
+        "why": [
+          "The editor sent the letter to the original author, and 聞いた tells us the writer heard about someone else's joy: the author's, at being read without the translation showing.",
+          "Half right. The writer was happy, but the letter went to the publisher (出版社に), and the underline is someone else's reaction that the writer only heard about.",
+          "Said in the text, but not the answer. The reader wrote the letter; the joy in the underline comes after the author got it.",
+          "Sounds right, not in the text. Sales are never mentioned; the editor only passed the letter on."
+        ],
+        "cue": [
+          "担当者がその手紙を原作者に送ると"
+        ],
+        "skill": "who",
+        "tell": "と聞いた means the writer heard it from someone. Ask who received what just before the underlined reaction."
+      },
+      {
+        "q": "筆者は、よい翻訳とはどのようなものだと考えているか。",
+        "c": [
+          "読者が翻訳であることを意識せずに、作品を楽しめるもの",
+          "原文の言葉が、一語ずつ正確に置き換えてあるもの",
+          "翻訳者がどこを工夫したのかが、読者にもはっきりと伝わるもの",
+          "登場人物の性格が、元の作品よりも分かりやすいもの"
+        ],
+        "why": [
+          "つまり in the last line restates it: not standing out is the mark of a good translation. That is, the reader just enjoys the work (作品そのものを楽しんでくれた).",
+          "The view the writer argues against. Word-for-word swapping is what a dictionary or machine does, in para 1.",
+          "Turned round. The writer says a good translation does not stand out (目立たないこと).",
+          "Sounds right, not in the text. Character is something the translator reads, not something made clearer."
+        ],
+        "cue": [
+          "目立たないことこそが、よい翻訳の証",
+          "読者が作品そのものを楽しんでくれたなら"
+        ],
+        "skill": "rephrase",
+        "tell": "つまり introduces the claim again in other words. Read the sentence before it to see what the 'other words' were."
+      }
+    ]
+  },
+  {
+    "id": "r11-010",
+    "type": "r11",
+    "genre": "解説",
+    "text": "森や畑に降った雨は、その多くが土にしみ込み、時間をかけて川へ流れていく。ところが都市では、地面のほとんどがアスファルトやコンクリートで覆われているため、雨水は地中にしみ込まない。道路の側溝から下水道へと、一気に流れ込むのである。\n[[これ]]が問題になるのは、短い時間に激しい雨が降ったときだ。下水道が一度に受け止められる水の量には限りがある。その量を超えると、水はマンホールからあふれ出し、道路や地下街が水につかってしまう。近年、こうした被害は各地で起きている。\nそこで、雨水を[[すぐには流さない]]工夫が進められている。たとえば、公園や学校の校庭の地下に大きな池のような施設をつくり、雨水を一時的にためておく方法がある。雨がやんだあとで少しずつ下水道に流せば、あふれる心配は小さくなる。また、水を通す特殊な素材で歩道を舗装し、雨水を地面にしみ込ませる取り組みもある。建物の屋上に植物を植える「屋上緑化」にも、雨水を土にため、流れ出るまでの時間を遅らせる効果があるという。\n降った雨をできるだけ早く遠くへ流すことを第一に考えてきた都市づくりは、今、雨をその場で受け止める方向へと変わりつつある。",
+    "en": "In cities, rain cannot soak into paved ground and rushes into the sewers, which overflow in heavy downpours. Cities now hold water back with underground tanks, paving that lets water through and rooftop plants. City design is shifting from sending rain away fast to catching it where it falls.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①これとは何を指すか。",
+        "c": [
+          "都市に降った雨が、地面にしみ込まずに下水道へ一度に流れ込むこと",
+          "森や畑に降った雨が、時間をかけて川へ流れていくこと",
+          "短い時間に激しい雨が降ることが、以前より増えたこと",
+          "下水道からあふれた水で、道路や地下街が水につかること"
+        ],
+        "why": [
+          "これ starts para 2 and points back to the end of para 1: in cities rain does not soak in but rushes into the sewers at once (一気に流れ込む).",
+          "Said in the text, but not the answer. Forests and fields are the contrast at the start of para 1.",
+          "Sounds right, not in the text. The text says damage happens in many places (被害は各地で起きている), not that heavy rain has increased.",
+          "Turned round. Flooded streets are the result of これ, described after it."
+        ],
+        "cue": [
+          "雨水は地中にしみ込まない",
+          "道路の側溝から下水道へと、一気に流れ込む"
+        ],
+        "skill": "ref",
+        "tell": "これ at the start of a paragraph points to the last idea of the one before. The flood that follows is its result, a trap."
+      },
+      {
+        "q": "②すぐには流さない工夫が進められているのはなぜか。",
+        "c": [
+          "下水道が受け止めきれない量の水が、一度に流れ込むのを防ぐため",
+          "ためておいた雨水を、生活用水として利用するため",
+          "下水道を新しく造るには、多くの費用がかかるため",
+          "雨水を地面にしみ込ませると、かえって川の水があふれやすくなるため"
+        ],
+        "why": [
+          "そこで links back to para 2: sewers have a limit, and too much water at once overflows. Holding rain back and releasing it slowly (少しずつ) keeps under that limit.",
+          "Sounds right, not in the text. The stored water goes to the sewers later; reuse is never mentioned.",
+          "Sounds right, not in the text. The cost of sewers is never mentioned.",
+          "Turned round. The text wants water to soak into the ground (しみ込ませる)."
+        ],
+        "cue": [
+          "下水道が一度に受け止められる水の量には限りがある",
+          "少しずつ下水道に流せば、あふれる心配は小さくなる"
+        ],
+        "skill": "reason",
+        "tell": "そこで means 'so, because of that'. The reason for what follows is the problem in the paragraph just before."
+      },
+      {
+        "q": "この文章で最も言いたいことは何か。",
+        "c": [
+          "雨水を急いで流すのではなく、その場でためる都市づくりが進んでいる",
+          "都市の水害を防ぐには、下水道をもっと大きくするしかない",
+          "都市の地面は、アスファルトをやめて土に戻していくべきだ",
+          "屋上緑化は、雨による被害を防ぐ最も効果的な方法である"
+        ],
+        "why": [
+          "The last sentence sums up: cities are moving from sending rain away fast to catching it where it falls (その場で受け止める).",
+          "Sounds right, not in the text. Bigger sewers are never suggested; the fixes all hold water back.",
+          "Too wide. Only some pavements use paving that lets water through; nothing says to remove asphalt.",
+          "One example as the main point, and 最も is not in the text. Rooftop plants are one of several ways."
+        ],
+        "cue": [
+          "雨をその場で受け止める方向へと変わりつつある"
+        ],
+        "skill": "gist",
+        "tell": "An explanation lists examples, then the last sentence states the trend. Choices built on one example are traps."
+      }
+    ]
+  },
+  {
+    "id": "r11-011",
+    "type": "r11",
+    "genre": "コラム",
+    "text": "「いいお隣さん」と聞いて、どんな人を思い浮かべるでしょうか。会えば笑顔であいさつをしてくれる人、旅行のお土産を分けてくれる人。私も以前は、そういう人のことだと思っていました。\n三年前に今のマンションに引っ越してきてから、隣に住む年配の夫婦とは、廊下で会えば軽く頭を下げる程度の付き合いでした。ほとんど話をしたこともなく、正直なところ、少し冷たい人たちだと感じていました。\nある冬、私が高い熱を出して何日か寝込んでいたときのことです。ドアの取っ手に、スポーツドリンクとおかゆが入った袋が掛けてありました。添えられたメモには「新聞がたまっていたので、気になって」とだけ書かれていました。[[異変に気づいてくれていた]]のです。\nお礼を言いに行くと、奥さんは[[「お互いさまですから」]]と笑うだけでした。その後も、私たちの付き合い方は変わっていません。会えば頭を下げるだけです。それでも今は、その距離がとても心地よく感じられます。\n毎日のように声をかけ合う関係も素敵だと思います。けれども、相手の暮らしに踏み込みすぎず、それでいて困ったときには気づいてくれる。そういう人こそ、本当の意味での「いいお隣さん」なのではないでしょうか。",
+    "en": "The writer thought the older couple next door were cold, since they only nodded in the corridor. When the writer was ill, the couple noticed the piled-up newspapers and left food at the door. The writer now thinks a good neighbour keeps a polite distance but notices when you are in trouble.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "①異変に気づいてくれていたとあるが、だれが、どのように気づいていたのか。",
+        "c": [
+          "隣の夫婦が、新聞がたまっているのを見て気づいていた",
+          "新聞の配達員が、新聞がたまっているのを見て気づいていた",
+          "隣の奥さんが、廊下で会った筆者の顔色を見て気づいていた",
+          "筆者が、隣の部屋の新聞がたまっているのを見て気づいていた"
+        ],
+        "why": [
+          "The note says the newspapers had piled up, and para 4 shows the neighbours were the ones who left the bag: the writer goes to thank the wife.",
+          "Sounds right, not in the text. A delivery person is never mentioned.",
+          "Half right. The wife is one of the couple, but they noticed the newspapers. The writer was in bed, not in the corridor.",
+          "Turned round. The neighbours noticed the writer's newspapers, not the other way round."
+        ],
+        "cue": [
+          "新聞がたまっていたので、気になって",
+          "お礼を言いに行くと、奥さんは"
+        ],
+        "skill": "who",
+        "tell": "When the subject is missing, read on. A later line (who gets thanked) often names the person the earlier one left out."
+      },
+      {
+        "q": "②「お互いさまですから」とは、ここではどういう意味か。",
+        "c": [
+          "困ったときに助け合うのは当然なので、礼には及ばないということ",
+          "今度は筆者のほうに、自分たちを助けてほしいということ",
+          "隣どうしなのだから、これからはもっと親しくしようということ",
+          "筆者が寝込んでいたことに、自分たちも気づかなかったということ"
+        ],
+        "why": [
+          "The wife answers the writer's thanks and only smiles. お互いさま means everyone needs help some time, so there is no need for thanks.",
+          "Half right. お互いさま is about both sides, but she asks for nothing back; she just smiles.",
+          "Turned round. Their way of getting along did not change afterwards (変わっていません).",
+          "Turned round. They did notice; that is why they left the bag."
+        ],
+        "cue": [
+          "お礼を言いに行くと",
+          "と笑うだけでした"
+        ],
+        "skill": "meaning",
+        "tell": "Read a set phrase in its scene: who says it, in answer to what. Here it answers thanks, so it waves the thanks away."
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "ふだん深く関わらなくても、困ったときに気づいてくれるのがよい隣人だ",
+          "隣の人とは、毎日あいさつや会話をする関係を作ることが大切だ",
+          "隣の人の暮らしには、できるだけ関わらないほうがいい",
+          "会っても話をしない隣人は、冷たい人だと考えてよい"
+        ],
+        "why": [
+          "The closing question gives the writer's answer: someone who does not step too far into your life yet notices when you are in trouble.",
+          "The view the writer sets aside. 素敵だと思います。けれども… turns from it to the writer's own idea.",
+          "Half right. 踏み込みすぎず is there, but the writer also wants a neighbour who notices trouble.",
+          "Turned round. This was the writer's first impression, which the story proved wrong."
+        ],
+        "cue": [
+          "相手の暮らしに踏み込みすぎず、それでいて困ったときには気づいてくれる"
+        ],
+        "skill": "claim",
+        "tell": "〜のではないでしょうか at the end is the writer's view. 〜も素敵です。けれども… sets up the view to put aside."
+      }
+    ]
+  },
+  {
+    "id": "r11-012",
+    "type": "r11",
+    "genre": "エッセイ",
+    "text": "私は昔から絵を描くのが苦手だ。小学校の図工の時間には、いつも友達の絵をうらやましく眺めていた。大人になってからは、絵を描く場面そのものを避けてきた。\nその私が、去年から週に一度、公民館の水彩画教室に通っている。知人に誘われて、断りきれなかったのだ。ところが、誘った本人は仕事が忙しくなったと言って、三か月ほどで来なくなった。[[今も通い続けている]]のは、乗り気でなかったほうなのである。\n続けるうちに、意外なことに気づいた。仕事では、私はたいていのことを手際よくこなせる。だからこそ、知らないうちに[[失敗しない方法ばかりを選ぶ]]ようになっていたのだろう。ところが絵の教室では、どうせうまく描けないと分かっているので、かえって思い切って色を重ねてみることができる。\n先日、先生に「最初のころより、線に迷いがなくなりましたね」と言われた。絵の出来ばえは相変わらずだが、素直にうれしかった。誰かと比べるのではなく、昨日の自分より少し進んだことを喜ぶ。こんな気持ちになったのは久しぶりだった。\n得意なことを伸ばすのは大切だ。しかし、ときには苦手なことに手を出してみるのも悪くない。うまくできないことの中にこそ、忘れていた楽しさが隠れているのかもしれない。",
+    "en": "The writer, always bad at drawing, joined a watercolour class only because an acquaintance asked, and is the one who stayed. Being good at work had made them choose safe methods; in class, expecting to fail frees them to experiment. Trying what you are bad at can bring back a forgotten kind of joy.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "①今も通い続けているとあるが、だれが通い続けているのか。",
+        "c": [
+          "知人に誘われ、気が進まないまま教室に入った筆者",
+          "筆者を教室に誘ったが、仕事が忙しくなった知人",
+          "筆者の線に迷いがなくなったと言った、教室の先生",
+          "子どものころから絵が上手で、筆者がうらやんだ友達"
+        ],
+        "why": [
+          "乗り気でなかったほう is the one of the pair who was not keen: the writer, who joined only because they could not say no (断りきれなかった).",
+          "Turned round. The acquaintance stopped coming after about three months.",
+          "Said in the text, but not the answer. The teacher is in para 4 and is not one of the pair being compared.",
+          "Said in the text, but not the answer. The school friend belongs to para 1, not the class."
+        ],
+        "cue": [
+          "知人に誘われて、断りきれなかったのだ",
+          "乗り気でなかったほう"
+        ],
+        "skill": "who",
+        "tell": "〜ほう picks one of two people. Find the pair, then which one fits the description (乗り気でなかった)."
+      },
+      {
+        "q": "②失敗しない方法ばかりを選ぶとあるが、その例として合うものはどれか。",
+        "c": [
+          "取引先への提案書を、以前に通ったものと同じ形でいつも作る",
+          "慣れない分野の仕事を、うまくいくか分からないまま引き受ける",
+          "絵の教室で、思い切って何色も重ねて塗ってみる",
+          "先生の言葉を聞いて、昨日の自分より進んだことを喜ぶ"
+        ],
+        "why": [
+          "The underline is about work, where the writer is skilled and so sticks to safe ways. Always reusing a proposal format that worked before is one such safe way.",
+          "Turned round. Taking work you may fail at is the opposite of choosing only safe ways.",
+          "Said in the text, but not the answer. This is what the writer does in class, the opposite of the underline (ところが).",
+          "Said in the text, but not the answer. This is the joy in para 4, not a safe choice."
+        ],
+        "cue": [
+          "仕事では、私はたいていのことを手際よくこなせる"
+        ],
+        "skill": "example",
+        "tell": "Note where the underline happens (at work) and what it means (only safe ways). ところが after it flags the opposite case."
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "苦手なことに挑むと、得意なことにはない楽しさに出会える場合がある",
+          "苦手なことに取り組むより、得意なことを伸ばすほうが大切だ",
+          "苦手なことでも、長く続ければいつかは必ず得意になる",
+          "得意なことばかりしていると、仕事で失敗しやすくなる"
+        ],
+        "why": [
+          "The last paragraph: trying what you are bad at is not bad, and a forgotten joy may hide in what you cannot do well (かもしれない).",
+          "The view the writer grants and turns from. 得意なことを伸ばすのは大切だ。しかし… puts the weight after しかし.",
+          "Sounds right, not in the text. The pictures are no better than before (出来ばえは相変わらず).",
+          "Turned round. At work the writer avoids failure; nothing says they fail more."
+        ],
+        "cue": [
+          "しかし、ときには苦手なことに手を出してみるのも悪くない",
+          "忘れていた楽しさが隠れているのかもしれない"
+        ],
+        "skill": "claim",
+        "tell": "Hedged endings (〜も悪くない, 〜かもしれない) still carry the claim. The line before しかし is a trap."
+      }
+    ]
+  }
+]

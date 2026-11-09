@@ -1,0 +1,1053 @@
+[
+  {
+    "id": "l1-001",
+    "type": "l1",
+    "lv": 1,
+    "setup": "会社で男の人と女の人が話しています。",
+    "q": "女の人はこのあとまず何をしますか。",
+    "lines": [
+      {
+        "sp": "M",
+        "t": "山下さん、午後の会議の準備、どうなってる？"
+      },
+      {
+        "sp": "F",
+        "t": "あ、はい。これから資料を人数分印刷して、それから会議室を予約しようと思ってたところです。"
+      },
+      {
+        "sp": "M",
+        "t": "会議室なら、さっき僕が取っといたよ。三階の小会議室。"
+      },
+      {
+        "sp": "F",
+        "t": "え、そうなんですか。ありがとうございます。じゃあ、さっそく印刷を……"
+      },
+      {
+        "sp": "M",
+        "t": "あ、ちょっと待って。その資料なんだけど、二ページ目の売上の数字、先月のままになってない？　今朝、経理から新しいのが届いてたでしょ。"
+      },
+      {
+        "sp": "F",
+        "t": "あっ、本当だ。まだ入れ替えてませんでした。"
+      },
+      {
+        "sp": "M",
+        "t": "印刷するのはそれからだね。あ、プロジェクターは僕が会議の前にセットしとくから。"
+      },
+      {
+        "sp": "F",
+        "t": "すみません、助かります。じゃあ、急いで直しちゃいます。"
+      }
+    ],
+    "c": [
+      "資料の数字を直す",
+      "資料を印刷する",
+      "会議室を予約する",
+      "プロジェクターを準備する"
+    ],
+    "why": [
+      "He stops her printing because the page 2 sales figures are last month's, then says '印刷するのはそれからだね': print only after the fix. She ends with '急いで直しちゃいます'.",
+      "Printing was her first plan, but it now comes after the numbers are fixed.",
+      "Already done: '会議室なら、さっき僕が取っといたよ'.",
+      "He will do it himself: 'プロジェクターは僕が会議の前にセットしとくから'."
+    ],
+    "cue": [
+      "印刷するのはそれからだね",
+      "急いで直しちゃいます"
+    ],
+    "tell": "Her plan comes first, then each step is taken away. ちょっと待って and それから push printing behind the fix.",
+    "en": "A woman plans to print the meeting handout and book a room. Her colleague has already booked the room and will set up the projector, but the sales figures in the handout are out of date, so she must fix them before printing."
+  },
+  {
+    "id": "l1-002",
+    "type": "l1",
+    "lv": 2,
+    "setup": "大学で男の学生と女の学生が話しています。",
+    "q": "男の学生はこのあとまず何をしなければなりませんか。",
+    "lines": [
+      {
+        "sp": "M",
+        "t": "ねえ、来週から始まる国際関係論、ネットで登録しようとしたら、エラーになっちゃったんだけど。"
+      },
+      {
+        "sp": "F",
+        "t": "ああ、あの授業は、二年生が取るには先生の許可がいるんだよ。この用紙に先生のサインをもらって、教務課に出すの。"
+      },
+      {
+        "sp": "M",
+        "t": "そうなんだ。じゃ、今から先生の研究室に行ってくるよ。"
+      },
+      {
+        "sp": "F",
+        "t": "あ、待って。その前に、抽選の申し込みはした？"
+      },
+      {
+        "sp": "M",
+        "t": "抽選？"
+      },
+      {
+        "sp": "F",
+        "t": "うん。人気があるから、抽選に通った人しかサインをもらえないんだって。"
+      },
+      {
+        "sp": "M",
+        "t": "えー、知らなかった。それ、どこで申し込むの？"
+      },
+      {
+        "sp": "F",
+        "t": "学生ポータルから。たしか締め切り、今日の五時までだったと思う。",
+        "say": "学生ポータルから。たしか締め切り、きょうの五時までだったと思う。"
+      },
+      {
+        "sp": "M",
+        "t": "うそ、あと一時間しかないじゃん。"
+      },
+      {
+        "sp": "F",
+        "t": "結果は明日出るから、通ってたら、先生のところに行けばいいよ。",
+        "say": "結果はあした出るから、通ってたら、先生のところに行けばいいよ。"
+      },
+      {
+        "sp": "M",
+        "t": "わかった。ありがとう。"
+      }
+    ],
+    "c": [
+      "抽選に申し込む",
+      "先生にサインをもらう",
+      "教務課に用紙を出す",
+      "抽選の結果を確かめる"
+    ],
+    "why": [
+      "Before he goes for the signature she asks 'その前に、抽選の申し込みはした？' Only students who pass the lottery can get a signature, and it closes at five today.",
+      "His plan, but it waits for the lottery result: '通ってたら、先生のところに行けばいいよ'.",
+      "The form goes to 教務課 last, after the signature.",
+      "That comes later: '結果は明日出るから'. He has not even applied yet."
+    ],
+    "cue": [
+      "その前に、抽選の申し込みはした？",
+      "抽選に通った人しかサインをもらえない"
+    ],
+    "tell": "His plan is the teacher's office right now. その前に puts a new step in front of everything he said.",
+    "en": "A student cannot register online for a popular class because second-year students need the teacher's signed permission. His friend tells him only students who pass a lottery can get the signature, and the lottery closes at five today."
+  },
+  {
+    "id": "l1-003",
+    "type": "l1",
+    "lv": 1,
+    "setup": "カフェで店長とアルバイトの男の人が話しています。",
+    "q": "男の人はこのあとまず何をしますか。",
+    "lines": [
+      {
+        "sp": "F",
+        "t": "木村くん、おはよう。開店まであと三十分だから、準備お願いね。"
+      },
+      {
+        "sp": "M",
+        "t": "はい。まずテーブルをふけばいいですか。"
+      },
+      {
+        "sp": "F",
+        "t": "あ、テーブルは朝の人がもうやってくれてるから、大丈夫。"
+      },
+      {
+        "sp": "M",
+        "t": "わかりました。じゃ、外に看板を出してきます。"
+      },
+      {
+        "sp": "F",
+        "t": "ううん、看板は開けるときでいいの。今出しちゃうと、まだ準備中なのに、お客さんが入ってきちゃうから。"
+      },
+      {
+        "sp": "M",
+        "t": "あ、そうか。"
+      },
+      {
+        "sp": "F",
+        "t": "それより、コーヒー豆がもう少ないの。倉庫から一袋持ってきて、機械に入れといてくれる？",
+        "say": "それより、コーヒー豆がもう少ないの。倉庫からひとふくろ持ってきて、機械に入れといてくれる？"
+      },
+      {
+        "sp": "M",
+        "t": "はい。あ、ついでにレジのお金も数えておきましょうか。"
+      },
+      {
+        "sp": "F",
+        "t": "それは私がやるからいいよ。豆、重いから気をつけてね。"
+      },
+      {
+        "sp": "M",
+        "t": "はい、行ってきます。"
+      }
+    ],
+    "c": [
+      "倉庫から豆を持ってくる",
+      "テーブルをふく",
+      "看板を外に出す",
+      "レジのお金を数える"
+    ],
+    "why": [
+      "The manager asks '倉庫から一袋持ってきて、機械に入れといてくれる？' and he answers '行ってきます'.",
+      "Already done: 'テーブルは朝の人がもうやってくれてる'.",
+      "Later: '看板は開けるときでいいの', when the café opens.",
+      "The manager will do it: 'それは私がやるからいいよ'."
+    ],
+    "cue": [
+      "倉庫から一袋持ってきて",
+      "それは私がやるからいいよ"
+    ],
+    "tell": "He offers three jobs and each one is turned down. The job he gets comes after それより.",
+    "en": "Before opening, a new part-timer offers to wipe the tables, put out the sign and count the till. The tables are done, the sign goes out at opening and the manager counts the till, so he fetches coffee beans from the storeroom."
+  },
+  {
+    "id": "l1-004",
+    "type": "l1",
+    "lv": 1,
+    "setup": "病院の受付で男の人と受付の人が話しています。",
+    "q": "男の人はこのあとどこに行きますか。",
+    "lines": [
+      {
+        "sp": "M",
+        "t": "すみません、熱とせきがひどいので、内科で診てもらいたいんですが。"
+      },
+      {
+        "sp": "F",
+        "t": "はい。こちらは初めてですか。"
+      },
+      {
+        "sp": "M",
+        "t": "いえ、去年一度来ました。診察券もあります。"
+      },
+      {
+        "sp": "F",
+        "t": "では、診察券と保険証をお預かりします。お熱は何度ぐらいですか。"
+      },
+      {
+        "sp": "M",
+        "t": "今朝測ったら、三十八度ありました。"
+      },
+      {
+        "sp": "F",
+        "t": "そうですか。内科は二階なんですが、熱のある方には、ほかの患者さんとは別の場所でお待ちいただいているんです。一階の奥の部屋でお待ちいただけますか。先生がそちらに伺います。"
+      },
+      {
+        "sp": "M",
+        "t": "わかりました。あの、レントゲンも撮ってもらえますか。地下にあるんですよね。"
+      },
+      {
+        "sp": "F",
+        "t": "それは、先生が診察してから決めますので。"
+      },
+      {
+        "sp": "M",
+        "t": "あ、はい。それと、お金は最後に払えばいいですか。"
+      },
+      {
+        "sp": "F",
+        "t": "はい。お帰りの際に、あちらの会計の窓口でお願いします。"
+      }
+    ],
+    "c": [
+      "一階の奥の部屋",
+      "二階の内科",
+      "地下のレントゲン室",
+      "会計の窓口"
+    ],
+    "why": [
+      "Patients with a fever wait apart: '一階の奥の部屋でお待ちいただけますか'. The doctor comes to him there.",
+      "内科 is on the second floor, but people with a fever are kept away from other patients.",
+      "Only if the doctor decides after seeing him: '先生が診察してから決めます'.",
+      "He pays on the way home, at the very end."
+    ],
+    "cue": [
+      "一階の奥の部屋でお待ちいただけますか",
+      "熱のある方には"
+    ],
+    "tell": "He asks for 内科, but his fever changes where he waits. Catch the floor number after the 〜んですが turn.",
+    "en": "A man with a fever asks to see the internal medicine doctor on the second floor. The receptionist sends him to wait in a room at the back of the first floor, apart from other patients; X-rays depend on the doctor, and he pays at the end."
+  },
+  {
+    "id": "l1-005",
+    "type": "l1",
+    "lv": 1,
+    "setup": "図書館で女の学生と図書館の人が話しています。",
+    "q": "女の学生はこのあとまず何をしますか。",
+    "lines": [
+      {
+        "sp": "F",
+        "t": "すみません、この本を借りたいんですけど、棚に見当たらなくて。"
+      },
+      {
+        "sp": "M",
+        "t": "少々お待ちください。……ああ、今、貸し出し中ですね。予約なさいますか。戻ってきたら、メールでお知らせしますよ。"
+      },
+      {
+        "sp": "F",
+        "t": "お願いします。"
+      },
+      {
+        "sp": "M",
+        "t": "では、学生証をお願いします。……あ、返却期限を過ぎている本が一冊ありますね。期限を過ぎた本があると、予約ができないんですよ。"
+      },
+      {
+        "sp": "F",
+        "t": "え、本当ですか。あ、先月借りた小説だ。ちょうど今、かばんに入ってます。"
+      },
+      {
+        "sp": "M",
+        "t": "では、先にそちらを返却カウンターで返していただけますか。そのあとでしたら、こちらで予約の手続きができます。"
+      },
+      {
+        "sp": "F",
+        "t": "わかりました。あの、隣の大学の図書館にもこの本があるみたいなんですけど、そっちで借りることもできますか。"
+      },
+      {
+        "sp": "M",
+        "t": "ええ、紹介状をお書きしますよ。ただ、この本、一週間ほどで戻ってくる予定なので、お待ちになったほうが早いかもしれません。"
+      },
+      {
+        "sp": "F",
+        "t": "そうですね。じゃあ、そうします。"
+      }
+    ],
+    "c": [
+      "借りていた小説を返す",
+      "本の予約の手続きをする",
+      "紹介状を書いてもらう",
+      "隣の大学の図書館に行く"
+    ],
+    "why": [
+      "An overdue book blocks reservations: '先にそちらを返却カウンターで返していただけますか'.",
+      "The reservation comes after the return: 'そのあとでしたら'.",
+      "She drops this. The book is back in about a week, so waiting is faster.",
+      "Same dropped plan: to 'お待ちになったほうが早いかもしれません' she answers 'じゃあ、そうします'."
+    ],
+    "cue": [
+      "先にそちらを返却カウンターで返していただけますか",
+      "期限を過ぎた本があると、予約ができない"
+    ],
+    "tell": "Listen for 先に. The overdue book has to go back before anything else can happen.",
+    "en": "A student wants to reserve a book that is out on loan, but an overdue novel blocks reservations, so she must return it first. She drops the idea of borrowing from the next-door university because the book will be back in a week."
+  },
+  {
+    "id": "l1-006",
+    "type": "l1",
+    "lv": 2,
+    "setup": "市役所で男の人と市役所の人が話しています。",
+    "q": "男の人は、もう一度来るとき、何を持ってこなければなりませんか。",
+    "lines": [
+      {
+        "sp": "F",
+        "t": "転入の届けですね。では、以前お住まいだった市の転出証明書と、ご本人確認のできるものをお願いします。"
+      },
+      {
+        "sp": "M",
+        "t": "はい、これ、運転免許証です。証明書は……あれ、ないな。家に置いてきちゃったかな。"
+      },
+      {
+        "sp": "F",
+        "t": "申し訳ありませんが、転出証明書がないと、受け付けられないんです。"
+      },
+      {
+        "sp": "M",
+        "t": "そうですか……。じゃあ、また来ます。あ、妻の分もいっしょに届けたいんですが、妻の免許証も必要ですか。"
+      },
+      {
+        "sp": "F",
+        "t": "同じ世帯でしたら、届けに来られた方の確認書類だけで大丈夫です。奥様の分はいりません。"
+      },
+      {
+        "sp": "M",
+        "t": "よかった。あと、はんこは？"
+      },
+      {
+        "sp": "F",
+        "t": "今は、はんこは必要ないんですよ。"
+      },
+      {
+        "sp": "M",
+        "t": "そうですか。じゃあ、免許証はもう見ていただいたので、次は証明書だけ持ってくればいいですね。"
+      },
+      {
+        "sp": "F",
+        "t": "いえ、恐れ入りますが、手続きの日にもう一度確認させていただきますので、免許証もお持ちください。"
+      },
+      {
+        "sp": "M",
+        "t": "わかりました。"
+      }
+    ],
+    "c": [
+      "転出証明書と自分の免許証",
+      "転出証明書だけ",
+      "転出証明書とはんこ",
+      "転出証明書と妻の免許証"
+    ],
+    "why": [
+      "He thinks the certificate alone will do, but she corrects him: '免許証もお持ちください', because ID is checked again on the day.",
+      "His own summary, rejected with 'いえ、恐れ入りますが'.",
+      "'今は、はんこは必要ないんですよ'.",
+      "Same household, so only his own ID: '奥様の分はいりません'."
+    ],
+    "cue": [
+      "免許証もお持ちください",
+      "奥様の分はいりません",
+      "はんこは必要ないんですよ"
+    ],
+    "tell": "When he sums up with だけ, wait for the reply. A polite いえ、恐れ入りますが means his summary is wrong.",
+    "en": "A man registering his move left the moving-out certificate from his old city at home, so he must come back. His wife's ID and a personal seal are not needed, but he must bring his own driving licence again with the certificate."
+  },
+  {
+    "id": "l1-007",
+    "type": "l1",
+    "lv": 2,
+    "setup": "引っ越しの準備をしながら、夫と妻が話しています。",
+    "q": "夫はこのあとまず何をしますか。",
+    "lines": [
+      {
+        "sp": "M",
+        "t": "さて、そろそろ本を箱に詰めようかな。"
+      },
+      {
+        "sp": "F",
+        "t": "あ、ちょっと待って。ガス会社への連絡……は、私が昨日しといたんだった。",
+        "say": "あ、ちょっと待って。ガス会社への連絡……は、私がきのうしといたんだった。"
+      },
+      {
+        "sp": "M",
+        "t": "ああ、ありがとう。じゃ、ネットの引っ越しの手続きは？"
+      },
+      {
+        "sp": "F",
+        "t": "それは夜、私がパソコンでやっとく。電話より簡単だから。"
+      },
+      {
+        "sp": "M",
+        "t": "了解。じゃ、やっぱり本からだな。"
+      },
+      {
+        "sp": "F",
+        "t": "うーん、それより、古いソファ。粗大ごみの申し込み、まだでしょ？"
+      },
+      {
+        "sp": "M",
+        "t": "あ、忘れてた。"
+      },
+      {
+        "sp": "F",
+        "t": "市のホームページを見たら、申し込んでから取りに来てくれるまで、一週間以上かかるんだって。引っ越し、来週の土曜でしょ。今日申し込まないと、間に合わないよ。",
+        "say": "市のホームページを見たら、申し込んでから取りに来てくれるまで、一週間以上かかるんだって。引っ越し、来週の土曜でしょ。きょう申し込まないと、間に合わないよ。"
+      },
+      {
+        "sp": "M",
+        "t": "えっ、そうなの？　じゃあ、本は後回しにして、そっちを先にやるよ。"
+      },
+      {
+        "sp": "F",
+        "t": "お願い。本は午後、二人でやろう。"
+      }
+    ],
+    "c": [
+      "ソファの回収を申し込む",
+      "本を箱に詰める",
+      "ガス会社に連絡する",
+      "ネットの手続きをする"
+    ],
+    "why": [
+      "Collection takes over a week and the move is next Saturday: '今日申し込まないと、間に合わないよ'. He answers 'そっちを先にやるよ'.",
+      "His plan, pushed to the afternoon: '本は後回しにして' and '本は午後、二人でやろう'.",
+      "Already done by his wife: '私が昨日しといたんだった'.",
+      "His wife will do it tonight on the computer: 'それは夜、私がパソコンでやっとく'."
+    ],
+    "cue": [
+      "今日申し込まないと、間に合わないよ",
+      "本は後回しにして、そっちを先にやるよ"
+    ],
+    "tell": "やっぱり本からだな sounds final, but it is not. Wait for 後回し and 先に to settle the order.",
+    "en": "A husband wants to start packing books before a move. His wife has already called the gas company and will move the internet tonight, but the old sofa's bulky-waste pickup must be booked today to be in time, so he does that first."
+  },
+  {
+    "id": "l1-008",
+    "type": "l1",
+    "lv": 1,
+    "setup": "大学のサークルの部屋で女の学生と男の学生が話しています。",
+    "q": "男の学生はパーティーの日に何を持っていかなければなりませんか。",
+    "lines": [
+      {
+        "sp": "F",
+        "t": "中川くん、土曜日の新入生歓迎会で持ってきてもらうもの、確認していい？"
+      },
+      {
+        "sp": "M",
+        "t": "うん。たしか、紙皿と紙コップと、音楽をかけるスピーカーだよね。"
+      },
+      {
+        "sp": "F",
+        "t": "そう。でもね、紙コップは、山田先輩が前のイベントで余ったのをたくさん持ってるから、持ってきてくれるって。"
+      },
+      {
+        "sp": "M",
+        "t": "そうなんだ。じゃ、紙皿とスピーカーか。"
+      },
+      {
+        "sp": "F",
+        "t": "うん。あ、でも、スピーカーは公民館で借りられるって、さっき電話で言われたの。"
+      },
+      {
+        "sp": "M",
+        "t": "よかった。あれ、重いんだよね。"
+      },
+      {
+        "sp": "F",
+        "t": "その代わり、部屋のコンセントが奥に一つしかないんだって。延長コード、持ってる？"
+      },
+      {
+        "sp": "M",
+        "t": "長いのが家にあるよ。それも持っていく。ゲームの景品はどうする？　僕、買ってこようか。"
+      },
+      {
+        "sp": "F",
+        "t": "それは会長が買ってくるから大丈夫。"
+      },
+      {
+        "sp": "M",
+        "t": "わかった。"
+      }
+    ],
+    "c": [
+      "紙皿と延長コード",
+      "紙皿と紙コップ",
+      "紙皿とスピーカー",
+      "延長コードと景品"
+    ],
+    "why": [
+      "Plates stay on his list, and he adds the extension cord: '長いのが家にあるよ。それも持っていく'.",
+      "Cups: '山田先輩が…持ってきてくれるって'.",
+      "The speaker can be borrowed at the community hall: 'スピーカーは公民館で借りられる'.",
+      "Prizes: 'それは会長が買ってくるから大丈夫'."
+    ],
+    "cue": [
+      "それも持っていく",
+      "スピーカーは公民館で借りられる",
+      "それは会長が買ってくるから大丈夫"
+    ],
+    "tell": "Keep a running list. Cross off each item someone else covers, and add the one that comes in with その代わり.",
+    "en": "A student was asked to bring plates, cups and a speaker to a welcome party. A senior will bring cups and the hall lends speakers, but the room has only one socket, so he brings plates and an extension cord; the club president buys the prizes."
+  },
+  {
+    "id": "l1-009",
+    "type": "l1",
+    "lv": 2,
+    "setup": "ホテルの部屋から女の人がフロントに電話しています。",
+    "q": "ホテルの人はこのあとまず何をしますか。",
+    "lines": [
+      {
+        "sp": "F",
+        "t": "もしもし、805号室の田中ですが、エアコンがつかないみたいなんです。",
+        "say": "もしもし、はっぴゃくごごうしつの田中ですが、エアコンがつかないみたいなんです。"
+      },
+      {
+        "sp": "M",
+        "t": "大変申し訳ございません。すぐに係の者が伺います。それとも、別のお部屋をご用意いたしましょうか。"
+      },
+      {
+        "sp": "F",
+        "t": "いえ、もう荷物を広げちゃったので、部屋はこのままでいいです。それに、これから出かけるので、修理は一時間後ぐらいにお願いできますか。"
+      },
+      {
+        "sp": "M",
+        "t": "かしこまりました。では、一時間後に伺います。"
+      },
+      {
+        "sp": "F",
+        "t": "あと、タオルが一枚足りないんですけど。"
+      },
+      {
+        "sp": "M",
+        "t": "失礼いたしました。では、修理に伺う際に、一緒にお持ちいたします。"
+      },
+      {
+        "sp": "F",
+        "t": "お願いします。それから、明日の朝七時に、タクシーを呼んでいただきたいんですが。",
+        "say": "お願いします。それから、あしたの朝しちじに、タクシーを呼んでいただきたいんですが。"
+      },
+      {
+        "sp": "M",
+        "t": "明日の朝七時ですね。朝は混み合いますので、今すぐタクシー会社に予約を入れておきます。お出かけになる前に、お部屋にご連絡いたします。",
+        "say": "あしたの朝しちじですね。朝は混み合いますので、今すぐタクシー会社に予約を入れておきます。お出かけになる前に、お部屋にご連絡いたします。"
+      },
+      {
+        "sp": "F",
+        "t": "助かります。よろしくお願いします。"
+      }
+    ],
+    "c": [
+      "タクシーを予約する",
+      "エアコンを修理しに行く",
+      "部屋にタオルを届ける",
+      "別の部屋を用意する"
+    ],
+    "why": [
+      "The taxi is booked now: '今すぐタクシー会社に予約を入れておきます', and he will call her before she goes out.",
+      "Moved back: she asks for the repair about an hour later, while she is out.",
+      "The towel comes with the repair visit an hour later: '修理に伺う際に、一緒に'.",
+      "She declines: '部屋はこのままでいいです'."
+    ],
+    "cue": [
+      "今すぐタクシー会社に予約を入れておきます",
+      "修理は一時間後ぐらいに"
+    ],
+    "tell": "The question is about the hotel worker, not the guest. Track the time he puts on each job: 一時間後, 際に, 今すぐ.",
+    "en": "A hotel guest reports a broken air conditioner but asks for the repair in an hour, while she is out, with a missing towel brought at the same time. She also wants a taxi at seven tomorrow, which the front desk books right away because mornings are busy."
+  },
+  {
+    "id": "l1-010",
+    "type": "l1",
+    "lv": 2,
+    "setup": "大学で先生と男の学生が話しています。",
+    "q": "男の学生はこのあとまず何をしますか。",
+    "lines": [
+      {
+        "sp": "M",
+        "t": "先生、先日お送りしたレポートの下書き、読んでいただけましたか。"
+      },
+      {
+        "sp": "F",
+        "t": "ええ、読みましたよ。全体の流れはいいと思います。ただ、少し長いですね。四千字以内という約束でしょう。",
+        "say": "ええ、読みましたよ。全体の流れはいいと思います。ただ、少し長いですね。よんせんじ以内という約束でしょう。"
+      },
+      {
+        "sp": "M",
+        "t": "はい、すみません。じゃあ、まず字数を減らします。"
+      },
+      {
+        "sp": "F",
+        "t": "うーん、それは最後でいいですよ。それより気になったのは、使っているデータ。これ、五年前の調査ですよね。"
+      },
+      {
+        "sp": "M",
+        "t": "あ、はい。図書館の本から取ったんですけど。"
+      },
+      {
+        "sp": "F",
+        "t": "去年、新しい調査結果が出ているんです。数字がかなり変わっているので、そちらに差し替えないと。そうすると、考察も書き直すことになるかもしれませんね。"
+      },
+      {
+        "sp": "M",
+        "t": "わかりました。じゃあ、図書館でその新しい本を探して……"
+      },
+      {
+        "sp": "F",
+        "t": "本にはまだなっていないと思いますよ。省庁のホームページに載っているので、すぐ見られます。"
+      },
+      {
+        "sp": "M",
+        "t": "そうですか。あの、参考文献のリストもまだつけていないんですが。"
+      },
+      {
+        "sp": "F",
+        "t": "それは提出のときでいいです。まずは数字ですね。"
+      },
+      {
+        "sp": "M",
+        "t": "はい。じゃあ、さっそく調べてみます。"
+      }
+    ],
+    "c": [
+      "新しい調査のデータを調べる",
+      "レポートの字数を減らす",
+      "考察の部分を書き直す",
+      "図書館で新しい本を探す"
+    ],
+    "why": [
+      "The professor ends with 'まずは数字ですね': first find last year's survey figures, which are on a ministry website.",
+      "'それは最後でいいですよ': cutting the length comes last.",
+      "Rewriting the discussion depends on the new numbers, so it comes after them.",
+      "The new data is not in a book yet: '省庁のホームページに載っている'."
+    ],
+    "cue": [
+      "まずは数字ですね",
+      "それは最後でいいですよ"
+    ],
+    "tell": "The student says まず and is corrected. Trust the professor's まずは at the end, not his.",
+    "en": "A student plans to start by shortening his over-long report draft. The professor says length comes last; first he must replace five-year-old survey data with last year's figures from a ministry website, and then perhaps rewrite his discussion."
+  },
+  {
+    "id": "l1-011",
+    "type": "l1",
+    "lv": 1,
+    "setup": "女の人と店の人が電話で話しています。",
+    "q": "女の人は店に何を持っていかなければなりませんか。",
+    "lines": [
+      {
+        "sp": "F",
+        "t": "もしもし、おととい、そちらで電気ケトルを買ったんですけど、お湯が沸かないんです。"
+      },
+      {
+        "sp": "M",
+        "t": "大変申し訳ございません。お買い上げから一週間以内でしたら、新しい物とお取り替えいたします。商品とレシートをお持ちいただけますか。"
+      },
+      {
+        "sp": "F",
+        "t": "あの、レシートなんですけど、捨てちゃったみたいで……。"
+      },
+      {
+        "sp": "M",
+        "t": "さようでございますか。お支払いはクレジットカードでしたか。"
+      },
+      {
+        "sp": "F",
+        "t": "はい、そうです。"
+      },
+      {
+        "sp": "M",
+        "t": "でしたら、そのカードをお持ちいただければ、こちらで購入の記録をお調べできます。"
+      },
+      {
+        "sp": "F",
+        "t": "よかった。あと、箱もいりますか。もう、つぶしちゃったんですけど。"
+      },
+      {
+        "sp": "M",
+        "t": "箱はなくても大丈夫です。"
+      },
+      {
+        "sp": "F",
+        "t": "保証書は？"
+      },
+      {
+        "sp": "M",
+        "t": "一週間以内のお取り替えでしたら、保証書も必要ございません。"
+      },
+      {
+        "sp": "F",
+        "t": "わかりました。じゃあ、明日の午後、伺います。",
+        "say": "わかりました。じゃあ、あしたの午後、伺います。"
+      }
+    ],
+    "c": [
+      "ケトルとクレジットカード",
+      "ケトルとレシート",
+      "ケトルと箱",
+      "ケトルと保証書"
+    ],
+    "why": [
+      "The receipt is gone, so 'そのカードをお持ちいただければ' the shop can look up the purchase.",
+      "She threw the receipt away. The card takes its place.",
+      "'箱はなくても大丈夫です'.",
+      "Within a week, '保証書も必要ございません'."
+    ],
+    "cue": [
+      "そのカードをお持ちいただければ",
+      "箱はなくても大丈夫です"
+    ],
+    "tell": "The shop's first list changes when she says the receipt is gone. Listen for what replaces it.",
+    "en": "A woman calls a shop because the electric kettle she bought two days ago does not work. She threw away the receipt, so she must bring the kettle and the credit card she paid with; the box and the guarantee are not needed."
+  },
+  {
+    "id": "l1-012",
+    "type": "l1",
+    "lv": 2,
+    "setup": "スポーツクラブの受付で男の人と受付の人が話しています。",
+    "q": "男の人は今日いくら払いますか。",
+    "lines": [
+      {
+        "sp": "F",
+        "t": "会員の種類は二つございまして、いつでもご利用いただけるレギュラー会員が月8,000円、平日の夜7時以降だけご利用いただけるナイト会員が月5,000円です。",
+        "say": "会員の種類は二つございまして、いつでもご利用いただけるレギュラー会員がつきはっせんえん、平日の夜しちじ以降だけご利用いただけるナイト会員がつきごせんえんです。"
+      },
+      {
+        "sp": "M",
+        "t": "平日は仕事のあとしか来られないから、ナイトでいいかな。あ、でも土日も来たいんですよね。",
+        "say": "平日は仕事のあとしか来られないから、ナイトでいいかな。あ、でもどにちも来たいんですよね。"
+      },
+      {
+        "sp": "F",
+        "t": "申し訳ございません。ナイト会員の方は、土日はご利用いただけないんです。",
+        "say": "申し訳ございません。ナイト会員の方は、どにちはご利用いただけないんです。"
+      },
+      {
+        "sp": "M",
+        "t": "そうか。じゃあ、レギュラーにします。"
+      },
+      {
+        "sp": "F",
+        "t": "かしこまりました。入会金は通常5,000円なんですが、今月はキャンペーン中で、いただいておりません。",
+        "say": "かしこまりました。入会金は通常ごせんえんなんですが、今月はキャンペーン中で、いただいておりません。"
+      },
+      {
+        "sp": "M",
+        "t": "あ、それはよかった。"
+      },
+      {
+        "sp": "F",
+        "t": "では、今日は今月分の会費をお支払いください。それから、ロッカーをお借りになる場合は、別に月500円かかりますが。",
+        "say": "では、きょうは今月分の会費をお支払いください。それから、ロッカーをお借りになる場合は、別につきごひゃくえんかかりますが。"
+      },
+      {
+        "sp": "M",
+        "t": "うーん、家が近いので、ロッカーはいいです。"
+      },
+      {
+        "sp": "F",
+        "t": "かしこまりました。あと、初めての方には、タオルのセットを1,000円でご用意していますが、いかがですか。",
+        "say": "かしこまりました。あと、初めての方には、タオルのセットをせんえんでご用意していますが、いかがですか。"
+      },
+      {
+        "sp": "M",
+        "t": "タオルは自分のを持ってくるので、結構です。"
+      }
+    ],
+    "c": [
+      "8,000円",
+      "5,000円",
+      "13,000円",
+      "8,500円"
+    ],
+    "why": [
+      "He wants weekends too, so 'レギュラーにします' at 8,000円 a month. The joining fee is waived this month, and he turns down the locker and the towels.",
+      "The night plan, ruled out: 'ナイト会員の方は、土日はご利用いただけない'.",
+      "Adds the 5,000円 joining fee, which is waived: 'いただいておりません'.",
+      "Adds the 500円 locker, which he turns down: 'ロッカーはいいです'."
+    ],
+    "cue": [
+      "じゃあ、レギュラーにします",
+      "今月はキャンペーン中で、いただいておりません",
+      "ロッカーはいいです"
+    ],
+    "tell": "Keep one running total in your head. Add only what he says yes to, and drop each fee that is waived or refused.",
+    "en": "A man joining a gym picks the anytime plan at 8,000 yen a month, because the cheaper night plan excludes weekends. The 5,000 yen joining fee is waived this month and he turns down the locker and towels, so he pays 8,000 yen today."
+  },
+  {
+    "id": "l1-013",
+    "type": "l1",
+    "lv": 2,
+    "setup": "旅行会社で女の人と店の人が話しています。",
+    "q": "女の人は全部でいくら払いますか。",
+    "lines": [
+      {
+        "sp": "F",
+        "t": "すみません、この北海道の二泊三日のツアーに、母と二人で申し込みたいんですが。",
+        "say": "すみません、この北海道のにはくみっかのツアーに、母と二人で申し込みたいんですが。"
+      },
+      {
+        "sp": "M",
+        "t": "ありがとうございます。こちらはお一人様45,000円になります。ご出発はいつがよろしいですか。",
+        "say": "ありがとうございます。こちらはおひとりさまよんまんごせんえんになります。ご出発はいつがよろしいですか。"
+      },
+      {
+        "sp": "F",
+        "t": "来月の十日です。",
+        "say": "来月のとおかです。"
+      },
+      {
+        "sp": "M",
+        "t": "来月十日ですね。三十日前までにお申し込みいただくと、お一人様3,000円引きになる早割があるんですが、来月十日ですと、もう過ぎてしまっていますね。",
+        "say": "来月とおかですね。さんじゅうにちまえまでにお申し込みいただくと、おひとりさまさんぜんえん引きになるはやわりがあるんですが、来月とおかですと、もう過ぎてしまっていますね。"
+      },
+      {
+        "sp": "F",
+        "t": "あ、そうなんですか。残念。"
+      },
+      {
+        "sp": "M",
+        "t": "あ、ちなみに、お母様は65歳以上でいらっしゃいますか。",
+        "say": "あ、ちなみに、お母様はろくじゅうごさい以上でいらっしゃいますか。"
+      },
+      {
+        "sp": "F",
+        "t": "はい、今年70になりました。",
+        "say": "はい、ことしななじゅうになりました。"
+      },
+      {
+        "sp": "M",
+        "t": "でしたら、シニア割引で、お母様の分が5,000円お安くなります。",
+        "say": "でしたら、シニア割引で、お母様の分がごせんえんお安くなります。"
+      },
+      {
+        "sp": "F",
+        "t": "よかった。"
+      },
+      {
+        "sp": "M",
+        "t": "それから、旅行保険はいかがなさいますか。お一人様1,500円ですが。",
+        "say": "それから、旅行保険はいかがなさいますか。おひとりさませんごひゃくえんですが。"
+      },
+      {
+        "sp": "F",
+        "t": "うーん、クレジットカードに保険がついているので、それは結構です。"
+      }
+    ],
+    "c": [
+      "85,000円",
+      "79,000円",
+      "90,000円",
+      "88,000円"
+    ],
+    "why": [
+      "Two people at 45,000円 is 90,000円. Only the mother's senior discount applies: 'お母様の分が5,000円お安くなります', so 85,000円.",
+      "Also takes off the early-booking 3,000円 each, but that deadline has gone: 'もう過ぎてしまっていますね'.",
+      "Forgets the senior discount for her mother, who is 70.",
+      "Adds insurance for two (3,000円), which she declines: 'それは結構です'."
+    ],
+    "cue": [
+      "もう過ぎてしまっていますね",
+      "お母様の分が5,000円お安くなります",
+      "それは結構です"
+    ],
+    "tell": "Two discounts are offered, but only one applies. Hold the total for two, then take off only what is confirmed.",
+    "en": "A woman books a 45,000 yen per person tour for herself and her mother. The early-booking discount has passed, her mother gets 5,000 yen off as a senior, and she declines travel insurance, so the total is 85,000 yen."
+  },
+  {
+    "id": "l1-014",
+    "type": "l1",
+    "lv": 1,
+    "setup": "小学校で先生と母親が話しています。",
+    "q": "母親はこのあと何をしますか。",
+    "lines": [
+      {
+        "sp": "M",
+        "t": "お母さん、今日はお忙しいところ、ありがとうございました。あと、いくつか事務的なことなんですが。",
+        "say": "お母さん、きょうはお忙しいところ、ありがとうございました。あと、いくつか事務的なことなんですが。"
+      },
+      {
+        "sp": "F",
+        "t": "はい。"
+      },
+      {
+        "sp": "M",
+        "t": "緊急連絡先のお電話番号が変わったと伺ったんですが……"
+      },
+      {
+        "sp": "F",
+        "t": "ええ、それは先週、連絡帳に書いてお知らせしたんですけど。"
+      },
+      {
+        "sp": "M",
+        "t": "あ、そうでした。こちらで直しておきます。それから、運動会のお手伝いの件は、いかがでしょうか。"
+      },
+      {
+        "sp": "F",
+        "t": "すみません、その日はどうしても仕事が休めなくて。"
+      },
+      {
+        "sp": "M",
+        "t": "いえいえ、大丈夫ですよ。あと、事務室から伝言で、先月分の給食費が口座から引き落とせなかったそうなんです。"
+      },
+      {
+        "sp": "F",
+        "t": "えっ、本当ですか。口座を変えたからかな……。"
+      },
+      {
+        "sp": "M",
+        "t": "お手数ですが、お帰りの前に、一階の事務室で払っていただけますか。"
+      },
+      {
+        "sp": "F",
+        "t": "わかりました。あ、それと、ゆうたの体操服が教室に置きっぱなしだと思うんですが、取りに行ってもいいですか。"
+      },
+      {
+        "sp": "M",
+        "t": "それなら、帰りにゆうたくんに持って帰らせますよ。"
+      },
+      {
+        "sp": "F",
+        "t": "そうですか。じゃあ、よろしくお願いします。"
+      }
+    ],
+    "c": [
+      "事務室で給食費を払う",
+      "連絡先の電話番号を書き直す",
+      "運動会の手伝いを申し込む",
+      "教室に体操服を取りに行く"
+    ],
+    "why": [
+      "The lunch fee did not go through: 'お帰りの前に、一階の事務室で払っていただけますか'.",
+      "She already wrote it in the contact book, and the teacher will fix it: 'こちらで直しておきます'.",
+      "She cannot take that day off work, so she does not help.",
+      "Her son will bring them home: 'ゆうたくんに持って帰らせますよ'."
+    ],
+    "cue": [
+      "一階の事務室で払っていただけますか",
+      "こちらで直しておきます",
+      "ゆうたくんに持って帰らせますよ"
+    ],
+    "tell": "Three items are settled by someone else or turned down. The one left for her comes with お手数ですが, a polite request.",
+    "en": "After a meeting, a teacher goes over some admin with a mother. The school already has her new number, she cannot help at sports day and her son will bring his gym clothes home, but last month's lunch fee failed, so she pays it at the office before leaving."
+  },
+  {
+    "id": "l1-015",
+    "type": "l1",
+    "lv": 2,
+    "setup": "会社で男の人と女の人が忘年会の準備について話しています。",
+    "q": "男の人はこのあとまずどこに行きますか。",
+    "lines": [
+      {
+        "sp": "M",
+        "t": "忘年会の件だけど、今からお店に下見に行ってこようと思うんだ。"
+      },
+      {
+        "sp": "F",
+        "t": "あ、あのお店、水曜日は定休日じゃなかった？"
+      },
+      {
+        "sp": "M",
+        "t": "え、そうだっけ。……あ、本当だ。じゃあ、下見は明日にするか。",
+        "say": "え、そうだっけ。……あ、本当だ。じゃあ、下見はあしたにするか。"
+      },
+      {
+        "sp": "F",
+        "t": "うん。それより、予算の申請書、もう総務部に出した？　今日の五時までだよ。",
+        "say": "うん。それより、予算の申請書、もう総務部に出した？　きょうの五時までだよ。"
+      },
+      {
+        "sp": "M",
+        "t": "あ、書いただけで、まだ出してない。三階の総務部だよね。"
+      },
+      {
+        "sp": "F",
+        "t": "そう。今、四時半だから、急いだほうがいいよ。",
+        "say": "そう。今、よじはんだから、急いだほうがいいよ。"
+      },
+      {
+        "sp": "M",
+        "t": "そうだね。そのあと、部長に乾杯のあいさつをお願いしに行かないと。"
+      },
+      {
+        "sp": "F",
+        "t": "それなら、さっき廊下で会ったから、お願いしておいたよ。"
+      },
+      {
+        "sp": "M",
+        "t": "助かる。じゃ、景品は帰りに駅前のデパートで見てくるよ。"
+      },
+      {
+        "sp": "F",
+        "t": "景品はネットで頼んだほうが安いよ。あとで一緒に選ぼう。"
+      },
+      {
+        "sp": "M",
+        "t": "わかった。じゃ、行ってくる。"
+      }
+    ],
+    "c": [
+      "三階の総務部",
+      "忘年会の店",
+      "部長のところ",
+      "駅前のデパート"
+    ],
+    "why": [
+      "The budget form is due at five and it is half past four: '急いだほうがいいよ'. He names the place himself: '三階の総務部だよね'.",
+      "The restaurant is closed on Wednesdays, so the visit moves to tomorrow: '下見は明日にするか'.",
+      "She has already asked the department head: 'お願いしておいたよ'.",
+      "They will order prizes online together later: 'ネットで頼んだほうが安いよ'."
+    ],
+    "cue": [
+      "今日の五時までだよ",
+      "下見は明日にするか",
+      "お願いしておいたよ"
+    ],
+    "tell": "Four places are named. Cross each off as it closes, is done, or moves online; the deadline picks the first stop.",
+    "en": "A man organising the year-end party wants to visit the restaurant, but it is closed on Wednesdays. His colleague has already asked the department head to give the toast and suggests ordering prizes online, so he hurries to the third-floor office to hand in the budget form before five."
+  }
+]

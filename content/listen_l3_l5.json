@@ -1,0 +1,694 @@
+[
+  {
+    "id": "l3-001",
+    "type": "l3",
+    "setup": "ラジオで医者が話しています。",
+    "lines": [
+      { "sp": "F", "t": "昼寝というと、怠けているようなイメージを持つ人も多いかもしれません。でも実は、午後の短い昼寝には、集中力を回復させる効果があることがわかっているんです。ただし、どう寝るかがとても大事なんですね。" },
+      { "sp": "F", "t": "まず長さですが、15分から20分ぐらいがちょうどいいんです。30分以上寝てしまうと、深い眠りに入ってしまって、起きたあと、かえって頭がぼんやりします。それから時間帯。夕方に寝ると、夜眠れなくなる原因になりますから、午後3時までに済ませてください。横にならなくても、いすに座ったまま目を閉じるだけで十分です。", "say": "まず長さですが、じゅうごふんからにじっぷんぐらいがちょうどいいんです。さんじゅっぷん以上寝てしまうと、深い眠りに入ってしまって、起きたあと、かえって頭がぼんやりします。それから時間帯。夕方に寝ると、夜眠れなくなる原因になりますから、午後さんじまでに済ませてください。横にならなくても、いすに座ったまま目を閉じるだけで十分です。" },
+      { "sp": "F", "t": "つまり、短く、そして早めに。これが、昼寝を上手に生活に取り入れるコツなんです。" }
+    ],
+    "q": "医者は何について話していますか。",
+    "c": ["効果的な昼寝のとり方", "夜に眠れなくなる原因", "昼寝が体によくない理由", "ぐっすり深く眠るための工夫"],
+    "why": [
+      "The whole talk is how to nap: how long, when, in what position. It ends 「短く、そして早めに。これが、昼寝を上手に生活に取り入れるコツなんです」.",
+      "A late nap is given as one cause of poor night sleep. That is a single detail, not the topic.",
+      "The opposite. She says a short nap 「集中力を回復させる効果がある」.",
+      "Opposite advice. Deep sleep is what to avoid: after 30 minutes you fall into 「深い眠り」 and wake up groggy."
+    ],
+    "cue": ["つまり、短く、そして早めに", "どう寝るかがとても大事なんですね"],
+    "tell": "A talk that gives rules (how long, when, how) is about a method. Wait for つまり to hear the summary.",
+    "en": "A doctor on the radio says short naps help concentration, but only if they are under about 20 minutes and taken before 3 p.m.",
+    "lv": 1
+  },
+  {
+    "id": "l3-002",
+    "type": "l3",
+    "setup": "スーパーで、店長が店員に話しています。",
+    "lines": [
+      { "sp": "M", "t": "みなさん、おはようございます。来週の月曜日から、レジのうち3台がセルフレジに変わります。お客様がご自分で商品を読み取って、お支払いまでする機械ですね。", "say": "みなさん、おはようございます。来週の月曜日から、レジのうちさんだいがセルフレジに変わります。お客様がご自分で商品を読み取って、お支払いまでする機械ですね。" },
+      { "sp": "M", "t": "これで仕事が減って楽になる、と思っている人もいるかもしれません。でも、そうではないんです。最初のうちは、使い方がわからなくて困るお客様が必ず出てきます。特にご年配のお客様は、機械の前で迷われることが多いと思います。" },
+      { "sp": "M", "t": "ですから、みなさんには、レジに立つかわりに、セルフレジの近くにいて、困っている様子のお客様に、自分から声をかけてほしいんです。お客様に呼ばれるのを待つのではなく、こちらから行く。これからは、それがみなさんの一番大事な仕事になる、というわけです。" }
+    ],
+    "q": "店長は何について話していますか。",
+    "c": ["セルフレジが入ったあとの店員の仕事", "セルフレジの正しい使い方", "レジの仕事が楽になる理由", "年配のお客様への言葉づかい"],
+    "why": [
+      "He explains what staff must do once the self-checkouts arrive: 「それがみなさんの一番大事な仕事になる、というわけです」.",
+      "He mentions customers who cannot use the machines, but never explains how to use them.",
+      "The opposite. To the idea that work gets easier he says 「そうではないんです」.",
+      "Older customers are one example of who needs help. How to speak to them is not discussed."
+    ],
+    "cue": ["それがみなさんの一番大事な仕事になる、というわけです", "自分から声をかけてほしいんです"],
+    "tell": "A boss sets up a wrong idea (楽になる), knocks it down with でも、そうではないんです, and the point follows.",
+    "en": "A supermarket manager tells staff that self-checkouts will not make their work easier. Their new main job is to go to customers who look stuck.",
+    "lv": 1
+  },
+  {
+    "id": "l3-003",
+    "type": "l3",
+    "setup": "大学で先生が話しています。",
+    "lines": [
+      { "sp": "M", "t": "研究の世界では、うまくいった実験は論文として発表されますが、うまくいかなかった実験の結果は、ほとんどの場合、どこにも残りません。失敗は恥ずかしいものだと考えられがちですし、発表しても評価されにくいからです。" },
+      { "sp": "M", "t": "しかし、そうすると何が起きるでしょうか。別の研究者が、同じ方法で同じ実験をして、また失敗するんです。そのたびに、時間もお金も無駄になってしまいます。分野によっては、こうした『見えない失敗』が、研究全体の進歩を遅らせているという指摘もあります。" },
+      { "sp": "M", "t": "失敗した結果も、きちんと記録して、ほかの人が見られるようにしておく。それは、成功を発表するのと同じぐらい、研究を前に進める力になるんじゃないでしょうか。" }
+    ],
+    "q": "先生の話のテーマは何ですか。",
+    "c": ["失敗した実験の結果を共有する意味", "実験が失敗してしまう原因", "研究にかかる費用の問題", "論文が評価されるための条件"],
+    "why": [
+      "The lecture builds to one claim, that recording and sharing failures moves research forward: 「失敗した結果も、きちんと記録して、ほかの人が見られるようにしておく」.",
+      "He never says why experiments fail. He talks about what happens to the results afterwards.",
+      "Wasted money is one consequence he mentions, 「時間もお金も無駄に」, not the theme.",
+      "He only says failures are hard to get credit for. What makes a paper well rated is not discussed."
+    ],
+    "cue": ["失敗した結果も、きちんと記録して、ほかの人が見られるようにしておく", "研究を前に進める力になるんじゃないでしょうか"],
+    "tell": "Lectures run problem, consequence, proposal. The theme is the proposal at the end, softened with んじゃないでしょうか.",
+    "en": "A professor says failed experiments are rarely published, so other researchers repeat them. He argues that sharing failures helps research as much as publishing successes.",
+    "lv": 2
+  },
+  {
+    "id": "l3-004",
+    "type": "l3",
+    "setup": "会社の表彰式で、賞をもらった女の人が話しています。",
+    "lines": [
+      { "sp": "F", "t": "このたびは、このような賞をいただき、本当にありがとうございます。新しい冷蔵庫の開発では、発売の直前に、大きな問題が見つかりました。実は、それに最初に気づいたのは、入社1年目の佐藤さんでした。", "say": "このたびは、このような賞をいただき、本当にありがとうございます。新しい冷蔵庫の開発では、発売の直前に、大きな問題が見つかりました。実は、それに最初に気づいたのは、入社いちねんめの佐藤さんでした。" },
+      { "sp": "F", "t": "佐藤さんは、『私の勘違いかもしれないんですけど』と言いながら、データのおかしな点を教えてくれました。もし彼女が黙っていたら、問題は発売後に見つかって、もっと大きな損害が出ていたと思います。" },
+      { "sp": "F", "t": "この経験から私が学んだのは、どんなに小さなことでも、気づいた人が、立場に関係なく口に出せる。そういうチームであることが、何よりも大切だということです。この賞は、チームのみんなでいただいたものだと思っています。" }
+    ],
+    "q": "女の人は何について話していますか。",
+    "c": ["誰でも意見を言えるチームの大切さ", "新しい冷蔵庫を開発した苦労", "若い社員を育てるときの注意点", "発売後に見つかった問題への対応"],
+    "why": [
+      "Her lesson: 「立場に関係なく口に出せる。そういうチームであることが、何よりも大切だ」.",
+      "The fridge project is the story she uses as an example. The hardships of development are not her point.",
+      "Sato is a new employee, but the speech is not about how to train young staff.",
+      "A misheard detail. The problem was found before release. It would have come out after release only 「もし彼女が黙っていたら」."
+    ],
+    "cue": ["私が学んだのは", "立場に関係なく口に出せる"],
+    "tell": "In a speech, 私が学んだのは…ということです marks the message. The story before it is only the example.",
+    "en": "An award winner says a first-year employee spotted a serious fault just before launch. Her lesson is that a team must let anyone speak up, whatever their position.",
+    "lv": 2
+  },
+  {
+    "id": "l3-005",
+    "type": "l3",
+    "setup": "留守番電話のメッセージを聞いています。",
+    "lines": [
+      { "sp": "M", "t": "もしもし、山田商事の木村です。いつもお世話になっております。明日の打ち合わせの件で、お電話しました。", "say": "もしもし、山田商事の木村です。いつもお世話になっております。あしたの打ち合わせの件で、お電話しました。" },
+      { "sp": "M", "t": "場所は御社の会議室で、資料はこちらで20部用意して持っていく、ということで変わりはないんですが、実は、うちの部長も出席することになりまして。ただ、部長は午前中に別の会議が入っておりまして、10時からですと、どうしても間に合わないんです。", "say": "場所は御社の会議室で、資料はこちらでにじゅうぶ用意して持っていく、ということで変わりはないんですが、実は、うちの部長も出席することになりまして。ただ、部長は午前中に別の会議が入っておりまして、じゅうじからですと、どうしても間に合わないんです。" },
+      { "sp": "M", "t": "それで、大変申し訳ないんですが、始まる時間を、午後1時以降に変えていただくことはできないでしょうか。お手数ですが、お返事をいただけますと助かります。どうぞよろしくお願いいたします。", "say": "それで、大変申し訳ないんですが、始まる時間を、午後いちじ以降に変えていただくことはできないでしょうか。お手数ですが、お返事をいただけますと助かります。どうぞよろしくお願いいたします。" }
+    ],
+    "q": "男の人は何について話していますか。",
+    "c": ["打ち合わせの時間を変えたいこと", "打ち合わせの場所を変えたいこと", "持っていく資料の数のこと", "打ち合わせを中止したいこと"],
+    "why": [
+      "He asks to move the start: 「始まる時間を、午後1時以降に変えていただくことはできないでしょうか」.",
+      "The place stays the same: 「場所は御社の会議室で…変わりはない」.",
+      "He mentions the 20 copies only to say that part has not changed.",
+      "The meeting goes ahead. His boss now wants to attend, which is why the time has to change."
+    ],
+    "cue": ["始まる時間を、午後1時以降に変えていただくことはできないでしょうか", "変わりはないんですが"],
+    "tell": "In a phone message, things that 変わりはない are background. The request comes last: …ていただくことはできないでしょうか.",
+    "en": "A client leaves a voicemail. The place and materials stay the same, but his boss will now attend and cannot make 10 a.m., so he asks to start after 1 p.m.",
+    "lv": 1
+  },
+  {
+    "id": "l3-006",
+    "type": "l3",
+    "setup": "テレビで専門家が話しています。",
+    "lines": [
+      { "sp": "F", "t": "地方では、住む人のいない空き家が年々増えています。ある町では、こうした空き家を安い家賃で若い人に貸す取り組みを始めました。家賃は月に1万円。その結果、5年で40人ほどが町に移り住んだそうです。", "say": "地方では、住む人のいない空き家が年々増えています。ある町では、こうした空き家を安い家賃で若い人に貸す取り組みを始めました。家賃は月にいちまんえん。その結果、ごねんでよんじゅうにんほどが町に移り住んだそうです。" },
+      { "sp": "F", "t": "ただ、私が印象的だと思ったのは、町の担当者の『家を埋めることが目的ではない』という言葉です。移ってきた人が、お祭りの準備を手伝ったり、地元のお年寄りと一緒に畑を耕したりする。そうやって町に関わる人が増えなければ、空き家がいくら埋まっても、町は元気にならない、というんですね。" },
+      { "sp": "F", "t": "つまり、空き家の問題は、家の問題というより、町に関わる人をどう増やすかという問題なのではないでしょうか。" }
+    ],
+    "q": "専門家は空き家の問題についてどう考えていますか。",
+    "c": ["町に関わる人を増やすことが大切だ", "家賃をもっと安くするべきだ", "空き家に住む人が増えれば解決する", "若い人を町に呼ぶのは難しい"],
+    "why": [
+      "Her conclusion: 「家の問題というより、町に関わる人をどう増やすかという問題なのではないでしょうか」.",
+      "The rent of 10,000 yen is a detail of one town's scheme. She never says it should be lower.",
+      "The view she rejects. Filling houses is 「目的ではない」, and the town does not recover 「空き家がいくら埋まっても」.",
+      "The opposite of her example: about 40 people moved there in five years."
+    ],
+    "cue": ["家の問題というより、町に関わる人をどう増やすかという問題", "家を埋めることが目的ではない"],
+    "tell": "AというよりB: the speaker swaps the obvious frame (A) for her own (B). B is her view.",
+    "en": "An expert describes a town that rents empty houses cheaply to young people. She argues the real issue is not empty houses but getting more people involved in the town.",
+    "lv": 2
+  },
+  {
+    "id": "l3-007",
+    "type": "l3",
+    "setup": "市民講座で、講師が話しています。",
+    "lines": [
+      { "sp": "M", "t": "部屋を片付けようと思ったとき、多くの人が最初にすることは何でしょう。そう、収納用の箱や棚を買いに行くんです。でも実は、これが失敗のもとなんですね。" },
+      { "sp": "M", "t": "物が多いまま収納だけを増やすと、しばらくはきれいに見えます。でも、どこに何を入れたか忘れてしまって、同じ物をまた買ってしまう。結局、物はどんどん増えていくんです。" },
+      { "sp": "M", "t": "ですから、最初にやるべきなのは、物を減らすことです。1年間使わなかった物は、思い切って手放す。そのあとで、残った物の量に合わせて、必要な分だけ収納を用意する。この順番を守るだけで、部屋はずいぶん片付けやすくなりますよ。", "say": "ですから、最初にやるべきなのは、物を減らすことです。いちねんかん使わなかった物は、思い切って手放す。そのあとで、残った物の量に合わせて、必要な分だけ収納を用意する。この順番を守るだけで、部屋はずいぶん片付けやすくなりますよ。" }
+    ],
+    "q": "講師は何について話していますか。",
+    "c": ["片付けをするときの正しい順番", "便利な収納用品の選び方", "同じ物を何度も買ってしまう理由", "物を捨てられない人の特徴"],
+    "why": [
+      "He gives an order, reduce first and then buy storage: 「この順番を守るだけで、部屋はずいぶん片付けやすくなります」.",
+      "He calls buying storage first 「失敗のもと」. He gives no advice on choosing it.",
+      "Buying the same thing twice is one result of the wrong order, a detail.",
+      "He tells people to let things go, but never describes people who cannot."
+    ],
+    "cue": ["最初にやるべきなのは、物を減らすことです", "この順番を守るだけで"],
+    "tell": "Listen for the one word that sums up the advice. Here it is 順番: first this, then that.",
+    "en": "A lecturer says people buy storage boxes before tidying, which only adds clutter. The right order is to get rid of things first, then buy only the storage you need.",
+    "lv": 1
+  },
+  {
+    "id": "l3-008",
+    "type": "l3",
+    "setup": "ラジオで心理学者が話しています。",
+    "lines": [
+      { "sp": "F", "t": "電車を待つ5分、レジに並ぶ2分。最近は、そんなちょっとした時間にも、ついスマートフォンを見てしまいますよね。私たちは、退屈な時間をできるだけなくそうとしているんです。", "say": "電車を待つごふん、レジに並ぶにふん。最近は、そんなちょっとした時間にも、ついスマートフォンを見てしまいますよね。私たちは、退屈な時間をできるだけなくそうとしているんです。" },
+      { "sp": "F", "t": "でも、退屈というのは、実はとても大事な状態なんです。外からの刺激がなくなると、頭の中では、ばらばらだった記憶や考えが自由に結びつき始めます。お風呂に入っているときや散歩の途中で、急にいいアイデアが浮かんだという経験はありませんか。あれはまさに、何もしていない時間に生まれているんです。" },
+      { "sp": "F", "t": "スマートフォンをやめましょう、とまでは言いません。ただ、一日に少しでも、何もしない時間をわざと作ってみる。それは決して時間の無駄ではない、ということです。", "say": "スマートフォンをやめましょう、とまでは言いません。ただ、いちにちに少しでも、何もしない時間をわざと作ってみる。それは決して時間の無駄ではない、ということです。" }
+    ],
+    "q": "心理学者は退屈な時間についてどう考えていますか。",
+    "c": ["何もしない時間にも価値がある", "スマートフォンは使うべきではない", "できるだけ短くしたほうがいい", "人と話す時間に変えたほうがいい"],
+    "why": [
+      "She ends 「それは決して時間の無駄ではない」: time doing nothing is when ideas form.",
+      "Too strong. She says 「スマートフォンをやめましょう、とまでは言いません」.",
+      "That is what people do now, 「できるだけなくそうとしている」, and she argues against it.",
+      "Never suggested. Her examples, a bath and a walk, are times alone."
+    ],
+    "cue": ["決して時間の無駄ではない", "とまでは言いません"],
+    "tell": "〜とまでは言いません。ただ… : the speaker limits her claim. Her real view comes after ただ.",
+    "en": "A psychologist says we fill every spare moment with our phones. She argues that boredom lets ideas form, so a little time doing nothing each day is not wasted.",
+    "lv": 2
+  },
+  {
+    "id": "l3-009",
+    "type": "l3",
+    "setup": "新しい図書館の開館式で、館長が話しています。",
+    "lines": [
+      { "sp": "M", "t": "本日は、市立中央図書館の開館式にお集まりいただき、誠にありがとうございます。" },
+      { "sp": "M", "t": "図書館というと、静かに本を読む場所、というイメージが強いかと思います。もちろん、その役割はこれからも大切にしてまいります。ですが、この新しい図書館では、それに加えて、人と人が出会う場所になることを目指しました。" },
+      { "sp": "M", "t": "1階には、話をしながら勉強できるスペースや、地域のサークルが自由に使える部屋を作りました。子どもたちが絵本の読み聞かせを聞いている横で、お年寄りが囲碁を楽しんでいる。そんな風景が見られたら、うれしいですね。", "say": "いっかいには、話をしながら勉強できるスペースや、地域のサークルが自由に使える部屋を作りました。子どもたちが絵本の読み聞かせを聞いている横で、お年寄りが囲碁を楽しんでいる。そんな風景が見られたら、うれしいですね。" },
+      { "sp": "M", "t": "本を借りに来る場所から、人が集まってくる場所へ。それが、この図書館の新しい姿です。どうぞ気軽に足を運んでください。" }
+    ],
+    "q": "館長は何について話していますか。",
+    "c": ["新しい図書館が目指していること", "図書館で本を借りる方法", "図書館で静かに過ごす大切さ", "地域のサークルの活動内容"],
+    "why": [
+      "He states the aim: 「人と人が出会う場所になることを目指しました」, summed up as 「この図書館の新しい姿」.",
+      "Borrowing books comes up only as the old image: 「本を借りに来る場所から」.",
+      "Quiet reading is the usual image he moves beyond. He keeps that role, but it is not his point.",
+      "Club rooms are one feature of the building. What the clubs do is not described."
+    ],
+    "cue": ["人と人が出会う場所になることを目指しました", "それが、この図書館の新しい姿です"],
+    "tell": "AからBへ。それが…です : the speaker names a change. B is the theme.",
+    "en": "At the opening of a new library, the director says it aims to be a place where people meet, not only a quiet place to borrow books.",
+    "lv": 1
+  },
+  {
+    "id": "l3-010",
+    "type": "l3",
+    "setup": "テレビで経済の専門家が話しています。",
+    "lines": [
+      { "sp": "F", "t": "スーパーでお菓子を買ったら、袋の大きさは前と同じなのに、中身が少なくなっていた。そんな経験はありませんか。原料の値段が上がったので、値上げをするかわりに、中身の量を減らす。こうした商品が、ここ数年増えています。" },
+      { "sp": "F", "t": "会社にしてみれば、値上げをするとお客さんが離れてしまうという事情もありますから、一方的に責めることはできません。ただ、消費者としては、値段が変わらないから安心だ、と思い込まないことが大切です。" },
+      { "sp": "F", "t": "値段が同じでも、量が減っていれば、実際には値上がりしているのと同じことなんです。ですから、買い物のときには、値段だけでなく、何グラム入っているかも確かめる。これが、これからの買い物で大事な習慣になるんじゃないでしょうか。", "say": "値段が同じでも、量が減っていれば、実際には値上がりしているのと同じことなんです。ですから、買い物のときには、値段だけでなく、なんグラム入っているかも確かめる。これが、これからの買い物で大事な習慣になるんじゃないでしょうか。" }
+    ],
+    "q": "専門家の意見として合うのはどれですか。",
+    "c": ["値段だけでなく量も確かめるべきだ", "量を減らす会社は責められるべきだ", "値段が同じなら安心して買ってよい", "大きい袋の商品を選んだほうが得だ"],
+    "why": [
+      "Her advice: 「値段だけでなく、何グラム入っているかも確かめる」.",
+      "The opposite. She says 「一方的に責めることはできません」.",
+      "The belief she warns against: 「安心だ、と思い込まないことが大切です」.",
+      "Wrong logic. Her point is that the bag stays the same size while the contents shrink, so bag size tells you nothing."
+    ],
+    "cue": ["値段だけでなく、何グラム入っているかも確かめる", "思い込まないことが大切です"],
+    "tell": "一方的に責めることはできません。ただ… : she grants the other side first. Her real point comes after ただ and ですから.",
+    "en": "An economist says some products keep their price but shrink in size. She advises shoppers to check the weight as well as the price.",
+    "lv": 2
+  },
+  {
+    "id": "l3-011",
+    "type": "l3",
+    "setup": "男の人と女の人が映画について話しています。",
+    "lines": [
+      { "sp": "F", "t": "ねえ、昨日『星の海』の映画、見に行ったんでしょ？ どうだった？ 原作の小説、すごく好きだったじゃない。", "say": "ねえ、きのう『星の海』の映画、見に行ったんでしょ？ どうだった？ 原作の小説、すごく好きだったじゃない。" },
+      { "sp": "M", "t": "うん。正直、最初はがっかりしたんだよね。主人公の性格が原作とけっこう違うし、好きだった場面もいくつかカットされてて。" },
+      { "sp": "F", "t": "やっぱり。原作のファンって、そういうところ、厳しいもんね。" },
+      { "sp": "M", "t": "でもさ、見てるうちに、ああ、これはこれでありだなって思えてきたんだ。小説は主人公の気持ちをじっくり書けるけど、映画は2時間しかないでしょ。だから、表情とか音楽で伝えるしかないんだよ。そう考えると、変えたのは正解だったと思う。", "say": "でもさ、見てるうちに、ああ、これはこれでありだなって思えてきたんだ。小説は主人公の気持ちをじっくり書けるけど、映画はにじかんしかないでしょ。だから、表情とか音楽で伝えるしかないんだよ。そう考えると、変えたのは正解だったと思う。" },
+      { "sp": "F", "t": "へえ、意外。" },
+      { "sp": "M", "t": "原作どおりに作ることより、映画として面白いかどうかのほうが大事なんじゃないかな。実際、最後の場面は原作より感動したよ。" }
+    ],
+    "q": "男の人はこの映画についてどう思っていますか。",
+    "c": ["原作と違っていても面白い", "原作どおりに作るべきだった", "主人公が原作と同じでよかった", "上映時間が短すぎて物足りない"],
+    "why": [
+      "His final view: 「映画として面白いかどうかのほうが大事」, and the changes were 「正解だった」.",
+      "His first reaction, 「最初はがっかりした」, which he changes.",
+      "The opposite detail: the hero's personality is 「原作とけっこう違う」.",
+      "He mentions the two hours only to explain why the film had to change things, not as a complaint."
+    ],
+    "cue": ["変えたのは正解だったと思う", "映画として面白いかどうかのほうが大事なんじゃないかな"],
+    "tell": "最初は… でもさ… : a first reaction, then a change of mind. The question wants the final view.",
+    "en": "A man was disappointed at first that a film changed the novel he loved. By the end he decided the changes were right and the film works as a film.",
+    "lv": 1
+  },
+  {
+    "id": "l3-012",
+    "type": "l3",
+    "setup": "会社で、男の人と女の人が在宅勤務について話しています。",
+    "lines": [
+      { "sp": "M", "t": "来月から、在宅勤務が週3日までOKになるって聞いた？", "say": "来月から、在宅勤務が週みっかまでOKになるって聞いた？" },
+      { "sp": "F", "t": "うん。私はうれしいな。家だと電話もかかってこないし、話しかけられることもないから、資料作りとか、集中したい仕事がすごくはかどるんだよね。" },
+      { "sp": "M", "t": "だよね。じゃあ、山下さんは毎日家で働きたいほう？" },
+      { "sp": "F", "t": "私はそうしたいかな。でも、今年入った新人のことを考えると、ちょっと心配なんだ。" },
+      { "sp": "M", "t": "新人？" },
+      { "sp": "F", "t": "ほら、仕事って、教えてもらうことだけじゃないでしょ。先輩がお客さんと電話でどう話してるかとか、困ったときに誰に聞けばいいかとか、隣で見て覚えることが多いじゃない。それが家だと全然できないから。" },
+      { "sp": "M", "t": "確かに。オンラインだと、ちょっとしたことは聞きにくいしね。" },
+      { "sp": "F", "t": "だから、少なくとも仕事に慣れるまでは、新人は会社に来る日を多めにしたほうがいいんじゃないかな。在宅勤務そのものは、いい制度だと思うけどね。" }
+    ],
+    "q": "女の人は在宅勤務についてどう考えていますか。",
+    "c": ["新人には会社で学ぶ時間が必要だ", "家では集中できないので働きにくい", "社員は全員毎日会社に来るべきだ", "オンラインのほうが質問しやすい"],
+    "why": [
+      "She likes working from home herself but says 「新人は会社に来る日を多めにしたほうがいいんじゃないかな」.",
+      "The opposite. At home her work 「すごくはかどる」.",
+      "Too wide. She calls remote work 「いい制度」 and only wants more office days for new staff.",
+      "The opposite of the man's point, 「オンラインだと、ちょっとしたことは聞きにくい」, which she agrees with."
+    ],
+    "cue": ["新人は会社に来る日を多めにしたほうがいいんじゃないかな", "隣で見て覚えることが多い"],
+    "tell": "私は…。でも… : she separates her own wish from her view of the system. The question asks for the view.",
+    "en": "Remote work will be allowed three days a week. A woman welcomes it for herself but thinks new staff should come in more, since they learn by watching colleagues.",
+    "lv": 2
+  },
+  {
+    "id": "l3-013",
+    "type": "l3",
+    "setup": "家で、夫婦が子どものスマートフォンについて話しています。",
+    "lines": [
+      { "sp": "F", "t": "ねえ、健太がまたスマホが欲しいって言ってるんだけど。クラスのほとんどの子が持ってるんだって。" },
+      { "sp": "M", "t": "ああ、そうらしいね。" },
+      { "sp": "F", "t": "でも、まだ小学5年生だよ。中学に入ってからでいいと思うんだけど。", "say": "でも、まだ小学ごねんせいだよ。中学に入ってからでいいと思うんだけど。" },
+      { "sp": "M", "t": "うーん、僕は、何年生かっていうのは、あまり関係ないと思うんだよね。", "say": "うーん、僕は、なんねんせいかっていうのは、あまり関係ないと思うんだよね。" },
+      { "sp": "F", "t": "え、じゃあ、すぐ買ってあげるの？" },
+      { "sp": "M", "t": "いや、問題は使い方でしょ。中学生になってから渡しても、夜中までゲームしてたら同じことだし。だから、夜は9時まで、知らない人とは連絡をとらない、とか、最初にちゃんとルールを決めてさ。それを守れるなら、持たせてもいいんじゃないかな。", "say": "いや、問題は使い方でしょ。中学生になってから渡しても、夜中までゲームしてたら同じことだし。だから、夜はくじまで、知らない人とは連絡をとらない、とか、最初にちゃんとルールを決めてさ。それを守れるなら、持たせてもいいんじゃないかな。" },
+      { "sp": "F", "t": "守れなかったら？" },
+      { "sp": "M", "t": "そのときは、いったん預かる。そういうことも全部、最初に約束しておけばいいと思うよ。" }
+    ],
+    "q": "男の人は、子どもにスマートフォンを持たせることについてどう考えていますか。",
+    "c": ["ルールを守れるなら持たせてもいい", "中学生になるまでは早すぎる", "みんなが持っているなら買うべきだ", "勉強に役立つので早く持たせたい"],
+    "why": [
+      "His condition: 「それを守れるなら、持たせてもいいんじゃないかな」.",
+      "The woman's view. He says the school year 「あまり関係ない」.",
+      "The classmates are the son's argument. Asked if he will just buy one, the man says 「いや、問題は使い方でしょ」.",
+      "Study is never mentioned."
+    ],
+    "cue": ["それを守れるなら、持たせてもいいんじゃないかな", "問題は使い方でしょ"],
+    "tell": "In an opinion dialogue the other person's view is the main trap. Keep track of who says what.",
+    "en": "A couple discuss a smartphone for their fifth-grade son. The father says age matters less than rules: if the boy keeps them, he can have one.",
+    "lv": 1
+  },
+  {
+    "id": "l3-014",
+    "type": "l3",
+    "setup": "テレビで、アナウンサーが農家の男の人にインタビューしています。",
+    "lines": [
+      { "sp": "F", "t": "こちらの畑では、形が曲がっていたり、少し傷があったりする野菜も、捨てずに売っていらっしゃるそうですね。" },
+      { "sp": "M", "t": "ええ。以前は出荷できなくて、ほとんど捨てていたんですよ。もったいないですからね。" },
+      { "sp": "F", "t": "最近は、そういう野菜を『訳あり』として、安く売るお店も増えていますよね。" },
+      { "sp": "M", "t": "そうですね。捨てるよりはいいだろう、とよく言われるんですが…正直、私は、安くする必要はないと思っているんです。" },
+      { "sp": "F", "t": "え、そうなんですか。" },
+      { "sp": "M", "t": "形が悪くても、味や栄養は、きれいな野菜とまったく変わりません。それなのに安くすると、お客さんは、やっぱり形の悪い野菜は質も悪いんだ、と思ってしまう。それに、手間は同じだけかかっているのに安くしか売れなければ、農家はやっていけないんです。" },
+      { "sp": "F", "t": "なるほど。" },
+      { "sp": "M", "t": "ですから、うちでは、きれいな野菜と同じ値段で並べて、食べ比べてもらうようにしています。食べてもらえば、わかってもらえますから。" }
+    ],
+    "q": "男の人は、形の悪い野菜を安く売ることについてどう考えていますか。",
+    "c": ["味は同じなので安くしなくていい", "捨てるよりは安く売ったほうがいい", "形のいい野菜だけを作るべきだ", "質が悪いので安くしても仕方ない"],
+    "why": [
+      "He says 「安くする必要はないと思っているんです」 because taste and nutrition 「まったく変わりません」.",
+      "The common view he quotes and then rejects: 「捨てるよりはいいだろう、とよく言われるんですが…」.",
+      "He sells misshapen vegetables at full price. He never says to grow only good-looking ones.",
+      "This is the misunderstanding he says low prices create, not his own view."
+    ],
+    "cue": ["安くする必要はないと思っているんです", "味や栄養は、きれいな野菜とまったく変わりません"],
+    "tell": "…とよく言われるんですが…正直、私は : a common opinion, then his own. The answer follows 正直.",
+    "en": "A farmer sells misshapen vegetables instead of throwing them away. He thinks they should not be cheaper, because they taste the same and low prices make people think they are worse.",
+    "lv": 2
+  },
+  {
+    "id": "l3-015",
+    "type": "l3",
+    "setup": "会社で、男の人と女の人が会議について話しています。",
+    "lines": [
+      { "sp": "M", "t": "来週から、会議は全部30分以内にするっていうルール、聞いた？", "say": "来週から、会議は全部さんじゅっぷん以内にするっていうルール、聞いた？" },
+      { "sp": "F", "t": "うん、聞いた聞いた。" },
+      { "sp": "M", "t": "僕は大賛成。今の会議って、1時間以上かかって、結局何も決まらないことが多いじゃない。", "say": "僕は大賛成。今の会議って、いちじかん以上かかって、結局何も決まらないことが多いじゃない。" },
+      { "sp": "F", "t": "確かに長いよね。でも、時間を短くするだけじゃ、あまり変わらない気がするんだ。" },
+      { "sp": "M", "t": "どうして？" },
+      { "sp": "F", "t": "長くなる原因って、みんなが資料をその場で初めて読むからでしょ。説明だけで20分かかって、話し合いが始まるころには、もう時間がない。30分にしたら、説明だけで終わっちゃうよ。", "say": "長くなる原因って、みんなが資料をその場で初めて読むからでしょ。説明だけでにじっぷんかかって、話し合いが始まるころには、もう時間がない。さんじゅっぷんにしたら、説明だけで終わっちゃうよ。" },
+      { "sp": "M", "t": "ああ、それはあるかも。" },
+      { "sp": "F", "t": "だから、時間を決めるのはいいんだけど、それより先に、資料は前の日までに配って、全員読んでから来る、っていうことを決めるべきなんじゃないかな。" }
+    ],
+    "q": "女の人は新しいルールについてどう考えていますか。",
+    "c": ["準備のしかたを先に変えるべきだ", "会議は1時間あったほうがいい", "会議の回数を減らしたほうがいい", "時間を決めることには反対だ"],
+    "why": [
+      "She wants this settled first: 「それより先に、資料は前の日までに配って、全員読んでから来る」.",
+      "She agrees meetings are too long. She never asks for an hour.",
+      "The number of meetings never comes up.",
+      "Too strong. She says 「時間を決めるのはいいんだけど」."
+    ],
+    "cue": ["それより先に、資料は前の日までに配って", "時間を短くするだけじゃ、あまり変わらない"],
+    "tell": "Aのはいいんだけど、それより先にB : she accepts A but puts B first. Her view is B.",
+    "en": "Meetings will be capped at 30 minutes. A woman says the cap alone will not help, because people read the papers for the first time in the room; papers should go out the day before.",
+    "lv": 2
+  },
+  {
+    "id": "l5-001",
+    "type": "l5",
+    "setup": "会社で、三人が送別会の店について話しています。",
+    "lines": [
+      { "sp": "F", "t": "来月の田中さんの送別会のお店、候補を四つ考えてきたんだけど。駅前の居酒屋と、イタリア料理の店と、中華料理の店と、それからホテルのレストラン。" },
+      { "sp": "M", "t": "参加するのは何人だっけ？", "say": "参加するのはなんにんだっけ？" },
+      { "sp": "F", "t": "今のところ25人。", "say": "今のところにじゅうごにん。" },
+      { "sp": "F2", "t": "じゃあ、イタリア料理の店は無理じゃない？ あそこ、20人までしか入れないって聞いたよ。", "say": "じゃあ、イタリア料理の店は無理じゃない？ あそこ、にじゅうにんまでしか入れないって聞いたよ。" },
+      { "sp": "F", "t": "そっか。ホテルのレストランは雰囲気はいいんだけど、一人8000円なんだよね。", "say": "そっか。ホテルのレストランは雰囲気はいいんだけど、ひとりはっせんえんなんだよね。" },
+      { "sp": "M", "t": "それは高すぎるよ。会費は5000円ぐらいにしたいし。", "say": "それは高すぎるよ。会費はごせんえんぐらいにしたいし。" },
+      { "sp": "F2", "t": "じゃあ、居酒屋か中華だね。でも、田中さんに花束を渡して、あいさつもしてもらうでしょ。居酒屋だと周りがうるさくて、声が聞こえないんじゃない？" },
+      { "sp": "M", "t": "確かに。中華の店なら個室があるから、落ち着いて話ができるね。" },
+      { "sp": "F", "t": "うん、私も中華がいいと思う。じゃあ、そこに予約の電話しちゃおうか。" },
+      { "sp": "M", "t": "あ、ちょっと待って。送別会って何曜日だっけ？", "say": "あ、ちょっと待って。送別会ってなんようびだっけ？" },
+      { "sp": "F", "t": "えっと、15日の月曜日。", "say": "えっと、じゅうごにちの月曜日。" },
+      { "sp": "M", "t": "あそこの中華、月曜日は定休日だよ。前に行ったら閉まってたことがある。" },
+      { "sp": "F2", "t": "えー、そうなんだ。じゃあ、居酒屋しかないか…。でも、うるさいのはなあ。" },
+      { "sp": "F", "t": "あ、でも、あの居酒屋、2階を貸し切りにできるって、ホームページに書いてあった。それなら、ほかのお客さんもいないし、静かだよね。", "say": "あ、でも、あの居酒屋、にかいを貸し切りにできるって、ホームページに書いてあった。それなら、ほかのお客さんもいないし、静かだよね。" },
+      { "sp": "M", "t": "それはいいね。じゃあ、そうしよう。" }
+    ],
+    "qs": [
+      {
+        "q": "三人はどの店で送別会をすることにしましたか。",
+        "c": ["駅前にある居酒屋", "イタリア料理のお店", "個室のある中華料理店", "ホテルのレストラン"],
+        "why": [
+          "The pub can rent out its whole upstairs floor, which fixes the noise problem: 「2階を貸し切りにできる」. They agree: 「じゃあ、そうしよう」.",
+          "Too small: 「20人までしか入れない」, and 25 people are coming.",
+          "Their first choice, but it is closed that day: 「月曜日は定休日だよ」.",
+          "Too expensive: 8,000 yen a head when they want about 5,000."
+        ],
+        "cue": ["2階を貸し切りにできる", "月曜日は定休日だよ"],
+        "tell": "When everyone agrees early (私も中華がいい), expect a late あ、ちょっと待って that changes the plan."
+      }
+    ],
+    "en": "Three coworkers choose a venue for a farewell party for 25. The Chinese restaurant wins at first, but it is closed on Mondays, so they book the upstairs floor of the station pub.",
+    "lv": 1
+  },
+  {
+    "id": "l5-002",
+    "type": "l5",
+    "setup": "パン屋で、店長と店員二人が、アルバイトの応募者について話しています。",
+    "lines": [
+      { "sp": "M", "t": "土日に入ってくれるアルバイトを一人募集したら、四人応募があったんだ。誰に連絡するか決めたいんだけど。来週の土曜日から来てもらいたいんだよね。", "say": "土日に入ってくれるアルバイトをひとり募集したら、よにん応募があったんだ。誰に連絡するか決めたいんだけど。来週の土曜日から来てもらいたいんだよね。" },
+      { "sp": "F", "t": "履歴書、見せてください。えっと、山本さんは、パン屋で3年働いてたんですね。", "say": "履歴書、見せてください。えっと、山本さんは、パン屋でさんねん働いてたんですね。" },
+      { "sp": "M", "t": "うん。ただ、山本さんは平日しか来られないんだって。" },
+      { "sp": "F", "t": "じゃあ、だめですね。土日に来てほしいんですから。" },
+      { "sp": "F2", "t": "大野さんはどうですか。この人もパン屋で働いた経験があって、土日も大丈夫って書いてありますよ。" },
+      { "sp": "M", "t": "大野さんはいいと思ったんだけど、今の仕事が今月いっぱいで、来られるのは来月からなんだ。" },
+      { "sp": "F2", "t": "あ、それだと、来週には間に合わないですね。" },
+      { "sp": "F", "t": "林さんは？ スーパーのパン売り場で働いてたそうです。土日だけ、週2日の希望ですね。", "say": "林さんは？ スーパーのパン売り場で働いてたそうです。土日だけ、しゅうふつかの希望ですね。" },
+      { "sp": "M", "t": "土日だけなら、ちょうどいいね。" },
+      { "sp": "F2", "t": "中川さんは大学生で、経験はないけど、いつでも入れるそうです。" },
+      { "sp": "M", "t": "うーん、やっぱり経験があるほうが助かるし、林さんかな。" },
+      { "sp": "F", "t": "あ、でも店長、林さんの履歴書、ここ見てください。土曜日は午後2時からしか来られないって。", "say": "あ、でも店長、林さんの履歴書、ここ見てください。土曜日はごごにじからしか来られないって。" },
+      { "sp": "M", "t": "えっ、本当だ。うちは朝6時からパンを焼き始めるから、朝から来てもらえないと困るんだよなあ。", "say": "えっ、本当だ。うちはあさろくじからパンを焼き始めるから、朝から来てもらえないと困るんだよなあ。" },
+      { "sp": "F2", "t": "中川さんは、朝早くても大丈夫って書いてありますよ。仕事は私が最初に教えますから。" },
+      { "sp": "M", "t": "そうか。経験がなくても、教えてもらえるなら安心だね。じゃあ、その人に連絡してみるよ。" }
+    ],
+    "qs": [
+      {
+        "q": "店長はこのあと、誰に連絡しますか。",
+        "c": ["中川さんに連絡する", "林さんに連絡する", "大野さんに連絡する", "山本さんに連絡する"],
+        "why": [
+          "The student can come early, 「朝早くても大丈夫」, and the manager ends 「じゃあ、その人に連絡してみるよ」: the person just mentioned, 中川さん.",
+          "The manager's pick until they spot 「土曜日は午後2時からしか来られない」. Baking starts at 6 a.m.",
+          "Experienced and free at weekends, but 「来られるのは来月から」, too late for next Saturday.",
+          "The most experienced, but 「平日しか来られない」."
+        ],
+        "cue": ["朝早くても大丈夫", "土曜日は午後2時からしか来られない", "来られるのは来月からなんだ"],
+        "tell": "Pin each name to its problem. The decision uses a pronoun (その人), so know who was mentioned last."
+      }
+    ],
+    "en": "A bakery needs weekend staff from next Saturday, from 6 a.m. Each experienced applicant fails on days, start date or hours, so the manager calls the inexperienced student.",
+    "lv": 2
+  },
+  {
+    "id": "l5-003",
+    "type": "l5",
+    "setup": "カフェで、店長と店員二人が、秋の新しいメニューについて話しています。",
+    "lines": [
+      { "sp": "F", "t": "秋の新メニューなんだけど、候補が四つあるの。かぼちゃのケーキ、抹茶のパフェ、きのこのホットサンド、それから温かい野菜のスープ。どれにしようか。" },
+      { "sp": "F2", "t": "私は、抹茶のパフェがいいと思います。見た目がかわいいから、写真を撮ってSNSに載せてくれるお客さんが多そうですし。" },
+      { "sp": "M", "t": "でも、パフェって、一つ作るのにけっこう時間がかかるよね。お昼の忙しいときに注文が重なったら、大変だよ。" },
+      { "sp": "F2", "t": "あ、そうか…。" },
+      { "sp": "F", "t": "ホットサンドはどう？ 焼くだけだから早いよ。" },
+      { "sp": "M", "t": "うーん、サンドイッチはもうメニューに三種類あるし、似たようなものを増やしてもなあ。" },
+      { "sp": "F", "t": "それもそうね。じゃあ、スープは？ これから寒くなるし、温かいものがあるといいと思うんだけど。" },
+      { "sp": "M", "t": "いいですね。まとめて作っておけば、温めるだけですぐ出せますし。" },
+      { "sp": "F", "t": "じゃあ、スープで決まりかな。" },
+      { "sp": "F2", "t": "あの、一つ気になることがあるんです。最近、持ち帰りのお客さんがすごく増えてるじゃないですか。新しいメニューも、持ち帰りできるもののほうがいいと思うんです。" },
+      { "sp": "M", "t": "ああ、確かに。スープは持ち帰りだと、こぼれやすいからなあ。" },
+      { "sp": "F", "t": "そうね。じゃあ、ケーキにしましょう。前の日に焼いておけるし、箱に入れれば持ち帰りもできる。秋らしさもあるしね。" }
+    ],
+    "qs": [
+      {
+        "q": "新しいメニューは何に決まりましたか。",
+        "c": ["かぼちゃのケーキ", "抹茶を使ったパフェ", "きのこのホットサンド", "温かい野菜のスープ"],
+        "why": [
+          "After the takeout point the manager says 「じゃあ、ケーキにしましょう」: it can be baked the day before and boxed to take away.",
+          "Too slow to make in the lunch rush: 「一つ作るのにけっこう時間がかかる」.",
+          "Too close to the three sandwiches already on the menu.",
+          "Chosen at first, but soup is hard to take away: 「こぼれやすい」."
+        ],
+        "cue": ["じゃあ、ケーキにしましょう", "持ち帰りできるもののほうがいい"],
+        "tell": "Listen for the condition added late (持ち帰り) and test each option left against it."
+      }
+    ],
+    "en": "Café staff pick an autumn menu item. Soup wins at first, but takeout orders are rising, so they choose the pumpkin cake, which can be baked ahead and boxed.",
+    "lv": 1
+  },
+  {
+    "id": "l5-004",
+    "type": "l5",
+    "setup": "大学で、写真サークルの学生三人が、週末の撮影会について話しています。",
+    "lines": [
+      { "sp": "M", "t": "今度の日曜日の撮影会、どこにするか決めようか。新しく入った1年生も来るし。候補は、山の紅葉、港の夜景、水族館、植物園の四つだよね。", "say": "今度の日曜日の撮影会、どこにするか決めようか。新しく入ったいちねんせいも来るし。候補は、山の紅葉、港の夜景、水族館、植物園の四つだよね。" },
+      { "sp": "F", "t": "夜景は、三脚がないと撮れないでしょ。1年生はまだ持ってない人が多いから、今回はやめておこうよ。", "say": "夜景は、三脚がないと撮れないでしょ。いちねんせいはまだ持ってない人が多いから、今回はやめておこうよ。" },
+      { "sp": "M", "t": "そうだね。僕は山の紅葉がいいな。ちょうど今が一番きれいな時期だし。" },
+      { "sp": "M2", "t": "でも、山までは電車で2時間かかるし、交通費も往復で4000円ぐらいかかるよ。1年生にはちょっと高くない？", "say": "でも、山までは電車でにじかんかかるし、交通費も往復でよんせんえんぐらいかかるよ。いちねんせいにはちょっと高くない？" },
+      { "sp": "F", "t": "植物園はどう？ 大学から歩いて行けるし、入場料も200円だし。紅葉もけっこうきれいなんだって。", "say": "植物園はどう？ 大学から歩いて行けるし、入場料もにひゃくえんだし。紅葉もけっこうきれいなんだって。" },
+      { "sp": "M", "t": "なるほど。それなら1年生も気軽に参加できるね。", "say": "なるほど。それならいちねんせいも気軽に参加できるね。" },
+      { "sp": "M2", "t": "水族館は？ 魚は動くから難しいけど、いい練習になると思うんだけど。" },
+      { "sp": "M", "t": "水族館は暗いし、ガラスに光が映っちゃうから、初心者にはちょっと難しすぎるんじゃないかな。" },
+      { "sp": "F", "t": "じゃあ、植物園で決まりね。" },
+      { "sp": "M2", "t": "あ、ちょっと待って。今、天気予報見たら、日曜日は一日中雨だって。", "say": "あ、ちょっと待って。今、天気予報見たら、日曜日はいちにちじゅう雨だって。" },
+      { "sp": "F", "t": "えー、本当？ それじゃ外は無理だね。次の週だと、もう紅葉も終わっちゃうし…。" },
+      { "sp": "M", "t": "じゃあ、建物の中で撮れるところにするしかないか。" },
+      { "sp": "F", "t": "うん。暗いところで撮るのも、いつかは覚えなきゃいけないし。難しいところは、私たちが隣について教えてあげればいいんじゃない？" },
+      { "sp": "M", "t": "そうだね。じゃあ、そうしよう。" }
+    ],
+    "qs": [
+      {
+        "q": "三人は日曜日に何をすることにしましたか。",
+        "c": ["水族館で魚を撮る", "植物園で紅葉を撮る", "山へ行って紅葉を撮る", "港へ行って夜景を撮る"],
+        "why": [
+          "Rain rules out everything outdoors: 「建物の中で撮れるところにするしかないか」. The aquarium is the only indoor option, and the seniors will help with the dark.",
+          "Agreed at first, 「植物園で決まりね」, then rain all day Sunday cancels it.",
+          "The first man's wish, but too far and too dear for first-years, and outdoors in the rain.",
+          "Dropped first: most first-years have no tripod."
+        ],
+        "cue": ["建物の中で撮れるところにするしかないか", "日曜日は一日中雨だって"],
+        "tell": "The final choice is never named. Work it out from the condition: 建物の中 leaves only one option."
+      }
+    ],
+    "en": "A photo club picks a spot for Sunday with its new first-years. The botanical garden is chosen, then the forecast says rain all day, so they go to the aquarium, the only indoor option.",
+    "lv": 2
+  },
+  {
+    "id": "l5-005",
+    "type": "l5",
+    "setup": "市民センターの人が、夜の講座について説明しています。",
+    "lines": [
+      { "sp": "F2", "t": "市民センターでは、来月から、お仕事帰りの皆様に向けて、夜の講座を四つ開きます。一つ目は『はじめての中国語』。火曜日の夜7時からで、旅行で使える会話を中心に学びます。", "say": "市民センターでは、来月から、お仕事帰りの皆様に向けて、夜の講座を四つ開きます。一つ目は『はじめての中国語』。火曜日の夜しちじからで、旅行で使える会話を中心に学びます。" },
+      { "sp": "F2", "t": "二つ目は『表計算ソフト入門』。水曜日の7時半から、仕事ですぐに役立つ使い方を、基本から学びます。三つ目は『和菓子づくり』。木曜日の6時からで、作ったお菓子はお持ち帰りいただけます。", "say": "二つ目は『表計算ソフト入門』。水曜日のしちじはんから、仕事ですぐに役立つ使い方を、基本から学びます。三つ目は『和菓子づくり』。木曜日のろくじからで、作ったお菓子はお持ち帰りいただけます。" },
+      { "sp": "F2", "t": "四つ目は『夜のヨガ』。金曜日の8時から、一日の疲れをとって、体をゆっくりほぐします。", "say": "四つ目は『夜のヨガ』。金曜日のはちじから、いちにちの疲れをとって、体をゆっくりほぐします。" },
+      { "sp": "F", "t": "ねえ、どれか行ってみない？ 私、最近運動不足だから、ヨガがいいなと思ったんだけど…金曜日は毎週会議で遅くなるから無理か。和菓子も、6時からじゃ間に合わないし。", "say": "ねえ、どれか行ってみない？ 私、最近運動不足だから、ヨガがいいなと思ったんだけど…金曜日は毎週会議で遅くなるから無理か。和菓子も、ろくじからじゃ間に合わないし。" },
+      { "sp": "M", "t": "表計算は？ 仕事で使ってるでしょ。" },
+      { "sp": "F", "t": "使ってるけど、毎日使ってるから、基本はもう大丈夫。それより、来年の春に台湾に行くじゃない？ 向こうで少しでも話せたら楽しいと思うんだよね。旅行の会話が習えるなら、ちょうどいいよ。" },
+      { "sp": "M", "t": "ああ、それはいいね。" },
+      { "sp": "F", "t": "一緒にどう？" },
+      { "sp": "M", "t": "僕は、語学はどうも苦手で…。表計算は、会社で研修があるから、そこで習えばいいし。" },
+      { "sp": "F", "t": "じゃあ、ヨガは？ 肩がこるって、いつも言ってるじゃない。" },
+      { "sp": "M", "t": "金曜日の夜は、毎週サッカーの練習があるんだよ。それより、お菓子を作るの、前からやってみたかったんだ。" },
+      { "sp": "F", "t": "でも、6時からだよ。間に合う？", "say": "でも、ろくじからだよ。間に合う？" },
+      { "sp": "M", "t": "木曜日は早く帰れる日だから、大丈夫。" }
+    ],
+    "qs": [
+      {
+        "q": "質問1　女の人はどれを選びますか。",
+        "c": ["はじめての中国語", "表計算ソフト入門", "和菓子づくり", "夜のヨガ"],
+        "why": [
+          "She is going to Taiwan next spring: 「旅行の会話が習えるなら、ちょうどいいよ」. The Chinese course is built on travel conversation.",
+          "She uses spreadsheets every day: 「基本はもう大丈夫」.",
+          "It starts at 6, too early for her: 「6時からじゃ間に合わないし」.",
+          "Her first wish, but 「金曜日は毎週会議で遅くなるから無理か」."
+        ],
+        "cue": ["旅行の会話が習えるなら、ちょうどいいよ", "金曜日は毎週会議で遅くなる"],
+        "tell": "Her first wish (ヨガ) is the trap. Match her final reason (旅行の会話) to the course that offered it."
+      },
+      {
+        "q": "質問2　男の人はどれを選びますか。",
+        "c": ["和菓子づくり", "はじめての中国語", "表計算ソフト入門", "夜のヨガ"],
+        "why": [
+          "He has long wanted to make sweets, and Thursday works: 「木曜日は早く帰れる日だから、大丈夫」.",
+          "The course she invites him to, but 「語学はどうも苦手」.",
+          "His company runs its own training: 「会社で研修がある」.",
+          "She suggests it for his shoulders, but he has soccer practice every Friday night."
+        ],
+        "cue": ["お菓子を作るの、前からやってみたかったんだ", "木曜日は早く帰れる日だから"],
+        "tell": "Each listener turns down the other's suggestion. Link his free day (木曜日) to the course on that day."
+      }
+    ],
+    "en": "A community center offers four evening courses. The woman picks Chinese for a trip to Taiwan; the man picks Japanese sweet making, since he leaves work early on Thursdays.",
+    "lv": 1
+  },
+  {
+    "id": "l5-006",
+    "type": "l5",
+    "setup": "会社で、社員旅行の担当者が説明しています。",
+    "lines": [
+      { "sp": "M2", "t": "今年の社員旅行は日帰りで、四つのコースから好きなものを一つ選んでいただきます。Aコースは、いちご狩りと温泉です。いちごを好きなだけ食べたあと、温泉でゆっくりできます。" },
+      { "sp": "M2", "t": "Bコースは、酒蔵めぐり。古い酒蔵を三か所回って、日本酒の飲み比べを楽しみます。", "say": "Bコースは、さかぐらめぐり。古いさかぐらをさんかしょ回って、日本酒の飲み比べを楽しみます。" },
+      { "sp": "M2", "t": "Cコースは、山の上のお寺を訪ねるコースです。景色はすばらしいですが、坂道を1時間ほど歩きます。", "say": "Cコースは、山の上のお寺を訪ねるコースです。景色はすばらしいですが、坂道をいちじかんほど歩きます。" },
+      { "sp": "M2", "t": "Dコースは港町のコースで、新鮮な海鮮丼を食べたあと、遊覧船で島を回ります。申し込みは金曜日までにお願いします。" },
+      { "sp": "F", "t": "どれにする？ 私、最近ひざが痛くて、長く歩くのはちょっと無理なんだよね。" },
+      { "sp": "M", "t": "じゃあ、お寺は無理だね。港町は？ 魚、好きだったよね。" },
+      { "sp": "F", "t": "好きなんだけど、船がね。すぐ酔っちゃうの。お酒も飲めないし…。うん、やっぱり、いちごかな。温泉でひざも温められるし。一緒にどう？" },
+      { "sp": "M", "t": "いちごかあ。実は先月、家族でいちご狩りに行ったばかりなんだよ。" },
+      { "sp": "F", "t": "そっか。じゃあ、酒蔵は？ お酒、好きでしょ。", "say": "そっか。じゃあ、さかぐらは？ お酒、好きでしょ。" },
+      { "sp": "M", "t": "好きなんだけど、この前の健康診断で、しばらくお酒は控えるように言われちゃって。" },
+      { "sp": "F", "t": "あらら。じゃあ、港町？" },
+      { "sp": "M", "t": "うーん、船は平気だけど、魚は今週、出張先で毎日食べてたから、もういいかな。それより最近、運動不足だから、たまにはしっかり歩きたいんだよね。" }
+    ],
+    "qs": [
+      {
+        "q": "質問1　女の人はどれを選びますか。",
+        "c": ["Aコース", "Bコース", "Cコース", "Dコース"],
+        "why": [
+          "Bad knee, seasick, no alcohol, so: 「やっぱり、いちごかな。温泉でひざも温められるし」. A is strawberries and hot springs.",
+          "B is the sake tour, and 「お酒も飲めない」.",
+          "C has an hour of walking uphill, and 「長く歩くのはちょっと無理」.",
+          "She likes fish, but D includes a boat and 「すぐ酔っちゃうの」."
+        ],
+        "cue": ["やっぱり、いちごかな", "すぐ酔っちゃうの"],
+        "tell": "She likes the food in D, but one feature (the boat) kills it. Check every feature of a course, not only the first."
+      },
+      {
+        "q": "質問2　男の人はどれを選びますか。",
+        "c": ["Cコース", "Aコース", "Bコース", "Dコース"],
+        "why": [
+          "He wants exercise: 「たまにはしっかり歩きたいんだよね」. C is the course with an hour of walking.",
+          "The course she invites him to, but he went strawberry picking only last month.",
+          "He likes sake, but after a health check he was told to cut down for a while.",
+          "Boats are fine for him, but he ate fish every day on a business trip this week."
+        ],
+        "cue": ["たまにはしっかり歩きたいんだよね", "しばらくお酒は控えるように言われちゃって"],
+        "tell": "His choice is never named. Link his wish (歩きたい) back to the course with the walk, and keep each letter tied to its content."
+      }
+    ],
+    "en": "Staff choose one of four day-trip courses. The woman, with a bad knee, picks strawberries and hot springs; the man, who wants exercise, picks the hilltop temple walk.",
+    "lv": 2
+  },
+  {
+    "id": "l5-007",
+    "type": "l5",
+    "setup": "スポーツクラブで、係の人が料金プランについて説明しています。",
+    "lines": [
+      { "sp": "F2", "t": "当クラブには、四つのプランがございます。朝プランは、平日の朝7時から10時までご利用いただけて、月5000円です。", "say": "当クラブには、四つのプランがございます。朝プランは、平日の朝しちじからじゅうじまでご利用いただけて、つきごせんえんです。" },
+      { "sp": "F2", "t": "夜プランは、平日の夕方6時から夜11時までで、月6000円。週末プランは、土曜日と日曜日だけご利用いただけるプランで、月4000円です。", "say": "夜プランは、平日の夕方ろくじから夜じゅういちじまでで、つきろくせんえん。週末プランは、土曜日と日曜日だけご利用いただけるプランで、つきよんせんえんです。" },
+      { "sp": "F2", "t": "なお、この三つのプランでは、プールはお使いいただけません。プールもご利用になる場合は、フルプランをお選びください。曜日や時間に関係なく、すべての設備が使えて、月9000円です。", "say": "なお、この三つのプランでは、プールはお使いいただけません。プールもご利用になる場合は、フルプランをお選びください。曜日や時間に関係なく、すべての設備が使えて、つききゅうせんえんです。" },
+      { "sp": "F", "t": "私はプールに入りたいんだよね。ひざが悪いから、走るより水の中を歩くほうがいいって、お医者さんに言われてて。" },
+      { "sp": "M", "t": "プールはフルプランだけか。ちょっと高いね。" },
+      { "sp": "F", "t": "そうなの。夜プランなら仕事帰りに寄れるし安いんだけど、プールが使えないんじゃ意味がないし。週末は子どもの習い事の送り迎えで忙しいしね。まあ、体のためだから、高くても仕方ないか。" },
+      { "sp": "M", "t": "僕は、プールはいいや。泳ぐのは苦手だし。" },
+      { "sp": "F", "t": "じゃあ、仕事帰りに一緒に行かない？ 夜プランなら安いし。" },
+      { "sp": "M", "t": "行きたいけど、最近残業が多くて、平日の夜は何時に帰れるかわからないんだよ。", "say": "行きたいけど、最近残業が多くて、平日の夜はなんじに帰れるかわからないんだよ。" },
+      { "sp": "F", "t": "じゃあ、土日は？" },
+      { "sp": "M", "t": "土日は、子どもたちのサッカーの試合を見に行きたいしなあ。僕は早起きが得意だから、会社に行く前に寄ることにするよ。クラブ、会社のすぐ近くだし。" }
+    ],
+    "qs": [
+      {
+        "q": "質問1　女の人はどれを選びますか。",
+        "c": ["フルプラン", "夜プラン", "週末プラン", "朝プラン"],
+        "why": [
+          "She needs the pool for her knee, and only the full plan has it: 「まあ、体のためだから、高くても仕方ないか」.",
+          "Cheap and handy after work, but 「プールが使えないんじゃ意味がない」.",
+          "No pool, and her weekends go on taking the children to lessons.",
+          "No pool: the morning, evening and weekend plans all exclude it."
+        ],
+        "cue": ["プールが使えないんじゃ意味がないし", "高くても仕方ないか"],
+        "tell": "One condition (the pool) can rule out three plans at once. Listen for which plan includes it."
+      },
+      {
+        "q": "質問2　男の人はどれを選びますか。",
+        "c": ["朝プラン", "夜プラン", "週末プラン", "フルプラン"],
+        "why": [
+          "He gets up early and will go before work: 「会社に行く前に寄ることにするよ」. The morning plan runs 7 to 10 on weekdays.",
+          "She asks him to come in the evenings, but overtime makes weekday nights unpredictable.",
+          "He wants weekends free for his children's soccer matches.",
+          "He does not swim, so paying extra for the pool makes no sense."
+        ],
+        "cue": ["会社に行く前に寄ることにするよ", "平日の夜は何時に帰れるかわからない"],
+        "tell": "He names a time of day, not a plan. Map 会社に行く前 to the plan with those hours."
+      }
+    ],
+    "en": "A gym offers four plans. The woman needs the pool for her knee, so she takes the full plan; the man works late and keeps weekends for his children, so he goes before work.",
+    "lv": 1
+  },
+  {
+    "id": "l5-008",
+    "type": "l5",
+    "setup": "ラジオで、アナウンサーが今月の展覧会を紹介しています。",
+    "lines": [
+      { "sp": "F2", "t": "今月、市内で開かれている展覧会を四つご紹介します。まず、市立美術館の『浮世絵展』。江戸時代の版画がおよそ200点並びます。週末には、子どもも参加できる版画づくりの体験コーナーもあります。", "say": "今月、市内で開かれている展覧会を四つご紹介します。まず、市立美術館の『浮世絵展』。江戸時代の版画がおよそにひゃくてん並びます。週末には、子どもも参加できる版画づくりの体験コーナーもあります。" },
+      { "sp": "F2", "t": "次に、デザイン館の『北欧の家具展』。展示されている椅子には、実際に座ってみることができます。こちらは20日までです。", "say": "次に、デザイン館の『北欧の家具展』。展示されている椅子には、実際に座ってみることができます。こちらははつかまでです。" },
+      { "sp": "F2", "t": "三つ目は、科学博物館の『恐竜展』。本物の化石が見られるとあって大人気で、週末は入るまでに1時間以上待つこともあるそうです。", "say": "三つ目は、科学博物館の『恐竜展』。本物の化石が見られるとあって大人気で、週末は入るまでにいちじかん以上待つこともあるそうです。" },
+      { "sp": "F2", "t": "最後に、駅前ギャラリーの『世界の写真展』です。金曜日だけは夜8時まで開いていますので、お仕事帰りにもどうぞ。", "say": "最後に、駅前ギャラリーの『世界の写真展』です。金曜日だけは夜はちじまで開いていますので、お仕事帰りにもどうぞ。" },
+      { "sp": "F", "t": "今度の週末、息子とどこか行こうと思ってるんだけど、恐竜展、喜ぶかなあ。" },
+      { "sp": "M", "t": "男の子なら喜ぶんじゃない？" },
+      { "sp": "F", "t": "でも、まだ6歳だから、1時間も並ぶのは無理だなあ。それに最近は、恐竜より絵を描くのに夢中なんだよね。", "say": "でも、まだろくさいだから、いちじかんも並ぶのは無理だなあ。それに最近は、恐竜より絵を描くのに夢中なんだよね。" },
+      { "sp": "M", "t": "じゃあ、写真展は？" },
+      { "sp": "F", "t": "見るだけだと、すぐ飽きちゃうと思う。自分で手を動かせるところがいいな。家具の展覧会も、椅子に座れるのは楽しそうだけど、あの子には退屈だろうし。うん、週末に体験ができるところにする。" },
+      { "sp": "M", "t": "僕は、引っ越したばかりで、ちょうど新しい椅子を探してるから、家具の展覧会に行きたかったんだけど…。" },
+      { "sp": "F", "t": "いいじゃない、座って選べるし。" },
+      { "sp": "M", "t": "それが、来週から2週間、出張なんだ。帰ってきたら、もう終わってるんだよね。", "say": "それが、来週からにしゅうかん、出張なんだ。帰ってきたら、もう終わってるんだよね。" },
+      { "sp": "F", "t": "残念。じゃあ、週末に一緒にどう？" },
+      { "sp": "M", "t": "週末は、引っ越しの片付けがまだ残ってて、出かけられないんだよ。恐竜展も気になるけど、平日は仕事が終わるころには、どこも閉まってるし。あ、でも、今週の金曜日なら、会社を出てからでも間に合うな。" }
+    ],
+    "qs": [
+      {
+        "q": "質問1　女の人はどれを選びますか。",
+        "c": ["浮世絵展", "恐竜展", "北欧の家具展", "世界の写真展"],
+        "why": [
+          "Her son loves drawing and she wants something hands-on at the weekend: 「週末に体験ができるところにする」. Only the ukiyo-e show has a weekend workshop.",
+          "Her first idea, but a six-year-old cannot queue for an hour, and he prefers drawing now.",
+          "She thinks the chairs would bore her son: 「あの子には退屈だろうし」.",
+          "Looking only, so 「すぐ飽きちゃう」."
+        ],
+        "cue": ["週末に体験ができるところにする", "1時間も並ぶのは無理"],
+        "tell": "She never names her choice. Match 体験 to the show that offered a workshop."
+      },
+      {
+        "q": "質問2　男の人はどれを選びますか。",
+        "c": ["世界の写真展", "北欧の家具展", "浮世絵展", "恐竜展"],
+        "why": [
+          "Only Friday evening fits: 「今週の金曜日なら、会社を出てからでも間に合うな」. The photo show stays open until 8 p.m. on Fridays.",
+          "What he wanted, but he is away from next week and 「帰ってきたら、もう終わってる」.",
+          "Her invitation is for the weekend, and his weekend goes on unpacking.",
+          "On weekdays 「仕事が終わるころには、どこも閉まってる」."
+        ],
+        "cue": ["今週の金曜日なら、会社を出てからでも間に合うな", "帰ってきたら、もう終わってるんだよね"],
+        "tell": "When a talk gives one option special hours (金曜日だけは夜8時まで), expect a listener whose schedule needs exactly that."
+      }
+    ],
+    "en": "A radio host lists four exhibitions. The woman picks the ukiyo-e show for its weekend workshop for children; the man, busy at weekends and away next week, picks the photo show that opens late on Fridays.",
+    "lv": 2
+  }
+]

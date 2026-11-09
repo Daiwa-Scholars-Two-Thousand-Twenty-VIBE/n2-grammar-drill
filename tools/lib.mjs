@@ -43,6 +43,9 @@ const listFiles = (re) =>
     .map((f) => path.join(CONTENT, f));
 export const vocabFiles = () => listFiles(/^vocab_.*\.json$/);
 export const passageFiles = () => listFiles(/^r14_.*\.json$/);
+// Reading texts (問題10 to 13) live in content/read_*.json, listening scripts in content/listen_*.json.
+export const textFiles = () => listFiles(/^read_(?!tips).*\.json$/);
+export const listenFiles = () => listFiles(/^listen_.*\.json$/);
 
 const count = (hay, needle) => hay.split(needle).length - 1;
 
@@ -147,7 +150,7 @@ export function validateVocab(items, file, seenIds = new Set()) {
     if (!q.id) err(`${where}: missing id`);
     else if (seenIds.has(q.id)) err(`${where}: duplicate id`);
     else seenIds.add(q.id);
-    if (!["v3", "v5", "v6"].includes(q.type)) return err(`${where}: type must be v3, v5 or v6`);
+    if (!["v3", "v4", "v5", "v6"].includes(q.type)) return err(`${where}: type must be v3, v4, v5 or v6`);
     for (const f of ["w", "r", "m"]) if (typeof q[f] !== "string" || !q[f].trim()) err(`${where}: missing ${f}`);
     if (typeof q.r === "string" && !KANA.test(q.r)) err(`${where}: r must be kana`);
     if (![1, 2].includes(q.lv)) err(`${where}: lv must be 1 or 2`);
@@ -160,6 +163,8 @@ export function validateVocab(items, file, seenIds = new Set()) {
       if (count(q.s, BLANK) !== 1) err(`${where}: s must contain exactly one ${BLANK}`);
       else if (Array.isArray(q.c) && !q.s.replace(BLANK, q.c[0]).includes(q.w)) err(`${where}: s with c[0] in the blank does not contain ${q.w}`);
       if (Array.isArray(q.c) && q.c.some((x) => [...x].length > 3)) err(`${where}: 語形成 choices are affixes (3 characters at most)`);
+    } else if (q.type === "v4") {
+      if (count(q.s, BLANK) !== 1) err(`${where}: s must contain exactly one ${BLANK}`);
     } else if (q.type === "v5") {
       if (typeof q.t !== "string" || !q.t || count(q.s, q.t) !== 1) err(`${where}: t must appear exactly once in s`);
     } else {
@@ -267,4 +272,124 @@ export function validateItems(items, file, catalog, seenIds = new Set()) {
     }
   });
   return { errors, warnings };
+}
+
+// ---------- reading texts (問題10 to 13) ----------
+// `[[…]]` marks an underlined part. Plain text drops the marks; cues are checked against it.
+export const READ_SKILLS = ["contrast", "rephrase", "metaphor", "question", "claim", "ref", "who", "meaning", "reason", "example", "gist", "purpose", "compare"];
+export const READ_SPEC = {
+  r10: { qs: 1, min: 180, max: 260 },
+  r11: { qs: 3, min: 450, max: 600 },
+  r12: { qs: 2, min: 250, max: 380 }, // each of A and B
+  r13: { qs: 3, min: 800, max: 1000 },
+};
+const GENRES = new Set(["エッセイ", "コラム", "解説", "論説", "メール", "お知らせ", "メモ", "小説"]);
+export const plainText = (t) => String(t).replace(/\[\[|\]\]/g, "");
+export const charCount = (t) => plainText(t).replace(/\s/g, "").length;
+const CIRCLED = "①②③④⑤⑥";
+
+export function validateTexts(list, file, seenIds = new Set()) {
+  const errors = [];
+  const name = path.basename(file);
+  if (!Array.isArray(list)) return [`${name}: top level must be an array`];
+  list.forEach((p, i) => {
+    const where = `${name}[${i}] ${p && p.id ? p.id : "(no id)"}`;
+    const err = (m) => errors.push(m);
+    if (!p || typeof p !== "object") return err(`${where}: not an object`);
+    if (!p.id) err(`${where}: missing id`);
+    else if (seenIds.has(p.id)) err(`${where}: duplicate id`);
+    else seenIds.add(p.id);
+    const spec = READ_SPEC[p.type];
+    if (!spec) return err(`${where}: type must be r10, r11, r12 or r13`);
+    if (!p.id.startsWith(p.type + "-")) err(`${where}: id should start with ${p.type}-`);
+    if (!GENRES.has(p.genre)) err(`${where}: genre must be one of ${[...GENRES].join(" ")}`);
+    if (typeof p.en !== "string" || !p.en.trim()) err(`${where}: missing en`);
+    checkEnglish(err, where, p.en || "");
+    if (![1, 2].includes(p.lv)) err(`${where}: lv must be 1 or 2`);
+    const bodies = p.type === "r12" ? (Array.isArray(p.texts) ? p.texts : []) : [{ label: "", text: p.text }];
+    if (p.type === "r12") {
+      if (bodies.length !== 2 || bodies.some((b) => !b || typeof b.text !== "string") || bodies[0].label !== "A" || bodies[1].label !== "B") err(`${where}: texts must be [{label:"A",text},{label:"B",text}]`);
+      if (p.text) err(`${where}: r12 uses texts, not text`);
+    } else if (typeof p.text !== "string" || !p.text.trim()) err(`${where}: missing text`);
+    let underlines = 0;
+    for (const b of bodies) {
+      if (!b || typeof b.text !== "string") continue;
+      const n = charCount(b.text);
+      if (n < spec.min || n > spec.max) err(`${where}${b.label ? ` text ${b.label}` : ""}: ${n} characters (want ${spec.min} to ${spec.max})`);
+      const opens = count(b.text, "[["), closes = count(b.text, "]]");
+      if (opens !== closes || /\[\[[^\]]*\[\[/.test(b.text)) err(`${where}: unbalanced [[ ]]`);
+      underlines += opens;
+      if (/[①-⑥]/.test(b.text)) err(`${where}: do not write circled numbers in the text; the app numbers [[ ]] itself`);
+    }
+    const all = bodies.map((b) => plainText((b && b.text) || "")).join("\n");
+    if (!Array.isArray(p.qs) || p.qs.length !== spec.qs) return err(`${where}: needs exactly ${spec.qs} question(s)`);
+    p.qs.forEach((q, k) => {
+      const at = `${where} q${k + 1}`;
+      if (typeof q.q !== "string" || !q.q.trim()) err(`${at}: missing q`);
+      const m = /^([①-⑥])/.exec(q.q || "");
+      if (m && CIRCLED.indexOf(m[1]) >= underlines) err(`${at}: refers to ${m[1]} but the text has ${underlines} underline(s)`);
+      checkPlain(err, at, q);
+      if (!READ_SKILLS.includes(q.skill)) err(`${at}: skill must be one of ${READ_SKILLS.join(", ")}`);
+      checkCue(err, at, q.cue, all);
+    });
+  });
+  return errors;
+}
+
+// ---------- listening (聴解 問題1 to 5) ----------
+export const LISTEN_SPEC = { l1: { n: 4, printed: true }, l2: { n: 4, printed: true }, l3: { n: 4, printed: false }, l4: { n: 3, printed: false }, l5: { n: 4 } };
+const SPEAKERS = new Set(["F", "M", "F2", "M2"]);
+export const scriptText = (it) => (it.lines || []).map((l) => (l && l.t) || "").join("\n");
+
+function checkListenQ(err, at, q, n, text) {
+  if (typeof q.q !== "string" || !q.q.trim()) err(`${at}: missing q`);
+  if (!Array.isArray(q.c) || q.c.length !== n || q.c.some((x) => typeof x !== "string" || !x.trim())) return err(`${at}: c must be ${n} non-empty choices`);
+  if (new Set(q.c).size !== n) err(`${at}: duplicate choices`);
+  if (!Array.isArray(q.why) || q.why.length !== n || q.why.some((x) => typeof x !== "string" || !x.trim())) err(`${at}: why must have ${n} non-empty notes`);
+  if (typeof q.tell !== "string" || !q.tell.trim()) err(`${at}: missing tell`);
+  else if (q.tell.length > 160) err(`${at}: tell is ${q.tell.length} chars`);
+  checkEnglish(err, at, q.why || [], q.tell || "");
+  checkCue(err, at, q.cue, text);
+}
+
+export function validateListening(list, file, seenIds = new Set()) {
+  const errors = [];
+  const name = path.basename(file);
+  if (!Array.isArray(list)) return [`${name}: top level must be an array`];
+  list.forEach((it, i) => {
+    const where = `${name}[${i}] ${it && it.id ? it.id : "(no id)"}`;
+    const err = (m) => errors.push(m);
+    if (!it || typeof it !== "object") return err(`${where}: not an object`);
+    if (!it.id) err(`${where}: missing id`);
+    else if (seenIds.has(it.id)) err(`${where}: duplicate id`);
+    else seenIds.add(it.id);
+    const spec = LISTEN_SPEC[it.type];
+    if (!spec) return err(`${where}: type must be l1 to l5`);
+    if (!it.id.startsWith(it.type + "-")) err(`${where}: id should start with ${it.type}-`);
+    if (![1, 2].includes(it.lv)) err(`${where}: lv must be 1 or 2`);
+    if (typeof it.en !== "string" || !it.en.trim()) err(`${where}: missing en`);
+    checkEnglish(err, where, it.en || "");
+    if (!Array.isArray(it.lines) || !it.lines.length) return err(`${where}: needs lines`);
+    it.lines.forEach((l, j) => {
+      if (!l || !SPEAKERS.has(l.sp)) err(`${where} line ${j + 1}: sp must be F, M, F2 or M2`);
+      if (!l || typeof l.t !== "string" || !l.t.trim()) err(`${where} line ${j + 1}: missing t`);
+      if (l && l.say !== undefined && (typeof l.say !== "string" || !l.say.trim())) err(`${where} line ${j + 1}: say must be text`);
+    });
+    if (it.type === "l4") {
+      if (it.lines.length !== 1) err(`${where}: l4 has exactly one line`);
+      if (it.setup || it.q) err(`${where}: l4 has no setup or q`);
+    } else if (typeof it.setup !== "string" || !it.setup.trim()) err(`${where}: missing setup`);
+    const text = scriptText(it);
+    if (it.type === "l5") {
+      if (!Array.isArray(it.qs) || it.qs.length < 1 || it.qs.length > 2) return err(`${where}: l5 needs qs with 1 or 2 questions`);
+      it.qs.forEach((q, k) => checkListenQ(err, `${where} q${k + 1}`, q, 4, text));
+      // Two questions share one printed list on the paper, so both must offer the same four options.
+      if (it.qs.length === 2 && it.qs.every((q) => Array.isArray(q.c)) && [...it.qs[0].c].sort().join("|") !== [...it.qs[1].c].sort().join("|"))
+        err(`${where}: both questions must offer the same four options`);
+    } else {
+      if (it.type !== "l4" && (typeof it.q !== "string" || !it.q.trim())) err(`${where}: missing q`);
+      checkListenQ(err, where, { ...it, q: it.type === "l4" ? "-" : it.q }, spec.n, text);
+    }
+  });
+  return errors;
 }

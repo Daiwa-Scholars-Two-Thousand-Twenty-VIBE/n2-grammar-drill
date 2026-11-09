@@ -250,3 +250,104 @@ test("情報検索: the least-seen notice comes next", () => {
   assert.equal(p.id, "r3");
   assert.equal(S.pickPassage({ state: st, passages: [] }), null);
 });
+
+// ---------- reading and listening ----------
+const txt = (id, type) => ({ id, type, qs: [{}] });
+const texts = [
+  ...["a", "b", "c", "d", "e", "f"].map((x) => txt(`r10-${x}`, "r10")),
+  ...["a", "b", "c"].map((x) => txt(`r11-${x}`, "r11")),
+  txt("r12-a", "r12"), txt("r13-a", "r13"), txt("r14-a", "r14"),
+];
+
+test("reading daily: one set a day, the type taken in turn, 問題10 as two texts", () => {
+  const st = S.emptyState();
+  const day1 = S.buildReadingDaily({ state: st, texts, today: T, rng: S.mulberry32(20) });
+  assert.deepEqual(day1.map((p) => p.type), ["r10", "r10"]);
+  st.rlog.x = { d: T, id: day1[0].id, ts: 1 };
+  const day2 = S.buildReadingDaily({ state: st, texts, today: S.addDays(T, 1), rng: S.mulberry32(21) });
+  assert.deepEqual(day2.map((p) => p.type), ["r11"]);
+  // A deleted log entry does not count as a day read.
+  st.rlog.x.del = true;
+  assert.equal(S.buildReadingDaily({ state: st, texts, today: S.addDays(T, 1) })[0].type, "r10");
+});
+
+test("reading: least-read texts first, and the mock has the paper's shape", () => {
+  const st = S.emptyState();
+  for (const x of ["a", "b", "c", "d"]) st.qs[`r10-${x}#1`] = { seen: 1, right: 1, last: T };
+  const two = S.leastRead({ state: st, texts: texts.filter((p) => p.type === "r10"), n: 2, rng: S.mulberry32(22) });
+  assert.deepEqual(two.map((p) => p.id).sort(), ["r10-e", "r10-f"]);
+  const full = S.buildReadingMock({ state: st, texts, rng: S.mulberry32(23) });
+  assert.deepEqual(full.map((p) => p.type), ["r10", "r10", "r10", "r10", "r10", "r11", "r11", "r11", "r12", "r13", "r14"]);
+  const half = S.buildReadingMock({ state: st, texts, half: true, rng: S.mulberry32(24) });
+  assert.deepEqual(half.map((p) => p.type), ["r10", "r10", "r11", "r13"]);
+});
+
+test("spoken order: fixed per item, every choice once, the right one where the hash puts it", () => {
+  for (const [id, n] of [["l4-001", 3], ["l3-007", 4], ["l5-002", 4]]) {
+    const o = S.spokenOrder(id, n);
+    assert.deepEqual([...o].sort(), Array.from({ length: n }, (_, i) => i));
+    assert.equal(o.indexOf(0), S.idHash(id) % n);
+    assert.deepEqual(S.spokenOrder(id, n), o);
+  }
+  // The same rule as tools/build_audio.py, which recorded l4-001 in this order.
+  assert.deepEqual(S.spokenOrder("l4-001", 3), [1, 2, 0]);
+});
+
+const li = (id, type, nq = 1) => ({ id, type, ...(type === "l5" ? { qs: Array.from({ length: nq }, () => ({})) } : {}) });
+const items = [
+  ...[1, 2, 3, 4, 5, 6].map((i) => li(`l1-${i}`, "l1")),
+  ...[1, 2, 3, 4, 5, 6, 7].map((i) => li(`l2-${i}`, "l2")),
+  ...[1, 2, 3, 4, 5, 6].map((i) => li(`l3-${i}`, "l3")),
+  ...Array.from({ length: 13 }, (_, i) => li(`l4-${i}`, "l4")),
+  li("l5-1", "l5", 1), li("l5-2", "l5", 2),
+];
+
+test("listening: unheard first, a miss returns after three days, 問題5 counts by its first question", () => {
+  const st = S.emptyState();
+  const l1 = items.filter((x) => x.type === "l1");
+  for (const x of l1.slice(0, 5)) S.record(st, { qid: x.id, point: x.id, ok: true, secs: 5, type: "l1", today: T, store: "listen" });
+  assert.equal(S.leastHeard({ state: st, items: l1, n: 1, today: T })[0].id, "l1-6");
+  S.record(st, { qid: "l1-6", point: "l1-6", ok: true, secs: 5, type: "l1", today: T, store: "listen" });
+  S.record(st, { qid: "l1-3", point: "l1-3", ok: false, secs: 5, type: "l1", today: T, store: "listen" });
+  assert.equal(st.ldays[T].n, 7);
+  assert.notEqual(S.leastHeard({ state: st, items: l1, n: 1, today: S.addDays(T, 1), rng: S.mulberry32(30) })[0].id, "l1-3");
+  assert.equal(S.leastHeard({ state: st, items: l1, n: 1, today: S.addDays(T, 3), rng: S.mulberry32(31) })[0].id, "l1-3");
+  const l5 = items.filter((x) => x.type === "l5");
+  S.record(st, { qid: "l5-2#1", point: "l5-2#1", ok: true, secs: 5, type: "l5", today: T, store: "listen" });
+  assert.equal(S.leastHeard({ state: st, items: l5, n: 1, today: T })[0].id, "l5-1");
+});
+
+test("listening daily and mock: the paper's mix and order", () => {
+  const st = S.emptyState();
+  const day = S.buildListenDaily({ state: st, items, today: T, size: 8, rng: S.mulberry32(32) });
+  const count = (xs, t) => xs.filter((x) => x.type === t).length;
+  assert.deepEqual(["l1", "l2", "l3", "l4", "l5"].map((t) => count(day, t)), [2, 2, 1, 3, 0]);
+  st.ldays[T] = { n: 1, right: 1, secs: 10 };
+  const next = S.buildListenDaily({ state: st, items, today: S.addDays(T, 1), size: 8 });
+  assert.equal(count(next, "l5"), 1);
+  assert.equal(count(next, "l3"), 0);
+  const full = S.buildListenMock({ state: st, items, rng: S.mulberry32(33) });
+  assert.deepEqual(["l1", "l2", "l3", "l4", "l5"].map((t) => count(full, t)), [5, 6, 5, 12, 2]);
+  assert.deepEqual(full.map((x) => x.type), [...full.map((x) => x.type)].sort());
+});
+
+test("merge keeps reading, listening, hours and mocks from both devices; later edits win", () => {
+  const a = S.emptyState();
+  const b = S.emptyState();
+  S.record(a, { qid: "l4-1", point: "l4-1", ok: true, secs: 3, type: "l4", today: T, store: "listen" });
+  S.record(b, { qid: "r11-a#1", point: "r11-a#1", ok: false, secs: 90, type: "r11", today: T, store: "reading" });
+  a.hours.h1 = { d: T, cat: "imm", min: 30, ts: 1 };
+  b.hours.h1 = { d: T, cat: "imm", min: 30, ts: 2, del: true };
+  b.hours.h2 = { d: T, cat: "tutor", min: 50, ts: 3 };
+  a.mocks.m1 = { d: T, lang: 30, read: 25, listen: 28, ts: 5 };
+  b.rlog.r1 = { d: T, id: "r11-a", chars: 500, secs: 400, ts: 4 };
+  const m = S.mergeStates(a, b);
+  assert.equal(m.listen["l4-1"].seen, 1);
+  assert.equal(m.reading["r11-a#1"].seen, 1);
+  assert.equal(m.ldays[T].n, 1);
+  assert.equal(m.rdays[T].n, 1);
+  assert.equal(m.hours.h1.del, true);
+  assert.equal(m.hours.h2.min, 50);
+  assert.equal(m.mocks.m1.read, 25);
+  assert.equal(m.rlog.r1.chars, 500);
+});

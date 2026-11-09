@@ -391,3 +391,174 @@ Real N2 問題7 sets run from easy to hard. The first half asks for a bare form 
 問題8 pieces are short (one to eight characters). The fastest route is to find the piece that carries a fixed shape (たとえ, なにも, 一〜として, といった + noun) and build out from it.
 
 問題9 passages are columns and short essays. The blanks test connectives, what これ／その refers to, viewpoint (〜てくる, passive), and how the writer ends a claim.
+
+## 問題4 文脈規定 (`type: "v4"`)
+
+One blank in a sentence; four words of the same kind (all verbs, all adverbs, all nouns, all katakana words). Only one fits the context. The real paper has seven of these, the most of any vocabulary type. Files: `content/vocab_v4*.json`, same validator family as v3, v5 and v6.
+
+| Field | Rule |
+|---|---|
+| `w` | The right word in its dictionary form. |
+| `s` | The sentence. **Exactly one blank, written `（　　）`.** |
+| `c` | Four words, **as they stand in the blank** (same conjugation and ending for all four). `c[0]` is right. No 3-character limit. |
+| `en` | Natural English for the whole sentence with the answer in. |
+
+```json
+{
+  "id": "v4-001",
+  "type": "v4",
+  "w": "見逃す",
+  "r": "みのがす",
+  "m": "to miss (seeing); to overlook",
+  "s": "楽しみにしていたドラマの最終回を、仕事で遅くなって（　　）しまった。",
+  "en": "I got home late from work and missed the last episode of the drama I had been looking forward to.",
+  "c": ["見逃して", "見落として", "見過ごして", "見失って"],
+  "why": [
+    "見逃す: to miss the chance to see something you meant to watch. A broadcast you did not catch is 見逃す.",
+    "見落とす means to overlook a detail while looking (a typo, a sign). You did not look at the show at all.",
+    "見過ごす means to let something pass without acting on it (a mistake, wrongdoing). It is not used for missing a programme.",
+    "見失う means to lose sight of something you were following (a person in a crowd). The show was never in sight."
+  ],
+  "tell": "A show or chance you failed to catch: 見逃す. A detail missed while looking: 見落とす.",
+  "lv": 2
+}
+```
+
+Rules 1, 3, 5 to 8 of the vocabulary rules apply. Wrong words must be real N2-level words that a learner could reach for, and wrong **in this sentence in every sense**. Spread the kinds: verbs (about 40%), adverbs and onomatopoeia (25%), nouns and suru-nouns (20%), katakana words (15%).
+
+## Reading texts: 問題10 to 13 (`type: "r10"` to `"r13"`)
+
+The reading section of the paper, apart from 情報検索. Files: `content/read_*.json`, each an array, validated by `validateTexts`. Answers go to the `reading` store, one record per question (`r11-004#2`), like 情報検索.
+
+| Type | Paper | Text | Questions |
+|---|---|---|---|
+| `r10` | 内容理解（短文） | One text, 180 to 260 characters. About two in five are practical: a work email, a memo, a notice from a shop or a school. The rest are short essays. | exactly 1 |
+| `r11` | 内容理解（中文） | One text, 450 to 600 characters, in 3 to 5 paragraphs: an essay, a column, an explanation. | exactly 3 |
+| `r12` | 統合理解 | Two texts, A and B, on one topic, 250 to 380 characters each. Usually two opinions that agree on some points and differ on others. | exactly 2 |
+| `r13` | 主張理解（長文） | One opinion essay, 800 to 1000 characters, in 5 to 8 paragraphs, building to the writer's claim. | exactly 3 |
+
+Character counts leave out line breaks and the `[[ ]]` marks.
+
+| Field | Rule |
+|---|---|
+| `id` | `r10-001`, `r11-001`, `r12-001`, `r13-001`. |
+| `type` | As above. |
+| `genre` | One of `エッセイ`, `コラム`, `解説`, `論説`, `メール`, `お知らせ`, `メモ`, `小説`. |
+| `title` | Only for emails, memos and notices (the subject line, or the notice title). Leave it out for essays: real papers give none. |
+| `text` | The passage (`r10`, `r11`, `r13`). Paragraphs are separated by `\n`. A part the questions point at is underlined with `[[…]]`. Underlines are numbered ①, ②, ③ in order by the app, so write them in the order they appear. |
+| `texts` | `r12` only, instead of `text`: `[{"label":"A","text":"…"},{"label":"B","text":"…"}]`. |
+| `en` | One to three sentences of English summary. No em dashes. |
+| `qs` | The questions (count as above). |
+| `lv` | `1` or `2`. 1 for a clear text with a plain structure, 2 for a text where the claim is hedged, turned round (確かに…しかし) or only implied. |
+
+Each question:
+
+| Field | Rule |
+|---|---|
+| `q` | The question, in the paper's wording. A question about an underline starts with its number: `①そう考えるのはなぜか。`, `②それとは何か。`, `③「…」とはどういうことか。`. Others: `筆者の考えに合うのはどれか。`, `この文章で筆者が最も言いたいことは何か。`, `このメールで最も伝えたいことは何か。`, `AとBのどちらの文章にも触れられている点は何か。`, `…について、AとBはどのように述べているか。` |
+| `c` | Four choices. **`c[0]` is right.** Choices are full sentences of similar length, 20 to 50 characters each. |
+| `why` | Four English notes. `why[0]` says where the answer is and how the text says it in other words. `why[1..3]` each name the trap (see below). |
+| `cue` | 1 to 3 **exact substrings of the text** (without the `[[ ]]` marks; for `r12`, of A or B) where the answer is. The app highlights them after you answer. |
+| `skill` | Which reading technique the question tests: one id from the table below. |
+| `tell` | One line (under 160 characters) on how to find this kind of answer fast. |
+
+Technique ids (`skill`). They match 新完全マスター読解 N2, 第1部 and 第2部, and the tips in `content/read_tips.json`:
+
+| id | Technique | Typical question |
+|---|---|---|
+| `contrast` | 対比: the writer sets two things side by side to show one | 筆者の考えに合うのはどれか |
+| `rephrase` | 言い換え: the claim is said again in other words (つまり, 要するに, 言い換えれば) | ①とはどういうことか |
+| `metaphor` | 比喩: a likeness (〜ようだ, まるで) stands for the point | ①とはどういうことか |
+| `question` | 疑問提示文: the writer asks a question and the answer is the topic (〜だろうか → …のだ) | 筆者が最も言いたいことは何か |
+| `claim` | 主張表現: endings that mark the writer's own view (〜べきだ, 〜のではないか, 〜にほかならない, 〜ざるを得ない) | 筆者の考えに合うのはどれか |
+| `ref` | 指示語: what これ, その, そういう points back to | ②それは何を指しているか |
+| `who` | 「だれが」「何が」「何を」: the missing subject or object | ①したのはだれか |
+| `meaning` | 下線部の意味: what an underlined phrase means here | ①とはどういうことか |
+| `reason` | 理由: why (から, ので, ため, のは…からだ) | ①なのはなぜか |
+| `example` | 例: what an example stands for, or which choice is another case of the same thing | ①の例として合うものはどれか |
+| `gist` | 全体: the writer's main point over the whole text | この文章で筆者が最も言いたいことは何か |
+| `purpose` | 目的: what a practical text (email, memo, notice) is for or asks the reader to do | このメールで最も伝えたいことは何か |
+| `compare` | 統合: what A and B share or where they differ | AとBで共通して述べられていることは何か |
+
+How the wrong choices are built. Every reading question should use two or three of these, and each `why` should name its trap:
+
+1. **Said in the text, but not the answer to this question.** True, but about another paragraph or another underline.
+2. **Half right.** The first half matches, the second half adds or changes something.
+3. **Turned round.** Cause and effect swapped, or the opposite of what the text says (できる for できない).
+4. **The view the writer argues against.** 確かに…, 〜と言われる, 〜という人もいる: the common view the writer sets up to reject.
+5. **Too wide or too narrow.** いつも for ときどき, すべての for 多くの; or one example given as the main point.
+6. **Sounds right, not in the text.** A sensible opinion the text never states.
+
+Rules:
+
+1. **One defensible answer.** Read each wrong choice against the whole text. If the text supports it in any reading, change it.
+2. **The answer is not a copy of the text.** It says the same thing in other words. A choice that repeats the text word for word is usually a trap.
+3. **Questions run in text order** in `r11` and `r13`, and the last one is usually the main point (`gist` or `claim`).
+4. **Natural written Japanese at N2 level**, in the register of the genre. Essays use だ・である or です・ます consistently.
+5. **Original texts only.** Do not copy or paraphrase passages from 新完全マスター, past papers, textbooks, newspapers or websites. Topics, names and numbers are invented.
+6. **Spread the topics:** work, study, family, technology, language, food, health, cities and the countryside, consumer habits, education, communication, the environment, ageing, hobbies, science explained simply.
+
+```json
+{
+  "id": "r10-001",
+  "type": "r10",
+  "genre": "エッセイ",
+  "text": "…本文… [[①に当たる部分]] …本文…",
+  "en": "…",
+  "lv": 1,
+  "qs": [
+    {
+      "q": "①そう考えるのはなぜか。",
+      "c": ["…", "…", "…", "…"],
+      "why": ["…", "…", "…", "…"],
+      "cue": ["exact substring of text"],
+      "skill": "reason",
+      "tell": "…"
+    }
+  ]
+}
+```
+
+## Listening items: 聴解 問題1 to 5 (`type: "l1"` to `"l5"`)
+
+Files: `content/listen_*.json`, each an array, validated by `validateListening`. Answers go to the `listen` store, one record per item (or per question for two-question `l5` items). Audio is made from the script by `tools/build_audio.py`, so the script must read well aloud.
+
+| Type | Paper | What you hear | On screen | Choices |
+|---|---|---|---|---|
+| `l1` | 課題理解 | Narrator: `setup` and `q`. Dialogue. Narrator: `q` again. | the 4 choices (printed) | 4 |
+| `l2` | ポイント理解 | Narrator: `setup` and `q`. Dialogue. Narrator: `q` again. | the 4 choices (printed), read before the audio | 4 |
+| `l3` | 概要理解 | Narrator: `setup`. Talk or dialogue. Narrator: `q`, then the four choices read aloud. | numbers only | 4 (spoken) |
+| `l4` | 即時応答 | One line, then three replies read aloud. | numbers only | 3 (spoken) |
+| `l5` | 統合理解 | Narrator: `setup`. A longer talk or discussion. One question with four spoken choices, **or** two questions with printed choices (the last kind on the paper). | numbers, or the printed choices | 4 |
+
+| Field | Rule |
+|---|---|
+| `id` | `l1-001` and so on. |
+| `type` | As above. |
+| `setup` | Narrator's opening line, as on the paper: `会社で女の人と男の人が話しています。`, `ラジオで女の人が話しています。`, `大学で先生が話しています。` Not for `l4`. |
+| `q` | Narrator's question. `l1`: `女の人はこのあとまず何をしますか。` `l2`: `男の人はどうして…と言っていますか。` `l3`: `女の人は何について話していますか。`, `話の内容に合うのはどれですか。` Not for `l4`, and not for `l5` (its questions are in `qs`). |
+| `lines` | The script. Each line is `{"sp": "F", "t": "…"}`. Speakers: `F` woman, `M` man, `F2` and `M2` a second woman or man (three-person talks). `l4` has exactly one line. |
+| `say` | Optional, on a line: the same line written for the voice engine where it might misread the kanji (`明日` as あした, `一日` as ついたち, `何人` as なんにん, `生物` as せいぶつ, numbers and dates). Write it in kana or with the kanji swapped for kana. Leave it out when the plain text reads safely. |
+| `c` | Choices, `c[0]` right. 4 for `l1`, `l2`, `l3`; 3 for `l4`. Printed choices (`l1`, `l2`) are short phrases, 5 to 25 characters. Spoken choices (`l3`, `l4`) must be easy to follow by ear: `l3` 10 to 30 characters, `l4` replies 5 to 25 characters. |
+| `qs` | `l5` only: 1 or 2 questions, each `{q, c, why, cue, tell}`. With 1 question the choices are read aloud; with 2 they are printed. |
+| `why` | English notes parallel to `c`. `why[0]` quotes the part of the script that decides it. |
+| `cue` | 1 to 3 **exact substrings of the lines' `t` text** that decide the answer. Shown highlighted in the script after you answer. |
+| `tell` | One line on what to listen for. |
+| `en` | English: one or two sentences on what happens (for `l4`, the English of the line). |
+| `lv` | `1` or `2`. |
+
+What each type tests, and the traps to build:
+
+- **`l1` 課題理解: what the person does next (or first).** The plan changes during the talk: a step is already done (`それはもうやってあるから`), someone else will do it (`それは僕がやっておくよ`), or the order changes (`その前に…`). Wrong choices are the steps that were mentioned but dropped, done, or come later. Ask for **まず** or **このあと** and make the order matter.
+- **`l2` ポイント理解: the reason, the feeling, the problem, the one detail.** The speaker mentions several reasons; the asked one comes after a turn (`それもあるけど、一番は…`, `…というより`). Wrong choices are the reasons mentioned and rejected, or what the other speaker suggested.
+- **`l3` 概要理解: the speaker's main point or attitude.** No printed question, so the learner hears `q` only at the end. A one-speaker talk (radio, lecture, a message) or a dialogue where one person's opinion is asked. The point comes as a conclusion (`つまり`, `…というわけです`, `…んじゃないでしょうか`). Wrong choices are details from the talk, or the opposite attitude.
+- **`l4` 即時応答: the natural reply.** The line uses an indirect or idiomatic form whose meaning is not its words: `〜ないことには`, `〜っけ`, `〜ってば`, `〜わけないでしょう`, `〜ところだった`, `〜ものなら`, `さすが`, `よく言うよ`, a complaint dressed as a question, a polite refusal (`ちょっと…`). The two wrong replies answer the surface words, mix up who does what (giving vs receiving, passive vs active), or take a negative question the wrong way. Spread the register: friends, boss and junior, shop and customer.
+- **`l5` 統合理解: compare options against conditions.** One question kind: three people discuss which option to pick (a venue, a plan, a product) and the question is what they decide. Two-question kind: a talk lists four options (four courses, four tours), then two listeners say what they want; each question asks what one listener chooses. Every option must be named clearly and each listener's condition must rule out the others.
+
+Rules:
+
+1. **Natural spoken Japanese.** Fillers (`えっと`, `あの`, `うーん`), contractions (`〜てる`, `〜ちゃう`, `〜んです`), sentence-final particles, interruptions. Keigo where the setting needs it (customer, boss, phone).
+2. **It must work by ear.** Spoken choices are short and easy to tell apart. Avoid homophones that only the kanji separates, unless the context makes them clear.
+3. **One defensible answer**, as for reading.
+4. **Original scripts only.** Do not copy or adapt scripts from past papers, textbooks or 新完全マスター聴解.
+5. **Lengths:** `l1` and `l2` dialogues 8 to 14 lines (about 250 to 450 characters), `l3` 250 to 450 characters, `l4` one line of 8 to 40 characters, `l5` 450 to 750 characters.

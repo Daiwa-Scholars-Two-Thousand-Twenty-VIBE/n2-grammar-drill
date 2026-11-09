@@ -8,9 +8,11 @@
   const G = window.Sync || null; // gist sync (js/sync.js). Missing means sync stays off.
   const app = document.getElementById("app");
   const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1" };
-  const DEFAULTS = { upto: "all", size: 20, newPerDay: 12, timer: true, eink: false, sound: false, missPause: 1500, examDate: "", wk: 27, kNew: 10, kSize: 30, vNew: 10, vSize: 20 };
-  // Seconds the real paper allows, roughly: 問題7 and 問題8 per item, 問題9 per passage, vocab per item.
-  const MOCK_SECS = { p7: 25, p8: 50, p9: 360, v3: 20, v5: 25, v6: 45 };
+  // rlFrom: the day reading and listening join Today. Before it they show as optional blocks.
+  const DEFAULTS = { upto: "all", size: 20, newPerDay: 12, timer: true, eink: false, sound: false, missPause: 1500, examDate: "", wk: 27, kNew: 10, kSize: 30, vNew: 10, vSize: 20, rlFrom: "2026-11-16", lDaily: 8 };
+  // Seconds the real paper allows, roughly: 問題7 and 問題8 per item, 問題9 per passage, vocab per item,
+  // reading per text (with its questions).
+  const MOCK_SECS = { p7: 25, p8: 50, p9: 360, v3: 20, v4: 25, v5: 25, v6: 45, r10: 150, r11: 360, r12: 420, r13: 600, r14: 420 };
   const TYPE_NAME = {
     p7: "問題7 · 文法形式の判断",
     p8: "問題8 · 文の組み立て",
@@ -20,13 +22,53 @@
     km: "漢字 · 意味",
     kn: "漢字 · new",
     v3: "問題3 · 語形成",
+    v4: "問題4 · 文脈規定",
     v5: "問題5 · 言い換え類義",
     v6: "問題6 · 用法",
     r14: "問題14 · 情報検索",
+    r10: "問題10 · 内容理解（短文）",
+    r11: "問題11 · 内容理解（中文）",
+    r12: "問題12 · 統合理解",
+    r13: "問題13 · 主張理解（長文）",
+    l1: "聴解 問題1 · 課題理解",
+    l2: "聴解 問題2 · ポイント理解",
+    l3: "聴解 問題3 · 概要理解",
+    l4: "聴解 問題4 · 即時応答",
+    l5: "聴解 問題5 · 統合理解",
   };
+  // Reading and listening types: short name and what it is.
+  const RNAME = {
+    r10: ["短文", "Short texts (問題10)"],
+    r11: ["中文", "Mid-length texts (問題11)"],
+    r12: ["統合理解", "Two texts, A and B (問題12)"],
+    r13: ["長文", "Long opinion essay (問題13)"],
+    r14: ["情報検索", "Information search (問題14)"],
+  };
+  const LNAME = {
+    l1: ["課題理解", "What to do next (問題1)"],
+    l2: ["ポイント理解", "The point asked (問題2)"],
+    l3: ["概要理解", "The main point (問題3)"],
+    l4: ["即時応答", "Quick response (問題4)"],
+    l5: ["統合理解", "Comparing options (問題5)"],
+  };
+  // What the learner does before pressing play, per listening type.
+  const LHOW = {
+    l1: "Read the four choices. Then press play, close your eyes and listen once. Who does what next?",
+    l2: "Read the four choices. Then press play, close your eyes and listen once for the one point asked.",
+    l3: "Nothing is printed. Listen for the main point. The question and four choices come at the end.",
+    l4: "One line, then three replies. Pick the reply that fits.",
+    l5: "A longer talk. Read any printed choices first, then listen once.",
+  };
+  const RTYPES = ["r10", "r11", "r12", "r13", "r14"];
+  const LTYPES = ["l1", "l2", "l3", "l4", "l5"];
+  const CIRCLED = "①②③④⑤⑥";
+  // Time logged by hand, for the weekly hours goal.
+  const HOUR_CATS = { imm: "Immersion", tutor: "Tutor lesson", book: "Textbook or Try N2", mock: "Mock paper", other: "Other" };
+  const WEEK_GOAL = 18;
   // Vocab types: short name, what it asks, and the instruction shown above the choices.
   const VNAME = {
     v3: ["語形成", "Word formation (問題3)", "Which goes in the blank to make one word?"],
+    v4: ["文脈規定", "Context (問題4)", "Which word fits the blank?"],
     v5: ["言い換え", "Closest meaning (問題5)", "Which is closest in meaning to the underlined words?"],
     v6: ["用法", "Usage (問題6)", "Which sentence uses this word correctly?"],
   };
@@ -96,10 +138,35 @@
   const R = D.passages || [];
   const rById = new Map(R.map((p) => [p.id, p]));
   const isV = (q) => q.type[0] === "v";
-  // 問題9 passages and 情報検索 notices both hold several questions, answered one at a time.
-  const isMulti = (q) => q.type === "p9" || q.type === "r14";
-  const itemById = (id) => qById.get(id) || vById.get(id) || rById.get(id);
-  const storeOf = (q) => (isK(q) ? "kanji" : isV(q) ? "vocab" : q.type === "r14" ? "reading" : "points");
+  // Reading texts (問題10 to 13), listening items (聴解 問題1 to 5), their audio and the reading tips.
+  const RT = D.texts || [];
+  const tById = new Map(RT.map((p) => [p.id, p]));
+  const RALL = [...RT, ...R]; // every reading text, 情報検索 included
+  const AUD = D.audio || {};
+  const LALL = D.listen || [];
+  const lById = new Map(LALL.map((x) => [x.id, x]));
+  // Listening items that can be played: only those with recorded audio. There is no synthetic fallback.
+  let L = [];
+  const refreshL = () => (L = LALL.filter((x) => AUD[x.id]));
+  refreshL();
+  const TIPS = D.tips || { techniques: [], types: [], listening: [], listenGeneral: [] };
+  const tipById = new Map([...(TIPS.techniques || []), ...(TIPS.types || []), ...(TIPS.listening || [])].map((t) => [t.id, t]));
+  if (TIPS.intro) tipById.set("intro", TIPS.intro);
+  const skillName = (id) => {
+    const t = tipById.get(id);
+    return t ? `${t.ja} · ${t.en}` : { gist: "全体 · Main point", compare: "統合 · Comparing A and B" }[id] || id;
+  };
+  const isR = (q) => q.type[0] === "r"; // r10 to r14
+  const isL = (q) => q.type[0] === "l";
+  // 問題9 passages, reading texts and 問題5 listening items hold several questions, answered one at a time.
+  const isMulti = (q) => q.type === "p9" || isR(q) || q.type === "l5";
+  const itemById = (id) => qById.get(id) || vById.get(id) || rById.get(id) || tById.get(id) || lById.get(id);
+  const storeOf = (q) => (isK(q) ? "kanji" : isV(q) ? "vocab" : isR(q) ? "reading" : isL(q) ? "listen" : "points");
+  // Listening choices read aloud (問題3, 4 and one-question 問題5) keep the order they were recorded in.
+  const spokenOf = (q) => q.type === "l3" || q.type === "l4" || (q.type === "l5" && q.qs.length === 1);
+  const orderOf = (q) => (AUD[q.id] && AUD[q.id].order) || S.spokenOrder(q.id, q.type === "l4" ? 3 : 4);
+  const readCount = (p) => seenQ(`${p.id}#1`);
+  const lstatus = (it) => S.status(state.listen[it.type === "l5" ? `${it.id}#1` : it.id], S.TARGET[it.type]);
 
   const today = () => S.dayStr(new Date());
   const status = (id) => S.status(state.points[id]);
@@ -242,6 +309,7 @@
   // `keepScroll` is for a background refresh (a sync brought new progress): stay where the reader is.
   function render(keepScroll) {
     closeModal();
+    refreshL();
     document.body.classList.toggle("eink", !!settings.eink);
     const [screen, arg] = screenOf();
     let html;
@@ -290,6 +358,12 @@
       case "settings":
         html = viewSettings();
         break;
+      case "tips":
+        html = viewTips();
+        break;
+      case "tip":
+        html = viewTip(arg);
+        break;
       default:
         tab = "home";
         html = viewToday();
@@ -326,7 +400,7 @@
   }
 
   function dayStreak() {
-    const studied = (d) => state.days[d] || state.kdays[d] || state.vdays[d] || state.rdays[d];
+    const studied = (d) => state.days[d] || state.kdays[d] || state.vdays[d] || state.rdays[d] || state.ldays[d];
     let d = today();
     if (!studied(d)) d = S.addDays(d, -1);
     let n = 0;
@@ -350,9 +424,30 @@
       const k = kanjiCounts();
       plan.push({ id: "kanji", name: "Kanji", sub: `Exam kanji past WaniKani ${settings.wk}`, n: k.n, mins: (k.n * 15 + k.nNew * 20) / 60, done: (state.kdays[t] || {}).n || 0, act: "kanji-today", unit: "kanji" });
     }
+    // Reading and listening: optional blocks until settings.rlFrom, then part of the day.
+    const optional = t < settings.rlFrom;
+    const until = optional ? `Optional until ${fmtDay(settings.rlFrom)} · ` : "";
+    if (RALL.length) {
+      const read = readToday();
+      const next = read ? [] : S.buildReadingDaily({ state, texts: RALL, today: t, rng: () => 0 });
+      const type = next.length ? next[0].type : "r10";
+      plan.push({ id: "reading", name: "Reading", sub: `${until}${next.length ? `${RNAME[type][0]}, timed` : "one timed text set"}`, n: read ? 0 : 1, mins: next.reduce((a, p) => a + S.PACE[p.type], 0) / 60, done: (state.rdays[t] || {}).n || 0, act: "read-today", unit: "set", optional });
+    }
+    if (L.length) {
+      const heard = (state.ldays[t] || {}).n || 0;
+      const n = Math.max(0, Math.min(settings.lDaily, L.length) - heard);
+      plan.push({ id: "listening", name: "Listening", sub: `${until}one play each, eyes closed`, n, mins: n * 1.3, done: heard, act: "listen-today", unit: "items", optional });
+    }
     for (const b of plan) b.mins = b.n ? Math.max(1, Math.round(b.mins)) : 0;
     return plan;
   }
+  const fmtDay = (ds) => {
+    const [y, m, d] = ds.split("-").map(Number);
+    return new Date(y, m - 1, d).toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+  };
+  // A reading text finished today, in any mode.
+  const readToday = () => Object.values(state.rlog || {}).some((e) => !e.del && e.d === today());
+  const nextBlock = () => dayPlan().find((b) => b.n > 0 && !b.optional);
 
   // Today, Practice, Progress and Library. The quiz and the screens under Library have no tab bar.
   function tabbar(active) {
@@ -376,23 +471,25 @@
   // ---------- today ----------
   function viewToday() {
     const plan = dayPlan();
-    const next = plan.find((b) => b.n > 0);
-    const left = plan.reduce((a, b) => a + b.mins, 0);
+    const next = plan.find((b) => b.n > 0 && !b.optional);
+    const left = plan.filter((b) => !b.optional).reduce((a, b) => a + b.mins, 0);
     const answered = plan.reduce((a, b) => a + b.done, 0);
     const rows = plan
       .map((b) => {
         const done = !b.n;
-        const right = done ? (b.done ? `${b.done} done` : "Nothing due") : `${b.n} · ${b.mins} min`;
+        const right = done ? (b.done ? `${b.done === true ? "" : `${b.done} `}done` : "Nothing due") : `${b.unit === "set" ? "1 set" : b.n} · ${b.mins} min`;
         const inner = `<span class="tick${done ? " on" : ""}" aria-hidden="true">${done ? "✓" : ""}</span><span><b>${b.name}</b><small>${esc(b.sub)}</small></span><span class="meta">${right}</span>`;
-        return done ? `<div class="block done">${inner}</div>` : `<button class="block" data-act="${b.act}">${inner}</button>`;
+        const cls = `block${b.optional ? " opt" : ""}`;
+        return done ? `<div class="${cls} done">${inner}</div>` : `<button class="${cls}" data-act="${b.act}">${inner}</button>`;
       })
       .join("");
     const date = new Date().toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
     const main = next
       ? `<button class="btn primary wide go" data-act="${next.act}">Start ${next.name.toLowerCase()}: ${next.n} ${next.unit}, about ${next.mins} min</button>`
       : `<button class="btn wide" data-act="nav" data-to="practice">Extra practice</button>`;
-    const ever = [state.days, state.kdays, state.vdays, state.rdays].some((l) => Object.keys(l).length);
-    const blocks = ["", "one short block", "two short blocks, grammar first", "three short blocks, grammar first"][plan.length];
+    const ever = [state.days, state.kdays, state.vdays, state.rdays, state.ldays].some((l) => Object.keys(l).length);
+    const req = plan.filter((b) => !b.optional).length;
+    const blocks = req === 1 ? "one short block" : `${req} short blocks, grammar first`;
     const firstTime = ever
       ? ""
       : `<div class="card"><h3>How this works</h3><ul class="small" style="margin:0;padding-left:18px">
@@ -400,6 +497,7 @@
           <li>After each answer, read the one-line <b>tell</b>. That is the thing to learn.</li>
           <li>Right but slow counts as not learned yet, so it comes back tomorrow.</li>
           <li>Mocks${R.length ? ", look-alike sets and 情報検索" : " and look-alike sets"} are in <b>Practice</b>.</li>
+          ${RALL.length || L.length ? `<li>Reading and listening are optional until ${esc(fmtDay(settings.rlFrom))}, then part of Today.</li>` : ""}
           <li>Still working through the book? Set how far you have got in <button class="linkish" data-act="nav" data-to="settings">Settings</button>.</li>
         </ul></div>`;
     const streak = dayStreak();
@@ -424,8 +522,7 @@
     const has = (t) => V.filter((q) => q.type === t).length;
     const exam = [
       row("mock", "Grammar section", "問題7 ×12, 問題8 ×5 and one 問題9 passage · about 15 min"),
-      S.VTYPES.every((t) => has(t) >= 5) ? row("vocab-mock", "Vocab section", "問題3, 5 and 6, five of each · about 8 min") : "",
-      R.length ? row("notice", "情報検索 (問題14)", `One notice, two questions · about 7 min · ${R.filter((p) => state.qs[`${p.id}#1`]).length}/${R.length} done`) : "",
+      S.VTYPES.every((t) => has(t) >= 5) ? row("vocab-mock", "Vocab section", "問題3 to 6, five of each · about 10 min") : "",
       row("passage", "One passage (問題9)", "A short text with five blanks"),
     ].join("");
     const mix = S.mixups(state, 3).filter((x) => pointById.has(x.a) && pointById.has(x.b));
@@ -445,10 +542,38 @@
       V.length ? row("vocab-more", "6 new vocab items", "On top of today's plan") : "",
       K.length ? row("kanji-more", "5 new kanji", "On top of today's plan") : "",
     ].join("");
+    const readDone = (t) => RALL.filter((p) => p.type === t && readCount(p)).length;
+    const reading = RALL.length
+      ? [
+          row("read-today", "Today's reading set", "One timed set, the type taken in turn"),
+          RALL.length >= 8 ? row("read-mock", "Reading section, full", "問題10 to 14: 11 texts, 21 questions · 55 min · no answers until the end") : "",
+          row("read-half", "Reading section, half", "Two short texts, one mid-length, one long · about 25 min"),
+          ...RTYPES.filter((t) => RALL.some((p) => p.type === t)).map((t) => row("read-type", RNAME[t][1], `${readDone(t)}/${RALL.filter((p) => p.type === t).length} read · about ${Math.round((S.PACE[t] * (t === "r10" ? 3 : 1)) / 60)} min`, `data-t="${t}"`)),
+          row("nav", "By technique", "対比, 言い換え, 指示語, 理由…: the tips, your accuracy and a drill for each", 'data-to="tips"'),
+        ].join("")
+      : "";
+    const heardOf = (t) => L.filter((x) => x.type === t && lstatus(x) !== "new").length;
+    // A timed listening section only once there is recorded audio for a whole one (see buildListenMock).
+    const lHas = (t, n) => L.filter((x) => x.type === t).length >= n;
+    const l5Has = (two) => L.some((x) => x.type === "l5" && x.qs.length > 1 === two);
+    const lFull = lHas("l1", 5) && lHas("l2", 6) && lHas("l3", 5) && lHas("l4", 12) && l5Has(false) && l5Has(true);
+    const lHalf = lHas("l1", 2) && lHas("l2", 3) && lHas("l3", 2) && lHas("l4", 6) && lHas("l5", 1);
+    const listening = L.length
+      ? [
+          row("listen-today", `${Math.min(settings.lDaily, L.length)} listening items`, "Mixed types, one play each"),
+          lFull ? row("listen-mock", "Listening section, full", "問題1 to 5 in paper order · about 50 min · answer inside the time") : "",
+          lHalf ? row("listen-half", "Listening section, half", "About 25 min") : "",
+          ...LTYPES.filter((t) => L.some((x) => x.type === t)).map((t) => row("listen-type", LNAME[t][1], `${heardOf(t)}/${L.filter((x) => x.type === t).length} heard`, `data-t="${t}"`)),
+        ].join("")
+      : "";
+    const noAudio = LALL.filter((x) => !AUD[x.id]).length;
+    const audioNote = noAudio
+      ? `<p class="muted small">${LALL.length - noAudio} of ${LALL.length} listening items have their recording so far. The rest appear here as their recordings are made${lFull ? "" : ", and the timed listening section appears once a whole section has audio"}.</p>`
+      : "";
     return `${header()}
       <h2>Practice</h2>
       <p class="muted small">Extra drills on top of Today. As the exam gets close, do a timed section twice a week.</p>
-      <div class="list">${section("Timed exam sections", exam)}${section("Weak spots", weak)}${section("One question type", byType)}${section("Get ahead", ahead)}</div>
+      <div class="list">${section("Timed exam sections", exam)}${section("Reading 読解", reading)}${section("Listening 聴解", listening + audioNote)}${section("Weak spots", weak)}${section("One question type", byType)}${section("Get ahead", ahead)}</div>
       ${tabbar("practice")}`;
   }
 
@@ -480,9 +605,192 @@
         <table><thead><tr><th>Day</th><th>Answered</th><th>Right</th><th>Minutes</th></tr></thead><tbody>${rows}</tbody></table></details>`;
   }
 
+  // ---------- reading, listening, hours and mocks on the Progress tab ----------
+  const pct = (right, seen) => (seen ? `${Math.round((right / seen) * 100)}%` : "–");
+  const sumRecs = (recs) => recs.reduce((a, r) => ({ seen: a.seen + r.seen, right: a.right + r.right }), { seen: 0, right: 0 });
+  const rlog = () => Object.values(state.rlog || {}).filter((e) => !e.del).sort((a, b) => a.ts - b.ts);
+  // Characters per minute over a text and its questions. Exam pace is the text length over S.PACE.
+  const cpm = (e) => (e.secs ? Math.round(e.chars / (e.secs / 60)) : 0);
+
+  function readingCard() {
+    if (!RALL.length) return "";
+    const log = rlog();
+    const rows = RTYPES.filter((t) => RALL.some((p) => p.type === t))
+      .map((t) => {
+        const texts = RALL.filter((p) => p.type === t);
+        const recs = texts.flatMap((p) => p.qs.map((_, k) => state.reading[`${p.id}#${k + 1}`]).filter(Boolean));
+        const a = sumRecs(recs);
+        const last = log.filter((e) => e.type === t).slice(-5);
+        const pace = last.length ? S.median(last.map((e) => e.secs / S.PACE[t])) : null;
+        return `<tr><td><b class="jp">${RNAME[t][0]}</b><div class="small muted">${t.replace("r", "問題")}</div></td><td>${texts.filter((p) => readCount(p)).length}/${texts.length}</td><td>${pct(a.right, a.seen)}</td>
+          <td class="${pace !== null && pace > 1.15 ? "slow" : ""}">${pace === null ? "–" : `${pace.toFixed(1)}×`}</td></tr>`;
+      })
+      .join("");
+    // Speed: your first five texts against your last five, in characters a minute.
+    const withChars = log.filter((e) => e.chars && e.secs);
+    const first = withChars.slice(0, 5);
+    const lastFive = withChars.slice(-5);
+    const speed = withChars.length >= 2
+      ? `<p class="small">Reading speed, text and questions together: <b>${S.median(lastFive.map(cpm))} characters a minute</b> over your last ${lastFive.length} texts${withChars.length >= 6 ? ` (first ${first.length}: ${S.median(first.map(cpm))})` : ""}. Exam pace is about ${Math.round((RALL.reduce((a, p) => a + (p.chars || 0), 0) / RALL.reduce((a, p) => a + S.PACE[p.type], 0)) * 60)}.</p>`
+      : "";
+    // Technique table: weakest first, tap to drill.
+    const skills = new Map();
+    for (const p of RT) p.qs.forEach((q, k) => {
+      const r = state.reading[`${p.id}#${k + 1}`];
+      const x = skills.get(q.skill) || { seen: 0, right: 0, n: 0 };
+      x.n++;
+      if (r) {
+        x.seen += r.seen;
+        x.right += r.right;
+      }
+      skills.set(q.skill, x);
+    });
+    const tech = [...skills.entries()]
+      .filter(([, x]) => x.seen)
+      .sort((a, b) => a[1].right / a[1].seen - b[1].right / b[1].seen)
+      .map(([id, x]) => `<button data-act="read-skill" data-id="${esc(id)}"><span class="form">${esc(skillName(id))}</span><span class="muted small">${pct(x.right, x.seen)} of ${x.seen}</span></button>`)
+      .join("");
+    return `<div class="card"><h3>Reading 読解</h3>
+      <table class="mini"><thead><tr><th>Type</th><th>Read</th><th>Right</th><th>Time</th></tr></thead><tbody>${rows}</tbody></table>
+      <p class="small muted">Time is your last five texts against exam pace: 1.0× is on pace, above 1.0× is slower.</p>
+      ${speed}
+      ${tech ? `<h3 style="margin-top:14px">By technique, weakest first</h3><div class="mix">${tech}</div>` : ""}</div>`;
+  }
+
+  function listeningCard() {
+    if (!LALL.length) return "";
+    const rows = LTYPES.filter((t) => LALL.some((x) => x.type === t))
+      .map((t) => {
+        const items = LALL.filter((x) => x.type === t);
+        const recs = items.flatMap((x) => (x.type === "l5" ? x.qs.map((_, k) => state.listen[`${x.id}#${k + 1}`]) : [state.listen[x.id]])).filter(Boolean);
+        const a = sumRecs(recs);
+        const times = recs.flatMap((r) => r.times || []);
+        return `<tr><td><b class="jp">${LNAME[t][0]}</b><div class="small muted">問題${t.slice(1)}</div></td><td>${items.filter((x) => lstatus(x) !== "new").length}/${items.length}</td><td>${pct(a.right, a.seen)}</td><td>${times.length ? fmtSecs(S.median(times)) : "–"}</td></tr>`;
+      })
+      .join("");
+    const t = today();
+    const week = Array.from({ length: 7 }, (_, i) => state.ldays[S.addDays(t, -i)]).filter(Boolean);
+    const w = week.reduce((a, d) => ({ n: a.n + d.n, right: a.right + d.right }), { n: 0, right: 0 });
+    return `<div class="card"><h3>Listening 聴解</h3>
+      <table class="mini"><thead><tr><th>Type</th><th>Heard</th><th>Right</th><th>To answer</th></tr></thead><tbody>${rows}</tbody></table>
+      <p class="small muted">${w.n ? `This week: ${w.n} answered, ${pct(w.right, w.n)} right. ` : ""}"To answer" is the usual time from the end of the audio to your answer. The paper gives about 12 seconds, 8 for 問題4.</p></div>`;
+  }
+
+  // Minutes a day: answer time in the drill (plus the audio heard) and time logged by hand.
+  function minutesOn(d) {
+    const drill = [state.days, state.kdays, state.vdays, state.rdays, state.ldays].reduce((a, l) => a + ((l[d] || {}).secs || 0), 0) / 60;
+    const logged = Object.values(state.hours || {}).filter((e) => !e.del && e.d === d).reduce((a, e) => a + e.min, 0);
+    return { drill, logged };
+  }
+  function weekHours(end) {
+    let drill = 0;
+    let logged = 0;
+    for (let i = 0; i < 7; i++) {
+      const m = minutesOn(S.addDays(end, -i));
+      drill += m.drill;
+      logged += m.logged;
+    }
+    return { drill: drill / 60, logged: logged / 60, total: (drill + logged) / 60 };
+  }
+  const hrs = (h) => (h >= 10 ? Math.round(h) : h.toFixed(1));
+
+  function hoursCard() {
+    const t = today();
+    const rows = [0, 1, 2, 3]
+      .map((k) => {
+        const end = S.addDays(t, -7 * k);
+        const w = weekHours(end);
+        return `<tr><td>${k ? `to ${esc(fmtDate(end))}` : "Last 7 days"}</td><td>${hrs(w.drill)}</td><td>${hrs(w.logged)}</td><td><b>${hrs(w.total)}</b> / ${WEEK_GOAL}</td></tr>`;
+      })
+      .join("");
+    const recent = Object.entries(state.hours || {})
+      .filter(([, e]) => !e.del && e.d >= S.addDays(t, -6))
+      .sort((a, b) => (a[1].d < b[1].d ? 1 : -1))
+      .map(([id, e]) => `<li>${esc(fmtDay(e.d))} · ${esc(HOUR_CATS[e.cat] || e.cat)} · ${e.min} min <button class="linkish small" data-act="hours-del" data-id="${esc(id)}" aria-label="Delete">✕</button></li>`)
+      .join("");
+    const cats = Object.entries(HOUR_CATS).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join("");
+    return `<div class="card" id="hours-card"><h3>Hours of Japanese</h3>
+      <p class="small muted">The goal is ${WEEK_GOAL} hours a week. Drill time counts by itself (answer time and audio). Log the rest: immersion, tutors, the textbook, mocks.</p>
+      <table class="mini"><thead><tr><th>Week</th><th>Drill</th><th>Logged</th><th>Total</th></tr></thead><tbody>${rows}</tbody></table>
+      <div class="hform">
+        <select id="h-cat" aria-label="What">${cats}</select>
+        <input id="h-min" type="number" min="5" max="600" step="5" value="30" aria-label="Minutes">
+        <input id="h-day" type="date" value="${t}" max="${t}" aria-label="Day">
+        <button class="btn primary" data-act="hours-add">Log</button>
+      </div>
+      ${recent ? `<ul class="hlist small">${recent}</ul>` : ""}</div>`;
+  }
+
+  // Full mock scores, as scaled scores out of 60 per section. Pass: 90 of 180 and 19 in each section.
+  function mocksCard() {
+    const list = Object.entries(state.mocks || {})
+      .filter(([, m]) => !m.del)
+      .sort((a, b) => (a[1].d < b[1].d ? 1 : -1));
+    const cell = (x) => (x === null || x === undefined || x === "" ? "–" : x);
+    const rows = list
+      .map(([id, m]) => {
+        const parts = [m.lang, m.read, m.listen];
+        const known = parts.filter((x) => typeof x === "number");
+        const total = known.reduce((a, x) => a + x, 0);
+        const low = known.some((x) => x < 19);
+        const verdict = known.length === 3 ? (total >= 90 && !low ? "Pass" : "Below") : low ? "Below cutoff" : `${total}/${known.length * 60}`;
+        return `<tr><td>${esc(fmtDate(m.d))}${m.note ? `<div class="small muted">${esc(m.note)}</div>` : ""}</td><td>${cell(m.lang)}</td><td>${cell(m.read)}</td><td>${cell(m.listen)}</td><td><b>${known.length === 3 ? total : "–"}</b></td><td class="${verdict === "Pass" ? "good" : "bad"}">${verdict}</td>
+          <td><button class="linkish small" data-act="mock-del" data-id="${esc(id)}" aria-label="Delete">✕</button></td></tr>`;
+      })
+      .join("");
+    return `<div class="card" id="mocks-card"><h3>Mock papers</h3>
+      <p class="small muted">Scaled scores out of 60. To pass: 90 of 180 in all, and at least 19 in each section.</p>
+      ${rows ? `<div class="twrap"><table class="mini"><thead><tr><th>Date</th><th>言語</th><th>読解</th><th>聴解</th><th>Total</th><th></th><th></th></tr></thead><tbody>${rows}</tbody></table></div>` : `<p class="small">No mocks logged yet.</p>`}
+      <details class="small" style="margin-top:8px"><summary>Log a mock</summary>
+        <div class="hform">
+          <input id="m-day" type="date" value="${today()}" aria-label="Date">
+          <input id="m-lang" type="number" min="0" max="60" placeholder="言語知識" aria-label="Language knowledge, out of 60">
+          <input id="m-read" type="number" min="0" max="60" placeholder="読解" aria-label="Reading, out of 60">
+          <input id="m-listen" type="number" min="0" max="60" placeholder="聴解" aria-label="Listening, out of 60">
+          <input id="m-note" type="text" placeholder="Paper, e.g. 2016-07" aria-label="Note">
+          <button class="btn primary" data-act="mock-add">Save</button>
+        </div></details></div>`;
+  }
+
+  function addHours() {
+    const min = Number(document.getElementById("h-min").value);
+    const d = document.getElementById("h-day").value || today();
+    if (!Number.isFinite(min) || min < 1 || min > 900) return toast("Minutes, from 1 to 900.");
+    const id = `h${Date.now().toString(36)}`;
+    state.hours[id] = { d, cat: document.getElementById("h-cat").value, min: Math.round(min), ts: Date.now() };
+    saveState();
+    syncSoon();
+    toast(`Logged ${Math.round(min)} min.`);
+    render(true);
+  }
+  function addMock() {
+    const num = (id) => {
+      const v = document.getElementById(id).value;
+      if (v === "") return null;
+      const n = Number(v);
+      return Number.isFinite(n) && n >= 0 && n <= 60 ? Math.round(n) : NaN;
+    };
+    const m = { d: document.getElementById("m-day").value || today(), lang: num("m-lang"), read: num("m-read"), listen: num("m-listen"), note: document.getElementById("m-note").value.trim().slice(0, 60), ts: Date.now() };
+    if ([m.lang, m.read, m.listen].some(Number.isNaN)) return toast("Scores are out of 60.");
+    if ([m.lang, m.read, m.listen].every((x) => x === null)) return toast("Enter at least one score.");
+    state.mocks[`m${Date.now().toString(36)}`] = m;
+    saveState();
+    syncSoon();
+    render(true);
+  }
+  // Deleting keeps a marked entry, so the deletion syncs to other devices.
+  function delEntry(store, id) {
+    const e = state[store][id];
+    if (!e || !confirm("Delete this entry?")) return;
+    state[store][id] = { ...e, del: true, ts: Date.now() };
+    saveState();
+    syncSoon();
+    render(true);
+  }
+
   function viewProgress() {
     const t = today();
-    const logs = [state.days, state.kdays, state.vdays, state.rdays];
+    const logs = [state.days, state.kdays, state.vdays, state.rdays, state.ldays];
     const dayTotal = (d) =>
       logs.reduce(
         (a, l) => {
@@ -534,7 +842,7 @@
       <div class="stats">
         <div><b>${dayStreak()}</b>day streak</div>
         <div><b>${week.n}</b>answered this week</div>
-        <div><b>${Math.round(week.secs / 60)} min</b>studied this week</div>
+        <div><b>${hrs(weekHours(t).total)} h</b>of ${WEEK_GOAL} h this week</div>
         <div><b>${week.n ? `${Math.round((week.right / week.n) * 100)}%` : "–"}</b>right this week</div>
       </div>
       <div class="card"><h3>Answers per day, last 14 days</h3>${activityChart(days14)}</div>
@@ -543,7 +851,13 @@
           <div><b>${gMet}/${pts.length}</b>grammar points</div>
           ${V.length ? `<div><b>${vMet}/${V.length}</b>vocab items</div>` : ""}
           ${K.length ? `<div><b>${kMet}/${gap.length}</b>kanji</div>` : ""}
+          ${RALL.length ? `<div><b>${RALL.filter((p) => readCount(p)).length}/${RALL.length}</b>reading texts</div>` : ""}
+          ${LALL.length ? `<div><b>${LALL.filter((x) => lstatus(x) !== "new").length}/${LALL.length}</b>listening items</div>` : ""}
         </div></div>
+      ${hoursCard()}
+      ${mocksCard()}
+      ${readingCard()}
+      ${listeningCard()}
       <div class="card"><h3>Grammar by section</h3><div class="bars">${grammar}</div>${legend()}</div>
       ${vocab ? `<div class="card"><h3>Vocab by question type</h3><div class="bars">${vocab}</div>${legend()}</div>` : ""}
       ${kanji ? `<div class="card"><h3>Kanji by tier</h3><div class="bars">${kanji}</div>${legend()}</div>` : ""}
@@ -564,6 +878,7 @@
         ${row("sets", "Confusable sets", "Look-alike forms and the one-line rule for each")}
         ${row("rules", "Cheat sheets", "Locked endings, connectives, register, もの・こと・わけ")}
         ${K.length ? row("kanji", "Kanji gap", `${K.length} exam kanji WaniKani teaches after level 27, with words and look-alikes`) : ""}
+        ${TIPS.techniques.length ? row("tips", "Reading and listening tips", "新完全マスター読解 N2 technique by technique, each part of the paper, and how each 聴解 question works") : ""}
         ${V.length || R.length ? row("vocab", V.length ? "Vocab and 情報検索" : "情報検索", V.length ? "Word lists by question type, and how to scan a notice" : "How to scan a notice for the answer") : ""}
         ${row("settings", "Settings, sync and backup", "Daily amounts, sync between devices, export")}
       </div>
@@ -572,12 +887,92 @@
       ${tabbar("library")}`;
   }
 
+  // ---------- reading and listening tips (新完全マスター読解 N2, in our own words) ----------
+  // Accuracy on reading questions that test one technique.
+  function skillAcc(id) {
+    const a = { seen: 0, right: 0 };
+    for (const p of RT)
+      p.qs.forEach((b, k) => {
+        const r = b.skill === id && state.reading[`${p.id}#${k + 1}`];
+        if (r) {
+          a.seen += r.seen;
+          a.right += r.right;
+        }
+      });
+    return a;
+  }
+  function tipBody(t) {
+    const list = (title, xs, cls = "") => (xs && xs.length ? `<h3>${title}</h3><ul class="tiplist ${cls}">${xs.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "");
+    const sig = t.signals && t.signals.length
+      ? `<h3>Words that signal it</h3><table class="mini sig"><tbody>${t.signals.map(([j, e]) => `<tr><td class="jp">${esc(j)}</td><td>${esc(e)}</td></tr>`).join("")}</tbody></table>`
+      : "";
+    const ex = t.ex ? `<h3>Example</h3><div class="ex jp">${esc(t.ex.ja)}</div><p class="small muted">${esc(t.ex.en)}</p>${t.ex.note ? `<p class="small">${esc(t.ex.note)}</p>` : ""}` : "";
+    return `${t.gist ? `<p>${esc(t.gist)}</p>` : ""}${t.what ? `<p>${esc(t.what)}</p>` : ""}${t.time ? `<p class="small"><b>Time:</b> ${esc(t.time)}</p>` : ""}
+      ${sig}${list("Steps", t.steps)}${list("Tips", t.tips)}${list("Traps", t.traps)}${list("How the question is asked", t.q, "jp")}${ex}`;
+  }
+  function tipHead(t) {
+    const where = [t.part, t.book ? `SKM 読解 ${t.book}` : ""].filter(Boolean).join(" · ");
+    return `${where ? `<span class="kicker">${esc(where)}</span>` : ""}<h2><span class="jp">${esc(t.ja)}</span> · ${esc(t.en)}</h2>${t.title ? `<p class="jp muted" style="margin-top:-6px">${esc(t.title)}</p>` : ""}`;
+  }
+  function viewTips() {
+    const row = (t, sub) =>
+      `<button class="item two" data-act="nav" data-to="tip/${esc(t.id)}"><span><span class="form"><span class="jp">${esc(t.ja)}</span> · ${esc(t.en)}</span><span class="sub">${sub}</span></span><span class="meta">›</span></button>`;
+    const you = (id) => {
+      const a = skillAcc(id);
+      return a.seen ? ` · you: ${pct(a.right, a.seen)} of ${a.seen}` : "";
+    };
+    const tech = (from) => TIPS.techniques.filter((t) => (t.part || "").startsWith(from)).map((t) => row(t, `${esc(t.title || "")}${you(t.id)}`)).join("");
+    const section = (title, rows) => (rows ? `<div class="lesson-h">${title}</div>${rows}` : "");
+    const types = (TIPS.types || []).filter((t) => RTYPES.includes(t.id)).sort((a, b) => RTYPES.indexOf(a.id) - RTYPES.indexOf(b.id)).map((t) => row(t, esc(t.id.replace("r", "問題")))).join("");
+    const listen = (TIPS.listening || []).map((t) => row(t, esc(t.id.replace("l", "聴解 問題")))).join("");
+    const general = (TIPS.listenGeneral || []).length ? `<div class="card"><h3>Listening, every part</h3><ul class="tiplist">${TIPS.listenGeneral.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>` : "";
+    return `${header()}${back("library", "Library")}
+      <h2>Reading and listening tips</h2>
+      <p class="muted small">The method of 新完全マスター読解 N2, summed up in our own words, with the book's pages so you can look things up. Your accuracy shows once you have answered questions on a technique.</p>
+      ${TIPS.intro ? `<div class="list">${row(TIPS.intro, "Read for the shape first, then the details")}</div>` : ""}
+      <div class="list">${section("How texts are built · 第1部 1", tech("第1部 1"))}${section("Question types · 第1部 2", tech("第1部 2"))}${section("Practical texts · 第2部", tech("第2部"))}${section("Each part of the paper", types)}${section("Listening, part by part", listen)}</div>
+      ${general}`;
+  }
+  function viewTip(id) {
+    const t = tipById.get(id);
+    if (!t) return viewTips();
+    const a = skillAcc(id);
+    const isTech = TIPS.techniques.some((x) => x.id === id);
+    let drill = "";
+    if (isTech && RT.some((p) => p.qs.some((b) => b.skill === id))) drill = `<button class="btn primary wide" data-act="read-skill" data-id="${esc(id)}">Drill it: two texts with a ${esc(t.ja)} question</button>`;
+    else if (RTYPES.includes(id) && RALL.some((p) => p.type === id)) drill = `<button class="btn primary wide" data-act="read-type" data-t="${id}">Read one now, timed</button>`;
+    else if (LTYPES.includes(id) && L.some((x) => x.type === id)) drill = `<button class="btn primary wide" data-act="listen-type" data-t="${id}">Listen to some now</button>`;
+    return `${header()}${back("tips", "Tips")}
+      ${tipHead(t)}
+      ${a.seen ? `<p class="small">You: ${pct(a.right, a.seen)} right over ${a.seen} questions on this.</p>` : ""}
+      <div class="card tip">${tipBody(t)}</div>
+      ${drill}`;
+  }
+  // The same tip as a sheet over the quiz, so a session is never left mid-way.
+  function openTip(id) {
+    const t = tipById.get(id);
+    if (!t) return;
+    closeModal();
+    const el = document.createElement("div");
+    el.className = "overlay";
+    el.dataset.act = "close-modal";
+    el.innerHTML = `<div class="card sheet tip" role="dialog" aria-label="${esc(t.en)}">
+      <div class="row" style="justify-content:flex-end"><button class="linkish" data-act="close-modal">Close</button></div>
+      ${tipHead(t)}${tipBody(t)}</div>`;
+    document.body.appendChild(el);
+  }
+
   // ---------- starting sessions ----------
+  const MOCKS = new Set(["mock", "vmock", "rmock", "lmock"]);
   function begin(mode, title, items) {
     if (!items.length) return toast("No questions match that yet.");
-    sess = { mode, title, items, i: 0, res: [], requeued: new Set(), mock: mode === "mock" || mode === "vmock", started: Date.now() };
-    if (sess.mock) sess.deadline = Date.now() + items.reduce((a, q) => a + MOCK_SECS[q.type], 0) * 1000;
+    stopAudio();
+    sess = { mode, title, items, i: 0, res: [], requeued: new Set(), mock: MOCKS.has(mode), started: Date.now() };
+    // A listening mock has no overall clock: the audio sets the pace, with a fixed time to answer each item.
+    if (sess.mock && mode !== "lmock") sess.deadline = Date.now() + items.reduce((a, q) => a + MOCK_SECS[q.type], 0) * 1000;
     startItem();
+    // Started inside this tap, so phones also let the later items play without one.
+    if (mode === "lmock") playCurrent(false);
     nav("quiz");
   }
 
@@ -650,7 +1045,28 @@
   function startNotice() {
     const p = S.pickPassage({ state, passages: R });
     if (!p) return toast("No notices yet.");
-    begin("reading", "情報検索", [p]);
+    begin("read", "情報検索", [p]);
+  }
+
+  // Reading: texts are served least-read first, always timed. 問題10 texts are short, so they come in threes.
+  function startRead(kind, arg) {
+    const args = { state, texts: RALL };
+    if (kind === "read-today") return begin("read", "Reading", S.buildReadingDaily({ ...args, today: today() }));
+    if (kind === "read-mock") return begin("rmock", "Reading section", S.buildReadingMock(args));
+    if (kind === "read-half") return begin("rmock", "Reading, half section", S.buildReadingMock({ ...args, half: true }));
+    if (kind === "read-type") return begin("read", RNAME[arg][0], S.leastRead({ state, texts: RALL.filter((p) => p.type === arg), n: arg === "r10" ? 3 : 1 }));
+    // One technique: two texts that have a question on it.
+    const texts = RT.filter((p) => p.qs.some((b) => b.skill === arg));
+    begin("read", skillName(arg).split(" · ")[0], S.leastRead({ state, texts, n: 2 }));
+  }
+
+  function startListen(kind, type) {
+    const args = { state, items: L };
+    if (kind === "listen-today") return begin("listen", "Listening", S.buildListenDaily({ ...args, today: today(), size: settings.lDaily }));
+    if (kind === "listen-mock") return begin("lmock", "Listening section", S.buildListenMock(args));
+    if (kind === "listen-half") return begin("lmock", "Listening, half section", S.buildListenMock({ ...args, half: true }));
+    const n = { l4: 8, l5: 2 }[type] || 4;
+    begin("listen", LNAME[type][0], S.leastHeard({ state, items: L.filter((x) => x.type === type), n, today: today() }));
   }
 
   function startPassage() {
@@ -670,9 +1086,27 @@
     // A teaching card has nothing to answer: it is "answered" as soon as it shows, so Next works.
     sess.answered = q.type === "kn" ? { intro: true } : null;
     sess.hint = false;
-    sess.order = S.shuffle([0, 1, 2, 3]);
+    // Choices read aloud keep the order they were recorded in; printed ones are shuffled.
+    sess.order = spokenL(q) ? orderOf(q).slice() : twoL5(q) ? orderL5(q, 0) : S.shuffle([0, 1, 2, 3]);
     if (q.type === "p8") sess.built = [];
     if (isMulti(q)) sess.blank = 0;
+    if (isL(q)) {
+      sess.ls = "ready"; // ready, playing, then answer once the audio ends
+      sess.tEnd = 0;
+      sess.heard = false;
+    }
+  }
+  const spokenL = (q) => isL(q) && spokenOf(q);
+  // Two-question 問題5 prints one list of options for both questions, in a fixed order, as the paper does.
+  const twoL5 = (q) => q.type === "l5" && q.qs.length > 1;
+  function printedL5(q) {
+    const base = S.spokenOrder(q.id, 4).map((o) => q.qs[0].c[o]);
+    return q.qs.every((b) => b.c.length === 4 && base.every((x) => b.c.includes(x))) ? base : null;
+  }
+  // Display position → choice index for question k.
+  function orderL5(q, k) {
+    const base = printedL5(q);
+    return base ? base.map((x) => q.qs[k].c.indexOf(x)) : S.spokenOrder(`${q.id}#${k + 1}`, 4);
   }
 
   function paintQuiz(top) {
@@ -683,8 +1117,18 @@
     if (top) window.scrollTo(0, 0);
   }
 
+  // Seconds the paper leaves to answer once an item's audio ends.
+  const ansWindow = (q) => (q.type === "l4" ? 8 : 12);
   function clockText() {
-    if (sess.mock) {
+    const q0 = cur();
+    if (isL(q0) && !sess.answered) {
+      if (sess.ls === "ready") return "ready";
+      if (sess.ls === "playing") return "listening";
+      const gone = (Date.now() - sess.tEnd) / 1000;
+      if (sess.mode === "lmock") return `${Math.max(0, Math.ceil(ansWindow(q0) - gone))} s`;
+      return settings.timer && !settings.eink ? fmtSecs(Math.floor(gone)) : `aim ${fmtSecs(S.TARGET[q0.type])}`;
+    }
+    if (sess.deadline) {
       const left = Math.max(0, (sess.deadline - Date.now()) / 1000);
       if (settings.eink) return `${Math.ceil(left / 60)} min left`;
       return `${Math.floor(left / 60)}:${String(Math.floor(left % 60)).padStart(2, "0")}`;
@@ -700,7 +1144,13 @@
     if (!sess || screenOf()[0] !== "quiz") return;
     const el = app.querySelector(".clock");
     if (!el) return;
-    if (sess.mock) {
+    const q = cur();
+    if (isL(q)) {
+      if (sess.answered || sess.ls !== "answer") return;
+      const gone = (Date.now() - sess.tEnd) / 1000;
+      if (sess.mode === "lmock" && gone >= ansWindow(q)) return timeUpListen();
+      el.classList.toggle("over", gone > (sess.mode === "lmock" ? ansWindow(q) - 4 : S.TARGET[q.type]));
+    } else if (sess.deadline) {
       const left = (sess.deadline - Date.now()) / 1000;
       if (left <= 0) return finishMock();
       el.classList.toggle("over", left < 60);
@@ -717,8 +1167,8 @@
     const q = cur();
     const n = sess.items.length;
     const pct = Math.round((sess.i / n) * 100);
-    const canHint = !sess.mock && !sess.answered && !sess.hint && q.type !== "p8" && !isK(q) && !isV(q);
-    const body = isK(q) ? qK(q) : isV(q) ? qV(q) : q.type === "r14" ? qR14(q) : q.type === "p7" ? qP7(q) : q.type === "p8" ? qP8(q) : qP9(q);
+    const canHint = !sess.mock && !sess.answered && !sess.hint && q.type !== "p8" && !isK(q) && !isV(q) && !isL(q);
+    const body = isK(q) ? qK(q) : isV(q) ? qV(q) : isL(q) ? qL(q) : isR(q) ? qRead(q) : q.type === "p7" ? qP7(q) : q.type === "p8" ? qP8(q) : qP9(q);
     return `<div class="qbar">
         <button class="quit" data-act="quit">✕ ${sess.mock ? "End" : "Stop"}</button>
         <div class="progress"><span style="width:${pct}%"></span></div>
@@ -799,11 +1249,12 @@
 
   // Feedback for one 4-choice item (a 問題7 question, one 問題9 blank, a vocab item or a 情報検索 question).
   // `extra` is shown under the tell (the word card for vocab).
-  function feedback(b, a, order, { en = "", set = null, next = false, nextLabel = "Next", target = S.TARGET.p7, extra = "" } = {}) {
+  const PACE_NOTE = "slower than the paper allows";
+  function feedback(b, a, order, { en = "", set = null, next = false, nextLabel = "Next", target = S.TARGET.p7, extra = "", slow = "slow, so it comes back tomorrow" } = {}) {
     // A whole sentence (問題6, 情報検索) is named by its number; it is already marked green above.
     const answer = b.c[0].length > 12 ? `number ${order.indexOf(0) + 1}` : esc(b.c[0].replace(/[。.]$/, ""));
     const verdict = a.ok
-      ? `<div class="verdict good">Right · ${fmtSecs(a.secs)}${a.secs > target * 1.2 ? ` <span class="muted small">(slow, so it comes back tomorrow)</span>` : ""}</div>`
+      ? `<div class="verdict good">Right · ${fmtSecs(a.secs)}${a.secs > target * 1.2 ? ` <span class="muted small">(${slow})</span>` : ""}</div>`
       : a.skipped
         ? `<div class="verdict bad">Not answered. The answer is ${answer}.</div>`
         : `<div class="verdict bad">Not this time. The answer is ${answer}.</div>`;
@@ -1027,15 +1478,212 @@
     return `<div class="notice jp">${p.intro ? `<div class="intro">${esc(p.intro)}</div>` : ""}<div class="doc"><div class="title">${esc(p.title)}</div>${body}</div></div>`;
   }
 
-  function qR14(q) {
+  // ---------- reading texts (問題10 to 13) ----------
+  // One paragraph: [[…]] underlines are numbered ①②③ across the whole text, and cue words are marked,
+  // even where a cue runs into or out of an underline.
+  function markPara(t, cues, u0) {
+    const ul = [];
+    let plain = "";
+    let from = 0;
+    const re = /\[\[(.+?)\]\]/g;
+    let m;
+    while ((m = re.exec(t))) {
+      plain += t.slice(from, m.index);
+      ul.push([plain.length, plain.length + m[1].length]);
+      plain += m[1];
+      from = m.index + m[0].length;
+    }
+    plain += t.slice(from);
+    const on = new Uint8Array(plain.length);
+    for (const c of cues) {
+      if (!c) continue;
+      let at = 0;
+      while ((at = plain.indexOf(c, at)) >= 0) {
+        on.fill(1, at, at + c.length);
+        at += c.length;
+      }
+    }
+    const starts = new Set(ul.map((r) => r[0]));
+    const ends = new Set(ul.map((r) => r[1]));
+    let out = "";
+    let u = u0;
+    let cue = false;
+    for (let k = 0; k <= plain.length; k++) {
+      if (ends.has(k)) out += cue ? '</mark></u><mark class="cue">' : "</u>";
+      if (starts.has(k)) out += `${cue ? "</mark>" : ""}<u class="uln"><span class="ulab">${CIRCLED[u++] || ""}</span>${cue ? '<mark class="cue">' : ""}`;
+      if (k === plain.length) break;
+      if (on[k] && !cue) {
+        out += '<mark class="cue">';
+        cue = true;
+      } else if (!on[k] && cue) {
+        out += "</mark>";
+        cue = false;
+      }
+      out += esc(plain[k]);
+    }
+    return [out + (cue ? "</mark>" : ""), u];
+  }
+  function readHTML(p, cues = []) {
+    let u = 0;
+    const paras = (text) =>
+      text
+        .split("\n")
+        .map((line) => {
+          const [html, next] = markPara(line, cues, u);
+          u = next;
+          return `<p>${html}</p>`;
+        })
+        .join("");
+    const head = `<div class="rhead"><span class="tag">${esc(p.genre || "")}</span><span class="small muted">${p.chars ? `${p.chars} 字 · ` : ""}paper pace ${fmtSecs(S.PACE[p.type])}</span></div>${p.title ? `<div class="rtitle">${esc(p.title)}</div>` : ""}`;
+    const body = p.texts ? p.texts.map((x) => `<div class="rpart"><div class="rlabel">${esc(x.label)}</div>${paras(x.text)}</div>`).join("") : paras(p.text);
+    return `<div class="rtext jp">${head}${body}</div>`;
+  }
+  const textHTML = (p, cues) => (p.type === "r14" ? noticeHTML(p, cues) : readHTML(p, cues));
+  const skillLine = (b) =>
+    b.skill ? `<p class="small skill">Technique: <button class="linkish" data-act="tip" data-id="${esc(b.skill)}">${esc(skillName(b.skill))}</button></p>` : "";
+
+  // A text and one of its questions at a time. The time for the first question includes reading the text.
+  function qRead(q) {
     const a = sess.answered;
     const k = sess.blank;
     const b = q.qs[k];
     const lastQ = k === q.qs.length - 1;
-    return `${noticeHTML(q, a || sess.hint ? b.cue : [])}
+    const of = sess.items.filter(isR).length;
+    const nth = sess.items.slice(0, sess.i + 1).filter(isR).length;
+    return `${of > 1 ? `<p class="small muted">Text ${nth} of ${of}</p>` : ""}${textHTML(q, a || sess.hint ? b.cue : [])}
       <p class="rq jp"><span class="small muted">Question ${k + 1} of ${q.qs.length}</span><br>${esc(b.q)}</p>
       <div class="choices long-choices">${choiceButtons(b, a)}</div>
-      ${a ? feedback(b, a, sess.order, { en: lastQ ? q.en : "", next: true, nextLabel: lastQ ? "Next" : "Next question", target: S.TARGET.r14 }) : ""}`;
+      ${a ? feedback(b, a, sess.order, { en: lastQ ? q.en : "", next: true, nextLabel: lastQ ? "Next" : "Next question", target: S.TARGET[q.type], slow: PACE_NOTE, extra: skillLine(b) }) : ""}`;
+  }
+
+  // A text is done once its last question is answered: log its speed for the Progress tab.
+  // Only this sitting's answers count (a text can come up twice in a long session).
+  function logRead(q) {
+    const mine = sess.res.slice(-q.qs.length).filter((x) => x.qid === q.id);
+    const secs = mine.reduce((a, x) => a + x.secs, 0);
+    const id = `r${Date.now().toString(36)}${Math.floor(Math.random() * 1e4).toString(36)}`;
+    state.rlog[id] = { d: today(), id: q.id, type: q.type, chars: q.chars || 0, secs: Math.round(secs), right: mine.filter((x) => x.ok).length, n: mine.length, mode: sess.mode, ts: Date.now() };
+  }
+
+  // ---------- listening (聴解 問題1 to 5) ----------
+  // One <audio> element for the visit: once a tap has started it, phones let it play again without one.
+  const player = new Audio();
+  player.preload = "auto";
+  function stopAudio() {
+    player.onended = null;
+    player.pause();
+    document.querySelectorAll("[data-act=stop-audio]").forEach((el) => {
+      el.dataset.act = "replay";
+      el.textContent = "▶ Listen again with the script";
+    });
+  }
+  // Plays an item once. Resolves when it starts; rejects when the browser will not play.
+  function playItem(q, onEnd) {
+    stopAudio();
+    if (!AUD[q.id]) return Promise.reject(new Error("no recording"));
+    player.src = `audio/${q.id}.m4a${AUD[q.id].h ? `?v=${AUD[q.id].h}` : ""}`;
+    player.onended = () => {
+      player.onended = null;
+      if (onEnd) onEnd();
+    };
+    return player.play();
+  }
+  // Play the current item, once. When it ends, the answer clock starts.
+  function playCurrent(repaint = true) {
+    const q = cur();
+    const at = sess;
+    sess.ls = "playing";
+    const ended = () => {
+      if (sess !== at || cur() !== q || sess.ls !== "playing") return;
+      sess.ls = "answer";
+      sess.tEnd = Date.now();
+      if (screenOf()[0] === "quiz") paintQuiz(false);
+    };
+    playItem(q, ended).catch(() => {
+      if (sess !== at || cur() !== q) return;
+      sess.ls = "ready";
+      if (screenOf()[0] === "quiz") paintQuiz(false);
+      toast(AUD[q.id] ? "The audio did not start. Tap Play." : "No voice on this device for that item.");
+    });
+    if (repaint) paintQuiz(false);
+  }
+  function replay(id) {
+    const q = itemById(id);
+    if (!q) return;
+    const btn = document.querySelector(`[data-act=replay][data-id="${id}"]`);
+    playItem(q, stopAudio)
+      .then(() => {
+        if (btn) {
+          btn.dataset.act = "stop-audio";
+          btn.textContent = "■ Stop";
+        }
+      })
+      .catch(() => toast("The audio did not play."));
+  }
+  // Audio heard counts toward the day's time, once per item.
+  function addHeard(q) {
+    if (sess.heard) return;
+    sess.heard = true;
+    const d = state.ldays[today()];
+    if (d && AUD[q.id]) d.secs += Math.round(AUD[q.id].secs);
+  }
+  // Listening mock: the time to answer ran out. It counts as wrong, and the next item plays.
+  function timeUpListen() {
+    const q = cur();
+    const qid = isMulti(q) ? `${q.id}#${sess.blank + 1}` : q.id;
+    record(q, qid, false, ansWindow(q), null, qid);
+    addHeard(q);
+    saveState();
+    sess.res.push({ qid: q.id, blank: isMulti(q) ? sess.blank : null, ok: false, skipped: true, secs: ansWindow(q), orig: -1, order: sess.order.slice() });
+    advance();
+  }
+
+  const SPK = { F: "女", M: "男", F2: "女2", M2: "男2" };
+  function scriptHTML(q, cues = []) {
+    const narr = (t) => `<div class="narr">${esc(t)}</div>`;
+    const lines = q.lines.map((l) => `<div class="sp"><b>${SPK[l.sp] || esc(l.sp)}</b><span>${rich(l.t, { cues })}</span></div>`).join("");
+    const canPlay = AUD[q.id];
+    return `<details class="script" open><summary>Script</summary>${q.setup ? narr(q.setup) : ""}${lines}${q.q ? narr(q.q) : ""}</details>
+      ${canPlay ? `<button class="btn" data-act="replay" data-id="${esc(q.id)}">▶ Listen again with the script</button>` : ""}`;
+  }
+  function choiceButtonsL(b, a, spoken) {
+    return sess.order
+      .map((orig, d) => {
+        const cls = !a ? "" : orig === 0 ? "right" : orig === a.orig ? "wrong" : "dim";
+        const text = spoken && !a ? "" : `<span>${esc(b.c[orig])}</span>`;
+        return `<button class="choice ${cls}${text ? "" : " numonly"}" data-act="answer" data-i="${d}" aria-label="${d + 1}" ${a ? "disabled" : ""}><span class="num">${d + 1}</span>${text}</button>`;
+      })
+      .join("");
+  }
+  function qL(q) {
+    const a = sess.answered;
+    const two = q.type === "l5" && q.qs.length > 1;
+    const k = two ? sess.blank : 0;
+    const b = q.type === "l5" ? q.qs[k] : q;
+    const spoken = spokenOf(q);
+    const ls = sess.ls;
+    const lastQ = !two || k === q.qs.length - 1;
+    let top = "";
+    if (!a && ls === "ready")
+      top = `<p class="small lhow">${esc(LHOW[q.type])}</p>
+        <button class="btn primary wide listen-go" data-act="play">▶ Play, once <kbd>Space</kbd></button>`;
+    else if (!a && ls === "playing")
+      top = `<div class="listen-now" role="status"><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>Listening. Eyes closed.</div>`;
+    else if (!a) top = `<div class="listen-now done" role="status">${sess.mode === "lmock" ? "Answer now" : "Your answer"}</div>`;
+    // Two-question 問題5: both sets of choices are printed, as on the paper; you answer them in turn after the talk.
+    let choices;
+    if (two && !a && ls !== "answer") {
+      const base = printedL5(q);
+      const list = (xs) => `<ol class="jp">${xs.map((c) => `<li>${esc(c)}</li>`).join("")}</ol>`;
+      choices = base
+        ? `<div class="preview"><span class="small muted">質問1 and 質問2 choose from</span>${list(base)}</div>`
+        : q.qs.map((x, j) => `<div class="preview"><span class="small muted">質問${j + 1}</span>${list(orderL5(q, j).map((o) => x.c[o]))}</div>`).join("");
+    }
+    else
+      choices = `${two ? `<p class="rq jp"><span class="small muted">質問${k + 1}</span>${a ? `<br>${esc(b.q)}` : ""}</p>` : ""}
+        <div class="choices${spoken && !a ? " nums" : " long-choices"}">${choiceButtonsL(b, a, spoken)}</div>`;
+    const fb = a ? feedback(b, a, sess.order, { en: lastQ ? q.en : "", next: true, nextLabel: lastQ ? "Next" : "質問2", target: S.TARGET[q.type], slow: PACE_NOTE, extra: scriptHTML(q, b.cue) }) : "";
+    return `<div class="listen">${top}${choices}${fb}</div>`;
   }
 
   // "I know this": swap the teaching card for its question now, and drop the later copy.
@@ -1073,13 +1721,28 @@
     const orig = sess.order[d];
     if (orig === undefined) return;
     const b = isMulti(q) ? q.qs[sess.blank] : q;
+    // Two-question 問題5 is answered only after the talk.
+    if (q.type === "l5" && q.qs.length > 1 && sess.ls !== "answer") return;
     const ok = orig === 0;
-    const secs = (Date.now() - sess.t0) / 1000;
+    // Listening: the time from the end of the audio (an answer before it ends counts as instant).
+    const secs = isL(q) ? (sess.ls === "answer" ? (Date.now() - sess.tEnd) / 1000 : 0) : (Date.now() - sess.t0) / 1000;
     const qid = isMulti(q) ? `${q.id}#${sess.blank + 1}` : q.id;
-    // Vocab items are their own unit of memory; each 情報検索 question is logged on its own.
-    const point = isV(q) ? q.id : q.type === "r14" ? qid : b.point;
+    // Vocab, reading and listening items are their own unit of memory, logged question by question.
+    const point = isV(q) || isR(q) || isL(q) ? qid : b.point;
+    if (isL(q) && sess.ls === "playing") {
+      stopAudio();
+      sess.ls = "answer";
+    }
     record(q, point, ok, secs, ok || !b.cp ? null : b.cp[orig], qid);
+    if (isL(q)) {
+      addHeard(q);
+      saveState();
+    }
     sess.res.push({ qid: q.id, blank: isMulti(q) ? sess.blank : null, ok, secs, orig, order: sess.order.slice(), item: isK(q) ? q : null });
+    if (isR(q) && sess.blank === q.qs.length - 1) {
+      logRead(q);
+      saveState();
+    }
     if (!ok && q.type === "p7") requeue(b.point);
     if (!ok && isK(q)) requeueK(q);
     if (!ok && isV(q)) requeueV(q);
@@ -1128,7 +1791,7 @@
   }
 
   function hint() {
-    if (!sess || sess.mock || sess.answered || cur().type === "p8" || isK(cur()) || isV(cur())) return;
+    if (!sess || sess.mock || sess.answered || cur().type === "p8" || isK(cur()) || isV(cur()) || isL(cur())) return;
     sess.hint = true;
     paintQuiz(false);
   }
@@ -1141,16 +1804,20 @@
       sess.t0 = Date.now();
       sess.answered = null;
       sess.hint = false;
-      sess.order = S.shuffle([0, 1, 2, 3]);
+      sess.order = twoL5(q) ? orderL5(q, sess.blank) : S.shuffle([0, 1, 2, 3]);
+      if (isL(q)) sess.tEnd = Date.now(); // 質問2: its answer clock starts now
       return paintQuiz(false);
     }
+    stopAudio();
     sess.i++;
     if (sess.i >= sess.items.length) return finish();
     startItem();
+    if (sess.mode === "lmock" && isL(cur())) playCurrent(false);
     paintQuiz(true);
   }
 
   function finish() {
+    stopAudio();
     sess.ended = Date.now();
     last = sess;
     sess = null;
@@ -1163,13 +1830,14 @@
     if (!sess) return;
     for (let i = sess.i; i < sess.items.length; i++) {
       const q = sess.items[i];
-      if (q.type === "p9") {
+      const order = spokenL(q) ? orderOf(q).slice() : [0, 1, 2, 3];
+      if (isMulti(q)) {
         const from = i === sess.i ? sess.blank : 0;
-        for (let k = from; k < q.qs.length; k++) sess.res.push({ qid: q.id, blank: k, ok: false, skipped: true, secs: 0, orig: -1, order: [0, 1, 2, 3] });
+        for (let k = from; k < q.qs.length; k++) sess.res.push({ qid: q.id, blank: k, ok: false, skipped: true, secs: 0, orig: -1, order: twoL5(q) ? orderL5(q, k) : order });
       } else if (q.type === "p8") {
         sess.res.push({ qid: q.id, blank: null, ok: false, starOk: false, skipped: true, secs: 0, built: [] });
       } else {
-        sess.res.push({ qid: q.id, blank: null, ok: false, skipped: true, secs: 0, orig: -1, order: [0, 1, 2, 3] });
+        sess.res.push({ qid: q.id, blank: null, ok: false, skipped: true, secs: 0, orig: -1, order });
       }
     }
     finish();
@@ -1184,6 +1852,7 @@
     }
     if (sess.res.length) finish();
     else {
+      stopAudio();
       sess = null;
       nav(fromTab);
     }
@@ -1197,7 +1866,39 @@
     const typeOf = (x) => itemOf(x).type;
     const used = (r.ended - r.started) / 1000;
     let top;
-    if (r.mode === "vmock") {
+    if (r.mode === "read" || r.mode === "rmock") {
+      // Reading: right answers per part, and the time on the texts against the paper's pace.
+      const ok = res.filter((x) => x.ok).length;
+      const texts = r.items.filter(isR);
+      const pace = texts.reduce((a, p) => a + S.PACE[p.type], 0);
+      const spent = r.mode === "rmock" ? used : res.reduce((a, x) => a + x.secs, 0);
+      const parts = RTYPES.filter((t) => texts.some((p) => p.type === t))
+        .map((t) => {
+          const xs = res.filter((x) => typeOf(x) === t);
+          return `問題${t.slice(1)} ${xs.filter((x) => x.ok).length}/${xs.length}`;
+        })
+        .join(" · ");
+      const ratio = spent / pace;
+      const say = ratio > 1.15 ? `${ratio.toFixed(1)}× the paper's pace. Speed is what to build: keep every text timed.` : ratio < 0.8 && ok < res.length * 0.7 ? "Faster than the paper's pace, but with misses. Spend the spare time on the choices, not the text." : "Within the paper's pace.";
+      top = `<div class="card"><span class="kicker">${esc(r.title)}</span>
+        <div class="score">${ok}<small> / ${res.length} right</small></div>
+        ${texts.length > 1 ? `<p>${parts}</p>` : ""}
+        <p class="muted small">Time on the texts ${fmtSecs(spent)}; the paper gives about ${fmtSecs(pace)}. ${say}${res.some((x) => x.skipped) ? " Unanswered questions count as wrong." : ""}</p></div>`;
+    } else if (r.mode === "listen" || r.mode === "lmock") {
+      const ok = res.filter((x) => x.ok).length;
+      const parts = LTYPES.filter((t) => res.some((x) => typeOf(x) === t))
+        .map((t) => {
+          const xs = res.filter((x) => typeOf(x) === t);
+          return `問題${t.slice(1)} ${xs.filter((x) => x.ok).length}/${xs.length}`;
+        })
+        .join(" · ");
+      const late = res.filter((x) => x.ok && !x.skipped && x.secs > ansWindow(itemOf(x))).length;
+      const missed = res.filter((x) => x.skipped).length;
+      top = `<div class="card"><span class="kicker">${esc(r.title)}</span>
+        <div class="score">${ok}<small> / ${res.length} right</small></div>
+        <p>${parts}</p>
+        <p class="muted small">${missed ? `${missed} not answered in time. ` : ""}${late ? `${late} right, but after the time the paper gives (12 s, 8 s for 問題4). ` : ""}Time ${fmtSecs(used)}.</p></div>`;
+    } else if (r.mode === "vmock") {
       const of = (t) => res.filter((x) => typeOf(x) === t);
       const ok = res.filter((x) => x.ok).length;
       const allowed = r.items.reduce((a, q) => a + MOCK_SECS[q.type], 0);
@@ -1205,13 +1906,13 @@
         <div class="score">${ok}<small> / ${res.length}</small></div>
         <p>${S.VTYPES.map((t) => `${TYPE_NAME[t].split(" · ")[0]} ${VNAME[t][0]} ${of(t).filter((x) => x.ok).length}/${of(t).length}`).join(" · ")}</p>
         <p class="muted small">Time used ${fmtSecs(used)} of ${fmtSecs(allowed)}. Vocab is the part of the paper to do fast, so the time you save goes to reading.</p></div>`;
-    } else if (r.mode === "vocab" || r.mode === "reading" || (r.mode === "review" && res.some((x) => isV(itemOf(x))))) {
+    } else if (r.mode === "vocab" || (r.mode === "review" && res.some((x) => isV(itemOf(x)) || isL(itemOf(x))))) {
       const ok = res.filter((x) => x.ok).length;
       const med = res.length ? S.median(res.map((x) => x.secs)) : null;
       const slow = res.filter((x) => x.ok && x.secs > S.TARGET[typeOf(x)] * 1.2).length;
       top = `<div class="card"><span class="kicker">${esc(r.title)}</span>
         <div class="score">${ok}<small> / ${res.length} right</small></div>
-        <p class="muted small">${med !== null ? `Typical time: ${fmtSecs(med)}. ` : ""}${slow ? `${slow} right but slow${r.mode === "reading" ? "" : ": those come back tomorrow"}. ` : ""}Time ${fmtSecs(used)}.${r.mode === "reading" ? " On the paper, aim for about 7 minutes for a notice and its two questions." : ""}</p></div>`;
+        <p class="muted small">${med !== null ? `Typical time: ${fmtSecs(med)}. ` : ""}${slow ? `${slow} right but slow: those come back tomorrow. ` : ""}Time ${fmtSecs(used)}.</p></div>`;
     } else if (r.mode === "kanji") {
       const ok = res.filter((x) => x.ok).length;
       const med = res.length ? S.median(res.map((x) => x.secs)) : null;
@@ -1249,10 +1950,18 @@
           const short = VNAME[it.type][0];
           return `<details><summary><span class="mark ${x.ok ? "good" : "bad"}">${x.ok ? "✓" : "✕"}</span><span class="form jp">${esc(it.w)} <span class="muted small">${short}</span></span><span class="t">${x.skipped ? "skipped" : fmtSecs(x.secs)}</span></summary>${vPrompt(it, true)}${feedbackV(it, x, x.order, false)}</details>`;
         }
-        if (it.type === "r14") {
+        const mark = `<span class="mark ${x.ok ? "good" : "bad"}">${x.ok ? "✓" : "✕"}</span>`;
+        if (isR(it)) {
           const b = it.qs[x.blank];
-          return `<details><summary><span class="mark ${x.ok ? "good" : "bad"}">${x.ok ? "✓" : "✕"}</span><span class="form jp">${esc(it.title)} · Q${x.blank + 1}</span><span class="t">${fmtSecs(x.secs)}</span></summary>
-            ${noticeHTML(it, b.cue)}<p class="rq jp">${esc(b.q)}</p>${feedback(b, x, x.order, { target: S.TARGET.r14 })}</details>`;
+          const name = it.type === "r14" ? it.title : `${RNAME[it.type][0]} ${it.id.slice(4)}`;
+          return `<details><summary>${mark}<span class="form jp">${esc(name)}${it.qs.length > 1 ? ` · Q${x.blank + 1}` : ""}</span><span class="t">${x.skipped ? "skipped" : fmtSecs(x.secs)}</span></summary>
+            ${textHTML(it, b.cue)}<p class="rq jp">${esc(b.q)}</p>${feedback(b, x, x.order, { target: S.TARGET[it.type], slow: PACE_NOTE, extra: skillLine(b) })}</details>`;
+        }
+        if (isL(it)) {
+          const two = it.type === "l5" && it.qs.length > 1;
+          const b = it.type === "l5" ? it.qs[x.blank] : it;
+          return `<details><summary>${mark}<span class="form jp">${esc(LNAME[it.type][0])} ${esc(it.id.slice(3))}${two ? ` · 質問${x.blank + 1}` : ""}</span><span class="t">${x.skipped ? "no answer" : fmtSecs(x.secs)}</span></summary>
+            ${it.type === "l5" ? `<p class="rq jp">${esc(b.q)}</p>` : ""}${feedback(b, x, x.order, { target: S.TARGET[it.type], slow: PACE_NOTE, extra: scriptHTML(it, b.cue) })}</details>`;
         }
         if (x.item) {
           const q = x.item;
@@ -1283,7 +1992,7 @@
     return `${header()}${top}
       ${main}
       ${more ? `<div class="row" style="margin:10px 0 14px">${more}</div>` : `<div style="height:14px"></div>`}
-      <h3>Every question</h3><p class="muted small">${r.mode === "kanji" ? "Tap one to see the word in its sentence, the trap you fell into and the kanji." : r.mode === "reading" ? "Tap one to see where the answer sits in the notice and why each choice fails." : "Tap one to see the tell and why each choice fails."}</p>
+      <h3>Every question</h3><p class="muted small">${r.mode === "kanji" ? "Tap one to see the word in its sentence, the trap you fell into and the kanji." : r.mode === "read" || r.mode === "rmock" ? "Tap one to see where the answer sits in the text and why each choice fails." : r.mode === "listen" || r.mode === "lmock" ? "Tap one for the script, the words that decide it and why each choice fails." : "Tap one to see the tell and why each choice fails."}</p>
       <div class="res">${rows}</div>`;
   }
 
@@ -1537,6 +2246,10 @@
         <div class="field"><label for="s-vnew">New vocab items per day<small>10 a day meets every item in about ${Math.max(1, Math.ceil(V.length / 10))} days.</small></label><input id="s-vnew" type="number" min="0" max="30" value="${settings.vNew}" data-set="vNew"></div>
         <div class="field"><label for="s-vsize">Vocab items per review</label><input id="s-vsize" type="number" min="5" max="60" value="${settings.vSize}" data-set="vSize"></div>
       </div>` : ""}
+      ${RALL.length || LALL.length ? `<div class="card"><h3>Reading and listening</h3>
+        <div class="field"><label for="s-rl">Part of Today from<small>Before this day they show in Today as optional blocks.</small></label><input id="s-rl" type="date" value="${esc(settings.rlFrom)}" data-set="rlFrom"></div>
+        ${LALL.length ? `<div class="field"><label for="s-ld">Listening items per day<small>${Object.keys(AUD).length} of ${LALL.length} items have their recording so far. Only those are played.</small></label><input id="s-ld" type="number" min="2" max="30" value="${settings.lDaily}" data-set="lDaily"></div>` : ""}
+      </div>` : ""}
       ${syncCard()}
       <div class="card"><h3>Your progress</h3>
         <p class="muted small">Export a backup file to keep, or to move progress to a device without sync.</p>
@@ -1619,7 +2332,13 @@
     // Vocab misses: the word, its meaning and the sentence with the answer in.
     const vmiss = V.filter((q) => state.qs[q.id] && state.qs[q.id].wrong);
     const vLine = (q) => (q.type === "v3" ? q.s.replace("（　　）", q.c[0]) : q.type === "v5" ? `${q.s} (${q.t} = ${q.c[0]})` : q.c[0]);
-    if (!groups.size && !kmiss.size && !vmiss.length) return toast("No misses yet.");
+    // Reading and listening misses: the question, the answer and the tell.
+    const wrong = (qid) => state.qs[qid] && state.qs[qid].wrong;
+    const rmiss = RALL.flatMap((p) => p.qs.map((b, k) => ({ p, b, k })).filter((x) => wrong(`${x.p.id}#${x.k + 1}`)));
+    const lmiss = LALL.flatMap((it) =>
+      it.type === "l5" ? it.qs.map((b, k) => ({ it, b, qid: `${it.id}#${k + 1}` })).filter((x) => wrong(x.qid)) : wrong(it.id) ? [{ it, b: it }] : []
+    );
+    if (!groups.size && !kmiss.size && !vmiss.length && !rmiss.length && !lmiss.length) return toast("No misses yet.");
     const order = D.points.map((p) => p.id).filter((id) => groups.has(id));
     let md = `# N2 grammar misses\n\nExported ${today()} from N2 文法ドリル.\n`;
     for (const id of order) {
@@ -1637,6 +2356,14 @@
         const xs = vmiss.filter((q) => q.type === t);
         if (xs.length) md += `\n## ${VNAME[t][1]}\n\n${xs.map((q) => `- ${q.w}（${q.r}）${q.m}: ${vLine(q)}\n  - ${q.tell}`).join("\n")}\n`;
       }
+    }
+    if (rmiss.length) {
+      md += `\n# Reading misses\n\n`;
+      md += rmiss.map(({ p, b, k }) => `- ${p.id} Q${k + 1} (${skillName(b.skill || "")}): ${b.q} → ${b.c[0]}\n  - ${b.tell}`).join("\n") + "\n";
+    }
+    if (lmiss.length) {
+      md += `\n# Listening misses\n\n`;
+      md += lmiss.map(({ it, b }) => `- ${it.id}: ${it.type === "l4" ? it.lines[0].t : b.q} → ${b.c[0]}\n  - ${b.tell}`).join("\n") + "\n";
     }
     download(`n2-grammar-misses-${today()}.md`, md, "text/markdown");
   }
@@ -1956,6 +2683,34 @@
         return startVocab(a.act, a.t);
       case "notice":
         return startNotice();
+      case "read-today":
+      case "read-mock":
+      case "read-half":
+      case "read-type":
+      case "read-skill":
+        closeModal();
+        return startRead(a.act, a.t || a.id);
+      case "listen-today":
+      case "listen-mock":
+      case "listen-half":
+      case "listen-type":
+        return startListen(a.act, a.t);
+      case "play":
+        return sess && isL(cur()) && sess.ls === "ready" && !sess.answered && playCurrent();
+      case "replay":
+        return replay(a.id);
+      case "stop-audio":
+        return stopAudio();
+      case "tip":
+        return openTip(a.id);
+      case "hours-add":
+        return addHours();
+      case "hours-del":
+        return delEntry("hours", a.id);
+      case "mock-add":
+        return addMock();
+      case "mock-del":
+        return delEntry("mocks", a.id);
       case "kanji-today":
       case "kanji-more":
       case "kanji-weak":
@@ -2045,6 +2800,10 @@
       if (/^[1-4]$/.test(e.key)) {
         e.preventDefault();
         return q.type === "p8" ? pick(Number(e.key) - 1) : choose(Number(e.key) - 1);
+      }
+      if ((e.key === " " || e.key === "p" || e.key === "P") && isL(q) && !sess.answered && sess.ls === "ready") {
+        e.preventDefault();
+        return playCurrent();
       }
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();

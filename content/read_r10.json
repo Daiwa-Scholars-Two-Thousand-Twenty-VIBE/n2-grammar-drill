@@ -1,0 +1,623 @@
+[
+  {
+    "id": "r10-001",
+    "type": "r10",
+    "genre": "エッセイ",
+    "text": "在宅勤務が広がり、通勤がなくなったことを喜ぶ人は多い。私もその一人だ。ところが、しばらく続けるうちに、仕事の進み方に小さな変化が出てきた。以前は、コーヒーを入れながら同僚と話しているうちに、誰が何に困っているかが自然に耳に入り、問題が大きくなる前に手を打つことができた。オンラインでは、用事がなければ連絡を取らない。そのため、相談が届くのは、たいてい問題が大きくなってからだ。むだだと思われがちな職場の雑談は、実は小さな問題を早く見つける役目を果たしていたのかもしれない。",
+    "en": "Working from home took away the office chat that used to bring problems to light early. Online, people make contact only when they need to, so requests for help come late. The writer suggests that the chat was quietly useful.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "何気ないおしゃべりには、困りごとに早く気づかせる働きがあった。",
+          "職場の雑談は時間のむだなので、できるだけ減らしたほうがよい。",
+          "在宅勤務では通勤がない分、仕事がはかどるようになった。",
+          "オンラインでは相談が遅れがちなので、在宅勤務はやめるべきだ。"
+        ],
+        "why": [
+          "The text sets the office against working online, and the last sentence gives the view: 雑談 was 小さな問題を早く見つける役目. The answer says it another way: casual talk helped people notice trouble early.",
+          "The view the writer argues against. むだだと思われがちな marks it as the common view, which the writer then questions with 実は.",
+          "Not in the text. People are glad to lose the commute, but the writer never says work goes faster at home.",
+          "Half right. Requests for help do come late online, but the writer never says anyone should stop working from home."
+        ],
+        "cue": [
+          "実は小さな問題を早く見つける役目を果たしていた",
+          "問題が大きくなる前に手を打つことができた"
+        ],
+        "skill": "contrast",
+        "tell": "Find the two sides (office and online), then read the closing sentence. 実は…のかもしれない carries the writer's view even when it is hedged."
+      }
+    ]
+  },
+  {
+    "id": "r10-002",
+    "type": "r10",
+    "genre": "メール",
+    "title": "昼休みの時間変更について",
+    "text": "営業部の皆さん\nお疲れさまです。総務部の松田です。\n来月から社員食堂の改装工事が始まり、使える席が半分ほどになります。そこで、混雑を避けるため、12月1日から工事が終わる1月末まで、部署ごとに昼休みの時間をずらすことになりました。営業部は、これまでの12時からではなく、11時30分から12時30分までとなります。\nなお、外回りなどで社外にいる方は、これまでどおり予定に合わせて取っていただいてかまいません。この期間に会議を入れる際は、時間にご注意ください。",
+    "en": "The staff canteen is being refitted and will have half its seats, so departments will take lunch at different times. From 1 December to the end of January, the sales department's lunch break moves to 11:30 to 12:30.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "このメールで最も伝えたいことは何か。",
+        "c": [
+          "工事の間、営業部の昼休みはいつもより30分早く始まる。",
+          "工事が終わった後も、営業部の昼休みは11時30分からになる。",
+          "食堂が混雑するので、昼食はなるべく外でとってほしい。",
+          "社外に出ている人は、昼休みを好きな時間に取ってよい。"
+        ],
+        "why": [
+          "The news comes right after そこで: 営業部は…11時30分から12時30分まで, from 1 December until the work ends. 30分早く says the same change in other words.",
+          "Too wide. The new time lasts only 工事が終わる1月末まで.",
+          "Not in the text. Fewer seats is the reason for splitting the times. Nobody is told to eat outside.",
+          "Said in the text, but only as a side note after なお. It is not what the email is for."
+        ],
+        "cue": [
+          "営業部は、これまでの12時からではなく、11時30分から12時30分までとなります",
+          "12月1日から工事が終わる1月末まで"
+        ],
+        "skill": "purpose",
+        "tell": "In a work email the main point follows the reason (そこで…ことになりました). なお brings in a side note, not the point."
+      }
+    ]
+  },
+  {
+    "id": "r10-003",
+    "type": "r10",
+    "genre": "エッセイ",
+    "text": "先日、部屋の片づけをしていたら、祖母からもらった手紙の束が出てきました。どれも短いもので、天気や庭の花のことが書いてあるだけです。それなのに、読み返していると、祖母が机に向かってペンを選び、言葉を探している姿が目に浮かびます。メールなら数秒で送れる内容に、祖母はきっと何十分もかけていたのでしょう。手書きの手紙は、[[書いた人の時間をそのまま閉じ込めた箱]]のようなものだと思います。開くたびに、その時間が少しずつ流れ出してくるのです。",
+    "en": "The writer finds short letters from a grandmother and pictures the long minutes spent on each one. A handwritten letter is compared to a box that holds the sender's time and lets it out each time it is read.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①「書いた人の時間をそのまま閉じ込めた箱」とはどういうことか。",
+        "c": [
+          "手紙を読むと、書いた人がかけた手間や思いが伝わってくる。",
+          "大切な手紙は、箱に入れて長く保管しておくべきだ。",
+          "手書きの手紙は、メールより早く気持ちを届けられる。",
+          "祖母の手紙には、天気や花のことしか書かれていなかった。"
+        ],
+        "why": [
+          "The box holds the time the sender spent: the text shows the grandmother choosing a pen and searching for words, 何十分もかけていた. On each reading that time comes back out (流れ出してくる), so the effort and feeling reach the reader.",
+          "Not in the text. This takes 箱 literally. The box is a likeness for the letter itself.",
+          "Turned round. メールなら数秒 is the fast one. The letter took tens of minutes.",
+          "Said in the text, but it is the setup. The likeness is about the time inside the letter, not its short content."
+        ],
+        "cue": [
+          "祖母はきっと何十分もかけていたのでしょう",
+          "開くたびに、その時間が少しずつ流れ出してくる"
+        ],
+        "skill": "metaphor",
+        "tell": "For a likeness (〜のようなもの), ask what the picture stands for, then find the plain sentence beside it that says the same thing."
+      }
+    ]
+  },
+  {
+    "id": "r10-004",
+    "type": "r10",
+    "genre": "お知らせ",
+    "title": "改修工事による休館のお知らせ",
+    "text": "みどり台市立図書館は、建物の改修工事のため、2月1日（月）から3月31日（水）まで休館いたします。\n休館中は、本の貸し出し・返却・予約はできません。ただし、本の返却については、正面入口の横にある返却ポストをご利用いただけます。CDやDVDは、ポストに入れると傷がつくおそれがありますので、休館前にカウンターへお返しください。\n休館中に本を借りたい方は、駅前分室をご利用ください。4月1日（木）から、通常どおり開館いたします。",
+    "en": "The library closes for two months for building work. Books can still be returned through the post box, but CDs and DVDs must go back at the counter before the closure, and borrowing moves to the station branch.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "このお知らせから分かることは何か。",
+        "c": [
+          "休館中でも、借りていた本は返すことができる。",
+          "休館中は、本もCDも返却ポストに返してよい。",
+          "休館中は、ほかの場所でも本を借りることはできない。",
+          "休館中は、駅前分室に本を返さなければならない。"
+        ],
+        "why": [
+          "ただし…返却ポストをご利用いただけます: returns are the one service that carries on. The answer says it plainly: borrowed books can still be given back.",
+          "Half right. Books go in the post box, but CDs and DVDs must not (ポストに入れると傷がつく). They go back at the counter before the closure.",
+          "Turned round. 駅前分室 is there for borrowing during the closure.",
+          "Not in the text. Returns go in the post box at the main building. The branch is named only for borrowing."
+        ],
+        "cue": [
+          "本の返却については、正面入口の横にある返却ポストをご利用いただけます"
+        ],
+        "skill": "purpose",
+        "tell": "In a notice, read every ただし and なお. The exceptions decide the answer, and the wrong choices bend them."
+      }
+    ]
+  },
+  {
+    "id": "r10-005",
+    "type": "r10",
+    "genre": "エッセイ",
+    "text": "仕事の資料はほとんど画面で読むようになったが、大事な文書だけは今でも印刷している。画面だと、どうしても目が文字の上をすべっていく。次々にスクロールできるので、早く先へ進みたくなるのだ。一方、紙の場合は、ページの厚みで今どのあたりを読んでいるかが分かり、気になった箇所に戻るのも簡単だ。余白に書き込みをしながら読めば、内容がより深く頭に残る。情報にざっと目を通すなら画面、じっくり考えるなら紙。私はそう使い分けている。",
+    "en": "The writer reads most work papers on screen but prints the important ones. Screens make the eyes skim, while paper makes it easy to go back and take notes, so screens are for skimming and paper for thinking.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "急いで読むときは画面、考えながら読むときは紙が向いている。",
+          "画面で読むと、前の部分にすぐ戻れるので、内容を整理しやすい。",
+          "画面は目が疲れやすいので、長い文書を読むのには向いていない。",
+          "書き込みができる紙のほうが、どんな情報も速く集めることができる。"
+        ],
+        "why": [
+          "The text sets 画面 against 紙 and sums up: ざっと目を通すなら画面、じっくり考えるなら紙. The answer says the same in other words: screens for reading fast, paper for reading while you think.",
+          "Turned round. Going back to a part you care about is easy on paper (紙の場合は…戻るのも簡単だ), not on a screen.",
+          "Not in the text. Tired eyes are a common complaint, but the writer's point is that the eyes slide over the words.",
+          "Half right. Writing in the margins is a paper strength, but quick gathering of information is what screens are for."
+        ],
+        "cue": [
+          "情報にざっと目を通すなら画面、じっくり考えるなら紙"
+        ],
+        "skill": "contrast",
+        "tell": "When two things are set side by side (一方), list what the writer gives each one. Wrong choices move a feature to the other side."
+      }
+    ]
+  },
+  {
+    "id": "r10-006",
+    "type": "r10",
+    "genre": "メモ",
+    "title": "荷物の再配達について",
+    "text": "佐藤さん\n11時ごろ、佐藤さんあての宅配便が届きました。代わりに受け取ろうとしたのですが、本人のサインが必要な荷物だそうで、配達の方が持ち帰ってしまいました。不在連絡票を机の上に置いておきます。\n今日中に届けてもらうには、18時までに票にある番号へ電話する必要があるそうです。今日が難しければ、明日以降の日時を指定することもできるとのことでした。私は午後から外出して、そのまま直帰しますので、よろしくお願いします。\n山下　11:20",
+    "en": "A parcel for 佐藤さん needed a personal signature, so the courier took it away. The slip is on the desk: 佐藤さん should phone by 18:00 for delivery today, or choose a later date.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "このメモを読んだ佐藤さんは、このあと何をしなければならないか。",
+        "c": [
+          "配達会社に電話して、届け直してもらう日時を決める。",
+          "山下さんに頼んで、代わりに荷物を受け取ってもらう。",
+          "18時までに、配達会社へ自分で荷物を取りに行く。",
+          "机の上の不在連絡票にサインをして、配達の人に渡す。"
+        ],
+        "why": [
+          "The memo gives one step: phone the number on the slip (票にある番号へ電話する), by 18:00 for today or for a later date. Either way, 佐藤さん must arrange a new delivery time.",
+          "Turned round. 山下さん already tried and could not (本人のサインが必要), and is out for the rest of the day.",
+          "Not in the text. 18時 is the deadline for phoning, not for collecting the parcel.",
+          "Not in the text. It joins two real details, the signature and the slip on the desk, into a step nobody asks for."
+        ],
+        "cue": [
+          "18時までに票にある番号へ電話する必要がある",
+          "明日以降の日時を指定することもできる"
+        ],
+        "skill": "purpose",
+        "tell": "For 'what must X do next', find the step the memo asks for and check who can do it. Times and objects in the memo are bait."
+      }
+    ]
+  },
+  {
+    "id": "r10-007",
+    "type": "r10",
+    "genre": "エッセイ",
+    "text": "人気の店の前には、一時間以上の行列ができることも珍しくない。並ぶのが苦手な私は、なぜそこまでして待つのかと、ずっと不思議に思っていた。よほど味が特別なのだろうか。\nしかし、友人に誘われて実際に並んでみて、考えが変わった。前後の人と「まだかかりそうですね」と言葉を交わしながら、少しずつ入口に近づいていく。待つ時間がそのまま、これから食べるものへの期待をふくらませていくのだ。行列とは、店に入る前から始まっている楽しみなのだろう。",
+    "en": "The writer never understood why people queue for an hour at popular shops, and first guessed the food must be special. After queuing with a friend, the writer saw that the wait itself builds anticipation: a queue is a pleasure that starts before you go in.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "この文章で筆者が最も言いたいことは何か。",
+        "c": [
+          "店の前で待つ時間も、食事の楽しみの一部になっている。",
+          "行列ができる店は、味が特別によいから人気があるのだ。",
+          "並ぶのが苦手な人でも、友人と一緒なら長く待つことができる。",
+          "行列に並ぶと、知らない人とも気軽に話せるようになる。"
+        ],
+        "why": [
+          "The writer asks why people wait (なぜ…待つのか), then answers after しかし: the wait builds 期待, and a queue is 店に入る前から始まっている楽しみ. The answer says waiting is part of the pleasure.",
+          "The view the writer sets aside. よほど味が特別なのだろうか is the first guess, and しかし turns away from it.",
+          "Not in the text. The friend only got the writer into the queue. The point is about the waiting, not about company.",
+          "Too narrow. Chatting with the people nearby is one detail of the wait, not the main point."
+        ],
+        "cue": [
+          "行列とは、店に入る前から始まっている楽しみなのだろう",
+          "待つ時間がそのまま、これから食べるものへの期待をふくらませていく"
+        ],
+        "skill": "question",
+        "tell": "When the writer asks a question (なぜ…のか, 〜だろうか), skip the first guess and look for the answer after しかし."
+      }
+    ]
+  },
+  {
+    "id": "r10-008",
+    "type": "r10",
+    "genre": "メール",
+    "title": "今週の定例会議の時間について",
+    "text": "開発チームの皆さま\nお疲れさまです。企画部の大野です。\n毎週木曜日10時からの定例会議ですが、今週に限り、14時からに変更させてください。午前中に急な来客の予定が入ったためです。場所はいつもの第2会議室のままです。\nなお、資料はいつも前日までに共有フォルダに入れていただいていますが、今回は開始が遅くなりますので、当日の12時まででかまいません。時間の変更でご都合が悪くなる方は、明日中にご連絡ください。",
+    "en": "This week only, the Thursday meeting moves from 10:00 to 14:00 because of a visitor. The room stays the same, materials may come in by noon on the day, and anyone who can no longer attend should say so by tomorrow.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "このメールで最も伝えたいことは何か。",
+        "c": [
+          "今週の会議は午後に行うので、出られない人は知らせてほしい。",
+          "来週からは、定例会議を毎週木曜日の14時に始めることにする。",
+          "来客の予定があるため、今週の会議は別の部屋で行う。",
+          "会議の資料は、これまでどおり前日までに入れておいてほしい。"
+        ],
+        "why": [
+          "The email moves this week's meeting to 14:00 (今週に限り) and asks anyone it no longer suits to say so (ご都合が悪くなる方は…ご連絡ください). The answer joins the change and the request.",
+          "Too wide. 今週に限り: only this week's meeting moves.",
+          "Half right. The visitor is the reason for the change, but the room stays the same (第2会議室のまま).",
+          "Turned round. This time the materials can wait until 12:00 on the day (当日の12時まで)."
+        ],
+        "cue": [
+          "今週に限り、14時からに変更させてください",
+          "時間の変更でご都合が悪くなる方は、明日中にご連絡ください"
+        ],
+        "skill": "purpose",
+        "tell": "Watch the scope words: 今週に限り, 今回は, これまでどおり. Wrong choices stretch a one-off change or undo an exception."
+      }
+    ]
+  },
+  {
+    "id": "r10-009",
+    "type": "r10",
+    "genre": "エッセイ",
+    "text": "大人になってから何かを習い始めると、失敗するのが怖くなります。人前で間違えるのは恥ずかしいですし、時間をむだにしたくないという気持ちもあるでしょう。確かに、うまくいく方法を先に調べておけば、遠回りをせずにすみます。\nしかし、私がギターを習ったとき、一番上達したのは、思いきり弾いて何度も間違えた後でした。どこで指が止まるのかを体で知ってはじめて、何を練習すればいいのかが分かったのです。失敗を避けてばかりいては、自分の弱いところに気づく機会もなくなってしまうのではないでしょうか。",
+    "en": "Adults fear failure when they start learning something, and checking the right method first does save time. But the writer improved most at guitar after many mistakes, because failing showed what needed practice.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "失敗することで、自分に足りないものが分かり、上達につながる。",
+          "失敗を避けるため、うまくいく方法を調べてから始めるべきだ。",
+          "大人は子どもより失敗を恐れるので、上達するのに時間がかかる。",
+          "ギターのような楽器は、間違えながら覚えるしかない。"
+        ],
+        "why": [
+          "The view comes after しかし and ends 〜のではないでしょうか: avoiding mistakes means never finding 自分の弱いところ. The answer turns this round: failing shows what you lack, and that is how you improve.",
+          "The view the writer argues against. 確かに…すみます grants it, and しかし rejects it.",
+          "Not in the text. Children are never mentioned. Adults' fear is only the starting point.",
+          "Too narrow. The guitar is the writer's example. The point is about learning any skill."
+        ],
+        "cue": [
+          "自分の弱いところに気づく機会もなくなってしまうのではないでしょうか",
+          "何を練習すればいいのかが分かった"
+        ],
+        "skill": "claim",
+        "tell": "確かに… しかし: the part after しかし is the writer's view. An ending like 〜のではないでしょうか states it, softly."
+      }
+    ]
+  },
+  {
+    "id": "r10-010",
+    "type": "r10",
+    "genre": "お知らせ",
+    "title": "断水のお知らせ",
+    "text": "さくら台ハイツ　居住者の皆さまへ\n給水設備の点検のため、下記のとおり断水いたします。\n日時：11月18日（水）10時〜15時\n断水中は、台所・洗面所・浴室の水が出ません。トイレは、タンクにたまっている水で一回だけ流せます。必要な水は、前日までにご用意ください。\nなお、点検は各部屋に入らずに行いますので、ご在宅いただく必要はありません。点検の後、しばらく水がにごることがありますが、その場合は、透明になるまで数分間水を出してからお使いください。\n管理組合",
+    "en": "The water will be off from 10:00 to 15:00 for an inspection. The toilet flushes only once, residents should store water the day before, nobody needs to be at home, and cloudy water should be run until clear.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "このお知らせから分かることは何か。",
+        "c": [
+          "点検の日に出かけていても、作業は問題なく行われる。",
+          "断水している間も、トイレは何度でも使うことができる。",
+          "点検の後は水がにごるので、その日は水を使わないほうがよい。",
+          "断水の間は、管理組合が住人に飲み水を配ってくれる。"
+        ],
+        "why": [
+          "なお…ご在宅いただく必要はありません: the work is done without entering the flats. The answer says the same: you may be out that day.",
+          "Turned round. The toilet can be flushed only 一回だけ, with the water left in the tank.",
+          "Half right. The water may be cloudy, but you only run it for a few minutes until it is clear. You do not have to stop using it.",
+          "Not in the text. Residents get their own water ready the day before (前日までにご用意ください)."
+        ],
+        "cue": [
+          "点検は各部屋に入らずに行いますので、ご在宅いただく必要はありません"
+        ],
+        "skill": "purpose",
+        "tell": "Notice questions test the small print. Check each choice against its own line, and watch limits like 一回だけ and 数分間."
+      }
+    ]
+  },
+  {
+    "id": "r10-011",
+    "type": "r10",
+    "genre": "エッセイ",
+    "text": "一人暮らしを始めたころ、毎晩のように近所のコンビニに通っていた。買う物はたいてい決まっていて、弁当と飲み物ぐらいだ。それでも足が向いたのは、店員さんの「いらっしゃいませ」や「温めますか」という一言を聞きたかったからだと、今になって思う。誰とも話さずに一日が終わりそうな日でも、そこへ行けば、少なくとも一度は声をかけてもらえる。[[あの明るい店は、私にとってただの店ではなかった]]。便利さを売っているように見えるコンビニは、人の寂しさも支えているのかもしれない。",
+    "en": "Living alone, the writer went to the convenience store almost every night, really to hear the staff's short greetings. On days with no other conversation, the shop was where someone spoke to the writer, so it eased loneliness as well as selling things.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①筆者がそう言うのはなぜか。",
+        "c": [
+          "ほかに話す人のいない日でも、店員との短いやり取りがあったから。",
+          "毎晩同じ物を買うので、店員に顔を覚えてもらえたから。",
+          "夜遅くても開いていて、必要な物がすぐに手に入ったから。",
+          "店員がいつも明るく、悩みの相談にも乗ってくれたから。"
+        ],
+        "why": [
+          "The reason sits just before ①: on days when the writer spoke to no one, 少なくとも一度は声をかけてもらえる. The answer says it another way: even with no one else to talk to, the shop gave a short exchange with someone.",
+          "Not in the text. The writer buys the same things, but never says the staff knew them.",
+          "The view the writer looks past. The last line grants that convenience stores seem to sell 便利さ, then says they also ease loneliness.",
+          "Too wide. The staff said one short phrase. Nothing says they listened to the writer's problems."
+        ],
+        "cue": [
+          "少なくとも一度は声をかけてもらえる",
+          "一言を聞きたかったから"
+        ],
+        "skill": "reason",
+        "tell": "For なぜか on an underline, read the one or two sentences just before it. The reason is often right there, said another way."
+      }
+    ]
+  },
+  {
+    "id": "r10-012",
+    "type": "r10",
+    "genre": "メール",
+    "title": "新入社員研修の講師のお願い",
+    "text": "営業部　山口様\nお疲れさまです。人事部の木村です。\n来年4月の新入社員研修で、「お客様との話し方」の時間を担当していただけないでしょうか。例年は営業部の田中部長にお願いしているのですが、今年は海外出張と重なってしまうとのことでした。そこで部長にご相談したところ、現場の経験が豊富な山口さんが適任ではないかと、お名前を挙げてくださいました。\n日時は4月8日（木）の午後、1時間ほどの予定です。お引き受けいただける場合は、今月中にお返事をいただけますと幸いです。",
+    "en": "Human resources asks 山口さん to teach a session at next April's training for new staff. The usual teacher, 田中部長, will be abroad, and when asked for advice he put forward 山口さん's name.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "このメールで、山口さんを講師に推薦したのはだれか。",
+        "c": [
+          "いつもはこの研修の講師を務めている田中部長",
+          "講師を探してこのメールを送った、人事部の木村さん",
+          "現場での経験が豊富な、営業部の山口さん本人",
+          "田中部長と一緒に海外出張に行く営業部の社員"
+        ],
+        "why": [
+          "部長にご相談したところ…お名前を挙げてくださいました: the subject of 挙げてくださった is 部長, the 田中部長 who teaches this session every year (例年). くださる shows the favour came from him to the sender.",
+          "Said in the text, but the wrong person. 木村さん writes the request and asked 部長 for advice. The name came from 部長.",
+          "Turned round. 山口さん is the one recommended, not the one who recommended.",
+          "Not in the text. Only 部長's trip is mentioned. Nobody else is said to go."
+        ],
+        "cue": [
+          "部長にご相談したところ",
+          "お名前を挙げてくださいました"
+        ],
+        "skill": "who",
+        "tell": "Keigo hides the subject. 〜てくださる means someone above did it for the writer. Trace it back to the person just asked (部長に相談した)."
+      }
+    ]
+  },
+  {
+    "id": "r10-013",
+    "type": "r10",
+    "genre": "エッセイ",
+    "text": "子どもに「つまらない」と言われると、親はつい何かを与えたくなる。動画を見せたり、習い事を増やしたりすれば、その場は静かになるだろう。\nだが、自分の子ども時代を振り返ると、空き箱で町を作ったり、庭で虫を探したりしたのは、たいてい何もすることがない午後だった。やることが用意されていなかったから、自分で遊びを考えるしかなかったのだ。子どもの退屈を急いで埋めてしまうのは、何かを生み出すきっかけを取り上げることになりかねない。大人は、すぐに手を出さずに待つことを覚えるべきではないか。",
+    "en": "Parents tend to fill a bored child's time with videos or lessons. The writer remembers inventing games on empty afternoons and argues that adults should wait, because filling boredom too fast can take away the chance to create.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "退屈している子どもを、大人はしばらく見守るほうがよい。",
+          "子どもが退屈しないように、親は遊びを工夫して用意すべきだ。",
+          "退屈な時間は大切なので、習い事はやめさせたほうがよい。",
+          "昔の子どもは、今の子どもより自分で遊びを考える力があった。"
+        ],
+        "why": [
+          "The last line gives the view: 大人は、すぐに手を出さずに待つことを覚えるべきではないか. 見守る (watch without stepping in) says the same thing.",
+          "The view the writer argues against. Giving children something to do is what parents つい do, and だが turns away from it.",
+          "Half right. Boredom does matter to the writer, but nothing says children should give up their lessons.",
+          "Not in the text. The writer recalls their own childhood but never compares it with children today."
+        ],
+        "cue": [
+          "大人は、すぐに手を出さずに待つことを覚えるべきではないか",
+          "何かを生み出すきっかけを取り上げることになりかねない"
+        ],
+        "skill": "claim",
+        "tell": "The claim is in the ending: 〜べきではないか, 〜かねない. Match its meaning, and drop choices that add a rule the writer never sets."
+      }
+    ]
+  },
+  {
+    "id": "r10-014",
+    "type": "r10",
+    "genre": "メモ",
+    "title": "夕飯とミケのこと",
+    "text": "さきへ\nお母さんは急に仕事が入って、帰りが8時過ぎになりそうです。カレーを作っておいたので、温めて先に食べていてください。お父さんも今日は遅くなるそうです。\nそれから、ミケが今朝からあまりご飯を食べていません。帰ったら様子を見てあげてください。吐いたり、ぐったりしたりしていたら、すぐにお母さんの携帯に電話してね。病院にはお母さんが連れて行きます。元気そうなら、ご飯はいつもの半分だけあげてください。\n母",
+    "en": "Mum will be home after 8, so さき should heat the curry and eat first. The cat has not been eating: さき should check on her, phone at once if she seems ill, and otherwise give half her usual food.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "このメモを読んださきさんは、帰ったら何をしなければならないか。",
+        "c": [
+          "ミケの様子を確かめ、夕飯は母を待たずに食べる。",
+          "母が帰るのを待ってから、一緒に夕飯を食べる。",
+          "ミケを病院に連れて行き、そのあと母に電話する。",
+          "ミケの様子を見て、いつもと同じ量のご飯をあげる。"
+        ],
+        "why": [
+          "Two requests: 様子を見てあげてください and 温めて先に食べていてください. The answer puts both in other words: check on the cat, and eat without waiting for Mum.",
+          "Turned round. 先に食べていて means eat without waiting. Mum is back after 8.",
+          "Turned round. お母さんが連れて行きます: さき only phones if the cat seems ill.",
+          "Half right. Checking on the cat is right, but if she seems well she gets only いつもの半分."
+        ],
+        "cue": [
+          "温めて先に食べていてください",
+          "帰ったら様子を見てあげてください"
+        ],
+        "skill": "purpose",
+        "tell": "List every 〜てください in the memo, then check who does what. Wrong choices give the reader a job the writer keeps."
+      }
+    ]
+  },
+  {
+    "id": "r10-015",
+    "type": "r10",
+    "genre": "エッセイ",
+    "text": "「大丈夫」は便利な言葉だが、同時にやっかいな言葉でもある。店で「袋はご利用ですか」と聞かれて「大丈夫です」と答えれば、多くの場合は「いりません」の意味になる。ところが、言い方によっては「お願いします」とも受け取れるので、店員は迷ってしまう。具合の悪そうな同僚に声をかけて「大丈夫」と返ってきても、本当にそうなのかは分からない。[[この言葉は、答えの中身を相手に預けてしまう]]のだ。はっきり断ることや頼むことを避けたいとき、私たちはこの言葉に頼っているのかもしれない。",
+    "en": "大丈夫 can mean no thanks or yes please, and a sick colleague's 大丈夫 may not be true. The word leaves the listener to work out what the speaker meant, which may be why people use it to avoid a clear yes or no.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "①「この言葉は、答えの中身を相手に預けてしまう」とはどういうことか。",
+        "c": [
+          "「大丈夫」の本当の意味は、聞いた側が判断することになる。",
+          "「大丈夫」と言えば、気持ちを正しく伝えられる。",
+          "「大丈夫」は、何かを断るときにだけ使うべき言葉だ。",
+          "「大丈夫」は、具合が悪いことを隠すために使われる。"
+        ],
+        "why": [
+          "The examples before ① leave the listener guessing: the clerk 迷ってしまう, and with the colleague 本当にそうなのかは分からない. 預ける means to hand over, so the listener has to decide what the answer means.",
+          "Turned round. The point is that the meaning does not come across clearly.",
+          "Not in the text. The writer shows 大丈夫 can mean yes or no, and sets no rule about when to use it.",
+          "Too narrow. The colleague is one example. The shop example shows the same problem with no illness."
+        ],
+        "cue": [
+          "店員は迷ってしまう",
+          "本当にそうなのかは分からない"
+        ],
+        "skill": "meaning",
+        "tell": "For an abstract underline, go back to the examples just before it. The answer is what they have in common, said plainly."
+      }
+    ]
+  },
+  {
+    "id": "r10-016",
+    "type": "r10",
+    "genre": "メール",
+    "title": "お見積もり金額のご相談について",
+    "text": "株式会社みなと商事　中村様\nいつもお世話になっております。青葉印刷の石井です。\nお見積もりの件でご連絡をいただき、ありがとうございました。ご希望の金額までお下げできないか社内で検討いたしましたが、現在の内容のままでは難しいという結論になりました。申し訳ございません。\nそこで、[[別の形でのご提案]]がございます。印刷部数を2,000部から1,500部に減らしていただくか、納期を1週間延ばしていただければ、ご予算内に収めることができます。どちらかでご検討いただけるようでしたら、修正したお見積もりをすぐにお送りいたします。",
+    "en": "The printer cannot meet the client's price for the job as it stands. Instead, it offers to fit the budget if the client either cuts the print run to 1,500 copies or allows one more week.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "①「別の形でのご提案」とは、どのような提案か。",
+        "c": [
+          "条件を一つ変えれば、予算に合う金額になるという提案",
+          "内容は今のままにして、金額だけを少し下げるという提案",
+          "部数を減らしたうえで、納期も延ばしてもらうという提案",
+          "ほかの印刷会社を紹介し、予算内で作ってもらうという提案"
+        ],
+        "why": [
+          "After ① come two options joined by か (or): fewer copies, or one more week. Either one brings the price within budget, so the client changes one condition and gets a price that fits.",
+          "Turned round. 現在の内容のままでは難しい: the price cannot come down if nothing else changes.",
+          "Too wide. 〜か…ば asks for one of the two, not both.",
+          "Not in the text. 青葉印刷 offers to send its own revised quote. No other company is mentioned."
+        ],
+        "cue": [
+          "印刷部数を2,000部から1,500部に減らしていただくか、納期を1週間延ばしていただければ、ご予算内に収めることができます"
+        ],
+        "skill": "meaning",
+        "tell": "A business email says no first, then そこで brings the offer. Read the sentence after そこで closely, especially か (or) and ば (if)."
+      }
+    ]
+  },
+  {
+    "id": "r10-017",
+    "type": "r10",
+    "genre": "エッセイ",
+    "text": "東京から地方の町に引っ越して、最初に驚いたのは人の歩く速さだった。駅の通路でさえ、急いでいる人がほとんどいない。初めのうち、私は前を歩く人を何度も追い越していた。都会では、乗り換えや人の流れに合わせて、知らないうちに速く歩く癖がついていたのだろう。\n半年ほどたった今、[[私の歩き方もずいぶんゆっくりになった]]。おかげで、道ばたの花や古い店の看板にも目が向くようになった。町の速さは、住んでいるうちにその人の体にしみ込んでいくものらしい。",
+    "en": "After moving from Tokyo to a country town, the writer kept overtaking slow walkers. Six months on, the writer walks slowly too and notices more, as if the town's pace has soaked into the body.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①「私の歩き方もずいぶんゆっくりになった」とあるが、なぜか。",
+        "c": [
+          "周りの人の歩く速さに、いつの間にか合うようになったから。",
+          "道ばたの花や店の看板を、ゆっくり見ながら歩きたくなったから。",
+          "人を何度も追い越すうちに、歩くことに疲れてしまったから。",
+          "東京では、乗り換えに合わせて速く歩く必要があったから。"
+        ],
+        "why": [
+          "The last line gives the reason: 町の速さは…体にしみ込んでいく. Living among slow walkers, the writer took on their pace without trying.",
+          "Turned round. Noticing flowers and signs came after slowing down (おかげで). It is the result, not the cause.",
+          "Not in the text. The writer overtook people at first, but never says it was tiring.",
+          "Said in the text, but it explains the old fast pace in Tokyo, not why the writer slowed down."
+        ],
+        "cue": [
+          "町の速さは、住んでいるうちにその人の体にしみ込んでいくものらしい"
+        ],
+        "skill": "reason",
+        "tell": "Check the order of events. おかげで marks a result. A choice that turns the result into the reason is a trap."
+      }
+    ]
+  },
+  {
+    "id": "r10-018",
+    "type": "r10",
+    "genre": "エッセイ",
+    "text": "日記を長く続けるこつを聞かれると、私はいつも「[[上手に書こうとしないこと]]」と答えています。三日でやめてしまう人の多くは、毎日何か特別なことを書かなければならないと思い込んでいるようです。でも、日記は誰かに読ませるための作品ではありません。つまり、内容が平凡でも短くても、書かない日を作らないことのほうがずっと大切なのです。「雨。駅まで走った。」という一行だけの日があってもかまいません。一年後に読み返すと、そんな一行からも、その日の空気が意外なほどよみがえってきます。",
+    "en": "The writer's tip for keeping a diary is not to try to write well. A dull one-line entry is fine: what matters is not skipping days, and even one line brings the day back a year later.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①「上手に書こうとしないこと」とはどういうことか。",
+        "c": [
+          "内容のよしあしは気にせず、毎日少しでも書くこと。",
+          "人に読まれても恥ずかしくない文章を目指すこと。",
+          "毎日、何か特別なことを見つけて書くようにすること。",
+          "一年後に読み返して、その日のことを思い出すこと。"
+        ],
+        "why": [
+          "つまり restates ①: 内容が平凡でも短くても、書かない日を作らないこと. The answer says it another way: do not worry whether it is good, just write something every day.",
+          "Turned round. 日記は誰かに読ませるための作品ではありません.",
+          "The view the writer argues against. This is what people who give up after three days 思い込んでいる.",
+          "Said in the text, but it is the reward of a diary, not what ① means."
+        ],
+        "cue": [
+          "内容が平凡でも短くても、書かない日を作らないことのほうがずっと大切なのです"
+        ],
+        "skill": "rephrase",
+        "tell": "When ① is a short saying, look for つまり or 要するに after it. That sentence gives the meaning in plain words."
+      }
+    ]
+  },
+  {
+    "id": "r10-019",
+    "type": "r10",
+    "genre": "エッセイ",
+    "text": "十年使っている掃除機が動かなくなった。メーカーに問い合わせると、修理代は新品の半分ほどかかるという。店では買い替えを勧められたが、迷った末に直してもらうことにした。\n戻ってきた掃除機は、以前と同じ音を立てて動き出した。新しい製品のほうが軽くて性能もいいことは分かっている。それでも、手になじんだ道具をもう一度使えるうれしさは、値段を比べるだけでは測れない。物を直すというのは、その物と過ごしてきた時間を大切にすることでもあるのだと思う。",
+    "en": "Repairing a ten-year-old vacuum cleaner cost half the price of a new one, but the writer chose to fix it. The pleasure of using a familiar tool again cannot be measured by price: repairing a thing values the time spent with it.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "この文章で筆者が最も言いたいことは何か。",
+        "c": [
+          "物を修理して使い続けることには、金額では表せない価値がある。",
+          "新しい製品は性能がいいので、古い物は早めに買い替えたほうがよい。",
+          "修理代が新品の半分以下なら、買い替えるより直したほうが得だ。",
+          "長く使った道具は、修理しても以前と同じようには動かない。"
+        ],
+        "why": [
+          "The last two sentences: the joy of it 値段を比べるだけでは測れない, and repairing is その物と過ごしてきた時間を大切にすること. The answer joins them: repair has a worth beyond money.",
+          "The view the writer sets aside. The shop advised a new one, and the writer grants that new models are better (分かっている), then turns with それでも.",
+          "Not in the text. The writer sets no price rule. The point is that comparing prices misses the value.",
+          "Turned round. The vacuum came back and ran 以前と同じ音を立てて."
+        ],
+        "cue": [
+          "値段を比べるだけでは測れない",
+          "その物と過ごしてきた時間を大切にすることでもある"
+        ],
+        "skill": "gist",
+        "tell": "〜は分かっている。それでも… grants a point and then overrides it. The main point is what comes after それでも."
+      }
+    ]
+  },
+  {
+    "id": "r10-020",
+    "type": "r10",
+    "genre": "エッセイ",
+    "text": "会話の途中で沈黙が生まれると、私たちは慌てて次の話題を探そうとします。黙っている時間は気まずいもの、という感覚があるからでしょう。けれども、長年の友人と一緒にいると、何分も言葉を交わさなくても、少しも居心地が悪くありません。言葉がなくても相手を信頼していられるから、沈黙が苦にならないのだと思います。そう考えると、沈黙を急いで埋めようとするのは、関係がまだ浅いしるしなのかもしれません。黙ったままでいられる相手がいるのは、案外ぜいたくなことなのです。",
+    "en": "People rush to fill silences because they feel awkward. With old friends, silence is comfortable because of trust, so having someone you can sit quietly with is a small luxury.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "この文章で筆者が最も言いたいことは何か。",
+        "c": [
+          "黙っていても気まずくない相手がいることは貴重だ。",
+          "会話が途切れたら、すぐに次の話題を出すのが相手への礼儀だ。",
+          "親しい友人となら、言葉がなくても考えがすべて伝わる。",
+          "沈黙が多い会話は、相手との関係がまだ浅いことを示している。"
+        ],
+        "why": [
+          "The last sentence is the point: 黙ったままでいられる相手がいるのは…ぜいたくなこと. The answer restates it: someone you can be quiet with, without feeling awkward, is precious.",
+          "The view the writer sets aside. The urge to fill silence is the starting point, and けれども turns away from it.",
+          "Too wide. The writer says silence feels comfortable with old friends, not that every thought gets across.",
+          "Turned round. Rushing to fill silence is the sign of a new relationship. Long silences come with old friends."
+        ],
+        "cue": [
+          "黙ったままでいられる相手がいるのは、案外ぜいたくなことなのです"
+        ],
+        "skill": "gist",
+        "tell": "Essays often end on the point. Check the choice keeps the writer's direction: one that flips who rushes and who relaxes is a trap."
+      }
+    ]
+  }
+]

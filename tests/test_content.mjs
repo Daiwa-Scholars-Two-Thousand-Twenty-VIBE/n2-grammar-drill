@@ -3,7 +3,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import path from "node:path";
 import fs from "node:fs";
-import { CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, readJSON, validateItems, validateKanji, validateVocab, validatePassages } from "../tools/lib.mjs";
+import { CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, textFiles, listenFiles, readJSON, validateItems, validateKanji, validateVocab, validatePassages, validateTexts, validateListening } from "../tools/lib.mjs";
 
 const catalog = loadCatalog();
 const files = questionFiles();
@@ -75,7 +75,7 @@ test("vocab files validate, and each type has enough for a mock section", { skip
   const seen = new Set();
   const errors = vocabFiles().flatMap((f) => validateVocab(readJSON(f), f, seen));
   assert.deepEqual(errors, []);
-  for (const t of ["v3", "v5", "v6"]) assert.ok(vocab.filter((q) => q.type === t).length >= 5, `need 5+ ${t} items for a mock`);
+  for (const t of ["v3", "v4", "v5", "v6"]) assert.ok(vocab.filter((q) => q.type === t).length >= 5, `need 5+ ${t} items for a mock`);
   const words = vocab.map((q) => `${q.type}:${q.w}`);
   assert.equal(new Set(words).size, words.length, "the same word is tested twice in one type");
 });
@@ -105,5 +105,37 @@ test("sound parts match the kanji gap", { skip: !fs.existsSync(soundFile) && "no
       assert.ok(Number.isInteger(level) && level >= 0 && level <= 60, `${k}: ${ch} has WaniKani level ${level}`);
       if (gap.has(ch)) assert.equal(level, gap.get(ch).wk, `${ch}: WaniKani level differs from kanji.json`);
     }
+  }
+});
+
+test("reading texts validate, and the reading mock has enough of each part", { skip: !textFiles().length && "no reading texts yet" }, () => {
+  const seen = new Set();
+  const texts = textFiles().flatMap((f) => readJSON(f));
+  const errors = textFiles().flatMap((f) => validateTexts(readJSON(f), f, seen));
+  assert.deepEqual(errors, []);
+  const need = { r10: 5, r11: 3, r12: 1, r13: 1 };
+  for (const [t, n] of Object.entries(need)) assert.ok(texts.filter((p) => p.type === t).length >= n, `need ${n}+ ${t} texts for a full reading mock`);
+});
+
+test("listening items validate, and the listening mock has enough of each part", { skip: !listenFiles().length && "no listening items yet" }, () => {
+  const seen = new Set();
+  const items = listenFiles().flatMap((f) => readJSON(f));
+  const errors = listenFiles().flatMap((f) => validateListening(readJSON(f), f, seen));
+  assert.deepEqual(errors, []);
+  const need = { l1: 5, l2: 6, l3: 5, l4: 12 };
+  for (const [t, n] of Object.entries(need)) assert.ok(items.filter((x) => x.type === t).length >= n, `need ${n}+ ${t} items for a full listening mock`);
+  const l5 = items.filter((x) => x.type === "l5");
+  assert.ok(l5.some((x) => x.qs.length === 1) && l5.some((x) => x.qs.length === 2), "問題5 needs both kinds");
+});
+
+test("audio manifest only lists real items, and its spoken order matches the app's", { skip: !fs.existsSync(path.join(CONTENT, "audio.json")) && "no audio yet" }, async () => {
+  const { createRequire } = await import("node:module");
+  const S = createRequire(import.meta.url)("../js/srs.js");
+  const man = readJSON(path.join(CONTENT, "audio.json"));
+  const ids = new Set(listenFiles().flatMap((f) => readJSON(f)).map((x) => x.id));
+  for (const [id, a] of Object.entries(man)) {
+    assert.ok(ids.has(id), `audio.json lists ${id}, which no file has`);
+    const n = id.startsWith("l4") ? 3 : 4;
+    if (a.order) assert.deepEqual(a.order, S.spokenOrder(id, n), `${id}: recorded order differs from the app's`);
   }
 });

@@ -1,6 +1,6 @@
 # N2 文法ドリル · JLPT N2 grammar drill
 
-A free drill for the JLPT N2. Grammar is the core. Around it sit the vocabulary questions (問題3 語形成, 問題5 言い換え類義, 問題6 用法), the 情報検索 notice (問題14) and a kanji gap section. The grammar follows the syllabus of **新完全マスター N2 文法** (Shin Kanzen Master N2 Grammar): all 26 lessons of 第1部, the Section IV review, 第2部 (sentence building) and 第3部 (text grammar).
+A free drill for the JLPT N2, built to be the one app for the whole paper. Grammar is the core. Around it sit the vocabulary questions (問題3 to 6), a kanji gap section, the reading section (問題10 to 14, timed, with the method of 新完全マスター読解 N2 summed up technique by technique), the listening section (聴解 問題1 to 5, natural recorded voices, played once) and a log of your weekly hours and mock scores. The grammar follows the syllabus of **新完全マスター N2 文法** (Shin Kanzen Master N2 Grammar): all 26 lessons of 第1部, the Section IV review, 第2部 (sentence building) and 第3部 (text grammar).
 
 **Use it here:** https://daiwa-scholars-two-thousand-twenty-vibe.github.io/n2-grammar-drill/
 
@@ -28,10 +28,10 @@ The vocabulary and notice questions work the same way: four choices, a one-line 
 
 | Tab | What is there |
 |---|---|
-| **今日 Today** | One plan for the day in three blocks, in this order: Grammar, then Vocab, then Kanji. One start button runs the next block that has something due. |
-| **練習 Practice** | Extra drills on top of Today: timed sections, weak spots, one question type at a time, and get-ahead drills for new items. |
-| **記録 Progress** | Your stats, a 14-day activity chart, how much of the grammar, vocab and kanji you have met, and your top mix-ups. |
-| **資料 Library** | Look-up pages that are never scheduled: browse the grammar points, confusable sets, cheat sheets, the kanji and vocab reference, and Settings (daily amounts, sync, backup). |
+| **今日 Today** | One plan for the day, in this order: Grammar, Vocab, Kanji, then Reading and Listening. One start button runs the next block that has something due. Reading and listening show as optional (dashed) blocks until the day set in Settings, then join the plan. |
+| **練習 Practice** | Extra drills on top of Today: timed sections (grammar, vocab, reading, listening, full or half), reading by type or by technique, listening by type, weak spots, one question type at a time, and get-ahead drills. |
+| **記録 Progress** | Your stats, a 14-day activity chart, hours this week against 18, mock scores, reading speed and accuracy by type and technique, listening accuracy and answer time, how much you have met, and your top mix-ups. |
+| **資料 Library** | Look-up pages that are never scheduled: grammar points, confusable sets, cheat sheets, the kanji and vocab reference, the reading and listening tips, and Settings (daily amounts, sync, backup). |
 
 ## The modes
 
@@ -50,10 +50,12 @@ The vocabulary and notice questions work the same way: four choices, a one-line 
 | **Cheat sheets** | Words that lock the ending (必ずしも → 〜わけではない), connectives, formal vs spoken pairs, the もの・こと・わけ families, and a restriction table built from every point. |
 | **Custom drill** | Any range of lessons, any question types. |
 | **Kanji gap** | 300 kanji that real N2 papers use but WaniKani teaches after level 27, most useful first. See below. |
+| **Reading** | Today's set (the types in turn over a week), the full reading section (55 minutes, no answers until the end), a half section, one type, or one technique. See below. |
+| **Listening** | Today's items, the full listening section (about 50 minutes, the paper's answer time per item), a half section, or one type. See below. |
 
 Your top mix-ups (for example, "you reached for 〜にしては when it was 〜わりに") show in 記録 Progress. Tap one to drill the pair.
 
-Keys: `1` to `4` to answer, `Enter` for next, `H` to show the cue before answering (it then counts as slow), `Esc` to stop.
+Keys: `1` to `4` to answer, `Enter` for next, `H` to show the cue before answering (it then counts as slow), `Space` or `P` to play a listening item, `Esc` to stop.
 
 After a wrong answer, Next waits 1.5 seconds while a bar fills along it, so a quick second `Enter` cannot skip the tell and the reasons. Holding `Enter` down never skips it either. **Settings → Pause after a miss** changes the wait (none, 1, 1.5 or 3 seconds).
 
@@ -100,6 +102,32 @@ How it is scheduled:
 - The vocab block on Today takes due items first, then new ones. **Settings → New vocab items per day** (default 10) and **Vocab items per review** (default 20) set the size.
 - The bank is small and still growing. `node tools/bundle.mjs` prints how many items each type has.
 
+## Reading (問題10 to 14)
+
+The reading section is where the July 2026 N3 paper was lost (18 of 60), and the cause was speed, not knowledge. So every text is timed, and the Progress tab tracks speed as well as accuracy.
+
+- **48 original texts** in the paper's shapes: 問題10 short texts (about 200 characters, one question), 問題11 mid-length (about 500, three questions), 問題12 two texts A and B on one topic (two questions), 問題13 a long opinion essay (about 900, three questions), plus the 情報検索 notices. Underlined parts are numbered ①②③ as on the paper.
+- **Each question is tagged with the technique it tests**, following 新完全マスター読解 N2: 対比 contrast, 言い換え restatement, 比喩 metaphor, 疑問提示 the writer's question, 主張表現 claim endings, 指示語 pointing words, who or what, underlined meaning, reasons, examples, the purpose of a practical text, and comparing A and B. After you answer, the deciding words are highlighted and the technique links to its tip sheet.
+- **Wrong choices are built like the paper's:** true but about another part, half right, cause and effect turned round, the view the writer argues against, too wide or too narrow, sensible but not in the text. Each `why` names its trap.
+- **Texts are not scheduled like flashcards** (you would remember the answers). They come least-read first, so the bank lasts. Today's set takes the types in turn: 問題10, 11, 12, 10, 13, 11, 14.
+- **Speed:** each text has a paper pace (2:30 for 問題10, 6:00 for 問題11, 7:00 for 問題12, 10:00 for 問題13, 7:00 for 問題14). Results compare your time with it, and Progress shows your last five texts of each type as a multiple of pace, plus characters a minute.
+- **Tips:** Library → Reading and listening tips holds the book's method in our own words, part by part, with the book's page numbers: signal words, steps, tips and traps for each technique and each part of the paper, and a drill button for each.
+
+## Listening (聴解 問題1 to 5)
+
+- **92 original scripts** in the paper's five shapes: 課題理解 (what the person does next), ポイント理解 (the one point asked), 概要理解 (the main point, nothing printed), 即時応答 (one line, pick the reply), 統合理解 (comparing options; one-question and two-question kinds).
+- **Played once, as in the exam.** Read the printed choices, press play, close your eyes and listen; no pause and no replay until you have answered. Spoken choices (問題3, 4 and one-question 問題5) show as numbers only. Two-question 問題5 prints one list of options for both questions, as the paper does.
+- **The answer clock** starts when the audio ends. In a timed section you get the paper's time (12 seconds, 8 for 問題4), then the next item plays by itself; an unanswered item counts as wrong.
+- **After you answer:** the script with the deciding words highlighted, why each choice fails, and a button to listen again with the script in front of you.
+- **The audio** is made from the scripts with Google's Gemini text-to-speech (natural voices, a different pair per item, a narrator for the paper's framing). There is no synthetic fallback: an item without its recording is not offered until the recording exists.
+- **Scheduling:** items come least-heard first; one you missed comes back after three days. Today's items are mostly 問題1, 2 and 4, with one 問題3 or 5 in turn.
+
+## Hours and mocks
+
+- **Hours of Japanese** (Progress): the weekly goal is 18 hours. Time in the drill counts by itself (answer time, plus audio heard). Log the rest by hand: immersion, tutor lessons, the textbook, mock papers. The table shows the last four weeks.
+- **Mock papers** (Progress): log each full mock as scaled scores out of 60 for 言語知識, 読解 and 聴解. The table marks a pass (90 of 180 and at least 19 in each section).
+- Both sync between devices like everything else. A deleted entry stays as a marked row so the deletion syncs too.
+
 ## The Anki deck
 
 For practice on the go there is a small deck in the same exam format: **[anki/n2-grammar-exam-style.apkg](anki/n2-grammar-exam-style.apkg)**.
@@ -113,7 +141,7 @@ Import it with File → Import in Anki. About 15 new cards a day gets you throug
 
 ## Progress and privacy
 
-Everything is stored in your browser's local storage. Nothing is sent anywhere unless you turn on sync (next section). To move to another device by hand, use **Settings → Export progress**, then **Import progress** on the other device. **Download my misses as notes** gives you a markdown file of every question you have missed, grouped by grammar point.
+Everything is stored in your browser's local storage. Nothing is sent anywhere unless you turn on sync (next section). To move to another device by hand, use **Settings → Export progress**, then **Import progress** on the other device. **Download my misses as notes** gives you a markdown file of every question you have missed: grammar grouped by point, then kanji, vocab, reading and listening.
 
 ## Offline and on your home screen
 
@@ -180,7 +208,20 @@ node tools/bundle.mjs --report     # validate everything (grammar, kanji, vocab,
 node --test tests/*.mjs            # scheduler, sync, relay and content tests
 uv run --with genanki python tools/build_anki.py   # rebuild the Anki deck
 python3 -I tools/build_sound_parts.py              # rebuild js/sound.js after changing the kanji list
+node tools/check.mjs content/read_r10.json         # check one reading, listening or vocab file while writing it
 ```
+
+### Listening audio
+
+`tools/build_audio.py` turns every script in `content/listen_*.json` into `audio/<id>.m4a` with Gemini text-to-speech (needs `ffmpeg` and a `GEMINI_API_KEY` in the environment; never commit the key). It records each item's script hash in `content/audio.json` and only remakes items whose script changed, and it caches every voice clip in `tools/.audio_cache/` (ignored by git), so a rerun after a failure costs nothing for the parts already made.
+
+```bash
+GEMINI_API_KEY=... python3 tools/build_audio.py            # make what is missing or changed
+GEMINI_API_KEY=... python3 tools/build_audio.py --check    # also transcribe each file and flag any below 90% match
+node tools/bundle.mjs                                      # then rebuild js/data.js so the app knows about the new audio
+```
+
+The free Gemini tier allows only 10 text-to-speech requests a day, and the 92 items need about 355 (counted 9 Nov 2026), so the full build needs a key on a paid tier. Spoken choices are read in a fixed order per item (`spokenOrder` in `js/srs.js`, the same rule in the Python), so the app can show numbers that match the recording.
 
 Use the `tests/*.mjs` glob. On Node 26, `node --test tests/` runs 0 tests and still exits 0, so it looks like a pass.
 
@@ -196,7 +237,13 @@ Commit the regenerated `js/data.js` (and the `.apkg` if you changed the Anki que
 | `content/kanji.json` | The kanji gap: tiers, look-alike glyphs, and each kanji with its words, sentences and distractors |
 | `content/vocab_*.json` | Vocabulary items: 問題3 語形成 (`v3`), 問題5 言い換え類義 (`v5`), 問題6 用法 (`v6`) |
 | `content/r14_*.json` | 問題14 情報検索 notices (`r14`) with their questions |
-| `js/srs.js` | Scheduling and session building for grammar, kanji, vocab and notices, plus `mergeStates`, which combines two copies of progress (pure functions, tested in `tests/`) |
+| `content/vocab_v4.json` | 問題4 文脈規定 (`v4`) items |
+| `content/read_*.json` | Reading texts 問題10 to 13 (`r10` to `r13`) with their questions and techniques |
+| `content/read_tips.json` | The reading and listening tips: 新完全マスター読解 N2 technique by technique, each part of the paper, each listening type |
+| `content/listen_*.json` | Listening scripts 聴解 問題1 to 5 (`l1` to `l5`) |
+| `content/audio.json` | Made by `tools/build_audio.py`: each item's length, script hash, voices and spoken order |
+| `audio/` | The listening audio, one `.m4a` per item (AAC, about 40 kbps) |
+| `js/srs.js` | Scheduling and session building for grammar, kanji, vocab, reading and listening, plus `mergeStates`, which combines two copies of progress (pure functions, tested in `tests/`) |
 | `js/sync.js` | Gist sync: the GitHub gist client and `mergePayload` (no screens; tested with a fake `fetch`) |
 | `js/app.js` | The screens: the four tabs, quizzes, Settings and the sync card |
 | `api/gh.mjs` | The sync relay for the Vercel copy (a Vercel Function; GitHub Pages ignores it) |
@@ -206,10 +253,12 @@ Commit the regenerated `js/data.js` (and the `.apkg` if you changed the Anki que
 | `tools/lib.mjs` | The validators for every content type |
 | `tools/bundle.mjs` | Validates everything and writes `js/data.js` |
 | `tools/build_sound_parts.py` | Writes `js/sound.js` from Kanjium and WaniKani's public level pages |
+| `tools/check.mjs` | Validates one reading, listening or vocab file and prints text lengths |
+| `tools/build_audio.py` | Makes the listening audio (see above) |
 | `tests/` | `test_srs.mjs`, `test_sync.mjs`, `test_content.mjs`, `test_proxy.mjs`, `test_offline.mjs` |
 
 ## Notes
 
-- All example sentences are original. None are copied from the textbook or from past papers. Lesson numbers and titles follow 新完全マスター N2 文法 so you can use the two side by side. Buy the book; this drill does not replace it and is not affiliated with its publisher or with the JLPT.
+- All example sentences, reading texts and listening scripts are original. None are copied from the textbooks or from past papers. Lesson numbers and titles follow 新完全マスター N2 文法, and the reading tips follow the structure of 新完全マスター読解 N2 in our own words with page numbers, so you can use them side by side. Buy the books; this drill does not replace them and is not affiliated with their publisher or with the JLPT.
 - Sound parts in `js/sound.js` are adapted from the [Kanjium](https://github.com/mifunetoshiro/kanjium) database by Uros O., under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); that file keeps the licence. Kanjium draws on KANJIDIC by the Electronic Dictionary Research and Development Group. The WaniKani level next to each kanji comes from WaniKani's public level pages.
 - Mistakes happen. If an answer looks wrong or two choices both seem to work, open an issue with the question id (shown in exported notes).

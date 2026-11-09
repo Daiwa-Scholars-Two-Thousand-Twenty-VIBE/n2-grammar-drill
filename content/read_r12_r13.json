@@ -1,0 +1,1059 @@
+[
+  {
+    "id": "r12-001",
+    "type": "r12",
+    "genre": "論説",
+    "texts": [
+      {
+        "label": "A",
+        "text": "「小学生にスマートフォンはまだ早い」と考える親は少なくない。しかし、いずれは誰もが使うようになる道具である。中学生や高校生になってから急に自由に使わせるよりも、親の目が届きやすい小学生のうちに持たせ、使い方を少しずつ身につけさせるほうが、かえって大きなトラブルを防げるのではないか。失敗をしても、早い時期なら親がすぐに気づき、一緒に考えることができる。もちろん、ただ渡しておけばよいというわけではない。一日に使う時間や、使ってよい場所、アプリを入れるときの手順などを、親子で話し合って決めておくことが欠かせない。そして、約束を守れるようになったら、少しずつ自由を広げていけばよいのである。"
+      },
+      {
+        "label": "B",
+        "text": "スマートフォンを持つ子どもの年齢が年々下がっている。だが、小学生の場合、夜遅くまで動画を見て睡眠時間が減ったり、SNSで知り合った見知らぬ大人とやりとりをしてしまったりする例が後を絶たない。何が危ないのかを判断する力が育っていない時期に、大人と同じ道具を与えるのは危険が大きすぎる。親と連絡を取るためであれば、通話と居場所の確認ができる子ども向けの携帯電話で十分だろう。スマートフォンは、自分で使い方を考えられるようになる中学生以降でも遅くはない。ただし、その時期になっても、利用する時間などのルールを家族でよく話し合って決め、守れているかを親が確かめていく必要がある。"
+      }
+    ],
+    "en": "A says children should get a smartphone in primary school, while parents can still watch, with rules agreed at home. B says primary school is too early because of lost sleep and contact with strangers, and a smartphone can wait until junior high, but rules agreed as a family are still needed.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "AとBのどちらの文章にも触れられている点は何か。",
+        "c": [
+          "使う時間などの決まりを、親子で相談して作っておく必要があること",
+          "動画を見る時間が長くなり、子どもの睡眠時間が減ってしまうこと",
+          "早い時期に失敗すれば、親がすぐに気づいて助けられること",
+          "連絡を取るためなら、子ども向けの携帯電話で十分であること"
+        ],
+        "why": [
+          "A: 一日に使う時間…などを、親子で話し合って決めておくことが欠かせない. B ends with ルールを家族でよく話し合って決め. Both make this point, in different words.",
+          "Only one text: B. A never mentions sleep.",
+          "Only one text: A. B gives no advantage of starting early.",
+          "Only one text: B. A says nothing about a children's phone."
+        ],
+        "cue": [
+          "親子で話し合って決めておくことが欠かせない",
+          "ルールを家族でよく話し合って決め"
+        ],
+        "skill": "compare",
+        "tell": "For a shared point, test each choice against both texts. Strike any choice only one text makes. Concessions near the end (ただし, もちろん) often hold it."
+      },
+      {
+        "q": "子どもにスマートフォンを持たせる時期について、AとBはどのように述べているか。",
+        "c": [
+          "Aは小学生のうちに持たせるほうがよいと述べ、Bは中学生以降でよいと述べている。",
+          "Aは中学生以降でよいと述べ、Bは小学生のうちに持たせるほうがよいと述べている。",
+          "AもBも、親といつでも連絡が取れるように、小学生のうちから持たせるべきだと述べている。",
+          "AもBも、判断する力が育つまでは持たせるべきではないと述べている。"
+        ],
+        "why": [
+          "A: 小学生のうちに持たせ…ほうが、かえって大きなトラブルを防げる. B: 中学生以降でも遅くはない.",
+          "Swapped: each text gets the other's view.",
+          "Turned round for B: B says a children's phone is enough for contact. A never gives contact as the reason.",
+          "This is B's view only. A wants a smartphone in primary school."
+        ],
+        "cue": [
+          "小学生のうちに持たせ",
+          "中学生以降でも遅くはない"
+        ],
+        "skill": "compare",
+        "tell": "Find each writer's own recommendation first (〜のではないか, 〜でも遅くはない). Then check the order: A's view must come first."
+      }
+    ]
+  },
+  {
+    "id": "r12-002",
+    "type": "r12",
+    "genre": "論説",
+    "texts": [
+      {
+        "label": "A",
+        "text": "週に三日休める「週休三日制」を取り入れる企業が、少しずつ増えている。試しに導入したある会社では、休みが増えても売り上げは落ちず、むしろ社員一人ひとりが時間の使い方を工夫するようになったという。休日に資格の勉強をしたり、家族と過ごしたりする時間が増えれば、働く意欲も高まるだろう。また、働きやすい会社だという評判が広がれば、人手不足の時代にあっても、優秀な人材が集まりやすくなる。ただし、五日分の仕事をそのまま四日に詰め込むのでは意味がない。一日の労働時間が長くなれば、疲れがたまり、かえって効率が下がる。仕事の中身そのものを見直したうえでなら、週休三日制はもっと多くの企業が取り入れるべき制度である。"
+      },
+      {
+        "label": "B",
+        "text": "週休三日制が話題になっているが、どの職場にも合う制度だとは思えない。病院や店のように、毎日決まった人数が必要な職場では、休みを増やせばその分だけ人を増やさなければならない。余裕のない中小企業にとっては、大きな負担だ。また、休みが一日増える代わりに給料が減る形の制度もあり、それを望まない人もいる。実際、四日間の勤務が毎日十時間になり、平日の疲れが抜けないという声も聞く。同じ量の仕事を少ない日数でこなそうとすれば、無理が出るのは当然だろう。大切なのは、休みの日数を一律に増やすことではない。週五日働くか、休みを増やすかを、一人ひとりが自分の生活に合わせて選べるようにすることではないか。"
+      }
+    ],
+    "en": "A says more companies should adopt a four-day week, as long as the work itself is rethought, not just squeezed into four days. B says it does not suit every workplace, that squeezing the same work into fewer days causes strain, and that people should be free to choose.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "週休三日制について、AとBで共通して述べられていることは何か。",
+        "c": [
+          "仕事の量を変えずに日数だけ減らすと、働く人が疲れてしまうこと",
+          "休みが増えると、社員の働く意欲が高まり、売り上げも落ちないこと",
+          "休みが一日増える代わりに、給料が減ってしまう場合もあること",
+          "毎日決まった人数が必要な職場では、制度を取り入れにくいこと"
+        ],
+        "why": [
+          "A: 五日分の仕事をそのまま四日に詰め込むのでは意味がない…疲れがたまり. B: 同じ量の仕事を少ない日数でこなそうとすれば、無理が出る. Same point, different words.",
+          "Only one text: A. B never says motivation rises or sales hold up.",
+          "Only one text: B. A says nothing about pay.",
+          "Only one text: B, about hospitals and shops. A does not raise it."
+        ],
+        "cue": [
+          "五日分の仕事をそのまま四日に詰め込むのでは意味がない",
+          "同じ量の仕事を少ない日数でこなそうとすれば、無理が出るのは当然だろう"
+        ],
+        "skill": "compare",
+        "tell": "The shared point is often hidden in A's ただし and in B's evidence. Look for the same idea said in two different ways."
+      },
+      {
+        "q": "週休三日制をどうするべきかについて、AとBはどのように述べているか。",
+        "c": [
+          "Aはもっと広めるべきだと述べ、Bは働き方を各自が選べるようにすべきだと述べている。",
+          "Aは働き方を各自が選べるようにすべきだと述べ、Bはもっと広めるべきだと述べている。",
+          "AもBも、余裕のある大企業から先に取り入れ、少しずつ広げていくべきだと述べている。",
+          "Aは給料が減ることを心配し、Bは会社の売り上げが落ちることを心配している。"
+        ],
+        "why": [
+          "A ends: もっと多くの企業が取り入れるべき制度である. B ends: 一人ひとりが…選べるようにすることではないか.",
+          "Swapped: each text gets the other's conclusion.",
+          "Sounds right, not in the text. B says the system is a burden for small firms, but neither text says big firms should go first.",
+          "Turned round. A says sales did not fall, and only B mentions pay cuts."
+        ],
+        "cue": [
+          "もっと多くの企業が取り入れるべき制度である",
+          "一人ひとりが自分の生活に合わせて選べるようにすることではないか"
+        ],
+        "skill": "compare",
+        "tell": "Each writer's conclusion is usually the last sentence (〜べきだ, 〜ではないか). Read both last sentences before the choices."
+      }
+    ]
+  },
+  {
+    "id": "r12-003",
+    "type": "r12",
+    "genre": "論説",
+    "texts": [
+      {
+        "label": "A",
+        "text": "小学校の宿題を減らしたり、なくしたりする学校が出てきている。だが、私は宿題そのものには意味があると考えている。家で毎日少しずつ机に向かうことで、学習の習慣が身につくからだ。ただ、これまでのように全員に同じ量のプリントを配るやり方には問題がある。得意な子には簡単すぎ、苦手な子には時間がかかりすぎる。また、家の人が勉強を見てあげられる家庭もあれば、そうでない家庭もあり、同じ宿題でも取り組む条件には差がある。そこで、何をどれだけやるかを子ども自身に決めさせる「自主学習」の形に変えてはどうだろうか。自分で計画を立てる経験は、宿題の中身以上に大きな力になるはずだ。"
+      },
+      {
+        "label": "B",
+        "text": "小学生のうちは、宿題で学力が大きく伸びるわけではない。海外の研究でも、小学生の宿題の効果は中学生や高校生に比べてかなり小さいことが示されている。むしろ心配なのは、家庭による差が広がることだ。親の帰りが遅かったり、弟や妹の世話があったりして、落ち着いて宿題をする場所や時間がない子もいる。そうした子は、宿題ができないことで叱られ、勉強そのものを嫌いになってしまうかもしれない。放課後の時間は、外で遊んだり、好きな本を読んだり、十分に眠ったりすることに使うほうが、子どもの成長にとって意味がある。小学校の宿題は、思い切ってなくしてもよいのではないか。"
+      }
+    ],
+    "en": "A, a supporter of homework, says it builds a study habit but should become self-chosen study, partly because homes differ in the help they can give. B says homework does little for primary pupils, widens the gap between homes, and could be dropped.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "小学校の宿題について、AとBで共通して述べられていることは何か。",
+        "c": [
+          "家庭によって、宿題をするための環境や助けに差があること",
+          "家で毎日勉強することで、学習の習慣が身につくこと",
+          "小学生の宿題は、学力を伸ばす効果があまり大きくないこと",
+          "宿題ができないと、子どもが勉強を嫌いになりやすいこと"
+        ],
+        "why": [
+          "A: 勉強を見てあげられる家庭もあれば、そうでない家庭もあり…条件には差がある. B: 家庭による差が広がる…場所や時間がない子もいる.",
+          "Only one text: A. It is A's reason for keeping homework.",
+          "Only one text: B, citing research. A never questions the effect.",
+          "Only one text: B. A does not mention children coming to hate study."
+        ],
+        "cue": [
+          "同じ宿題でも取り組む条件には差がある",
+          "家庭による差が広がることだ"
+        ],
+        "skill": "compare",
+        "tell": "When A and B disagree overall, the shared point is often a problem both admit. Look for the same worry in both texts."
+      },
+      {
+        "q": "これからの宿題のあり方について、AとBはどのように述べているか。",
+        "c": [
+          "Aは子どもが内容を決める形に変えるべきだと述べ、Bはなくしてもよいと述べている。",
+          "Aはなくしてもよいと述べ、Bは子どもが内容を決める形に変えるべきだと述べている。",
+          "AもBも、これまでのように全員に同じ量の宿題を出すやり方を続けるべきだと述べている。",
+          "AもBも、放課後は宿題より遊びや読書に使うべきだと述べている。"
+        ],
+        "why": [
+          "A: 子ども自身に決めさせる「自主学習」の形に変えてはどうだろうか. B: 思い切ってなくしてもよいのではないか.",
+          "Swapped: each text gets the other's proposal.",
+          "Turned round. A says the same-amount-for-all method has problems, and B wants homework gone.",
+          "Only one text: B. A wants homework to continue in a new form."
+        ],
+        "cue": [
+          "「自主学習」の形に変えてはどうだろうか",
+          "思い切ってなくしてもよいのではないか"
+        ],
+        "skill": "compare",
+        "tell": "〜てはどうだろうか and 〜のではないか mark each writer's proposal. Match them to A and B, then check the order in the choice."
+      }
+    ]
+  },
+  {
+    "id": "r12-004",
+    "type": "r12",
+    "genre": "論説",
+    "texts": [
+      {
+        "label": "A",
+        "text": "スーパーやコンビニで、客が自分で商品を読み取って支払いをするセルフレジが広がっている。店にとっては、レジに立つ人を減らせるので、人手不足の対策になる。客にとっても、混雑する時間に列に並ぶ時間が短くなるのはありがたい。店員とのやりとりが苦手な人が、自分のペースで支払いを済ませられるという良さもある。一方で、高齢の客など、機械の操作に慣れていない人は戸惑うことが多い。画面の案内が分かりにくく、後ろに並ぶ人を気にして焦ってしまう人もいるだろう。すべてのレジを機械にしてしまうのではなく、店員のいるレジもいくつか残しておくことが、誰にとっても使いやすい店につながるはずだ。"
+      },
+      {
+        "label": "B",
+        "text": "セルフレジができて便利になったと言われるが、私はそうは思わない。商品を読み取り、袋に詰め、支払いを済ませる。これまで店員がしていた仕事を、客が代わりにしているだけではないか。読み取りの間違いも起きやすく、結局、店員が呼ばれて確認しに来ることも多い。わざと読み取らずに商品を持ち帰る不正も問題になっている。何より気になるのは、店員と客の短い会話がなくなることだ。一人暮らしのお年寄りの中には、レジでの「今日は寒いですね」という一言を楽しみにしている人もいる。買い物は、ただ物を手に入れるだけの場ではない。効率だけを求めて、人がいるレジをなくしてしまってはいけないと思う。"
+      }
+    ],
+    "en": "A sees benefits for both shops and customers in self-checkout tills but says some staffed tills should stay for people who find the machines hard. B says self-checkout just hands the shop's work to customers, brings errors and theft, and ends small talk, so staffed tills must not go.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "セルフレジについて、AとBで共通して述べられていることは何か。",
+        "c": [
+          "店員が対応するレジも、なくさずに残しておくべきだということ",
+          "高齢の客には、機械の操作が難しい場合が多いということ",
+          "店員がしていた仕事を、客が代わりにしているということ",
+          "店にとって、人手が足りない問題への対策になるということ"
+        ],
+        "why": [
+          "A: 店員のいるレジもいくつか残しておくこと. B: 人がいるレジをなくしてしまってはいけない. The same conclusion, reached for different reasons.",
+          "Only one text: A. B also mentions older people, but only as people who enjoy a chat at the till, not as people who find the machine hard.",
+          "Only one text: B. A sees the till as convenient for customers.",
+          "Only one text: A. B never mentions staff shortages."
+        ],
+        "cue": [
+          "店員のいるレジもいくつか残しておくこと",
+          "人がいるレジをなくしてしまってはいけない"
+        ],
+        "skill": "compare",
+        "tell": "Two texts can reach the same conclusion for different reasons. If both mention the same people (here, older shoppers), check what each says about them."
+      },
+      {
+        "q": "セルフレジについて、AとBはどのように述べているか。",
+        "c": [
+          "Aは店にも客にも良い点があると述べ、Bは客に店の仕事をさせていると述べている。",
+          "Aは客に店の仕事をさせていると述べ、Bは店にも客にも良い点があると述べている。",
+          "AもBも、混雑する時間に客が列に並ぶ時間が短くなると述べている。",
+          "Aは客の不正が起きやすくなることを心配し、Bは店員との会話がなくなることを心配している。"
+        ],
+        "why": [
+          "A lists a gain for the shop (人手不足の対策) and for customers (列に並ぶ時間が短くなる). B: 店員がしていた仕事を、客が代わりにしているだけではないか.",
+          "Swapped: each text gets the other's view.",
+          "Only one text: A. B denies that self-checkout made things more convenient.",
+          "Half right. B worries about lost conversation, but it is also B, not A, that raises theft."
+        ],
+        "cue": [
+          "人手不足の対策になる",
+          "客が代わりにしているだけではないか"
+        ],
+        "skill": "compare",
+        "tell": "In a choice shaped Aは…、Bは…, check both halves. A trap often gets one half right and gives the other half to the wrong text."
+      }
+    ]
+  },
+  {
+    "id": "r12-005",
+    "type": "r12",
+    "genre": "論説",
+    "texts": [
+      {
+        "label": "A",
+        "text": "年を取ってからの一人暮らしと聞くと、寂しくて不便な生活を想像する人が多いかもしれない。しかし、ある調査では、一人で暮らす高齢者の多くが「今の生活に満足している」と答えている。好きな時間に起き、食べたいものを作り、誰にも気を遣わずに過ごせる。長年家族のために生きてきた人にとって、それは初めて手に入れた自由でもある。もちろん心配がないわけではない。急に体の具合が悪くなったとき、一人では助けを呼べず、発見が遅れるおそれがある。だが最近は、電気やガスの使い方から異変を知らせる見守りの仕組みも広がっている。こうしたものを上手に使えば、本人が望む限り、一人暮らしを続けることは十分に可能だ。"
+      },
+      {
+        "label": "B",
+        "text": "一人で暮らす高齢者が増えている。配偶者に先立たれたり、子どもが独立したりして、一人になる人も多い。年を重ねるにつれて外出の機会が減り、何日も誰とも話さないという人も少なくない。人と話さない生活が続くと、気持ちが沈みがちになるだけでなく、体や頭の働きも衰えやすいと言われている。さらに怖いのは、家の中で倒れても、誰にも気づいてもらえないことだ。元気なうちは一人で大丈夫だと思っていても、いつ何が起こるかは分からない。高齢者向けの共同住宅に移ったり、家族の近くに引っ越したりするなど、誰かとつながりを持って暮らす方法を、早いうちから考えておくべきではないだろうか。"
+      }
+    ],
+    "en": "A says many older people living alone are content and free, and that with monitoring services they can go on living alone if they wish. B warns of isolation and of falling ill unnoticed, and says older people should plan early to live connected to others.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "AとBのどちらの文章にも触れられている点は何か。",
+        "c": [
+          "体調が急に悪くなっても、周りの人に気づいてもらいにくいこと",
+          "好きな時間に起き、誰にも気を遣わずに自由に暮らせること",
+          "何日も人と話さない生活で、気持ちが沈みがちになること",
+          "電気やガスの使い方から異変を知らせる仕組みがあること"
+        ],
+        "why": [
+          "A: 一人では助けを呼べず、発見が遅れるおそれがある. B: 家の中で倒れても、誰にも気づいてもらえない.",
+          "Only one text: A. B does not present living alone as freedom.",
+          "Only one text: B. A says nothing about low mood from silence.",
+          "Only one text: A. B does not mention monitoring services."
+        ],
+        "cue": [
+          "発見が遅れるおそれがある",
+          "誰にも気づいてもらえないことだ"
+        ],
+        "skill": "compare",
+        "tell": "The writer who is for something still admits a risk (もちろん心配がないわけではない). That admitted risk is often the shared point."
+      },
+      {
+        "q": "高齢者の一人暮らしについて、AとBはどのように述べているか。",
+        "c": [
+          "Aは望めば続けられると述べ、Bは人とつながる暮らし方を考えるべきだと述べている。",
+          "Aは人とつながる暮らし方を考えるべきだと述べ、Bは望めば続けられると述べている。",
+          "AもBも、一人で暮らす高齢者の多くは、今の自由な生活に満足していると述べている。",
+          "AもBも、体が元気なうちは一人で暮らしても特に問題はないと述べている。"
+        ],
+        "why": [
+          "A: 本人が望む限り、一人暮らしを続けることは十分に可能だ. B: 誰かとつながりを持って暮らす方法を…考えておくべき.",
+          "Swapped: each text gets the other's view.",
+          "Only one text: A cites the survey. B stresses isolation.",
+          "Turned round for B: 元気なうちは一人で大丈夫だと思っていても、いつ何が起こるかは分からない."
+        ],
+        "cue": [
+          "本人が望む限り、一人暮らしを続けることは十分に可能だ",
+          "誰かとつながりを持って暮らす方法"
+        ],
+        "skill": "compare",
+        "tell": "A phrase like 〜と思っていても often sets up a view the writer rejects. Do not take it as the writer's own view."
+      }
+    ]
+  },
+  {
+    "id": "r12-006",
+    "type": "r12",
+    "genre": "論説",
+    "texts": [
+      {
+        "label": "A",
+        "text": "高校生のうちに海外に留学することには、大きな意味がある。十代の柔らかい頭と耳は、外国語の音や表現を驚くほど自然に吸収する。また、言葉も習慣も違う環境で、自分で問題を解決しなければならない経験は、大人になってからではなかなか得られない。留学すると日本の授業に遅れてしまうと心配する親も多いが、最近は留学中の学習を単位として認める高校も増えており、以前ほど不利にはならない。一年遅れたとしても、その間に得たものを考えれば、損をしたことにはならないだろう。迷っているなら、まずは一歩を踏み出してほしい。若いうちに外の世界を見た経験は、きっと一生の財産になる。"
+      },
+      {
+        "label": "B",
+        "text": "確かに、若いうちに異なる文化の中で暮らす経験には、何物にも代えがたい価値がある。しかし、高校生という時期が最も適しているかどうかは、よく考える必要がある。留学先では、日本の社会や文化について意見を求められることが多い。ところが、母語で物事を深く考え、説明する力がまだ育ちきっていないと、外国語以前に、伝える中身がないということになりかねない。また、目的があいまいなまま出かけると、「楽しかった」だけで終わってしまうこともある。日本で学ぶ基礎をしっかり固め、何を学びたいのかがはっきりしてから大学で留学するほうが、得るものはずっと多いのではないか。"
+      }
+    ],
+    "en": "A urges high school students to study abroad: young minds absorb language easily, and falling behind matters less than it used to. B grants that living abroad young is valuable, but says it is better to build a base at home and go at university with a clear aim.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "AとBのどちらの文章にも触れられている点は何か。",
+        "c": [
+          "若いうちに外国で暮らす経験には、大きな価値があること",
+          "留学すると、日本の学校の授業に遅れるおそれがあること",
+          "留学の前に、母語で考える力を育てる必要があること",
+          "目的がはっきりしないと、留学から得るものが少ないこと"
+        ],
+        "why": [
+          "A: 若いうちに外の世界を見た経験は、きっと一生の財産になる. B opens with 確かに…何物にも代えがたい価値がある. B grants this point before arguing against high school.",
+          "Only one text: A, and A raises the worry only to play it down. B does not mention it.",
+          "Only one text: B.",
+          "Only one text: B. A never talks about aims."
+        ],
+        "cue": [
+          "一生の財産になる",
+          "何物にも代えがたい価値がある"
+        ],
+        "skill": "compare",
+        "tell": "確かに… opens a concession: the writer grants the other side's point. A conceded point is a shared point, even in a text that disagrees."
+      },
+      {
+        "q": "留学する時期について、AとBはどのように述べているか。",
+        "c": [
+          "Aは高校生のうちに行くことを勧め、Bは大学生になってから行くほうがよいと述べている。",
+          "Aは大学生になってから行くほうがよいと述べ、Bは高校生のうちに行くことを勧めている。",
+          "AもBも、外国語を自然に身につけるためには、できるだけ早い時期に行くほうがよいと述べている。",
+          "Aは授業に遅れることを心配し、Bは伝える中身がないことを心配している。"
+        ],
+        "why": [
+          "A: 高校生のうちに海外に留学することには、大きな意味がある…一歩を踏み出してほしい. B: 大学で留学するほうが、得るものはずっと多い.",
+          "Swapped: each text gets the other's view.",
+          "Only one text: A says young ears absorb language. B does not argue from language learning.",
+          "Half right. B does worry about having nothing to say, but A answers the worry about falling behind (以前ほど不利にはならない) rather than sharing it."
+        ],
+        "cue": [
+          "高校生のうちに海外に留学することには、大きな意味がある",
+          "大学で留学するほうが、得るものはずっと多いのではないか"
+        ],
+        "skill": "compare",
+        "tell": "〜と心配する親も多いが is someone else's worry, not the writer's. Check whose view a choice gives to each text."
+      }
+    ]
+  },
+  {
+    "id": "r12-007",
+    "type": "r12",
+    "genre": "論説",
+    "texts": [
+      {
+        "label": "A",
+        "text": "私は買い物のほとんどを、カードやスマートフォンで支払っている。小銭を数える手間がなく、レジでの支払いもあっという間に終わる。何より助かるのは、いつ、どこで、いくら使ったかが自動で記録に残ることだ。毎月の支出が一目で分かるので、無駄遣いに気づきやすくなり、以前より貯金ができるようになった。支払いのたびにポイントがたまるのもうれしい。ただ、近所の小さな店では、まだ現金しか使えないところが多い。店の人に聞くと、カード会社などに払う手数料が重い負担になるのだという。こうした店でも使いやすくなるよう、手数料を下げる仕組みが必要だと思う。"
+      },
+      {
+        "label": "B",
+        "text": "キャッシュレス決済の便利さは誰もが認めるところだろう。だが、私は注意も必要だと考えている。現金なら財布の中身が減っていくのが目に見えるが、カードやスマートフォンでの支払いでは、お金を払っているという感覚が薄くなる。そのため、気づかないうちに使いすぎてしまう人が少なくない。また、大きな災害で停電が起きれば、端末が使えず、何も買えなくなるおそれもある。店の側にも問題がある。支払いのたびに店が払う手数料は、小さな店にとっては決して軽くない。その分が値段に上乗せされれば、結局は客全体の負担になる。便利さに頼り切らず、現金と上手に使い分けることが大切だ。"
+      }
+    ],
+    "en": "A pays almost everything cashless, saves more because spending is recorded, and wants lower fees for small shops. B warns that cashless payment blunts the sense of spending, fails in a blackout, and burdens small shops with fees, so cash should be kept as well.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "AとBのどちらの文章にも触れられている点は何か。",
+        "c": [
+          "店が払う手数料が、小さな店の重い負担になっていること",
+          "支払うたびにポイントがたまり、得になること",
+          "大きな災害で停電が起きると、支払いができなくなること",
+          "小銭を数える手間がなく、レジでの支払いが早く終わること"
+        ],
+        "why": [
+          "A: 手数料が重い負担になるのだという. B: 店が払う手数料は、小さな店にとっては決して軽くない.",
+          "Only one text: A.",
+          "Only one text: B.",
+          "Only one text: A. B grants that cashless is convenient but gives no detail."
+        ],
+        "cue": [
+          "手数料が重い負担になるのだという",
+          "小さな店にとっては決して軽くない"
+        ],
+        "skill": "compare",
+        "tell": "Each writer's main view is different, so look in the side points: a problem raised near the end of A that B also names."
+      },
+      {
+        "q": "キャッシュレス決済とお金の使い方について、AとBはどのように述べているか。",
+        "c": [
+          "Aは無駄遣いに気づきやすいと述べ、Bは使いすぎにつながると述べている。",
+          "Aは使いすぎにつながると述べ、Bは無駄遣いに気づきやすいと述べている。",
+          "AもBも、現金と上手に使い分けることが大切だと述べている。",
+          "AもBも、使った金額が記録に残るので、以前より貯金がしやすくなったと述べている。"
+        ],
+        "why": [
+          "A: 無駄遣いに気づきやすくなり、以前より貯金ができるようになった. B: 気づかないうちに使いすぎてしまう人が少なくない.",
+          "Swapped: each text gets the other's view.",
+          "Only one text: B's last sentence. A pays almost everything cashless.",
+          "Only one text: A. B says the opposite about spending."
+        ],
+        "cue": [
+          "無駄遣いに気づきやすくなり",
+          "気づかないうちに使いすぎてしまう人が少なくない"
+        ],
+        "skill": "compare",
+        "tell": "When a question names a narrow topic (お金の使い方), find only the sentences about that topic in A and B, then compare them."
+      }
+    ]
+  },
+  {
+    "id": "r12-008",
+    "type": "r12",
+    "genre": "コラム",
+    "texts": [
+      {
+        "label": "A",
+        "text": "「会議で自分の意見が言えない」というご相談ですね。こうした悩みは、実はとても多いものです。「的外れなことを言ったらどうしよう」とためらうのは、それだけ真剣に考えている証拠でもあります。ただ、黙っていては、せっかくの考えも存在しないのと同じになってしまいます。まずは、会議の前に資料を読み、言いたいことを一つだけメモしておきましょう。いきなり意見を言うのが難しければ、「〜ということでしょうか」と質問の形で口を開くのも一つの方法です。一度発言できれば、次からはずっと楽になります。小さな一言を積み重ねて、会議の場で話すことに少しずつ慣れていってください。"
+      },
+      {
+        "label": "B",
+        "text": "ご相談を読んで、同じように感じている人は少なくないだろうと思いました。間違えるのが怖いのは、誰でも同じです。ただ、会議の場で話すことに、それほどこだわる必要はないのではないでしょうか。人には、その場ですぐに考えをまとめられる人と、時間をかけて考えを深める人がいます。あなたが後者なら、会議ではよく聞くことに集中し、終わった後で、上司や担当者に「先ほどの件ですが」とメールや口頭で伝えればよいのです。大切なのは、あなたの考えが相手に届くことで、会議で発言すること自体ではありません。自分に合った伝え方を見つけてください。"
+      }
+    ],
+    "en": "Two experts answer a reader who cannot speak up in meetings. A says the worry is common and advises preparing one point and speaking in small steps. B also says many feel the same, but says the reader can pass on their view after the meeting instead.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "相談者の悩みについて、AとBで共通して述べられていることは何か。",
+        "c": [
+          "同じことで悩んでいる人は、少なくないということ",
+          "発言をためらうのは、真剣に考えている証拠だということ",
+          "考えをまとめるのに、時間がかかる人もいるということ",
+          "一度発言できれば、次からは楽に話せるということ"
+        ],
+        "why": [
+          "A: こうした悩みは、実はとても多いものです. B: 同じように感じている人は少なくないだろう…誰でも同じです.",
+          "Only one text: A.",
+          "Only one text: B, as the reason for its advice.",
+          "Only one text: A."
+        ],
+        "cue": [
+          "こうした悩みは、実はとても多いものです",
+          "同じように感じている人は少なくないだろう"
+        ],
+        "skill": "compare",
+        "tell": "Advice answers often open by reassuring the reader. When both experts open that way, the opening is the shared point."
+      },
+      {
+        "q": "会議での発言について、AとBはどのように述べているか。",
+        "c": [
+          "Aは少しずつ会議で話すことに慣れるよう勧め、Bは会議の後で伝えてもよいと述べている。",
+          "Aは会議の後で伝えてもよいと述べ、Bは少しずつ会議で話すことに慣れるよう勧めている。",
+          "AもBも、まずは質問の形で口を開いてみるとよいと述べている。",
+          "AもBも、会議では無理に発言しようとせず、まず人の話を聞くことに集中すべきだと述べている。"
+        ],
+        "why": [
+          "A: 会議の場で話すことに少しずつ慣れていってください. B: 終わった後で…メールや口頭で伝えればよいのです.",
+          "Swapped: each text gets the other's advice.",
+          "Only one text: A gives this tip. B does not want the reader to force speech in the meeting.",
+          "Only one text: B. A wants the reader to speak in the meeting."
+        ],
+        "cue": [
+          "会議の場で話すことに少しずつ慣れていってください",
+          "終わった後で、上司や担当者に「先ほどの件ですが」とメールや口頭で伝えればよいのです"
+        ],
+        "skill": "compare",
+        "tell": "In advice, the request forms (〜てください, 〜ばよいのです) carry each expert's advice. Line them up, A then B."
+      }
+    ]
+  },
+  {
+    "id": "r13-001",
+    "type": "r13",
+    "genre": "エッセイ",
+    "text": "電車の中を見渡すと、ほとんどの人がスマートフォンの画面を見ている。数分の待ち時間でさえ、私たちは何かで埋めずにはいられないようだ。退屈は、できるだけ避けるべき無駄な時間だと考えられている。\n確かに、退屈な時間は楽しいものではない。何もすることがないと落ち着かず、時間がもったいないと感じる人も多いだろう。忙しい現代人にとって、すき間の時間に情報を得たり、連絡を済ませたりできるのは便利なことだ。電車を待つ数分の間にメールに返事をしておけば、その分、ほかのことに時間を使える。\nしかし、私は最近、[[退屈を手放したことで失ったものもある]]のではないかと思うようになった。子どものころ、雨の日に外で遊べず、することがなくて困った経験はないだろうか。そんなとき、私は空き箱を組み立てて家を作ったり、自分で考えたゲームのルールを妹に説明したりしていた。退屈だったからこそ、自分で何かを生み出そうとしたのである。\n大人になっても同じことが言える。ぼんやりと窓の外を眺めているときに、仕事の問題を解決する方法がふと浮かんだり、忘れていた約束を思い出したりすることがある。頭が外からの情報で満たされていないとき、それまでばらばらだった考えが、静かに結びついていくのだろう。散歩の途中や風呂に入っているときに良い考えが浮かぶという人が多いのも、同じ理由からではないだろうか。\nところが今は、退屈を感じる前に、手の中の画面が次々と新しい刺激を与えてくれる。それはまるで、[[のどが渇く前から水を飲まされ続けているようなもの]]だ。自分から何かを求める前に満たされてしまうので、本当は何がしたいのか、何を考えたいのかが分からなくなってしまう。\nもちろん、スマートフォンを捨てるべきだと言いたいわけではない。ただ、一日のうち少しの時間でもいいから、あえて何もしない時間を作ってみてはどうだろうか。退屈は無駄な空白ではなく、自分の内側から考えが生まれてくるための大切な時間なのである。",
+    "en": "Most people now fill every spare minute with their phones and treat boredom as waste. The writer argues that boredom is when people start to make things and connect ideas themselves, and suggests leaving a little time each day to do nothing.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①「退屈を手放したことで失ったものもある」とあるが、どういうことか。",
+        "c": [
+          "退屈な時間に、自分で考え、工夫する機会が減ったということ",
+          "子どものころのように、雨の日に家族と家の中で過ごす時間が減ったということ",
+          "すき間の時間に情報を得たり、連絡を済ませたりする便利さを失ったということ",
+          "スマートフォンに頼りすぎて、人と直接会って話す機会が減ったということ"
+        ],
+        "why": [
+          "The next sentences explain it: 退屈だったからこそ、自分で何かを生み出そうとした. Without boredom, that chance to think and make things is gone.",
+          "Too narrow and twisted. The rainy day is one example of boredom, and the point was making things alone, not time with family.",
+          "Turned round. Phones gave us that convenience; the writer says it is what we gained.",
+          "Sounds right, not in the text. Meeting people face to face is never mentioned."
+        ],
+        "cue": [
+          "退屈だったからこそ、自分で何かを生み出そうとしたのである"
+        ],
+        "skill": "meaning",
+        "tell": "An underline in a しかし sentence is usually explained by the example right after it. Read on to the からこそ or のである sentence."
+      },
+      {
+        "q": "②「のどが渇く前から水を飲まされ続けているようなもの」とはどういうことか。",
+        "c": [
+          "自分から求める前に、外から刺激が次々と与えられているということ",
+          "情報が多すぎて、どれが正しいのか判断できなくなっているということ",
+          "スマートフォンを長く使うことで、体に悪い影響が出ているということ",
+          "退屈を感じることがなくなり、毎日を楽しく過ごせているということ"
+        ],
+        "why": [
+          "The next sentence says it plainly: 自分から何かを求める前に満たされてしまう. Thirst is wanting something; the water is the stream of new input.",
+          "Sounds right, not in the text. The writer's problem is that the input comes before we want it, not that there is too much of it to judge.",
+          "Takes the likeness literally. The essay is not about physical health.",
+          "Turned round. The writer sees the loss of boredom as a problem."
+        ],
+        "cue": [
+          "自分から何かを求める前に満たされてしまう"
+        ],
+        "skill": "metaphor",
+        "tell": "A まるで…ようなもの likeness is almost always unpacked in the next sentence. Match the parts: thirst = wanting, water = input."
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "何もしない時間は、新しい考えが生まれるために必要なものだ。",
+          "退屈な時間は楽しくないので、なるべく減らしたほうがよい。",
+          "スマートフォンを使うのをやめ、外で過ごす時間を増やすべきだ。",
+          "子どもには、自分で遊び方を考える時間を与えなければならない。"
+        ],
+        "why": [
+          "The last paragraph: あえて何もしない時間を作ってみてはどうだろうか…考えが生まれてくるための大切な時間.",
+          "The view the writer argues against. It is the common view set up in paragraphs 1 and 2 (確かに…).",
+          "Too wide. The writer says もちろん、スマートフォンを捨てるべきだと言いたいわけではない.",
+          "Too narrow. The childhood example supports the point; the claim is about everyone."
+        ],
+        "cue": [
+          "あえて何もしない時間を作ってみてはどうだろうか",
+          "自分の内側から考えが生まれてくるための大切な時間なのである"
+        ],
+        "skill": "claim",
+        "tell": "The claim sits after もちろん…わけではない. ただ…. Strike the view after 確かに; it is the one the writer rejects."
+      }
+    ]
+  },
+  {
+    "id": "r13-002",
+    "type": "r13",
+    "genre": "論説",
+    "text": "どの職場でも「効率を上げよう」という言葉をよく耳にする。会議は短く、資料は簡潔に、無駄な作業は減らす。限られた時間で多くの成果を出すことが、よい働き方だとされている。\n確かに、効率を考えることは大切だ。目的のはっきりしない会議を何時間も続けたり、誰も読まない報告書を作り続けたりするのは、働く人にとっても会社にとっても損失でしかない。\nしかし、効率を追い求めるあまり、かえって仕事が悪くなることもあるのではないか。私が以前勤めていた会社では、作業時間を細かく記録し、一つ一つの仕事にかかる時間を減らすよう求められた。その結果、確かに一件あたりの時間は短くなった。ところが半年ほどたつと、客からの問い合わせや、やり直しの件数がむしろ増えていたのである。\n原因を調べてみると、[[記録には残らない時間]]が削られていたことが分かった。たとえば、隣の席の同僚に「この書き方で伝わるかな」と相談する時間や、締め切りまで余裕のある仕事を念のため見直す時間である。こうした時間は、数字の上では何も生み出していないように見える。しかし実際には、小さな間違いが大きな問題になる前に防ぐ役割を果たしていたのだ。\n効率という考え方は、測れるものしか見ない。そのため、測りにくいが大切なものは、[[真っ先に「無駄」として切り捨てられてしまう]]。道路にたとえるなら、車が速く走れるように、ガードレールや路肩を取り払ってしまうようなものだろう。普段は何の問題もないが、一度事故が起きれば、被害は大きくなる。\nでは、効率を考えなければよいのかというと、そうではない。大切なのは、何が減らしてよい無駄で、何が一見無駄に見えても必要な「余白」なのかを見分けることだ。そのためには、数字だけでなく、現場で働く人の声にも耳を傾ける必要がある。\n効率とは本来、よい仕事をするための手段にすぎない。それが目的になってしまったとき、仕事の質はかえって下がっていくのである。",
+    "en": "When the writer's old company cut the time spent on each task, complaints and redone work rose, because unrecorded time for checking and consulting had been lost. Efficiency only sees what can be measured, so the writer argues we must tell real waste from necessary slack.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "①「記録には残らない時間」とは、どのような時間か。",
+        "c": [
+          "成果として数字には表れないが、間違いを前もって防いでいる時間",
+          "目的がはっきりしないまま、何時間も続けられている会議の時間",
+          "一件あたりの作業時間を短くしたことで、新しく生まれた時間",
+          "仕事が終わった後に、隣の席の同僚と話をして過ごしている時間"
+        ],
+        "why": [
+          "Two examples follow (consulting a colleague, checking work twice), then: 数字の上では何も生み出していないように見える…間違いが大きな問題になる前に防ぐ.",
+          "Said in the text, but not the answer. Pointless meetings are the waste the writer agrees should go, in paragraph 2.",
+          "Turned round. This time was cut, not created.",
+          "Half right, then twisted. The talk with a colleague is about work (この書き方で伝わるかな), not after-hours chat."
+        ],
+        "cue": [
+          "数字の上では何も生み出していないように見える",
+          "小さな間違いが大きな問題になる前に防ぐ役割を果たしていたのだ"
+        ],
+        "skill": "meaning",
+        "tell": "An underline followed by たとえば is defined by its examples. Find what the examples share, then match the choice that names it."
+      },
+      {
+        "q": "②「真っ先に『無駄』として切り捨てられてしまう」のはなぜか。",
+        "c": [
+          "効率という考え方は、数字で測れるものしか見ないから",
+          "実際には、仕事の成果に何も役立っていない時間だから",
+          "現場で働く人が、その時間の大切さを説明しないから",
+          "締め切りまで余裕のある仕事にしか使われない時間だから"
+        ],
+        "why": [
+          "The sentence before: 効率という考え方は、測れるものしか見ない。そのため…. そのため links the reason to the underline.",
+          "The view the writer argues against. It only looks useless: 何も生み出していないように見える.",
+          "Sounds right, not in the text. The writer says managers should listen to staff, not that staff fail to explain.",
+          "Twisted detail. Checking work early is one example of the time, not why it is cut."
+        ],
+        "cue": [
+          "効率という考え方は、測れるものしか見ない"
+        ],
+        "skill": "reason",
+        "tell": "When an underline starts after そのため or だから, the reason is the sentence just before it."
+      },
+      {
+        "q": "この文章で筆者が最も言いたいことは何か。",
+        "c": [
+          "効率を求めるなら、削ってよい無駄と必要な余白を見分けるべきだ。",
+          "効率を上げることは、働く人にとっても会社にとっても欠かせない。",
+          "効率という考え方は捨てて、以前のような働き方に戻るべきだ。",
+          "作業にかかる時間を細かく記録するのは、やめたほうがよい。"
+        ],
+        "why": [
+          "Paragraph 6: 大切なのは、何が減らしてよい無駄で、何が…必要な「余白」なのかを見分けることだ.",
+          "The view after 確かに. The writer grants it but argues against relying on it.",
+          "Too wide. では、効率を考えなければよいのかというと、そうではない.",
+          "Too narrow. The time records are one example from the writer's old company."
+        ],
+        "cue": [
+          "大切なのは、何が減らしてよい無駄で、何が一見無駄に見えても必要な「余白」なのかを見分けることだ"
+        ],
+        "skill": "gist",
+        "tell": "Watch for では…かというと、そうではない. The writer blocks the extreme reading, and the claim follows with 大切なのは."
+      }
+    ]
+  },
+  {
+    "id": "r13-003",
+    "type": "r13",
+    "genre": "エッセイ",
+    "text": "年末になると、テレビでは「ふるさとへ帰る人たちで駅が混み合っています」というニュースが流れる。そのたびに、私は少し居心地の悪さを感じる。私には、帰るべき故郷と呼べる場所がないからだ。\n父の仕事の都合で、私は子どものころに五回引っ越しをした。生まれた町のことはほとんど覚えていないし、一番長く住んだ町にも、今では知り合いが一人もいない。転校するたびに新しい言葉を覚え、新しい友だちを作り、ようやくなじんだころにまた次の町へ移る。その繰り返しだった。「出身はどちらですか」と聞かれるたびに、どの町の名前を答えればよいのか迷ってしまう。\n故郷とは生まれ育った土地のことだと、一般には言われる。そう考えると、私のような人間には故郷がないことになる。[[私も長い間、そう思い込んでいた]]。\n考えが変わったのは、数年前、出張で訪れた見知らぬ港町でのことだ。夕方、ある食堂に入り、魚の煮つけを注文した。一口食べた瞬間、なぜか胸が熱くなった。その甘辛い味が、小学生のころ、三番目に住んだ町で母がよく作ってくれたものとそっくりだったのである。その町を訪ねたいとは思わない。それでも、あの味を思い出すと、自分がどこかに確かにつながっているような気がした。\nそのとき私は、故郷とは地図の上の一点ではないのかもしれないと思った。ある味や匂い、聞き慣れた言葉の響きなど、自分を形づくってきたものの記憶こそが、[[帰る場所]]なのではないか。そうだとすれば、それは土地を離れても失われることはないし、いくつもの町に分かれていてもかまわない。旅先で耳にした方言に、思わず足を止めてしまうことがあるのも、そのためかもしれない。\n確かに、生まれ育った土地に家族や友人がいて、いつでも帰れる人はうらやましい。しかし、故郷を土地だけに限ってしまうと、私のように各地を移り住んだ人や、生まれた土地を離れざるを得なかった人は、故郷を持たないことになってしまう。\n故郷とは、どこかにあるものではなく、一人ひとりの中にあるものだ。今の私は、そう考えている。",
+    "en": "Having moved five times as a child, the writer long believed they had no hometown. A taste in a strange port town changed that: a hometown may be the memories of tastes, smells and voices that shaped us, so it lives inside each person, not in one place.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "①「私も長い間、そう思い込んでいた」とあるが、どのように思い込んでいたのか。",
+        "c": [
+          "故郷は生まれ育った土地なので、自分には故郷がないと思っていた。",
+          "故郷とは、家族や友人が今も住んでいて、いつでも帰れる土地のことだと思っていた。",
+          "一番長く住んでいた町こそが、自分の故郷だと思っていた。",
+          "年末には故郷に帰らなければならないものだと思っていた。"
+        ],
+        "why": [
+          "そう points to the two sentences before: 故郷とは生まれ育った土地のことだ, so 私のような人間には故郷がない.",
+          "Half right, then changed. Family and friends come up only later, in the 確かに paragraph.",
+          "Turned round. The writer has no one left in that town and cannot say which town to name.",
+          "Sounds right, not in the text. The year-end news only makes the writer uneasy."
+        ],
+        "cue": [
+          "故郷とは生まれ育った土地のことだと、一般には言われる",
+          "私のような人間には故郷がないことになる"
+        ],
+        "skill": "ref",
+        "tell": "そう points back, usually to the sentence or two just before. Read them as one idea and find the choice that keeps all of it."
+      },
+      {
+        "q": "②「帰る場所」とは、ここではどういうものか。",
+        "c": [
+          "これまでの暮らしの中で身についた、味や言葉の響きの記憶",
+          "子どものころに家族と一緒に暮らしていた、思い出のある家や町",
+          "出張で訪れた、知らない港町にある小さな食堂",
+          "生まれた土地で今も暮らしている、家族や友人たち"
+        ],
+        "why": [
+          "The same sentence: ある味や匂い、聞き慣れた言葉の響きなど、自分を形づくってきたものの記憶こそが.",
+          "Takes the phrase literally. The writer says a hometown is not 地図の上の一点.",
+          "Said in the text, but not the answer. The diner is where the writer realised it, not the place itself.",
+          "The view the writer argues against: a hometown tied to people in one place."
+        ],
+        "cue": [
+          "自分を形づくってきたものの記憶こそが"
+        ],
+        "skill": "meaning",
+        "tell": "Xこそが Y is a strong link: Y means X here. Read the subject marked by こそが in the same sentence."
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "故郷は特定の土地に限られるものではなく、人の心の中にあるものだ。",
+          "故郷とは生まれ育った土地のことであり、いつでも帰れる場所のことだ。",
+          "故郷を持たない人は、新しく住む土地で故郷を作っていくべきだ。",
+          "子どものころに食べた料理の味だけが、本当の故郷だと言える。"
+        ],
+        "why": [
+          "The last paragraph: 故郷とは、どこかにあるものではなく、一人ひとりの中にあるものだ.",
+          "The view the writer argues against: the common definition (一般には言われる) and the 確かに paragraph.",
+          "Sounds right, not in the text. The writer never says people should build a new hometown.",
+          "Too narrow. Taste is one example; the writer also names smells and the sound of words."
+        ],
+        "cue": [
+          "故郷とは、どこかにあるものではなく、一人ひとりの中にあるものだ"
+        ],
+        "skill": "claim",
+        "tell": "AではなくB: the writer's view is B. A common definition marked 一般には言われる is the view about to be rejected."
+      }
+    ]
+  },
+  {
+    "id": "r13-004",
+    "type": "r13",
+    "genre": "エッセイ",
+    "text": "日本で暮らしていると、一日に何度も「すみません」という言葉を耳にします。店員を呼ぶとき、道を譲ってもらったとき、エレベーターのドアを押さえてもらったとき。私自身も、気がつけば一日に何十回も口にしています。\n日本人はすぐに謝るとよく言われます。海外の友人から、「悪いことをしていないのに、どうして謝るの」と不思議がられたこともあります。確かに、自分に責任のないことまで謝るのは、おかしなことのように見えるかもしれません。\nしかし、日本語の「すみません」は、必ずしも謝罪だけを表しているわけではありません。相手に手間をかけさせたことへのお礼や、話しかける前の呼びかけとしても使われます。[[相手との間にできた小さな「借り」を、その場で返す言葉]]だと言ってもいいでしょう。そう考えると、この言葉がよく使われるのは、人との関係をなめらかにしようとする気持ちの表れだと言えます。\nただ、気になることもあります。最近、問題が起きたときに、事情を確かめる前に、まず謝ってしまう人が増えているように感じるのです。職場で、自分の担当ではないミスについて「すみません」と頭を下げ、そのまま話を終わらせてしまう。[[こうした謝り方]]は、その場の空気を丸く収めはしても、何が原因だったのかを分からないままにしてしまいます。言われた側も、相手に頭を下げられてしまうと、詳しい事情を聞きにくくなるからです。その結果、同じ問題が繰り返されることにもなりかねません。\n謝ることそのものが悪いのではありません。問題は、謝ることが考えることの代わりになってしまうことです。本当に自分に責任があるのなら、心から謝ったうえで、なぜそうなったのか、次にどうするのかを言葉にする必要があります。たとえば、「確認が足りませんでした。次からは送る前に必ず二人で見直します」と言えば、相手も安心できるでしょう。責任がないのなら、謝るより先に、一緒に原因を探そうと提案するほうが、相手のためにもなるはずです。\n「すみません」は便利な言葉です。だからこそ、その一言で何を伝えたいのかを、ときどき立ち止まって考えてみる必要があるのではないでしょうか。",
+    "en": "Japanese すみません is not only an apology; it also thanks and greets, and smooths relationships. The writer worries, though, about people who apologise before finding out what went wrong, and argues that an apology must not replace thinking about what we mean by it.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①「相手との間にできた小さな『借り』を、その場で返す言葉」とは、どういうことか。",
+        "c": [
+          "相手にかけた手間に対して、その場で気持ちを示す言葉だということ",
+          "相手に迷惑をかけたときに、自分の責任を認めて謝る言葉だということ",
+          "人から借りていた物を返すときに、決まって使われる言葉だということ",
+          "相手との間に距離を置くために使われる、形だけの言葉だということ"
+        ],
+        "why": [
+          "The sentence before: 相手に手間をかけさせたことへのお礼. The debt is the trouble someone took for you, and すみません settles it at once.",
+          "Too narrow. The paragraph opens by saying the word is 必ずしも謝罪だけ…ではありません.",
+          "Takes the likeness literally. 借り here is not a borrowed object.",
+          "Turned round. The writer says it shows a wish to make relations smoother (なめらかにしよう)."
+        ],
+        "cue": [
+          "相手に手間をかけさせたことへのお礼",
+          "人との関係をなめらかにしようとする気持ちの表れ"
+        ],
+        "skill": "metaphor",
+        "tell": "A word in quotes like 「借り」 is used as a likeness. Find the plain fact around it (here, お礼) that it stands for."
+      },
+      {
+        "q": "②「こうした謝り方」とは、どのような謝り方か。",
+        "c": [
+          "何があったのかを確かめないうちに、とりあえず謝ってしまうこと",
+          "自分に責任があるのに、言い訳をしてなかなか謝ろうとしないこと",
+          "店員を呼ぶときや、道を譲ってもらったときに「すみません」と言うこと",
+          "謝ったうえで、原因と次にどうするかをきちんと言葉にすること"
+        ],
+        "why": [
+          "The two sentences before: 事情を確かめる前に、まず謝ってしまう…そのまま話を終わらせてしまう.",
+          "Turned round. The problem is apologising too fast, not refusing to.",
+          "Said in the text, but not the answer. These are the everyday uses in paragraph 1, which the writer does not criticise.",
+          "Said in the text, but not the answer. This is the way the writer recommends, in paragraph 5."
+        ],
+        "cue": [
+          "事情を確かめる前に、まず謝ってしまう人が増えている",
+          "そのまま話を終わらせてしまう"
+        ],
+        "skill": "ref",
+        "tell": "こうした points to the case just described. Read back to the start of that case (ただ, 最近) and sum it up in one line."
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "謝るときは、その一言で何を伝えたいのかを考えるべきだ。",
+          "日本人は、責任のないことで謝るのをやめるべきだ。",
+          "「すみません」は関係をよくするので、多く使うほうがよい。",
+          "職場でミスが起きたら、誰の責任かをはっきりさせるべきだ。"
+        ],
+        "why": [
+          "The last paragraph: その一言で何を伝えたいのかを、ときどき立ち止まって考えてみる必要がある.",
+          "The view the writer argues against: 日本人はすぐに謝るとよく言われます. The writer defends everyday すみません.",
+          "Half right. The writer says the word shows good will, but never says to use it more, and warns about using it in place of thought.",
+          "Sounds right, not in the text. The writer wants to find the cause together, not to assign blame."
+        ],
+        "cue": [
+          "その一言で何を伝えたいのかを、ときどき立ち止まって考えてみる必要があるのではないでしょうか"
+        ],
+        "skill": "claim",
+        "tell": "〜必要があるのではないでしょうか in the last paragraph is the claim, softened. Choices that judge Japanese people as a whole go too far."
+      }
+    ]
+  },
+  {
+    "id": "r13-005",
+    "type": "r13",
+    "genre": "エッセイ",
+    "text": "「失敗を恐れるな。失敗から学べ」。スポーツの指導の場で、これほどよく聞かれる言葉はないだろう。私も少年サッカーのコーチを始めたころ、子どもたちに何度もそう言っていた。\nところが、ある試合の後、一人の子に「コーチは失敗するなっていう顔をしてる」と言われて、はっとした。振り返ってみると、子どもがパスを失敗するたびに、私はすぐに「今のは右だろう」「もっと早く出せ」と大声で指示を出していた。口では失敗してもいいと言いながら、[[実際にはその機会を奪っていた]]のである。\n失敗から学ぶというのは、失敗をした本人が、何がいけなかったのかを考え、次にどうするかを自分で決めることだ。ところが、失敗した直後に大人が答えを言ってしまえば、子どもは考える必要がなくなる。それどころか、次は叱られないようにと、難しいプレーを避けるようになる。そうなれば、失敗は減るかもしれないが、上達もしない。\n確かに、すぐに正しいやり方を教えたほうが早く上手になる、という考え方もある。基本的な技術を身につける段階では、それも必要だろう。しかし、試合の中で何を選ぶかという判断の力は、人から教わるだけでは育たない。自分で迷い、選び、その結果を引き受けるという経験を繰り返す中で、少しずつ身についていくものだ。\nそこで私は、指導のやり方を変えた。試合中はできるだけ黙って見守り、試合の後で「あの場面、何が見えていた？」と質問するようにしたのである。最初は答えられなかった子どもたちも、次第に自分の言葉でプレーを説明するようになった。中には、[[うまくいった場面より、失敗した場面のほうを楽しそうに話す子]]まで出てきた。失敗が、責められるものから、考えるための材料に変わったのだ。\n失敗から学ぶ力は、「失敗してもいい」という言葉ではなく、失敗について自分で考える時間と場所によって育つ。指導者がまず学ぶべきなのは、答えを教えることではなく、答えを待つことなのではないだろうか。",
+    "en": "A youth football coach realised that by shouting instructions after every mistake he was taking away the children's chance to learn from it. When he stayed quiet and asked questions after games instead, mistakes became material for thinking, and he argues coaches must learn to wait for answers.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①「実際にはその機会を奪っていた」とあるが、どういうことか。",
+        "c": [
+          "すぐに指示を出し、子どもが考える機会をなくしていたということ",
+          "失敗した子を試合に出さないことで、練習する機会を与えなかったということ",
+          "「失敗を恐れるな」と言いすぎて、子どもを緊張させてしまったということ",
+          "正しいやり方を教えなかったために、上達する機会を逃していたということ"
+        ],
+        "why": [
+          "The sentence before: 失敗するたびに、私はすぐに…大声で指示を出していた. Paragraph 3 explains that an instant answer means 子どもは考える必要がなくなる.",
+          "Sounds right, not in the text. The coach never benched anyone.",
+          "Twisted. The child noticed the coach's face, not tension from the slogan.",
+          "Turned round. He told them the right way too quickly, not too little."
+        ],
+        "cue": [
+          "大声で指示を出していた",
+          "子どもは考える必要がなくなる"
+        ],
+        "skill": "meaning",
+        "tell": "Find what その points to (the chance to fail and learn), then look for what the writer did that took it away."
+      },
+      {
+        "q": "②「うまくいった場面より、失敗した場面のほうを楽しそうに話す子」が出てきたのはなぜか。",
+        "c": [
+          "失敗が叱られるものではなく、考えるための材料になったから",
+          "試合の後で、コーチが正しいやり方を教えてくれるようになったから",
+          "失敗をしても、試合に勝つことができるようになったから",
+          "難しいプレーを避けるようになり、失敗が少なくなったから"
+        ],
+        "why": [
+          "The next sentence: 失敗が、責められるものから、考えるための材料に変わったのだ.",
+          "Turned round. After games he asks questions (何が見えていた？) instead of giving answers.",
+          "Sounds right, not in the text. Results are never mentioned.",
+          "Said in the text, but not the answer. Avoiding hard plays is what happens when children are scolded, in paragraph 3."
+        ],
+        "cue": [
+          "失敗が、責められるものから、考えるための材料に変わったのだ"
+        ],
+        "skill": "reason",
+        "tell": "Reasons in essays often follow the underline as a summary ending のだ. Read one sentence past the underline."
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "指導者は答えを教えるより、選手が考えるのを待つべきだ。",
+          "早く上達させるには、すぐに正しいやり方を教えるのがよい。",
+          "基本の技術を教える段階でも、指導者は黙っているほうがよい。",
+          "選手には「失敗を恐れるな」と、繰り返し伝えることが大切だ。"
+        ],
+        "why": [
+          "The last sentence: 答えを教えることではなく、答えを待つことなのではないだろうか.",
+          "The view the writer argues against, set up with 確かに…という考え方もある.",
+          "Turned round. For basic skills the writer says それも必要だろう: teaching directly has a place.",
+          "The writer says the skill grows 「失敗してもいい」という言葉ではなく: words alone are not enough."
+        ],
+        "cue": [
+          "答えを教えることではなく、答えを待つことなのではないだろうか"
+        ],
+        "skill": "claim",
+        "tell": "確かに…という考え方もある. しかし… marks the rejected view. The claim is in the last sentence, often 〜のではないだろうか."
+      }
+    ]
+  },
+  {
+    "id": "r13-006",
+    "type": "r13",
+    "genre": "論説",
+    "text": "「速読」をうたう本や講座が人気だという。一冊を三十分で読める、一日に何冊も読めるようになる、といった宣伝を目にすることも多い。情報があふれる時代に、少しでも多くの文章に目を通したいと思うのは自然なことだろう。\n確かに、仕事の資料や新聞のように、必要な情報を素早く拾い出せばよい文章もある。そうした文章を一字一字丁寧に読んでいては、時間がいくらあっても足りない。\nしかし、読書の価値は、どれだけ多くの情報を得たかで決まるものではないと私は考える。以前、学生時代に読んだ小説を二十年ぶりに読み返したとき、まったく違う物語のように感じたことがある。書かれている文字は同じなのに、[[読み取れるものが変わっていた]]のだ。その間に私が経験してきたことが、行間にあるものに気づかせてくれたのだろう。\n文章には、書かれている内容のほかに、書かれていないものがある。登場人物が口にしなかった言葉や、書き手があえて書かなかった理由などだ。たとえば、別れの場面で主人公が天気の話しかしないのはなぜなのか。そうしたものは、急いで字を追っているだけでは見えてこない。立ち止まり、前のページに戻り、「なぜここでこの言葉なのか」と考える。その手間の中でしか出会えないものがある。\n速く読むことは、言わば、特急列車で景色の中を通り過ぎるようなものだ。目的地には早く着くが、窓の外に咲く花の名前を知ることはできない。[[各駅停車でしか見えない風景]]もあるのである。\nもっとも、ゆっくり読むことが常に正しいと言いたいのではない。目的に応じて読み方を変えればよい。速く読める人もいれば、一文一文を味わいながら読む人もいる。それは能力の差というより、読み方の違いにすぎない。問題なのは、速く多く読むことだけが優れた読み方だと思い込み、ゆっくりとしか読めない自分を責めてしまうことだ。\n本を一冊読み終えるのに一か月かかっても、その間に何度も立ち止まって考えたのであれば、それは決して無駄な時間ではない。読書とは、情報を集める作業である以上に、本と対話する時間なのだから。",
+    "en": "Speed reading is popular, and some texts should be skimmed. But the writer argues that the value of reading is not in how much information you take in: what is left unsaid only appears when you slow down and think, so slow readers should not blame themselves.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "①「読み取れるものが変わっていた」のはなぜか。",
+        "c": [
+          "その間の経験によって、書かれていない部分に気づけるようになったから",
+          "学生時代よりも速く読めるようになり、多くの情報を得られるようになったから",
+          "二十年の間に、小説の内容の一部が書き直されていたから",
+          "学生時代は、一字一字丁寧に読むことをしていなかったから"
+        ],
+        "why": [
+          "The next sentence: その間に私が経験してきたことが、行間にあるものに気づかせてくれた. 行間にあるもの is what is not written.",
+          "The view the writer argues against: value measured by speed and amount of information.",
+          "Turned round. The text says 書かれている文字は同じなのに.",
+          "Sounds right, not in the text. The writer never says how they read as a student."
+        ],
+        "cue": [
+          "その間に私が経験してきたことが、行間にあるものに気づかせてくれたのだろう"
+        ],
+        "skill": "reason",
+        "tell": "A sentence ending のだろう right after an underline often gives the writer's guess at the reason. Paraphrase it, keep every part."
+      },
+      {
+        "q": "②「各駅停車でしか見えない風景」とはどういうことか。",
+        "c": [
+          "時間をかけて読むことで、初めて気づくことのできる文章の中身",
+          "速く読むことで、短い時間のうちに集められる多くの情報",
+          "仕事の資料や新聞から、素早く拾い出すべき必要な情報",
+          "列車で旅をしながら本を読むことで、得られる楽しみ"
+        ],
+        "why": [
+          "The slow train stands for slow reading, set against 特急列車 (fast reading). Paragraph 4: その手間の中でしか出会えないものがある.",
+          "Turned round. That is the express train: you arrive fast but miss the flowers.",
+          "Said in the text, but not the answer. These are the texts the writer agrees should be read fast.",
+          "Takes the likeness literally. The essay is not about travel."
+        ],
+        "cue": [
+          "その手間の中でしか出会えないものがある",
+          "特急列車で景色の中を通り過ぎるようなものだ"
+        ],
+        "skill": "metaphor",
+        "tell": "When a text sets two likenesses side by side (特急 vs 各駅停車), map each one to a side of the argument before reading the choices."
+      },
+      {
+        "q": "この文章で筆者が最も言いたいことは何か。",
+        "c": [
+          "読書の価値は、速さや量ではなく、立ち止まって考えることにある。",
+          "情報があふれる時代には、速く読む力を身につけておくべきだ。",
+          "どのような文章であっても、時間をかけてゆっくり読まなければならない。",
+          "若いころに読んだ小説は、年を取ってから読み返すべきだ。"
+        ],
+        "why": [
+          "Paragraph 3 (読書の価値は…情報を得たかで決まるものではない) and the last line (本と対話する時間) say it together.",
+          "The view the writer argues against, set up in paragraph 1 and granted only for some texts after 確かに.",
+          "Too wide. もっとも、ゆっくり読むことが常に正しいと言いたいのではない.",
+          "Too narrow. Rereading the novel is one example."
+        ],
+        "cue": [
+          "読書の価値は、どれだけ多くの情報を得たかで決まるものではないと私は考える",
+          "本と対話する時間なのだから"
+        ],
+        "skill": "gist",
+        "tell": "もっとも…と言いたいのではない limits the claim. A choice with どのような, いつも or すべて often breaks that limit."
+      }
+    ]
+  },
+  {
+    "id": "r13-007",
+    "type": "r13",
+    "genre": "エッセイ",
+    "text": "友人や後輩から相談を受けると、何か役に立つことを言わなければと考えてしまう人は多いのではないでしょうか。私もその一人でした。相談されたら、できるだけ早く、具体的な解決策を示すのがよい助言だと信じていたのです。\nところが、数年前、転職に迷っている後輩の話を聞いていたときのことです。私は彼の話が終わらないうちに、転職のよい点と悪い点を並べ、「今は動かないほうがいい」と結論まで伝えました。後輩は「ありがとうございます」と言いましたが、[[その表情は少しも晴れていませんでした]]。後で分かったのですが、彼はすでに転職を決めていて、ただその不安を誰かに聞いてほしかっただけだったのです。\n助言は具体的であるほどよいと言われます。確かに、何をすればよいか分からずに困っている人には、具体的な方法を示すことが大きな助けになるでしょう。しかし、相談する人が求めているものは、いつも答えだとは限りません。考えを整理したい人もいれば、決めたことを後押ししてほしい人、ただ気持ちを分かってほしい人もいます。相手が求めていない答えは、どんなに正しくても、押しつけに聞こえてしまうことがあるのです。\n相手が何を求めているのかを知らないまま助言をするのは、[[サイズを測らずに服を仕立てるようなもの]]です。どんなに上等な布を使っても、体に合わなければ着てもらえません。\nそれ以来、私は相談を受けたら、まず最後まで話を聞き、「それで、あなたはどうしたいと思っているの？」と尋ねるようにしています。すると、多くの人が、話しているうちに自分で答えを見つけていくことに気づきました。自分で答えにたどり着いた人の顔は、私が答えを伝えたときよりも、ずっと明るく見えます。私が何か言うのは、その後です。それも、「私ならこうする」という形で、一つの考えとして伝えるだけにしています。\n助言の価値は、言葉の正しさだけで決まるものではありません。相手が受け取れる形で、受け取りたいときに渡してこそ、意味を持つのです。よい助言をしたいと思うなら、話す前に、まず聞くことから始めるべきではないでしょうか。",
+    "en": "The writer once gave a junior colleague a fast, concrete answer about changing jobs, only to learn he had already decided and just wanted to be heard. Advice given without knowing what the person wants is wasted, so the writer now listens first and asks what the person wants.",
+    "lv": 1,
+    "qs": [
+      {
+        "q": "①「その表情は少しも晴れていませんでした」とあるが、それはなぜか。",
+        "c": [
+          "後輩は結論ではなく、不安を聞いてほしかっただけだったから",
+          "筆者の示した解決策が具体的でなく、何の役にも立たなかったから",
+          "後輩はまだ、転職をするかどうかを決められずに迷っていたから",
+          "筆者が転職の悪い点ばかりを並べて、後輩を不安にさせたから"
+        ],
+        "why": [
+          "The next sentence: すでに転職を決めていて、ただその不安を誰かに聞いてほしかっただけだった.",
+          "Turned round. The advice was very concrete: a list of points and a conclusion.",
+          "Turned round. 彼はすでに転職を決めていて.",
+          "Half right, then changed. The writer listed both よい点と悪い点."
+        ],
+        "cue": [
+          "ただその不安を誰かに聞いてほしかっただけだったのです"
+        ],
+        "skill": "reason",
+        "tell": "後で分かったのですが signals the hidden reason for what came before. The answer is in that sentence."
+      },
+      {
+        "q": "②「サイズを測らずに服を仕立てるようなもの」とは、どういうことか。",
+        "c": [
+          "相手の望みを確かめずに助言しても、受け入れてもらえないということ",
+          "助言をするときは、何より正しい言葉を選ぶことが大切だということ",
+          "相手に合わせて、助言の量をできるだけ少なくするべきだということ",
+          "経験の少ない人がする助言は、相手の役に立たないということ"
+        ],
+        "why": [
+          "Measuring = finding out what the person wants (相手が何を求めているのかを知らないまま). A suit that does not fit is not worn: the advice is not taken.",
+          "Turned round. The last paragraph says value is not decided by 言葉の正しさだけ; the fine cloth that still does not fit makes the same point.",
+          "Sounds right, not in the text. The amount of advice is never discussed.",
+          "Sounds right, not in the text. Experience is not the issue."
+        ],
+        "cue": [
+          "相手が何を求めているのかを知らないまま助言をする",
+          "体に合わなければ着てもらえません"
+        ],
+        "skill": "metaphor",
+        "tell": "Map each part of the likeness: measuring, cloth, the suit, being worn. The choice must keep the whole map, not one part."
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "助言をする前に、相手が何を求めているのかを聞くべきだ。",
+          "相談を受けたら、できるだけ早く具体的な解決策を示すべきだ。",
+          "相談されても、自分の考えは相手に伝えないほうがよい。",
+          "相談する人は、たいてい具体的な答えを求めているものだ。"
+        ],
+        "why": [
+          "The last sentence: 話す前に、まず聞くことから始めるべきではないでしょうか.",
+          "The view the writer argues against: what the writer used to believe (信じていた), and 助言は具体的であるほどよいと言われます.",
+          "Too wide. The writer still gives an opinion, as 一つの考え, after listening.",
+          "Turned round. 相談する人が求めているものは、いつも答えだとは限りません."
+        ],
+        "cue": [
+          "話す前に、まず聞くことから始めるべきではないでしょうか"
+        ],
+        "skill": "claim",
+        "tell": "A view the writer once held (〜と信じていた) or that 〜と言われます introduces is a trap. The claim is the last 〜べきではないでしょうか."
+      }
+    ]
+  },
+  {
+    "id": "r13-008",
+    "type": "r13",
+    "genre": "論説",
+    "text": "「普通はこうするでしょう」。子どものころ、母によくそう言われた。箸の持ち方、宿題をする時間、友だちへの話し方。何かがみんなと違うたびに、「普通」という言葉が私を正しい場所へ連れ戻そうとした。そのたびに私は、自分のどこがいけないのか分からないまま、黙ってみんなに合わせてきた。\n「普通」とは本来、多くの人が同じようにしていること、特に変わったところがないことを指す言葉だ。社会の中で人と一緒に暮らしていくうえで、ある程度の決まりや常識が必要なのは確かである。皆がばらばらに行動すれば、電車に乗ることさえ難しくなるだろう。\nしかし、私たちが日常で使う「普通」は、[[そうした意味をはるかに超えている]]ように思う。「普通の家庭」「普通の人生」と言うとき、そこには、こうあるべきだという見えない基準が含まれている。そして、その基準から外れた人は、何か足りないもの、直すべきものを持っているかのように扱われてしまう。\n興味深いのは、「普通」の中身が時代や場所によって大きく変わることだ。私の祖母の時代には、女性が結婚後も働き続けることは普通ではなかった。今では、それを珍しいと思う人のほうが少ないだろう。逆に、かつては当たり前だった習慣が、今では考えられないものになっている例もある。[[絶対だと思われていた物差しは、実は伸び縮みするゴムでできていた]]のである。\nそれなのに、私たちは目の前の「普通」を、変わることのない正解のように信じてしまう。そして、自分が普通かどうかを気にし、人と違う部分を隠そうとする。だが、一人ひとりを細かく見れば、すべての点で平均的な人など、どこにもいないはずだ。人より背が高い人もいれば、字が苦手な人も、朝に弱い人もいる。誰もが、どこかで「普通」からはみ出している。\n「普通」という言葉を使うなと言いたいのではない。ただ、それを口にするとき、それが一つの時代の、一つの場所の、多数派の考え方にすぎないことを忘れないでいたい。そう意識するだけで、人と違うことを責める言葉は、少しずつ減っていくのではないだろうか。",
+    "en": "The writer grants that society needs shared rules, but says the everyday word 普通 has become a hidden standard that treats difference as a fault. Since what is normal changes with time and place, we should remember it is only the majority view of one time and place.",
+    "lv": 2,
+    "qs": [
+      {
+        "q": "①「そうした意味をはるかに超えている」とはどういうことか。",
+        "c": [
+          "「普通」という言葉が、人が従うべき基準として使われているということ",
+          "「普通」という言葉が、変わったところがないという意味でしか使われないということ",
+          "社会の中で暮らすためには、多くの決まりや常識が必要だということ",
+          "「普通」という言葉を使う人が、以前よりもずっと増えているということ"
+        ],
+        "why": [
+          "The next sentence: そこには、こうあるべきだという見えない基準が含まれている. The word now carries a should, not just a count of what most people do.",
+          "Turned round. That plain meaning is what the word has gone beyond.",
+          "Said in the text, but not the answer. This is the concession in paragraph 2, part of what そうした意味 points to.",
+          "Sounds right, not in the text. The writer says nothing about how often the word is used."
+        ],
+        "cue": [
+          "こうあるべきだという見えない基準が含まれている"
+        ],
+        "skill": "meaning",
+        "tell": "When an underline says X goes beyond そうした意味, find the old meaning before it and the new meaning after it. The answer is the new one."
+      },
+      {
+        "q": "②「絶対だと思われていた物差しは、実は伸び縮みするゴムでできていた」とはどういうことか。",
+        "c": [
+          "変わらないと思われていた「普通」の基準も、時代や場所によって変わるということ",
+          "「普通」の基準は人によって違うので、互いに比べることはできないということ",
+          "昔の「普通」は厳しかったが、今の「普通」はゆるやかになったということ",
+          "女性が結婚後も働き続けることは、今では普通になっているということ"
+        ],
+        "why": [
+          "The paragraph opens: 「普通」の中身が時代や場所によって大きく変わる. The ruler is the standard; rubber means it changes.",
+          "Sounds right, not in the text. The paragraph is about change over time and place, not person to person.",
+          "Half right, then wrong. Things changed, but 逆に shows some customs went the other way; the text never says 普通 became gentler.",
+          "Too narrow. This is one example, not what the likeness means."
+        ],
+        "cue": [
+          "「普通」の中身が時代や場所によって大きく変わることだ"
+        ],
+        "skill": "metaphor",
+        "tell": "A likeness at the end of a paragraph sums up its first sentence. Read the topic sentence (興味深いのは…) and match it."
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "c": [
+          "「普通」は多数派の考え方の一つにすぎないと意識して使うべきだ。",
+          "「普通」という言葉は人を傷つけるので、使わないほうがよい。",
+          "社会で暮らしていくには、皆が「普通」に合わせて行動すべきだ。",
+          "誰もがどこかで「普通」からはみ出しているので、決まりや常識は必要ない。"
+        ],
+        "why": [
+          "The last paragraph: 多数派の考え方にすぎないことを忘れないでいたい.",
+          "Too wide. 「普通」という言葉を使うなと言いたいのではない.",
+          "The view the writer argues against. Paragraph 2 grants that some rules are needed, then しかし turns away from it.",
+          "Turned round. The writer says rules and common sense are needed (必要なのは確かである)."
+        ],
+        "cue": [
+          "多数派の考え方にすぎないことを忘れないでいたい"
+        ],
+        "skill": "claim",
+        "tell": "〜と言いたいのではない. ただ… is a set: the first half blocks the extreme reading, the second half is the claim."
+      }
+    ]
+  }
+]

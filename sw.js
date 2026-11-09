@@ -45,7 +45,8 @@ self.addEventListener("fetch", (e) => {
   e.respondWith(
     fetch(req)
       .then((res) => {
-        if (res.ok && res.type === "basic") {
+        // 200 only: audio comes back as 206 (part of a file), which the cache refuses.
+        if (res.status === 200 && res.type === "basic") {
           const copy = res.clone();
           caches.open(SHELL).then((c) => c.put(req, copy));
         }

@@ -1,0 +1,548 @@
+[
+  {
+    "id": "l2-001",
+    "type": "l2",
+    "lv": 1,
+    "setup": "映画館の前で、男の人と女の人が話しています。",
+    "q": "女の人は、この映画のどこが一番よかったと言っていますか。",
+    "lines": [
+      {"sp": "M", "t": "いやあ、よかったね。最後のあれ、全然予想してなかったよ。"},
+      {"sp": "F", "t": "え、そう？私、あれは途中でなんとなく分かっちゃった。"},
+      {"sp": "M", "t": "そうなんだ。じゃあ、主役の二人？どっちも人気の俳優だし、それで見に来たんでしょ？", "say": "そうなんだ。じゃあ、主役のふたり？どっちもにんきの俳優だし、それで見に来たんでしょ？"},
+      {"sp": "F", "t": "まあ、きっかけはそうなんだけどね。演技もさすがだったし。"},
+      {"sp": "M", "t": "うん、うまかったよね。あと、景色もきれいだったなあ。あれ、北海道かな。"},
+      {"sp": "F", "t": "うん、きれいだった。でもね、私が一番心に残ったのは、おじいさんが孫の写真をじっと見てるところ。"},
+      {"sp": "M", "t": "ああ、あの長い場面ね。"},
+      {"sp": "F", "t": "そう。せりふもないし、音楽もないのに、気持ちが全部伝わってきたでしょ。ああいう静かな場面って、なかなか作れないと思うんだ。"},
+      {"sp": "M", "t": "そっか。僕はちょっと長いなって思っちゃったけどね。"},
+      {"sp": "F", "t": "えー、あそこだけでも、もう一回見たいくらいなのに。"}
+    ],
+    "c": ["せりふのない静かな場面", "予想できない最後", "人気のある俳優の演技", "北海道の美しい景色"],
+    "why": [
+      "\"私が一番心に残ったのは、おじいさんが孫の写真をじっと見てるところ\", and she adds that the scene had no lines and no music.",
+      "The man liked the ending. She says she guessed it halfway through.",
+      "She agrees the acting was good (さすがだった), but she calls the actors her reason for coming, not the best part.",
+      "The man mentions the scenery. She agrees it was pretty, then turns with でもね to the scene she liked most."
+    ],
+    "cue": ["私が一番心に残ったのは", "せりふもないし、音楽もないのに"],
+    "tell": "Several good points get a yes. Wait for でもね and 一番心に残ったのは: the answer is what comes after the turn.",
+    "en": "Two friends leave a film. The man liked the twist ending and the scenery; the woman guessed the ending and says the quiet scene of a grandfather looking at a photo, with no lines and no music, was the best part."
+  },
+  {
+    "id": "l2-002",
+    "type": "l2",
+    "lv": 2,
+    "setup": "会社で、男の人と女の人が新しいオフィスについて話しています。",
+    "q": "男の人は、新しいオフィスの何が一番問題だと言っていますか。",
+    "lines": [
+      {"sp": "F", "t": "新しいオフィス、もう慣れた？前より駅から遠くなったし、大変でしょ。"},
+      {"sp": "M", "t": "いや、それが、僕の場合は乗り換えが一回減ったから、かえって楽になったんだよ。"},
+      {"sp": "F", "t": "へえ、そうなんだ。じゃあ、席が毎日変わるのは？私、あれがどうも落ち着かなくて。"},
+      {"sp": "M", "t": "最初はね。でも今は、毎日違う人の隣に座れて、けっこう面白いよ。"},
+      {"sp": "F", "t": "ふうん。ロッカーは？すごく小さいじゃない。"},
+      {"sp": "M", "t": "ああ、あれは確かに不便だね。かばんがやっと入るぐらいで。でも、我慢できないほどじゃないよ。"},
+      {"sp": "F", "t": "じゃあ、特に問題なしってこと？"},
+      {"sp": "M", "t": "いや、一つだけ。僕、お客さんとの電話が多いでしょ。電話用の小さい部屋が四つしかなくて、いつもふさがってるんだよ。"},
+      {"sp": "F", "t": "ああ、あそこ、取り合いになってるよね。"},
+      {"sp": "M", "t": "仕方なく廊下でかけてるんだけど、お客さんとの大事な話をあんなところでするのは、ちょっとね。総務に相談してみようと思ってるんだ。"}
+    ],
+    "c": ["電話で話せる場所が足りないこと", "駅から遠くなったこと", "自分の席が決まっていないこと", "ロッカーが小さいこと"],
+    "why": [
+      "\"電話用の小さい部屋が四つしかなくて、いつもふさがってるんだよ\": he ends up calling clients from the corridor.",
+      "The woman guesses this. He says one fewer change of train made his commute easier.",
+      "The woman finds changing desks unsettling; he now enjoys sitting next to different people.",
+      "He agrees the lockers are inconvenient, but 我慢できないほどじゃない: he can live with them."
+    ],
+    "cue": ["いや、一つだけ。", "電話用の小さい部屋が四つしかなくて、いつもふさがってるんだよ"],
+    "tell": "Each of her guesses gets a no or a but. 一つだけ marks the one real problem.",
+    "en": "Two colleagues talk about their new office. The man finds the commute easier, likes changing desks and can live with the small lockers; his problem is that the few phone rooms are always taken, so he calls clients from the corridor."
+  },
+  {
+    "id": "l2-003",
+    "type": "l2",
+    "lv": 2,
+    "setup": "大学で、女の学生と先生が話しています。",
+    "q": "女の学生は、どうして卒業論文のテーマを変えることにしましたか。",
+    "lines": [
+      {"sp": "F", "t": "先生、すみません。卒業論文のことで、ご相談があるんですが。"},
+      {"sp": "M", "t": "ああ、商店街の利用者の調査だったね。どうしました？"},
+      {"sp": "F", "t": "あの、テーマを少し変えたいと思っていまして。"},
+      {"sp": "M", "t": "そう。アンケートが思うように集まらないのかな。先週そう言ってたね。"},
+      {"sp": "F", "t": "ええ、それも大変なんですけど、なんとかなりそうなんです。"},
+      {"sp": "M", "t": "じゃあ、前に僕が言ったことを気にしてる？テーマが広すぎるって。"},
+      {"sp": "F", "t": "いえ、それはもう、一つの商店街に絞りましたので。"},
+      {"sp": "M", "t": "そうか。じゃあ、どうして？"},
+      {"sp": "F", "t": "実は、お店の方にインタビューしているうちに、七十代、八十代の店主さんたちが、SNSでお客さんを集めているって知ったんです。そっちのほうがずっと面白いなと思って。", "say": "実は、お店のかたにインタビューしているうちに、ななじゅうだい、はちじゅうだいの店主さんたちが、エスエヌエスでお客さんを集めているって知ったんです。そっちのほうがずっと面白いなと思って。"},
+      {"sp": "M", "t": "なるほど。お年寄りの店主とインターネットか。それは、まだあまり研究されていない分野だね。面白いと思うよ。"},
+      {"sp": "F", "t": "はい。これまでに集めたデータも、半分ぐらいは使えると思うんです。"},
+      {"sp": "M", "t": "いいでしょう。じゃあ、来週までに新しい計画を書いてきてください。"}
+    ],
+    "c": ["インタビューで面白いことを知ったから", "アンケートが思うように集まらないから", "テーマが広すぎると先生に言われたから", "まだあまり研究されていない分野だから"],
+    "why": [
+      "\"そっちのほうがずっと面白いなと思って\": while interviewing, she learned that shop owners in their 70s and 80s use social media, and found that more interesting.",
+      "The professor guesses this. She says it is hard but なんとかなりそう: manageable.",
+      "The professor said this before, but she has already narrowed the topic to one shopping street.",
+      "This is the professor's comment after he hears her reason, not her own reason for changing."
+    ],
+    "cue": ["実は、お店の方にインタビューしているうちに", "そっちのほうがずっと面白いなと思って"],
+    "tell": "The professor makes two guesses and both are turned down. 実は opens the real reason.",
+    "en": "A student tells her professor she wants to change her thesis topic. The survey problems are manageable and the topic is already narrow; while interviewing, she found that elderly shop owners use social media, and that interests her more."
+  },
+  {
+    "id": "l2-004",
+    "type": "l2",
+    "lv": 1,
+    "setup": "部屋を見に来た男の人と女の人が話しています。",
+    "q": "女の人は、どうしてこの部屋がいいと言っていますか。",
+    "lines": [
+      {"sp": "M", "t": "ここ、いいね。駅から歩いて五分だし、毎朝ずいぶん楽になるよ。"},
+      {"sp": "F", "t": "うん、それも助かるけど…。"},
+      {"sp": "M", "t": "それに、台所が広いじゃない。今の部屋の倍ぐらいあるよ。"},
+      {"sp": "F", "t": "料理するの、ほとんどあなたでしょ。私はそこはどっちでもいいかな。"},
+      {"sp": "M", "t": "はは、そうだね。でも、家賃がさっきの部屋より五千円高いんだよなあ。", "say": "はは、そうだね。でも、家賃がさっきの部屋よりごせんえん高いんだよなあ。"},
+      {"sp": "F", "t": "うん、それはそうなんだけど、私はこっちにしたいな。ほら、奥の部屋、見た？"},
+      {"sp": "M", "t": "ああ、あの小さい部屋？"},
+      {"sp": "F", "t": "そう。さっきの部屋は、どの部屋も大きな道路に面してたでしょ。私、週に三日は家で仕事してて、オンライン会議も多いから、車の音が入ると困るのよ。", "say": "そう。さっきの部屋は、どの部屋も大きな道路に面してたでしょ。私、週にみっかは家で仕事してて、オンライン会議も多いから、車の音が入ると困るのよ。"},
+      {"sp": "M", "t": "なるほどね。奥の部屋の窓の外は公園だから、静かだもんね。"},
+      {"sp": "F", "t": "うん。五千円高くても、それだけの価値はあると思う。", "say": "うん。ごせんえん高くても、それだけの価値はあると思う。"},
+      {"sp": "M", "t": "じゃあ、ここに決めようか。"}
+    ],
+    "c": ["静かに仕事ができる部屋があるから", "駅から歩いて五分しかかからないから", "さっきの部屋より家賃が安いから", "台所が広くて料理がしやすいから"],
+    "why": [
+      "\"車の音が入ると困るのよ\": she works from home three days a week with online meetings, and the back room looks onto a quiet park.",
+      "This is the man's point. She answers それも助かるけど and moves on.",
+      "The opposite: this flat costs 5,000 yen more, and she accepts that.",
+      "The man does the cooking; she says she does not mind either way about the kitchen."
+    ],
+    "cue": ["週に三日は家で仕事してて", "車の音が入ると困るのよ"],
+    "tell": "それも助かるけど means her reason is still coming. Listen for what she needs, not what he likes.",
+    "en": "A couple look at a flat. The man likes the short walk to the station and the big kitchen but worries about the rent; the woman wants it because the back room is quiet enough for her online meetings when she works from home."
+  },
+  {
+    "id": "l2-005",
+    "type": "l2",
+    "lv": 1,
+    "setup": "ラジオで、アナウンサーとパン屋の主人が話しています。",
+    "q": "パン屋の主人は、店を始めたころ、何が一番大変だったと言っていますか。",
+    "lines": [
+      {"sp": "F", "t": "今日は、駅前で人気のパン屋さん、「こむぎ堂」のご主人に来ていただきました。よろしくお願いします。", "say": "きょうは、駅前でにんきのパン屋さん、「こむぎどう」のご主人に来ていただきました。よろしくお願いします。"},
+      {"sp": "M", "t": "よろしくお願いします。"},
+      {"sp": "F", "t": "お店を開いて今年で十年だそうですね。始めたころは、やはり朝が早いのが大変でしたか。"},
+      {"sp": "M", "t": "そうですね、毎朝三時に起きるんですが、会社員のころから早起きだったので、それは意外と平気でした。", "say": "そうですね、毎朝さんじに起きるんですが、会社員のころから早起きだったので、それは意外と平気でした。"},
+      {"sp": "F", "t": "そうなんですか。では、パンの作り方を覚えるのが大変だったとか。"},
+      {"sp": "M", "t": "もちろん修業はしましたけど、パンを焼くのはもともと好きでしたから、苦労とは思わなかったですね。"},
+      {"sp": "F", "t": "では、何が一番…。"},
+      {"sp": "M", "t": "お客さんに来てもらうことです。最初の半年ぐらいは、一日にお客さんが十人も来ない日があって。焼いたパンがほとんど売れ残るんです。あのころは本当につらかったですね。", "say": "お客さんに来てもらうことです。最初の半年ぐらいは、いちにちにお客さんがじゅうにんも来ない日があって。焼いたパンがほとんど売れ残るんです。あのころは本当につらかったですね。"},
+      {"sp": "F", "t": "そこから、どうやって今のような人気のお店に？", "say": "そこから、どうやって今のようなにんきのお店に？"},
+      {"sp": "M", "t": "近所の保育園に、毎朝パンを届けるようになったんです。そうしたら、お母さんたちがお店にも寄ってくださるようになって。"},
+      {"sp": "F", "t": "なるほど、そこから口コミで広がっていったんですね。"}
+    ],
+    "c": ["お客さんがなかなか来なかったこと", "毎朝三時に起きなければならないこと", "パンの作り方を一から覚えること", "保育園に毎朝パンを届けること"],
+    "why": [
+      "\"お客さんに来てもらうことです\": for the first six months, some days fewer than ten customers came and most of the bread went unsold.",
+      "The host's guess. He was already an early riser, so it was 意外と平気: easier than expected.",
+      "He trained, but he always loved baking, so he did not see it as a hardship.",
+      "This is how he solved the problem, not the hard part."
+    ],
+    "cue": ["お客さんに来てもらうことです", "十人も来ない日があって"],
+    "tell": "The host offers two answers and he turns both down. The hard part comes right after 何が一番.",
+    "en": "A radio host interviews a baker. Getting up at three and learning to bake were not hard for him; the hardest thing was getting customers, until he began delivering bread to a nursery."
+  },
+  {
+    "id": "l2-006",
+    "type": "l2",
+    "lv": 1,
+    "setup": "喫茶店で、女の客と店の主人が話しています。",
+    "q": "店の主人は、どうして夜、店を早く閉めることにしましたか。",
+    "lines": [
+      {"sp": "F", "t": "マスター、入口の貼り紙、見ましたよ。来月から夜は六時までなんですね。", "say": "マスター、入口の貼り紙、見ましたよ。来月から夜はろくじまでなんですね。"},
+      {"sp": "M", "t": "ええ、そうなんですよ。長いこと十時までやってたんですけどね。", "say": "ええ、そうなんですよ。長いことじゅうじまでやってたんですけどね。"},
+      {"sp": "F", "t": "夜は、お客さん少ないんですか。"},
+      {"sp": "M", "t": "いや、それが、仕事帰りの方がけっこう来てくださるんですよ。だから、申し訳なくてね。", "say": "いや、それが、仕事帰りのかたがけっこう来てくださるんですよ。だから、申し訳なくてね。"},
+      {"sp": "F", "t": "じゃあ、アルバイトの人が足りないとか？"},
+      {"sp": "M", "t": "いやいや、学生さんが二人、よくやってくれてますよ。", "say": "いやいや、学生さんがふたり、よくやってくれてますよ。"},
+      {"sp": "F", "t": "最近、電気代も上がってますしね。"},
+      {"sp": "M", "t": "まあ、それは確かに痛いですけど、それで時間を変えるわけじゃないんです。実はね、来月から朝七時に開けることにしたんですよ。", "say": "まあ、それは確かに痛いですけど、それで時間を変えるわけじゃないんです。実はね、来月から朝しちじに開けることにしたんですよ。"},
+      {"sp": "F", "t": "え、七時に？", "say": "え、しちじに？"},
+      {"sp": "M", "t": "駅の向こうに大きなマンションができたでしょう。朝ごはんを食べられる店はないかって、よく聞かれるんですよ。でも、私一人で朝から夜までっていうのは、さすがに体がもちませんからね。", "say": "駅の向こうに大きなマンションができたでしょう。朝ごはんを食べられる店はないかって、よく聞かれるんですよ。でも、私ひとりで朝から夜までっていうのは、さすがに体がもちませんからね。"},
+      {"sp": "F", "t": "なるほど。じゃあ今度、会社に行く前に朝ごはんを食べに来ますね。"}
+    ],
+    "c": ["朝早く店を開けることにしたから", "夜に来るお客さんが少ないから", "アルバイトの人が足りないから", "電気代が前より高くなったから"],
+    "why": [
+      "\"来月から朝七時に開けることにしたんですよ\": he will open early for breakfast, and he cannot work alone from morning to night.",
+      "The customer's guess. He says plenty of people come in the evening.",
+      "The customer's guess. He says his two student staff do a good job.",
+      "He agrees it hurts, but それで時間を変えるわけじゃない: it is not why he changed the hours."
+    ],
+    "cue": ["それで時間を変えるわけじゃないんです", "来月から朝七時に開けることにしたんですよ"],
+    "tell": "〜わけじゃない rejects a reason and 実はね brings the true one. Here the reason is another change.",
+    "en": "A regular asks a cafe owner why he will close at six instead of ten. Evening trade, staff and power bills are not the reason; he is going to open at seven for breakfast and cannot run the cafe alone all day."
+  },
+  {
+    "id": "l2-007",
+    "type": "l2",
+    "lv": 2,
+    "setup": "会社で、女の課長と新しく入った男の人が話しています。",
+    "q": "課長は、男の人の何が一番問題だったと言っていますか。",
+    "lines": [
+      {"sp": "F", "t": "山下さん、ちょっといい？先週のA社の注文の件なんだけど。", "say": "やましたさん、ちょっといい？先週のエーしゃの注文の件なんだけど。"},
+      {"sp": "M", "t": "あ、はい。数を間違えてしまった件ですね。申し訳ありませんでした。"},
+      {"sp": "F", "t": "うん。でもね、間違えたこと自体は、そんなに気にしなくていいの。最初はみんなやるから。"},
+      {"sp": "M", "t": "はい…。"},
+      {"sp": "F", "t": "あと、山下さんの書類、ちょっと字が小さくて読みにくいかな。まあ、それは慣れてくれればいいんだけど。", "say": "あと、やましたさんの書類、ちょっと字が小さくて読みにくいかな。まあ、それは慣れてくれればいいんだけど。"},
+      {"sp": "M", "t": "すみません、気をつけます。"},
+      {"sp": "F", "t": "で、本題なんだけど。間違いに気づいたとき、自分で先方に電話して直したでしょう。"},
+      {"sp": "M", "t": "はい。ご迷惑をおかけしたので、すぐに直さなければと思いまして。"},
+      {"sp": "F", "t": "早く動いてくれたのはいいのよ。でも私は、三日後に先方から聞いて初めて知ったの。もっと大きな問題になってたら、会社として何もできなかったでしょう。", "say": "早く動いてくれたのはいいのよ。でも私は、みっかごに先方から聞いて初めて知ったの。もっと大きな問題になってたら、会社として何もできなかったでしょう。"},
+      {"sp": "M", "t": "あ…。"},
+      {"sp": "F", "t": "自分で何とかしようとする前に、まず一言、私に言ってほしいの。小さいことでもね。今日はそれだけ覚えておいて。", "say": "自分で何とかしようとする前に、まずひとこと、私に言ってほしいの。小さいことでもね。きょうはそれだけ覚えておいて。"},
+      {"sp": "M", "t": "はい、分かりました。"}
+    ],
+    "c": ["間違いを課長に知らせなかったこと", "注文の数を間違えたこと", "書類の字が小さくて読みにくいこと", "先方への連絡が遅れたこと"],
+    "why": [
+      "\"三日後に先方から聞いて初めて知ったの\": he fixed it with the client without telling her, so she heard about it three days later.",
+      "She says the mistake itself is nothing to worry about; everyone makes it at first.",
+      "She mentions it in passing; it will improve as he gets used to the work.",
+      "He called the client quickly, and she praises 早く動いてくれた. The one who heard late was the manager."
+    ],
+    "cue": ["三日後に先方から聞いて初めて知ったの", "まず一言、私に言ってほしいの"],
+    "tell": "本題 marks the main point. Track who was slow: he acted fast, but the boss heard last.",
+    "en": "A manager talks to a new employee about a wrong order. The mistake and the small text in his documents are minor; the real problem is that he fixed it with the client without telling her, so she only learned of it three days later."
+  },
+  {
+    "id": "l2-008",
+    "type": "l2",
+    "lv": 1,
+    "setup": "病院で、看護師と退院する男の人が話しています。",
+    "q": "男の人は、退院したあと、何に一番気をつけなければなりませんか。",
+    "lines": [
+      {"sp": "F", "t": "田中さん、明日退院ですね。おめでとうございます。", "say": "たなかさん、あした退院ですね。おめでとうございます。"},
+      {"sp": "M", "t": "ありがとうございます。やっと家に帰れます。"},
+      {"sp": "F", "t": "家に帰ってからのことなんですが、お薬は朝と夜、忘れずに飲んでくださいね。"},
+      {"sp": "M", "t": "はい。それは妻がちゃんと見てくれるので、大丈夫だと思います。"},
+      {"sp": "F", "t": "お風呂は、もう普通に入っていただいて大丈夫ですよ。"},
+      {"sp": "M", "t": "よかった。食事は、何を食べてもいいんですか。"},
+      {"sp": "F", "t": "ええ、特に制限はありません。ただ、お酒は一か月ぐらい控えてくださいね。", "say": "ええ、特に制限はありません。ただ、お酒はいっかげつぐらい控えてくださいね。"},
+      {"sp": "M", "t": "はい。あの、実は来週から仕事に戻ろうと思ってるんですが。"},
+      {"sp": "F", "t": "座ってするお仕事でしたよね。それなら大丈夫です。ただ、一番気をつけていただきたいのは、重い物を持たないことです。傷がまだ完全にはふさがっていませんから。"},
+      {"sp": "M", "t": "あ、そうか。週末に、弟の引っ越しを手伝う約束をしてたんですけど…。"},
+      {"sp": "F", "t": "それは絶対にだめです。少なくとも次の診察までは、お断りしてくださいね。"},
+      {"sp": "M", "t": "分かりました。弟に電話しておきます。"}
+    ],
+    "c": ["重い物を持たないこと", "薬を忘れずに飲むこと", "一か月ぐらいお酒を控えること", "しばらく仕事を休むこと"],
+    "why": [
+      "\"一番気をつけていただきたいのは、重い物を持たないことです\": the wound has not fully closed.",
+      "An instruction, but the nurse does not call it the most important, and his wife will check it.",
+      "Also an instruction, given with ただ, but it comes before the 一番 point.",
+      "The nurse says desk work is fine, so he can go back next week."
+    ],
+    "cue": ["一番気をつけていただきたいのは、重い物を持たないことです"],
+    "tell": "A list of instructions. The nurse marks the key one herself with 一番気をつけていただきたいのは.",
+    "en": "A nurse gives a man instructions before he leaves hospital: take his medicine and avoid alcohol for a month. Desk work is fine, but the most important thing is not to lift anything heavy, so he must cancel helping his brother move."
+  },
+  {
+    "id": "l2-009",
+    "type": "l2",
+    "lv": 2,
+    "setup": "家で、父親と娘が話しています。",
+    "q": "娘がひとり暮らしをしたい一番の理由は何ですか。",
+    "lines": [
+      {"sp": "F", "t": "お父さん、ちょっと話があるんだけど。私、来年の春から、ひとり暮らしをしようと思ってるの。"},
+      {"sp": "M", "t": "え、急にどうしたんだ。大学まで、ここから一時間もかからないだろう。"},
+      {"sp": "F", "t": "うん、通うのは別に大変じゃないの。"},
+      {"sp": "M", "t": "じゃあ、お母さんとまたけんかでもしたのか。"},
+      {"sp": "F", "t": "違うってば。お母さんとはうまくやってるよ。"},
+      {"sp": "M", "t": "なら、友達がみんなひとり暮らしだから、うらやましくなったんだろう。"},
+      {"sp": "F", "t": "うーん、それもちょっとはあるけど…。一番はね、お金の管理を自分でできるようになりたいの。"},
+      {"sp": "M", "t": "お金の管理？"},
+      {"sp": "F", "t": "私、今までお小遣いをもらって、欲しいものを買ってただけでしょ。家賃とか電気代とか、全部自分で払ってみないと、社会に出てから困ると思うんだ。"},
+      {"sp": "M", "t": "そうか…。でも、家賃はどうするんだ。"},
+      {"sp": "F", "t": "アルバイトの時間を増やしてもらえることになったの。足りない分だけ、少し貸してもらえないかな。ちゃんと返すから。"},
+      {"sp": "M", "t": "貸す、か。…分かった。お母さんにも話しておくよ。"}
+    ],
+    "c": ["お金の管理ができるようになりたいから", "大学に通うのに時間がかかるから", "母親との関係がうまくいっていないから", "ひとり暮らしの友達がうらやましいから"],
+    "why": [
+      "\"一番はね、お金の管理を自分でできるようになりたいの\": she wants to pay rent and bills herself before she starts work.",
+      "The father's guess. She says the commute is not hard.",
+      "The father's guess. She says she gets on well with her mother.",
+      "She admits a little of this (それもちょっとはある), but 一番は turns to the main reason."
+    ],
+    "cue": ["一番はね、お金の管理を自分でできるようになりたいの"],
+    "tell": "それもちょっとはあるけど is a partial yes. The question says 一番, so wait for 一番は.",
+    "en": "A daughter tells her father she wants to live alone from next spring. The commute is fine and she gets on with her mother; she admits she envies her friends a little, but mainly she wants to learn to manage money by paying her own bills."
+  },
+  {
+    "id": "l2-010",
+    "type": "l2",
+    "lv": 1,
+    "setup": "会社で、男の人と女の人が話しています。",
+    "q": "女の人は、どうして自転車で会社に来ることにしましたか。",
+    "lines": [
+      {"sp": "M", "t": "あれ、木村さん、ヘルメット？もしかして、自転車で来たの？"},
+      {"sp": "F", "t": "うん。先月から自転車通勤にしたの。"},
+      {"sp": "M", "t": "へえ。家から会社まで、けっこうあるでしょう。"},
+      {"sp": "F", "t": "四十分ぐらいかな。", "say": "よんじゅっぷんぐらいかな。"},
+      {"sp": "M", "t": "すごいね。やっぱり健康のため？運動不足だって、よく言ってたもんね。"},
+      {"sp": "F", "t": "うーん、結果的には体にいいんだけど、それが目的ってわけじゃないの。"},
+      {"sp": "M", "t": "じゃあ、交通費が浮くとか。"},
+      {"sp": "F", "t": "交通費は会社が出してくれるから、それは関係ないの。"},
+      {"sp": "M", "t": "そっか。じゃあ、電車の混雑がいやになったとか。"},
+      {"sp": "F", "t": "混んでるのは前からだし、もう慣れちゃった。それより、私の乗ってる線、とにかくよく止まるのよ。先月なんか三回も止まって、そのうち一回は大事な打ち合わせに間に合わなかったの。"},
+      {"sp": "M", "t": "ああ、それは困るね。"},
+      {"sp": "F", "t": "でしょ。自転車なら、雨の日以外は、毎日同じ時間に着けるから。"}
+    ],
+    "c": ["電車がよく止まるから", "健康のために運動したいから", "交通費を節約したいから", "電車の混雑がいやだから"],
+    "why": [
+      "\"私の乗ってる線、とにかくよく止まるのよ\": she once missed an important meeting when the train stopped.",
+      "The man's guess. Cycling is good for her as a result, but それが目的ってわけじゃない: it is not the aim.",
+      "The company pays her fare, so money is not the reason.",
+      "The trains have always been crowded and she is used to it."
+    ],
+    "cue": ["とにかくよく止まるのよ", "毎日同じ時間に着けるから"],
+    "tell": "混んでる and 止まる are both train problems. She is used to the crowds; the stops are the reason.",
+    "en": "A woman has started cycling to work. It is not for her health, the fare or the crowded trains; her line often stops, and she once missed an important meeting."
+  },
+  {
+    "id": "l2-011",
+    "type": "l2",
+    "lv": 2,
+    "setup": "ラジオで、翻訳家の女の人が話しています。",
+    "q": "女の人は、翻訳の仕事で一番難しいのはどんなことだと言っていますか。",
+    "lines": [
+      {"sp": "F", "t": "翻訳の仕事をしていると言うと、よく「難しい言葉がたくさん出てきて大変でしょう」と言われます。"},
+      {"sp": "F", "t": "でも、専門用語には、実はそれほど苦労しないんです。"},
+      {"sp": "F", "t": "辞書や資料で調べれば、たいてい正しい訳が見つかりますから。"},
+      {"sp": "F", "t": "長くて複雑な文も、時間はかかりますが、落ち着いて分けて考えれば、なんとかなります。"},
+      {"sp": "F", "t": "私が一番頭を悩ませるのは、冗談なんです。"},
+      {"sp": "F", "t": "例えば、小説の登場人物が、言葉の音を使ったしゃれを言ったとしますね。"},
+      {"sp": "F", "t": "意味だけを訳すと、読者はどこで笑えばいいのか分かりません。"},
+      {"sp": "F", "t": "かといって、説明を付け加えたら、もう面白くも何ともなくなってしまいます。"},
+      {"sp": "F", "t": "ですから、日本語の読者が同じように笑える、まったく別のしゃれを一から考えるんです。"},
+      {"sp": "F", "t": "一つの冗談に一週間かかったこともありますよ。"},
+      {"sp": "F", "t": "それでも、読者の方から「あそこで笑いました」というお便りをいただくと、苦労が全部報われる気がしますね。", "say": "それでも、読者のかたから「あそこで笑いました」というお便りをいただくと、苦労が全部報われる気がしますね。"}
+    ],
+    "c": ["冗談を面白いまま訳すこと", "専門用語の正しい訳を見つけること", "長くて複雑な文を訳すこと", "冗談に説明を付け加えること"],
+    "why": [
+      "\"私が一番頭を悩ませるのは、冗談なんです\": she has to invent a new pun that is just as funny in Japanese.",
+      "People expect this, but she says a dictionary or reference usually gives the right word.",
+      "It takes time, but she says it can be managed.",
+      "She avoids this, because an explanation kills the joke. It is the easy way out, not the hard part."
+    ],
+    "cue": ["私が一番頭を悩ませるのは、冗談なんです", "まったく別のしゃれを一から考えるんです"],
+    "tell": "でも and 実は reject what people expect. 一番頭を悩ませるのは gives the answer.",
+    "en": "A translator says technical terms and long sentences are manageable. What troubles her most is jokes: a pun translated for its meaning is not funny, so she invents a new one, once taking a week."
+  },
+  {
+    "id": "l2-012",
+    "type": "l2",
+    "lv": 2,
+    "setup": "ホテルのフロントで、男の客とホテルの人が話しています。",
+    "q": "男の人は、何に一番腹を立てていますか。",
+    "lines": [
+      {"sp": "M", "t": "すみません、1203号室の者ですけど。一時間ぐらい前に、エアコンが動かないって電話したんですけどね。", "say": "すみません、せんにひゃくさんごうしつの者ですけど。いちじかんぐらい前に、エアコンが動かないって電話したんですけどね。"},
+      {"sp": "F", "t": "大変申し訳ございません。すぐに確認いたします。"},
+      {"sp": "M", "t": "いや、エアコンが壊れたこと自体は、仕方ないと思ってるんですよ。機械なんですから。"},
+      {"sp": "F", "t": "恐れ入ります。"},
+      {"sp": "M", "t": "でも、電話したとき、「すぐに係の者が参ります」って言われたんですよ。それから一時間、誰も来ないし、何の連絡もない。", "say": "でも、電話したとき、「すぐに係の者が参ります」って言われたんですよ。それからいちじかん、誰も来ないし、なんの連絡もない。"},
+      {"sp": "F", "t": "誠に申し訳ございません。"},
+      {"sp": "M", "t": "部屋が暑いのは我慢できますけど、すぐ行くと言われて、ずっと待たされたまま放っておかれるのは、ちょっとね。"},
+      {"sp": "F", "t": "おっしゃるとおりでございます。ただいま、同じタイプのお部屋が空いておりますので、よろしければ、そちらにお移りいただけますが。", "say": "おっしゃるとおりでございます。ただいま、同じタイプのお部屋があいておりますので、よろしければ、そちらにお移りいただけますが。"},
+      {"sp": "M", "t": "じゃあ、そうしてください。明日は朝が早いんで、早く休みたいんです。", "say": "じゃあ、そうしてください。あしたは朝が早いんで、早く休みたいんです。"},
+      {"sp": "F", "t": "かしこまりました。すぐに新しいカードキーをお作りいたします。お荷物は係の者がお運びいたします。"}
+    ],
+    "c": ["頼んだのに誰も来なかったこと", "部屋のエアコンが壊れていたこと", "部屋が暑くて休めないこと", "フロントに電話がつながらなかったこと"],
+    "why": [
+      "\"それから一時間、誰も来ないし、何の連絡もない\": he was told someone would come at once and was left waiting.",
+      "He says the breakdown itself is 仕方ない: machines break.",
+      "He says he can put up with the heat (我慢できます).",
+      "His call got through and he was told someone would come. The problem came after the call."
+    ],
+    "cue": ["エアコンが壊れたこと自体は、仕方ないと思ってるんですよ", "それから一時間、誰も来ないし、何の連絡もない"],
+    "tell": "〜こと自体は仕方ない sets the obvious complaint aside. The anger is about what happened after.",
+    "en": "A hotel guest complains at the front desk. He accepts that the air conditioner broke and can bear the heat; what angers him is that he was promised someone at once and nobody came or called for an hour."
+  },
+  {
+    "id": "l2-013",
+    "type": "l2",
+    "lv": 2,
+    "setup": "テレビで、アナウンサーと農家の女の人が話しています。",
+    "q": "女の人は、いちごを作るようになって、何が一番うれしいと言っていますか。",
+    "lines": [
+      {"sp": "M", "t": "山田さんは五年前に、お米からいちごに切り替えられたそうですね。"},
+      {"sp": "F", "t": "ええ。父の代までは、ずっと米だったんですけどね。", "say": "ええ。父の代までは、ずっとこめだったんですけどね。"},
+      {"sp": "M", "t": "いちごにして、収入はずいぶん増えたんじゃありませんか。"},
+      {"sp": "F", "t": "いえ、それが、思ったほどじゃないんです。ハウスの暖房代もかかりますし、米のころとそんなに変わりませんね。", "say": "いえ、それが、思ったほどじゃないんです。ハウスの暖房代もかかりますし、こめのころとそんなに変わりませんね。"},
+      {"sp": "M", "t": "そうですか。では、お仕事が楽になったとか。"},
+      {"sp": "F", "t": "とんでもない。冬の間も毎朝五時から収穫ですから、前より忙しいくらいですよ。"},
+      {"sp": "M", "t": "それでも、続けていらっしゃるのは…。"},
+      {"sp": "F", "t": "米を作っていたころは、農協に出したら、それで終わりだったんです。誰が食べているのか、まったく分かりませんでした。", "say": "こめを作っていたころは、農協に出したら、それで終わりだったんです。誰が食べているのか、まったく分かりませんでした。"},
+      {"sp": "M", "t": "ああ、なるほど。"},
+      {"sp": "F", "t": "今は、いちご狩りに来たお客さんが、目の前で食べて「甘い！」って言ってくれるんです。子どもが手を真っ赤にして喜んでるのを見ると、疲れなんか忘れちゃいます。それが何よりですね。"},
+      {"sp": "M", "t": "来年からは、新しい品種にも挑戦されるそうですね。"},
+      {"sp": "F", "t": "ええ。うまくいくかどうか、今からどきどきしています。"}
+    ],
+    "c": ["食べる人の喜ぶ顔が見られること", "米のころより収入が増えたこと", "米のころより仕事が楽になったこと", "新しい品種に挑戦できること"],
+    "why": [
+      "\"子どもが手を真っ赤にして喜んでるのを見ると、疲れなんか忘れちゃいます。それが何よりですね\": she sees customers enjoy what she grew.",
+      "The announcer's guess. Income is about the same, because heating the greenhouses costs money.",
+      "The announcer's guess. She says she is busier than before.",
+      "Mentioned at the end as a plan, and she is nervous about it. 何より has already gone to the customers."
+    ],
+    "cue": ["目の前で食べて「甘い！」って言ってくれるんです", "それが何よりですね"],
+    "tell": "何より means best of all. The announcer's two guesses are turned down first with いえ and とんでもない.",
+    "en": "A farmer who switched from rice to strawberries says her income is about the same and the work is harder. What makes her happiest is seeing visitors, especially children, enjoy the strawberries in front of her."
+  },
+  {
+    "id": "l2-014",
+    "type": "l2",
+    "lv": 2,
+    "setup": "歯医者の受付の人が、留守番電話にメッセージを残しています。",
+    "q": "受付の人は、明日の治療について何と言っていますか。",
+    "lines": [
+      {"sp": "F", "t": "もしもし、さくら歯科の受付の高橋です。森様のお電話でよろしいでしょうか。"},
+      {"sp": "F", "t": "明日、十八日の午後三時からのご予約の件で、お電話いたしました。", "say": "あした、じゅうはちにちのごごさんじからのご予約の件で、お電話いたしました。"},
+      {"sp": "F", "t": "前回の診察のときに、次は奥の歯の治療の続きをするとお伝えしていたかと思います。"},
+      {"sp": "F", "t": "ですが、先生がレントゲンを見直しましたところ、奥の歯の周りの歯ぐきが少し腫れているようでして。"},
+      {"sp": "F", "t": "まず歯ぐきを治してから、奥の歯の治療に進んだほうがいいということになりました。"},
+      {"sp": "F", "t": "そのため、明日は、歯ぐきの治療だけをさせていただきます。", "say": "そのため、あしたは、歯ぐきの治療だけをさせていただきます。"},
+      {"sp": "F", "t": "レントゲンは前回撮ったもので十分ですので、明日撮り直すことはございません。", "say": "レントゲンは前回撮ったもので十分ですので、あした撮り直すことはございません。"},
+      {"sp": "F", "t": "お時間は変わりませんし、担当も今までどおり鈴木先生です。"},
+      {"sp": "F", "t": "それから、月が変わりましたので、受付で保険証をお見せください。"},
+      {"sp": "F", "t": "もしご都合が悪くなりましたら、今日の七時までにご連絡いただけますでしょうか。", "say": "もしご都合が悪くなりましたら、きょうのしちじまでにご連絡いただけますでしょうか。"},
+      {"sp": "F", "t": "それでは、失礼いたします。"}
+    ],
+    "c": ["歯ぐきの治療だけをする", "奥の歯の治療の続きをする", "奥の歯と歯ぐきの両方を治療する", "レントゲンを撮り直す"],
+    "why": [
+      "\"明日は、歯ぐきの治療だけをさせていただきます\": the gum is swollen, so it is treated first.",
+      "This was the plan from the last visit. It now comes later, after the gum heals.",
+      "だけ rules this out: tomorrow is the gum only.",
+      "The dentist looked again at the old X-ray; no new one is needed tomorrow."
+    ],
+    "cue": ["明日は、歯ぐきの治療だけをさせていただきます", "前回撮ったもので十分ですので"],
+    "tell": "ですが after the old plan signals the change. だけ limits tomorrow to one thing.",
+    "en": "A dental receptionist leaves a message. The plan was to continue work on a back tooth, but the gum around it is swollen, so tomorrow they will treat only the gum. The time, the dentist and the X-ray stay as they were."
+  },
+  {
+    "id": "l2-015",
+    "type": "l2",
+    "lv": 1,
+    "setup": "スーパーで、アナウンスが流れています。",
+    "q": "タイムセールについて、何が変わりましたか。",
+    "lines": [
+      {"sp": "F", "t": "ご来店中のお客様に、お知らせいたします。"},
+      {"sp": "F", "t": "本日、午後五時から精肉売り場で予定しておりました、牛肉のタイムセールについてのご案内です。", "say": "本日、ごごごじから精肉売り場で予定しておりました、牛肉のタイムセールについてのご案内です。"},
+      {"sp": "F", "t": "ただいま、精肉売り場の冷蔵ケースが故障しておりまして、修理を行っております。"},
+      {"sp": "F", "t": "修理には、まだしばらく時間がかかる見込みです。"},
+      {"sp": "F", "t": "そのため、本日のタイムセールは、一階正面入口横の特設コーナーにて行わせていただきます。"},
+      {"sp": "F", "t": "開始の時間は、予定どおり午後五時でございます。", "say": "開始の時間は、予定どおりごごごじでございます。"},
+      {"sp": "F", "t": "また、割引も変わらず、表示価格から三割引きとさせていただきます。"},
+      {"sp": "F", "t": "お一人様二パックまでという点も、これまでと変わりません。", "say": "おひとりさまふたパックまでという点も、これまでと変わりません。"},
+      {"sp": "F", "t": "お客様には大変ご迷惑をおかけいたしますが、ご理解のほど、よろしくお願いいたします。"},
+      {"sp": "F", "t": "なお、修理が終わりしだい、精肉売り場でも通常どおりお買い物いただけます。"}
+    ],
+    "c": ["セールを行う場所", "セールが始まる時間", "牛肉の割引の割合", "一人が買える数"],
+    "why": [
+      "\"一階正面入口横の特設コーナーにて行わせていただきます\": the meat counter's fridge is broken, so the sale moves.",
+      "予定どおり午後五時: the start time stays.",
+      "変わらず三割引き: the discount stays.",
+      "これまでと変わりません: the limit of two packs stays."
+    ],
+    "cue": ["一階正面入口横の特設コーナーにて行わせていただきます"],
+    "tell": "Announcements mark what stays with 予定どおり and 変わらず. The change is the item without them.",
+    "en": "A supermarket announces that the fridge at the meat counter is broken, so the 5 p.m. beef sale moves to a corner by the main entrance. The time, the 30 percent discount and the two-pack limit stay the same."
+  },
+  {
+    "id": "l2-016",
+    "type": "l2",
+    "lv": 2,
+    "setup": "大学の授業で、先生が話しています。",
+    "q": "先生は、よく眠るために一番大切なことは何だと言っていますか。",
+    "lines": [
+      {"sp": "M", "t": "今日から三回にわたって、睡眠について話します。", "say": "きょうから三回にわたって、睡眠について話します。"},
+      {"sp": "M", "t": "皆さんの中にも、夜なかなか眠れないという人がいるでしょう。"},
+      {"sp": "M", "t": "そういう人に理由を聞くと、たいてい「夕方コーヒーを飲んだから」とか、「寝る前にスマホを見ていたから」といった答えが返ってきます。"},
+      {"sp": "M", "t": "もちろん、どちらもまったく関係がないとは言えません。"},
+      {"sp": "M", "t": "ただ、研究を見ると、それ以上に影響の大きいことがあるんです。"},
+      {"sp": "M", "t": "それは、起きる時間が日によってばらばらだということです。"},
+      {"sp": "M", "t": "平日は七時に起きて、休みの日は昼過ぎまで寝ている。", "say": "平日はしちじに起きて、休みの日は昼過ぎまで寝ている。"},
+      {"sp": "M", "t": "これでは、体の中の時計が毎週ずれてしまうんですね。"},
+      {"sp": "M", "t": "平日の寝不足を休みの日にまとめて取り戻そうとするのは、むしろ逆効果なんです。"},
+      {"sp": "M", "t": "たとえ眠れない夜があっても、次の朝はいつもと同じ時間に起きる。"},
+      {"sp": "M", "t": "地味ですが、これが何よりの薬なんです。"},
+      {"sp": "M", "t": "今日は、なぜそう言えるのか、体の時計の仕組みから説明していきましょう。", "say": "きょうは、なぜそう言えるのか、体の時計の仕組みから説明していきましょう。"}
+    ],
+    "c": ["毎朝同じ時間に起きること", "夕方からコーヒーを飲まないこと", "寝る前にスマホを見ないこと", "休みの日にまとめて寝ること"],
+    "why": [
+      "\"次の朝はいつもと同じ時間に起きる\" and \"これが何よりの薬なんです\": a fixed wake-up time matters most.",
+      "Students give this reason. He says it is not unrelated, but something matters more.",
+      "Same as coffee: it plays a part, but it is not the main thing.",
+      "The opposite: catching up on sleep at the weekend is 逆効果, it makes things worse."
+    ],
+    "cue": ["それ以上に影響の大きいことがあるんです", "これが何よりの薬なんです"],
+    "tell": "関係がないとは言えません is a weak yes. それ以上に announces the bigger factor, and 何よりの marks it.",
+    "en": "A lecturer opens a series on sleep. Coffee and phones before bed play some part, but the biggest factor is waking at different times; sleeping late at weekends makes it worse, and getting up at the same time every day is the best cure."
+  },
+  {
+    "id": "l2-017",
+    "type": "l2",
+    "lv": 1,
+    "setup": "マンションの廊下で、女の人と隣の部屋の男の人が話しています。",
+    "q": "女の人は、何に困っていると言っていますか。",
+    "lines": [
+      {"sp": "F", "t": "あの、こんばんは。隣の佐藤です。今、ちょっとよろしいですか。"},
+      {"sp": "M", "t": "あ、こんばんは。どうかしました？"},
+      {"sp": "F", "t": "あの、言いにくいんですけど…音のことで。"},
+      {"sp": "M", "t": "あっ、すみません。うちの子ですよね。最近、部屋の中を走り回ってて。"},
+      {"sp": "F", "t": "いえいえ、お子さんの声は昼間だけですし、元気でいいなと思ってるんですよ。"},
+      {"sp": "M", "t": "そうですか…。じゃあ、テレビかな。サッカーの試合を夜中によく見るんで。"},
+      {"sp": "F", "t": "テレビは、ほとんど聞こえないですよ。そうじゃなくて、夜の十二時ごろ、洗濯機を回していらっしゃいますよね。", "say": "テレビは、ほとんど聞こえないですよ。そうじゃなくて、夜のじゅうにじごろ、洗濯機を回していらっしゃいますよね。"},
+      {"sp": "M", "t": "あ…はい。帰りが遅いもので、つい。"},
+      {"sp": "F", "t": "ちょうど私の寝室の壁の向こうが、お宅の洗面所みたいで、ゴトゴトっていう振動で目が覚めちゃうんです。私、朝の早い仕事なので…。"},
+      {"sp": "M", "t": "そうだったんですか。全然気がつかなくて、本当にすみません。これからは朝、出かける前に回すようにします。"},
+      {"sp": "F", "t": "こちらこそ、言いにくいことを言ってすみません。助かります。"}
+    ],
+    "c": ["夜中に洗濯機の音がすること", "子どもが部屋の中で走ること", "夜中にテレビの音がすること", "朝早く洗濯機を回されること"],
+    "why": [
+      "\"夜の十二時ごろ、洗濯機を回していらっしゃいますよね\": the shaking wakes her because her bedroom is next to his washroom.",
+      "The man's guess. She says the child is only heard in the daytime and she does not mind.",
+      "The man's guess. She can hardly hear the TV.",
+      "Washing in the morning is his plan from now on, not the problem."
+    ],
+    "cue": ["そうじゃなくて、夜の十二時ごろ、洗濯機を回していらっしゃいますよね"],
+    "tell": "The man guesses twice and she says no each time. そうじゃなくて brings the real complaint.",
+    "en": "A woman speaks to her neighbour about noise. His child and his TV do not bother her; his washing machine at midnight shakes the wall and wakes her, so he says he will run it in the morning."
+  },
+  {
+    "id": "l2-018",
+    "type": "l2",
+    "lv": 2,
+    "setup": "体育館で、バスケットボールのコーチと女の選手が話しています。",
+    "q": "コーチは、どうして女の選手を次の試合に最初から出さないと言っていますか。",
+    "lines": [
+      {"sp": "F", "t": "コーチ、ちょっといいですか。次の試合、私、先発じゃないって聞いたんですけど…。"},
+      {"sp": "M", "t": "ああ、そのことか。まあ、座って。"},
+      {"sp": "F", "t": "シュートが入らなくなってるからですか。最近、練習でも全然だめで。"},
+      {"sp": "M", "t": "いや、シュートには波があるもんだ。そこは心配してないよ。"},
+      {"sp": "F", "t": "じゃあ、一年生の田中さんのほうが調子がいいから…。"},
+      {"sp": "M", "t": "田中もよくやってるけど、それとこれとは別の話だ。"},
+      {"sp": "F", "t": "先週、試験で練習を休んだからですか。"},
+      {"sp": "M", "t": "あれは前から聞いてたし、関係ないよ。"},
+      {"sp": "F", "t": "じゃあ、どうして…。"},
+      {"sp": "M", "t": "足首だよ。先週の練習試合のあと、少し足を引きずってただろう。"},
+      {"sp": "F", "t": "あれは、もう大丈夫です。"},
+      {"sp": "M", "t": "本人はそう言うんだけどな。トレーナーの話だと、まだ完全には治ってないそうだ。ここで無理をして、来月の大会に出られなくなったら、そのほうが困るだろう。"},
+      {"sp": "F", "t": "…はい。"},
+      {"sp": "M", "t": "後半に少し出てもらうかもしれない。だから今週の練習は軽めにして、しっかり冷やしておけ。"}
+    ],
+    "c": ["足首がまだ治っていないから", "シュートの調子が悪いから", "一年生の選手のほうが調子がいいから", "先週の練習を休んだから"],
+    "why": [
+      "\"足首だよ\": the trainer says her ankle has not fully healed, and he does not want her to miss next month's tournament.",
+      "Her guess. He says shooting comes and goes and he is not worried.",
+      "Her guess. He says 田中 is doing well, but それとこれとは別: that is a separate matter.",
+      "Her guess. She missed practice for an exam, which he knew about in advance."
+    ],
+    "cue": ["足首だよ", "まだ完全には治ってないそうだ"],
+    "tell": "She guesses three times and he rejects each one. The reason comes short and blunt: 足首だよ.",
+    "en": "A player asks her coach why she is not starting the next game. It is not her shooting, a younger player or a missed practice; her ankle has not fully healed and he does not want to risk the tournament."
+  }
+]

@@ -1,0 +1,722 @@
+[
+  {
+    "id": "v4-001",
+    "type": "v4",
+    "w": "見直す",
+    "r": "みなおす",
+    "m": "to review, look at again; to think better of",
+    "s": "事故が続いたことを受けて、工場では安全対策を一から（　　）ことになった。",
+    "en": "After a series of accidents, the factory is going to review its safety measures from scratch.",
+    "c": ["見直す", "見守る", "見送る", "見逃す"],
+    "why": [
+      "見直す: to look at something again and rethink it. After accidents you go over the safety rules from the start (一から).",
+      "見守る means to watch over someone or something as it goes on (子どもを見守る). Rules are not watched over 'from scratch'.",
+      "見送る means to see someone off, or to shelve a plan. Shelving safety rules after accidents makes no sense, and 一から does not go with it.",
+      "見逃す means to miss seeing something, or to let a fault go. Nobody decides to miss rules on purpose."
+    ],
+    "tell": "Going over something again to fix it: 見直す. 一から見直す, 計画を見直す.",
+    "lv": 2
+  },
+  {
+    "id": "v4-002",
+    "type": "v4",
+    "w": "取り組む",
+    "r": "とりくむ",
+    "m": "to tackle, work on (a problem)",
+    "s": "この町では十年以上前から、住民と市が協力してごみの削減に（　　）いる。",
+    "en": "In this town, residents and the city have been working together to cut waste for more than ten years.",
+    "c": ["取り組んで", "取り込んで", "取り次いで", "取り締まって"],
+    "why": [
+      "取り組む: to work hard on a problem or goal over time, with に: 削減に取り組む, 問題に取り組む.",
+      "取り込む means to take something in (洗濯物を取り込む, data, ideas), and 取り込んでいる can mean 'busy, in a rush'. Neither works with 削減に.",
+      "取り次ぐ means to pass a message or call on to someone else (電話を取り次ぐ). Nothing is being passed on.",
+      "取り締まる means to crack down on wrongdoing, with を (違反を取り締まる). Cutting waste is a goal, not an offence."
+    ],
+    "tell": "Working steadily on a problem or goal: 〜に取り組む.",
+    "lv": 1
+  },
+  {
+    "id": "v4-003",
+    "type": "v4",
+    "w": "打ち明ける",
+    "r": "うちあける",
+    "m": "to confide, open up about",
+    "s": "長い間一人で悩んでいたことを、思い切って親友に（　　）。",
+    "en": "I plucked up the courage and told my best friend about something I had been worrying about alone for a long time.",
+    "c": ["打ち明けた", "打ち消した", "打ち出した", "打ち切った"],
+    "why": [
+      "打ち明ける: to tell someone a secret or worry you have kept to yourself. 思い切って and 親友に point to it.",
+      "打ち消す means to deny or cancel out (うわさを打ち消す). You do not deny a worry to a friend.",
+      "打ち出す means to put forward a plan or policy in public (方針を打ち出す). It is not used for telling a friend something private.",
+      "打ち切る means to cut something off before its end (連載を打ち切る). Nothing is being ended, and it does not take 親友に."
+    ],
+    "tell": "Telling someone a secret or worry you kept inside: 打ち明ける. 悩みを打ち明ける.",
+    "lv": 2
+  },
+  {
+    "id": "v4-004",
+    "type": "v4",
+    "w": "引き受ける",
+    "r": "ひきうける",
+    "m": "to take on, agree to do",
+    "s": "忙しい時期だったが、お世話になっている先輩の頼みなので、その仕事を（　　）ことにした。",
+    "en": "It was a busy time, but the request came from a senior colleague who has always looked after me, so I decided to take the job on.",
+    "c": ["引き受ける", "引き止める", "引き出す", "引き返す"],
+    "why": [
+      "引き受ける: to agree to take on a job or request. 頼み (a request) and ことにした point to saying yes.",
+      "引き止める means to stop someone from leaving (帰ろうとする客を引き止める). It is used for people, not work.",
+      "引き出す means to draw out money or someone's ability (預金を引き出す, 力を引き出す). It is not agreeing to a task.",
+      "引き返す means to turn back the way you came. It takes no object like 仕事を."
+    ],
+    "tell": "Saying yes to a job or request: 引き受ける. 仕事を引き受ける, 役を引き受ける.",
+    "lv": 1
+  },
+  {
+    "id": "v4-005",
+    "type": "v4",
+    "w": "抱える",
+    "r": "かかえる",
+    "m": "to hold in your arms; to have (a problem) on your hands",
+    "s": "地方の多くの中小企業が、人手不足という深刻な問題を（　　）いる。",
+    "en": "Many small and mid-sized companies in the regions are facing a serious problem: a shortage of workers.",
+    "c": ["抱えて", "支えて", "構えて", "蓄えて"],
+    "why": [
+      "抱える: to hold in your arms, and so to have a problem or burden on your hands. 問題を抱える is the set phrase.",
+      "支える means to hold up or support (家族を支える). Nobody supports a problem.",
+      "構える means to set up a shop or home, or to take a stance (店を構える). It does not go with 問題.",
+      "蓄える means to save up money or strength for later (資金を蓄える). A problem is not saved up."
+    ],
+    "tell": "Having a problem or worry on your hands: 問題を抱える, 悩みを抱える.",
+    "lv": 2
+  },
+  {
+    "id": "v4-006",
+    "type": "v4",
+    "w": "問い合わせる",
+    "r": "といあわせる",
+    "m": "to inquire, contact someone to ask",
+    "s": "注文した商品が一週間たってもまだ届かないので、メールで店に（　　）。",
+    "en": "The item I ordered still hadn't arrived after a week, so I emailed the shop to ask about it.",
+    "c": ["問い合わせた", "申し込んだ", "打ち合わせた", "言い付けた"],
+    "why": [
+      "問い合わせる: to contact someone to ask for information. A late order is a reason to ask the shop: 店に問い合わせる.",
+      "申し込む means to apply or sign up for something (講座に申し込む). You are asking about a parcel, not applying.",
+      "打ち合わせる means to go over plans together, with と (客と打ち合わせる). A parcel that has not come is not a meeting.",
+      "言い付ける means to give someone an order, or to tell on someone (先生に言い付ける). A late parcel calls for a question, not either of those."
+    ],
+    "tell": "Contacting someone to ask about something: 〜に問い合わせる. 店に問い合わせる.",
+    "lv": 1
+  },
+  {
+    "id": "v4-007",
+    "type": "v4",
+    "w": "乗り越える",
+    "r": "のりこえる",
+    "m": "to get over, overcome",
+    "s": "部員全員が力を合わせて、大会までのいくつもの困難を（　　）。",
+    "en": "All the club members pulled together and got through one difficulty after another on the way to the tournament.",
+    "c": ["乗り越えた", "乗り換えた", "乗り遅れた", "乗り出した"],
+    "why": [
+      "乗り越える: to climb over, and so to get through a hardship. 困難を乗り越える is the set phrase.",
+      "乗り換える means to change trains or switch to something else (電車を乗り換える). You do not switch hardships.",
+      "乗り遅れる means to miss a train or a trend, with に (終電に乗り遅れる). It does not take 困難を.",
+      "乗り出す means to set out on a new venture, with に (海外進出に乗り出す), or to lean forward. It does not take 困難を."
+    ],
+    "tell": "Getting through a hardship: 困難を乗り越える, 壁を乗り越える.",
+    "lv": 1
+  },
+  {
+    "id": "v4-008",
+    "type": "v4",
+    "w": "張り切る",
+    "r": "はりきる",
+    "m": "to be full of energy, be eager",
+    "s": "新しいプロジェクトのリーダーに選ばれて、彼は朝から（　　）いる。",
+    "en": "He has been picked to lead the new project, and he has been full of energy since the morning.",
+    "c": ["張り切って", "思い切って", "締め切って", "使い切って"],
+    "why": [
+      "張り切る: to be full of energy and eager to get going. Being picked as leader is a reason to be fired up.",
+      "思い切る means to make a bold decision, or to give up on something. It is used as 思い切って + verb, not as a state.",
+      "締め切る means to close a door, or to close applications at a deadline. A person is not 'closed' by a new role.",
+      "使い切る means to use something up completely (お金を使い切る). It needs an object and says nothing about mood."
+    ],
+    "tell": "Fired up and eager, often before a new task: 張り切る. 張り切って準備する.",
+    "lv": 1
+  },
+  {
+    "id": "v4-009",
+    "type": "v4",
+    "w": "呼びかける",
+    "r": "よびかける",
+    "m": "to call on, appeal to (people)",
+    "s": "電力不足が心配されるため、市は住民に節電への協力を（　　）いる。",
+    "en": "Because a power shortage is feared, the city is calling on residents to help by saving electricity.",
+    "c": ["呼びかけて", "呼び止めて", "呼び出して", "呼び寄せて"],
+    "why": [
+      "呼びかける: to call on people, often the public, to do something. 協力を呼びかける is the set phrase in the news.",
+      "呼び止める means to call out to someone to make them stop (警官に呼び止められる). It does not take 協力を.",
+      "呼び出す means to call someone to come to a place (職員室に呼び出す), or to page them. Help is not summoned this way.",
+      "呼び寄せる means to bring someone to where you are (家族を呼び寄せる). It is used for people, not for help."
+    ],
+    "tell": "Asking the public to do something: 〜に協力を呼びかける, 注意を呼びかける.",
+    "lv": 2
+  },
+  {
+    "id": "v4-010",
+    "type": "v4",
+    "w": "使いこなす",
+    "r": "つかいこなす",
+    "m": "to master (a tool), use with full skill",
+    "s": "祖父は八十歳になるが、買ったばかりのスマートフォンをもう上手に（　　）いる。",
+    "en": "My grandfather is eighty, but he is already handling the smartphone he just bought like an expert.",
+    "c": ["使いこなして", "使い分けて", "使い捨てて", "使い果たして"],
+    "why": [
+      "使いこなす: to use a tool fully and with skill. 上手に and 'already, at eighty' point to mastering it.",
+      "使い分ける means to pick between several things to suit each purpose (敬語を使い分ける). One phone gives nothing to choose between.",
+      "使い捨てる means to throw something away after use (使い捨てのカップ). Nobody throws away a new phone 'skilfully'.",
+      "使い果たす means to use up money or strength until none is left (貯金を使い果たす). It is not used for a device."
+    ],
+    "tell": "Using a tool with full skill: 使いこなす. Choosing between tools: 使い分ける.",
+    "lv": 2
+  },
+  {
+    "id": "v4-011",
+    "type": "v4",
+    "w": "妨げる",
+    "r": "さまたげる",
+    "m": "to disturb, get in the way of",
+    "s": "夜中まで続く工事の音が、近くに住む人々の眠りを（　　）いる。",
+    "en": "Construction noise that goes on into the middle of the night is disturbing the sleep of people who live nearby.",
+    "c": ["妨げて", "防いで", "塞いで", "断って"],
+    "why": [
+      "妨げる: to get in the way of something so it cannot go on smoothly. Noise that breaks sleep is 眠りを妨げる.",
+      "防ぐ means to stop something bad from happening, or to guard against it (事故を防ぐ). Sleep is not something bad, and the noise is guarding no one.",
+      "塞ぐ means to block an opening or a path (穴を塞ぐ, 道を塞ぐ). Sleep is not a hole or a road.",
+      "断る means to say no to a request or offer. Noise cannot turn down sleep."
+    ],
+    "tell": "Getting in the way of something good: 眠りを妨げる, 通行を妨げる. Stopping something bad: 防ぐ.",
+    "lv": 2
+  },
+  {
+    "id": "v4-012",
+    "type": "v4",
+    "w": "恵まれる",
+    "r": "めぐまれる",
+    "m": "to be blessed with, be lucky to have",
+    "s": "旅行中の三日間は天気に（　　）、毎日海で泳ぐことができた。",
+    "en": "We were lucky with the weather for all three days of the trip, so we could swim in the sea every day.",
+    "c": ["恵まれて", "頼まれて", "任されて", "囲まれて"],
+    "why": [
+      "恵まれる: to be blessed with something good, with に (天気に恵まれる, 才能に恵まれる). Good weather made the swimming possible.",
+      "頼まれる means to be asked to do something. Weather cannot ask anyone.",
+      "任される means to be put in charge of a job (仕事を任される). Weather does not hand out jobs.",
+      "囲まれる means to be surrounded by (自然に囲まれる). You can be surrounded by nature, but not by weather."
+    ],
+    "tell": "Lucky to have something good: 〜に恵まれる. 天気に恵まれる, 人に恵まれる.",
+    "lv": 1
+  },
+  {
+    "id": "v4-013",
+    "type": "v4",
+    "w": "生かす",
+    "r": "いかす",
+    "m": "to make good use of",
+    "s": "大学で学んだ知識を（　　）、将来は地元の企業で働きたいと考えている。",
+    "en": "I want to put what I learned at university to good use and work for a local company in the future.",
+    "c": ["生かして", "生やして", "生じて", "生み出して"],
+    "why": [
+      "生かす: to make good use of a skill or what you know. 知識を生かす, 経験を生かす are set phrases.",
+      "生やす means to grow hair or a beard (ひげを生やす). It is not used for knowledge.",
+      "生じる means a problem or change comes about (問題が生じる). It takes no object, so 知識を生じて is not Japanese.",
+      "生み出す means to create something new (新しい商品を生み出す). Knowledge you have already learned is not created again."
+    ],
+    "tell": "Putting a skill or knowledge to good use: 知識を生かす, 経験を生かす.",
+    "lv": 1
+  },
+  {
+    "id": "v4-014",
+    "type": "v4",
+    "w": "散らかる",
+    "r": "ちらかる",
+    "m": "to be messy, cluttered",
+    "s": "週末に子どもたちが遊んだあと、リビングがひどく（　　）いた。",
+    "en": "After the children had been playing at the weekend, the living room was a terrible mess.",
+    "c": ["散らかって", "散らばって", "崩れて", "ずれて"],
+    "why": [
+      "散らかる: a place is messy with things left all over it. The subject is the room: 部屋が散らかる.",
+      "散らばる means the things themselves are scattered (おもちゃが散らばる). The room cannot be the subject.",
+      "崩れる means something falls apart or collapses (山が崩れる). Play does not make a room collapse.",
+      "ずれる means something slips out of place or out of line (時間がずれる). It is not used for a whole room."
+    ],
+    "tell": "A place is messy: 部屋が散らかる. The things are scattered: 物が散らばる.",
+    "lv": 2
+  },
+  {
+    "id": "v4-015",
+    "type": "v4",
+    "w": "押し付ける",
+    "r": "おしつける",
+    "m": "to force (something) on someone",
+    "s": "自分の考えを相手に（　　）ばかりでは、話し合いはうまくいかない。",
+    "en": "If you only push your own ideas onto the other person, a discussion will not go well.",
+    "c": ["押し付ける", "押しかける", "押し切る", "押し込む"],
+    "why": [
+      "押し付ける: to force your idea, job or blame on someone else, with を and に (考えを人に押し付ける).",
+      "押しかける means to turn up somewhere uninvited (家に押しかける). It takes no object like 考えを.",
+      "押し切る means to push ahead in spite of opposition (反対を押し切る). Its object is the opposition, and it does not take 相手に.",
+      "押し込む means to cram a thing into a space (かばんに服を押し込む). Ideas are not stuffed into a person."
+    ],
+    "tell": "Forcing something on someone: AをBに押し付ける. 考え, 仕事, 責任を押し付ける.",
+    "lv": 2
+  },
+  {
+    "id": "v4-016",
+    "type": "v4",
+    "w": "切り替える",
+    "r": "きりかえる",
+    "m": "to switch, change over",
+    "s": "失敗したことはもう忘れて、気持ちを（　　）次の仕事に取りかかろう。",
+    "en": "Forget about the mistake now, switch your mindset, and let's get on with the next job.",
+    "c": ["切り替えて", "取り替えて", "言い換えて", "着替えて"],
+    "why": [
+      "切り替える: to switch from one mode or state to another. 気持ちを切り替える means putting a setback behind you and moving on.",
+      "取り替える means to swap one object for another (電池を取り替える). Feelings are not swapped like parts.",
+      "言い換える means to say the same thing in other words. Nothing is being reworded.",
+      "着替える means to change your clothes. It is only used for clothes."
+    ],
+    "tell": "Switching mood or mode: 気持ちを切り替える, 画面を切り替える. Swapping a part: 取り替える.",
+    "lv": 2
+  },
+  {
+    "id": "v4-017",
+    "type": "v4",
+    "w": "うっかり",
+    "r": "うっかり",
+    "m": "carelessly, without thinking",
+    "s": "友達との話に夢中になっていて、（　　）降りる駅を通り過ぎてしまった。",
+    "en": "I was so caught up talking with my friend that I carelessly went right past my stop.",
+    "c": ["うっかり", "こっそり", "がっかり", "ゆったり"],
+    "why": [
+      "うっかり: without paying attention, so you make a slip. Being lost in talk and てしまった fit a careless mistake.",
+      "こっそり means secretly, so no one notices. Missing your stop was not done on purpose.",
+      "がっかり means disappointed, and goes with する (結果にがっかりする). It does not describe how you missed a stop.",
+      "ゆったり means roomy or relaxed (ゆったりした服). It says nothing about a slip."
+    ],
+    "tell": "A careless slip: うっかり〜てしまう. うっかり忘れる, うっかり乗り過ごす.",
+    "lv": 1
+  },
+  {
+    "id": "v4-018",
+    "type": "v4",
+    "w": "いきいき",
+    "r": "いきいき",
+    "m": "lively, full of life",
+    "s": "好きな仕事に就いてから、姉は毎日（　　）していて、表情も明るくなった。",
+    "en": "Since she started a job she loves, my sister has been full of life every day, and she looks much brighter too.",
+    "c": ["いきいき", "いらいら", "うとうと", "ぶらぶら"],
+    "why": [
+      "いきいき: full of life and energy. A job she loves and a brighter face both point to it.",
+      "いらいら means irritated and on edge. That does not go with a brighter face.",
+      "うとうと means dozing off. It does not fit someone thriving in a job she loves.",
+      "ぶらぶら means wandering around, or idling with nothing to do. She has just started a job."
+    ],
+    "tell": "Full of life and energy: いきいき(と)する, いきいきと働く.",
+    "lv": 1
+  },
+  {
+    "id": "v4-019",
+    "type": "v4",
+    "w": "ぎっしり",
+    "r": "ぎっしり",
+    "m": "packed tight",
+    "s": "スーツケースに荷物が（　　）詰まっていて、もう何も入らない。",
+    "en": "The suitcase is packed solid with luggage, and nothing else will fit.",
+    "c": ["ぎっしり", "ぐっすり", "びっしょり", "すっきり"],
+    "why": [
+      "ぎっしり: packed tight, with no gaps. It goes with 詰まる and 並ぶ: ぎっしり詰まる.",
+      "ぐっすり means sleeping deeply (ぐっすり眠る). It is only used for sleep.",
+      "びっしょり means soaking wet (汗でびっしょり). A full suitcase is not wet.",
+      "すっきり means neat and clear, or refreshed. A case too full to take more is the opposite."
+    ],
+    "tell": "Packed tight with no room left: ぎっしり詰まる, 予定がぎっしり.",
+    "lv": 1
+  },
+  {
+    "id": "v4-020",
+    "type": "v4",
+    "w": "ざっと",
+    "r": "ざっと",
+    "m": "roughly; quickly, without detail",
+    "s": "体育館に集まった保護者は、（　　）数えて三百人ほどだった。",
+    "en": "At a rough count, about three hundred parents had gathered in the gym.",
+    "c": ["ざっと", "ぴったり", "きっと", "ほっと"],
+    "why": [
+      "ざっと: roughly, without going into detail. It goes with a rough count and ほど: ざっと数えて三百人ほど.",
+      "ぴったり means exactly. That clashes with ほど, which says the number is only rough.",
+      "きっと means 'surely', for a guess about what will happen (きっと晴れる). It cannot describe how you counted.",
+      "ほっと means relieved (ほっとする). It describes a feeling, not a way of counting."
+    ],
+    "tell": "A rough count or a quick look: ざっと数える, ざっと目を通す. Exact is ぴったり.",
+    "lv": 2
+  },
+  {
+    "id": "v4-021",
+    "type": "v4",
+    "w": "わざわざ",
+    "r": "わざわざ",
+    "m": "taking the trouble, going out of your way",
+    "s": "お忙しいところ、遠くから（　　）お越しいただき、ありがとうございます。",
+    "en": "Thank you for taking the trouble to come all this way when you are so busy.",
+    "c": ["わざわざ", "わざと", "ついでに", "たまたま"],
+    "why": [
+      "わざわざ: going out of your way to do something for someone. It goes with thanks: わざわざ来ていただいて.",
+      "わざと means on purpose, usually for something bad (わざと負ける). It does not go with thanks.",
+      "ついでに means while you are at it, on the way to something else. Coming 遠くから is the opposite of a side trip.",
+      "たまたま means by chance. You would not thank a guest for coming a long way by accident."
+    ],
+    "tell": "Taking the trouble, often in thanks: わざわざ. On purpose, often for something bad: わざと.",
+    "lv": 1
+  },
+  {
+    "id": "v4-022",
+    "type": "v4",
+    "w": "いよいよ",
+    "r": "いよいよ",
+    "m": "at last, finally (the awaited moment is here)",
+    "s": "三年かけて準備してきた新しい駅ビルが、（　　）明日オープンする。",
+    "en": "The new station building, three years in the making, finally opens tomorrow.",
+    "c": ["いよいよ", "ますます", "せいぜい", "たびたび"],
+    "why": [
+      "いよいよ: at last, the long-awaited moment is here or very near. It fits a big opening after three years of work.",
+      "ますます means more and more (ますます寒くなる). An opening day does not grow.",
+      "せいぜい means at most, or doing what little you can (せいぜい千円だ). It does not mark a moment.",
+      "たびたび means often, again and again. A building opens once."
+    ],
+    "tell": "The long-awaited moment has come: いよいよ明日, いよいよ本番. More and more: ますます.",
+    "lv": 2
+  },
+  {
+    "id": "v4-023",
+    "type": "v4",
+    "w": "しみじみ",
+    "r": "しみじみ",
+    "m": "deeply, from the heart",
+    "s": "久しぶりに故郷に帰り、家族のありがたさを（　　）感じた。",
+    "en": "Going back to my hometown after a long time, I felt deep down how lucky I am to have my family.",
+    "c": ["しみじみ", "はらはら", "ぞくぞく", "ひやひや"],
+    "why": [
+      "しみじみ: feeling something deeply and quietly, from the heart. It goes with 感じる and 思う about family, age or the past.",
+      "はらはら means anxious while watching something risky (試合をはらはらしながら見る). Gratitude is not anxiety.",
+      "ぞくぞく means shivers, from cold, fear or excitement. It is a body feeling, not quiet thanks.",
+      "ひやひや means nervous that something will go wrong (ばれないかひやひやする). It does not fit gratitude."
+    ],
+    "tell": "Feeling something deeply and quietly: しみじみ(と)感じる, しみじみ思う.",
+    "lv": 2
+  },
+  {
+    "id": "v4-024",
+    "type": "v4",
+    "w": "きっぱり",
+    "r": "きっぱり",
+    "m": "flatly, firmly",
+    "s": "どう考えても無理な頼みだったので、その場で（　　）断った。",
+    "en": "It was an impossible request however you looked at it, so I turned it down flatly on the spot.",
+    "c": ["きっぱり", "ぴったり", "ばったり", "すっきり"],
+    "why": [
+      "きっぱり: clearly and firmly, leaving no doubt. It goes with 断る, やめる and 言う.",
+      "ぴったり means exactly right, or fitting perfectly (サイズがぴったり). It does not describe a firm no.",
+      "ばったり means running into someone by chance (友人にばったり会う), or falling down suddenly.",
+      "すっきり means neat, clear or refreshed (気分がすっきりする). It is not a way of refusing."
+    ],
+    "tell": "A clear, firm no: きっぱり断る, きっぱりやめる.",
+    "lv": 2
+  },
+  {
+    "id": "v4-025",
+    "type": "v4",
+    "w": "とっさに",
+    "r": "とっさに",
+    "m": "on reflex, in an instant",
+    "s": "子どもが急に道に飛び出してきたので、運転手は（　　）ブレーキを踏んだ。",
+    "en": "A child suddenly ran out into the road, and the driver hit the brakes on reflex.",
+    "c": ["とっさに", "やけに", "いまに", "めったに"],
+    "why": [
+      "とっさに: in an instant, with no time to think. A child running out makes the driver react on reflex.",
+      "やけに means oddly or unusually (今日はやけに静かだ). It describes a state, not a quick reaction.",
+      "いまに means before long, about the future (いまに分かる). The braking has already happened.",
+      "めったに means rarely, and it needs a negative (めったにない). The sentence is about one quick reaction, not how often."
+    ],
+    "tell": "Reacting in an instant, with no time to think: とっさに. とっさに手を出す, とっさに隠れる.",
+    "lv": 2
+  },
+  {
+    "id": "v4-026",
+    "type": "v4",
+    "w": "てきぱき",
+    "r": "てきぱき",
+    "m": "briskly, efficiently",
+    "s": "新人の山田さんは、頼まれた仕事をいつも（　　）片付けるので、みんなに信頼されている。",
+    "en": "Yamada, our new hire, always gets through the work she is given quickly and efficiently, so everyone trusts her.",
+    "c": ["てきぱき", "はきはき", "のろのろ", "ばらばら"],
+    "why": [
+      "てきぱき: doing work quickly and efficiently, with no wasted moves. It goes with 片付ける and 働く, and earns trust.",
+      "はきはき means speaking clearly and confidently (はきはき答える). It is about how you talk, not how you work.",
+      "のろのろ means slowly and sluggishly. Slow work would not make everyone trust her.",
+      "ばらばら means scattered or in pieces (意見がばらばらだ). It does not describe a way of working."
+    ],
+    "tell": "Quick, efficient work: てきぱき. Clear, confident speech: はきはき.",
+    "lv": 2
+  },
+  {
+    "id": "v4-027",
+    "type": "v4",
+    "w": "配慮",
+    "r": "はいりょ",
+    "m": "consideration, care for others' needs",
+    "s": "この施設では、お年寄りや車いすの人への（　　）から、入り口の段差をなくした。",
+    "en": "Out of consideration for elderly people and wheelchair users, this facility removed the step at its entrance.",
+    "c": ["配慮", "遠慮", "配分", "注目"],
+    "why": [
+      "配慮: care and thought for other people's needs, which leads to action. 〜への配慮から means 'out of consideration for'.",
+      "遠慮 means holding back out of regard for others (遠慮して言わない). Here the facility acted; it did not hold back.",
+      "配分 means sharing out money, time or work (予算の配分). Nothing is being shared out here.",
+      "注目 means attention or notice (注目を集める). Watching people closely is not a reason to remove a step."
+    ],
+    "tell": "Thought for others that leads to action: 配慮. Holding back for others: 遠慮.",
+    "lv": 2
+  },
+  {
+    "id": "v4-028",
+    "type": "v4",
+    "w": "見込み",
+    "r": "みこみ",
+    "m": "expectation, prospect",
+    "s": "工事が順調に進んでいるため、新しい橋は予定より早く完成する（　　）だ。",
+    "en": "Work is going smoothly, so the new bridge is expected to be finished ahead of schedule.",
+    "c": ["見込み", "見本", "見出し", "見学"],
+    "why": [
+      "見込み: an expectation based on how things are going. 〜する見込みだ is how the news says 'is expected to'.",
+      "見本 means a sample or model to look at (商品の見本). It cannot follow 完成する.",
+      "見出し means a headline or heading (新聞の見出し). It is not a forecast.",
+      "見学 means a visit to see how something works (工場見学). It is not a forecast either."
+    ],
+    "tell": "A forecast in the news: 〜する見込みだ, 〜見込みがない. A sample is 見本.",
+    "lv": 2
+  },
+  {
+    "id": "v4-029",
+    "type": "v4",
+    "w": "油断",
+    "r": "ゆだん",
+    "m": "carelessness, dropping your guard",
+    "s": "試合に勝っていても、最後の一秒まで（　　）してはいけない。",
+    "en": "Even when you are winning, you must not let your guard down until the very last second.",
+    "c": ["油断", "我慢", "退屈", "反省"],
+    "why": [
+      "油断: dropping your guard because you feel safe. Being ahead is exactly when people do it: 油断してはいけない.",
+      "我慢 means putting up with something hard. Telling a winning side not to endure makes no sense.",
+      "退屈 means being bored. The warning is about carelessness, not boredom.",
+      "反省 means looking back on your own mistakes. It is not a danger while you are winning."
+    ],
+    "tell": "Dropping your guard because things look safe: 油断する. 油断大敵.",
+    "lv": 1
+  },
+  {
+    "id": "v4-030",
+    "type": "v4",
+    "w": "手配",
+    "r": "てはい",
+    "m": "arrangement, booking",
+    "s": "出張で使うホテルと新幹線の切符は、総務部が（　　）してくれる。",
+    "en": "The general affairs department books the hotels and bullet train tickets we need for business trips.",
+    "c": ["手配", "手入れ", "手直し", "手出し"],
+    "why": [
+      "手配: arranging what is needed, such as tickets, rooms or cars. 切符を手配する, ホテルを手配する.",
+      "手入れ means looking after something to keep it in good shape (庭の手入れ, 肌の手入れ). Tickets are not maintained.",
+      "手直し means fixing small faults in finished work (原稿を手直しする). Nothing here needs fixing.",
+      "手出し means meddling, or making the first move in a fight. It is never a service someone does for you."
+    ],
+    "tell": "Booking or arranging what is needed: 手配する. ホテル, 車, 切符を手配する.",
+    "lv": 2
+  },
+  {
+    "id": "v4-031",
+    "type": "v4",
+    "w": "根拠",
+    "r": "こんきょ",
+    "m": "basis, grounds",
+    "s": "彼の主張には、はっきりとした（　　）がないので、信じることはできない。",
+    "en": "His claim has no clear basis, so I cannot believe it.",
+    "c": ["根拠", "原因", "根気", "起源"],
+    "why": [
+      "根拠: the facts or reasons that back up a claim. 主張 and 信じることはできない point to missing evidence.",
+      "原因 means the cause of an event (事故の原因). A claim needs support, not a cause.",
+      "根気 means patience and staying power (根気がいる仕事). It is about people, not claims.",
+      "起源 means the origin of something old (文明の起源). A claim's backing is not its origin."
+    ],
+    "tell": "The facts behind a claim: 根拠. 根拠がない, 根拠を示す. The cause of an event: 原因.",
+    "lv": 2
+  },
+  {
+    "id": "v4-032",
+    "type": "v4",
+    "w": "分担",
+    "r": "ぶんたん",
+    "m": "sharing (work), splitting tasks",
+    "s": "我が家では、料理や掃除などの家事を夫婦で（　　）している。",
+    "en": "In our home, my husband and I share the housework, such as cooking and cleaning.",
+    "c": ["分担", "分解", "分析", "分別"],
+    "why": [
+      "分担: splitting work so each person takes a part. 家事を分担する, 費用を分担する.",
+      "分解 means taking a machine apart (時計を分解する). Chores are not taken apart.",
+      "分析 means studying something closely by breaking it down (データを分析する). Doing chores is not studying them.",
+      "分別 (ぶんべつ) means sorting things such as rubbish into types (ごみを分別する). Chores are shared, not sorted."
+    ],
+    "tell": "Each person taking a part of the work: 分担する. 家事を分担する.",
+    "lv": 1
+  },
+  {
+    "id": "v4-033",
+    "type": "v4",
+    "w": "把握",
+    "r": "はあく",
+    "m": "grasp, understanding (of a situation)",
+    "s": "新しく来た部長は、まず各部署の現状を（　　）することから始めた。",
+    "en": "The new department head began by getting a clear picture of where each section stood.",
+    "c": ["把握", "確保", "獲得", "採用"],
+    "why": [
+      "把握: getting a full and accurate grasp of a situation. 現状を把握する is the set phrase at work.",
+      "確保 means securing something you need, such as seats, staff or money (人員を確保する). The present state of things is not secured.",
+      "獲得 means winning or gaining something through effort (メダルを獲得する). A situation is not won.",
+      "採用 means hiring a person or adopting an idea (新人を採用する). It does not fit looking into a situation."
+    ],
+    "tell": "Getting a clear grasp of a situation: 把握する. 現状を把握する, 状況を把握する.",
+    "lv": 2
+  },
+  {
+    "id": "v4-034",
+    "type": "v4",
+    "w": "工夫",
+    "r": "くふう",
+    "m": "devising a better way, ingenuity",
+    "s": "狭い部屋でも、収納の仕方を（　　）すれば、ずいぶん広く使える。",
+    "en": "Even in a small room, if you get creative with how you store things, you can use the space much more freely.",
+    "c": ["工夫", "工事", "加工", "工作"],
+    "why": [
+      "工夫: thinking up a clever way to do something better. 仕方を工夫する is the usual pair.",
+      "工事 means construction work on a road or building. Changing how you store things is not building work.",
+      "加工 means processing a material into a product (木材を加工する). A way of storing is not a material.",
+      "工作 means making things by hand, as in a school craft class, or plotting behind the scenes. Neither fits."
+    ],
+    "tell": "Thinking up a better way: 工夫する. 〜の仕方を工夫する.",
+    "lv": 1
+  },
+  {
+    "id": "v4-035",
+    "type": "v4",
+    "w": "ベテラン",
+    "r": "ベテラン",
+    "m": "veteran, old hand",
+    "s": "この病院には、看護師として三十年以上働いている（　　）が何人もいる。",
+    "en": "This hospital has several veterans who have worked as nurses for over thirty years.",
+    "c": ["ベテラン", "アマチュア", "ゲスト", "ファン"],
+    "why": [
+      "ベテラン: someone with long experience in their job. Thirty years as a nurse is the cue.",
+      "アマチュア means an amateur who does something as a hobby. A nurse working for thirty years is a professional.",
+      "ゲスト means a guest, for example on a TV show. Staff who work at a hospital are not guests.",
+      "ファン means a fan of a team or singer. It has nothing to do with years at work."
+    ],
+    "tell": "Someone with long experience at their job: ベテラン. ベテランの職人, ベテラン社員.",
+    "lv": 1
+  },
+  {
+    "id": "v4-036",
+    "type": "v4",
+    "w": "ターゲット",
+    "r": "ターゲット",
+    "m": "target (audience), the group aimed at",
+    "s": "この化粧品は、二十代の働く女性を（　　）にして開発された。",
+    "en": "This cosmetics line was developed with working women in their twenties as its target.",
+    "c": ["ターゲット", "ゴール", "ポイント", "ターミナル"],
+    "why": [
+      "ターゲット: the group of people a product or campaign is aimed at. 〜をターゲットにする.",
+      "ゴール means a goal: the finish line, or an aim you reach. Customers are not a finish line.",
+      "ポイント means a key point, or points on a card. It does not name who a product is for.",
+      "ターミナル means a terminal: a station or airport building where routes meet. It has nothing to do with customers."
+    ],
+    "tell": "The group something is aimed at: ターゲット. 若者をターゲットにした商品.",
+    "lv": 1
+  },
+  {
+    "id": "v4-037",
+    "type": "v4",
+    "w": "アピール",
+    "r": "アピール",
+    "m": "appeal; showing off your strengths",
+    "s": "面接では、自分の長所やこれまでの経験をうまく（　　）することが大切だ。",
+    "en": "In a job interview, it is important to present your strengths and past experience well.",
+    "c": ["アピール", "アドバイス", "アナウンス", "リクエスト"],
+    "why": [
+      "アピール: putting your good points forward so others notice them. 長所をアピールする is the interview phrase.",
+      "アドバイス means advice you give someone else. You do not advise your own strengths.",
+      "アナウンス means an announcement over a speaker, as at a station. It is not how you sell yourself.",
+      "リクエスト means a request, such as for a song. Strengths are shown, not requested."
+    ],
+    "tell": "Showing your good points so others notice: アピールする. 長所をアピールする.",
+    "lv": 1
+  },
+  {
+    "id": "v4-038",
+    "type": "v4",
+    "w": "タイミング",
+    "r": "タイミング",
+    "m": "timing, the right moment",
+    "s": "謝ろうと思っていたが、（　　）が悪くて、なかなか話しかけられなかった。",
+    "en": "I meant to apologise, but the timing was never right, so I could not bring myself to speak to her.",
+    "c": ["タイミング", "バランス", "スピード", "レベル"],
+    "why": [
+      "タイミング: the right moment to do something. タイミングが悪い means it never felt like the right moment.",
+      "バランス means balance between things (栄養のバランス). It has nothing to do with when to speak.",
+      "スピード means speed. It is fast or slow, not a moment for starting a talk.",
+      "レベル means a level or standard (レベルが高い). It does not describe a moment."
+    ],
+    "tell": "The right moment: タイミングがいい, タイミングが悪い, タイミングを見る.",
+    "lv": 1
+  },
+  {
+    "id": "v4-039",
+    "type": "v4",
+    "w": "リード",
+    "r": "リード",
+    "m": "lead (being ahead in a game)",
+    "s": "サッカーの試合は前半を終えて、日本チームが二対〇で（　　）している。",
+    "en": "At half-time in the football match, Japan is leading two to nil.",
+    "c": ["リード", "オーバー", "カバー", "パス"],
+    "why": [
+      "リード: being ahead in a match or race. 二対〇でリードする means being two goals up.",
+      "オーバー means going over a limit (予算をオーバーする). A score is not a limit.",
+      "カバー means covering for someone or something (ミスをカバーする). It does not describe the score.",
+      "パス means passing the ball, or passing a test. It does not tell you who is ahead."
+    ],
+    "tell": "Being ahead in a game: リードする. 二点リード, 大きくリードする.",
+    "lv": 2
+  },
+  {
+    "id": "v4-040",
+    "type": "v4",
+    "w": "キープ",
+    "r": "キープ",
+    "m": "keeping, holding (something as it is)",
+    "s": "この水筒は、冷たい飲み物の温度を半日ほど（　　）することができる。",
+    "en": "This flask can hold a cold drink at the same temperature for about half a day.",
+    "c": ["キープ", "ストップ", "チェンジ", "カット"],
+    "why": [
+      "キープ: keeping something in the same state, or holding on to it. 温度をキープする, 席をキープする.",
+      "ストップ means stopping something that is moving (作業をストップする). A temperature is held, not stopped.",
+      "チェンジ means changing one thing for another. A flask's job is the opposite: no change.",
+      "カット means cutting or reducing (費用をカットする). A flask does not cut the temperature."
+    ],
+    "tell": "Keeping something as it is: キープする. 温度, ペース, 席をキープする.",
+    "lv": 2
+  }
+]

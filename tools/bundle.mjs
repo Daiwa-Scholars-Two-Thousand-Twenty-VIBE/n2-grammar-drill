@@ -6,7 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
-import { ROOT, CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, readJSON, validateItems, validateKanji, validateVocab, validatePassages } from "./lib.mjs";
+import { ROOT, CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, textFiles, listenFiles, readJSON, validateItems, validateKanji, validateVocab, validatePassages, validateTexts, validateListening, charCount, plainText } from "./lib.mjs";
 
 const report = process.argv.includes("--report");
 const catalog = loadCatalog();
@@ -32,12 +32,41 @@ for (const file of vocabFiles()) {
   errors.push(...validateVocab(items, file, seen));
   if (Array.isArray(items)) vocab.push(...items);
 }
+// A notice's length, for reading speed: its title and every block, tables cell by cell.
+const noticeChars = (p) =>
+  charCount(p.title || "") +
+  p.blocks.reduce((a, b) => a + [b.h, b.p, b.note, ...(b.ul || []), ...(b.table || []).flat()].filter(Boolean).reduce((x, t) => x + charCount(t), 0), 0);
 const passages = [];
 for (const file of passageFiles()) {
   const list = readJSON(file);
   errors.push(...validatePassages(list, file, seen));
-  if (Array.isArray(list)) passages.push(...list);
+  if (Array.isArray(list)) passages.push(...list.map((p) => ({ ...p, chars: noticeChars(p) })));
 }
+
+// Reading texts (問題10 to 13) and listening scripts (聴解 問題1 to 5). `chars` is stored for reading speed.
+const texts = [];
+for (const file of textFiles()) {
+  const list = readJSON(file);
+  errors.push(...validateTexts(list, file, seen));
+  if (Array.isArray(list)) texts.push(...list.map((p) => ({ ...p, chars: p.texts ? p.texts.reduce((a, t) => a + charCount(t.text), 0) : charCount(p.text || "") })));
+}
+const listen = [];
+for (const file of listenFiles()) {
+  const list = readJSON(file);
+  errors.push(...validateListening(list, file, seen));
+  if (Array.isArray(list)) listen.push(...list);
+}
+// Audio made by tools/build_audio.py, which remakes an item whenever its script changes (rerun it after
+// editing a script). `h` is that script's hash: it goes on the audio URL, so a remade file is fetched fresh.
+const audioFile = path.join(CONTENT, "audio.json");
+const audioAll = fs.existsSync(audioFile) ? readJSON(audioFile) : {};
+const audio = {};
+for (const it of listen) {
+  const a = audioAll[it.id];
+  if (a && fs.existsSync(path.join(ROOT, "audio", `${it.id}.m4a`))) audio[it.id] = { secs: a.secs, h: a.h, ...(a.order ? { order: a.order } : {}) };
+}
+const tipsFile = path.join(CONTENT, "read_tips.json");
+const tips = fs.existsSync(tipsFile) ? readJSON(tipsFile) : null;
 
 // The same sentence must not appear twice anywhere (web or deck).
 const norm = (s) => s.replace(/[\s（）()「」『』、。・]/g, "");
@@ -77,6 +106,10 @@ const data = {
   glyphs: kanji.glyphs,
   vocab,
   passages,
+  texts,
+  listen,
+  audio,
+  tips,
 };
 const json = JSON.stringify(data);
 const version = crypto.createHash("sha1").update(json).digest("hex").slice(0, 8);
@@ -88,6 +121,10 @@ console.log(`✓ js/data.js ${version}: ${byType("p7")} 問題7 · ${byType("p8"
 console.log(`  Anki pool (not in web bundle): ${anki.length} items`);
 console.log(`  Kanji gap: ${kanji.kanji.length} kanji · ${kanji.kanji.reduce((a, x) => a + x.words.length, 0)} words`);
 const vType = (t) => vocab.filter((q) => q.type === t).length;
-console.log(`  Vocab: ${vType("v3")} 問題3 · ${vType("v5")} 問題5 · ${vType("v6")} 問題6 · ${passages.length} 問題14 notices`);
+console.log(`  Vocab: ${vType("v3")} 問題3 · ${vType("v4")} 問題4 · ${vType("v5")} 問題5 · ${vType("v6")} 問題6 · ${passages.length} 問題14 notices`);
+const tType = (t) => texts.filter((p) => p.type === t).length;
+const lType = (t) => listen.filter((p) => p.type === t).length;
+console.log(`  Reading: ${tType("r10")} 問題10 · ${tType("r11")} 問題11 · ${tType("r12")} 問題12 · ${tType("r13")} 問題13`);
+console.log(`  Listening: ${lType("l1")} 問題1 · ${lType("l2")} 問題2 · ${lType("l3")} 問題3 · ${lType("l4")} 問題4 · ${lType("l5")} 問題5 · audio for ${Object.keys(audio).length}`);
 if (thin.length) console.log(`  Points with fewer than 2 web questions: ${thin.join(", ")}`);
 if (report) for (const [id, c] of Object.entries(cover)) console.log(`  ${id.padEnd(6)} p7 ${c.p7}  p8 ${c.p8}  p9 ${c.p9}`);

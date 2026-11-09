@@ -15,9 +15,16 @@
   // Kanji items (kr reading, kw writing, km meaning) should be near-instant: 12 s.
   // Vocab: 語形成 (v3) is one affix, 言い換え (v5) one word, 用法 (v6) four sentences to read.
   // 情報検索 (r14) is per question, and the first one includes reading the notice.
-  const TARGET = { p7: 25, p8: 50, p9: 60, kr: 12, kw: 12, km: 12, v3: 20, v5: 25, v6: 45, r14: 240 };
+  // Reading (r10 to r13) is per question, with the reading time shared out: a 問題11 text and its three
+  // questions should take about 6 minutes. Listening (l1 to l5) is the time to answer after the audio ends.
+  const TARGET = {
+    p7: 25, p8: 50, p9: 60, kr: 12, kw: 12, km: 12, v3: 20, v4: 25, v5: 25, v6: 45, r14: 240,
+    r10: 150, r11: 120, r12: 210, r13: 200, l1: 15, l2: 15, l3: 15, l4: 10, l5: 20,
+  };
+  // Exam pace for a whole text and its questions, in seconds. Together about 55 minutes for 問題10 to 14.
+  const PACE = { r10: 150, r11: 360, r12: 420, r13: 600, r14: 420 };
   // Which day log each store writes to.
-  const DAYS = { points: "days", kanji: "kdays", vocab: "vdays", reading: "rdays" };
+  const DAYS = { points: "days", kanji: "kdays", vocab: "vdays", reading: "rdays", listen: "ldays" };
 
   const pad = (n) => String(n).padStart(2, "0");
   function dayStr(d) {
@@ -58,9 +65,11 @@
   };
 
   // Grammar lives in `points` and `days`; kanji in `kanji` and `kdays`; vocab in `vocab` and
-  // `vdays`; 情報検索 answers in `reading` and `rdays`. Same shape everywhere.
+  // `vdays`; reading answers (問題10 to 14) in `reading` and `rdays`; listening in `listen` and `ldays`.
+  // Same shape everywhere. Three logs hold entries keyed by a unique id: `rlog` (one per text read:
+  // time, length, score), `hours` (time logged by hand) and `mocks` (full mock scores).
   function emptyState() {
-    return { v: 2, points: {}, qs: {}, conf: {}, days: {}, kanji: {}, kdays: {}, vocab: {}, vdays: {}, reading: {}, rdays: {} };
+    return { v: 2, points: {}, qs: {}, conf: {}, days: {}, kanji: {}, kdays: {}, vocab: {}, vdays: {}, reading: {}, rdays: {}, listen: {}, ldays: {}, rlog: {}, hours: {}, mocks: {} };
   }
   function pointState(state, id, store = "points") {
     const box = state[store] || (state[store] = {});
@@ -375,7 +384,7 @@
   // ---------- vocabulary (問題3, 5, 6) and 情報検索 (問題14) ----------
   // Each vocab item is its own unit of memory: one stem and affix, one word in a sentence, or one
   // word in four sentences. Same boxes as grammar, kept in the `vocab` store.
-  const VTYPES = ["v3", "v5", "v6"];
+  const VTYPES = ["v3", "v4", "v5", "v6"];
 
   // Take the groups in turn (one of each type, then the next of each), keeping order inside a group.
   function roundRobin(items, keyOf) {
@@ -422,11 +431,80 @@
 
   // The 情報検索 notice met least often (by its first question), ties broken at random.
   function pickPassage({ state, passages, rng = Math.random }) {
-    if (!passages.length) return null;
-    const seen = (p) => (state.qs[`${p.id}#1`] ? state.qs[`${p.id}#1`].seen : 0);
-    const min = Math.min(...passages.map(seen));
-    const tied = passages.filter((p) => seen(p) === min);
-    return tied[Math.floor(rng() * tied.length)];
+    return leastRead({ state, texts: passages, n: 1, rng })[0] || null;
+  }
+
+  // ---------- reading texts (問題10 to 14) ----------
+  // A text is not a unit of memory (you would remember the answers), so texts are served least-read
+  // first, and the oldest read first among those. `n` texts of whatever list is passed in.
+  const readCount = (state, p) => (state.qs[`${p.id}#1`] ? state.qs[`${p.id}#1`].seen : 0);
+  function leastRead({ state, texts, n = 1, rng = Math.random }) {
+    const last = (p) => (state.qs[`${p.id}#1`] && state.qs[`${p.id}#1`].last) || "";
+    return shuffle(texts, rng)
+      .sort((a, b) => readCount(state, a) - readCount(state, b) || (last(a) < last(b) ? -1 : last(a) > last(b) ? 1 : 0))
+      .slice(0, n);
+  }
+  // Today's reading: one set, the type taken in turn so a week covers the whole section.
+  // A 問題10 day is two short texts.
+  const READ_CYCLE = ["r10", "r11", "r12", "r10", "r13", "r11", "r14"];
+  function buildReadingDaily({ state, texts, today, rng = Math.random }) {
+    const daysRead = new Set(Object.values(state.rlog || {}).filter((e) => !e.del && e.d < today).map((e) => e.d)).size;
+    for (let k = 0; k < READ_CYCLE.length; k++) {
+      const type = READ_CYCLE[(daysRead + k) % READ_CYCLE.length];
+      const of = texts.filter((p) => p.type === type);
+      if (of.length) return leastRead({ state, texts: of, n: type === "r10" ? 2 : 1, rng });
+    }
+    return [];
+  }
+  // The reading part of the paper: 問題10 ×5, 11 ×3, 12, 13 and 14 ×1 each. About 55 minutes.
+  // `half` is a 25-minute version: 問題10 ×2, 11 ×1, 13 ×1.
+  function buildReadingMock({ state, texts, half = false, rng = Math.random }) {
+    const plan = half ? [["r10", 2], ["r11", 1], ["r13", 1]] : [["r10", 5], ["r11", 3], ["r12", 1], ["r13", 1], ["r14", 1]];
+    return plan.flatMap(([t, n]) => leastRead({ state, texts: texts.filter((p) => p.type === t), n, rng }));
+  }
+
+  // ---------- listening (聴解 問題1 to 5) ----------
+  // Spoken choices are read in a fixed order, made once when the audio is made: the right one (c[0])
+  // goes to position idHash % n. tools/build_audio.py uses the same rule.
+  const idHash = (s) => [...String(s)].reduce((a, ch, i) => a + ch.charCodeAt(0) * (i + 1), 0);
+  function spokenOrder(id, n) {
+    const p = idHash(id) % n;
+    const rest = Array.from({ length: n - 1 }, (_, i) => i + 1);
+    return [...rest.slice(0, p), 0, ...rest.slice(p)];
+  }
+  // Items heard least, then longest ago. Items you got wrong come back first once three days have passed.
+  function leastHeard({ state, items, n, today = "", rng = Math.random }) {
+    // 問題5 items keep one record per question; the first stands for the item.
+    const rec = (it) => (state.listen || {})[it.id] || (state.listen || {})[`${it.id}#1`] || null;
+    const heard = (it) => (rec(it) ? rec(it).seen : 0);
+    const last = (it) => (rec(it) && rec(it).last) || "";
+    const retry = (it) => rec(it) && rec(it).streak === 0 && today && rec(it).last <= addDays(today, -3);
+    return shuffle(items, rng)
+      .sort((a, b) => (retry(b) ? 1 : 0) - (retry(a) ? 1 : 0) || heard(a) - heard(b) || (last(a) < last(b) ? -1 : last(a) > last(b) ? 1 : 0))
+      .slice(0, n);
+  }
+  // Today's listening: `size` items, mostly 問題1, 2 and 4, with one 問題3 or 問題5 in turn.
+  function buildListenDaily({ state, items, today, size = 8, rng = Math.random }) {
+    const days = Object.keys(state.ldays || {}).filter((d) => d < today).length;
+    const share = { l1: 2, l2: 2, l4: 3, [days % 2 ? "l5" : "l3"]: 1 };
+    const scale = size / 8;
+    const out = [];
+    for (const t of ["l1", "l2", "l3", "l4", "l5"]) {
+      const of = items.filter((it) => it.type === t);
+      const want = Math.round((share[t] || 0) * scale);
+      if (want && of.length) out.push(...leastHeard({ state, items: of, n: want, today, rng }));
+    }
+    return out;
+  }
+  // The listening part of the paper, in its order. Full: 問題1 ×5, 2 ×6, 3 ×5, 4 ×12, 5 ×2 (one with
+  // spoken choices, one with two questions). About 50 minutes. `half`: roughly half of each.
+  function buildListenMock({ state, items, half = false, rng = Math.random }) {
+    const plan = half ? [["l1", 2], ["l2", 3], ["l3", 2], ["l4", 6]] : [["l1", 5], ["l2", 6], ["l3", 5], ["l4", 12]];
+    const out = plan.flatMap(([t, n]) => leastHeard({ state, items: items.filter((it) => it.type === t), n, rng }));
+    const l5 = items.filter((it) => it.type === "l5");
+    const one = leastHeard({ state, items: l5.filter((it) => it.qs.length === 1), n: 1, rng });
+    const two = leastHeard({ state, items: l5.filter((it) => it.qs.length === 2), n: 1, rng });
+    return [...out, ...(half ? (two.length ? two : one) : [...one, ...two])];
   }
 
   // The next JLPT: first Sunday of July or December, whichever is next.
@@ -466,10 +544,13 @@
     // A full tie on seen and last goes to the earlier due date (a mix-up pulls it forward), so both devices agree.
     const newer = (r, s) =>
       seen(s) > seen(r) || (seen(s) === seen(r) && (last(s) > last(r) || (last(s) === last(r) && due(s) !== "" && due(s) < due(r))));
-    for (const store of ["points", "kanji", "vocab", "reading", "qs"]) join(store, newer);
+    for (const store of ["points", "kanji", "vocab", "reading", "listen", "qs"]) join(store, newer);
     const n = (d) => (d && d.n) || 0;
-    for (const store of ["days", "kdays", "vdays", "rdays"]) join(store, (d, e) => n(e) > n(d));
+    for (const store of ["days", "kdays", "vdays", "rdays", "ldays"]) join(store, (d, e) => n(e) > n(d));
     join("conf", (c, d) => (d || 0) > (c || 0));
+    // Log entries have unique ids; an edited or deleted entry carries a later `ts`.
+    const ts = (r) => (r && r.ts) || 0;
+    for (const store of ["rlog", "hours", "mocks"]) join(store, (r, s) => ts(s) > ts(r));
     return out;
   }
 
@@ -479,6 +560,8 @@
     buildDaily, buildMock, buildSetDrill, buildPointDrill, buildPairDrill, buildCustom, nextExam,
     kanjiQuestion, pickKanjiQuestion, buildKanjiDaily, buildKanjiDrill,
     VTYPES, buildVocabDaily, buildVocabMock, pickPassage,
+    PACE, leastRead, buildReadingDaily, buildReadingMock,
+    idHash, spokenOrder, leastHeard, buildListenDaily, buildListenMock,
     mergeStates,
   };
 });

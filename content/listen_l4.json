@@ -1,0 +1,963 @@
+[
+  {
+    "id": "l4-001",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "実際に現場を見ないことには、何とも言えないね。"
+      }
+    ],
+    "c": [
+      "じゃあ、来週一緒に見に行きませんか。",
+      "じゃあ、現場は見なくてもいいですね。",
+      "わかりました。誰にも言いません。"
+    ],
+    "why": [
+      "「見ないことには」: nothing can be judged until the site is seen, so offering to go and look is the natural reply.",
+      "The line says seeing the site is a must, not that it can be skipped.",
+      "「何とも言えない」 means he cannot judge yet, not that it must be kept secret."
+    ],
+    "cue": [
+      "見ないことには",
+      "何とも言えない"
+    ],
+    "tell": "〜ないことには + a negative = not until X happens. Catch the condition (seeing the site) and act on it.",
+    "en": "Until we actually see the site, I can't say anything. (We need to go and look first.)"
+  },
+  {
+    "id": "l4-002",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "今度の飲み会って、何時からだっけ？"
+      }
+    ],
+    "c": [
+      "確か六時からだったと思うよ。",
+      "何時からでもいいよ、任せる。",
+      "ううん、僕は行かなかったよ。"
+    ],
+    "why": [
+      "「何時からだっけ」 asks him to remind her of a time already fixed, so giving the time is right.",
+      "っけ checks a fact that is already decided; it does not ask for his preference.",
+      "The past-looking だっけ is about memory, not a past event. 「今度の」 means the party is still to come."
+    ],
+    "cue": [
+      "何時からだっけ",
+      "今度の"
+    ],
+    "tell": "〜っけ checks something you once knew. Answer with the fact.",
+    "en": "What time does the next drinking party start again? (She knew once but has forgotten.)"
+  },
+  {
+    "id": "l4-003",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "ねえ、早く起きなさいってば。もう八時よ。"
+      }
+    ],
+    "c": [
+      "わかった、わかった。今起きるよ。",
+      "うん、八時になったら起こして。",
+      "え、誰がそう言ってたの？"
+    ],
+    "why": [
+      "「起きなさいってば」 repeats an order with irritation, so giving in and getting up fits.",
+      "「もう八時よ」 says it is already eight, so asking to be woken at eight makes no sense.",
+      "ってば is not quoting someone else. It is the mother pushing her own order again."
+    ],
+    "cue": [
+      "起きなさいってば",
+      "もう八時よ"
+    ],
+    "tell": "〜ってば = I told you already! The speaker repeats a demand with irritation.",
+    "en": "Hey, I'm telling you, get up. It's already eight. (She has said it before and is losing patience.)"
+  },
+  {
+    "id": "l4-004",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "一晩でレポート十枚なんて、書けるわけないでしょう。",
+        "say": "ひとばんでレポートじゅうまいなんて、書けるわけないでしょう。"
+      }
+    ],
+    "c": [
+      "だよね。先生に相談してみたら？",
+      "すごいね、もう全部書けたんだ。",
+      "そうだね、そんなの簡単だよね。"
+    ],
+    "why": [
+      "「書けるわけないでしょう」 means it is impossible, so agreeing and suggesting another way fits.",
+      "She says she cannot write it. Nothing has been written yet.",
+      "わけない on its own can mean easy, but verb + わけない means there is no way. Calling it easy contradicts her."
+    ],
+    "cue": [
+      "書けるわけないでしょう"
+    ],
+    "tell": "Verb + わけない(でしょう) = no way. Do not confuse it with わけない alone, which means easy.",
+    "en": "Ten pages of report in one night? There's no way I can write that."
+  },
+  {
+    "id": "l4-005",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "あ、危ない。もう少しで傘を忘れるところだった。"
+      }
+    ],
+    "c": [
+      "よかったね、気がついて。",
+      "え、どこに置いてきちゃったの？",
+      "じゃあ、私の傘を貸してあげようか。"
+    ],
+    "why": [
+      "「忘れるところだった」 means he nearly forgot but did not, so good thing you noticed fits.",
+      "He did not leave it anywhere. ところだった means it almost happened.",
+      "He still has his umbrella, so there is no need to lend him one."
+    ],
+    "cue": [
+      "もう少しで",
+      "忘れるところだった"
+    ],
+    "tell": "もう少しで〜ところだった = it almost happened, but didn't. The bad thing was avoided.",
+    "en": "Oops, that was close. I almost forgot my umbrella."
+  },
+  {
+    "id": "l4-006",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "当日遅刻しようものなら、試験は受けられませんからね。"
+      }
+    ],
+    "c": [
+      "はい、絶対に遅れないようにします。",
+      "じゃあ、少しなら遅れてもいいんですね。",
+      "先生も、遅れないでくださいね。"
+    ],
+    "why": [
+      "「遅刻しようものなら」 warns of a bad result if he is late, so promising not to be late fits.",
+      "〜ようものなら is a warning, not permission. Even a little late is the danger.",
+      "The warning is for the student. Turning it back on the teacher is wrong and rude."
+    ],
+    "cue": [
+      "遅刻しようものなら",
+      "試験は受けられません"
+    ],
+    "tell": "Volitional + ものなら = if you dare to…, something bad follows. Hear it as a warning.",
+    "en": "If you are late on the day, you won't be allowed to sit the exam. (A teacher's warning.)"
+  },
+  {
+    "id": "l4-007",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "あの店、予約なしじゃ入れっこないよ。",
+        "say": "あの店、予約なしじゃはいれっこないよ。"
+      }
+    ],
+    "c": [
+      "じゃあ、今から電話してみようか。",
+      "そっか、予約しなくても大丈夫なんだ。",
+      "じゃあ、予約はキャンセルしておくね。"
+    ],
+    "why": [
+      "「入れっこない」 means there is no chance without a booking, so offering to call and book fits.",
+      "っこない is a strong no way, not no problem.",
+      "They have no booking to cancel. The line says they need one."
+    ],
+    "cue": [
+      "入れっこない",
+      "予約なしじゃ"
+    ],
+    "tell": "Verb stem + っこない = never in a million years. Casual and strong.",
+    "en": "We'll never get into that restaurant without a reservation."
+  },
+  {
+    "id": "l4-008",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "あの映画のラスト、何度見ても泣かずにはいられないんだよね。"
+      }
+    ],
+    "c": [
+      "わかる。あそこは泣けるよね。",
+      "へえ、一度も泣かなかったんだ。",
+      "え、泣いちゃだめって言われたの？"
+    ],
+    "why": [
+      "「泣かずにはいられない」 means he always cries, so sharing the feeling is the natural reply.",
+      "The two negatives make a strong yes: he cries every time.",
+      "いられない here is part of can't help, not a ban on crying."
+    ],
+    "cue": [
+      "何度見ても",
+      "泣かずにはいられない"
+    ],
+    "tell": "〜ずにはいられない = can't help doing. Two negatives make a strong positive.",
+    "en": "Every time I watch the end of that film, I can't help crying."
+  },
+  {
+    "id": "l4-009",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "来週のプレゼンのことが、気になってしょうがないんです。"
+      }
+    ],
+    "c": [
+      "じゃあ、一度練習を見てあげようか。",
+      "そうか、もう気にならないならよかった。",
+      "しょうがないね。じゃあ、やめておこうか。"
+    ],
+    "why": [
+      "「気になってしょうがない」 means she is very anxious, so offering to watch her practise fits.",
+      "〜てしょうがない means extremely, not not at all.",
+      "しょうがない here is not it can't be helped. Nobody is talking about giving up."
+    ],
+    "cue": [
+      "気になってしょうがない"
+    ],
+    "tell": "〜てしょうがない = so much I can't stand it. It shows a strong feeling, not giving up.",
+    "en": "I can't stop worrying about next week's presentation."
+  },
+  {
+    "id": "l4-010",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "ごめん、この荷物、ちょっと持っててくれない？"
+      }
+    ],
+    "c": [
+      "いいよ。こっちに貸して。",
+      "ありがとう、助かるよ。",
+      "ううん、何も持ってないよ。"
+    ],
+    "why": [
+      "「持っててくれない？」 asks him to hold it, so sure, hand it here fits.",
+      "She is asking for help. He is the one doing the favour, so he should not thank her.",
+      "くれない？ is a request, not don't you have anything?"
+    ],
+    "cue": [
+      "持っててくれない"
+    ],
+    "tell": "〜てくれない？ is a soft request, not a negative question. Answer the favour.",
+    "en": "Sorry, could you hold this bag for a moment? (A request.)"
+  },
+  {
+    "id": "l4-011",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "今度の企画、ぜひ私に担当させてもらえませんか。"
+      }
+    ],
+    "c": [
+      "いいよ。じゃあ、お願いしようかな。",
+      "え、私がやらなきゃいけないの？",
+      "そうね、じゃあ誰にやらせようか。"
+    ],
+    "why": [
+      "「担当させてもらえませんか」 asks permission to do it himself, so handing it to him fits.",
+      "The causative is about him doing it, not the boss being made to do it.",
+      "He has just offered to do it, so asking who else should do it ignores him."
+    ],
+    "cue": [
+      "私に担当させてもらえませんか"
+    ],
+    "tell": "〜させてもらえませんか = please let me do it. The speaker is the one who wants to act.",
+    "en": "Would you let me take charge of the next project? (He is volunteering.)"
+  },
+  {
+    "id": "l4-012",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "今回の試験、もっと早くから準備しておけばよかったです。"
+      }
+    ],
+    "c": [
+      "そうだね。次は早めに始めようね。",
+      "うん、そうすればいいと思うよ。",
+      "早めに準備してくれて、ありがとう。"
+    ],
+    "why": [
+      "「準備しておけばよかった」 is regret: he did not start early enough. Agreeing and looking ahead fits.",
+      "〜ばよかった is regret about the past, not a plan. Saying go ahead treats it as 〜ばいい.",
+      "He did not prepare early, and it was his own exam, so thanking him makes no sense."
+    ],
+    "cue": [
+      "準備しておけばよかった"
+    ],
+    "tell": "〜ばよかった = I should have… It is regret: the thing did not happen.",
+    "en": "I wish I had started preparing earlier for this exam. (A student to a teacher.)"
+  },
+  {
+    "id": "l4-013",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "締め切りは来週だけど、早めに出すに越したことはないよ。"
+      }
+    ],
+    "c": [
+      "わかりました。今週中に出すようにします。",
+      "そうですか。じゃあ、急がなくていいですね。",
+      "え、締め切りを過ぎてもいいんですか。"
+    ],
+    "why": [
+      "「早めに出すに越したことはない」 means early is best, so planning to hand it in this week fits.",
+      "The phrase recommends doing it early. It does not say there is no hurry.",
+      "越す here is not going past the deadline. 〜に越したことはない means nothing is better than…"
+    ],
+    "cue": [
+      "早めに出すに越したことはない"
+    ],
+    "tell": "〜に越したことはない = it's best to… It is advice, not no need.",
+    "en": "The deadline is next week, but it's best to hand it in early."
+  },
+  {
+    "id": "l4-014",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "明日テストだから、遊びに行くどころじゃないんだよ。",
+        "say": "あしたテストだから、遊びに行くどころじゃないんだよ。"
+      }
+    ],
+    "c": [
+      "そっか。じゃあ、また今度にしよう。",
+      "いいね。どこに遊びに行く？",
+      "え、じゃあどこならいいの？"
+    ],
+    "why": [
+      "「遊びに行くどころじゃない」 means she has no time to go out, so putting it off fits.",
+      "She is saying no, not agreeing to go.",
+      "どころ here is not place. She cannot go anywhere at all."
+    ],
+    "cue": [
+      "遊びに行くどころじゃない"
+    ],
+    "tell": "〜どころじゃない = no time or state of mind for… A firm no.",
+    "en": "I have a test tomorrow, so going out is out of the question."
+  },
+  {
+    "id": "l4-015",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "このままライバル会社に負けてたまるか。"
+      }
+    ],
+    "c": [
+      "その意気です。一緒に頑張りましょう。",
+      "そうですね、もう負けを認めましょう。",
+      "そうですね、たまには休みましょう。"
+    ],
+    "why": [
+      "「負けてたまるか」 is a vow not to lose, so backing him up fits.",
+      "〜てたまるか means I refuse to let it happen. It is the opposite of giving up.",
+      "たまる and たまに only sound alike. The line is about refusing to lose, not about rest."
+    ],
+    "cue": [
+      "負けてたまるか"
+    ],
+    "tell": "〜てたまるか = like hell I will… A strong refusal to accept something.",
+    "en": "We're not going to lose to our rival like this. No way."
+  },
+  {
+    "id": "l4-016",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "よく言うよ。先週は自分も遅れてきたじゃない。"
+      }
+    ],
+    "c": [
+      "ごめん、それを言われると弱いな。",
+      "ありがとう。そう言ってもらえると嬉しい。",
+      "うん、みんなによく言われるんだ。"
+    ],
+    "why": [
+      "「よく言うよ」 is a jab: he has no right to say it. Accepting the point fits.",
+      "よく言うよ is not praise like well said. It is criticism.",
+      "よく here is not often. The line is not about what people often say to him."
+    ],
+    "cue": [
+      "よく言うよ",
+      "自分も遅れてきた"
+    ],
+    "tell": "よく言うよ = you've got a nerve saying that. It throws someone's words back at them.",
+    "en": "Look who's talking. You were late yourself last week."
+  },
+  {
+    "id": "l4-017",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "さすがですね。あの資料、もう全部できたんですか。"
+      }
+    ],
+    "c": [
+      "いや、たまたま早く終わっただけだよ。",
+      "ごめん、急いで作るから待ってて。",
+      "え、誰が作ってくれたの？"
+    ],
+    "why": [
+      "「さすがですね」 praises him, so a modest reply fits.",
+      "She is praising him, not complaining that the work is late.",
+      "さすが is aimed at him. He made the documents himself."
+    ],
+    "cue": [
+      "さすがですね",
+      "もう全部できた"
+    ],
+    "tell": "さすが = just what I'd expect of you. It is praise; answer modestly.",
+    "en": "Impressive, as always. Have you already finished all those documents?"
+  },
+  {
+    "id": "l4-018",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "まさか、あの二人が結婚するなんてね。"
+      }
+    ],
+    "c": [
+      "ほんと、全然気づかなかったよ。",
+      "えっ、結婚やめちゃったの？",
+      "そうなんだ、結婚おめでとう。"
+    ],
+    "why": [
+      "「まさか…なんて」 shows surprise at news that is true, so sharing the surprise fits.",
+      "まさか here does not deny it. The wedding is happening.",
+      "The people getting married are those two, not him."
+    ],
+    "cue": [
+      "まさか",
+      "結婚するなんて"
+    ],
+    "tell": "まさか…なんて = who would have thought. Surprise at something real.",
+    "en": "Who would have thought those two would get married!"
+  },
+  {
+    "id": "l4-019",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "せっかく作ったのに、もう食べないの？"
+      }
+    ],
+    "c": [
+      "ごめん、お腹いっぱいなんだ。あとで食べるよ。",
+      "うん、作ってあげてよかったね。",
+      "うん、もう全部食べたよ。"
+    ],
+    "why": [
+      "「せっかく作ったのに」 shows her disappointment, so apologising and promising to eat later fits.",
+      "She did the cooking for him, so 作ってあげて puts the favour the wrong way round.",
+      "She is upset because food is left, so I ate it all does not fit."
+    ],
+    "cue": [
+      "せっかく作ったのに",
+      "もう食べないの"
+    ],
+    "tell": "せっかく…のに = after all that effort, and yet… It is a complaint; apologise or explain.",
+    "en": "I went to the trouble of cooking it, and you're not eating any more? (A mother to her son.)"
+  },
+  {
+    "id": "l4-020",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "そんなに具合が悪いなら、今日は早退すればいいのに。"
+      }
+    ],
+    "c": [
+      "そうしたいんですけど、午後に大事な会議があって。",
+      "え、早退しちゃいけないんですか。",
+      "ありがとうございます。お大事になさってください。"
+    ],
+    "why": [
+      "「早退すればいいのに」 is advice to go home, so explaining why she cannot fits.",
+      "〜ばいいのに recommends it. It does not forbid it.",
+      "She is the one who is unwell, so wishing him well mixes up who is sick."
+    ],
+    "cue": [
+      "具合が悪いなら",
+      "早退すればいいのに"
+    ],
+    "tell": "〜ばいいのに = why don't you just… Advice, often with a little frustration.",
+    "en": "If you feel that bad, you should just go home early today."
+  },
+  {
+    "id": "l4-021",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "おかしいな。こんなに時間がかかるはずじゃなかったんだけど。"
+      }
+    ],
+    "c": [
+      "何か問題でもあったんですか。",
+      "思ったより早く終わりましたね。",
+      "じゃあ、急がなくても大丈夫ですね。"
+    ],
+    "why": [
+      "「はずじゃなかった」 means things went against his plan, so asking what went wrong fits.",
+      "It is taking longer than planned, not finishing early.",
+      "Nothing in the line says there is spare time. The job is running late."
+    ],
+    "cue": [
+      "こんなに時間がかかる",
+      "はずじゃなかった"
+    ],
+    "tell": "〜はずじゃなかった = this was not meant to happen. Something went off plan.",
+    "en": "That's strange. It wasn't supposed to take this long."
+  },
+  {
+    "id": "l4-022",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "このワンピース、私にはちょっと子どもっぽいかな。"
+      }
+    ],
+    "c": [
+      "では、こちらの落ち着いた色はいかがですか。",
+      "はい、こちらはお子様用でございます。",
+      "かしこまりました。お包みいたしますね。"
+    ],
+    "why": [
+      "「子どもっぽい」 means it looks too young for her, so offering a calmer one fits.",
+      "〜っぽい means looks like, not made for. It is not a children's dress.",
+      "She has not decided to buy it. She is unsure how it looks."
+    ],
+    "cue": [
+      "子どもっぽいかな"
+    ],
+    "tell": "Noun + っぽい = -ish, looks like. 子どもっぽい is childish, not for children.",
+    "en": "This dress looks a bit childish on me, doesn't it? (A customer to a shop assistant.)"
+  },
+  {
+    "id": "l4-023",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "あ、すみません。それ、まだ食べかけなんです。"
+      }
+    ],
+    "c": [
+      "失礼いたしました。ごゆっくりどうぞ。",
+      "かしこまりました。お下げいたします。",
+      "では、すぐに新しいものをお作りします。"
+    ],
+    "why": [
+      "「まだ食べかけ」 means he has not finished, so apologising and leaving the plate fits.",
+      "〜かけ means half done. Taking the plate away is exactly what he is stopping.",
+      "He is not complaining about the food. He just has not finished."
+    ],
+    "cue": [
+      "まだ食べかけなんです"
+    ],
+    "tell": "Verb stem + かけ = half done. 食べかけ is a half-eaten plate.",
+    "en": "Oh, sorry. I'm still eating that. (Please don't take the plate.)"
+  },
+  {
+    "id": "l4-024",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "すみません、借りた本をなくしちゃったんですけど…。"
+      }
+    ],
+    "c": [
+      "では、こちらの用紙にご記入をお願いします。",
+      "ありがとうございます。返却ですね。",
+      "はい、何冊でも借りられますよ。"
+    ],
+    "why": [
+      "「なくしちゃった」 reports a loss, so starting the lost-book form fits.",
+      "He has lost the book, not brought it back.",
+      "He is not asking to borrow more. He is reporting a problem."
+    ],
+    "cue": [
+      "なくしちゃった"
+    ],
+    "tell": "〜ちゃった = 〜てしまった. Something went wrong and cannot be undone.",
+    "en": "Excuse me, I've lost a book I borrowed. (What should I do?)"
+  },
+  {
+    "id": "l4-025",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "すみません、今日はお先に失礼します。"
+      }
+    ],
+    "c": [
+      "お疲れさまでした。",
+      "いえいえ、こちらこそ失礼しました。",
+      "はい、じゃあ先に始めていてください。"
+    ],
+    "why": [
+      "「お先に失礼します」 is the set phrase for leaving work first. お疲れさまでした is the set reply.",
+      "失礼します here is not an apology to answer with こちらこそ.",
+      "お先に is about leaving first, not starting first."
+    ],
+    "cue": [
+      "お先に失礼します"
+    ],
+    "tell": "お先に失礼します = I'm leaving work before you. The reply is お疲れさまでした.",
+    "en": "Sorry, I'll be leaving before you today."
+  },
+  {
+    "id": "l4-026",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "そんなに悩んでいるなら、先輩に相談してみたらどう？"
+      }
+    ],
+    "c": [
+      "そうですね。今日聞いてみます。",
+      "まだ相談していないので、わかりません。",
+      "はい、先輩が相談してくれました。"
+    ],
+    "why": [
+      "「相談してみたらどう？」 is advice, so agreeing to try it fits.",
+      "〜たらどう？ is not how did it go? She is suggesting it, not asking for a result.",
+      "She suggests that he goes to the senior student, not the other way round."
+    ],
+    "cue": [
+      "相談してみたらどう"
+    ],
+    "tell": "〜たらどう？ = why don't you…? It is a suggestion; accept it or give a reason.",
+    "en": "If it's worrying you that much, why not talk to one of the older students? (A teacher's advice.)"
+  },
+  {
+    "id": "l4-027",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "この店、安いっていうか、ちょっと安すぎない？"
+      }
+    ],
+    "c": [
+      "確かに。何かあるのかもね。",
+      "うん、もう少し安ければいいのにね。",
+      "じゃあ、安くしてもらおうよ。"
+    ],
+    "why": [
+      "「安いっていうか、安すぎない？」 voices doubt, so agreeing something may be wrong fits.",
+      "He thinks it is too cheap, so wishing it were cheaper is the opposite.",
+      "It is already too cheap. Asking for a discount misses his point."
+    ],
+    "cue": [
+      "安いっていうか",
+      "安すぎない"
+    ],
+    "tell": "AっていうかB = not so much A as B. The real point comes after っていうか.",
+    "en": "This shop isn't just cheap, it's a bit too cheap, isn't it? (He is suspicious.)"
+  },
+  {
+    "id": "l4-028",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "初めてにしては、よくできてるじゃない。"
+      }
+    ],
+    "c": [
+      "ありがとうございます。もっと練習します。",
+      "すみません、次はちゃんとやります。",
+      "はい、うまくできなくて残念です。"
+    ],
+    "why": [
+      "「よくできてるじゃない」 is praise, so thanking her fits.",
+      "She is praising the work, not telling him off.",
+      "じゃない here means isn't it!, not a negative. She says it went well."
+    ],
+    "cue": [
+      "初めてにしては",
+      "よくできてるじゃない"
+    ],
+    "tell": "Xにしては = for X, surprisingly. Here it praises: good for a first time.",
+    "en": "For a first try, this is really good. (A teacher to a student.)"
+  },
+  {
+    "id": "l4-029",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "値段が高いからって、品質がいいとは限らないよ。"
+      }
+    ],
+    "c": [
+      "そうですね。もう少し比べてみます。",
+      "じゃあ、一番高いのにしましょうか。",
+      "はい、数が限られているそうです。"
+    ],
+    "why": [
+      "「いいとは限らない」 warns that price is no proof, so comparing more fits.",
+      "He says a high price does not guarantee quality, so picking the most expensive goes against him.",
+      "限らない here is not always, not limited stock."
+    ],
+    "cue": [
+      "高いからって",
+      "いいとは限らない"
+    ],
+    "tell": "〜とは限らない = not necessarily. It breaks an easy assumption.",
+    "en": "Just because it's expensive doesn't mean the quality is good."
+  },
+  {
+    "id": "l4-030",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "理由によっては、休みを認めないでもないけど。"
+      }
+    ],
+    "c": [
+      "ありがとうございます。実は、家族のことで…。",
+      "そうですか。では、休みはあきらめます。",
+      "じゃあ、部長も休まれるんですか。"
+    ],
+    "why": [
+      "「認めないでもない」 is a cautious yes, so giving the reason fits.",
+      "The double negative leans to yes. There is no need to give up.",
+      "The time off is for him, not for the boss."
+    ],
+    "cue": [
+      "理由によっては",
+      "認めないでもない"
+    ],
+    "tell": "〜ないでもない = it's not that I won't. A careful, partial yes.",
+    "en": "Depending on the reason, I might allow the time off. (A boss, being careful.)"
+  },
+  {
+    "id": "l4-031",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "そんなに謝ることはないよ。誰にでもあるミスだから。"
+      }
+    ],
+    "c": [
+      "そう言っていただけると、助かります。",
+      "え、謝ったことがないんですか。",
+      "では、代わりに謝っていただけますか。"
+    ],
+    "why": [
+      "「謝ることはない」 reassures him, so thanking her for it fits.",
+      "Dictionary form + ことはない is no need to. Have never would be 謝ったことはない.",
+      "She is telling him not to worry, not offering to apologise for him."
+    ],
+    "cue": [
+      "謝ることはない"
+    ],
+    "tell": "Verb + ことはない = there's no need to. Not the same as た-form + ことはない, have never.",
+    "en": "There's no need to apologise so much. Anyone could make that mistake."
+  },
+  {
+    "id": "l4-032",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "すみません、電車がなかなか来ないんですけど。"
+      }
+    ],
+    "c": [
+      "申し訳ありません。事故で遅れております。",
+      "はい、なかなかいい電車ですよね。",
+      "申し訳ありません、すぐにお持ちします。"
+    ],
+    "why": [
+      "「なかなか来ない」 is a complaint that the train is late, so apologising and explaining fits.",
+      "なかなか + negative means just won't, not quite good.",
+      "He is waiting for a train, not for food or goods."
+    ],
+    "cue": [
+      "なかなか来ない"
+    ],
+    "tell": "なかなか + negative = just won't happen. With a positive, なかなか means quite.",
+    "en": "Excuse me, the train just isn't coming. (What is going on?)"
+  },
+  {
+    "id": "l4-033",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "自分だってできないくせに、人には厳しいんだから。"
+      }
+    ],
+    "c": [
+      "ごめん、ちょっと言い過ぎたよ。",
+      "うん、厳しくしてくれてありがとう。",
+      "そうか、できるようになったんだね。"
+    ],
+    "why": [
+      "「できないくせに」 is a complaint about him, so apologising fits.",
+      "He is the strict one. She is not being strict with him.",
+      "The line says he cannot do it. Nobody has learned anything."
+    ],
+    "cue": [
+      "できないくせに",
+      "人には厳しい"
+    ],
+    "tell": "〜くせに = even though you… Always critical. Apologise or defend yourself.",
+    "en": "You can't do it yourself, and yet you're so hard on other people."
+  },
+  {
+    "id": "l4-034",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "M",
+        "t": "悪いけど、明日の会議の資料、コピーしておいてほしいんだけど。",
+        "say": "悪いけど、あしたの会議の資料、コピーしておいてほしいんだけど。"
+      }
+    ],
+    "c": [
+      "わかりました。全員分でいいですか。",
+      "ありがとうございます。助かります。",
+      "じゃあ、コピーはしなくていいんですね。"
+    ],
+    "why": [
+      "「コピーしておいてほしい」 asks her to do it, so agreeing and checking the number fits.",
+      "He is asking her a favour. She has nothing to thank him for.",
+      "The けど at the end only softens the request. It does not cancel it."
+    ],
+    "cue": [
+      "コピーしておいてほしいんだけど"
+    ],
+    "tell": "〜てほしいんだけど = a soft request. The final けど makes it polite, not negative.",
+    "en": "Sorry, but I'd like you to copy the papers for tomorrow's meeting. (A request.)"
+  },
+  {
+    "id": "l4-035",
+    "type": "l4",
+    "lv": 2,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "恐れ入りますが、お手すきの際にこちらをご確認いただけますか。"
+      }
+    ],
+    "c": [
+      "承知しました。午後に拝見しますね。",
+      "ご確認いただき、ありがとうございます。",
+      "いえいえ、どうぞお構いなく。"
+    ],
+    "why": [
+      "「お手すきの際に…ご確認いただけますか」 asks him to check it when free, so agreeing and naming a time fits.",
+      "He is the one asked to check. Thanking her for checking reverses the roles.",
+      "お構いなく answers an offer of hospitality, not a request for work."
+    ],
+    "cue": [
+      "お手すきの際に",
+      "ご確認いただけますか"
+    ],
+    "tell": "お手すきの際に = when you have a free moment. 恐れ入りますが softens a request at work.",
+    "en": "Sorry to trouble you, but could you check this when you have a moment?"
+  },
+  {
+    "id": "l4-036",
+    "type": "l4",
+    "lv": 1,
+    "lines": [
+      {
+        "sp": "F",
+        "t": "ちょっと、今何時だと思ってるの？連絡もしないで。",
+        "say": "ちょっと、いまなんじだと思ってるの？連絡もしないで。"
+      }
+    ],
+    "c": [
+      "ごめん、連絡すればよかった。",
+      "えっと、十一時半くらいかな。",
+      "大丈夫、まだ間に合うと思うよ。"
+    ],
+    "why": [
+      "「今何時だと思ってるの？」 with 「連絡もしないで」 scolds him for being late without calling, so apologising fits.",
+      "It is not a real question about the time. Giving the time ignores the scolding.",
+      "She is not asking whether they will be late for something. She is angry with him."
+    ],
+    "cue": [
+      "今何時だと思ってるの",
+      "連絡もしないで"
+    ],
+    "tell": "今何時だと思ってるの？ is a scolding, not a question. Apologise; do not tell the time.",
+    "en": "Hey, do you know what time it is? You didn't even call. (He is very late home.)"
+  }
+]
