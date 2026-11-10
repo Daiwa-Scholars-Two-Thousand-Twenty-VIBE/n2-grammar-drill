@@ -213,15 +213,16 @@ node tools/check.mjs content/read_r10.json         # check one reading, listenin
 
 ### Listening audio
 
-`tools/build_audio.py` turns every script in `content/listen_*.json` into `audio/<id>.m4a` with Gemini text-to-speech (needs `ffmpeg` and a `GEMINI_API_KEY` in the environment; never commit the key). It records each item's script hash in `content/audio.json` and only remakes items whose script changed, and it caches every voice clip in `tools/.audio_cache/` (ignored by git), so a rerun after a failure costs nothing for the parts already made.
+`tools/build_audio.py` turns every script in `content/listen_*.json` into `audio/<id>.m4a` with Gemini text-to-speech, the `gemini-3.8-flash-tts` model, either through OpenRouter (`OPENROUTER_API_KEY`) or straight from Google (`GEMINI_API_KEY`). It needs `ffmpeg` and the key in the environment; it uses OpenRouter when that key is set, and `--via gemini` overrides that. Never commit a key. On the Legion the OpenRouter key lives in `~/.config/environment.d/openrouter.conf` (mode 600, outside the repo), which new login sessions load; in an older shell, load it with `set -a; . ~/.config/environment.d/openrouter.conf; set +a`. It records each item's script hash in `content/audio.json` and only remakes items whose script changed, and it caches every voice clip in `tools/.audio_cache/` (ignored by git), so a rerun after a failure costs nothing for the parts already made.
 
 ```bash
-GEMINI_API_KEY=... python3 tools/build_audio.py            # make what is missing or changed
-GEMINI_API_KEY=... python3 tools/build_audio.py --check    # also transcribe each file and flag any below 90% match
-node tools/bundle.mjs                                      # then rebuild js/data.js so the app knows about the new audio
+python3 tools/build_audio.py              # make what is missing or changed
+python3 tools/build_audio.py --check      # also transcribe each file and flag any below 90% match
+python3 tools/build_audio.py --jobs 2     # fewer calls at once (see the OpenRouter note below)
+node tools/bundle.mjs                     # then rebuild js/data.js so the app knows about the new audio
 ```
 
-The free Gemini tier allows only 10 text-to-speech requests a day, and the 92 items need about 355 (counted 9 Nov 2026), so the full build needs a key on a paid tier. Spoken choices are read in a fixed order per item (`spokenOrder` in `js/srs.js`, the same rule in the Python), so the app can show numbers that match the recording.
+The free Gemini tier allows only 10 text-to-speech requests a day, and the 92 items need about 355 (counted 9 Nov 2026), so the full build needs a paid key. Through OpenRouter the whole set cost well under 1 USD (10 Nov 2026). OpenRouter reserves credit for every call in flight, so on a small balance four parallel calls get `402 in_flight_budget_exhausted`; the script waits and retries on that, and `--jobs 2` avoids most of it. The transcription check compares against each line's written text (`t`), not the kana in `say`, because the transcript comes back in kanji. Spoken choices are read in a fixed order per item (`spokenOrder` in `js/srs.js`, the same rule in the Python), so the app can show numbers that match the recording.
 
 Use the `tests/*.mjs` glob. On Node 26, `node --test tests/` runs 0 tests and still exits 0, so it looks like a pass.
 

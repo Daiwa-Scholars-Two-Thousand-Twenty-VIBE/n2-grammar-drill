@@ -10,6 +10,39 @@
   },
   "heard": 0.963
  },
+ "l1-002": {
+  "secs": 62.8,
+  "h": "952054f5c2",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "heard": 0.969
+ },
+ "l1-003": {
+  "secs": 49.0,
+  "h": "0a04731e41",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "heard": 0.959
+ },
+ "l1-004": {
+  "secs": 66.4,
+  "h": "234d3e1b0c",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "heard": 0.956
+ },
  "l1-005": {
   "secs": 75.8,
   "h": "c217be4e28",
@@ -20,6 +53,569 @@
    "M2": "Puck"
   },
   "heard": 0.969
+ },
+ "l1-006": {
+  "secs": 76.9,
+  "h": "63acf75a54",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Iapetus",
+   "M2": "Orus"
+  },
+  "heard": 0.963
+ },
+ "l1-007": {
+  "secs": 61.1,
+  "h": "1d96e1eefe",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "heard": 0.975
+ },
+ "l1-008": {
+  "secs": 66.3,
+  "h": "3844d696ac",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "heard": 0.976
+ },
+ "l1-009": {
+  "secs": 64.7,
+  "h": "27603230a2",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "heard": 0.974
+ },
+ "l1-010": {
+  "secs": 76.9,
+  "h": "dc406553fe",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "heard": 0.965
+ },
+ "l1-011": {
+  "secs": 58.2,
+  "h": "135cfbf3f7",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "heard": 0.941
+ },
+ "l1-012": {
+  "secs": 73.7,
+  "h": "8ff63480ab",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "heard": 0.985
+ },
+ "l1-013": {
+  "secs": 60.9,
+  "h": "535a8acea2",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "heard": 0.941
+ },
+ "l1-014": {
+  "secs": 67.9,
+  "h": "8732289dd8",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "heard": 0.991
+ },
+ "l1-015": {
+  "secs": 64.6,
+  "h": "10acda7087",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Iapetus",
+   "M2": "Orus"
+  },
+  "heard": 0.94
+ },
+ "l2-001": {
+  "secs": 69.8,
+  "h": "6e53ab57c7",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "heard": 0.954
+ },
+ "l2-002": {
+  "secs": 78.8,
+  "h": "d5da937708",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "heard": 0.956
+ },
+ "l2-003": {
+  "secs": 82.2,
+  "h": "bb85a202c7",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "heard": 0.977
+ },
+ "l2-004": {
+  "secs": 69.3,
+  "h": "5e6fc4f1a6",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "heard": 0.953
+ },
+ "l2-005": {
+  "secs": 84.8,
+  "h": "9d924438af",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Iapetus",
+   "M2": "Orus"
+  },
+  "heard": 0.948
+ },
+ "l2-006": {
+  "secs": 77.4,
+  "h": "f26103bb47",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "heard": 0.948
+ },
+ "l2-007": {
+  "secs": 74.3,
+  "h": "e10460835d",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "heard": 0.976
+ },
+ "l2-008": {
+  "secs": 83.4,
+  "h": "7f6e76356c",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "heard": 0.977
+ },
+ "l2-009": {
+  "secs": 78.3,
+  "h": "c39c425622",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "heard": 0.956
+ },
+ "l2-010": {
+  "secs": 72.5,
+  "h": "f3abb80064",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "heard": 0.962
+ },
+ "l2-011": {
+  "secs": 82.2,
+  "h": "376f1fa8db",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "heard": 0.968
+ },
+ "l2-012": {
+  "secs": 71.3,
+  "h": "b41542da1d",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "heard": 0.965
+ },
+ "l2-013": {
+  "secs": 91.8,
+  "h": "6a7467f2a1",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "heard": 0.921
+ },
+ "l2-014": {
+  "secs": 77.5,
+  "h": "2f00e94b0c",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Iapetus",
+   "M2": "Orus"
+  },
+  "heard": 0.941
+ },
+ "l2-015": {
+  "secs": 70.2,
+  "h": "c457201a7b",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Iapetus",
+   "M2": "Orus"
+  },
+  "heard": 0.943
+ },
+ "l2-016": {
+  "secs": 75.2,
+  "h": "ba0fa35e53",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "heard": 0.956
+ },
+ "l2-017": {
+  "secs": 80.2,
+  "h": "dd331478dc",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "heard": 0.985
+ },
+ "l2-018": {
+  "secs": 78.4,
+  "h": "5117cc0641",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "heard": 0.966
+ },
+ "l3-001": {
+  "secs": 75.4,
+  "h": "46b2ccefa8",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "order": [
+   1,
+   2,
+   3,
+   0
+  ],
+  "heard": 0.977
+ },
+ "l3-002": {
+  "secs": 69.8,
+  "h": "768f40cb1b",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "order": [
+   1,
+   0,
+   2,
+   3
+  ],
+  "heard": 0.932
+ },
+ "l3-003": {
+  "secs": 72.6,
+  "h": "5c050c0a15",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   1,
+   2,
+   3,
+   0
+  ],
+  "heard": 0.985
+ },
+ "l3-004": {
+  "secs": 83.3,
+  "h": "b5e85c773d",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "order": [
+   1,
+   0,
+   2,
+   3
+  ],
+  "heard": 0.992
+ },
+ "l3-005": {
+  "secs": 61.3,
+  "h": "5183f4bee6",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Iapetus",
+   "M2": "Orus"
+  },
+  "order": [
+   1,
+   2,
+   3,
+   0
+  ],
+  "heard": 0.996
+ },
+ "l3-006": {
+  "secs": 79.2,
+  "h": "a9fbdc8528",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "order": [
+   1,
+   0,
+   2,
+   3
+  ],
+  "heard": 0.996
+ },
+ "l3-007": {
+  "secs": 71.9,
+  "h": "ff04788751",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "order": [
+   1,
+   2,
+   3,
+   0
+  ],
+  "heard": 0.933
+ },
+ "l3-008": {
+  "secs": 77.1,
+  "h": "f3b50c04aa",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   1,
+   0,
+   2,
+   3
+  ],
+  "heard": 0.975
+ },
+ "l3-009": {
+  "secs": 80.1,
+  "h": "fbae2c6531",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   1,
+   2,
+   3,
+   0
+  ],
+  "heard": 0.982
+ },
+ "l3-010": {
+  "secs": 74.8,
+  "h": "eb4f397761",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "order": [
+   1,
+   2,
+   0,
+   3
+  ],
+  "heard": 0.975
+ },
+ "l3-011": {
+  "secs": 77.1,
+  "h": "1781c06590",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "order": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "heard": 0.971
+ },
+ "l3-012": {
+  "secs": 88.0,
+  "h": "13f4ee2b69",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   1,
+   2,
+   0,
+   3
+  ],
+  "heard": 0.966
+ },
+ "l3-013": {
+  "secs": 77.2,
+  "h": "3c47593363",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "order": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "heard": 0.974
+ },
+ "l3-014": {
+  "secs": 85.9,
+  "h": "8adc6109c9",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Iapetus",
+   "M2": "Orus"
+  },
+  "order": [
+   1,
+   2,
+   0,
+   3
+  ],
+  "heard": 0.971
+ },
+ "l3-015": {
+  "secs": 74.8,
+  "h": "e4e9678fe1",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "order": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "heard": 0.992
  },
  "l4-001": {
   "secs": 16.1,
@@ -36,5 +632,677 @@
    0
   ],
   "heard": 0.952
+ },
+ "l4-002": {
+  "secs": 14.2,
+  "h": "cbf538d08a",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 1.0
+ },
+ "l4-003": {
+  "secs": 15.1,
+  "h": "150d39db91",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 0.941
+ },
+ "l4-004": {
+  "secs": 18.6,
+  "h": "de9b9f85c9",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 0.955
+ },
+ "l4-005": {
+  "secs": 14.7,
+  "h": "7db5ca33a4",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Iapetus",
+   "M2": "Orus"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 1.0
+ },
+ "l4-006": {
+  "secs": 19.2,
+  "h": "6ca179db89",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 1.0
+ },
+ "l4-007": {
+  "secs": 17.3,
+  "h": "dc1efde975",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 1.0
+ },
+ "l4-008": {
+  "secs": 16.7,
+  "h": "ee8dd93445",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 1.0
+ },
+ "l4-009": {
+  "secs": 16.9,
+  "h": "a1ea12a8ad",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 1.0
+ },
+ "l4-010": {
+  "secs": 12.0,
+  "h": "c84f23c52c",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "order": [
+   1,
+   0,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-011": {
+  "secs": 17.5,
+  "h": "2710458bde",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   1,
+   0,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-012": {
+  "secs": 17.7,
+  "h": "4b78ed1a33",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   1,
+   0,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-013": {
+  "secs": 19.1,
+  "h": "188d8a995f",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "order": [
+   1,
+   0,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-014": {
+  "secs": 16.0,
+  "h": "999738b452",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Iapetus",
+   "M2": "Orus"
+  },
+  "order": [
+   1,
+   0,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-015": {
+  "secs": 18.0,
+  "h": "7946f3fc04",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "order": [
+   1,
+   0,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-016": {
+  "secs": 17.5,
+  "h": "e497d7da03",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "order": [
+   1,
+   0,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-017": {
+  "secs": 17.6,
+  "h": "10f4e00023",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   1,
+   0,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-018": {
+  "secs": 16.4,
+  "h": "d60e1a24f3",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "order": [
+   1,
+   0,
+   2
+  ],
+  "heard": 0.938
+ },
+ "l4-019": {
+  "secs": 16.3,
+  "h": "b7097e7ffe",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "order": [
+   1,
+   0,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-020": {
+  "secs": 19.4,
+  "h": "114fe35ce2",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "order": [
+   0,
+   1,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-021": {
+  "secs": 18.1,
+  "h": "d45593067e",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   0,
+   1,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-022": {
+  "secs": 17.1,
+  "h": "6e5e5b0a66",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "order": [
+   0,
+   1,
+   2
+  ],
+  "heard": 0.905
+ },
+ "l4-023": {
+  "secs": 17.5,
+  "h": "b26f5913b2",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Iapetus",
+   "M2": "Orus"
+  },
+  "order": [
+   0,
+   1,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-024": {
+  "secs": 17.2,
+  "h": "e98bf575de",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "order": [
+   0,
+   1,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-025": {
+  "secs": 14.4,
+  "h": "6f79eab282",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "order": [
+   0,
+   1,
+   2
+  ],
+  "heard": 0.875
+ },
+ "l4-026": {
+  "secs": 17.3,
+  "h": "57f0e87678",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   0,
+   1,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-027": {
+  "secs": 16.6,
+  "h": "3e1dea92fc",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   0,
+   1,
+   2
+  ],
+  "heard": 0.947
+ },
+ "l4-028": {
+  "secs": 16.2,
+  "h": "f14d7b9745",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "order": [
+   0,
+   1,
+   2
+  ],
+  "heard": 1.0
+ },
+ "l4-029": {
+  "secs": 17.5,
+  "h": "47a740e908",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Iapetus",
+   "M2": "Orus"
+  },
+  "order": [
+   0,
+   1,
+   2
+  ],
+  "heard": 0.952
+ },
+ "l4-030": {
+  "secs": 18.3,
+  "h": "a278eef4c6",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 1.0
+ },
+ "l4-031": {
+  "secs": 18.2,
+  "h": "a90a78febc",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 1.0
+ },
+ "l4-032": {
+  "secs": 18.9,
+  "h": "f1cdd3e586",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Iapetus",
+   "M2": "Orus"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 1.0
+ },
+ "l4-033": {
+  "secs": 15.8,
+  "h": "bf8ee1bc91",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 1.0
+ },
+ "l4-034": {
+  "secs": 16.8,
+  "h": "7a87b6a737",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 0.962
+ },
+ "l4-035": {
+  "secs": 17.9,
+  "h": "bd4fd8e91c",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 1.0
+ },
+ "l4-036": {
+  "secs": 16.9,
+  "h": "56ae5c6d9b",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   1,
+   2,
+   0
+  ],
+  "heard": 1.0
+ },
+ "l5-001": {
+  "secs": 123.2,
+  "h": "8d5e68d4f0",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "order": [
+   1,
+   2,
+   3,
+   0
+  ],
+  "heard": 0.978
+ },
+ "l5-002": {
+  "secs": 127.9,
+  "h": "94dd2bfa08",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "order": [
+   1,
+   0,
+   2,
+   3
+  ],
+  "heard": 0.984
+ },
+ "l5-003": {
+  "secs": 108.4,
+  "h": "96cfbe2510",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Charon",
+   "M2": "Puck"
+  },
+  "order": [
+   1,
+   2,
+   3,
+   0
+  ],
+  "heard": 0.954
+ },
+ "l5-004": {
+  "secs": 131.0,
+  "h": "31aa775509",
+  "voices": {
+   "F": "Sulafat",
+   "F2": "Kore",
+   "M": "Iapetus",
+   "M2": "Orus"
+  },
+  "order": [
+   1,
+   0,
+   2,
+   3
+  ],
+  "heard": 0.968
+ },
+ "l5-005": {
+  "secs": 125.5,
+  "h": "0f5916bd14",
+  "voices": {
+   "F": "Despina",
+   "F2": "Aoede",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "heard": 0.976
+ },
+ "l5-006": {
+  "secs": 117.2,
+  "h": "9842547018",
+  "voices": {
+   "F": "Kore",
+   "F2": "Leda",
+   "M": "Puck",
+   "M2": "Achird"
+  },
+  "heard": 0.927
+ },
+ "l5-007": {
+  "secs": 114.5,
+  "h": "298cc796c6",
+  "voices": {
+   "F": "Aoede",
+   "F2": "Sulafat",
+   "M": "Orus",
+   "M2": "Charon"
+  },
+  "heard": 0.971
+ },
+ "l5-008": {
+  "secs": 147.8,
+  "h": "0d731e5215",
+  "voices": {
+   "F": "Leda",
+   "F2": "Despina",
+   "M": "Achird",
+   "M2": "Iapetus"
+  },
+  "heard": 0.98
  }
 }
