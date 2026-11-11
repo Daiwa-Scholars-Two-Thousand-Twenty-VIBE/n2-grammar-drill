@@ -37,7 +37,7 @@ The vocabulary and notice questions work the same way: four choices, a one-line 
 
 | Mode | What it does |
 |---|---|
-| **Today: grammar** | The main block. Points due for review plus a few new ones, mixed across lessons so you have to decide which family each question belongs to. A point you get right quickly comes back later and later (1, 2, 4, 8, 16 days). A miss brings it back tomorrow, and the form you confused it with comes back too. |
+| **Today: grammar** | The main block. Points due for review plus a few new ones, mixed across lessons so you have to decide which family each question belongs to. A point you get right quickly comes back later and later (1, 2, 4, 8, 16 days). A miss brings it back tomorrow, and the form you confused it with comes back too. When the day holds more than one session's worth (**Settings → Questions per review**), Today shows the whole day's total from the start (for example "30 to review + 20 new · 2 rounds") and runs it in rounds; the results screen says how much is left or that grammar is done for the day. Vocab and kanji work the same way. |
 | **Today: vocab** | Vocabulary items due for review plus new ones, easiest first, with the three question types taken in turn. Set how many new items a day and how many per session in Settings (defaults 10 and 20). See below. |
 | **Today: kanji** | The kanji block, see below. |
 | **Mock section** | One grammar section in real exam shape: 12 問題7 questions from easy to phrase-level, 5 問題8 ★ questions and one 問題9 passage. Timed (about 15 minutes), no feedback until the end. |
@@ -56,6 +56,8 @@ The vocabulary and notice questions work the same way: four choices, a one-line 
 Your top mix-ups (for example, "you reached for 〜にしては when it was 〜わりに") show in 記録 Progress. Tap one to drill the pair.
 
 Keys: `1` to `4` to answer, `Enter` for next, `H` to show the cue before answering (it then counts as slow), `Space` or `P` to play a listening item, `Esc` to stop.
+
+A missed grammar point, vocab item or kanji comes back once later in the same session. The counter at the top counts only the questions the session started with, so its total never moves: a miss shows as "+1 retry" beside it, the retry itself shows as "Retry", and the score counts first tries, with retries reported on their own line.
 
 After a wrong answer, Next waits 1.5 seconds while a bar fills along it, so a quick second `Enter` cannot skip the tell and the reasons. Holding `Enter` down never skips it either. **Settings → Pause after a miss** changes the wait (none, 1, 1.5 or 3 seconds).
 

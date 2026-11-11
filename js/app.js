@@ -396,7 +396,7 @@
     // Due points come first when there is a backlog, but a quarter of the session stays open for new ones.
     const n = Math.min(settings.size, due + newLeft);
     const nNew = Math.min(newLeft, Math.max(n - due, Math.floor(n / 4)));
-    return { due, fresh, newLeft, tomorrow, n, nNew };
+    return { due, fresh, newLeft, tomorrow, n, nNew, left: due + newLeft };
   }
 
   function dayStreak() {
@@ -411,18 +411,25 @@
     return n;
   }
 
-  // The day as three blocks: grammar, then vocab, then kanji. `n` is what each block has left today.
+  // The day as three blocks: grammar, then vocab, then kanji. `left` is all a block has left today
+  // (due plus new); it runs in rounds of the session size, and `n` is the next round. Rounds never add
+  // to the day: a point answered in one round is not due again until tomorrow at the earliest.
   function dayPlan() {
     const t = today();
     const g = todayCounts();
-    const plan = [{ id: "grammar", name: "Grammar", sub: "問題7 and 8: the right form, fast", n: g.n, mins: (g.n * 40) / 60, done: (state.days[t] || {}).n || 0, act: "today", unit: "questions" }];
+    const rounds = (c, size, about) => {
+      const parts = [c.due ? `${c.due} to review` : "", c.newLeft ? `${c.newLeft} new` : ""].filter(Boolean).join(" + ");
+      const r = Math.ceil(c.left / size);
+      return { n: c.n, left: c.left, rounds: r, sub: c.left ? `${parts}${r > 1 ? ` · ${r} rounds` : ""}` : about };
+    };
+    const plan = [{ id: "grammar", name: "Grammar", ...rounds(g, settings.size, "問題7 and 8: the right form, fast"), mins: (g.left * 40) / 60, done: (state.days[t] || {}).n || 0, act: "today", unit: "questions" }];
     if (V.length) {
       const v = vocabCounts();
-      plan.push({ id: "vocab", name: "Vocab", sub: "語形成, 言い換え, 用法", n: v.n, mins: (v.n * 35) / 60, done: (state.vdays[t] || {}).n || 0, act: "vocab-today", unit: "items" });
+      plan.push({ id: "vocab", name: "Vocab", ...rounds(v, settings.vSize, "語形成, 言い換え, 用法"), mins: (v.left * 35) / 60, done: (state.vdays[t] || {}).n || 0, act: "vocab-today", unit: "items" });
     }
     if (K.length) {
       const k = kanjiCounts();
-      plan.push({ id: "kanji", name: "Kanji", sub: `Exam kanji past WaniKani ${settings.wk}`, n: k.n, mins: (k.n * 15 + k.nNew * 20) / 60, done: (state.kdays[t] || {}).n || 0, act: "kanji-today", unit: "kanji" });
+      plan.push({ id: "kanji", name: "Kanji", ...rounds(k, settings.kSize, `Exam kanji past WaniKani ${settings.wk}`), mins: (k.left * 15 + k.newLeft * 20) / 60, done: (state.kdays[t] || {}).n || 0, act: "kanji-today", unit: "kanji" });
     }
     // Reading and listening: optional blocks until settings.rlFrom, then part of the day.
     const optional = t < settings.rlFrom;
@@ -477,7 +484,7 @@
     const rows = plan
       .map((b) => {
         const done = !b.n;
-        const right = done ? (b.done ? `${b.done === true ? "" : `${b.done} `}done` : "Nothing due") : `${b.unit === "set" ? "1 set" : b.n} · ${b.mins} min`;
+        const right = done ? (b.done ? `${b.done === true ? "" : `${b.done} `}done` : "Nothing due") : `${b.unit === "set" ? "1 set" : b.left || b.n} · ${b.mins} min`;
         const inner = `<span class="tick${done ? " on" : ""}" aria-hidden="true">${done ? "✓" : ""}</span><span><b>${b.name}</b><small>${esc(b.sub)}</small></span><span class="meta">${right}</span>`;
         const cls = `block${b.optional ? " opt" : ""}`;
         return done ? `<div class="${cls} done">${inner}</div>` : `<button class="${cls}" data-act="${b.act}">${inner}</button>`;
@@ -485,7 +492,7 @@
       .join("");
     const date = new Date().toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
     const main = next
-      ? `<button class="btn primary wide go" data-act="${next.act}">Start ${next.name.toLowerCase()}: ${next.n} ${next.unit}, about ${next.mins} min</button>`
+      ? `<button class="btn primary wide go" data-act="${next.act}">Start ${next.name.toLowerCase()}: ${next.left > next.n ? `the first ${next.n} of ${next.left} ${next.unit}` : `${next.n} ${next.unit}, about ${next.mins} min`}</button>`
       : `<button class="btn wide" data-act="nav" data-to="practice">Extra practice</button>`;
     const ever = [state.days, state.kdays, state.vdays, state.rdays, state.ldays].some((l) => Object.keys(l).length);
     const req = plan.filter((b) => !b.optional).length;
@@ -967,6 +974,7 @@
   function begin(mode, title, items) {
     if (!items.length) return toast("No questions match that yet.");
     stopAudio();
+    items = items.map((q) => (q.retry ? { ...q, retry: false } : q));
     sess = { mode, title, items, i: 0, res: [], requeued: new Set(), mock: MOCKS.has(mode), started: Date.now() };
     // A listening mock has no overall clock: the audio sets the pace, with a fixed time to answer each item.
     if (sess.mock && mode !== "lmock") sess.deadline = Date.now() + items.reduce((a, q) => a + MOCK_SECS[q.type], 0) * 1000;
@@ -998,7 +1006,7 @@
     const newLeft = Math.min(fresh, Math.max(0, settings.kNew - S.newToday(state, t, "kanji")));
     const n = Math.min(settings.kSize, due + newLeft);
     const nNew = Math.min(newLeft, Math.max(n - due, Math.floor(n / 4)));
-    return { met, due, fresh, newLeft, n, nNew, gap: K.filter(inGap).length };
+    return { met, due, fresh, newLeft, n, nNew, left: due + newLeft, gap: K.filter(inGap).length };
   }
 
   function startKanji(kind) {
@@ -1022,7 +1030,7 @@
     const newLeft = Math.min(fresh, Math.max(0, settings.vNew - S.newToday(state, t, "vocab")));
     const n = Math.min(settings.vSize, due + newLeft);
     const nNew = Math.min(newLeft, Math.max(n - due, Math.floor(n / 4)));
-    return { met, due, fresh, newLeft, n, nNew };
+    return { met, due, fresh, newLeft, n, nNew, left: due + newLeft };
   }
 
   function startVocab(kind, type) {
@@ -1163,16 +1171,30 @@
     if (el.textContent !== txt) el.textContent = txt;
   }, 1000);
 
+  // The counter and bar count the questions the session was planned with, so the total never moves.
+  // A retry of a miss and a kanji teaching card are extras on top: a retry shows as "Retry", and the
+  // retries still to come show as "+1 retry" so the real end is always in view.
+  const isExtra = (it) => it.retry || it.type === "kn";
+  function counter() {
+    const q = cur();
+    const total = sess.items.filter((it) => !isExtra(it)).length;
+    const done = sess.items.slice(0, sess.i).filter((it) => !isExtra(it)).length;
+    const more = sess.items.slice(sess.i).filter((it) => it.retry).length;
+    const pct = total ? Math.round((done / total) * 100) : 0;
+    if (q.retry) return { pct, text: `Retry · ${done}/${total}` };
+    const at = q.type === "kn" ? done : done + 1;
+    return { pct, text: `${at}/${total}${more ? ` +${more} ${more === 1 ? "retry" : "retries"}` : ""}` };
+  }
+
   function viewQuiz() {
     const q = cur();
-    const n = sess.items.length;
-    const pct = Math.round((sess.i / n) * 100);
+    const { pct, text } = counter();
     const canHint = !sess.mock && !sess.answered && !sess.hint && q.type !== "p8" && !isK(q) && !isV(q) && !isL(q);
     const body = isK(q) ? qK(q) : isV(q) ? qV(q) : isL(q) ? qL(q) : isR(q) ? qRead(q) : q.type === "p7" ? qP7(q) : q.type === "p8" ? qP8(q) : qP9(q);
     return `<div class="qbar">
         <button class="quit" data-act="quit">✕ ${sess.mock ? "End" : "Stop"}</button>
         <div class="progress"><span style="width:${pct}%"></span></div>
-        <span>${sess.i + 1}/${n}</span><span class="clock">${clockText()}</span>
+        <span>${text}</span><span class="clock">${clockText()}</span>
       </div>
       <div class="card">
         <div class="qtype"><span class="tag">${TYPE_NAME[q.type]}${sess.answered && q.type !== "kn" ? ` · ${esc(q.id)}` : ""}</span>${canHint ? `<button class="linkish small" data-act="hint">Show the cue <kbd>H</kbd></button>` : ""}</div>
@@ -1456,7 +1478,7 @@
   function requeueV(q) {
     if (sess.mock || sess.mode === "review" || sess.requeued.has(q.id)) return;
     sess.requeued.add(q.id);
-    sess.items.splice(Math.min(sess.i + 4, sess.items.length), 0, q);
+    sess.items.splice(Math.min(sess.i + 4, sess.items.length), 0, { ...q, retry: true });
   }
 
   // ---------- 情報検索 ----------
@@ -1704,7 +1726,7 @@
     const ahead = new Set(sess.items.slice(sess.i).map((it) => it.id));
     const opts = S.buildKanjiDrill({ kanji: K, x: kanjiOf.get(q.k), max: 99 }).filter((it) => !ahead.has(it.id) && it.type !== "kw");
     const again = opts.find((it) => it.wi !== q.wi) || opts.find((it) => it.id !== q.id) || q;
-    sess.items.splice(Math.min(sess.i + 4, sess.items.length), 0, again);
+    sess.items.splice(Math.min(sess.i + 4, sess.items.length), 0, { ...again, retry: true });
   }
 
   function record(q, point, ok, secs, chosenPoint, qid) {
@@ -1738,7 +1760,7 @@
       addHeard(q);
       saveState();
     }
-    sess.res.push({ qid: q.id, blank: isMulti(q) ? sess.blank : null, ok, secs, orig, order: sess.order.slice(), item: isK(q) ? q : null });
+    sess.res.push({ qid: q.id, blank: isMulti(q) ? sess.blank : null, ok, secs, orig, order: sess.order.slice(), item: isK(q) ? q : null, retry: !!q.retry });
     if (isR(q) && sess.blank === q.qs.length - 1) {
       logRead(q);
       saveState();
@@ -1772,7 +1794,7 @@
     const ok = sess.built[q.star] === q.star;
     const secs = (Date.now() - sess.t0) / 1000;
     record(q, q.point, ok, secs, null);
-    sess.res.push({ qid: q.id, blank: null, ok, starOk: ok, orderOk, secs, built: sess.built.slice() });
+    sess.res.push({ qid: q.id, blank: null, ok, starOk: ok, orderOk, secs, built: sess.built.slice(), retry: !!q.retry });
     if (!ok) requeue(q.point);
     if (sess.mock) return advance();
     sess.answered = { ok, starOk: ok, orderOk, secs };
@@ -1787,7 +1809,7 @@
     const ahead = new Set(sess.items.slice(sess.i).map((q) => q.id));
     const cands = D.questions.filter((q) => q.type === "p7" && q.point === point && !ahead.has(q.id));
     const q = cands.length ? cands.sort((x, y) => seenQ(x.id) - seenQ(y.id))[0] : cur();
-    sess.items.splice(Math.min(sess.i + 4, sess.items.length), 0, q);
+    sess.items.splice(Math.min(sess.i + 4, sess.items.length), 0, { ...q, retry: true });
   }
 
   function hint() {
@@ -1862,6 +1884,10 @@
   function viewResults() {
     const r = last;
     const res = r.res;
+    // The score is over the questions the session was planned with; retries of misses are reported apart.
+    const firsts = res.filter((x) => !x.retry);
+    const redo = res.filter((x) => x.retry);
+    const redoNote = redo.length ? `Retries: ${redo.filter((x) => x.ok).length} of ${redo.length} right. ` : "";
     const itemOf = (x) => x.item || itemById(x.qid);
     const typeOf = (x) => itemOf(x).type;
     const used = (r.ended - r.started) / 1000;
@@ -1907,20 +1933,20 @@
         <p>${S.VTYPES.map((t) => `${TYPE_NAME[t].split(" · ")[0]} ${VNAME[t][0]} ${of(t).filter((x) => x.ok).length}/${of(t).length}`).join(" · ")}</p>
         <p class="muted small">Time used ${fmtSecs(used)} of ${fmtSecs(allowed)}. Vocab is the part of the paper to do fast, so the time you save goes to reading.</p></div>`;
     } else if (r.mode === "vocab" || (r.mode === "review" && res.some((x) => isV(itemOf(x)) || isL(itemOf(x))))) {
-      const ok = res.filter((x) => x.ok).length;
-      const med = res.length ? S.median(res.map((x) => x.secs)) : null;
-      const slow = res.filter((x) => x.ok && x.secs > S.TARGET[typeOf(x)] * 1.2).length;
+      const ok = firsts.filter((x) => x.ok).length;
+      const med = firsts.length ? S.median(firsts.map((x) => x.secs)) : null;
+      const slow = firsts.filter((x) => x.ok && x.secs > S.TARGET[typeOf(x)] * 1.2).length;
       top = `<div class="card"><span class="kicker">${esc(r.title)}</span>
-        <div class="score">${ok}<small> / ${res.length} right</small></div>
-        <p class="muted small">${med !== null ? `Typical time: ${fmtSecs(med)}. ` : ""}${slow ? `${slow} right but slow: those come back tomorrow. ` : ""}Time ${fmtSecs(used)}.</p></div>`;
+        <div class="score">${ok}<small> / ${firsts.length} right</small></div>
+        <p class="muted small">${redoNote}${med !== null ? `Typical time: ${fmtSecs(med)}. ` : ""}${slow ? `${slow} right but slow: those come back tomorrow. ` : ""}Time ${fmtSecs(used)}.</p></div>`;
     } else if (r.mode === "kanji") {
-      const ok = res.filter((x) => x.ok).length;
-      const med = res.length ? S.median(res.map((x) => x.secs)) : null;
-      const slow = res.filter((x) => x.ok && x.secs > S.TARGET.kr * 1.2).length;
+      const ok = firsts.filter((x) => x.ok).length;
+      const med = firsts.length ? S.median(firsts.map((x) => x.secs)) : null;
+      const slow = firsts.filter((x) => x.ok && x.secs > S.TARGET.kr * 1.2).length;
       const taught = r.items.filter((q) => q.type === "kn").length;
       top = `<div class="card"><span class="kicker">${esc(r.title)}</span>
-        <div class="score">${ok}<small> / ${res.length} right</small></div>
-        <p class="muted small">${taught ? `${taught} new kanji. ` : ""}${med !== null ? `Typical time: ${fmtSecs(med)} (aim for ${S.TARGET.kr} s). ` : ""}${slow ? `${slow} right but slow: those come back tomorrow. ` : ""}Time ${fmtSecs(used)}.</p></div>`;
+        <div class="score">${ok}<small> / ${firsts.length} right</small></div>
+        <p class="muted small">${redoNote}${taught ? `${taught} new kanji. ` : ""}${med !== null ? `Typical time: ${fmtSecs(med)} (aim for ${S.TARGET.kr} s). ` : ""}${slow ? `${slow} right but slow: those come back tomorrow. ` : ""}Time ${fmtSecs(used)}.</p></div>`;
     } else if (r.mock) {
       const of = (t) => res.filter((x) => typeOf(x) === t);
       const s7 = of("p7").filter((x) => x.ok).length;
@@ -1934,13 +1960,13 @@
         <p>問題7 ${s7}/${of("p7").length} · 問題8 ${s8}/${of("p8").length} (★ piece, as the paper scores it) · 問題9 ${s9}/${of("p9").length}</p>
         <p class="muted small">Time used ${fmtSecs(used)} of ${fmtSecs(allowed)}. On the real paper this section has to fit inside the reading time too, so speed matters as much as accuracy.</p></div>`;
     } else {
-      const ok = res.filter((x) => x.ok).length;
-      const times = res.filter((x) => typeOf(x) === "p7").map((x) => x.secs);
+      const ok = firsts.filter((x) => x.ok).length;
+      const times = firsts.filter((x) => typeOf(x) === "p7").map((x) => x.secs);
       const med = times.length ? S.median(times) : null;
-      const slow = res.filter((x) => x.ok && typeOf(x) === "p7" && x.secs > S.TARGET.p7 * 1.2).length;
+      const slow = firsts.filter((x) => x.ok && typeOf(x) === "p7" && x.secs > S.TARGET.p7 * 1.2).length;
       top = `<div class="card"><span class="kicker">${esc(r.title)}</span>
-        <div class="score">${ok}<small> / ${res.length} right</small></div>
-        <p class="muted small">${med !== null ? `Typical time per 問題7: ${fmtSecs(med)} (aim for 25 s). ` : ""}${slow ? `${slow} right but slow: those come back tomorrow. ` : ""}Time ${fmtSecs(used)}.</p></div>`;
+        <div class="score">${ok}<small> / ${firsts.length} right</small></div>
+        <p class="muted small">${redoNote}${med !== null ? `Typical time per 問題7: ${fmtSecs(med)} (aim for 25 s). ` : ""}${slow ? `${slow} right but slow: those come back tomorrow. ` : ""}Time ${fmtSecs(used)}.</p></div>`;
     }
     const missed = [...new Set(res.filter((x) => !x.ok && !isMulti(itemOf(x))).map((x) => x.qid))];
     const rows = res
@@ -1973,7 +1999,7 @@
         const b = q.type === "p9" ? q.qs[x.blank] : q;
         const p = pointById.get(b.point);
         const ok = q.type === "p8" && r.mock ? x.starOk : x.ok;
-        const label = q.type === "p9" ? `${esc(q.title)} · blank ${x.blank + 1}` : q.type === "p8" ? `★ ${esc(p.form)}` : esc(p.form);
+        const label = (q.type === "p9" ? `${esc(q.title)} · blank ${x.blank + 1}` : q.type === "p8" ? `★ ${esc(p.form)}` : esc(p.form)) + (x.retry ? ` <span class="muted small">retry</span>` : "");
         let body;
         if (q.type === "p8") body = feedback8(q, x, false);
         else {
@@ -1984,12 +2010,21 @@
       })
       .join("");
     // The main button carries on with today's plan: the next block not done yet.
-    const next = dayPlan().find((b) => b.n > 0);
+    const plan = dayPlan();
+    const next = plan.find((b) => b.n > 0);
+    // After a daily block, say plainly whether it is finished for the day or how much is left.
+    const blk = plan.find((b) => b.id === { today: "grammar", vocab: "vocab", kanji: "kanji" }[r.mode]);
+    const leftNote = !blk
+      ? ""
+      : blk.left
+        ? `<p class="small center">${blk.name} today: ${blk.left} more ${blk.unit}, ${blk.rounds > 1 ? `${blk.rounds} more rounds` : "one more round"}.</p>`
+        : `<p class="small center">That is all the ${blk.name.toLowerCase()} for today.</p>`;
     const main = next
-      ? `<button class="btn primary wide go" data-act="${next.act}">Next: ${esc(next.name)}</button>`
+      ? `<button class="btn primary wide go" data-act="${next.act}">Next: ${esc(next.name)}${blk && next.id === blk.id ? `, ${next.left > next.n ? `${next.n} of the ${next.left}` : `the last ${next.n}`} ${next.unit}` : ""}</button>`
       : `<button class="btn primary wide go" data-act="nav" data-to="home">Back to Today</button>`;
     const more = `${missed.length ? `<button class="btn" data-act="again">Go again on the ${missed.length} I missed</button>` : ""}${next ? `<button class="btn" data-act="nav" data-to="home">Today</button>` : ""}`;
     return `${header()}${top}
+      ${leftNote}
       ${main}
       ${more ? `<div class="row" style="margin:10px 0 14px">${more}</div>` : `<div style="height:14px"></div>`}
       <h3>Every question</h3><p class="muted small">${r.mode === "kanji" ? "Tap one to see the word in its sentence, the trap you fell into and the kanji." : r.mode === "read" || r.mode === "rmock" ? "Tap one to see where the answer sits in the text and why each choice fails." : r.mode === "listen" || r.mode === "lmock" ? "Tap one for the script, the words that decide it and why each choice fails." : "Tap one to see the tell and why each choice fails."}</p>
