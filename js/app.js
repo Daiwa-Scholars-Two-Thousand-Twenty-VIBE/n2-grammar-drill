@@ -7,7 +7,7 @@
   const S = window.SRS;
   const G = window.Sync || null; // gist sync (js/sync.js). Missing means sync stays off.
   const app = document.getElementById("app");
-  const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1" };
+  const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1", wk: "n2drill.wk.v1" };
   // rlFrom: the day reading and listening join Today. Before it they show as optional blocks.
   const DEFAULTS = { upto: "all", size: 20, newPerDay: 12, timer: true, eink: false, sound: false, missPause: 1500, examDate: "", wk: 27, kNew: 10, kSize: 30, vNew: 10, vSize: 20, rlFrom: "2026-11-16", lDaily: 8 };
   // Seconds the real paper allows, roughly: 問題7 and 問題8 per item, 問題9 per passage, vocab per item,
@@ -1378,6 +1378,7 @@
           <div class="small muted jp">${esc([...x.on, ...x.kun].join("、"))}</div>
           <div class="small muted">${glyph(st)} ${STATUS[st][1]} · WaniKani ${x.wk ? `level ${x.wk}` : "does not teach it"}${x.papers ? ` · in ${x.papers} of 17 past N2 papers` : ""}</div></div>
       </div>
+      ${radLine(x)}
       ${words ? `<ul class="kwords">${x.words.map((w) => `<li><span class="jp">${esc(w.w)}</span> <span class="jp muted">${esc(w.r)}</span> ${esc(w.en)}</li>`).join("")}</ul>` : ""}
       ${soundLine(x)}
       ${looks ? `<p class="small"><b>Don't confuse:</b> ${looks}</p>` : ""}`;
@@ -1398,6 +1399,110 @@
     const r = `<span class="jp">${esc(reads.join("・"))}</span>`;
     const lead = part === x.k ? `<span class="jp">${esc(part)}</span> is one itself, read ${r}` : `<span class="jp">${esc(part)}</span> gives ${r}`;
     return `<p class="small sound"><b>Sound part:</b> ${lead}, as in ${kin}</p>`;
+  }
+
+  // ---------- radicals ----------
+  // WaniKani's radicals for each gap kanji, so a new kanji shows the parts you already have names
+  // (and stories) for. They come from the WaniKani API with your own token and stay in this browser:
+  // WaniKani's content is never part of this repo. The token is the one Kanji Desk saved (pages on
+  // github.io share one web address), or one pasted in Settings on a copy at another address.
+  // Kept apart from settings, because settings sync through the gist and a token must not.
+  const WK_API = "https://api.wanikani.com/v2";
+  const WK_TOKEN_URL = "https://www.wanikani.com/settings/personal_access_tokens";
+  const KD_TOKEN = "kanjidesk.token.v1";
+  const RAD_DAYS = 30; // fetched again after this, or when the kanji list changes
+  const rad = Object.assign({ token: "", at: 0, map: {}, err: "" }, load(KEYS.wk) || {});
+  const kdToken = () => {
+    const t = load(KD_TOKEN);
+    return typeof t === "string" ? t.trim() : "";
+  };
+  const wkToken = () => rad.token || kdToken();
+  let radBusy = false;
+
+  async function wkGet(path, token) {
+    const out = [];
+    let url = `${WK_API}${path}`;
+    while (url) {
+      const res = await fetch(url, { headers: { Authorization: `Bearer ${token}`, "Wanikani-Revision": "20170710" } });
+      if (!res.ok) throw Object.assign(new Error(`WaniKani answered ${res.status}`), { status: res.status });
+      const body = await res.json();
+      out.push(...body.data);
+      url = body.pages && body.pages.next_url;
+    }
+    return out;
+  }
+  // One radical as [characters, name, WaniKani level, image url]. Some radicals have no character, only a picture.
+  function radOf(s) {
+    const d = s.data;
+    const imgs = d.character_images || [];
+    const img = d.characters ? null : imgs.find((x) => x.content_type === "image/svg+xml") || imgs[0];
+    const m = d.meanings.find((x) => x.primary) || d.meanings[0];
+    return [d.characters || "", m ? m.meaning : d.slug, d.level, img ? img.url : ""];
+  }
+  async function loadRadicals(force = false) {
+    const token = wkToken();
+    if (!K.length || !token || radBusy || navigator.onLine === false) return;
+    if (!force && rad.at && Date.now() - rad.at < RAD_DAYS * 864e5 && K.every((x) => !x.wk || rad.map[x.k])) return;
+    radBusy = true;
+    try {
+      const kanji = await wkGet(`/subjects?types=kanji&slugs=${encodeURIComponent(K.map((x) => x.k).join(","))}`, token);
+      const ids = [...new Set(kanji.flatMap((x) => x.data.component_subject_ids || []))];
+      const byId = new Map();
+      for (let i = 0; i < ids.length; i += 500) (await wkGet(`/subjects?ids=${ids.slice(i, i + 500).join(",")}`, token)).forEach((x) => byId.set(x.id, x));
+      const map = {};
+      for (const x of kanji) map[x.data.characters] = (x.data.component_subject_ids || []).map((id) => byId.get(id)).filter(Boolean).map(radOf);
+      Object.assign(rad, { at: Date.now(), map, err: "" });
+    } catch (e) {
+      rad.err = e.status === 401 ? "WaniKani refused the token." : "Could not reach WaniKani. The radicals load the next time the page opens.";
+    }
+    radBusy = false;
+    save(KEYS.wk, rad);
+    // Show them where they appear, but never redraw a quiz or a field being typed in.
+    const el = document.activeElement;
+    if (!sess && ["kanji", "settings"].includes(screenOf()[0]) && !(el && el.matches && el.matches("input, select, textarea"))) render(true);
+  }
+  function saveWkToken() {
+    const input = document.getElementById("wk-token");
+    const t = input ? input.value.trim() : "";
+    if (!t) return toast("Paste the token first.");
+    Object.assign(rad, { token: t, at: 0, err: "" });
+    save(KEYS.wk, rad);
+    render(true);
+    loadRadicals(true);
+  }
+  function clearWkToken() {
+    Object.assign(rad, { token: "", err: "" });
+    save(KEYS.wk, rad);
+    render(true);
+  }
+
+  // The radicals line on a kanji. Radicals WaniKani teaches past your level are muted.
+  function radLine(x) {
+    const rs = rad.map[x.k];
+    if (!rs || !rs.length) return "";
+    const one = ([c, name, lvl, img]) => {
+      const face = c ? `<span class="jp">${esc(c)}</span>` : img ? `<img class="rad-img" src="${esc(img)}" alt="">` : "";
+      return `<span class="rad${lvl > settings.wk ? " muted" : ""}" title="WaniKani level ${lvl}">${face}${face ? " " : ""}${esc(name)}</span>`;
+    };
+    return `<p class="small rads"><b>Radicals:</b> ${rs.map(one).join(" + ")}</p>`;
+  }
+
+  function radCard() {
+    const n = Object.keys(rad.map).length;
+    const fromKd = !rad.token && kdToken();
+    const status = rad.err ? esc(rad.err) : radBusy ? "Loading…" : n ? `Loaded for ${n} kanji${fromKd ? ", with Kanji Desk's token" : ""}.` : wkToken() ? "Not loaded yet." : "";
+    const form = `<div class="token-row">
+        <input type="password" id="wk-token" placeholder="Paste a WaniKani token" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="WaniKani token">
+        <button class="btn primary" data-act="wk-save">Save</button>
+      </div>`;
+    return `<div class="field-block"><b>Radicals</b>
+      <p class="small muted">Each kanji card shows its WaniKani radicals, to build a story from. They load from WaniKani with your token and stay on this device.</p>
+      ${status ? `<p class="small">${status}</p>` : ""}
+      ${rad.token
+        ? `<div class="row"><button class="btn" data-act="wk-reload">Load again</button><button class="btn" data-act="wk-clear">Remove the token</button></div>`
+        : `${fromKd ? "" : `<p class="small">Make a token on <a href="${WK_TOKEN_URL}" target="_blank" rel="noopener">WaniKani's token page</a> with no boxes ticked (read only), then paste it here.</p>`}
+           ${fromKd ? `<details class="small"><summary>Use a different token</summary>${form}</details>` : form}`}
+    </div>`;
   }
 
   function qK(q) {
@@ -2276,6 +2381,7 @@
         <div class="field"><label for="s-wk">My WaniKani level<small>Kanji WaniKani teaches at or below this level are not introduced. The list starts at level 28, so 27 or lower means all of it.</small></label><input id="s-wk" type="number" min="0" max="60" value="${settings.wk}" data-set="wk"></div>
         <div class="field"><label for="s-knew">New kanji per day<small>10 a day meets the first 250 in under four weeks.</small></label><input id="s-knew" type="number" min="0" max="30" value="${settings.kNew}" data-set="kNew"></div>
         <div class="field"><label for="s-ksize">Kanji per review</label><input id="s-ksize" type="number" min="5" max="80" value="${settings.kSize}" data-set="kSize"></div>
+        ${radCard()}
       </div>` : ""}
       ${V.length ? `<div class="card"><h3>Vocab</h3>
         <div class="field"><label for="s-vnew">New vocab items per day<small>10 a day meets every item in about ${Math.max(1, Math.ceil(V.length / 10))} days.</small></label><input id="s-vnew" type="number" min="0" max="30" value="${settings.vNew}" data-set="vNew"></div>
@@ -2799,6 +2905,12 @@
         return syncNow("button");
       case "sync-off":
         return syncOff();
+      case "wk-save":
+        return saveWkToken();
+      case "wk-clear":
+        return clearWkToken();
+      case "wk-reload":
+        return loadRadicals(true);
     }
   });
 
@@ -2864,6 +2976,7 @@
 
   // Sync quietly: once the first screen is up, when the page is hidden or shown again, and when back online.
   setTimeout(() => syncNow("load"), 0);
+  setTimeout(() => loadRadicals(), 0);
   document.addEventListener("visibilitychange", () => syncNow(document.visibilityState));
   window.addEventListener("online", () => syncNow("online"));
   setInterval(refreshSyncUI, 30000); // keeps "Synced 2 min ago" true

@@ -587,6 +587,14 @@ u.tgt { text-decoration: underline 2px; text-underline-offset: 6px; font-weight:
 .kwords { margin: 0; padding-left: 18px; font-size: 0.92rem; }
 .kwords li { margin: 2px 0; }
 .sound small { font-size: 0.75em; color: var(--muted); margin-left: 1px; }
+.rads { margin: 0; }
+.rads .rad { white-space: nowrap; }
+.rads .rad .jp { font-size: 1.15em; }
+.rad-img { width: 1.1em; height: 1.1em; vertical-align: -0.2em; }
+@media (prefers-color-scheme: dark) { :root:not(.light) .rad-img { filter: invert(1); } }
+:root body.eink .rad-img { filter: none; }
+.field-block { padding-top: 10px; }
+.field-block p { margin: 4px 0; }
 .kintro { display: grid; gap: 12px; }
 .kintro .sentence { margin: 0; }
 .kex { padding: 10px 0; border-top: 1px solid var(--line); }

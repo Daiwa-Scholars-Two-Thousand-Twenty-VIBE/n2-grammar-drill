@@ -87,6 +87,7 @@ WaniKani teaches kanji in its own order, so at level 27 you know about 950 kanji
 - **Three question shapes:** the reading of an underlined word (like 問題1, with the exam's voicing, long-vowel and small っ traps), the right kanji for a word in kana (like 問題2, with look-alike kanji), and the meaning.
 - **Same scheduling as grammar:** the kanji is the unit; each review uses a different word. Aim for 12 seconds a question.
 - **Sound parts.** About half the kanji are built on a part that gives their on'yomi: 簡 has 門, read カン as in 間 and 関. The kanji card, the teaching card and the answer show that part and other kanji read the same way, the ones you already know from WaniKani first. It helps you guess the reading of a kanji you have never met.
+- **Radicals.** The kanji card, the teaching card and the answer show the kanji's WaniKani radicals by name (込: 辶 Scooter + 入 Enter), so you can make up a story for a new kanji the way WaniKani teaches. Radicals past your WaniKani level are muted. They load from the WaniKani API with your own token and stay in your browser, so none of WaniKani's content is in this repo. On the github.io site the drill uses the token Kanji Desk saved, since pages on github.io share one web address. Anywhere else, paste a read-only token in **Settings → Kanji gap**. The list is fetched again after 30 days or when the kanji list changes.
 - **Settings → My WaniKani level** leaves out kanji you have already reached in WaniKani. **New kanji per day** defaults to 10.
 
 ## Vocabulary and 情報検索
