@@ -139,3 +139,15 @@ test("audio manifest only lists real items, and its spoken order matches the app
     if (a.order) assert.deepEqual(a.order, S.spokenOrder(id, n), `${id}: recorded order differs from the app's`);
   }
 });
+
+test("lesson videos belong to 第2部 or 第3部 points, and each has its file and poster", { skip: !fs.existsSync(path.join(CONTENT, "videos.json")) && "no videos yet" }, () => {
+  const man = readJSON(path.join(CONTENT, "videos.json"));
+  const root = path.join(CONTENT, "..");
+  for (const [id, v] of Object.entries(man)) {
+    assert.ok(catalog.pointIds.has(id), `videos.json lists ${id}, which is not a point`);
+    assert.match(id, /^P[23]-\d+$/, `${id}: videos are for 第2部 and 第3部 points`);
+    assert.ok(v.secs > 0 && v.mb > 0 && /^[0-9a-f]{8}$/.test(v.h), `${id}: needs secs, mb and an 8-character hash`);
+    for (const ext of ["mp4", "jpg"]) assert.ok(fs.existsSync(path.join(root, "video", `${id}.${ext}`)), `${id}.${ext} is missing from video/`);
+    assert.ok(v.mb < 20, `${id} is ${v.mb} MB: too big to stream on a phone`);
+  }
+});

@@ -63,7 +63,8 @@
   const LTYPES = ["l1", "l2", "l3", "l4", "l5"];
   const CIRCLED = "①②③④⑤⑥";
   // Time logged by hand, for the weekly hours goal.
-  const HOUR_CATS = { imm: "Immersion", tutor: "Tutor lesson", book: "Textbook or Try N2", mock: "Mock paper", other: "Other" };
+  // `video` entries are written by the lesson video page, not the form.
+  const HOUR_CATS = { imm: "Immersion", tutor: "Tutor lesson", book: "Textbook or Try N2", mock: "Mock paper", other: "Other", video: "Lesson video" };
   const WEEK_GOAL = 18;
   // Vocab types: short name, what it asks, and the instruction shown above the choices.
   const VNAME = {
@@ -143,6 +144,9 @@
   const tById = new Map(RT.map((p) => [p.id, p]));
   const RALL = [...RT, ...R]; // every reading text, 情報検索 included
   const AUD = D.audio || {};
+  // Lesson videos (tools/build_videos.py): one per 第2部 and 第3部 point, in book order.
+  const VID = D.videos || {};
+  const VIDS = D.points.filter((p) => VID[p.id]);
   const LALL = D.listen || [];
   const lById = new Map(LALL.map((x) => [x.id, x]));
   // Listening items that can be played: only those with recorded audio. There is no synthetic fallback.
@@ -309,6 +313,7 @@
   // `keepScroll` is for a background refresh (a sync brought new progress): stay where the reader is.
   function render(keepScroll) {
     closeModal();
+    leaveVideo();
     refreshL();
     document.body.classList.toggle("eink", !!settings.eink);
     const [screen, arg] = screenOf();
@@ -364,12 +369,19 @@
       case "tip":
         html = viewTip(arg);
         break;
+      case "videos":
+        html = viewVideos();
+        break;
+      case "video":
+        html = VID[arg] ? viewVideo(arg) : viewVideos();
+        break;
       default:
         tab = "home";
         html = viewToday();
     }
     if (tab) fromTab = tab;
     paint(html, !!tab);
+    if (screen === "video" && VID[arg]) wireVideo(arg);
     if (keepScroll !== true) window.scrollTo(0, 0);
   }
 
@@ -711,13 +723,13 @@
       })
       .join("");
     const recent = Object.entries(state.hours || {})
-      .filter(([, e]) => !e.del && e.d >= S.addDays(t, -6))
+      .filter(([, e]) => !e.del && e.min > 0 && e.d >= S.addDays(t, -6))
       .sort((a, b) => (a[1].d < b[1].d ? 1 : -1))
-      .map(([id, e]) => `<li>${esc(fmtDay(e.d))} · ${esc(HOUR_CATS[e.cat] || e.cat)} · ${e.min} min <button class="linkish small" data-act="hours-del" data-id="${esc(id)}" aria-label="Delete">✕</button></li>`)
+      .map(([id, e]) => `<li>${esc(fmtDay(e.d))} · ${esc(HOUR_CATS[e.cat] || e.cat)}${e.vid && pointById.has(e.vid) ? ` <span class="jp">${esc(pointById.get(e.vid).form)}</span>` : ""} · ${e.min} min <button class="linkish small" data-act="hours-del" data-id="${esc(id)}" aria-label="Delete">✕</button></li>`)
       .join("");
-    const cats = Object.entries(HOUR_CATS).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join("");
+    const cats = Object.entries(HOUR_CATS).filter(([k]) => k !== "video").map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join("");
     return `<div class="card" id="hours-card"><h3>Hours of Japanese</h3>
-      <p class="small muted">The goal is ${WEEK_GOAL} hours a week. Drill time counts by itself (answer time and audio). Log the rest: immersion, tutors, the textbook, mocks.</p>
+      <p class="small muted">The goal is ${WEEK_GOAL} hours a week. Drill time counts by itself (answer time and audio), and lesson videos log themselves. Log the rest: immersion, tutors, the textbook, mocks.</p>
       <table class="mini"><thead><tr><th>Week</th><th>Drill</th><th>Logged</th><th>Total</th></tr></thead><tbody>${rows}</tbody></table>
       <div class="hform">
         <select id="h-cat" aria-label="What">${cats}</select>
@@ -885,6 +897,7 @@
         ${row("sets", "Confusable sets", "Look-alike forms and the one-line rule for each")}
         ${row("rules", "Cheat sheets", "Locked endings, connectives, register, もの・こと・わけ")}
         ${K.length ? row("kanji", "Kanji gap", `${K.length} exam kanji WaniKani teaches after level 27, with words and look-alikes`) : ""}
+        ${VIDS.length ? row("videos", "Lesson videos", `${VIDS.length} narrated explainers for 第2部 and 第3部, ${Math.round(VIDS.reduce((a, p) => a + VID[p.id].secs, 0) / 60)} min in all`) : ""}
         ${TIPS.techniques.length ? row("tips", "Reading and listening tips", "新完全マスター読解 N2 technique by technique, each part of the paper, and how each 聴解 question works") : ""}
         ${V.length || R.length ? row("vocab", V.length ? "Vocab and 情報検索" : "情報検索", V.length ? "Word lists by question type, and how to scan a notice" : "How to scan a notice for the answer") : ""}
         ${row("settings", "Settings, sync and backup", "Daily amounts, sync between devices, export")}
@@ -968,6 +981,152 @@
       ${tipHead(t)}${tipBody(t)}</div>`;
     document.body.appendChild(el);
   }
+
+  // ---------- lesson videos (第2部 and 第3部) ----------
+  // Watching time goes into the hours log as one `video` entry per video per day (key v-<point>-<day>),
+  // so it syncs like any logged time. `done` marks a video watched to the end. Where you stopped is kept
+  // on this device only (VPOS). The files are never cached by sw.js: they need a connection.
+  const VPOS = "n2drill.vpos.v1";
+  let vw = null; // the video on screen: { id, el, pend (seconds not yet logged), at (last position), done, logged }
+  function videoWatch(id) {
+    let secs = 0;
+    let done = false;
+    for (const e of Object.values(state.hours || {}))
+      if (!e.del && e.cat === "video" && e.vid === id) {
+        secs += e.secs || 0;
+        done = done || !!e.done;
+      }
+    return { secs, done };
+  }
+  const vmin = (secs) => Math.round(secs / 60);
+  function viewVideos() {
+    const row = (p) => {
+      const v = VID[p.id];
+      const w = videoWatch(p.id);
+      const meta = w.done ? `<span class="st auto" title="Watched">✓</span>` : w.secs >= 60 ? `${vmin(w.secs)}/${vmin(v.secs)} min` : "›";
+      return `<button class="item two" data-act="nav" data-to="video/${esc(p.id)}"><span><span class="form jp">${esc(p.form)}</span><span class="sub">${esc(p.en)} · ${vmin(v.secs)} min</span></span><span class="meta">${meta}</span></button>`;
+    };
+    const group = (l) => {
+      const ps = VIDS.filter((p) => p.l === l);
+      return ps.length ? `<div class="lesson-h">${esc(D.lessons[l] || lessonLabel(l))}</div>${ps.map(row).join("")}` : "";
+    };
+    const total = VIDS.reduce((a, p) => a + VID[p.id].secs, 0);
+    const watched = VIDS.filter((p) => videoWatch(p.id).done).length;
+    const mb = Math.round(VIDS.reduce((a, p) => a + VID[p.id].mb, 0) / VIDS.length);
+    return `${header()}${back("library", "Library")}
+      <h2>Lesson videos</h2>
+      <p class="muted small">One narrated explainer for each lesson of 第2部 and 第3部 of 新完全マスター N2 文法: the rule, examples read aloud, and a say-it-in-Japanese drill at the end (say the answer in the pause before it shows). ${VIDS.length} videos, ${vmin(total)} min${watched ? `, ${watched} watched` : ""}.</p>
+      <p class="muted small">Start with 第3部 4課 to 9課 (自他動詞 to は・が): the core-engine grammar. Videos need a connection, about ${mb} MB each. Time you watch is logged in 記録 Progress.</p>
+      <div class="list">${group("P2")}${group("P3")}</div>`;
+  }
+  function viewVideo(id) {
+    const p = pointById.get(id);
+    const v = VID[id];
+    const i = VIDS.indexOf(p);
+    const next = VIDS[i + 1];
+    const w = videoWatch(id);
+    const drill = S.buildPointDrill({ pointId: id, questions: D.questions, rng: () => 0 }).length;
+    const passages = D.questions.filter((q) => q.type === "p9" && q.qs.some((b) => b.point === id)).length;
+    return `${header()}${back("videos", "Videos")}
+      <span class="kicker">${esc(D.lessons[p.l] || lessonLabel(p.l))} · ${esc(p.id)}</span>
+      <h2 class="jp" style="margin-top:2px">${esc(p.form)}</h2>
+      <p class="muted small">${esc(p.en)} · ${fmtSecs(v.secs)}${w.done ? " · ✓ watched" : w.secs >= 60 ? ` · ${vmin(w.secs)} min watched` : ""}</p>
+      <div class="vid"><video id="vplayer" controls playsinline preload="metadata" poster="video/${esc(id)}.jpg?h=${esc(v.h)}" src="video/${esc(id)}.mp4?h=${esc(v.h)}"></video></div>
+      <p class="small muted" id="vnote"></p>
+      <div class="tell">${esc(p.tell)}</div>
+      ${drill ? `<button class="btn primary wide" data-act="point-drill" data-id="${esc(id)}">Drill it: ${drill} question${drill === 1 ? "" : "s"}</button>` : ""}
+      ${passages ? `<button class="btn ${drill ? "" : "primary "}wide" data-act="passage" data-id="${esc(id)}" style="margin-top:8px">A 問題9 passage that tests it</button>` : ""}
+      <div class="row" style="justify-content:space-between;margin-top:12px">
+        <button class="linkish" data-act="point" data-id="${esc(id)}">Point card</button>
+        ${next ? `<button class="linkish" data-act="nav" data-to="video/${esc(next.id)}">Next: <span class="jp">${esc(next.form)}</span> ›</button>` : ""}
+      </div>`;
+  }
+  function savePos(id, t) {
+    const m = load(VPOS) || {};
+    m[id] = Math.round(t);
+    save(VPOS, m);
+  }
+  function vnote(html) {
+    const el = document.getElementById("vnote");
+    if (el) el.innerHTML = html;
+  }
+  function wireVideo(id) {
+    const el = document.getElementById("vplayer");
+    if (!el) return;
+    const me = (vw = { id, el, pend: 0, at: null, done: false, logged: false, saved: 0 });
+    const pos = (load(VPOS) || {})[id] || 0;
+    el.addEventListener("loadedmetadata", () => {
+      if (pos > 10 && pos < el.duration - 20) {
+        el.currentTime = pos;
+        vnote(`Picks up at ${fmtSecs(pos)}, where you stopped. <button class="linkish" data-act="video-restart">Start over</button>`);
+      }
+    }, { once: true });
+    el.addEventListener("error", () => vnote(navigator.onLine === false ? "You are offline. The videos need a connection." : "The video did not load. Check the connection and try again."));
+    el.addEventListener("playing", () => (me.at = el.currentTime));
+    el.addEventListener("seeking", () => (me.at = null));
+    el.addEventListener("seeked", () => (me.at = el.currentTime));
+    // Only time spent playing counts, in real seconds (a 1.5x speed minute is 40 s). A jump is never counted.
+    el.addEventListener("timeupdate", () => {
+      if (vw !== me) return;
+      const t = el.currentTime;
+      if (!el.paused && me.at !== null) {
+        const d = t - me.at;
+        if (d > 0 && d < 3) me.pend += d / (el.playbackRate || 1);
+      }
+      me.at = t;
+      if (el.duration && t >= el.duration - 12) me.done = true;
+      if (Math.abs(t - me.saved) >= 5) {
+        me.saved = t;
+        savePos(id, t);
+      }
+      if (me.pend >= 60) flushVideo();
+    });
+    el.addEventListener("pause", () => flushVideo());
+    el.addEventListener("ended", () => {
+      me.done = true;
+      flushVideo();
+      savePos(id, 0);
+    });
+  }
+  function flushVideo() {
+    const me = vw;
+    if (!me) return;
+    if (!me.el.ended) savePos(me.id, me.el.currentTime);
+    const markDone = me.done && !me.logged;
+    if (me.pend < 1 && !markDone) return;
+    const add = me.pend;
+    me.pend = 0;
+    const d = today();
+    const key = `v-${me.id}-${d}`;
+    const old = state.hours[key] && !state.hours[key].del ? state.hours[key] : { d, cat: "video", vid: me.id, secs: 0 };
+    const secs = Math.round(((old.secs || 0) + add) * 10) / 10;
+    state.hours[key] = { ...old, secs, min: vmin(secs), ...(me.done || old.done ? { done: true } : {}), ts: Date.now() };
+    if (me.done) me.logged = true;
+    saveState();
+    syncSoon();
+  }
+  function leaveVideo() {
+    if (!vw) return;
+    flushVideo();
+    try {
+      vw.el.pause();
+    } catch (e) {
+      // Already gone.
+    }
+    vw = null;
+  }
+  function restartVideo() {
+    if (!vw) return;
+    vw.el.currentTime = 0;
+    vw.at = 0;
+    vnote("");
+    const p = vw.el.play();
+    if (p && p.catch) p.catch(() => {});
+  }
+  // Log what was watched before the page is hidden, so the sync that runs then carries it.
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") flushVideo();
+  });
 
   // ---------- starting sessions ----------
   const MOCKS = new Set(["mock", "vmock", "rmock", "lmock"]);
@@ -1077,8 +1236,9 @@
     begin("listen", LNAME[type][0], S.leastHeard({ state, items: L.filter((x) => x.type === type), n, today: today() }));
   }
 
-  function startPassage() {
-    const ps = pool().filter((q) => q.type === "p9");
+  // With a point: a passage with a blank on that point, from the whole bank (the lesson video page uses it).
+  function startPassage(pointId) {
+    const ps = (pointId ? D.questions : pool()).filter((q) => q.type === "p9" && (!pointId || q.qs.some((b) => b.point === pointId)));
     if (!ps.length) return toast("No passages in your study range yet.");
     const min = Math.min(...ps.map((q) => seenQ(`${q.id}#1`)));
     const fresh = S.shuffle(ps.filter((q) => seenQ(`${q.id}#1`) === min));
@@ -2764,6 +2924,7 @@
       </dl>
       ${sets ? `<h3>Look-alikes</h3>${sets}` : ""}
       ${n && !sess ? `<button class="btn primary wide" data-act="point-drill" data-id="${esc(id)}">Drill this point</button>` : ""}
+      ${VID[id] && !sess ? `<button class="btn wide" data-act="nav" data-to="video/${esc(id)}" style="margin-top:8px">▶ Watch the lesson video · ${Math.round(VID[id].secs / 60)} min</button>` : ""}
     </div>`;
     document.body.appendChild(el);
   }
@@ -2785,7 +2946,7 @@
       case "mock":
         return begin("mock", "Mock", S.buildMock({ state, questions: pool() }));
       case "passage":
-        return startPassage();
+        return startPassage(a.id);
       case "pair":
         return begin("pair", "Mix-up", S.buildPairDrill({ a: a.a, b: a.b, questions: D.questions }));
       case "set-drill":
@@ -2844,6 +3005,8 @@
         return stopAudio();
       case "tip":
         return openTip(a.id);
+      case "video-restart":
+        return restartVideo();
       case "hours-add":
         return addHours();
       case "hours-del":

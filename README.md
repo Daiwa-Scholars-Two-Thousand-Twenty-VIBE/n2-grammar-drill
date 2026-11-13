@@ -31,7 +31,7 @@ The vocabulary and notice questions work the same way: four choices, a one-line 
 | **今日 Today** | One plan for the day, in this order: Grammar, Vocab, Kanji, then Reading and Listening. One start button runs the next block that has something due. Reading and listening show as optional (dashed) blocks until the day set in Settings, then join the plan. |
 | **練習 Practice** | Extra drills on top of Today: timed sections (grammar, vocab, reading, listening, full or half), reading by type or by technique, listening by type, weak spots, one question type at a time, and get-ahead drills. |
 | **記録 Progress** | Your stats, a 14-day activity chart, hours this week against 18, mock scores, reading speed and accuracy by type and technique, listening accuracy and answer time, how much you have met, and your top mix-ups. |
-| **資料 Library** | Look-up pages that are never scheduled: grammar points, confusable sets, cheat sheets, the kanji and vocab reference, the reading and listening tips, and Settings (daily amounts, sync, backup). |
+| **資料 Library** | Look-up pages that are never scheduled: grammar points, confusable sets, cheat sheets, the lesson videos, the kanji and vocab reference, the reading and listening tips, and Settings (daily amounts, sync, backup). |
 
 ## The modes
 
@@ -51,6 +51,7 @@ The vocabulary and notice questions work the same way: four choices, a one-line 
 | **Custom drill** | Any range of lessons, any question types. |
 | **Kanji gap** | 300 kanji that real N2 papers use but WaniKani teaches after level 27, most useful first. See below. |
 | **Reading** | Today's set (the types in turn over a week), the full reading section (55 minutes, no answers until the end), a half section, one type, or one technique. See below. |
+| **Lesson videos** | A narrated explainer for each lesson of 第2部 and 第3部, with a drill button for its point under the player. See below. |
 | **Listening** | Today's items, the full listening section (about 50 minutes, the paper's answer time per item), a half section, or one type. See below. |
 
 Your top mix-ups (for example, "you reached for 〜にしては when it was 〜わりに") show in 記録 Progress. Tap one to drill the pair.
@@ -125,9 +126,19 @@ The reading section is where the July 2026 N3 paper was lost (18 of 60), and the
 - **The audio** is made from the scripts with Google's Gemini text-to-speech (natural voices, a different pair per item, a narrator for the paper's framing). There is no synthetic fallback: an item without its recording is not offered until the recording exists.
 - **Scheduling:** items come least-heard first; one you missed comes back after three days. Today's items are mostly 問題1, 2 and 4, with one 問題3 or 5 in turn.
 
+## Lesson videos
+
+第2部 and 第3部 of the book are rules more than grammar points (tense in clauses, 自他動詞, 〜てくる・〜ていく, passive and causative, やりもらい, こそあ, は・が, connectives, register), so they get a video each: **Library → Lesson videos**, 15 videos, about 112 minutes in all.
+
+- **What they are:** narrated slides. Points appear one at a time as the narrator reaches them. An English voice explains and a Japanese voice reads every example. Each video ends with a "Say it in Japanese" drill: say the answer aloud in the pause before it shows.
+- **Under the player:** the point's one-line tell, a button to drill that point (or a 問題9 passage that tests it, for こそあ, connectives and omission, which only passages test), the point card and the next video. The point card of a 第2部 or 第3部 point has a button to its video too.
+- **Your time counts.** Time spent playing (not skipping) is logged in 記録 Progress as a "Lesson video" entry, one per video per day, and syncs like any logged time. A video played to the end is marked ✓ in the list.
+- **Where you stopped** is kept on each device, so a video picks up there next time.
+- **They need a connection.** Each is 720p and about 4 MB (mono speech at 40 kbps), so they stream on a phone, but `sw.js` does not keep them offline.
+
 ## Hours and mocks
 
-- **Hours of Japanese** (Progress): the weekly goal is 18 hours. Time in the drill counts by itself (answer time, plus audio heard). Log the rest by hand: immersion, tutor lessons, the textbook, mock papers. The table shows the last four weeks.
+- **Hours of Japanese** (Progress): the weekly goal is 18 hours. Time in the drill counts by itself (answer time, plus audio heard), and lesson videos log their own time. Log the rest by hand: immersion, tutor lessons, the textbook, mock papers. The table shows the last four weeks.
 - **Mock papers** (Progress): log each full mock as scaled scores out of 60 for 言語知識, 読解 and 聴解. The table marks a pass (90 of 180 and at least 19 in each section).
 - Both sync between devices like everything else. A deleted entry stays as a marked row so the deletion syncs too.
 
@@ -227,6 +238,15 @@ node tools/bundle.mjs                     # then rebuild js/data.js so the app k
 
 The free Gemini tier allows only 10 text-to-speech requests a day, and the 92 items need about 355 (counted 9 Nov 2026), so the full build needs a paid key. Through OpenRouter the whole set cost well under 1 USD (10 Nov 2026). OpenRouter reserves credit for every call in flight, so on a small balance four parallel calls get `402 in_flight_budget_exhausted`; the script waits and retries on that, and `--jobs 2` avoids most of it. The transcription check compares against each line's written text (`t`), not the kana in `say`, because the transcript comes back in kanji. Spoken choices are read in a fixed order per item (`spokenOrder` in `js/srs.js`, the same rule in the Python), so the app can show numbers that match the recording.
 
+### Lesson videos
+
+The videos are made outside this repo, in `skm-videos/` of the Japanese 26 workspace (slides plus Gemini voices; its README says how to edit one). `tools/build_videos.py` copies them in, shrunk to stream well: `video/<point>.mp4` (720p, 10 frames a second, H.264 tuned for still pictures, mono AAC at 40 kbps) and a `video/<point>.jpg` poster, and records each one's length, size and hash in `content/videos.json`. Source files 01 to 03 become `P2-1` to `P2-3`, and 04 to 15 become `P3-1` to `P3-12`. It only remakes a video whose source changed. Needs `ffmpeg`.
+
+```bash
+python3 tools/build_videos.py             # from ../skm-videos/videos; --src DIR for another folder, --force to remake all
+node tools/bundle.mjs                     # then rebuild js/data.js so the app offers them
+```
+
 Use the `tests/*.mjs` glob. On Node 26, `node --test tests/` runs 0 tests and still exits 0, so it looks like a pass.
 
 Commit the regenerated `js/data.js` (and the `.apkg` if you changed the Anki questions), since the live page serves them as they are.
@@ -247,6 +267,8 @@ Commit the regenerated `js/data.js` (and the `.apkg` if you changed the Anki que
 | `content/listen_*.json` | Listening scripts 聴解 問題1 to 5 (`l1` to `l5`) |
 | `content/audio.json` | Made by `tools/build_audio.py`: each item's length, script hash, voices and spoken order |
 | `audio/` | The listening audio, one `.m4a` per item (AAC, about 40 kbps) |
+| `content/videos.json` | Made by `tools/build_videos.py`: each lesson video's length, size and hash |
+| `video/` | The lesson videos, `<point>.mp4` and a `<point>.jpg` poster for each 第2部 and 第3部 point |
 | `js/srs.js` | Scheduling and session building for grammar, kanji, vocab, reading and listening, plus `mergeStates`, which combines two copies of progress (pure functions, tested in `tests/`) |
 | `js/sync.js` | Gist sync: the GitHub gist client and `mergePayload` (no screens; tested with a fake `fetch`) |
 | `js/app.js` | The screens: the four tabs, quizzes, Settings and the sync card |
@@ -259,10 +281,11 @@ Commit the regenerated `js/data.js` (and the `.apkg` if you changed the Anki que
 | `tools/build_sound_parts.py` | Writes `js/sound.js` from Kanjium and WaniKani's public level pages |
 | `tools/check.mjs` | Validates one reading, listening or vocab file and prints text lengths |
 | `tools/build_audio.py` | Makes the listening audio (see above) |
+| `tools/build_videos.py` | Copies in and shrinks the lesson videos (see above) |
 | `tests/` | `test_srs.mjs`, `test_sync.mjs`, `test_content.mjs`, `test_proxy.mjs`, `test_offline.mjs` |
 
 ## Notes
 
-- All example sentences, reading texts and listening scripts are original. None are copied from the textbooks or from past papers. Lesson numbers and titles follow 新完全マスター N2 文法, and the reading tips follow the structure of 新完全マスター読解 N2 in our own words with page numbers, so you can use them side by side. Buy the books; this drill does not replace them and is not affiliated with their publisher or with the JLPT.
+- All example sentences, reading texts and listening scripts are original. None are copied from the textbooks or from past papers. The lesson videos are the exception: they teach 第2部 and 第3部 lesson by lesson and quote many of the book's own example sentences. Lesson numbers and titles follow 新完全マスター N2 文法, and the reading tips follow the structure of 新完全マスター読解 N2 in our own words with page numbers, so you can use them side by side. Buy the books; this drill does not replace them and is not affiliated with their publisher or with the JLPT.
 - Sound parts in `js/sound.js` are adapted from the [Kanjium](https://github.com/mifunetoshiro/kanjium) database by Uros O., under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); that file keeps the licence. Kanjium draws on KANJIDIC by the Electronic Dictionary Research and Development Group. The WaniKani level next to each kanji comes from WaniKani's public level pages.
 - Mistakes happen. If an answer looks wrong or two choices both seem to work, open an issue with the question id (shown in exported notes).

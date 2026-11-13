@@ -65,6 +65,16 @@ for (const it of listen) {
   const a = audioAll[it.id];
   if (a && fs.existsSync(path.join(ROOT, "audio", `${it.id}.m4a`))) audio[it.id] = { secs: a.secs, h: a.h, ...(a.order ? { order: a.order } : {}) };
 }
+// Lesson videos made by tools/build_videos.py, one per 第2部 and 第3部 point. Only those whose file is
+// in video/ are offered. `h` (a hash of the file) goes on the URL, so a remade video is fetched fresh.
+const videoFile = path.join(CONTENT, "videos.json");
+const videoAll = fs.existsSync(videoFile) ? readJSON(videoFile) : {};
+const videos = {};
+for (const [id, v] of Object.entries(videoAll)) {
+  if (!catalog.pointIds.has(id)) errors.push(`videos.json: ${id} is not a grammar point`);
+  else if (!(v.secs > 0 && v.mb > 0 && v.h)) errors.push(`videos.json: ${id} needs secs, mb and h`);
+  else if (fs.existsSync(path.join(ROOT, "video", `${id}.mp4`))) videos[id] = { secs: v.secs, mb: v.mb, h: v.h };
+}
 const tipsFile = path.join(CONTENT, "read_tips.json");
 const tips = fs.existsSync(tipsFile) ? readJSON(tipsFile) : null;
 
@@ -109,6 +119,7 @@ const data = {
   texts,
   listen,
   audio,
+  videos,
   tips,
 };
 const json = JSON.stringify(data);
@@ -126,5 +137,6 @@ const tType = (t) => texts.filter((p) => p.type === t).length;
 const lType = (t) => listen.filter((p) => p.type === t).length;
 console.log(`  Reading: ${tType("r10")} 問題10 · ${tType("r11")} 問題11 · ${tType("r12")} 問題12 · ${tType("r13")} 問題13`);
 console.log(`  Listening: ${lType("l1")} 問題1 · ${lType("l2")} 問題2 · ${lType("l3")} 問題3 · ${lType("l4")} 問題4 · ${lType("l5")} 問題5 · audio for ${Object.keys(audio).length}`);
+console.log(`  Lesson videos: ${Object.keys(videos).length} · ${Math.round(Object.values(videos).reduce((a, v) => a + v.secs, 0) / 60)} min`);
 if (thin.length) console.log(`  Points with fewer than 2 web questions: ${thin.join(", ")}`);
 if (report) for (const [id, c] of Object.entries(cover)) console.log(`  ${id.padEnd(6)} p7 ${c.p7}  p8 ${c.p8}  p9 ${c.p9}`);

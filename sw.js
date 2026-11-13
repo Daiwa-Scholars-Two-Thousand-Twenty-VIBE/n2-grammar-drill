@@ -2,7 +2,8 @@
 // with the cache as the fallback offline. Progress lives in localStorage, so nothing else is needed.
 //
 // Never cached: the sync relay (api/, on the Vercel copy) and anything on another site (the GitHub
-// API, gist files). A device must never merge with an old copy of the gist.
+// API, gist files). A device must never merge with an old copy of the gist. The lesson videos (video/)
+// are left to the browser too: they stream in parts and are too big to keep.
 //
 // Other apps on the same github.io address share this browser's cache storage, so only caches
 // named with this app's prefix are ever deleted.
@@ -41,7 +42,7 @@ self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET") return;
   const url = new URL(req.url);
-  if (url.origin !== self.location.origin || url.pathname.includes("/api/")) return;
+  if (url.origin !== self.location.origin || url.pathname.includes("/api/") || url.pathname.includes("/video/")) return;
   e.respondWith(
     fetch(req)
       .then((res) => {

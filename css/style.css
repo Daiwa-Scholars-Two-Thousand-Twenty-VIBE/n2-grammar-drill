@@ -835,3 +835,8 @@ td.bad { color: var(--bad); font-weight: 600; }
 .tip .ex { font-family: var(--jp); font-size: 1.02rem; line-height: 1.8; background: var(--panel-2); border-radius: 8px; padding: 8px 12px; }
 table.sig td { padding: 4px 6px; }
 table.sig td.jp { white-space: nowrap; font-weight: 600; }
+
+/* Lesson videos */
+.vid { margin: 10px 0 6px; }
+.vid video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: calc(var(--radius) - 4px); }
+#vnote:empty { display: none; }

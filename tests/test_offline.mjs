@@ -55,7 +55,7 @@ test("sw.js only deletes its own old caches", async () => {
   assert.deepEqual(deleted, ["n2-drill-shell-v0"]);
 });
 
-test("sw.js leaves the sync relay, other sites and non-GET calls to the network", () => {
+test("sw.js leaves the sync relay, other sites, lesson videos and non-GET calls to the network", () => {
   const { handlers } = loadWorker();
   const answered = (url, method = "GET") => {
     let hit = false;
@@ -67,4 +67,5 @@ test("sw.js leaves the sync relay, other sites and non-GET calls to the network"
   assert.equal(answered("https://example.github.io/n2-grammar-drill/api/gh?path=/user"), false);
   assert.equal(answered("https://api.github.com/gists"), false);
   assert.equal(answered("https://example.github.io/n2-grammar-drill/js/app.js", "POST"), false);
+  assert.equal(answered("https://example.github.io/n2-grammar-drill/video/P3-4.mp4?h=1a2b3c4d"), false);
 });
