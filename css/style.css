@@ -600,6 +600,9 @@ u.tgt { text-decoration: underline 2px; text-underline-offset: 6px; font-weight:
 .kex { padding: 10px 0; border-top: 1px solid var(--line); }
 .kex .kw { font-weight: 700; font-size: 1.1rem; }
 .en-choices .choice { font-family: var(--ui); font-size: 1rem; }
+/* Kanji 表記 and 読み choices: large, one under another, so one stroke or one kana stands out. */
+.k-choices .choice { font-size: 1.45rem; min-height: 64px; line-height: 1.3; }
+.kw-choices .choice { font-size: 2.1rem; min-height: 76px; letter-spacing: 0.04em; }
 
 /* Vocab (問題3, 5, 6) and 情報検索 (問題14) */
 .long-choices .choice { font-size: 1rem; line-height: 1.7; align-items: flex-start; }

@@ -1683,7 +1683,12 @@
         ? `<div class="kword jp">${esc(w.w)}</div><p class="small muted">What does it mean?</p>`
         : `<div class="sentence">${kSentence(w, q.type === "kw")}</div>
            <p class="small muted">${q.type === "kr" ? "How is the underlined word read?" : "Which kanji spell the underlined word?"}</p>`;
-    return `${prompt}<div class="choices ${q.type === "km" ? "en-choices" : ""}">${choiceButtons(q, a)}</div>${a ? feedbackK(q, a, true) : ""}`;
+    return `${prompt}<div class="choices ${kChoiceClass(q.type)}">${choiceButtons(q, a)}</div>${a ? feedbackK(q, a, true) : ""}`;
+  }
+
+  // Spelling and reading choices differ by one stroke or one kana, so they are shown large.
+  function kChoiceClass(type) {
+    return { km: "en-choices", kw: "k-choices kw-choices", kr: "k-choices" }[type] || "";
   }
 
   function feedbackK(q, a, next) {
@@ -2257,7 +2262,7 @@
         if (x.item) {
           const q = x.item;
           const w = kanjiOf.get(q.k).words[q.wi];
-          const body = `<div class="choices">${q.c.map((c, i) => `<div class="choice ${i === 0 ? "right" : i === x.orig ? "wrong" : "dim"}"><span>${esc(c)}</span></div>`).join("")}</div>${feedbackK(q, x, false)}`;
+          const body = `<div class="choices ${kChoiceClass(q.type)}">${q.c.map((c, i) => `<div class="choice ${i === 0 ? "right" : i === x.orig ? "wrong" : "dim"}"><span>${esc(c)}</span></div>`).join("")}</div>${feedbackK(q, x, false)}`;
           return `<details><summary><span class="mark ${x.ok ? "good" : "bad"}">${x.ok ? "✓" : "✕"}</span><span class="form jp">${esc(w.w)} <span class="muted small">${esc(TYPE_NAME[q.type].split(" · ")[1].split(" ")[0])}</span></span><span class="t">${fmtSecs(x.secs)}</span></summary>${body}</details>`;
         }
         const q = qById.get(x.qid);
@@ -2819,17 +2824,23 @@
     try {
       let id = sync.gist || (await gh.findGist());
       let remote = null;
+      let base = ""; // the gist version `remote` came from
       if (id) {
+        let got;
         try {
-          remote = await gh.read(id);
+          got = await gh.read(id);
         } catch (e) {
           if (e.status !== 404) throw e;
           // The stored gist is gone: forget it and look once more.
           sync.gist = "";
           saveSync();
           id = await gh.findGist();
-          if (id) remote = await gh.read(id);
+          if (id) got = await gh.read(id);
         }
+        if (got) ({ data: remote, version: base } = got);
+        // A gist that is there but holds no usable progress is never written over: that would replace
+        // every other device's work with this one's. Stop and say so instead.
+        if (id && !G.usable(remote)) throw Object.assign(new Error("GitHub sent back no progress, so nothing was written. Try Sync now in a minute"), { status: -1 });
       }
       if (stale()) return;
       if (!id) {
@@ -2842,20 +2853,44 @@
         if (stale()) return;
         sync.gist = made;
       } else {
+        const key = (p) => (p ? `${G.stableStringify([p.state || null, p.settings || null])}|${p.reset || 0}` : "");
         // Merge and apply in one step, with no wait in between, so no answer given meanwhile is lost.
-        const local = syncPayload();
-        // The first sync after connecting always merges, so neither side's old reset can wipe the other's progress.
-        if (!sync.last && remote) local.reset = remote.reset || 0;
-        const merged = G.mergePayload(local, remote, S.mergeStates);
-        const key = (p) => G.stableStringify([p.state || null, p.settings || null]);
-        const mergedKey = key(merged);
-        changed = mergedKey !== key(local);
-        if (changed) applyPayload(merged);
-        sync.gist = id;
-        sync.reset = merged.reset || 0;
-        saveSync();
-        const behind = !remote || mergedKey !== key(remote) || (remote.reset || 0) !== sync.reset;
-        if (behind) await gh.write(id, merged);
+        // `extra` are older gist versions to fold in as well (see below).
+        const mergeIn = (extra) => {
+          const local = syncPayload();
+          // The first sync after connecting always merges, so neither side's old reset can wipe the other's progress.
+          if (!sync.last && remote) local.reset = remote.reset || 0;
+          let merged = G.mergePayload(local, remote, S.mergeStates);
+          for (const p of extra) if (G.usable(p)) merged = G.mergePayload(merged, p, S.mergeStates);
+          if (key(merged) !== key(local)) {
+            applyPayload(merged);
+            changed = true;
+          }
+          sync.gist = id;
+          sync.reset = merged.reset || 0;
+          saveSync();
+          return merged;
+        };
+        let merged = mergeIn([]);
+        if (key(merged) !== key(remote)) {
+          let versions = await gh.write(id, merged);
+          // GitHub keeps every version of the gist. If anything landed between the version read above
+          // and this write (another device syncing, or GitHub sending an old copy), its progress is not
+          // in what was just written: read those versions, fold them in and write again.
+          for (let round = 0; round < 3; round++) {
+            const missed = G.missedVersions(versions, base);
+            if (!missed.length) break;
+            const extra = [];
+            for (const v of missed) extra.push(await gh.readVersion(id, v));
+            if (stale()) return;
+            base = versions[0];
+            remote = merged;
+            const before = key(merged);
+            merged = mergeIn(extra);
+            if (key(merged) === before) break;
+            versions = await gh.write(id, merged);
+          }
+        }
         if (stale()) return;
       }
       sync.last = Date.now();

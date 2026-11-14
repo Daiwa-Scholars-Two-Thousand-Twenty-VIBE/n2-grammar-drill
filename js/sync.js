@@ -62,6 +62,13 @@
     }
     const asText = (content) => (typeof content === "string" ? content : JSON.stringify(content));
     const DAMAGED = "The synced progress file is damaged";
+    async function fileOf(gist) {
+      const f = gist && gist.files && gist.files[FILE];
+      if (!f) return null;
+      const file = f.truncated && f.raw_url ? await send(f.raw_url, { method: "GET" }) : { status: 200, text: f.content };
+      return parse(file, DAMAGED);
+    }
+    const versionsOf = (gist) => (gist && Array.isArray(gist.history) ? gist.history.map((h) => h && h.version).filter(Boolean) : []);
 
     return {
       // The GitHub login the token belongs to.
@@ -84,18 +91,25 @@
         const body = { public: false, description: "N2 drill progress (synced by the N2 drill app)", files: { [FILE]: { content: asText(content) } } };
         return (await api("POST", "/gists", body)).id;
       },
-      // The parsed contents of FILE, or null if the gist has no such file. The API cuts files over
-      // about 1 MB short and marks them `truncated`; the raw URL (no token needed) has the whole file.
+      // `{ data, version }`: the parsed contents of FILE (null if the gist has no such file) and the
+      // gist version they came from. The API cuts files over about 1 MB short and marks them
+      // `truncated`; the raw URL (no token needed) has the whole file.
       async read(id) {
         const gist = await api("GET", `/gists/${encodeURIComponent(id)}`);
-        const f = gist && gist.files && gist.files[FILE];
-        if (!f) return null;
-        const file = f.truncated && f.raw_url ? await send(f.raw_url, { method: "GET" }) : { status: 200, text: f.content };
-        return parse(file, DAMAGED);
+        return { data: await fileOf(gist), version: versionsOf(gist)[0] || "" };
       },
-      // Replace FILE with `content`.
+      // The contents of FILE as it was at one earlier version of the gist, or null.
+      async readVersion(id, version) {
+        return fileOf(await api("GET", `/gists/${encodeURIComponent(id)}/${encodeURIComponent(version)}`));
+      },
+      // Replace FILE with `content`. Returns the gist's versions after the write, newest (this write)
+      // first: from the reply, or from the gist's commit list if the reply has no history.
       async write(id, content) {
-        await api("PATCH", `/gists/${encodeURIComponent(id)}`, { files: { [FILE]: { content: asText(content) } } });
+        const path = `/gists/${encodeURIComponent(id)}`;
+        const versions = versionsOf(await api("PATCH", path, { files: { [FILE]: { content: asText(content) } } }));
+        if (versions.length) return versions;
+        const commits = await api("GET", `${path}/commits?per_page=30`);
+        return Array.isArray(commits) ? commits.map((c) => c && c.version).filter(Boolean) : [];
       },
     };
   }
@@ -123,5 +137,19 @@
     return { app: APP, v: 1, saved: Date.now(), reset: Math.max(reset(l), reset(remote)), state, settings };
   }
 
-  return { FILE, gistClient, stableStringify, mergePayload };
+  // A write should land straight on the version it merged with. `versions` is the gist's history
+  // after the write (newest first); any version between the write and `base` came in meanwhile, from
+  // another device or because GitHub served an old copy, and its progress is not in what was written.
+  // Returns those versions, oldest first, so the caller can fold them in and write again. With no
+  // `base` there is nothing to compare; with `base` gone from the list, every listed version counts.
+  function missedVersions(versions, base) {
+    if (!base || !Array.isArray(versions) || versions.length < 2) return [];
+    const at = versions.indexOf(base);
+    return versions.slice(1, at === -1 ? versions.length : at).reverse();
+  }
+
+  // A remote the app can merge with: this app's payload with progress in it.
+  const usable = (remote) => !!(remote && remote.app === APP && remote.state && typeof remote.state === "object");
+
+  return { FILE, gistClient, stableStringify, mergePayload, missedVersions, usable };
 });

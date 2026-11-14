@@ -8,7 +8,7 @@ import vm from "node:vm";
 const require = createRequire(import.meta.url);
 const S = require("../js/srs.js");
 const Sync = require("../js/sync.js");
-const { FILE, gistClient, stableStringify, mergePayload } = Sync;
+const { FILE, gistClient, stableStringify, mergePayload, missedVersions, usable } = Sync;
 const TOKEN = "fake-test-token-never-shown-123";
 const API = "https://api.github.com";
 
@@ -77,14 +77,22 @@ test("createGist makes a secret gist holding the progress file", async () => {
   assert.deepEqual(c.body.files, { [FILE]: { content } });
 });
 
-test("read parses the file, or returns null when the gist has none", async () => {
+test("read parses the file and gives the version it came from, or null data when the gist has none", async () => {
   const data = { app: "n2-grammar-drill", v: 1, state: S.emptyState() };
+  const history = [{ version: "v3" }, { version: "v2" }];
   const fetch = fakeFetch((url) =>
-    reply(url.endsWith("/with") ? { id: "with", files: { [FILE]: { content: JSON.stringify(data), truncated: false } } } : gist("without"))
+    reply(url.endsWith("/with") ? { id: "with", history, files: { [FILE]: { content: JSON.stringify(data), truncated: false } } } : gist("without"))
   );
   const c = gistClient({ token: TOKEN, fetch });
-  assert.deepEqual(await c.read("with"), data);
-  assert.equal(await c.read("without"), null);
+  assert.deepEqual(await c.read("with"), { data, version: "v3" });
+  assert.deepEqual(await c.read("without"), { data: null, version: "" });
+});
+
+test("readVersion reads the file as it was at one version", async () => {
+  const data = { app: "n2-grammar-drill", v: 1, state: S.emptyState() };
+  const fetch = fakeFetch(() => reply({ id: "abc", files: { [FILE]: { content: JSON.stringify(data) } } }));
+  assert.deepEqual(await gistClient({ token: TOKEN, fetch }).readVersion("abc", "v2"), data);
+  assert.equal(fetch.calls[0].url, `${API}/gists/abc/v2`);
 });
 
 test("read follows raw_url, without the token, when the file is truncated", async () => {
@@ -95,7 +103,7 @@ test("read follows raw_url, without the token, when the file is truncated", asyn
     if (url === raw) return reply(JSON.stringify(data));
     throw new Error("unexpected " + url);
   });
-  assert.deepEqual(await gistClient({ token: TOKEN, fetch }).read("abc"), data);
+  assert.deepEqual((await gistClient({ token: TOKEN, fetch }).read("abc")).data, data);
   assert.equal(fetch.calls[1].url, raw);
   assert.equal(fetch.calls[1].headers.Authorization, undefined);
 });
@@ -105,15 +113,56 @@ test("read reports a damaged file instead of treating it as empty", async () => 
   await assert.rejects(gistClient({ token: TOKEN, fetch }).read("abc"), (e) => e.status === 200 && /damaged/.test(e.message));
 });
 
-test("write sends a PATCH with the content", async () => {
-  const fetch = fakeFetch(() => reply({ id: "abc" }));
+test("write sends a PATCH with the content and returns the versions after it, newest first", async () => {
+  const fetch = fakeFetch(() => reply({ id: "abc", history: [{ version: "new" }, { version: "old" }] }));
   const content = stableStringify({ app: "n2-grammar-drill", v: 1, state: S.emptyState() });
-  await gistClient({ token: TOKEN, fetch }).write("abc", content);
+  assert.deepEqual(await gistClient({ token: TOKEN, fetch }).write("abc", content), ["new", "old"]);
   const c = fetch.calls[0];
   assert.equal(c.method, "PATCH");
   assert.equal(c.url, `${API}/gists/abc`);
   assert.equal(c.headers["Content-Type"], "application/json");
   assert.deepEqual(c.body, { files: { [FILE]: { content } } });
+  assert.equal(fetch.calls.length, 1);
+});
+
+test("write falls back to the commit list when the reply has no history", async () => {
+  const fetch = fakeFetch((url, init) => reply(init.method === "PATCH" ? { id: "abc" } : [{ version: "new" }, { version: "old" }]));
+  assert.deepEqual(await gistClient({ token: TOKEN, fetch }).write("abc", "{}"), ["new", "old"]);
+  assert.equal(fetch.calls[1].url, `${API}/gists/abc/commits?per_page=30`);
+});
+
+// ---------- lost writes ----------
+
+test("missedVersions: nothing missed when the write sits straight on the version read", () => {
+  assert.deepEqual(missedVersions(["w", "base", "older"], "base"), []);
+  assert.deepEqual(missedVersions(["w"], "base"), [], "too little history to tell");
+  assert.deepEqual(missedVersions(["w", "base"], ""), [], "no base to compare with");
+  assert.deepEqual(missedVersions(undefined, "base"), []);
+});
+
+test("missedVersions: versions between the write and the version read come back oldest first", () => {
+  assert.deepEqual(missedVersions(["w", "c", "b", "base", "a"], "base"), ["b", "c"]);
+  assert.deepEqual(missedVersions(["w", "c", "b"], "gone"), ["b", "c"], "base not listed: every listed version counts");
+});
+
+test("usable: only this app's payload with progress in it", () => {
+  assert.equal(usable({ app: "n2-grammar-drill", v: 1, state: S.emptyState() }), true);
+  for (const r of [null, undefined, {}, { app: "other", state: {} }, { app: "n2-grammar-drill" }, { app: "n2-grammar-drill", state: "x" }]) assert.equal(usable(r), false);
+});
+
+test("an old copy written over newer progress is healed by folding in the versions it missed", () => {
+  // The Saturday case: a device that last synced on Wednesday is sent Wednesday's copy, writes it,
+  // and the write lands on top of Friday's. Folding in Friday's version brings that work back.
+  const wed = S.emptyState();
+  wed.days["2026-11-11"] = { n: 45, right: 37, secs: 1864 };
+  const fri = S.mergeStates(wed, S.emptyState());
+  fri.days["2026-11-12"] = { n: 55, right: 37, secs: 1755 };
+  fri.days["2026-11-13"] = { n: 25, right: 18, secs: 1128 };
+  const written = mergePayload(payload(wed, {}), payload(wed, {}), S.mergeStates);
+  const missed = missedVersions(["sat", "fri", "thu", "wed"], "wed");
+  assert.deepEqual(missed, ["thu", "fri"]);
+  const healed = mergePayload(written, payload(fri, {}), S.mergeStates);
+  assert.deepEqual(Object.keys(healed.state.days).sort(), ["2026-11-11", "2026-11-12", "2026-11-13"]);
 });
 
 test("HTTP errors carry the status and a plain message without the token", async () => {
@@ -153,13 +202,13 @@ test("with a proxy, every call (raw_url too) goes through it with the GitHub URL
   const raw = "https://gist.githubusercontent.com/learner/abc/raw/def/" + FILE;
   const via = (u) => "api/gh?url=" + encodeURIComponent(u);
   const fetch = fakeFetch((url) => {
-    if (url === via(`${API}/gists/abc`)) return reply({ id: "abc", files: { [FILE]: { content: "", truncated: true, raw_url: raw } } });
+    if (url === via(`${API}/gists/abc`)) return reply({ id: "abc", history: [{ version: "v1" }], files: { [FILE]: { content: "", truncated: true, raw_url: raw } } });
     if (url === via(raw)) return reply(JSON.stringify(data));
-    return reply({ id: "abc", login: "learner" });
+    return reply({ id: "abc", login: "learner", history: [{ version: "v1" }] });
   });
   const c = gistClient({ token: TOKEN, fetch, proxy: "api/gh" });
   assert.equal(await c.checkToken(), "learner");
-  assert.deepEqual(await c.read("abc"), data);
+  assert.deepEqual((await c.read("abc")).data, data);
   await c.write("abc", "{}");
   assert.deepEqual(fetch.calls.map((x) => x.url), [via(`${API}/user`), via(`${API}/gists/abc`), via(raw), via(`${API}/gists/abc`)]);
   assert.equal(fetch.calls[0].headers.Authorization, `Bearer ${TOKEN}`);
