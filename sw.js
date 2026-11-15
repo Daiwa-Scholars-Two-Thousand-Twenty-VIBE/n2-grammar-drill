@@ -1,7 +1,7 @@
 // Offline support. The drill's own files: network first, so a new version shows up straight away,
 // with the cache as the fallback offline. Progress lives in localStorage, so nothing else is needed.
 //
-// Never cached: the sync relay (api/, on the Vercel copy) and anything on another site (the GitHub
+// Never cached: version.json (how an open page learns it is out of date), the sync relay (api/, on the Vercel copy) and anything on another site (the GitHub
 // API, gist files). A device must never merge with an old copy of the gist. The lesson videos (video/)
 // are left to the browser too: they stream in parts and are too big to keep.
 //
@@ -42,9 +42,11 @@ self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET") return;
   const url = new URL(req.url);
-  if (url.origin !== self.location.origin || url.pathname.includes("/api/") || url.pathname.includes("/video/")) return;
+  if (url.origin !== self.location.origin || url.pathname.includes("/api/") || url.pathname.includes("/video/") || url.pathname.endsWith("/version.json")) return;
+  // `no-cache` checks with the site every time (a quick "not modified" when nothing changed), so a
+  // reload after a new version always gets the new files, never the browser's 10-minute copy.
   e.respondWith(
-    fetch(req)
+    fetch(req.mode === "navigate" ? req : new Request(req, { cache: "no-cache" }))
       .then((res) => {
         // 200 only: audio comes back as 206 (part of a file), which the cache refuses.
         if (res.status === 200 && res.type === "basic") {

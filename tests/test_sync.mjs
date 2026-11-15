@@ -29,6 +29,8 @@ function fakeFetch(handle) {
   f.calls = calls;
   return f;
 }
+// Reads add `?_=<time>` so no cache can answer them; compare addresses without it.
+const bare = (url) => url.replace(/([?&])_=\d+&?/, "$1").replace(/[?&]$/, "").replace(/%3F_%3D\d+$/, "");
 const gist = (id, files = ["notes.md"]) => ({ id, files: Object.fromEntries(files.map((n) => [n, { filename: n }])) });
 const others = (n, from = 0) => Array.from({ length: n }, (_, i) => gist(`other${from + i}`));
 
@@ -81,11 +83,12 @@ test("read parses the file and gives the version it came from, or null data when
   const data = { app: "n2-grammar-drill", v: 1, state: S.emptyState() };
   const history = [{ version: "v3" }, { version: "v2" }];
   const fetch = fakeFetch((url) =>
-    reply(url.endsWith("/with") ? { id: "with", history, files: { [FILE]: { content: JSON.stringify(data), truncated: false } } } : gist("without"))
+    reply(bare(url).endsWith("/with") ? { id: "with", history, updated_at: "2026-11-15T01:00:00Z", files: { [FILE]: { content: JSON.stringify(data), truncated: false } } } : gist("without"))
   );
   const c = gistClient({ token: TOKEN, fetch });
-  assert.deepEqual(await c.read("with"), { data, version: "v3" });
-  assert.deepEqual(await c.read("without"), { data: null, version: "" });
+  assert.deepEqual(await c.read("with"), { data, version: "v3", updated: "2026-11-15T01:00:00Z" });
+  assert.deepEqual(await c.read("without"), { data: null, version: "", updated: "" });
+  assert.match(fetch.calls[0].url, /\/gists\/with\?_=\d+$/, "a new address every read, so no cache answers it");
 });
 
 test("readVersion reads the file as it was at one version", async () => {
@@ -99,7 +102,7 @@ test("read follows raw_url, without the token, when the file is truncated", asyn
   const data = { app: "n2-grammar-drill", v: 1, state: { ...S.emptyState(), qs: { q1: { seen: 1, right: 1, last: "2026-11-01" } } } };
   const raw = "https://gist.githubusercontent.com/learner/abc/raw/def/" + FILE;
   const fetch = fakeFetch((url) => {
-    if (url === `${API}/gists/abc`) return reply({ id: "abc", files: { [FILE]: { content: '{"app":"n2-gr', truncated: true, raw_url: raw } } });
+    if (bare(url) === `${API}/gists/abc`) return reply({ id: "abc", files: { [FILE]: { content: '{"app":"n2-gr', truncated: true, raw_url: raw } } });
     if (url === raw) return reply(JSON.stringify(data));
     throw new Error("unexpected " + url);
   });
@@ -114,9 +117,9 @@ test("read reports a damaged file instead of treating it as empty", async () => 
 });
 
 test("write sends a PATCH with the content and returns the versions after it, newest first", async () => {
-  const fetch = fakeFetch(() => reply({ id: "abc", history: [{ version: "new" }, { version: "old" }] }));
+  const fetch = fakeFetch(() => reply({ id: "abc", updated_at: "2026-11-15T02:00:00Z", history: [{ version: "new" }, { version: "old" }] }));
   const content = stableStringify({ app: "n2-grammar-drill", v: 1, state: S.emptyState() });
-  assert.deepEqual(await gistClient({ token: TOKEN, fetch }).write("abc", content), ["new", "old"]);
+  assert.deepEqual(await gistClient({ token: TOKEN, fetch }).write("abc", content), { versions: ["new", "old"], updated: "2026-11-15T02:00:00Z" });
   const c = fetch.calls[0];
   assert.equal(c.method, "PATCH");
   assert.equal(c.url, `${API}/gists/abc`);
@@ -127,8 +130,8 @@ test("write sends a PATCH with the content and returns the versions after it, ne
 
 test("write falls back to the commit list when the reply has no history", async () => {
   const fetch = fakeFetch((url, init) => reply(init.method === "PATCH" ? { id: "abc" } : [{ version: "new" }, { version: "old" }]));
-  assert.deepEqual(await gistClient({ token: TOKEN, fetch }).write("abc", "{}"), ["new", "old"]);
-  assert.equal(fetch.calls[1].url, `${API}/gists/abc/commits?per_page=30`);
+  assert.deepEqual((await gistClient({ token: TOKEN, fetch }).write("abc", "{}")).versions, ["new", "old"]);
+  assert.equal(bare(fetch.calls[1].url), `${API}/gists/abc/commits?per_page=30`);
 });
 
 // ---------- lost writes ----------
@@ -202,7 +205,7 @@ test("with a proxy, every call (raw_url too) goes through it with the GitHub URL
   const raw = "https://gist.githubusercontent.com/learner/abc/raw/def/" + FILE;
   const via = (u) => "api/gh?url=" + encodeURIComponent(u);
   const fetch = fakeFetch((url) => {
-    if (url === via(`${API}/gists/abc`)) return reply({ id: "abc", history: [{ version: "v1" }], files: { [FILE]: { content: "", truncated: true, raw_url: raw } } });
+    if (bare(url) === via(`${API}/gists/abc`)) return reply({ id: "abc", history: [{ version: "v1" }], files: { [FILE]: { content: "", truncated: true, raw_url: raw } } });
     if (url === via(raw)) return reply(JSON.stringify(data));
     return reply({ id: "abc", login: "learner", history: [{ version: "v1" }] });
   });
@@ -210,7 +213,7 @@ test("with a proxy, every call (raw_url too) goes through it with the GitHub URL
   assert.equal(await c.checkToken(), "learner");
   assert.deepEqual((await c.read("abc")).data, data);
   await c.write("abc", "{}");
-  assert.deepEqual(fetch.calls.map((x) => x.url), [via(`${API}/user`), via(`${API}/gists/abc`), via(raw), via(`${API}/gists/abc`)]);
+  assert.deepEqual(fetch.calls.map((x) => bare(x.url)), [via(`${API}/user`), via(`${API}/gists/abc`), via(raw), via(`${API}/gists/abc`)]);
   assert.equal(fetch.calls[0].headers.Authorization, `Bearer ${TOKEN}`);
   assert.equal(fetch.calls[3].method, "PATCH");
 });

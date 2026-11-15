@@ -6,6 +6,9 @@
   const D = window.N2;
   const S = window.SRS;
   const G = window.Sync || null; // gist sync (js/sync.js). Missing means sync stays off.
+  // This build. version.json on the site holds the newest; a page left open on an older build stops
+  // syncing and reloads itself, so old sync code never runs against newer progress. Bump both together.
+  const APP_VERSION = "2026-11-15.1";
   const app = document.getElementById("app");
   const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1", wk: "n2drill.wk.v1" };
   // rlFrom: the day reading and listening join Today. Before it they show as optional blocks.
@@ -114,7 +117,9 @@
     save(KEYS.settings, settings);
   };
   // This device's sync link. It holds the token, so it never goes into the synced file.
-  const sync = Object.assign({ token: "", gist: "", login: "", last: 0, reset: 0 }, load(KEYS.sync) || {});
+  // `seenAt` is GitHub's time on the newest copy of the gist this device has seen: a read older than
+  // that is a stale copy and must never be merged and written back.
+  const sync = Object.assign({ token: "", gist: "", login: "", last: 0, reset: 0, seenAt: "" }, load(KEYS.sync) || {});
   const saveSync = () => save(KEYS.sync, sync);
 
   // ---------- indexes ----------
@@ -2755,7 +2760,7 @@
     msg("Checking the token…");
     try {
       const login = await G.gistClient({ token, proxy: SYNC_PROXY }).checkToken();
-      Object.assign(sync, { token, login, gist: "", last: 0 });
+      Object.assign(sync, { token, login, gist: "", last: 0, seenAt: "" });
       saveSync();
       syncErr = "";
       syncRefused = false;
@@ -2768,7 +2773,7 @@
 
   function syncOff() {
     if (!confirm("Turn off sync on this device? Progress here stays. The gist and your other devices are not changed.")) return;
-    Object.assign(sync, { token: "", gist: "", login: "", last: 0 });
+    Object.assign(sync, { token: "", gist: "", login: "", last: 0, seenAt: "" });
     saveSync();
     clearTimeout(syncTimer);
     syncErr = "";
@@ -2797,16 +2802,48 @@
 
   // New progress arrived: redraw a tab or Settings where it is. Never a quiz, an open card or a field being typed in.
   function refreshAfterSync() {
+    if (calmScreen()) render(true);
+  }
+  // A tab or Settings with nothing open or being typed: safe to redraw or reload. Never a quiz or its results.
+  function calmScreen() {
     const screen = screenOf()[0] || "home";
-    if (sess || !["home", "practice", "progress", "library", "settings"].includes(screen)) return;
-    if (document.querySelector(".overlay")) return;
+    if (sess || !["home", "practice", "progress", "library", "settings"].includes(screen)) return false;
+    if (document.querySelector(".overlay")) return false;
     const el = document.activeElement;
-    if (el && el.matches && el.matches("input, select, textarea")) return;
-    render(true);
+    return !(el && el.matches && el.matches("input, select, textarea"));
   }
 
   // Read the gist, merge it with this device, apply the result here and write it back only if the
   // gist is behind. Quiet and safe to call often: without a token it does nothing.
+  // The newest build's version from the site, or "" when it cannot be read (offline, or served
+  // from a folder). Never cached: sw.js leaves version.json alone and the address is new each time.
+  async function liveVersion() {
+    if (location.protocol !== "https:" && location.hostname !== "localhost") return "";
+    try {
+      const res = await fetch(`version.json?_=${Date.now()}`, { cache: "no-store" });
+      return res.ok ? String((await res.json()).v || "") : "";
+    } catch (e) {
+      return "";
+    }
+  }
+  // True when this page is an older build than the site. Reloads it once if no quiz is running;
+  // if the reload still brings the old build (a cache), it says how to fix that instead.
+  async function outdated() {
+    const live = await liveVersion();
+    if (!live || live === APP_VERSION) return false;
+    let tried = "";
+    try {
+      tried = sessionStorage.getItem("n2drill.reloadedFor") || "";
+    } catch (e) {}
+    if (calmScreen() && tried !== live) {
+      try {
+        sessionStorage.setItem("n2drill.reloadedFor", live);
+      } catch (e) {}
+      location.reload();
+    }
+    return true;
+  }
+
   async function syncNow(why) {
     if (!G || !sync.token) return;
     if (syncing) {
@@ -2814,12 +2851,21 @@
       return;
     }
     syncing = true;
+    if (await outdated()) {
+      syncing = false;
+      syncErr = "Not synced: a newer version is out. Go back to a tab and it loads, or close the drill and open it again.";
+      refreshSyncUI();
+      return;
+    }
     clearTimeout(syncTimer);
     refreshSyncUI();
     const token = sync.token;
     const stale = () => sync.token !== token; // turned off or reconnected meanwhile
     const wasRefused = syncRefused;
     const gh = G.gistClient({ token, proxy: SYNC_PROXY });
+    const seen = (at) => {
+      if (at && at > (sync.seenAt || "")) sync.seenAt = at;
+    };
     let changed = false;
     try {
       let id = sync.gist || (await gh.findGist());
@@ -2832,7 +2878,7 @@
         } catch (e) {
           if (e.status !== 404) throw e;
           // The stored gist is gone: forget it and look once more.
-          sync.gist = "";
+          Object.assign(sync, { gist: "", seenAt: "" });
           saveSync();
           id = await gh.findGist();
           if (id) got = await gh.read(id);
@@ -2841,6 +2887,10 @@
         // A gist that is there but holds no usable progress is never written over: that would replace
         // every other device's work with this one's. Stop and say so instead.
         if (id && !G.usable(remote)) throw Object.assign(new Error("GitHub sent back no progress, so nothing was written. Try Sync now in a minute"), { status: -1 });
+        // Nor is a copy older than one this device has already seen (a cache answering for GitHub).
+        if (got && got.updated && sync.gist === id && sync.seenAt && got.updated < sync.seenAt)
+          throw Object.assign(new Error("GitHub sent back an old copy, so nothing was written. Try Sync now in a minute"), { status: -1 });
+        if (got && got.updated) seen(got.updated);
       }
       if (stale()) return;
       if (!id) {
@@ -2873,7 +2923,8 @@
         };
         let merged = mergeIn([]);
         if (key(merged) !== key(remote)) {
-          let versions = await gh.write(id, merged);
+          let { versions, updated } = await gh.write(id, merged);
+          seen(updated);
           // GitHub keeps every version of the gist. If anything landed between the version read above
           // and this write (another device syncing, or GitHub sending an old copy), its progress is not
           // in what was just written: read those versions, fold them in and write again.
@@ -2888,7 +2939,8 @@
             const before = key(merged);
             merged = mergeIn(extra);
             if (key(merged) === before) break;
-            versions = await gh.write(id, merged);
+            ({ versions, updated } = await gh.write(id, merged));
+            seen(updated);
           }
         }
         if (stale()) return;

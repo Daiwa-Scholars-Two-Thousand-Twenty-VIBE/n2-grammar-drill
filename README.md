@@ -182,6 +182,8 @@ How it behaves:
 - It syncs when the page loads, after a session, 30 seconds after your last answer, when the page is hidden, and when the device comes back online.
 - A sync never writes over the gist when GitHub sends back no usable progress; it stops and says so.
 - GitHub keeps every version of the gist. If another version landed between a device's read and its write (two devices at once, or GitHub sending an old copy), the device reads the versions it missed, folds them in and writes again. Before 14 Nov 2026 a device that had been away for days could write its old copy over newer work this way.
+- A device remembers GitHub's time on the newest copy it has seen, and never merges and writes back an older one. Every read uses a fresh address, so no cache can answer it.
+- A page left open on an older build checks `version.json` before each sync. If the site has a newer build it reloads itself (only on a tab, never mid-quiz) and does not sync with the old code. Bump `APP_VERSION` in `js/app.js` and `version.json` together whenever sync or saved data changes.
 - Nothing is lost whichever device syncs first. For each item, the copy that has seen it more wins (on a tie, the later last answer, then the earlier due date). Day logs and mix-up counts keep the larger number. Settings go to whichever device changed them last.
 - A full reset on one device stamps the progress with a `reset` time. Your other devices adopt the reset instead of merging the old progress back in.
 - The token stays in that browser's local storage (key `n2drill.sync.v1`) and is never synced.

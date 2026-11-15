@@ -27,6 +27,7 @@ function loadWorker({ keys = [] } = {}) {
     },
     fetch: async () => new Response("ok"),
     URL,
+    Request,
     Response,
     Promise,
   };
@@ -68,4 +69,12 @@ test("sw.js leaves the sync relay, other sites, lesson videos and non-GET calls 
   assert.equal(answered("https://api.github.com/gists"), false);
   assert.equal(answered("https://example.github.io/n2-grammar-drill/js/app.js", "POST"), false);
   assert.equal(answered("https://example.github.io/n2-grammar-drill/video/P3-4.mp4?h=1a2b3c4d"), false);
+  assert.equal(answered("https://example.github.io/n2-grammar-drill/version.json?_=1"), false, "version.json is never cached");
+});
+
+test("version.json and the build in js/app.js name the same version", () => {
+  const live = JSON.parse(read("version.json")).v;
+  const m = /const APP_VERSION = "([^"]+)"/.exec(read("js/app.js"));
+  assert.ok(m, "js/app.js declares APP_VERSION");
+  assert.equal(m[1], live, "bump APP_VERSION and version.json together");
 });

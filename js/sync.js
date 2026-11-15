@@ -91,25 +91,31 @@
         const body = { public: false, description: "N2 drill progress (synced by the N2 drill app)", files: { [FILE]: { content: asText(content) } } };
         return (await api("POST", "/gists", body)).id;
       },
-      // `{ data, version }`: the parsed contents of FILE (null if the gist has no such file) and the
-      // gist version they came from. The API cuts files over about 1 MB short and marks them
-      // `truncated`; the raw URL (no token needed) has the whole file.
+      // `{ data, version, updated }`: the parsed contents of FILE (null if the gist has no such file),
+      // the gist version they came from and when GitHub last changed the gist (ISO time, GitHub's clock).
+      // The API cuts files over about 1 MB short and marks them `truncated`; the raw URL (no token
+      // needed) has the whole file. `?_=` makes every read a new address, so no cache can answer it.
       async read(id) {
-        const gist = await api("GET", `/gists/${encodeURIComponent(id)}`);
-        return { data: await fileOf(gist), version: versionsOf(gist)[0] || "" };
+        const gist = await api("GET", `/gists/${encodeURIComponent(id)}?_=${Date.now()}`);
+        return { data: await fileOf(gist), version: versionsOf(gist)[0] || "", updated: (gist && gist.updated_at) || "" };
       },
       // The contents of FILE as it was at one earlier version of the gist, or null.
       async readVersion(id, version) {
         return fileOf(await api("GET", `/gists/${encodeURIComponent(id)}/${encodeURIComponent(version)}`));
       },
-      // Replace FILE with `content`. Returns the gist's versions after the write, newest (this write)
-      // first: from the reply, or from the gist's commit list if the reply has no history.
+      // Replace FILE with `content`. Returns `{ versions, updated }`: the gist's versions after the
+      // write, newest (this write) first, from the reply or else from the gist's commit list; and when
+      // GitHub changed the gist.
       async write(id, content) {
         const path = `/gists/${encodeURIComponent(id)}`;
-        const versions = versionsOf(await api("PATCH", path, { files: { [FILE]: { content: asText(content) } } }));
-        if (versions.length) return versions;
-        const commits = await api("GET", `${path}/commits?per_page=30`);
-        return Array.isArray(commits) ? commits.map((c) => c && c.version).filter(Boolean) : [];
+        const gist = await api("PATCH", path, { files: { [FILE]: { content: asText(content) } } });
+        const updated = (gist && gist.updated_at) || "";
+        let versions = versionsOf(gist);
+        if (!versions.length) {
+          const commits = await api("GET", `${path}/commits?per_page=30&_=${Date.now()}`);
+          versions = Array.isArray(commits) ? commits.map((c) => c && c.version).filter(Boolean) : [];
+        }
+        return { versions, updated };
       },
     };
   }
