@@ -98,6 +98,18 @@ test("daily review respects the lesson filter and the new-point quota", () => {
   assert.equal(S.newToday(st, T), 0);
 });
 
+test("reviewsToday counts points met before today and answered today", () => {
+  const st = S.emptyState();
+  S.record(st, { qid: "qa1", point: "a", ok: true, secs: 9, type: "p7", today: T });
+  S.record(st, { qid: "qb1", point: "b", ok: false, secs: 9, type: "p7", today: T });
+  const day2 = S.addDays(T, 1);
+  assert.equal(S.reviewsToday(st, day2), 0);
+  S.record(st, { qid: "qb1", point: "b", ok: true, secs: 9, type: "p7", today: day2 });
+  S.record(st, { qid: "qc1", point: "c", ok: true, secs: 9, type: "p7", today: day2 });
+  assert.equal(S.reviewsToday(st, day2), 1);
+  assert.equal(S.newToday(st, day2), 1);
+});
+
 test("least-seen question is picked for a point", () => {
   const st = S.emptyState();
   st.qs.qa1 = { seen: 3, right: 3 };

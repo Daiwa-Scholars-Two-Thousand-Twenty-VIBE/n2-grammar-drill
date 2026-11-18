@@ -132,6 +132,10 @@
   function newToday(state, today, store = "points") {
     return Object.values(state[store] || {}).filter((p) => p.first === today).length;
   }
+  // Items reviewed today: answered today, but first met on an earlier day. Feeds the daily review cap.
+  function reviewsToday(state, today, store = "points") {
+    return Object.values(state[store] || {}).filter((p) => p.last === today && p.first !== today).length;
+  }
 
   // new · learning · solid · auto (automatic) · weak
   function status(p, target = TARGET.p7) {
@@ -556,7 +560,7 @@
 
   return {
     INTERVALS, TARGET, dayStr, addDays, daysBetween, mulberry32, shuffle, median,
-    emptyState, record, newToday, status, mixups, interleave, indexByPoint,
+    emptyState, record, newToday, reviewsToday, status, mixups, interleave, indexByPoint,
     buildDaily, buildMock, buildSetDrill, buildPointDrill, buildPairDrill, buildCustom, nextExam,
     kanjiQuestion, pickKanjiQuestion, buildKanjiDaily, buildKanjiDrill,
     VTYPES, buildVocabDaily, buildVocabMock, pickPassage,

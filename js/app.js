@@ -8,11 +8,11 @@
   const G = window.Sync || null; // gist sync (js/sync.js). Missing means sync stays off.
   // This build. version.json on the site holds the newest; a page left open on an older build stops
   // syncing and reloads itself, so old sync code never runs against newer progress. Bump both together.
-  const APP_VERSION = "2026-11-15.1";
+  const APP_VERSION = "2026-11-18.1";
   const app = document.getElementById("app");
   const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1", wk: "n2drill.wk.v1" };
   // rlFrom: the day reading and listening join Today. Before it they show as optional blocks.
-  const DEFAULTS = { upto: "all", size: 20, newPerDay: 12, timer: true, eink: false, sound: false, missPause: 1500, examDate: "", wk: 27, kNew: 10, kSize: 30, vNew: 10, vSize: 20, rlFrom: "2026-11-16", lDaily: 8 };
+  const DEFAULTS = { upto: "all", size: 20, newPerDay: 12, maxReviews: 50, timer: true, eink: false, sound: false, missPause: 1500, examDate: "", wk: 27, kNew: 10, kSize: 30, vNew: 10, vSize: 20, rlFrom: "2026-11-16", lDaily: 8 };
   // Seconds the real paper allows, roughly: 問題7 and 問題8 per item, 問題9 per passage, vocab per item,
   // reading per text (with its questions).
   const MOCK_SECS = { p7: 25, p8: 50, p9: 360, v3: 20, v4: 25, v5: 25, v6: 45, r10: 150, r11: 360, r12: 420, r13: 600, r14: 420 };
@@ -406,14 +406,19 @@
     const byPoint = S.indexByPoint(pool());
     const pts = scopedPoints().filter((p) => byPoint.has(p.id));
     const ps = (id) => state.points[id];
-    const due = pts.filter((p) => ps(p.id) && ps(p.id).seen && ps(p.id).due <= t).length;
+    const dueAll = pts.filter((p) => ps(p.id) && ps(p.id).seen && ps(p.id).due <= t).length;
+    // At most `maxReviews` reviews a day (0 means no cap). The rest stay due and come first tomorrow,
+    // because Today takes the oldest due date first.
+    const cap = Number(settings.maxReviews) > 0 ? Number(settings.maxReviews) : Infinity;
+    const due = Math.min(dueAll, Math.max(0, cap - S.reviewsToday(state, t)));
+    const held = dueAll - due;
     const fresh = pts.filter((p) => !ps(p.id) || !ps(p.id).seen).length;
     const newLeft = Math.min(fresh, Math.max(0, settings.newPerDay - S.newToday(state, t)));
     const tomorrow = pts.filter((p) => ps(p.id) && ps(p.id).seen && ps(p.id).due === S.addDays(t, 1)).length;
     // Due points come first when there is a backlog, but a quarter of the session stays open for new ones.
     const n = Math.min(settings.size, due + newLeft);
     const nNew = Math.min(newLeft, Math.max(n - due, Math.floor(n / 4)));
-    return { due, fresh, newLeft, tomorrow, n, nNew, left: due + newLeft };
+    return { due, held, fresh, newLeft, tomorrow, n, nNew, left: due + newLeft };
   }
 
   function dayStreak() {
@@ -437,7 +442,8 @@
     const rounds = (c, size, about) => {
       const parts = [c.due ? `${c.due} to review` : "", c.newLeft ? `${c.newLeft} new` : ""].filter(Boolean).join(" + ");
       const r = Math.ceil(c.left / size);
-      return { n: c.n, left: c.left, rounds: r, sub: c.left ? `${parts}${r > 1 ? ` · ${r} rounds` : ""}` : about };
+      const held = c.held ? ` · ${c.held} wait for tomorrow` : "";
+      return { n: c.n, left: c.left, rounds: r, sub: c.left ? `${parts}${r > 1 ? ` · ${r} rounds` : ""}${held}` : c.held ? `Daily cap reached${held}` : about };
     };
     const plan = [{ id: "grammar", name: "Grammar", ...rounds(g, settings.size, "問題7 and 8: the right form, fast"), mins: (g.left * 40) / 60, done: (state.days[t] || {}).n || 0, act: "today", unit: "questions" }];
     if (V.length) {
@@ -519,7 +525,7 @@
       : `<div class="card"><h3>How this works</h3><ul class="small" style="margin:0;padding-left:18px">
           <li>Do <b>Today</b> once a day: ${blocks}. Each item comes back just before you would forget it.</li>
           <li>After each answer, read the one-line <b>tell</b>. That is the thing to learn.</li>
-          <li>Right but slow counts as not learned yet, so it comes back tomorrow.</li>
+          <li>Right but slow counts as not learned yet, so it comes back tomorrow. Grammar reviews stop at ${settings.maxReviews > 0 ? settings.maxReviews : "no limit"} a day; the rest wait.</li>
           <li>Mocks${R.length ? ", look-alike sets and 情報検索" : " and look-alike sets"} are in <b>Practice</b>.</li>
           ${RALL.length || L.length ? `<li>Reading and listening are optional until ${esc(fmtDay(settings.rlFrom))}, then part of Today.</li>` : ""}
           <li>Still working through the book? Set how far you have got in <button class="linkish" data-act="nav" data-to="settings">Settings</button>.</li>
@@ -2541,6 +2547,7 @@
         <div class="field"><label for="s-upto">I have studied up to<small>Only points up to here appear in Today, mocks and passages.</small></label><select id="s-upto" data-set="upto">${upto}</select></div>
         <div class="field"><label for="s-size">Questions per review</label><input id="s-size" type="number" min="5" max="60" value="${settings.size}" data-set="size"></div>
         <div class="field"><label for="s-new">New points per day<small>About 12 a day meets every point in roughly two weeks.</small></label><input id="s-new" type="number" min="0" max="40" value="${settings.newPerDay}" data-set="newPerDay"></div>
+        <div class="field"><label for="s-cap">Most grammar reviews per day<small>Due points past this wait for tomorrow and come first then. 0 means no cap.</small></label><input id="s-cap" type="number" min="0" max="300" value="${settings.maxReviews}" data-set="maxReviews"></div>
         <div class="field"><label for="s-timer">Show the timer</label><input id="s-timer" type="checkbox" ${settings.timer ? "checked" : ""} data-set="timer"></div>
         <div class="field"><label for="s-eink">E-ink mode<small>Black on white, no animation, no ticking clock. For Boox and similar screens.</small></label><input id="s-eink" type="checkbox" ${settings.eink ? "checked" : ""} data-set="eink"></div>
         <div class="field"><label for="s-sound">Sound on answer</label><input id="s-sound" type="checkbox" ${settings.sound ? "checked" : ""} data-set="sound"></div>
