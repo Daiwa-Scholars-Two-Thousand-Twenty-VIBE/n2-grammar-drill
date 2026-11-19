@@ -8,11 +8,11 @@
   const G = window.Sync || null; // gist sync (js/sync.js). Missing means sync stays off.
   // This build. version.json on the site holds the newest; a page left open on an older build stops
   // syncing and reloads itself, so old sync code never runs against newer progress. Bump both together.
-  const APP_VERSION = "2026-11-18.1";
+  const APP_VERSION = "2026-11-19.1";
   const app = document.getElementById("app");
   const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1", wk: "n2drill.wk.v1" };
   // rlFrom: the day reading and listening join Today. Before it they show as optional blocks.
-  const DEFAULTS = { upto: "all", size: 20, newPerDay: 12, maxReviews: 50, timer: true, eink: false, sound: false, missPause: 1500, examDate: "", wk: 27, kNew: 10, kSize: 30, vNew: 10, vSize: 20, rlFrom: "2026-11-16", lDaily: 8 };
+  const DEFAULTS = { upto: "all", size: 20, newPerDay: 12, maxReviews: 40, timer: true, eink: false, sound: false, missPause: 1500, examDate: "", wk: 27, kNew: 10, kSize: 30, vNew: 10, vSize: 20, rlFrom: "2026-11-16", lDaily: 8 };
   // Seconds the real paper allows, roughly: 問題7 and 問題8 per item, 問題9 per passage, vocab per item,
   // reading per text (with its questions).
   const MOCK_SECS = { p7: 25, p8: 50, p9: 360, v3: 20, v4: 25, v5: 25, v6: 45, r10: 150, r11: 360, r12: 420, r13: 600, r14: 420 };
@@ -116,6 +116,13 @@
     settings._ts = Date.now();
     save(KEYS.settings, settings);
   };
+  // One-off (19 Nov 2026): the review cap went from 50 to 40. Devices that saved 50 move to 40 once;
+  // the fresh `_ts` makes the change win the next sync. A cap set by hand later is left alone.
+  if (!settings.cap40) {
+    if (Number(settings.maxReviews) === 50) settings.maxReviews = 40;
+    settings.cap40 = true;
+    saveSettings();
+  }
   // This device's sync link. It holds the token, so it never goes into the synced file.
   // `seenAt` is GitHub's time on the newest copy of the gist this device has seen: a read older than
   // that is a stale copy and must never be merged and written back.

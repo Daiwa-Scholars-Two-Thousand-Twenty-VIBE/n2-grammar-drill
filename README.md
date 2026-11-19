@@ -21,7 +21,7 @@ So the drill is built around those two:
 - Every question highlights its **cue** after you answer (the words that decide it, like 必ずしも, 私は, or a request at the end) and gives a one-line **tell**. The tell is the thing to learn.
 - Every wrong choice comes with the rule that kills it.
 - Answers are timed. Right but slow counts as not learned yet, and comes back tomorrow.
-- Grammar reviews are capped at 50 a day (**Settings → Most grammar reviews per day**, 0 for no cap). Due points past the cap wait and come first the next day, so a backlog cannot eat the whole day.
+- Grammar reviews are capped at 40 a day (**Settings → Most grammar reviews per day**, 0 for no cap). Due points past the cap wait and come first the next day, so a backlog cannot eat the whole day.
 
 The vocabulary and notice questions work the same way: four choices, a one-line tell, and a note on why each wrong choice fails.
 
