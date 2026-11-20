@@ -8,7 +8,7 @@
   const G = window.Sync || null; // gist sync (js/sync.js). Missing means sync stays off.
   // This build. version.json on the site holds the newest; a page left open on an older build stops
   // syncing and reloads itself, so old sync code never runs against newer progress. Bump both together.
-  const APP_VERSION = "2026-11-20.3";
+  const APP_VERSION = "2026-11-20.4";
   const app = document.getElementById("app");
   const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1", wk: "n2drill.wk.v1" };
   // rlFrom: the day reading and listening join Today. Before it they show as optional blocks.
@@ -454,7 +454,7 @@
     const plan = [{ id: "grammar", name: "Grammar", ...rounds(g, settings.size, "問題7 and 8: the right form, fast"), mins: (g.left * 40) / 60, done: (state.days[t] || {}).n || 0, act: "today", unit: "questions" }];
     if (V.length) {
       const v = vocabCounts();
-      plan.push({ id: "vocab", name: "Vocab", ...rounds(v, settings.vSize, "語形成, 言い換え, 用法"), mins: (v.left * 35) / 60, done: (state.vdays[t] || {}).n || 0, act: "vocab-today", unit: "items" });
+      plan.push({ id: "vocab", name: "Vocab", ...rounds(v, settings.vSize, "語形成, 文脈規定, 言い換え, 用法"), mins: (v.left * 35) / 60, done: (state.vdays[t] || {}).n || 0, act: "vocab-today", unit: "items" });
     }
     if (K.length) {
       const k = kanjiCounts();
@@ -1762,9 +1762,9 @@
   }
 
   // ---------- vocab items ----------
-  // 問題3 shows the blank; 問題5 underlines the words to replace; 問題6 shows the word alone.
+  // 問題3 and 問題4 show the blank; 問題5 underlines the words to replace; 問題6 shows the word alone.
   function vPrompt(q, answered) {
-    if (q.type === "v3") return `<div class="sentence">${rich(q.s, { fill: answered ? { "": q.c[0] } : {} })}</div>`;
+    if (q.type === "v3" || q.type === "v4") return `<div class="sentence">${rich(q.s, { fill: answered ? { "": q.c[0] } : {} })}</div>`;
     if (q.type === "v5") {
       const i = q.s.indexOf(q.t);
       return `<div class="sentence">${esc(q.s.slice(0, i))}<u class="tgt">${esc(q.t)}</u>${esc(q.s.slice(i + q.t.length))}</div>`;
@@ -2554,7 +2554,7 @@
       .join("");
     return `${header()}${back("library")}
       <h2>${V.length || !R.length ? "Vocab and 情報検索" : "情報検索"}</h2>
-      <p class="muted small">The vocabulary questions grammar drills miss: 問題3 語形成 (prefixes and suffixes), 問題5 言い換え類義 (closest meaning) and 問題6 用法 (usage), plus 問題14 情報検索, the notice you scan for conditions at the end of the reading section. All sentences and notices are original.</p>
+      <p class="muted small">The vocabulary questions grammar drills miss: 問題3 語形成 (prefixes and suffixes), 問題4 文脈規定 (context), 問題5 言い換え類義 (closest meaning) and 問題6 用法 (usage), plus 問題14 情報検索, the notice you scan for conditions at the end of the reading section. All sentences and notices are original.</p>
       ${V.length || R.length ? `<p class="muted small">You drill vocab in the Vocab block on Today. Timed sections, one type at a time and 情報検索 notices are in Practice.</p>` : `<p class="muted">Nothing here yet. The questions are still being written.</p>`}
       ${V.length ? `<div class="card"><h3>Progress by type</h3><div class="bars">${bars}</div>${legend()}
         ${lists}</div>` : ""}
@@ -2678,7 +2678,7 @@
     }
     // Vocab misses: the word, its meaning and the sentence with the answer in.
     const vmiss = V.filter((q) => state.qs[q.id] && state.qs[q.id].wrong);
-    const vLine = (q) => (q.type === "v3" ? q.s.replace("（　　）", q.c[0]) : q.type === "v5" ? `${q.s} (${q.t} = ${q.c[0]})` : q.c[0]);
+    const vLine = (q) => (q.type === "v3" || q.type === "v4" ? q.s.replace("（　　）", q.c[0]) : q.type === "v5" ? `${q.s} (${q.t} = ${q.c[0]})` : q.c[0]);
     // Reading and listening misses: the question, the answer and the tell.
     const wrong = (qid) => state.qs[qid] && state.qs[qid].wrong;
     const rmiss = RALL.flatMap((p) => p.qs.map((b, k) => ({ p, b, k })).filter((x) => wrong(`${x.p.id}#${x.k + 1}`)));
