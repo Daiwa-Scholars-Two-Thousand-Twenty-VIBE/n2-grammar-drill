@@ -8,7 +8,7 @@
   const G = window.Sync || null; // gist sync (js/sync.js). Missing means sync stays off.
   // This build. version.json on the site holds the newest; a page left open on an older build stops
   // syncing and reloads itself, so old sync code never runs against newer progress. Bump both together.
-  const APP_VERSION = "2026-11-19.1";
+  const APP_VERSION = "2026-11-20.1";
   const app = document.getElementById("app");
   const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1", wk: "n2drill.wk.v1" };
   // rlFrom: the day reading and listening join Today. Before it they show as optional blocks.
@@ -123,6 +123,12 @@
     settings.cap40 = true;
     saveSettings();
   }
+  // One-off (20 Nov 2026): the 14 TRY! N2 points arrive 5 a day, not all at once. A number set by hand later is kept.
+  if (!settings.try5) {
+    if (Number(settings.newPerDay) > 5) settings.newPerDay = 5;
+    settings.try5 = true;
+    saveSettings();
+  }
   // This device's sync link. It holds the token, so it never goes into the synced file.
   // `seenAt` is GitHub's time on the newest copy of the gist this device has seen: a read older than
   // that is a stale copy and must never be merged and written back.
@@ -218,7 +224,7 @@
     const s = Math.round(secs);
     return s >= 60 ? `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}` : `${s} s`;
   }
-  const lessonLabel = (l) => (/^\d+$/.test(l) ? `Lesson ${l}` : { IV: "Section IV", P2: "第2部", P3: "第3部", X: "敬語" }[l] || l);
+  const lessonLabel = (l) => (/^\d+$/.test(l) ? `Lesson ${l}` : { IV: "Section IV", P2: "第2部", P3: "第3部", X: "敬語", T: "TRY! N2" }[l] || l);
   const glyph = (st) => `<span class="st ${st}" title="${STATUS[st][1]}">${STATUS[st][0]}</span>`;
   function chip(id) {
     const p = pointById.get(id);

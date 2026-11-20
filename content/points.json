@@ -29,14 +29,16 @@
     "IV": "文法形式の整理",
     "P2": "第2部 文の組み立て",
     "P3": "第3部 文章の文法",
-    "X": "敬語"
+    "X": "敬語",
+    "T": "TRY! N2 の追加項目"
   },
   "sections": [
     { "id": "I", "name": "Section I · ことがらを説明する", "lessons": ["1","2","3","4","5","6","7","8","9","10"] },
     { "id": "II", "name": "Section II · 主観を含めて説明する", "lessons": ["11","12","13","14","15","16","17","18","19","20","21"] },
     { "id": "III", "name": "Section III · 主観を述べる", "lessons": ["22","23","24","25","26"] },
     { "id": "IV", "name": "Section IV · 文法形式の整理", "lessons": ["IV"] },
-    { "id": "P", "name": "第2部・第3部 · sentence and text grammar", "lessons": ["P2","P3","X"] }
+    { "id": "P", "name": "第2部・第3部 · sentence and text grammar", "lessons": ["P2","P3","X"] },
+    { "id": "T", "name": "TRY! N2 · extra points", "lessons": ["T"] }
   ],
   "tagNames": {
     "noWill": "No wish or intention after",
@@ -266,6 +268,20 @@
     { "id": "P3-10", "l": "P3", "form": "接続表現 (connectives)", "en": "connectives", "conn": "しかも・ところが・つまり・ただし・なお・さて…", "reg": [], "tags": [], "tell": "Connectives predict the next sentence: ところが = surprise, つまり = restate, ただし = exception.", "ex": ["閉館日は月曜です。ただし、祝日の場合は翌日です。", "We close on Mondays. However, on public holidays it's the next day."] },
     { "id": "P3-11", "l": "P3", "form": "省略・言い換え", "en": "omission and rephrasing", "conn": "前の語の省略／抽象名詞での言い換え", "reg": [], "tags": [], "tell": "An abstract noun (夢・問題・その傾向) rewords something concrete said earlier.", "ex": ["将来は虫博士になりたいと思っていた。20年後、その夢は実現した。", "I wanted to be an insect scientist. Twenty years later, that dream came true."] },
     { "id": "P3-12", "l": "P3", "form": "文体 (register)", "en": "consistent register", "conn": "書き言葉／話し言葉", "reg": [], "tags": [], "tell": "Formal writing: no contractions, no 敬語 to the reader, stiff forms (ざるを得ない, not なきゃ).", "ex": ["これは経済政策ではない。というより、税金の無駄遣いだと思った。", "This isn't economic policy. Rather, I thought it was a waste of tax."] },
-    { "id": "X-1", "l": "X", "form": "敬語 (尊敬語・謙譲語)", "en": "honorific and humble language", "conn": "いらっしゃる・おっしゃる／伺う・申す・させていただく", "reg": [], "tags": [], "tell": "Whose action? Theirs → 尊敬 (いらっしゃる). Mine → 謙譲 (伺う・させていただく).", "ex": ["ぜひわたしにやらせていただけないでしょうか。", "Would you please let me do it?"] }
+    { "id": "X-1", "l": "X", "form": "敬語 (尊敬語・謙譲語)", "en": "honorific and humble language", "conn": "いらっしゃる・おっしゃる／伺う・申す・させていただく", "reg": [], "tags": [], "tell": "Whose action? Theirs → 尊敬 (いらっしゃる). Mine → 謙譲 (伺う・させていただく).", "ex": ["ぜひわたしにやらせていただけないでしょうか。", "Would you please let me do it?"] },
+    { "id": "T-1", "l": "T", "form": "〜に反して・〜に反する", "en": "contrary to; against", "conn": "名 ＋ に反して／に反する・に反した ＋ 名", "reg": ["stiff"], "tags": [], "tell": "The result went against an expectation, wish or rule (予想に反して・規則に反する).", "ex": ["両親の期待に反して、彼は大学を辞めて料理人になった。", "Against his parents' hopes, he quit university to become a cook."] },
+    { "id": "T-2", "l": "T", "form": "〜反面・〜半面", "en": "while ~, on the other hand (two sides of one thing)", "conn": "普通形（な形〜な／である・名である）＋ 反面", "reg": [], "tags": ["same"], "tell": "One thing, two opposite sides: good side 反面 bad side (便利な反面、高い).", "ex": ["一人暮らしは気楽な反面、病気のときは心細い。", "Living alone is carefree, but you feel helpless when you are ill."] },
+    { "id": "T-3", "l": "T", "form": "〜一方(で) (contrast)", "en": "while; on the other hand; meanwhile", "conn": "普通形（な形〜な／である・名である）＋ 一方(で)／文頭: その一方で", "reg": [], "tags": [], "tell": "Two sides or two different things side by side. Unlike 反面, the two may have different subjects.", "ex": ["都市部の人口が増える一方で、地方では過疎化が進んでいる。", "While cities grow, the countryside keeps emptying."] },
+    { "id": "T-4", "l": "T", "form": "〜をきっかけに・〜を契機に", "en": "taking ~ as the trigger; prompted by", "conn": "名／普通形＋の ＋ をきっかけに(して)／を契機に(して)", "reg": [], "tags": [], "tell": "An event that set off a change (留学をきっかけに). 契機 is the written version.", "ex": ["祖父の入院をきっかけに、介護の仕事に興味を持った。", "My grandfather's hospital stay got me interested in care work."] },
+    { "id": "T-5", "l": "T", "form": "〜を目的として・〜を目的に", "en": "with the aim of; for the purpose of", "conn": "名 ＋ を目的として／を目的に／を目的とした ＋ 名", "reg": ["stiff"], "tags": [], "tell": "Formal 'for the purpose of' a deliberate goal (地域の活性化を目的とした事業).", "ex": ["このセミナーは、若手社員の育成を目的として開かれる。", "This seminar is held to develop young staff."] },
+    { "id": "T-6", "l": "T", "form": "〜てこそ・〜ばこそ", "en": "only by ~ / precisely because ~", "conn": "動て形 ＋ こそ／普通形の仮定形 ＋ ばこそ", "reg": ["stiff"], "tags": ["pos"], "tell": "てこそ: only by doing X do you get the real thing. ばこそ: it is precisely because of a good reason.", "ex": ["実際に住んでこそ、その町の良さがわかる。", "Only by living there do you see what is good about the town."] },
+    { "id": "T-7", "l": "T", "form": "〜ないことはない・〜ないこともない", "en": "it's not that ~ can't; could, if I had to", "conn": "動ない形／い形〜く／な形〜で ＋ ないことはない", "reg": [], "tags": [], "tell": "Double negative = a weak, reluctant yes (行けないことはないが…). Often followed by が or けど.", "ex": ["頑張れば今日中に終わらないこともないが、正直厳しい。", "I could finish today if I push, but honestly it's tough."] },
+    { "id": "T-8", "l": "T", "form": "〜というより", "en": "rather than (calling it) ~", "conn": "名／普通形（な形・名のだは省くことが多い）＋ というより", "reg": [], "tags": [], "tell": "X is not quite the right word; Y fits better (暑いというより痛い). Often with むしろ.", "ex": ["彼の話し方は、説明というより演説に近かった。", "The way he talked was closer to a speech than an explanation."] },
+    { "id": "T-9", "l": "T", "form": "〜くらいなら・〜ぐらいなら", "en": "if it comes to ~, I'd rather", "conn": "動辞書形 ＋ くらいなら … ほうがましだ／ほうがいい", "reg": [], "tags": [], "tell": "X is so bad that even Y is better: Xくらいなら Yほうがましだ.", "ex": ["あの店で一時間も並ぶくらいなら、家で作ったほうがましだ。", "Rather than queue an hour at that shop, I'd sooner cook at home."] },
+    { "id": "T-10", "l": "T", "form": "〜に限る", "en": "nothing beats ~; ~ is the best way", "conn": "名／動辞書形・ない形 ＋ に限る", "reg": [], "tags": [], "tell": "Sentence-final opinion: X is the best (疲れたときは寝るに限る). Not に限り or に限って.", "ex": ["暑い日は冷たいそばに限る。", "On a hot day, nothing beats cold soba."] },
+    { "id": "T-11", "l": "T", "form": "〜てはいられない", "en": "can't afford to (keep) ~", "conn": "動て形 ＋ はいられない／はいられず", "reg": [], "tags": [], "tell": "The situation won't let me keep doing X (のんびりしてはいられない). Not ずにはいられない (can't help doing).", "ex": ["締め切りは明日だ。もう迷ってはいられない。", "The deadline is tomorrow. I can't keep dithering."] },
+    { "id": "T-12", "l": "T", "form": "〜に加えて・〜に加え", "en": "in addition to; on top of", "conn": "名 ＋ に加えて／に加え", "reg": ["stiff"], "tags": [], "tell": "Adds a second thing on top of the first (雨に加えて風も). Formal そのうえ.", "ex": ["今年は円安に加えて原材料の値上がりもあり、経営が苦しい。", "This year the weak yen plus rising material costs are squeezing the business."] },
+    { "id": "T-13", "l": "T", "form": "〜を込めて", "en": "(filled) with (a feeling)", "conn": "名 ＋ を込めて／を込めた ＋ 名", "reg": [], "tags": [], "tell": "Puts a feeling or wish into an act or thing (感謝を込めて・心を込めた料理).", "ex": ["平和への願いを込めて、子どもたちが鶴を折った。", "The children folded paper cranes with a wish for peace."] },
+    { "id": "T-14", "l": "T", "form": "〜も〜ば〜も・〜も〜なら〜も", "en": "both ~ and ~", "conn": "名も ＋ 動ば形／い形ければ／な形・名なら ＋ 名も", "reg": [], "tags": [], "tell": "Lists two things of the same kind: 歌もうまければ踊りも上手だ.", "ex": ["彼女は料理も得意なら、裁縫も得意だ。", "She is good at cooking, and at sewing too."] }
   ]
 }

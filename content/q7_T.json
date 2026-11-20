@@ -1,0 +1,1688 @@
+[
+  {
+    "id": "7-T-001",
+    "type": "p7",
+    "point": "T-1",
+    "s": "専門家の予想（　　）、今年の夏は例年より涼しかった。",
+    "en": "Contrary to the experts' forecasts, this summer was cooler than usual.",
+    "c": [
+      "に反して",
+      "に沿って",
+      "に応じて",
+      "にこたえて"
+    ],
+    "cp": [
+      "T-1",
+      "8-3",
+      "9-4",
+      "7-5"
+    ],
+    "why": [
+      "〜に反して: the outcome went the opposite way to a forecast or hope. Experts predicted heat; it was cool.",
+      "〜に沿って means following a plan or line. Weather does not follow a forecast on purpose.",
+      "〜に応じて means 'adjusting to' something that varies. A forecast is not something the summer adjusts to.",
+      "〜にこたえて means responding to a request or hope from people. The summer cannot answer one."
+    ],
+    "cue": [
+      "予想"
+    ],
+    "tell": "予想・期待・意図 plus an outcome that went the other way: に反して.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-002",
+    "type": "p7",
+    "point": "T-1",
+    "s": "社内の規則（　　）行為があった場合は、厳しく処分する。",
+    "en": "Any act that breaks company rules will be dealt with strictly.",
+    "c": [
+      "に反する",
+      "に沿った",
+      "に応じた",
+      "に基づく"
+    ],
+    "cp": [
+      "T-1",
+      "8-3",
+      "9-4",
+      "8-2"
+    ],
+    "why": [
+      "〜に反する + noun: an act that goes against the rules. That is what gets punished.",
+      "〜に沿った means in line with the rules. Nobody is punished for following them.",
+      "〜に応じた means matched to something that varies. Rules are not a scale to match.",
+      "〜に基づく means grounded in the rules. Again, that would not be punished."
+    ],
+    "cue": [
+      "厳しく処分する"
+    ],
+    "tell": "Punishment ahead means the act broke the rule: 規則に反する.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-003",
+    "type": "p7",
+    "point": "T-1",
+    "s": "住民の強い願い（　　）、市は駅前の公園を駐車場にすることを決めた。",
+    "en": "Against the residents' strong wishes, the city decided to turn the park by the station into a car park.",
+    "c": [
+      "に反して",
+      "にこたえて",
+      "に応じて",
+      "をもとに"
+    ],
+    "cp": [
+      "T-1",
+      "7-5",
+      "9-4",
+      "8-1"
+    ],
+    "why": [
+      "〜に反して: the decision went against what residents wanted. Residents wish to keep a park, not lose it.",
+      "〜にこたえて means granting the wish. No resident strongly wishes to lose their park.",
+      "〜に応じて means adjusting in line with something that varies. The city did the opposite of the wish.",
+      "〜をもとに means using something as material or a basis. A wish is not material for a car park."
+    ],
+    "cue": [
+      "駐車場にする"
+    ],
+    "tell": "A wish and an action that goes the other way: 願いに反して. Granting it would be にこたえて.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-004",
+    "type": "p7",
+    "point": "T-1",
+    "s": "当初の計画（　　）、新しい橋の完成は二年も遅れることになった。",
+    "en": "Contrary to the original plan, the new bridge will be finished two whole years late.",
+    "c": [
+      "に反して",
+      "に沿って",
+      "に先立って",
+      "にわたって"
+    ],
+    "cp": [
+      "T-1",
+      "8-3",
+      "IV-2",
+      "4-3"
+    ],
+    "why": [
+      "〜に反して: the plan said one date, reality went another way. 二年も遅れる is the clash.",
+      "〜に沿って means following the plan. A two-year delay does not follow it.",
+      "〜に先立って means before an event, as preparation. A plan is not an event to come before.",
+      "〜にわたって goes with a span of time or space (三年にわたって). A plan is not a span."
+    ],
+    "cue": [
+      "遅れる"
+    ],
+    "tell": "Plan or forecast plus a result that broke it: 計画に反して.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-005",
+    "type": "p7",
+    "point": "T-2",
+    "s": "インターネットは便利な（　　）、個人情報が漏れる危険もある。",
+    "en": "The internet is convenient, but it also carries the risk of personal data leaking.",
+    "c": [
+      "反面",
+      "うえに",
+      "ばかりか",
+      "以上"
+    ],
+    "cp": [
+      "T-2",
+      "6-5",
+      "6-3",
+      "17-5"
+    ],
+    "why": [
+      "〜反面: one thing with a good side (convenient) and a bad side (risk).",
+      "〜うえに stacks things of the same value, good with good or bad with bad. Here good meets bad.",
+      "〜ばかりか escalates in the same direction. Convenience does not escalate into danger.",
+      "〜以上 means 'since' and needs a duty or will after it. 危険もある is neither."
+    ],
+    "cue": [
+      "危険もある"
+    ],
+    "tell": "Good side, then bad side of the same thing: 反面.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-006",
+    "type": "p7",
+    "point": "T-2",
+    "s": "この薬はよく効く（　　）、眠くなるという副作用がある。",
+    "en": "This medicine works well, but it has the side effect of making you drowsy.",
+    "c": [
+      "反面",
+      "からには",
+      "だけあって",
+      "うちに"
+    ],
+    "cp": [
+      "T-2",
+      "17-5",
+      "19-3",
+      "2-2A"
+    ],
+    "why": [
+      "〜反面: the medicine's good side (it works) and its bad side (a side effect).",
+      "〜からには means 'now that' and needs a duty or resolve after it. A side effect is neither.",
+      "〜だけあって praises a result as expected. A side effect is not praise.",
+      "〜うちに means 'while it lasts, before it changes'. That makes no sense with a side effect."
+    ],
+    "cue": [
+      "副作用"
+    ],
+    "tell": "Works well, but a side effect: two sides of one thing, 反面.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-007",
+    "type": "p7",
+    "point": "T-2",
+    "s": "この仕事は収入が安定している（　　）、休みが少ないのが不満だ。",
+    "en": "This job pays a steady income, but I am unhappy that there are few days off.",
+    "c": [
+      "反面",
+      "ばかりに",
+      "ことだし",
+      "とたんに"
+    ],
+    "cp": [
+      "T-2",
+      "17-4",
+      "17-1",
+      "1-3"
+    ],
+    "why": [
+      "〜反面: the job's plus (steady pay) and its minus (few days off).",
+      "〜ばかりに blames one cause for a bad result. Steady pay does not cause few days off.",
+      "〜ことだし gives a reason for a decision or suggestion. 不満だ is neither.",
+      "〜たとたん needs a past verb and a sudden event. 安定している is a steady state."
+    ],
+    "cue": [
+      "安定している",
+      "休みが少ない"
+    ],
+    "tell": "Plus, then minus, of the same job: 反面.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-008",
+    "type": "p7",
+    "point": "T-2",
+    "s": "都会の生活は刺激が多い（　　）、ストレスもたまりやすいと言えるだろう。",
+    "en": "City life is stimulating, but you could say it is also easy to build up stress.",
+    "c": [
+      "反面",
+      "からといって",
+      "末に",
+      "どころか"
+    ],
+    "cp": [
+      "T-2",
+      "14-6",
+      "20-4",
+      "12-2"
+    ],
+    "why": [
+      "〜反面: city life's good side (stimulation) and its bad side (stress).",
+      "〜からといって needs a denial after it (〜わけではない). The sentence ends in 言えるだろう.",
+      "〜末に needs a long process and its final result, with a verb in た形. 多い is not a process.",
+      "〜どころか says the opposite of X is true. The city still has lots of stimulation."
+    ],
+    "cue": [
+      "ストレスも"
+    ],
+    "tell": "One thing with a bright side and a dark side: 反面.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-009",
+    "type": "p7",
+    "point": "T-3",
+    "s": "子どもの数が減り続ける（　　）、高齢者の数は年々増えている。",
+    "en": "While the number of children keeps falling, the number of older people grows every year.",
+    "c": [
+      "一方で",
+      "反面",
+      "うえに",
+      "最中に"
+    ],
+    "cp": [
+      "T-3",
+      "T-2",
+      "6-5",
+      "2-1"
+    ],
+    "why": [
+      "〜一方で sets two different things side by side: children going down, older people going up.",
+      "〜反面 shows two sides of ONE thing. Here there are two different groups.",
+      "〜うえに stacks two points in the same direction. These two trends go opposite ways.",
+      "〜最中に means 'right in the middle of' an action. A long trend is not one."
+    ],
+    "cue": [
+      "子どもの数",
+      "高齢者の数"
+    ],
+    "tell": "Two different subjects, contrasted: 一方で. One subject, two sides: 反面.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-010",
+    "type": "p7",
+    "point": "T-3",
+    "s": "姉は社交的で友達が多い。（　　）、妹は一人で本を読むのが好きだ。",
+    "en": "My older sister is outgoing and has lots of friends. My younger sister, on the other hand, likes reading alone.",
+    "c": [
+      "その一方で",
+      "そのうえ",
+      "それどころか",
+      "そのくせ"
+    ],
+    "cp": [
+      "T-3",
+      "P3-10",
+      "12-2",
+      null
+    ],
+    "why": [
+      "その一方で at the start of a sentence contrasts a second, different thing: the younger sister.",
+      "そのうえ adds more about the same subject. The subject changes to 妹.",
+      "それどころか says the opposite is true about the same thing. The sisters are not opposites of one claim.",
+      "そのくせ criticises the same person for being inconsistent. The subject changes to 妹."
+    ],
+    "cue": [
+      "姉は",
+      "妹は"
+    ],
+    "tell": "New subject, contrasted with the last one: その一方で.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-011",
+    "type": "p7",
+    "point": "T-3",
+    "s": "売り上げが伸びている（　　）、利益はほとんど増えていない。",
+    "en": "Sales are growing, but profits have barely risen.",
+    "c": [
+      "一方で",
+      "一方だが",
+      "ついでに",
+      "次第"
+    ],
+    "cp": [
+      "T-3",
+      "2-3",
+      null,
+      "3-3"
+    ],
+    "why": [
+      "〜一方で: two things side by side, sales up and profit flat.",
+      "〜一方だ means 'more and more' and attaches to a change verb in dictionary form (増える一方だ), not to ている.",
+      "〜ついでに means 'while doing X, also do Y'. Profit is not an errand.",
+      "〜次第 attaches to a verb stem (分かり次第). It does not take ている."
+    ],
+    "cue": [
+      "利益は"
+    ],
+    "tell": "一方で contrasts two facts. 一方だ means a trend that only grows.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-012",
+    "type": "p7",
+    "point": "T-3",
+    "s": "この制度は利用者に歓迎されている（　　）、財源をどう確保するかという課題も残されている。",
+    "en": "While users welcome the scheme, the problem of how to secure funding remains.",
+    "c": [
+      "一方で",
+      "ことから",
+      "以上",
+      "くせに"
+    ],
+    "cp": [
+      "T-3",
+      "IV-11",
+      "17-5",
+      null
+    ],
+    "why": [
+      "〜一方で: the welcome side and the problem side, set against each other.",
+      "〜ことから gives a reason or source. Being welcomed is not why a funding problem exists.",
+      "〜以上 means 'since' and needs a duty or resolve after it. 残されている is neither.",
+      "〜くせに is a spoken criticism of a person. A formal report about a scheme cannot use it."
+    ],
+    "cue": [
+      "課題も"
+    ],
+    "tell": "A good point, then a remaining problem: 一方で.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-013",
+    "type": "p7",
+    "point": "T-4",
+    "s": "大学時代の留学（　　）、国際協力の仕事に関心を持つようになった。",
+    "en": "Studying abroad at university got me interested in international aid work.",
+    "c": [
+      "をきっかけに",
+      "を目的に",
+      "をもとに",
+      "をめぐって"
+    ],
+    "cp": [
+      "T-4",
+      "T-5",
+      "8-1",
+      "7-2"
+    ],
+    "why": [
+      "〜をきっかけに: an event that set off a change. 関心を持つようになった is the change.",
+      "〜を目的に names a goal. Studying abroad is in the past and caused the interest; it was not aimed at.",
+      "〜をもとに means using something as material or a basis for making something. Interest is not made.",
+      "〜をめぐって means 'around a dispute or topic'. There is no dispute."
+    ],
+    "cue": [
+      "関心を持つようになった"
+    ],
+    "tell": "An event, then a change (ようになった): をきっかけに.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-014",
+    "type": "p7",
+    "point": "T-4",
+    "s": "この事故（　　）、町では通学路の安全対策が見直された。",
+    "en": "Prompted by this accident, the town reviewed safety on routes to school.",
+    "c": [
+      "を契機に",
+      "を問わず",
+      "に先立って",
+      "に限らず"
+    ],
+    "cp": [
+      "T-4",
+      "11-1",
+      "IV-2",
+      "6-1"
+    ],
+    "why": [
+      "〜を契機に is the written をきっかけに: the accident set off the review.",
+      "〜を問わず means 'regardless of'. The review happened because of the accident, not regardless of it.",
+      "〜に先立って means before an event, as preparation. Nobody reviews safety ahead of a specific accident.",
+      "〜に限らず means 'not only'. There is no second item."
+    ],
+    "cue": [
+      "見直された"
+    ],
+    "tell": "A trigger event, then a change: を契機に (written をきっかけに).",
+    "lv": 1
+  },
+  {
+    "id": "7-T-015",
+    "type": "p7",
+    "point": "T-4",
+    "s": "ある本との出会い（　　）、彼の人生は大きく変わった。",
+    "en": "Coming across a certain book changed his life completely.",
+    "c": [
+      "をきっかけに",
+      "にあたって",
+      "をめぐって",
+      "に沿って"
+    ],
+    "cp": [
+      "T-4",
+      "1-2",
+      "7-2",
+      "8-3"
+    ],
+    "why": [
+      "〜をきっかけに: the chance meeting with a book set off the change.",
+      "〜にあたって marks a big occasion you face and prepare for (開店にあたって). A chance meeting is not planned.",
+      "〜をめぐって means 'around a dispute'. There is no dispute.",
+      "〜に沿って means following a plan or line. A life change is not following the meeting."
+    ],
+    "cue": [
+      "人生は大きく変わった"
+    ],
+    "tell": "Chance event, then a big change: をきっかけに. にあたって is for planned milestones.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-016",
+    "type": "p7",
+    "point": "T-4",
+    "s": "社長の交代（　　）、会社の雰囲気はがらりと変わった。",
+    "en": "With the change of president, the mood at the company changed completely.",
+    "c": [
+      "をきっかけとして",
+      "を目的として",
+      "をはじめとして",
+      "として"
+    ],
+    "cp": [
+      "T-4",
+      "T-5",
+      "4-1",
+      "19-4"
+    ],
+    "why": [
+      "〜をきっかけとして: the new president was the trigger for the change in mood.",
+      "〜を目的として names a goal. Changing presidents was not done in order to change the mood, as far as we know.",
+      "〜をはじめとして means 'starting with' one example from a list. There is no list.",
+      "〜として means 'in the role of'. The change of president is not a role."
+    ],
+    "cue": [
+      "がらりと変わった"
+    ],
+    "tell": "Event, then a change: をきっかけとして.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-017",
+    "type": "p7",
+    "point": "T-5",
+    "s": "この施設は、地域の高齢者の健康づくり（　　）建てられた。",
+    "en": "This facility was built to help older people in the area stay healthy.",
+    "c": [
+      "を目的として",
+      "をきっかけに",
+      "にこたえて",
+      "を通じて"
+    ],
+    "cp": [
+      "T-5",
+      "T-4",
+      "7-5",
+      "4-4B"
+    ],
+    "why": [
+      "〜を目的として: the goal the building was built for.",
+      "〜をきっかけに needs a past event that started something. 健康づくり is a goal, not an event.",
+      "〜にこたえて needs a request or expectation (要望にこたえて). 健康づくり is not one.",
+      "〜を通じて means 'through' a medium or channel. You do not build a facility through health."
+    ],
+    "cue": [
+      "健康づくり"
+    ],
+    "tell": "A goal you build or do something for: を目的として.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-018",
+    "type": "p7",
+    "point": "T-5",
+    "s": "観光客の誘致（　　）イベントが、来月から始まる。",
+    "en": "An event aimed at attracting tourists starts next month.",
+    "c": [
+      "を目的とした",
+      "をきっかけにした",
+      "に基づいた",
+      "に限った"
+    ],
+    "cp": [
+      "T-5",
+      "T-4",
+      "8-2",
+      "5-1"
+    ],
+    "why": [
+      "〜を目的とした + noun: an event whose aim is attracting tourists.",
+      "〜をきっかけにした needs a past trigger. Attracting tourists is still the goal.",
+      "〜に基づいた means grounded in data or rules. Attracting tourists is not a basis.",
+      "〜に限った means limited to. The event is not limited to attracting tourists."
+    ],
+    "cue": [
+      "誘致"
+    ],
+    "tell": "誘致・育成・促進 are goals: を目的とした.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-019",
+    "type": "p7",
+    "point": "T-5",
+    "s": "利益だけ（　　）経営は、長くは続かない。",
+    "en": "A business run only for profit does not last long.",
+    "c": [
+      "を目的とする",
+      "をきっかけとする",
+      "にこたえる",
+      "をめぐる"
+    ],
+    "cp": [
+      "T-5",
+      "T-4",
+      "7-5",
+      "7-2"
+    ],
+    "why": [
+      "〜を目的とする + noun: management whose only aim is profit.",
+      "〜をきっかけとする needs a trigger event. Profit is an aim, not an event.",
+      "〜にこたえる needs a request or expectation from someone. Profit is not one.",
+      "〜をめぐる means 'surrounding a dispute or issue'. The sentence is about aims, not disputes."
+    ],
+    "cue": [
+      "利益だけ"
+    ],
+    "tell": "What the business aims at: を目的とする.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-020",
+    "type": "p7",
+    "point": "T-5",
+    "s": "本講座は、初心者が基礎的な会話力を身につけること（　　）おります。",
+    "en": "This course aims to help beginners gain basic conversation skills.",
+    "c": [
+      "を目的として",
+      "をきっかけとして",
+      "に先立って",
+      "をめぐって"
+    ],
+    "cp": [
+      "T-5",
+      "T-4",
+      "IV-2",
+      "7-2"
+    ],
+    "why": [
+      "〜を目的としております is the standard notice phrase for a course's aim.",
+      "〜をきっかけとして needs an event that set something off. Gaining skills is the aim, not a cause.",
+      "〜に先立って means before an event. Gaining skills is not an event the course comes before.",
+      "〜をめぐって means 'around a dispute'. A course description has none."
+    ],
+    "cue": [
+      "身につけること"
+    ],
+    "tell": "Course or event descriptions: 〜ことを目的としております.",
+    "lv": 3
+  },
+  {
+    "id": "7-T-021",
+    "type": "p7",
+    "point": "T-6",
+    "s": "外国語は、実際に使って（　　）身につくものだ。",
+    "en": "You only really pick up a foreign language by actually using it.",
+    "c": [
+      "こそ",
+      "さえ",
+      "まで",
+      "ばかり"
+    ],
+    "cp": [
+      "T-6",
+      "21-5A",
+      "21-3",
+      null
+    ],
+    "why": [
+      "〜てこそ: only by doing X does the real result come. Using the language is what makes it stick.",
+      "〜てさえ means 'even doing X'. It points to a surprise, not to the one thing that works.",
+      "〜てまで means going as far as an extreme act. Using a language is not extreme.",
+      "〜てばかり needs いる after it (使ってばかりいる). It cannot link to 身につく."
+    ],
+    "cue": [
+      "実際に"
+    ],
+    "tell": "Only by actually doing it: 〜てこそ.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-022",
+    "type": "p7",
+    "point": "T-6",
+    "s": "子どもの将来を（　　）、親は厳しく叱るのだ。",
+    "en": "It is precisely because they care about their children's future that parents scold them hard.",
+    "c": [
+      "思えばこそ",
+      "思うどころか",
+      "思うくせに",
+      "思うものの"
+    ],
+    "cp": [
+      "T-6",
+      "12-2",
+      null,
+      "14-2"
+    ],
+    "why": [
+      "〜ばこそ: the scolding happens precisely because of a good reason, caring about the future.",
+      "〜どころか says the opposite is true. Parents do care.",
+      "〜くせに criticises someone for being inconsistent. Caring and scolding are not inconsistent here.",
+      "〜ものの means 'although'. Caring and scolding do not clash; one causes the other."
+    ],
+    "cue": [
+      "厳しく叱るのだ"
+    ],
+    "tell": "A harsh act explained by a good reason: 〜ばこそ.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-023",
+    "type": "p7",
+    "point": "T-6",
+    "s": "苦労があって（　　）、成功したときの喜びも大きいのだ。",
+    "en": "It is precisely because there were hard times that the joy of success is so great.",
+    "c": [
+      "こそ",
+      "まで",
+      "からでないと",
+      "以来"
+    ],
+    "cp": [
+      "T-6",
+      "21-3",
+      "3-5",
+      "3-4"
+    ],
+    "why": [
+      "〜てこそ: hardship is what makes the joy big.",
+      "〜てまで means going to an extreme to get something. Hardship is not a means to joy.",
+      "〜てからでないと must be followed by a negative (できない). 大きいのだ is positive.",
+      "〜て以来 means 'ever since'. It needs a continuing state after it, not a general truth."
+    ],
+    "cue": [
+      "喜びも大きい"
+    ],
+    "tell": "Without X, no real Y: 〜てこそ.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-024",
+    "type": "p7",
+    "point": "T-6",
+    "s": "A「どうしてそんなに選手に厳しいんですか。」B「選手を信頼して（　　）、厳しいことも言えるんですよ。」",
+    "en": "A: Why are you so tough on the players? B: It is precisely because I trust them that I can say hard things.",
+    "c": [
+      "いればこそ",
+      "いるにもかかわらず",
+      "いるくせに",
+      "いるわりに"
+    ],
+    "cp": [
+      "T-6",
+      "14-1",
+      null,
+      "19-1"
+    ],
+    "why": [
+      "〜ばこそ: trust is the very reason the coach can be tough.",
+      "〜にもかかわらず means 'despite'. Trust is the reason, not an obstacle.",
+      "〜くせに is a criticism of someone. The coach is explaining their own reason.",
+      "〜わりに means 'considering'. There is no gap between expectation and result here."
+    ],
+    "cue": [
+      "厳しいことも言える"
+    ],
+    "tell": "The real reason behind a tough act: 〜ばこそ.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-025",
+    "type": "p7",
+    "point": "T-7",
+    "s": "A「明日までにできますか。」B「できない（　　）が、かなり急がないといけませんね。」",
+    "en": "A: Can you get it done by tomorrow? B: It's not impossible, but I'd have to really hurry.",
+    "c": [
+      "ことはない",
+      "どころではない",
+      "ものか",
+      "ようがない"
+    ],
+    "cp": [
+      "T-7",
+      "18-5",
+      "12-3",
+      "18-4"
+    ],
+    "why": [
+      "〜ないことはない: a weak yes. It can be done, with effort. が then adds the catch.",
+      "〜どころではない means there is no room for something. It does not attach to できない.",
+      "〜ものか is a strong, angry 'as if!'. It does not fit a polite answer followed by が.",
+      "〜ようがない attaches to a verb stem (やりようがない). It cannot follow できない."
+    ],
+    "cue": [
+      "急がないと"
+    ],
+    "tell": "Negative + ことはない + が: a reluctant yes.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-026",
+    "type": "p7",
+    "point": "T-7",
+    "s": "この料理、食べられない（　　）が、あまり好きではない。",
+    "en": "It's not that I can't eat this dish, but I'm not very fond of it.",
+    "c": [
+      "こともない",
+      "わけがない",
+      "ものではない",
+      "しかない"
+    ],
+    "cp": [
+      "T-7",
+      "12-1",
+      "24-3",
+      "23-6"
+    ],
+    "why": [
+      "〜ないこともない: I can eat it, reluctantly. The が clause adds that I don't like it.",
+      "〜わけがない means 'no way'. 'No way I can't eat it' is too strong before あまり好きではない.",
+      "〜ものではない gives a social rule (you shouldn't). It does not fit 食べられない.",
+      "〜しかない means 'have no choice but'. It does not attach to a negative like this."
+    ],
+    "cue": [
+      "あまり好きではない"
+    ],
+    "tell": "Weak yes, then a reservation: 〜ないこともないが.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-027",
+    "type": "p7",
+    "point": "T-7",
+    "s": "車の運転は、できない（　　）。ただ、もう十年もしていないので自信がない。",
+    "en": "It's not that I can't drive. It's just that I haven't for ten years, so I'm not confident.",
+    "c": [
+      "ことはない",
+      "わけにはいかない",
+      "に越したことはない",
+      "しかない"
+    ],
+    "cp": [
+      "T-7",
+      "18-2",
+      "23-5",
+      "23-6"
+    ],
+    "why": [
+      "〜ないことはない: yes, but only just. ただ then gives the catch.",
+      "〜ないわけにはいかない means 'have to'. 'I have to not be able to drive' makes no sense.",
+      "〜に越したことはない means 'it's best to'. Being unable to drive is not best.",
+      "〜しかない does not follow a negative like できない."
+    ],
+    "cue": [
+      "ただ"
+    ],
+    "tell": "A grudging yes, then ただ and a reservation: 〜ないことはない.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-028",
+    "type": "p7",
+    "point": "T-7",
+    "s": "A「この企画、来週までにまとめられる？」B「まとめられない（　　）けど、ほかの仕事が少し遅れるかも。」",
+    "en": "A: Can you pull this proposal together by next week? B: I could, but my other work might slip a bit.",
+    "c": [
+      "こともない",
+      "はずもない",
+      "どころじゃない",
+      "わけがない"
+    ],
+    "cp": [
+      "T-7",
+      null,
+      "18-5",
+      "12-1"
+    ],
+    "why": [
+      "〜ないこともない: a reluctant yes, with the cost added after けど.",
+      "〜はずもない means 'there's no reason to expect'. It is too strong for a hedge with けど.",
+      "〜どころじゃない means there is no room for something. It does not follow まとめられない.",
+      "〜わけがない is a flat 'no way'. A hedge followed by a cost needs a weak yes."
+    ],
+    "cue": [
+      "けど"
+    ],
+    "tell": "Spoken weak yes: 〜ないこともないけど.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-029",
+    "type": "p7",
+    "point": "T-8",
+    "s": "今日の風は、涼しい（　　）寒いくらいだった。",
+    "en": "Today's wind was less cool than downright cold.",
+    "c": [
+      "というより",
+      "というと",
+      "といっても",
+      "としても"
+    ],
+    "cp": [
+      "T-8",
+      "13-3",
+      "14-5",
+      "15-6"
+    ],
+    "why": [
+      "〜というより: 'cool' is not quite right; 'cold' fits better.",
+      "〜というと brings up a topic and what it calls to mind. It does not correct a word.",
+      "〜といっても means 'X, but less than you'd think'. Cold is more than cool, not less.",
+      "〜としても means 'even if'. Nothing here is hypothetical."
+    ],
+    "cue": [
+      "寒いくらい"
+    ],
+    "tell": "Correcting your own word to a better one: 〜というより.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-030",
+    "type": "p7",
+    "point": "T-8",
+    "s": "彼は友人（　　）、兄のような存在だ。",
+    "en": "He is less a friend than something like an older brother to me.",
+    "c": [
+      "というより",
+      "といえば",
+      "とすれば",
+      "とは"
+    ],
+    "cp": [
+      "T-8",
+      "13-2A",
+      "15-1",
+      "13-1"
+    ],
+    "why": [
+      "〜というより: 'friend' undersells it; 'like a brother' fits better.",
+      "〜といえば brings up a related topic. It does not swap one word for a better one.",
+      "〜とすれば means 'if we suppose'. Nothing is supposed here.",
+      "〜とは defines a word. The sentence is not a definition of 友人."
+    ],
+    "cue": [
+      "兄のような存在"
+    ],
+    "tell": "X is the wrong label; Y is better: 〜というより.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-031",
+    "type": "p7",
+    "point": "T-8",
+    "s": "この映画は子ども向け（　　）、むしろ大人のための作品だと思う。",
+    "en": "I think this film is less for children than really a work for adults.",
+    "c": [
+      "というより",
+      "にしては",
+      "だけあって",
+      "どころではなく"
+    ],
+    "cp": [
+      "T-8",
+      "19-2",
+      "19-3",
+      "18-5"
+    ],
+    "why": [
+      "〜というより: むしろ marks the better label, adults rather than children.",
+      "〜にしては means 'for an X, surprisingly'. It cannot lead into むしろ.",
+      "〜だけあって means 'as you would expect from X'. It praises, it does not correct.",
+      "〜どころではない means there is no room for something. It does not fit a label."
+    ],
+    "cue": [
+      "むしろ"
+    ],
+    "tell": "むしろ after the blank is the signal: 〜というより、むしろ.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-032",
+    "type": "p7",
+    "point": "T-8",
+    "s": "あの店の対応は、不親切（　　）、客を客とも思っていないようだった。",
+    "en": "The staff at that shop were not just unhelpful; they seemed not to see customers as customers at all.",
+    "c": [
+      "というより",
+      "というと",
+      "にしては",
+      "わりに"
+    ],
+    "cp": [
+      "T-8",
+      "13-3",
+      "19-2",
+      "19-1"
+    ],
+    "why": [
+      "〜というより: 'unhelpful' is too mild; the next clause gives the stronger, truer label.",
+      "〜というと brings up a topic. It does not upgrade a description.",
+      "〜にしては means 'surprisingly for an X'. Nothing is surprising for a rude shop.",
+      "〜わりに means 'considering'. The second clause is not unexpected given the first."
+    ],
+    "cue": [
+      "客を客とも思っていない"
+    ],
+    "tell": "A mild word upgraded to a stronger one: 〜というより.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-033",
+    "type": "p7",
+    "point": "T-9",
+    "s": "あんな会社で働く（　　）、アルバイトをしたほうがましだ。",
+    "en": "Rather than work for a company like that, I'd sooner do part-time work.",
+    "c": [
+      "くらいなら",
+      "からには",
+      "ものなら",
+      "にしても"
+    ],
+    "cp": [
+      "T-9",
+      "17-5",
+      "15-2",
+      "15-6"
+    ],
+    "why": [
+      "〜くらいなら: working there is so bad that part-time work is better. ほうがましだ completes it.",
+      "〜からには needs a duty or resolve after it. ほうがましだ is a preference.",
+      "〜ものなら goes with a potential verb (働けるものなら) and a wish. ほうがましだ is not a wish.",
+      "〜にしても means 'even if'. It does not set up a 'rather than'."
+    ],
+    "cue": [
+      "ほうがましだ"
+    ],
+    "tell": "ほうがましだ at the end: 〜くらいなら in front.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-034",
+    "type": "p7",
+    "point": "T-9",
+    "s": "途中でやめる（　　）、最初から引き受けないほうがいい。",
+    "en": "Rather than quit halfway, it's better not to take it on at all.",
+    "c": [
+      "くらいなら",
+      "ことなく",
+      "ついでに",
+      "うちに"
+    ],
+    "cp": [
+      "T-9",
+      "IV-6",
+      null,
+      "2-2A"
+    ],
+    "why": [
+      "〜くらいなら: quitting halfway is so bad that not starting is better.",
+      "〜ことなく means 'without doing'. 'Without quitting, it's better not to take it on' contradicts itself.",
+      "〜ついでに means doing something extra while doing X. Quitting is not an errand.",
+      "〜うちに means 'while, before it changes'. It needs a state, not a one-off act like やめる."
+    ],
+    "cue": [
+      "ほうがいい"
+    ],
+    "tell": "Bad option, then a better one with ほうがいい: 〜くらいなら.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-035",
+    "type": "p7",
+    "point": "T-9",
+    "s": "人に頭を下げて借りるくらいなら、自分で何とかする（　　）。",
+    "en": "Rather than bow and borrow from someone, I'd sooner sort it out myself.",
+    "c": [
+      "ほうがましだ",
+      "ものか",
+      "ことはない",
+      "わけがない"
+    ],
+    "cp": [
+      "T-9",
+      "24-6",
+      "24-4",
+      "12-1"
+    ],
+    "why": [
+      "くらいなら needs ほうがましだ or ほうがいい to finish it: the lesser evil.",
+      "〜ものか means 'as if I would'. It would refuse the very thing the speaker prefers.",
+      "〜ことはない means 'there's no need'. It does not complete a くらいなら comparison.",
+      "〜わけがない means 'no way'. It does not complete a くらいなら comparison either."
+    ],
+    "cue": [
+      "くらいなら"
+    ],
+    "tell": "くらいなら sets up a comparison: finish with ほうがましだ.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-036",
+    "type": "p7",
+    "point": "T-9",
+    "s": "A「プレゼン、緊張するなあ。」B「そんなに心配する（　　）、もう一回練習したら？」",
+    "en": "A: I'm nervous about the presentation. B: Rather than worry that much, why not practise once more?",
+    "c": [
+      "くらいなら",
+      "ものなら",
+      "わりに",
+      "あまり"
+    ],
+    "cp": [
+      "T-9",
+      "15-2",
+      "19-1",
+      "16-4"
+    ],
+    "why": [
+      "〜くらいなら: instead of worrying, practising is the better option. 練習したら is the suggestion.",
+      "〜ものなら goes with a potential verb and a hope (できるものなら). 心配する is not a hope.",
+      "〜わりに means 'considering'. A suggestion cannot follow it.",
+      "〜あまり means 'so much that' and needs a result, not a suggestion like 練習したら."
+    ],
+    "cue": [
+      "練習したら"
+    ],
+    "tell": "Instead of X, do the better thing: 〜くらいなら.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-037",
+    "type": "p7",
+    "point": "T-10",
+    "s": "疲れたときは、ゆっくりお風呂に入る（　　）。",
+    "en": "When you're tired, nothing beats a long soak in the bath.",
+    "c": [
+      "に限る",
+      "に限り",
+      "に限って",
+      "に限らず"
+    ],
+    "cp": [
+      "T-10",
+      "5-1",
+      "5-4A",
+      "6-1"
+    ],
+    "why": [
+      "〜に限る ends the sentence: the speaker says this is the best thing to do.",
+      "〜に限り means 'only, as an exception'. It cannot end the sentence.",
+      "〜に限って means 'of all times'. It needs a clause after it.",
+      "〜に限らず means 'not only'. It needs a second item after it."
+    ],
+    "cue": [
+      "疲れたときは"
+    ],
+    "tell": "Sentence-final 'X is the best': に限る.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-038",
+    "type": "p7",
+    "point": "T-10",
+    "s": "夏の暑い日は、冷たいビール（　　）ね。",
+    "en": "On a hot summer day, nothing beats a cold beer.",
+    "c": [
+      "に限ります",
+      "に過ぎません",
+      "にほかなりません",
+      "に違いありません"
+    ],
+    "cp": [
+      "T-10",
+      "23-3",
+      "23-4",
+      "22-5"
+    ],
+    "why": [
+      "〜に限ります: the speaker's view that this is the best choice for a hot day.",
+      "〜に過ぎません means 'it's only'. It belittles, the opposite of the meaning here.",
+      "〜にほかなりません means 'it is nothing other than', for stating a cause or essence. It is not a recommendation.",
+      "〜に違いありません is a confident guess. Nothing is being guessed."
+    ],
+    "cue": [
+      "夏の暑い日は"
+    ],
+    "tell": "Situation, then the best choice for it: に限る.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-039",
+    "type": "p7",
+    "point": "T-10",
+    "s": "知らない人からのメールは、開けない（　　）。",
+    "en": "With email from people you don't know, it's best not to open it.",
+    "c": [
+      "に限る",
+      "わけにはいかない",
+      "どころではない",
+      "しかない"
+    ],
+    "cp": [
+      "T-10",
+      "18-2",
+      "18-5",
+      "23-6"
+    ],
+    "why": [
+      "〜ないに限る: the best course is not to open it. に限る also takes the ない形.",
+      "〜ないわけにはいかない means 'must'. It would say you must open strange email.",
+      "〜どころではない means there is no room for something. It does not attach to 開けない.",
+      "〜しかない does not attach to a ない形 like 開けない."
+    ],
+    "cue": [
+      "知らない人"
+    ],
+    "tell": "Best advice, even in the negative: 〜ないに限る.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-040",
+    "type": "p7",
+    "point": "T-10",
+    "s": "やっぱり、寿司はこの店（　　）。ほかの店とは鮮度が違うよ。",
+    "en": "Honestly, for sushi, nothing beats this place. The freshness is in a different league.",
+    "c": [
+      "に限る",
+      "に限らない",
+      "に限っては",
+      "に限りがある"
+    ],
+    "cp": [
+      "T-10",
+      "6-1",
+      "5-4A",
+      null
+    ],
+    "why": [
+      "〜に限る: this shop is the best for sushi. The next line backs it up.",
+      "〜に限らない means 'not limited to'. It clashes with ほかの店とは鮮度が違う.",
+      "〜に限っては needs a clause after it. It cannot end the sentence.",
+      "〜に限りがある means 'is limited in amount'. A shop is not an amount."
+    ],
+    "cue": [
+      "鮮度が違う"
+    ],
+    "tell": "Praising one choice as the best: に限る.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-041",
+    "type": "p7",
+    "point": "T-11",
+    "s": "試験まであと十日しかない。のんびり（　　）。",
+    "en": "There are only ten days left until the exam. I can't afford to take it easy.",
+    "c": [
+      "してはいられない",
+      "せずにはいられない",
+      "してならない",
+      "してたまらない"
+    ],
+    "cp": [
+      "T-11",
+      "25-3",
+      "25-2",
+      "25-1"
+    ],
+    "why": [
+      "〜てはいられない: the situation won't let me keep relaxing.",
+      "〜ずにはいられない means 'can't help doing'. It would say I can't help relaxing.",
+      "〜てならない is for feelings that well up (気がしてならない). のんびり is not a feeling.",
+      "〜てたまらない is for unbearable feelings (うれしくてたまらない). のんびりする is not one."
+    ],
+    "cue": [
+      "あと十日しかない"
+    ],
+    "tell": "Pressure ahead, so I can't keep doing X: 〜てはいられない.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-042",
+    "type": "p7",
+    "point": "T-11",
+    "s": "子どもが熱を出したと聞いて、じっとして（　　）、すぐに会社を早退した。",
+    "en": "When I heard my child had a fever, I couldn't just sit still, and left work early straight away.",
+    "c": [
+      "はいられず",
+      "ばかりいて",
+      "いるうちに",
+      "いる最中に"
+    ],
+    "cp": [
+      "T-11",
+      null,
+      "2-2A",
+      "2-1"
+    ],
+    "why": [
+      "〜てはいられず: the news made it impossible to stay still. すぐに早退した follows.",
+      "〜てばかりいて means 'doing nothing but'. It contradicts leaving at once.",
+      "〜うちに means 'while a state lasts'. It does not explain the sudden departure.",
+      "〜最中に means 'right in the middle of' an activity. Sitting still is not an activity to interrupt here."
+    ],
+    "cue": [
+      "すぐに会社を早退した"
+    ],
+    "tell": "Can't stay put, so action follows: 〜てはいられず.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-043",
+    "type": "p7",
+    "point": "T-11",
+    "s": "ライバル会社が新製品を出した。うちも黙って見て（　　）。",
+    "en": "Our rival has brought out a new product. We can't just stand by and watch.",
+    "c": [
+      "はいられない",
+      "ばかりだ",
+      "しかたがない",
+      "ならない"
+    ],
+    "cp": [
+      "T-11",
+      null,
+      "25-1",
+      "25-2"
+    ],
+    "why": [
+      "〜てはいられない: the rival's move means we can't keep doing nothing.",
+      "〜てばかりだ needs いる (見てばかりいる). The form here is broken.",
+      "〜てしかたがない is for strong feelings. Watching is not a feeling.",
+      "〜てならない is for feelings that well up. Watching is not one."
+    ],
+    "cue": [
+      "ライバル会社が新製品を出した"
+    ],
+    "tell": "A threat, so we can't keep waiting: 〜てはいられない.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-044",
+    "type": "p7",
+    "point": "T-11",
+    "s": "いつまでも失敗を悔やんで（　　）。次の企画を考えよう。",
+    "en": "I can't keep dwelling on my failure forever. Let's think about the next project.",
+    "c": [
+      "ばかりはいられない",
+      "しかたがない",
+      "ならない",
+      "たまらない"
+    ],
+    "cp": [
+      "T-11",
+      "25-1",
+      "25-2",
+      "25-1"
+    ],
+    "why": [
+      "〜てばかりはいられない: I can't spend all my time regretting. The next line moves on.",
+      "〜てしかたがない would say I can't stop regretting. That clashes with 次の企画を考えよう.",
+      "〜てならない would say regret keeps welling up. That also clashes with moving on.",
+      "〜てたまらない would say the regret is unbearable. The speaker is moving on, not stuck."
+    ],
+    "cue": [
+      "次の企画を考えよう"
+    ],
+    "tell": "Stop doing X and move on: 〜てばかりはいられない.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-045",
+    "type": "p7",
+    "point": "T-12",
+    "s": "今年の夏は、記録的な暑さ（　　）、水不足も深刻だった。",
+    "en": "This summer there was a serious water shortage on top of record heat.",
+    "c": [
+      "に加えて",
+      "に対して",
+      "にとって",
+      "に関して"
+    ],
+    "cp": [
+      "T-12",
+      "7-4A",
+      "19-5",
+      "7-1"
+    ],
+    "why": [
+      "〜に加えて: heat, and on top of that, a water shortage. 水不足も confirms the adding.",
+      "〜に対して means 'toward' or 'in contrast to'. Heat and shortage are not opposed.",
+      "〜にとって means 'from the point of view of'. Heat has no point of view.",
+      "〜に関して means 'about, concerning'. The shortage is not about the heat."
+    ],
+    "cue": [
+      "水不足も"
+    ],
+    "tell": "X, plus Y with も: 〜に加えて.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-046",
+    "type": "p7",
+    "point": "T-12",
+    "s": "この仕事には、語学力（　　）、高いコミュニケーション能力が求められる。",
+    "en": "This job requires strong communication skills in addition to language ability.",
+    "c": [
+      "に加え",
+      "に反して",
+      "に限り",
+      "にわたり"
+    ],
+    "cp": [
+      "T-12",
+      "T-1",
+      "5-1",
+      "4-3"
+    ],
+    "why": [
+      "〜に加え: language skill, and communication skill on top of it.",
+      "〜に反して means 'contrary to'. The two skills do not clash.",
+      "〜に限り means 'only'. It would cut out the second skill.",
+      "〜にわたり goes with a span of time or space. Language skill is not a span."
+    ],
+    "cue": [
+      "高いコミュニケーション能力が"
+    ],
+    "tell": "One requirement plus another: 〜に加え.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-047",
+    "type": "p7",
+    "point": "T-12",
+    "s": "本人の努力（　　）、周りの支えがあったからこそ、彼は優勝できたのだ。",
+    "en": "He won because he had the support of those around him on top of his own effort.",
+    "c": [
+      "に加えて",
+      "をもとに",
+      "に応じて",
+      "をめぐって"
+    ],
+    "cp": [
+      "T-12",
+      "8-1",
+      "9-4",
+      "7-2"
+    ],
+    "why": [
+      "〜に加えて: effort, plus support. Both together led to the win.",
+      "〜をもとに means using something as a basis to make something. Support was not made from effort.",
+      "〜に応じて means 'in line with' something that varies. Support did not scale with effort here.",
+      "〜をめぐって means 'around a dispute'. There is no dispute."
+    ],
+    "cue": [
+      "周りの支えがあった"
+    ],
+    "tell": "Two causes stacked: X に加えて Y.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-048",
+    "type": "p7",
+    "point": "T-12",
+    "s": "入会金（　　）、毎月三千円の会費がかかります。",
+    "en": "In addition to the joining fee, there is a monthly fee of 3,000 yen.",
+    "c": [
+      "に加えて",
+      "に限って",
+      "に際して",
+      "を問わず"
+    ],
+    "cp": [
+      "T-12",
+      "5-4A",
+      "1-2",
+      "11-1"
+    ],
+    "why": [
+      "〜に加えて: a joining fee, and a monthly fee on top.",
+      "〜に限って means 'of all times', usually with a complaint. It does not fit a fee notice.",
+      "〜に際して needs an occasion such as 入会に際して. 入会金 is a fee, not an occasion.",
+      "〜を問わず means 'regardless of'. The fees are added, not ignored."
+    ],
+    "cue": [
+      "会費がかかります"
+    ],
+    "tell": "Notices that add a cost: 〜に加えて.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-049",
+    "type": "p7",
+    "point": "T-13",
+    "s": "母の誕生日に、感謝の気持ち（　　）花を贈った。",
+    "en": "For my mother's birthday, I sent flowers with my thanks.",
+    "c": [
+      "を込めて",
+      "を通じて",
+      "をもとに",
+      "に沿って"
+    ],
+    "cp": [
+      "T-13",
+      "4-4B",
+      "8-1",
+      "8-3"
+    ],
+    "why": [
+      "〜を込めて: a feeling put into a gift.",
+      "〜を通じて means 'through' a channel (知人を通じて). A feeling is not a channel.",
+      "〜をもとに means using something as material. Flowers are not made from thanks.",
+      "〜に沿って means following a plan or line. Thanks is not a plan."
+    ],
+    "cue": [
+      "感謝の気持ち"
+    ],
+    "tell": "A feeling put into an act or a gift: 〜を込めて.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-050",
+    "type": "p7",
+    "point": "T-13",
+    "s": "祖母が心（　　）作ってくれたセーターは、今でも大切にしている。",
+    "en": "I still treasure the sweater my grandmother made for me with all her heart.",
+    "c": [
+      "を込めて",
+      "を問わず",
+      "にわたって",
+      "に限らず"
+    ],
+    "cp": [
+      "T-13",
+      "11-1",
+      "4-3",
+      "6-1"
+    ],
+    "why": [
+      "心を込めて is the set phrase: made with care and love.",
+      "〜を問わず means 'regardless of'. 'Regardless of heart' makes no sense.",
+      "〜にわたって needs a span of time or space. 心 is not a span.",
+      "〜に限らず means 'not only'. There is no second item."
+    ],
+    "cue": [
+      "心"
+    ],
+    "tell": "心を込めて = with heart. A set phrase.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-051",
+    "type": "p7",
+    "point": "T-13",
+    "s": "選手たちは、被災地への励まし（　　）試合に臨んだ。",
+    "en": "The players went into the match wanting to encourage the disaster-hit area.",
+    "c": [
+      "の思いを込めて",
+      "をきっかけに",
+      "をめぐって",
+      "に先立って"
+    ],
+    "cp": [
+      "T-13",
+      "T-4",
+      "7-2",
+      "IV-2"
+    ],
+    "why": [
+      "〜の思いを込めて: the players put their wish to encourage people into the match.",
+      "〜をきっかけに needs a past event that set something off. The encouragement comes from the players, after.",
+      "〜をめぐって means 'around a dispute'. There is no dispute.",
+      "〜に先立って means before an event. Encouragement is not an event the match comes before."
+    ],
+    "cue": [
+      "励まし"
+    ],
+    "tell": "A wish put into an act: 〜の思いを込めて.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-052",
+    "type": "p7",
+    "point": "T-13",
+    "s": "この歌には、亡くなった友人への思いが（　　）。",
+    "en": "This song carries the singer's feelings for a friend who died.",
+    "c": [
+      "込められている",
+      "込めている",
+      "込めさせている",
+      "込まれている"
+    ],
+    "cp": [
+      "T-13",
+      "T-13",
+      "T-13",
+      null
+    ],
+    "why": [
+      "思い is the subject, so the verb is passive: 思いが込められている.",
+      "込めている needs a person as subject and を (思いを込めている). Here the subject is 思いが.",
+      "込めさせている is causative, someone made someone put feelings in. Nothing here says that.",
+      "込まれている comes from 込む (crowded, packed in). That is a different verb."
+    ],
+    "cue": [
+      "思いが"
+    ],
+    "tell": "Feeling as the subject with が: 込められている (passive).",
+    "lv": 3
+  },
+  {
+    "id": "7-T-053",
+    "type": "p7",
+    "point": "T-14",
+    "s": "彼は英語も話せ（　　）、フランス語も話せる。",
+    "en": "He can speak both English and French.",
+    "c": [
+      "れば",
+      "ても",
+      "るのに",
+      "るなら"
+    ],
+    "cp": [
+      "T-14",
+      null,
+      null,
+      null
+    ],
+    "why": [
+      "〜も〜ば〜も: two things of the same kind, listed. 英語も and フランス語も frame it.",
+      "〜ても means 'even if'. Being able to speak English is not an obstacle to French.",
+      "〜のに means 'although'. The two facts do not clash.",
+      "〜なら means 'if'. Nothing is hypothetical here."
+    ],
+    "cue": [
+      "英語も",
+      "フランス語も"
+    ],
+    "tell": "X も …ば Y も: both X and Y.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-054",
+    "type": "p7",
+    "point": "T-14",
+    "s": "人生には、いいとき（　　）悪いときもある。",
+    "en": "In life there are good times and bad times.",
+    "c": [
+      "もあれば",
+      "もあるのに",
+      "さえあれば",
+      "ばかりで"
+    ],
+    "cp": [
+      "T-14",
+      null,
+      "21-5B",
+      null
+    ],
+    "why": [
+      "〜もあれば〜もある: there are both. A set pattern for two sides of life.",
+      "〜のに means 'although'. Good times are not an obstacle to bad ones.",
+      "〜さえあれば means 'as long as there is'. It sets a condition, not a list.",
+      "〜ばかりで means 'nothing but'. It clashes with 悪いときもある."
+    ],
+    "cue": [
+      "悪いときも"
+    ],
+    "tell": "〜もあれば〜もある: there is X and there is Y.",
+    "lv": 1
+  },
+  {
+    "id": "7-T-055",
+    "type": "p7",
+    "point": "T-14",
+    "s": "あの店は、値段も（　　）、味もいいので、いつも混んでいる。",
+    "en": "That restaurant is cheap and the food is good too, so it is always busy.",
+    "c": [
+      "安ければ",
+      "安いのに",
+      "安いどころか",
+      "安いくせに"
+    ],
+    "cp": [
+      "T-14",
+      null,
+      "12-2",
+      null
+    ],
+    "why": [
+      "〜も〜ければ〜も: two good points listed. 値段も and 味も frame it.",
+      "〜のに means 'although'. Cheap and tasty do not clash.",
+      "〜どころか says the opposite is true. The shop really is cheap.",
+      "〜くせに criticises. Being cheap and tasty is praise."
+    ],
+    "cue": [
+      "値段も",
+      "味も"
+    ],
+    "tell": "Two も and a ば form between them: both X and Y.",
+    "lv": 2
+  },
+  {
+    "id": "7-T-056",
+    "type": "p7",
+    "point": "T-14",
+    "s": "この町には、海（　　）山もあり、一年中楽しめる。",
+    "en": "This town has both the sea and the mountains, so you can enjoy it all year round.",
+    "c": [
+      "もあれば",
+      "もなければ",
+      "はあっても",
+      "さえなく"
+    ],
+    "cp": [
+      "T-14",
+      "T-14",
+      null,
+      "21-5A"
+    ],
+    "why": [
+      "海もあれば山もある: both, and so 一年中楽しめる.",
+      "〜もなければ means 'neither'. It clashes with 山もあり.",
+      "〜はあっても is 'there may be X, but'. It needs a contrast, and 山もあり adds instead.",
+      "〜さえなく means 'not even'. It clashes with 一年中楽しめる."
+    ],
+    "cue": [
+      "山もあり",
+      "一年中楽しめる"
+    ],
+    "tell": "Two good things listed: Xもあれば Yも.",
+    "lv": 2
+  }
+]
