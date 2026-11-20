@@ -8,7 +8,7 @@
   const G = window.Sync || null; // gist sync (js/sync.js). Missing means sync stays off.
   // This build. version.json on the site holds the newest; a page left open on an older build stops
   // syncing and reloads itself, so old sync code never runs against newer progress. Bump both together.
-  const APP_VERSION = "2026-11-20.1";
+  const APP_VERSION = "2026-11-20.2";
   const app = document.getElementById("app");
   const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1", wk: "n2drill.wk.v1" };
   // rlFrom: the day reading and listening join Today. Before it they show as optional blocks.
@@ -109,26 +109,19 @@
     for (const k of Object.keys(state)) delete state[k];
     Object.assign(state, S.emptyState(), next);
   }
-  let settings = Object.assign({}, DEFAULTS, load(KEYS.settings) || {});
+  const storedSettings = load(KEYS.settings);
+  const migrate = (s) => (G && G.migrateSettings ? G.migrateSettings(s) : s);
+  // Fresh devices start already migrated with no `_ts`, so connecting sync never overwrites the gist with defaults.
+  let settings = storedSettings ? migrate(Object.assign({}, DEFAULTS, storedSettings)) : Object.assign({}, DEFAULTS, { cap40: true, try5: true });
   const saveState = () => save(KEYS.state, state);
   // `_ts` says which device changed settings last, so sync keeps the newer ones.
   const saveSettings = () => {
     settings._ts = Date.now();
     save(KEYS.settings, settings);
   };
-  // One-off (19 Nov 2026): the review cap went from 50 to 40. Devices that saved 50 move to 40 once;
-  // the fresh `_ts` makes the change win the next sync. A cap set by hand later is left alone.
-  if (!settings.cap40) {
-    if (Number(settings.maxReviews) === 50) settings.maxReviews = 40;
-    settings.cap40 = true;
-    saveSettings();
-  }
-  // One-off (20 Nov 2026): the 14 TRY! N2 points arrive 5 a day, not all at once. A number set by hand later is kept.
-  if (!settings.try5) {
-    if (Number(settings.newPerDay) > 5) settings.newPerDay = 5;
-    settings.try5 = true;
-    saveSettings();
-  }
+  // Persist one-off migrations locally without bumping `_ts`, so an older device never clobbers
+  // newer settings on another device, and a fresh device never overwrites the gist with defaults.
+  if (storedSettings && (!storedSettings.cap40 || !storedSettings.try5)) save(KEYS.settings, settings);
   // This device's sync link. It holds the token, so it never goes into the synced file.
   // `seenAt` is GitHub's time on the newest copy of the gist this device has seen: a read older than
   // that is a stale copy and must never be merged and written back.
@@ -538,7 +531,7 @@
       : `<div class="card"><h3>How this works</h3><ul class="small" style="margin:0;padding-left:18px">
           <li>Do <b>Today</b> once a day: ${blocks}. Each item comes back just before you would forget it.</li>
           <li>After each answer, read the one-line <b>tell</b>. That is the thing to learn.</li>
-          <li>Right but slow counts as not learned yet, so it comes back tomorrow. Grammar reviews stop at ${settings.maxReviews > 0 ? settings.maxReviews : "no limit"} a day; the rest wait.</li>
+          <li>Right but slow counts as not learned yet, so it comes back tomorrow.${settings.maxReviews > 0 ? ` Grammar reviews stop at ${settings.maxReviews} a day; the rest wait.` : ""}</li>
           <li>Mocks${R.length ? ", look-alike sets and 情報検索" : " and look-alike sets"} are in <b>Practice</b>.</li>
           ${RALL.length || L.length ? `<li>Reading and listening are optional until ${esc(fmtDay(settings.rlFrom))}, then part of Today.</li>` : ""}
           <li>Still working through the book? Set how far you have got in <button class="linkish" data-act="nav" data-to="settings">Settings</button>.</li>
@@ -2620,7 +2613,7 @@
         if (!data || data.app !== "n2-grammar-drill" || !data.state || !data.state.points) throw new Error("not a progress file");
         if (!confirm("Replace the progress in this browser with the imported file?")) return;
         replaceState(data.state);
-        if (data.settings) settings = Object.assign({}, DEFAULTS, data.settings);
+        if (data.settings) settings = migrate(Object.assign({}, DEFAULTS, data.settings));
         saveState();
         saveSettings();
         toast("Progress imported.");
@@ -2932,6 +2925,7 @@
           if (!sync.last && remote) local.reset = remote.reset || 0;
           let merged = G.mergePayload(local, remote, S.mergeStates);
           for (const p of extra) if (G.usable(p)) merged = G.mergePayload(merged, p, S.mergeStates);
+          if (merged.settings) merged = { ...merged, settings: migrate(merged.settings) };
           if (key(merged) !== key(local)) {
             applyPayload(merged);
             changed = true;

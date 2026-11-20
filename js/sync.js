@@ -154,8 +154,25 @@
     return versions.slice(1, at === -1 ? versions.length : at).reverse();
   }
 
+  // One-off settings migrations. Runs without bumping `_ts`, so a device updating late never
+  // overwrites newer settings edited on another device, and a fresh device never clobbers the gist.
+  // Returns a new object (never mutating the input) so callers can detect changes against `remote`.
+  function migrateSettings(settings) {
+    if (!settings || typeof settings !== "object") return settings;
+    const s = Object.assign({}, settings);
+    if (!s.cap40) {
+      if (Number(s.maxReviews) === 50) s.maxReviews = 40;
+      s.cap40 = true;
+    }
+    if (!s.try5) {
+      if (Number(s.newPerDay) > 5) s.newPerDay = 5;
+      s.try5 = true;
+    }
+    return s;
+  }
+
   // A remote the app can merge with: this app's payload with progress in it.
   const usable = (remote) => !!(remote && remote.app === APP && remote.state && typeof remote.state === "object");
 
-  return { FILE, gistClient, stableStringify, mergePayload, missedVersions, usable };
+  return { FILE, gistClient, stableStringify, mergePayload, missedVersions, migrateSettings, usable };
 });

@@ -8,7 +8,7 @@ import vm from "node:vm";
 const require = createRequire(import.meta.url);
 const S = require("../js/srs.js");
 const Sync = require("../js/sync.js");
-const { FILE, gistClient, stableStringify, mergePayload, missedVersions, usable } = Sync;
+const { FILE, gistClient, stableStringify, mergePayload, missedVersions, migrateSettings, usable } = Sync;
 const TOKEN = "fake-test-token-never-shown-123";
 const API = "https://api.github.com";
 
@@ -391,6 +391,34 @@ test("mergePayload: equal resets merge as usual and keep the reset", () => {
   const out = mergePayload(payload(a, {}, { reset: 400 }), payload(b, {}, { reset: 400 }), S.mergeStates);
   assert.equal(out.reset, 400);
   assert.equal(stableStringify(out.state), stableStringify(S.mergeStates(a, b)));
+});
+
+test("migrateSettings applies cap40 and try5 without mutating input or bumping _ts", () => {
+  const old = { maxReviews: 50, newPerDay: 20, kNew: 12, _ts: 100 };
+  const mig = migrateSettings(old);
+  assert.deepEqual(mig, { maxReviews: 40, newPerDay: 5, kNew: 12, cap40: true, try5: true, _ts: 100 });
+  assert.equal(old.maxReviews, 50, "input is never mutated");
+  assert.equal(old.try5, undefined);
+
+  // Hand-set values after migration stay untouched.
+  const custom = { maxReviews: 50, newPerDay: 10, cap40: true, try5: true, _ts: 200 };
+  assert.deepEqual(migrateSettings(custom), custom);
+
+  // A late-updating device keeps its older _ts, so a newer edit on another device still wins on sync.
+  const { a, b } = sample();
+  const merged = mergePayload(payload(a, mig), payload(b, custom), S.mergeStates);
+  assert.equal(merged.settings.newPerDay, 10);
+  assert.equal(merged.settings.maxReviews, 50);
+
+  // A fresh device (already migrated, no _ts) loses to real synced settings, which then migrate cleanly.
+  const fresh = { maxReviews: 40, newPerDay: 12, cap40: true, try5: true };
+  const remoteOld = { maxReviews: 40, newPerDay: 20, size: 35, cap40: true, _ts: 150 };
+  const fromFresh = mergePayload(payload(S.emptyState(), fresh), payload(b, remoteOld), S.mergeStates);
+  const after = { ...fromFresh, settings: migrateSettings(fromFresh.settings) };
+  assert.equal(after.settings.size, 35);
+  assert.equal(after.settings.newPerDay, 5);
+  assert.equal(after.settings.try5, true);
+  assert.equal(remoteOld.try5, undefined, "remote settings were not mutated in place");
 });
 
 // ---------- loading in the browser ----------

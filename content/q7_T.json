@@ -63,8 +63,8 @@
     "id": "7-T-003",
     "type": "p7",
     "point": "T-1",
-    "s": "住民の強い願い（　　）、市は駅前の公園を駐車場にすることを決めた。",
-    "en": "Against the residents' strong wishes, the city decided to turn the park by the station into a car park.",
+    "s": "公園を残してほしいという住民の願い（　　）、市は駅前を駐車場にすることを決めた。",
+    "en": "Against the residents' wish to keep the park, the city decided to turn the area by the station into a car park.",
     "c": [
       "に反して",
       "にこたえて",
@@ -78,15 +78,16 @@
       "8-1"
     ],
     "why": [
-      "〜に反して: the decision went against what residents wanted. Residents wish to keep a park, not lose it.",
-      "〜にこたえて means granting the wish. No resident strongly wishes to lose their park.",
+      "〜に反して: the decision went against what residents wanted (keeping the park).",
+      "〜にこたえて means granting the wish. The residents wished to keep the park, not replace it with a car park.",
       "〜に応じて means adjusting in line with something that varies. The city did the opposite of the wish.",
       "〜をもとに means using something as material or a basis. A wish is not material for a car park."
     ],
     "cue": [
+      "公園を残してほしい",
       "駐車場にする"
     ],
-    "tell": "A wish and an action that goes the other way: 願いに反して. Granting it would be にこたえて.",
+    "tell": "A stated wish and an action that goes the other way: 願いに反して. Granting it would be にこたえて.",
     "lv": 2
   },
   {
@@ -472,7 +473,7 @@
     ],
     "why": [
       "〜をきっかけとして: the new president was the trigger for the change in mood.",
-      "〜を目的として names a goal. Changing presidents was not done in order to change the mood, as far as we know.",
+      "〜を目的として names a goal aimed at by a deliberate action. Here 社長の交代 would be the goal, and 雰囲気が変わった is not a deliberate action.",
       "〜をはじめとして means 'starting with' one example from a list. There is no list.",
       "〜として means 'in the role of'. The change of president is not a role."
     ],
@@ -641,19 +642,19 @@
     "c": [
       "思えばこそ",
       "思うどころか",
-      "思うくせに",
+      "思うくらいなら",
       "思うものの"
     ],
     "cp": [
       "T-6",
       "12-2",
-      null,
+      "T-9",
       "14-2"
     ],
     "why": [
       "〜ばこそ: the scolding happens precisely because of a good reason, caring about the future.",
       "〜どころか says the opposite is true. Parents do care.",
-      "〜くせに criticises someone for being inconsistent. Caring and scolding are not inconsistent here.",
+      "〜くらいなら rejects X as so bad that a lesser evil is better. Caring about the future is the reason, not something rejected.",
       "〜ものの means 'although'. Caring and scolding do not clash; one causes the other."
     ],
     "cue": [
@@ -796,7 +797,7 @@
     ],
     "cp": [
       "T-7",
-      "18-2",
+      "25-4",
       "23-5",
       "23-6"
     ],
@@ -972,19 +973,19 @@
       "くらいなら",
       "からには",
       "ものなら",
-      "にしても"
+      "というより"
     ],
     "cp": [
       "T-9",
       "17-5",
       "15-2",
-      "15-6"
+      "T-8"
     ],
     "why": [
       "〜くらいなら: working there is so bad that part-time work is better. ほうがましだ completes it.",
       "〜からには needs a duty or resolve after it. ほうがましだ is a preference.",
       "〜ものなら goes with a potential verb (働けるものなら) and a wish. ほうがましだ is not a wish.",
-      "〜にしても means 'even if'. It does not set up a 'rather than'."
+      "〜というより replaces a wrong label with a better one. It cannot lead into ほうがましだ."
     ],
     "cue": [
       "ほうがましだ"
@@ -1001,19 +1002,19 @@
     "c": [
       "くらいなら",
       "ことなく",
-      "ついでに",
+      "というより",
       "うちに"
     ],
     "cp": [
       "T-9",
       "IV-6",
-      null,
+      "T-8",
       "2-2A"
     ],
     "why": [
       "〜くらいなら: quitting halfway is so bad that not starting is better.",
       "〜ことなく means 'without doing'. 'Without quitting, it's better not to take it on' contradicts itself.",
-      "〜ついでに means doing something extra while doing X. Quitting is not an errand.",
+      "〜というより corrects a word to a better label. ほうがいい states a preference over a bad option, not a label.",
       "〜うちに means 'while, before it changes'. It needs a state, not a one-off act like やめる."
     ],
     "cue": [
@@ -1156,7 +1157,7 @@
     ],
     "cp": [
       "T-10",
-      "18-2",
+      "25-4",
       "18-5",
       "23-6"
     ],
@@ -1506,10 +1507,10 @@
     "id": "7-T-051",
     "type": "p7",
     "point": "T-13",
-    "s": "選手たちは、被災地への励まし（　　）試合に臨んだ。",
+    "s": "選手たちは、被災地を励ましたいという思い（　　）試合に臨んだ。",
     "en": "The players went into the match wanting to encourage the disaster-hit area.",
     "c": [
-      "の思いを込めて",
+      "を込めて",
       "をきっかけに",
       "をめぐって",
       "に先立って"
@@ -1521,15 +1522,15 @@
       "IV-2"
     ],
     "why": [
-      "〜の思いを込めて: the players put their wish to encourage people into the match.",
-      "〜をきっかけに needs a past event that set something off. The encouragement comes from the players, after.",
+      "〜を込めて: the players put their wish to encourage people into the match.",
+      "〜をきっかけに needs a past event that set something off. A wish to encourage people is a feeling carried into the match, not a past trigger.",
       "〜をめぐって means 'around a dispute'. There is no dispute.",
-      "〜に先立って means before an event. Encouragement is not an event the match comes before."
+      "〜に先立って means before an event. A wish is not an event the match comes before."
     ],
     "cue": [
-      "励まし"
+      "励ましたいという思い"
     ],
-    "tell": "A wish put into an act: 〜の思いを込めて.",
+    "tell": "A feeling or wish put into an act: 思いを込めて.",
     "lv": 2
   },
   {
