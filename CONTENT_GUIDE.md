@@ -16,6 +16,7 @@ The drill trains one skill: **seeing a sentence and knowing which grammar form t
 | `content/q9_*.json` | 問題9 passages (文章の文法): a short text with four or five blanks. |
 | `content/anki_*.json` | Questions reserved for the Anki deck. Same schema. Not served in the web drill, so the deck and the drill never show the same sentence. |
 | `content/kanji.json` | The kanji gap: tiers, look-alike glyphs and each kanji with its words. |
+| `content/kanji_info.json` | Meaning, readings and WaniKani level for the other kanji in each gap word (染 in 汚染), shown under the drilled kanji. Rebuild with `python3 tools/build_kanji_info.py <kanji-data kanji.json>` after adding words. |
 | `content/vocab_*.json` | Vocabulary items: 問題3 語形成 (`v3`), 問題5 言い換え類義 (`v5`) and 問題6 用法 (`v6`). Not tied to grammar points. Any file may hold any of the three types; today there is one file per type. |
 | `content/r14_*.json` | 問題14 情報検索 notices (`r14`): one realistic notice with 1 to 3 questions. |
 

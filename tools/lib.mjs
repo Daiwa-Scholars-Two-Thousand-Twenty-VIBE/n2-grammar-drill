@@ -125,6 +125,23 @@ export function validateKanji(data) {
   return errors;
 }
 
+// content/kanji_info.json: { 字: { m, on, kun, wk } } for every kanji in a gap word that is not a gap kanji
+// itself, so a compound shows all its kanji. Made by tools/build_kanji_info.py.
+export function validateKanjiInfo(data, info) {
+  const errors = [];
+  if (!info || typeof info !== "object") return ["kanji_info.json: missing (run tools/build_kanji_info.py)"];
+  const gap = new Set((data.kanji || []).map((x) => x.k));
+  for (const x of data.kanji || [])
+    for (const w of x.words || [])
+      for (const ch of w.w || "")
+        if (KANJI.test(ch) && ch !== "々" && !gap.has(ch) && !info[ch]) errors.push(`kanji ${x.k} word ${w.w}: no kanji_info entry for ${ch} (run tools/build_kanji_info.py)`);
+  for (const [ch, v] of Object.entries(info)) {
+    if (gap.has(ch)) errors.push(`kanji_info.json: ${ch} is a gap kanji; its entry lives in kanji.json`);
+    if (!v || typeof v.m !== "string" || !v.m || !Array.isArray(v.on) || !Array.isArray(v.kun) || !Number.isInteger(v.wk)) errors.push(`kanji_info.json: ${ch} needs m, on, kun and wk`);
+  }
+  return errors;
+}
+
 // Four distinct choices with a note each and a tell, for items that have no grammar points behind them.
 function checkPlain(err, where, q) {
   if (!Array.isArray(q.c) || q.c.length !== 4 || q.c.some((x) => typeof x !== "string" || !x.trim())) return err(`${where}: c must be 4 non-empty choices`);

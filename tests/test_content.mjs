@@ -3,7 +3,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import path from "node:path";
 import fs from "node:fs";
-import { CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, textFiles, listenFiles, readJSON, validateItems, validateKanji, validateVocab, validatePassages, validateTexts, validateListening } from "../tools/lib.mjs";
+import { CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, textFiles, listenFiles, readJSON, validateItems, validateKanji, validateKanjiInfo, validateVocab, validatePassages, validateTexts, validateListening } from "../tools/lib.mjs";
 
 const catalog = loadCatalog();
 const files = questionFiles();
@@ -68,6 +68,12 @@ test("kanji.json validates and every tier is used", { skip: !fs.existsSync(kanji
   for (const t of data.tiers) assert.ok(data.kanji.some((x) => x.tier === t.id), `tier ${t.id} is empty`);
   const ranks = data.kanji.map((x) => x.rank);
   assert.deepEqual(ranks, [...ranks].sort((a, b) => a - b), "kanji are stored in rank order");
+});
+
+test("every kanji in a gap word has an entry, so compounds show all their kanji", { skip: !fs.existsSync(kanjiFile) && "no kanji.json" }, () => {
+  const info = readJSON(path.join(CONTENT, "kanji_info.json"));
+  assert.deepEqual(validateKanjiInfo(readJSON(kanjiFile), info), []);
+  assert.deepEqual(validateKanjiInfo({ kanji: [{ k: "汚", words: [{ w: "汚染" }] }] }, {}), ["kanji 汚 word 汚染: no kanji_info entry for 染 (run tools/build_kanji_info.py)"]);
 });
 
 const vocab = vocabFiles().flatMap((f) => readJSON(f));

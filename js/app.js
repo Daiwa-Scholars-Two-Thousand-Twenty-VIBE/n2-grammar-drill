@@ -8,7 +8,7 @@
   const G = window.Sync || null; // gist sync (js/sync.js). Missing means sync stays off.
   // This build. version.json on the site holds the newest; a page left open on an older build stops
   // syncing and reloads itself, so old sync code never runs against newer progress. Bump both together.
-  const APP_VERSION = "2026-11-20.2";
+  const APP_VERSION = "2026-11-20.3";
   const app = document.getElementById("app");
   const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1", wk: "n2drill.wk.v1" };
   // rlFrom: the day reading and listening join Today. Before it they show as optional blocks.
@@ -1561,6 +1561,27 @@
       ${looks ? `<p class="small"><b>Don't confuse:</b> ${looks}</p>` : ""}`;
   }
 
+  // The other kanji in a compound (染 in 汚染), one line each, so the whole word makes sense.
+  // A gap kanji opens its own card; the rest come from content/kanji_info.json with their WaniKani level.
+  function wordKanji(w, x) {
+    const chars = [...new Set([...w.w].filter((ch) => /[一-鿿]/.test(ch) && ch !== x.k))];
+    const rows = chars
+      .map((ch) => {
+        const y = kanjiOf.get(ch);
+        const i = y ? { m: y.mean, on: y.on, kun: y.kun, wk: y.wk } : (D.kanjiInfo || {})[ch];
+        if (!i) return "";
+        const lvl = !i.wk ? "WaniKani does not teach it" : i.wk <= settings.wk ? `WaniKani level ${i.wk} · you have it` : `WaniKani level ${i.wk} · past your level`;
+        const tag = y ? `${glyph(kstatus(ch))} in your kanji gap · ${lvl}` : lvl;
+        const g = y
+          ? `<button class="kglyph sm jp" data-act="kanji" data-k="${esc(ch)}" title="Open the card">${esc(ch)}</button>`
+          : `<span class="kglyph sm jp">${esc(ch)}</span>`;
+        return `<div class="kpart">${g}<div><b>${esc(i.m)}</b> <span class="small muted jp">${esc([...i.on, ...i.kun].join("、"))}</span>
+          <div class="small muted">${tag}</div></div></div>`;
+      })
+      .join("");
+    return rows ? `<div class="kparts"><p class="small"><b>Also in <span class="jp">${esc(w.w)}</span>:</b></p>${rows}</div>` : "";
+  }
+
   // The sound part (音符): 簡 has 門, read カン as in 間 and 関. Kanji you have reached in WaniKani come
   // first; the rest are muted. It helps with an unknown kanji's on'yomi on the reading questions.
   function soundLine(x) {
@@ -1689,6 +1710,7 @@
       return `<div class="kintro">${kanjiStrip(x)}
           <div class="sentence">${kSentence(w, false)}</div>
           <div class="en">${esc(w.se)}</div>
+          ${x.words.map((v) => wordKanji(v, x)).join("")}
           <p class="small muted">Say each word aloud once. Its first question comes in a few items.</p>
           <div class="row"><button class="btn primary" data-act="next">Got it <kbd>Enter</kbd></button>
           <button class="btn" data-act="know">I know this: test me now <kbd>K</kbd></button></div></div>`;
@@ -1734,6 +1756,7 @@
       <div class="sentence small-s">${kSentence(w, false)}</div>
       <div class="en">${esc(w.se)}</div>
       ${kanjiStrip(x)}
+      ${wordKanji(w, x)}
       ${next ? nextButton() : ""}
     </div>`;
   }
@@ -2509,7 +2532,7 @@
       <p class="small muted">${rec}</p>
       ${x.words
         .map((w) => `<div class="kex"><div><span class="jp kw">${esc(w.w)}</span> <span class="jp muted">${esc(w.r)}</span> · ${esc(w.en)}</div>
-          <div class="ex jp">${kSentence(w, false)}</div><div class="muted small">${esc(w.se)}</div></div>`)
+          <div class="ex jp">${kSentence(w, false)}</div><div class="muted small">${esc(w.se)}</div>${wordKanji(w, x)}</div>`)
         .join("")}
       ${!sess ? `<button class="btn primary wide" data-act="kanji-drill" data-k="${esc(x.k)}">Drill this kanji</button>` : ""}
     </div>`;

@@ -6,7 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
-import { ROOT, CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, textFiles, listenFiles, readJSON, validateItems, validateKanji, validateVocab, validatePassages, validateTexts, validateListening, charCount, plainText } from "./lib.mjs";
+import { ROOT, CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, textFiles, listenFiles, readJSON, validateItems, validateKanji, validateKanjiInfo, validateVocab, validatePassages, validateTexts, validateListening, charCount, plainText } from "./lib.mjs";
 
 const report = process.argv.includes("--report");
 const catalog = loadCatalog();
@@ -14,7 +14,9 @@ const rules = readJSON(path.join(CONTENT, "rules.json"));
 const kanjiFile = path.join(CONTENT, "kanji.json");
 const kanji = fs.existsSync(kanjiFile) ? readJSON(kanjiFile) : { tiers: [], glyphs: {}, kanji: [] };
 const seen = new Set();
-const errors = [...validateKanji(kanji)];
+const infoFile = path.join(CONTENT, "kanji_info.json");
+const kanjiInfo = fs.existsSync(infoFile) ? readJSON(infoFile) : {};
+const errors = [...validateKanji(kanji), ...(kanji.kanji.length ? validateKanjiInfo(kanji, kanjiInfo) : [])];
 const web = [];
 const anki = [];
 
@@ -114,6 +116,7 @@ const data = {
   kanji: kanji.kanji,
   kanjiTiers: kanji.tiers,
   glyphs: kanji.glyphs,
+  kanjiInfo,
   vocab,
   passages,
   texts,

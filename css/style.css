@@ -585,6 +585,11 @@ u.tgt { text-decoration: underline 2px; text-underline-offset: 6px; font-weight:
   background: var(--panel-2);
 }
 .kwords { margin: 0; padding-left: 18px; font-size: 0.92rem; }
+.kparts { display: grid; gap: 8px; margin-top: 4px; }
+.kparts > p { margin: 0; }
+.kpart { display: flex; gap: 12px; align-items: center; }
+.kglyph.sm { width: 44px; height: 44px; font-size: 1.6rem; display: inline-flex; align-items: center; justify-content: center; }
+button.kglyph.sm { padding: 0; cursor: pointer; }
 .kwords li { margin: 2px 0; }
 .sound small { font-size: 0.75em; color: var(--muted); margin-left: 1px; }
 .rads { margin: 0; }

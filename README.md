@@ -265,6 +265,7 @@ Commit the regenerated `js/data.js` (and the `.apkg` if you changed the Anki que
 | `content/q7_*.json`, `q8_*.json`, `q9_*.json` | Web drill questions |
 | `content/anki_*.json` | Questions used only in the Anki deck |
 | `content/kanji.json` | The kanji gap: tiers, look-alike glyphs, and each kanji with its words, sentences and distractors |
+| `content/kanji_info.json` | Meaning, readings and WaniKani level for the other kanji in each gap word (染 in 汚染), shown under the drilled kanji. Rebuild with `python3 tools/build_kanji_info.py <kanji-data kanji.json>` after adding words. |
 | `content/vocab_*.json` | Vocabulary items: 問題3 語形成 (`v3`), 問題5 言い換え類義 (`v5`), 問題6 用法 (`v6`) |
 | `content/r14_*.json` | 問題14 情報検索 notices (`r14`) with their questions |
 | `content/vocab_v4.json` | 問題4 文脈規定 (`v4`) items |
