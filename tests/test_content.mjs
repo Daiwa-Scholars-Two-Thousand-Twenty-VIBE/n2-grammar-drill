@@ -121,6 +121,19 @@ test("reading texts validate, and the reading mock has enough of each part", { s
   assert.deepEqual(errors, []);
   const need = { r10: 5, r11: 3, r12: 1, r13: 1 };
   for (const [t, n] of Object.entries(need)) assert.ok(texts.filter((p) => p.type === t).length >= n, `need ${n}+ ${t} texts for a full reading mock`);
+  const tipsFile = path.join(CONTENT, "read_tips.json");
+  if (fs.existsSync(tipsFile)) {
+    const tips = readJSON(tipsFile);
+    const ids = new Set([...(tips.techniques || []), ...(tips.types || []), ...(tips.listening || [])].map((t) => t.id));
+    if (tips.intro) ids.add("intro");
+    const alias = { compare: "r12", gist: "intro" };
+    for (const p of texts) {
+      for (const q of p.qs) {
+        if (!q.skill) continue;
+        assert.ok(ids.has(q.skill) || ids.has(alias[q.skill]), `${p.id}: reading skill "${q.skill}" has no explainer in read_tips.json`);
+      }
+    }
+  }
 });
 
 test("listening items validate, and the listening mock has enough of each part", { skip: !listenFiles().length && "no listening items yet" }, () => {

@@ -8,7 +8,7 @@
   const G = window.Sync || null; // gist sync (js/sync.js). Missing means sync stays off.
   // This build. version.json on the site holds the newest; a page left open on an older build stops
   // syncing and reloads itself, so old sync code never runs against newer progress. Bump both together.
-  const APP_VERSION = "2026-11-20.4";
+  const APP_VERSION = "2026-11-22.1";
   const app = document.getElementById("app");
   const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1", wk: "n2drill.wk.v1" };
   // rlFrom: the day reading and listening join Today. Before it they show as optional blocks.
@@ -167,6 +167,9 @@
   const TIPS = D.tips || { techniques: [], types: [], listening: [], listenGeneral: [] };
   const tipById = new Map([...(TIPS.techniques || []), ...(TIPS.types || []), ...(TIPS.listening || [])].map((t) => [t.id, t]));
   if (TIPS.intro) tipById.set("intro", TIPS.intro);
+  // Skills that belong to a whole exam part rather than a Part 1 technique map onto that part's guide.
+  const TIP_ALIAS = { compare: "r12", gist: "intro" };
+  const tipFor = (id) => tipById.get(id) || tipById.get(TIP_ALIAS[id]);
   const skillName = (id) => {
     const t = tipById.get(id);
     return t ? `${t.ja} · ${t.en}` : { gist: "全体 · Main point", compare: "統合 · Comparing A and B" }[id] || id;
@@ -971,14 +974,14 @@
       ${general}`;
   }
   function viewTip(id) {
-    const t = tipById.get(id);
+    const t = tipFor(id);
     if (!t) return viewTips();
-    const a = skillAcc(id);
-    const isTech = TIPS.techniques.some((x) => x.id === id);
+    const a = skillAcc(t.id === "r12" ? "compare" : id);
+    const isTech = TIPS.techniques.some((x) => x.id === t.id);
     let drill = "";
-    if (isTech && RT.some((p) => p.qs.some((b) => b.skill === id))) drill = `<button class="btn primary wide" data-act="read-skill" data-id="${esc(id)}">Drill it: two texts with a ${esc(t.ja)} question</button>`;
-    else if (RTYPES.includes(id) && RALL.some((p) => p.type === id)) drill = `<button class="btn primary wide" data-act="read-type" data-t="${id}">Read one now, timed</button>`;
-    else if (LTYPES.includes(id) && L.some((x) => x.type === id)) drill = `<button class="btn primary wide" data-act="listen-type" data-t="${id}">Listen to some now</button>`;
+    if (isTech && RT.some((p) => p.qs.some((b) => b.skill === t.id))) drill = `<button class="btn primary wide" data-act="read-skill" data-id="${esc(t.id)}">Drill it: two texts with a ${esc(t.ja)} question</button>`;
+    else if (RTYPES.includes(t.id) && RALL.some((p) => p.type === t.id)) drill = `<button class="btn primary wide" data-act="read-type" data-t="${t.id}">Read one now, timed</button>`;
+    else if (LTYPES.includes(t.id) && L.some((x) => x.type === t.id)) drill = `<button class="btn primary wide" data-act="listen-type" data-t="${t.id}">Listen to some now</button>`;
     return `${header()}${back("tips", "Tips")}
       ${tipHead(t)}
       ${a.seen ? `<p class="small">You: ${pct(a.right, a.seen)} right over ${a.seen} questions on this.</p>` : ""}
@@ -987,7 +990,7 @@
   }
   // The same tip as a sheet over the quiz, so a session is never left mid-way.
   function openTip(id) {
-    const t = tipById.get(id);
+    const t = tipFor(id);
     if (!t) return;
     closeModal();
     const el = document.createElement("div");
@@ -1871,8 +1874,14 @@
     return `<div class="rtext jp">${head}${body}</div>`;
   }
   const textHTML = (p, cues) => (p.type === "r14" ? noticeHTML(p, cues) : readHTML(p, cues));
-  const skillLine = (b) =>
-    b.skill ? `<p class="small skill">Technique: <button class="linkish" data-act="tip" data-id="${esc(b.skill)}">${esc(skillName(b.skill))}</button></p>` : "";
+  const skillLine = (b, type) => {
+    if (!b.skill) return "";
+    const tipId = tipById.has(b.skill) ? b.skill : b.skill === "gist" && tipById.has(type) ? type : TIP_ALIAS[b.skill];
+    const label = esc(skillName(b.skill));
+    return tipId
+      ? `<p class="small skill">Technique: <button class="linkish" data-act="tip" data-id="${esc(tipId)}">${label}</button></p>`
+      : `<p class="small skill">Technique: ${label}</p>`;
+  };
 
   // A text and one of its questions at a time. The time for the first question includes reading the text.
   function qRead(q) {
@@ -1885,7 +1894,7 @@
     return `${of > 1 ? `<p class="small muted">Text ${nth} of ${of}</p>` : ""}${textHTML(q, a || sess.hint ? b.cue : [])}
       <p class="rq jp"><span class="small muted">Question ${k + 1} of ${q.qs.length}</span><br>${esc(b.q)}</p>
       <div class="choices long-choices">${choiceButtons(b, a)}</div>
-      ${a ? feedback(b, a, sess.order, { en: lastQ ? q.en : "", next: true, nextLabel: lastQ ? "Next" : "Next question", target: S.TARGET[q.type], slow: PACE_NOTE, extra: skillLine(b) }) : ""}`;
+      ${a ? feedback(b, a, sess.order, { en: lastQ ? q.en : "", next: true, nextLabel: lastQ ? "Next" : "Next question", target: S.TARGET[q.type], slow: PACE_NOTE, extra: skillLine(b, q.type) }) : ""}`;
   }
 
   // A text is done once its last question is answered: log its speed for the Progress tab.
@@ -2291,7 +2300,7 @@
           const b = it.qs[x.blank];
           const name = it.type === "r14" ? it.title : `${RNAME[it.type][0]} ${it.id.slice(4)}`;
           return `<details><summary>${mark}<span class="form jp">${esc(name)}${it.qs.length > 1 ? ` · Q${x.blank + 1}` : ""}</span><span class="t">${x.skipped ? "skipped" : fmtSecs(x.secs)}</span></summary>
-            ${textHTML(it, b.cue)}<p class="rq jp">${esc(b.q)}</p>${feedback(b, x, x.order, { target: S.TARGET[it.type], slow: PACE_NOTE, extra: skillLine(b) })}</details>`;
+            ${textHTML(it, b.cue)}<p class="rq jp">${esc(b.q)}</p>${feedback(b, x, x.order, { target: S.TARGET[it.type], slow: PACE_NOTE, extra: skillLine(b, it.type) })}</details>`;
         }
         if (isL(it)) {
           const two = it.type === "l5" && it.qs.length > 1;
