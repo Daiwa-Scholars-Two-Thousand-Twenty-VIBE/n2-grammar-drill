@@ -401,8 +401,8 @@
    },
    {
     "p": 2,
-    "s": "休館中は、本の貸し出し・返却・予約はできません。",
-    "en": "During the closure, lending, returning and reserving books will not be available.",
+    "s": "休館中は、カウンターでの貸し出し・返却・予約はできません。",
+    "en": "During the closure, lending, returns and reservations at the counter will not be available.",
     "role": "fact"
    },
    {

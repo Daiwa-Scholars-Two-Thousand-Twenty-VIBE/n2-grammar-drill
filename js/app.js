@@ -8,7 +8,7 @@
   const G = window.Sync || null; // gist sync (js/sync.js). Missing means sync stays off.
   // This build. version.json on the site holds the newest; a page left open on an older build stops
   // syncing and reloads itself, so old sync code never runs against newer progress. Bump both together.
-  const APP_VERSION = "2026-11-28.1";
+  const APP_VERSION = "2026-11-28.2";
   const app = document.getElementById("app");
   const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1", wk: "n2drill.wk.v1" };
   // rlFrom: the day reading and listening join Today. Before it they show as optional blocks.

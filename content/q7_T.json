@@ -762,19 +762,19 @@
     "c": [
       "こともない",
       "わけがない",
-      "ものではない",
+      "わけにはいかない",
       "しかない"
     ],
     "cp": [
       "T-7",
       "12-1",
-      "24-3",
+      "18-2",
       "23-6"
     ],
     "why": [
       "〜ないこともない: I can eat it, reluctantly. The が clause adds that I don't like it.",
       "〜わけがない means 'no way'. 'No way I can't eat it' is too strong before あまり好きではない.",
-      "〜ものではない gives a social rule (you shouldn't). It does not fit 食べられない.",
+      "〜ないわけにはいかない means 'I have to' and takes a plain ない form (食べないわけにはいかない), not a potential one. 'I must' also does not lead into あまり好きではない.",
       "〜しかない means 'have no choice but'. It does not attach to a negative like this."
     ],
     "cue": [

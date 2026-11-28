@@ -65,8 +65,8 @@
     "id": "7-L01-003",
     "type": "p7",
     "point": "1-2",
-    "s": "このたびの事故（　　）、多くの皆様にご迷惑をおかけしたことを深くお詫び申し上げます。",
-    "en": "We deeply apologise to everyone for the trouble caused by this accident.",
+    "s": "このたびの災害（　　）、皆様から温かいご支援をいただきましたことを、心よりお礼申し上げます。",
+    "en": "We thank you all from the heart for the warm support we received at the time of this disaster.",
     "c": [
       "に際して",
       "にあたって",
@@ -80,14 +80,14 @@
       "4-3"
     ],
     "why": [
-      "〜に際して is a neutral 'on the occasion of'. It also works for an unplanned, unwelcome event like an accident.",
-      "〜にあたって is for a milestone you plan and take on (開店・就任・出発). Nobody plans an accident, so it cannot take にあたって.",
-      "〜に限り is the 'only' of notices and shop offers (本日に限り). 'Only for this accident' makes no sense in an apology.",
-      "〜にわたって needs a large span of time or place (三か月にわたって). An accident is an event, not a span."
+      "〜に際して is a neutral 'on the occasion of'. It also works for an unplanned, unwelcome event like a disaster.",
+      "〜にあたって is for a milestone you plan and take on (開店・就任・出発). Nobody plans a disaster, so it cannot take にあたって.",
+      "〜に限り is the 'only' of notices and shop offers (本日に限り). 'Only for this disaster' makes no sense in a message of thanks.",
+      "〜にわたって needs a large span of time or place (三か月にわたって). The disaster here is an event, not a span."
     ],
     "cue": [
-      "事故",
-      "お詫び申し上げます"
+      "災害",
+      "お礼申し上げます"
     ],
     "tell": "An unplanned, unwelcome event (事故・災害): に際して. にあたって needs a milestone you take on.",
     "lv": 2
@@ -1965,8 +1965,8 @@
     "id": "7-L05-011",
     "type": "p7",
     "point": "5-4A",
-    "s": "A「あれ、今日は自分でお弁当作ってきたの？」B「うん。いつもはコンビニなんだけど、今日（　　）早起きできたんだ。」",
-    "en": "A: Oh, did you make your own lunch today? B: Yes. I usually get something from the convenience store, but today, for once, I managed to get up early.",
+    "s": "A「あれ、今日は自分でお弁当作ってきたの？」B「うん。いつもは寝坊してコンビニなんだけど、今日（　　）早く目が覚めたんだ。」",
+    "en": "A: Oh, did you make your own lunch today? B: Yes. I usually oversleep and get something from the convenience store, but today, for once, I woke up early.",
     "c": [
       "に限って",
       "に限らず",

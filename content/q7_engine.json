@@ -131,13 +131,13 @@
     "type": "p7",
     "point": "P3-1",
     "set": "text",
-    "s": "私はこの計画に反対だ。なぜなら、地元の住民の声が一度も（　　）。",
-    "en": "I am against this plan, because the local residents have never once been listened to.",
+    "s": "私はこの計画に反対だ。なぜなら、地元の住民への説明が一度も（　　）。",
+    "en": "I am against this plan, because not one briefing has been held for the local residents.",
     "c": [
-      "聞かれていないからだ",
-      "聞かれていないわけがない",
-      "聞かれていないに越したことはない",
-      "聞かれていないものだ"
+      "行われていないからだ",
+      "行われていないわけがない",
+      "行われていないに越したことはない",
+      "行われていないものだ"
     ],
     "cp": [
       "P3-1",

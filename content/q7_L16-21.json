@@ -2247,13 +2247,13 @@
     "type": "p7",
     "point": "20-6",
     "set": "outcome",
-    "s": "卒業後に連絡しようと思いながら、結局一度も（　　）、彼は海外へ引っ越してしまった。",
-    "en": "I kept meaning to get in touch after graduation, but I never once did, and then he moved abroad.",
+    "s": "海外へ引っ越した彼には、卒業後に連絡しようと思いながら、結局一度も（　　）。",
+    "en": "He has moved abroad. I kept meaning to get in touch with him after graduation, but in the end I never once did.",
     "c": [
-      "連絡せずじまいで",
-      "連絡しずじまいで",
-      "連絡しないじまいで",
-      "連絡したきりで"
+      "連絡せずじまいだった",
+      "連絡しずじまいだった",
+      "連絡しないじまいだった",
+      "連絡したきりだった"
     ],
     "cp": [
       "20-6",
@@ -2262,7 +2262,7 @@
       "20-2"
     ],
     "why": [
-      "する verbs take せず: 連絡せずじまい. Meant to get in touch, never did, and now he has moved away.",
+      "する verbs take せず: 連絡せずじまい. Meant to get in touch, never did, and now the chance has gone.",
       "しず is not a real form. する becomes せず before じまい.",
       "じまい follows the ず form (ない → ず), not ない itself. 〜ないじまい does not exist.",
       "たきり means 'got in touch once and nothing since'. 一度も ('not even once') says there was no contact at all."
