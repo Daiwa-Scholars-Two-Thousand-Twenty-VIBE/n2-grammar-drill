@@ -26,7 +26,13 @@
    "Detail question types: what a this/that word points to, who or what did X, what an underlined part means, the reason, the example.",
    "Even for a small detail question, skim the whole text first.",
    "Diagram marks: a box is a connective to notice, a double arrow is contrast, an equals sign is restatement, an up arrow is what a this/that word points to, square brackets are omitted parts.",
-   "Use the mock test under the clock and note how long reading takes you."
+   "Use the mock test under the clock and note how long reading takes you.",
+   "The number of questions in each part can change from year to year (p. vi).",
+   "Mark the page as the book does: circle the two contrasted words, box the connectives, join a re-wording to its original with a double line, draw an arrow from a pointing word to its target, and write left-out words back in square brackets (pp. ix, 5, 15).",
+   "The line under a text that names the book it came from can hint at the theme (p. 39).",
+   "Practical texts: first sort the question into 'what is this for' or 'find one fact'. Skip unknown words, and use what you know about that kind of document to guess (pp. 74-75).",
+   "Six things to look at first on a practical text: the title, the headings, big, bold and small print, underlines, arrows and numbers, and boxes (p. 75).",
+   "統合理解 uses fairly plain texts. The long essay has a fairly clear line of argument, and one of its three questions always asks for the writer's claim (p. 123)."
   ],
   "traps": [
    "Reading word by word and missing the overall point.",
@@ -100,6 +106,22 @@
     [
      "もちろん…しかし",
      "of course... but (real point after)"
+    ],
+    [
+     "〜としても",
+     "even if (a reversal)"
+    ],
+    [
+     "けれど",
+     "but"
+    ],
+    [
+     "それでも",
+     "even so"
+    ],
+    [
+     "その結果",
+     "as a result"
     ]
    ],
    "steps": [
@@ -120,14 +142,19 @@
     "A small contrast can sit inside a big one. Sort them before answering.",
     "Notice the big contrast of common image versus the view of the writer or an expert.",
     "たしかに...しかし and もちろん...しかし: the writer grants a view first, then gives the real opinion.",
-    "A reason ending (〜からだ) belongs to the claim it supports."
+    "A reason ending (〜からだ) belongs to the claim it supports.",
+    "Circle the two contrasted words so you do not swap their features when you check the choices (p. 5).",
+    "その結果 often brings the conclusion on the writer's side of the contrast (p. 5).",
+    "Other big contrasts to expect: then and now (昔 and 今), and the usual safe way against the truly new way (pp. 17, 49)."
    ],
    "traps": [
     "Gives one side's feature to the other side.",
     "Builds the option from the first point when the text says that is not the whole story (それだけではない).",
     "States something the text never says.",
     "Gives the wrong purpose or reason for the right action.",
-    "Covers only one side of the contrast."
+    "Covers only one side of the contrast.",
+    "A first impression the writer voices (〜ような気がします) and then rejects after しかし (answer booklet p. 3).",
+    "A choice that takes only one item (〜だけ) from a list of several (answer booklet p. 8)."
    ],
    "q": [
     "この文章の内容として最も適切なものはどれか。",
@@ -194,14 +221,17 @@
     "Contrast and restatement often work together: see the contrast first, then use restatements to learn what each side's special word means.",
     "For a coined word, find the sentences that define it in plain language.",
     "Chains like A = B = C: the last link is what the writer cares about.",
-    "Use the shortest plain version when you sum up."
+    "Use the shortest plain version when you sum up.",
+    "A re-wording can be a concrete example that explains an abstract phrase, not only another word for it (p. 14).",
+    "A writer may give an everyday word a special meaning for this text only. Answer with the writer's meaning, not the dictionary's (answer booklet pp. 3-4)."
    ],
    "traps": [
     "Reads the contrast as a mood change when the real point is whether two things are kept distinct.",
     "Uses a true detail from one paragraph as the main point.",
     "Adds a 'should' that the text never states.",
     "Gives only one half of a pair.",
-    "Talks about people or things the text does not discuss."
+    "Talks about people or things the text does not discuss.",
+    "One example offered as the theme, or a description turned into advice (answer booklet pp. 3-4)."
    ],
    "q": [
     "この文章の内容として最も適切なものはどれか。",
@@ -257,12 +287,15 @@
     "Watch how the paragraphs move: a general statement first, then a switch to the metaphor.",
     "Replace each metaphor part with its real counterpart in a table.",
     "Then write the summary in the real topic's words.",
-    "An early plain paragraph can give you the real theme before the metaphor starts."
+    "An early plain paragraph can give you the real theme before the metaphor starts.",
+    "The book gives no signal words for metaphor. Many metaphor texts have no ような or みたいな at all: the one sure sign is words that suddenly have nothing to do with the topic (p. 22).",
+    "A text can open with a whole fable or story and name the real topic only in its last sentences (answer booklet p. 5)."
    ],
    "traps": [
     "Makes the metaphor image the topic.",
     "Adds a rule the text never states.",
-    "Gets the image right but drops the real topic."
+    "Gets the image right but drops the real topic.",
+    "A choice that ranks the picture against the real topic, when the writer only likens them (answer booklet p. 32)."
    ],
    "q": [
     "この文章で筆者が最も言いたいことは何か。",
@@ -314,6 +347,30 @@
     [
      "〜のではないか",
      "can be a question or a claim"
+    ],
+    [
+     "果たして〜のでしょうか",
+     "is it really so? (expects no)"
+    ],
+    [
+     "本当にそうなのだろうか",
+     "is that really so? (expects no)"
+    ],
+    [
+     "そもそも何のために〜のでしょうか",
+     "what is it for in the first place?"
+    ],
+    [
+     "〜の場合はどうだろうか",
+     "what about the case of...?"
+    ],
+    [
+     "どんな〜のだろうか",
+     "what sort of...?"
+    ],
+    [
+     "もし〜たら、本当に〜でしょうか",
+     "if..., would it really...?"
     ]
    ],
    "steps": [
@@ -330,7 +387,9 @@
     "Look for evaluation words that sort the cases (worst, not good, should really do).",
     "The final claim is usually the answer to the question.",
     "A reworded claim can be the correct option.",
-    "Both types count: question-word questions and yes/no questions with no question word."
+    "Both types count: question-word questions and yes/no questions with no question word.",
+    "果たして〜のでしょうか and 本当にそうなのだろうか doubt a common belief. Expect the answer to be no, or a warning (answer booklet pp. 5-6).",
+    "A childhood memory placed between the question and its answer is background, not the answer (answer booklet pp. 5-6)."
    ],
    "traps": [
     "Takes a point the text set aside as the whole answer.",
@@ -388,6 +447,42 @@
     [
      "それだけではない",
      "that is not all"
+    ],
+    [
+     "〜のではないでしょうか",
+     "isn't it the case that... (polite)"
+    ],
+    [
+     "〜んじゃないか",
+     "isn't it... (spoken)"
+    ],
+    [
+     "〜ではないだろうか",
+     "is it not...?"
+    ],
+    [
+     "〜はしないか",
+     "might it not...?"
+    ],
+    [
+     "〜でしょう",
+     "probably, surely (polite)"
+    ],
+    [
+     "〜てみてはどうでしょうか",
+     "how about trying...?"
+    ],
+    [
+     "〜気がする",
+     "I feel that..."
+    ],
+    [
+     "必要である",
+     "it is necessary"
+    ],
+    [
+     "〜なのだろうか (反語)",
+     "is it really...? meaning: it is not"
     ]
    ],
    "steps": [
@@ -405,7 +500,11 @@
     "The writer's own story at the start is usually background, not the claim.",
     "Contrast helps: the writer grants an effect, then turns with しかし to the real claim.",
     "〜てこそ marks the condition the writer thinks is essential.",
-    "Sum up as a pair: A is good, but not enough, B is needed."
+    "Sum up as a pair: A is good, but not enough, B is needed.",
+    "A rhetorical question (反語): 〜なのだろうか can mean a strong no. 'Is this really good service?' means it is not. Turn it into a plain negative (answer booklet pp. 7-8).",
+    "No claim ending at all? Find the claim through words of judgement, such as あまり評価していません or 〜にならざるを得ません (answer booklet p. 7).",
+    "評価する means to rate highly, and 評価しない means to think little of. It is not a neutral 'evaluate' (answer booklet p. 7).",
+    "Thanks or praise at the start can be only a lead-in, not what the writer most wants to say (answer booklet p. 8)."
    ],
    "traps": [
     "Uses the example as the claim.",
@@ -430,7 +529,7 @@
    "en": "What it points to",
    "title": "指示語を問う",
    "book": "pp. 38-45",
-   "gist": "A pointing word (これ, そんなこと, そういう感覚) is underlined and you must say what it stands for. The answer is almost always right before it.",
+   "gist": "A pointing word (これ, そんなこと, そういう感覚) is underlined and you must say what it stands for. The answer is usually in the sentence just before it, but check after it too: こう and こんな + noun can point forward.",
    "signals": [
     [
      "これ・それ・あれ",
@@ -473,7 +572,11 @@
     "For 指示語 + noun, the noun tells you what kind of thing to look for (p. 40).",
     "Rewrite the phrase in plain terms, such as 'feels that way' then 'says so?', to see what to hunt for (p. 41).",
     "The word こう can point forward to a quote that follows (p. 41).",
-    "The target is often a whole clause, not one word (p. 41)."
+    "The target is often a whole clause, not one word (p. 41).",
+    "こんな + noun near the start of a long text can point forward, across several paragraphs, to the whole story that follows (p. 134).",
+    "A しかし just before the pointing word tells you which half of the earlier sentence it points to (answer booklet p. 8).",
+    "これに比べて: look back for the thing with the opposite quality to what follows (answer booklet p. 20).",
+    "In a set phrase such as それはそれでいい, take それ on its own and trace it to the action stated just before (answer booklet p. 21)."
    ],
    "traps": [
     "A piece of the real answer, such as half of a two-part idea.",
@@ -531,7 +634,10 @@
     "A question ending 〜はだれか is asking for the subject (p. 47).",
     "Count how many sentences share one unwritten subject. The example had five in a row (p. 47).",
     "Do not grab the first noun. Check who actually does the verb (pp. 46-47).",
-    "The missing subject can be a feeling, a receiver, or a thing that exists (ある) (pp. 50-51)."
+    "The missing subject can be a feeling, a receiver, or a thing that exists (ある) (pp. 50-51).",
+    "When the underline leaves out what something is compared with ('now is different': different from what?), map the contrast pair, むかし and いま, and work out the pointing words on each side (pp. 48-49).",
+    "Write the left-out subject, object or verb back into the sentence in square brackets, then check who does what to whom (answer booklet pp. 9, 20, 38).",
+    "Passive endings (〜られて) and giving and receiving endings (〜てくれない) decide who acts and who is affected when both nouns are dropped (answer booklet pp. 18, 38)."
    ],
    "traps": [
     "Other characters named in the same passage.",
@@ -594,7 +700,10 @@
     "Find the story or example that shows the result the underline names (p. 53).",
     "Track who is who, such as 'a certain person' and 'she' (p. 53).",
     "Watch cause versus result. A choice may give the cause when the result is asked (p. 53).",
-    "A choice that says something 'not written' in the passage is usually wrong (p. 53)."
+    "A choice that says something 'not written' in the passage is usually wrong (p. 53).",
+    "A reversal word near or just after the underline (けれど, 〜としても) often brings the plain explanation right after it (p. 125, answer booklet p. 10).",
+    "An unfamiliar idiom is often defined in the next sentence by 'not X but Y' (〜のでなく、〜) (answer booklet p. 10).",
+    "When the underline holds a pointing word, work that out first. When it says 決して〜だけではない, find the extra group the writer adds (〜だけでなく、〜も) (answer booklet pp. 10-11)."
    ],
    "traps": [
     "The cause given instead of the result, or the reverse.",
@@ -647,6 +756,34 @@
     [
      "〜ことから〜ことになる",
      "from this fact it follows"
+    ],
+    [
+     "〜のでしょう",
+     "that is probably why"
+    ],
+    [
+     "〜のです / 〜んです",
+     "the fact is... (gives a reason)"
+    ],
+    [
+     "〜からではないんです。〜なんです。",
+     "it is not because..., it is because..."
+    ],
+    [
+     "ですから",
+     "therefore (polite)"
+    ],
+    [
+     "これにより",
+     "because of this"
+    ],
+    [
+     "その結果",
+     "as a result"
+    ],
+    [
+     "こうして",
+     "in this way"
     ]
    ],
    "steps": [
@@ -664,10 +801,13 @@
     "Say the reason in your own simple words before you look at the choices (p. 59).",
     "Sometimes there is no reason expression. Do not panic (p. 60).",
     "Chain the paraphrases: underline equals idea A equals idea B (p. 61).",
-    "Use contrasts like 'then versus now' to find the reason (pp. 49, 59).",
+    "A then-and-now contrast can carry the reason (p. 62).",
     "A line like 'even if you win by cheating, you are not a true winner' gives the underlying rule (p. 61).",
     "With no underline, read the question and the whole passage (pp. 64, 66-67).",
-    "Check cause versus effect direction in each choice (p. 53)."
+    "Check cause versus effect direction in each choice (p. 53).",
+    "〜からではないんです。〜なんです。: the first half is the reason the writer rejects, the second half is the real one (answer booklet p. 13).",
+    "The reason can come after the underline: a later second thought (しかし後で考えて…) or numbered points (第一に…、第二に…) (answer booklet pp. 34-35).",
+    "An unknown abstract or katakana word in the reason sentence: do not stall. The contrast right after it gives the reason in plain words (answer booklet p. 13)."
    ],
    "traps": [
     "True but about a different thing.",
@@ -697,7 +837,7 @@
    "en": "Concrete example",
    "title": "例を問う",
    "book": "pp. 68-72",
-   "gist": "The writer makes an abstract point and you must pick the choice that is a fitting concrete case. Beware choices with things the passage never says.",
+   "gist": "The writer makes an abstract point and you must pick the choice that is a fitting concrete case. The cases in the choices are new: none of them is written in the text, not even the right one (p. 68). Match the writer's rule, not the words.",
    "signals": [
     [
      "たとえば",
@@ -733,13 +873,14 @@
     "If the passage gives a concrete example, use it as your model (p. 69).",
     "Match the structure of the example, not just the topic (p. 69).",
     "A choice that does the opposite of the writer's point is wrong (p. 69).",
-    "A choice that adds things not written is wrong (p. 69).",
+    "Do not look for the choices' words in the text. Work out the writer's rule, then test each case against it (pp. 68-69).",
     "For 'correct use of a word', test each choice against the writer's definition (p. 71).",
-    "For 'action following the idea', pick the one that fully reflects the point (p. 72)."
+    "For 'action following the idea', pick the one that fully reflects the point (p. 72).",
+    "If the underline has a pointing word plus a negative or 'break free' verb (そうした発想から解放されなければならない), work out the pointing word first, then pick the case that goes against that old idea (answer booklet p. 14)."
    ],
    "traps": [
     "The opposite action to the writer's advice.",
-    "A claim the passage never made.",
+    "A case that brings in a result the writer's rule does not lead to.",
     "A leap that draws a new conclusion.",
     "The right pieces in the wrong order.",
     "The same topic but different logic."
@@ -814,12 +955,14 @@
     "Announcing a new course is only the lead-in to the request.",
     "Anything after 尚 is added information, never the main request.",
     "A reason (it will be hot, so bring a hat) is not the request itself.",
-    "In an email the point sits between さて and ください.",
+    "In an email, the set-up comes right after さて and the request right before ください (pp. 81-82).",
     "Check who acts: the writer wants to attend vs the writer invites others to attend.",
     "If the choice states something the text never says, drop it.",
     "In an order confirmation the purpose is: confirm the order and ask the buyer to check the shipping date.",
     "A subject line like 品切れのお詫び fits a mail that explains sold out and delay.",
-    "Notices to everyone may drop the opening and closing greeting."
+    "Notices to everyone may drop the opening and closing greeting.",
+    "More markers of the main point: お知らせします and ください (read the words just before them), 〜に伴いまして (the main notice follows it), 申し訳ございません (the title is an apology) (pp. 79, 82).",
+    "The sender's name may sit at the top right or the bottom right (pp. 77, 79)."
    ],
    "traps": [
     "True detail at the wrong level, such as the old favour in the greeting.",
@@ -828,7 +971,8 @@
     "A reason chosen instead of the thing asked for.",
     "The actor swapped: invite vs want to attend.",
     "An invented claim, such as this event is important for business.",
-    "An invented motive, such as please come because it is year end."
+    "An invented motive, such as please come because it is year end.",
+    "In a closure notice, the background cause (station works) chosen instead of the main point (the stairs are closed) (answer booklet p. 34)."
    ],
    "q": [
     "文章の目的は何か",
@@ -905,7 +1049,9 @@
     "A second date (voucher expiry) can hide in a 尚 line.",
     "For step lists, treat each step as a timing or place rule.",
     "Convert day numbers to see which booking plan fits.",
-    "お一人様1回限り and closing-day lines each remove a choice."
+    "お一人様1回限り and closing-day lines each remove a choice.",
+    "Go straight to 〜円 and ¥ when the choices are about price, and to 電話 or おかけください when they are about calling (p. 75).",
+    "Check that an offer of several days fits inside the dates: a 7-day trial started on the 15th does not fit before a deadline on the 20th (answer booklet p. 16)."
    ],
    "traps": [
     "Time rule broken, e.g. ordering before the allowed hour.",
@@ -992,7 +1138,9 @@
     "In helpline notices match service, hours and your clock, weekday and weekend hours differ.",
     "祝除く and 24時間 are small facts that decide.",
     "Numbered steps give order, bullets below give extra rules.",
-    "〜のもとに集まる means gather with that person."
+    "〜のもとに集まる means gather with that person.",
+    "〜以下 includes the number itself: 小学生以下 includes primary school children (pp. 94-95).",
+    "On a missed-delivery slip, read the bold and large print first and fix four roles: the kind of slip, who it is for, the sender (ご依頼主様) and the carrier (p. 97)."
    ],
    "traps": [
     "Wrong party acts, e.g. phone the sender instead of the driver.",
@@ -1002,7 +1150,8 @@
     "Paying on the stop date instead of before it.",
     "A service that is closed at the given hour.",
     "A reply deadline mixed up with the event date.",
-    "An action the text never states, such as waiting for a call."
+    "An action the text never states, such as waiting for a call.",
+    "The enquiry desk for the notice itself (このお知らせについての問い合わせ) taken for the number you actually need (answer booklet p. 16)."
    ],
    "q": [
     "どうすればいいか",
@@ -1091,7 +1240,10 @@
     "Separate unpaid and paid cases in a return guide.",
     "着払い means the customer does not pay in advance.",
     "A paid return needs the refund bank details.",
-    "同封 means in the same parcel."
+    "同封 means in the same parcel.",
+    "Turn the four choices into two or three short questions before you look at the sheet: how many tablets, can I drive, when do I go, what do I hand in (pp. 108, 111).",
+    "〜以上 and 〜以下 include the number. 〜未満 does not (pp. 106, 109).",
+    "注意 also holds where to keep the thing, not only what is banned (p. 109)."
    ],
    "traps": [
     "Wrong dose for the age.",
@@ -1100,8 +1252,7 @@
     "Collecting outside the allowed window.",
     "Handing in only one of two required items.",
     "Too early, e.g. same day.",
-    "Steps for the unpaid case used for a paid customer.",
-    "An allowed item treated as banned."
+    "Steps for the unpaid case used for a paid customer."
    ],
    "q": [
     "適切な行動はどれか",
@@ -1158,7 +1309,8 @@
     "Match each condition to a column heading.",
     "Cross out rows that fail one condition.",
     "Add price and postage.",
-    "Check the date against the run period."
+    "Check the date against the run period.",
+    "If the choices name the rows, check only those rows."
    ],
    "tips": [
     "Read the column headings first.",
@@ -1169,7 +1321,9 @@
     "A row may lack the needed payment method.",
     "For exhibitions the date must fall inside the run dates.",
     "Use the summary column for the content condition.",
-    "〜まで gives an end date, check your date is not after it."
+    "〜まで gives an end date, check your date is not after it.",
+    "When the four choices name four shops or places, check only those four rows and ignore the rest of the table (p. 117).",
+    "The table may say it in other words: 'young Japanese painters' shows up as 若手 and 日本人画家. A row with the wrong kind of thing (彫刻 for 絵画) is out (answer booklet p. 18)."
    ],
    "traps": [
     "Cheapest row not in stock.",
@@ -1194,18 +1348,20 @@
    "id": "r10",
    "ja": "内容理解（短文）",
    "en": "Comprehension, short texts",
-   "book": "pp. vii, ix (intro only)",
-   "what": "About 200 characters, 5 texts, 1 question each. The book trains this type through Part 1 (how texts are built, and the question types) and Part 2 (practical texts such as emails and notices).",
-   "time": "",
+   "book": "pp. vii, ix, 74, 185",
+   "what": "About 200 characters, 5 texts, 1 question each. Essays and opinions (Part 1) and also practical texts: emails, business letters, notices (Part 2).",
+   "time": "About 2:30 a text on the paper, 12 minutes for the five. Our pacing: the book gives no minutes.",
    "steps": [
     "Read the text for the main point first.",
     "Notice contrast, re-wording and the writer's opinion words.",
-    "Answer with the question type in mind: pointing word, who or what, underlined meaning, reason, example."
+    "Answer with the question type in mind: pointing word, who or what, underlined meaning, reason, example.",
+    "A practical text: is the question about its purpose or about one fact? Skip the greetings and jump to さて, つきましては, 〜に伴いまして, or the words before お願いします."
    ],
    "tips": [
     "The book says part 1 trains this type through two halves: how texts are built, and the question types.",
     "Five text patterns to spot: contrast, re-wording, metaphor, a question the writer asks, and opinion markers.",
-    "Five question types: pointing words, who or what, underlined meaning, reasons, examples."
+    "Five question types: pointing words, who or what, underlined meaning, reasons, examples.",
+    "One of the five short texts is often an email or a notice. Read it the Part 2 way: find the one request, not every word (pp. 74, 185)."
    ],
    "traps": [
     "True in the text, but it answers a different question or describes another part of the text.",
@@ -1223,8 +1379,8 @@
    "ja": "内容理解（中文）",
    "en": "Comprehension, mid-length texts",
    "book": "pp. 124-131",
-   "what": "About 500 characters, 3 texts, 3 questions each. Usually an essay or opinion. Two questions on underlined parts, one on the main point.",
-   "time": "",
+   "what": "About 500 characters, 3 texts, 3 questions each. Usually an essay or opinion. The questions are the Part 1 types: often two on underlined parts and one on the main point, but not always.",
+   "time": "About 6 minutes a text, 18 for the three. Our pacing: the book gives no minutes.",
    "steps": [
     "List the key words and say in one line what the text is about.",
     "Pointing word question: find what it re-words, looking backward.",
@@ -1243,7 +1399,9 @@
     "A question the writer asks is a signpost to the answer.",
     "The main point is the sum of the text, not one detail.",
     "Mark pointing words and their targets with arrows as you read.",
-    "Reason and person questions need an answer found in the text, not common sense."
+    "Reason and person questions need an answer found in the text, not common sense.",
+    "An underline that sits with 〜としても or それでも: ask what you would normally expect, to see what the underline is set against (p. 125, answer booklet p. 22).",
+    "Also expect 'who did it' questions with the subject left out (watch 〜られて), and a reason question with no underline (answer booklet pp. 18-20)."
    ],
    "traps": [
     "The choice says something the text never says.",
@@ -1267,7 +1425,7 @@
    "en": "Claim comprehension, long text",
    "book": "pp. 132-146",
    "what": "About 900 characters, many paragraphs, 3 questions. Usually the writer's story or opinion with a clear claim.",
-   "time": "",
+   "time": "About 10 minutes. Our pacing: the book gives no minutes.",
    "steps": [
     "Read key words and say in one line what the text is about.",
     "Pointing word question: read the sentences before and after, trace the chain of events.",
@@ -1285,13 +1443,17 @@
     "A word of protest marks the writer's claim.",
     "Quoted speech of others is often there to be argued against.",
     "Make your own summary before reading the choices.",
-    "In essays, the last paragraphs and the paragraph after しかし carry the point."
+    "Our own rule of thumb, not the book's: the claim usually sits in the paragraphs that frame the story, often the last ones or the one after しかし. Check, because it can also open the text.",
+    "One of the three questions always asks for the writer's claim (p. 123).",
+    "こんな + noun near the start can point forward to the whole story that follows (p. 134).",
+    "Treat a run of story or example paragraphs as one block. Read the paragraphs around it closely: the claim is there (answer booklet pp. 25-26)."
    ],
    "traps": [
     "A choice that is simply not in the text, however sensible it sounds.",
     "An invented reason that sounds like natural behaviour.",
     "A conclusion that is too bold, such as should stop at once.",
-    "A choice that puts a different person in charge of the change."
+    "A choice that puts a different person in charge of the change.",
+    "A look 'as if to say X' (言わんばかりの) taken as really saying X (answer booklet pp. 24-26)."
    ],
    "q": [
     "①「〜」とあるが、どういうことか。",
@@ -1307,7 +1469,7 @@
    "en": "Integrated comprehension, several texts",
    "book": "pp. 146-160",
    "what": "Two or more texts on one theme (A and B, sometimes C), about 600 characters in total, 2 questions. Opinion pieces, notices, emails or advice and answers.",
-   "time": "",
+   "time": "About 7 minutes for the pair. Our pacing: the book gives no minutes.",
    "steps": [
     "Read the instruction line; it says what each text is and how they relate.",
     "Read the questions to learn what to pull out.",
@@ -1324,7 +1486,10 @@
     "Build a mini table: what A says, what B says.",
     "For opinions, look for words of thanks and praise against criticism and suggestion.",
     "Test every choice against both texts.",
-    "Business emails: find who writes to whom and what each wants."
+    "Business emails: find who writes to whom and what each wants.",
+    "The texts are fairly plain, so these two questions are steady points (p. 123).",
+    "Sort A and B quickly into for (肯定的) and against (否定的). Numbers and percentages mark a report of facts; 考えています marks an opinion (answer booklet pp. 26-27, 37).",
+    "In a chain of emails, the last message decides: a booking that failed (取れませんでした) changes the final day, place and person (answer booklet p. 28)."
    ],
    "traps": [
     "True of only one text but offered as true of both.",
@@ -1332,7 +1497,9 @@
     "Another person's suggestion moved into the facts.",
     "The old information from A chosen when B changed it.",
     "Says both agree or both disagree when only one point differs.",
-    "A natural-sounding reason that is not the one written."
+    "A natural-sounding reason that is not the one written.",
+    "A choice that is stronger than the text ('can change' made into 'must change'), or that turns round who is affected (answer booklet p. 27).",
+    "A concrete example or an age that only one of the texts gives (answer booklet p. 37)."
    ],
    "q": [
     "AとBのどちらの文章にも触れられている点は何か。",
@@ -1348,15 +1515,16 @@
    "en": "Information search",
    "book": "pp. 161-175",
    "what": "An ad, leaflet, notice or table of about 700 characters, with 2 questions. The question and choices come before the document.",
-   "time": "",
+   "time": "About 7 minutes. Our pacing: the book gives no minutes.",
    "steps": [
     "Read the instruction line to learn the document type.",
     "Read the question and choices to learn what to find.",
     "Use words from the question and choices as keywords.",
     "Find the matching section, then the right day or row.",
-    "Read the small notes marked with a star or square for cut-offs and what to bring.",
+    "Read the small notes marked ※, ＊ or ◆ for cut-offs and what to bring. ■ marks a heading, not a note.",
     "For tables, filter one condition at a time using the columns.",
-    "Check each remaining choice against the one detail it might fail on."
+    "Check each remaining choice against the one detail it might fail on.",
+    "If the four choices name four places, dates or items, check only those four rows. Scan the whole table only when the question asks how many (いくつあるか)."
    ],
    "tips": [
     "Read question and choices before the document.",
@@ -1367,7 +1535,12 @@
     "Suspended or closed lines are common traps.",
     "Check numbers: from or up to prices, people, age limits.",
     "Use today's date as the question gives it.",
-    "Procedure questions often need two matching conditions."
+    "Procedure questions often need two matching conditions.",
+    "The four-row rule saves the most time: choices that name four things mean only four rows matter (p. 167).",
+    "Turn the choices into short questions before you look at the document (pp. 164-165).",
+    "The document says it in official words: 12月31日 becomes 年末年始, 'does not live in the city' becomes 在住ではない, 'works in the city' becomes 在勤 (pp. 165-167).",
+    "Watch bold print, brackets that rule something out (名刺は不可, ①②のみ), the exact order of steps, and an exception that covers only some people (pp. 175, 177).",
+    "There is no furigana on these documents, as in the real exam (p. ix)."
    ],
    "traps": [
     "The choice is right except one detail: number, time, day or price.",
@@ -1538,5 +1711,85 @@
   "If you lose a line, let it go and catch the next. One missed word rarely decides it.",
   "Spoken forms to know by ear: 〜ちゃう (〜てしまう), 〜とく (〜ておく), 〜てる (〜ている), 〜なきゃ (〜なければ), 〜って (と or という), 〜じゃん (〜じゃないか).",
   "The audio is played once in the exam, so the drill plays it once too. Replay only after you answer, with the script."
+ ],
+ "extra": [
+  {
+   "id": "plan",
+   "part": "Our own advice · not from the book",
+   "ja": "当日の作戦",
+   "en": "The plan for the mock and the exam",
+   "title": "時間配分と解く順番",
+   "book": "",
+   "gist": "新完全マスター gives no minutes: it says to time yourself and decide. This plan is built from your own numbers. Your texts run at about twice the paper's pace, so the aim is not to finish everything. It is to bank the cheap points first and never leave a blank.",
+   "signals": [],
+   "steps": [
+    "言語知識・読解 is one paper of 105 minutes. 問題1 to 6 (kanji and vocab): 15 minutes at most. You know it or you do not, so pick and move.",
+    "問題7 to 9 (grammar): 20 minutes at most. Reading starts by minute 35, whatever is left undone.",
+    "問題14 情報検索 first: jump to the last pages. 8 minutes. It is searching, not reading.",
+    "問題10 short texts: 3 minutes each, 15 in all.",
+    "問題11 mid-length texts: 9 minutes each, 27 in all. Do the underline questions first: they need only the lines around the underline.",
+    "問題12, texts A and B: 8 minutes.",
+    "問題13, the long essay: whatever is left, about 10 minutes. Short of time? Read the last paragraph and answer the main-point question.",
+    "Two minutes before the end: fill every blank with the same number. A blank scores nothing, a guess is right one time in four."
+   ],
+   "tips": [
+    "Write the clock time beside each 問題 as you start it. After the mock, those minutes are your real plan. Log the scores in Progress, under Mock papers.",
+    "When a text's time is up, pick the best choice left and move on. A hard question is worth no more than an easy one somewhere else.",
+    "Jumping to 問題14 means jumping on the answer sheet too. Check the question number every time you mark.",
+    "Read the question before the text, every time. For 問題14, read the choices as well.",
+    "Mark the page as you read: box しかし and つまり, underline the claim endings (〜べきだ, 〜のではないだろうか), draw an arrow from それ back to what it points to.",
+    "An unknown word: do not stop. Guess from the kanji and read on. The question rarely hangs on it.",
+    "Cross out a choice the moment one part of it is wrong. Two usually die fast. Then test the last two against the line in the text.",
+    "The pass line is 90 of 180, with at least 19 of 60 in each of the three sections. Reading needs its 19 whatever else happens.",
+    "聴解 (50 minutes): the audio sets the pace. Use every silence to read the next question's choices.",
+    "聴解: mark an answer at once, even a guess. Thinking about the last question costs you the next one.",
+    "聴解 問題4 has three choices and no thinking time. Name the job of the line (a request, an apology, an invitation), pick, and let it go.",
+    "Between the two papers: eat something, rest your eyes, and do not check answers.",
+    "What the book does fix is the order inside one question. Essays: skim the whole text even for a small question. Practical texts and 情報検索: the question and choices first. 統合理解: the instruction line, then the questions, then the texts (pp. 2-3, 74-75, 147, 161)."
+   ],
+   "traps": [
+    "Ten minutes on one 問題10 text. It is one question.",
+    "Reading the whole of a 情報検索 notice.",
+    "Leaving 問題13 blank because the time ran out.",
+    "Reading one sentence three times. Read on: the next sentence often explains it.",
+    "Changing an answer at the end with no new evidence from the text."
+   ],
+   "q": [],
+   "ex": null
+  },
+  {
+   "id": "traps",
+   "part": "Our own advice · not from the book",
+   "ja": "誤答のパターン",
+   "en": "The traps in the wrong choices",
+   "title": "正解は言い換え、誤答はわな",
+   "book": "",
+   "gist": "The right choice says what the text says in other words. It almost never copies the text. Each wrong choice is built on one of a few patterns: name the pattern and you can cross it out fast. After every answer the drill labels each wrong choice with its trap, and Progress counts the ones you fall for.",
+   "signals": [],
+   "steps": [
+    "Read the question and say what it asks: a reason, a meaning, what それ points to, the main point.",
+    "Find the line in the text that answers it. Put a finger on it.",
+    "Cross out every choice with one wrong part.",
+    "Between the last two, take the one you can point to in the text.",
+    "Expect the right one to use different words from the text. A choice that copies a whole phrase is more often a trap."
+   ],
+   "tips": [
+    "Opposite of the text: the choice turns the meaning round. Check ない, わけではない, 逆に, かえって.",
+    "True, but not the answer: it is in the text, but it answers another question or belongs to another paragraph. Read the question again.",
+    "Not in the text: it sounds sensible, so you agree with it. If you cannot point to the line, cross it out.",
+    "Half right: the first half matches and the end is changed. Read every choice to its last word.",
+    "Right words, wrong owner: the friend's habit given to the writer, A's view given to B, cause and effect swapped. Check who each part belongs to.",
+    "The view the writer rejects: what comes before しかし or after 確かに and もちろん is there to be answered, not agreed with.",
+    "Stronger than the text: the text says かもしれない or とは限らない, and the choice says always, must or never.",
+    "Too narrow: one example or detail offered as the main point.",
+    "Read literally: a figure of speech taken as fact. Ask what the picture stands for.",
+    "問題12, only one text says it: test every choice against A, then against B.",
+    "問題14, fails a condition: list the person's conditions (day, time, age, address) and tick each one off.",
+    "問題14, misses a ※ note: the answer usually turns on an exception, a deadline or an extra fee in the small print."
+   ],
+   "traps": [],
+   "q": [],
+   "ex": null
+  }
  ]
 }

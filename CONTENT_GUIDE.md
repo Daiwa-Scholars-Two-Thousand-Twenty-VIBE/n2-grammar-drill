@@ -520,6 +520,32 @@ Rules:
 }
 ```
 
+
+## Reading notes: the lesson after a text (`content/notes_*.json`)
+
+Each reading text (問題10 to 14) has one note, keyed by the text's id. The app shows it after the text's questions, outside timed sections. Files are validated by `validateNotes` (`node tools/notes.mjs check <file>`), and `tools/bundle.mjs` leaves out a note that is still an empty skeleton.
+
+Make the skeleton first: `node tools/notes.mjs skeleton content/read_r10.json` adds an empty note for every text that has none, with the sentences already split. **Never edit `sents[].s`, `p` or `t`**: they must match the text. If you change a text, change the same words in its note.
+
+```json
+"r10-001": {
+  "shape": "Common view (喜ぶ人は多い) → turn (ところが) → what changed → the writer's point, hedged (実は…のかもしれない)",
+  "sents": [{ "p": 1, "s": "…", "en": "…", "role": "view" }],
+  "hard": [{ "s": "…", "chunks": ["…", "…", "…"], "core": "雑談は 役目を果たしていたのかもしれない", "note": "…" }],
+  "vocab": [{ "w": "果たす", "r": "はたす", "en": "to fulfil (a role)", "at": "果たしていた" }],
+  "qs": [{ "para": [["早く見つける役目", "早く気づかせる働き"]], "trap": ["", "rejected", "notsaid", "half"] }]
+}
+```
+
+- `shape`: one line, at most 170 characters. The skeleton of the text as a chain, quoting the real signal words. It should say where the point sits.
+- `sents[].en`: a faithful translation of that one sentence, not a summary. `role` is one of `topic`, `view` (what others think), `turn`, `claim` (the writer's point; every text needs a `claim` or an `ask`), `reason`, `example`, `restate`, `question`, `ask` (what an email or notice wants done), `fact`.
+- `hard`: the sentences a slow reader gets lost in (1 for 問題10, 1 or 2 for 問題11, one from A and one from B for 問題12, 2 or 3 for 問題13). `chunks` must join back into `s` exactly. `core` is the bare skeleton: topic plus final predicate. `note` (at most 260 characters) says how to unpack it.
+- `vocab`: the words an N3-level reader would not know or would read slowly, in order of appearance. `r` is kana only. Set `at` to the form the text uses when it differs from `w`.
+- `qs[k].para`: 1 to 3 pairs `[words in the text, words in the right choice]`, both word for word, showing how the answer re-words the text. Empty only with a `nopara` reason (notices need none).
+- `qs[k].trap`: `""` for `c[0]`, then one code per wrong choice: `opposite`, `elsewhere` (true, but not the answer), `notsaid`, `half`, `swap` (right words, wrong owner), `rejected` (the view the writer argues against), `extreme`, `narrow`, `literal`, `oneonly` (問題12), `cond` and `note` (問題14). The names and the one-line check for each are in `TRAPS` in `js/app.js`; a test fails if a code has no name there.
+- 問題14 notes hold only `vocab` and `qs`.
+- No em or en dashes in the English.
+
 ## Listening items: 聴解 問題1 to 5 (`type: "l1"` to `"l5"`)
 
 Files: `content/listen_*.json`, each an array, validated by `validateListening`. Answers go to the `listen` store, one record per item (or per question for two-question `l5` items). Audio is made from the script by `tools/build_audio.py`, so the script must read well aloud.

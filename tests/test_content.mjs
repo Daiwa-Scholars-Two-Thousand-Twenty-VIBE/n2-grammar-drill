@@ -3,7 +3,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import path from "node:path";
 import fs from "node:fs";
-import { CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, textFiles, listenFiles, readJSON, validateItems, validateKanji, validateKanjiInfo, validateVocab, validatePassages, validateTexts, validateListening } from "../tools/lib.mjs";
+import { CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, textFiles, listenFiles, readJSON, validateItems, validateKanji, validateKanjiInfo, validateVocab, validatePassages, validateTexts, validateListening, validateNotes, noteFiles, splitSentences, NOTE_TRAPS } from "../tools/lib.mjs";
 
 const catalog = loadCatalog();
 const files = questionFiles();
@@ -134,6 +134,25 @@ test("reading texts validate, and the reading mock has enough of each part", { s
       }
     }
   }
+});
+
+test("sentences split on 。 but not inside quotes or brackets", () => {
+  assert.deepEqual(splitSentences("雨が降った。「早く行きなさい。」と母は言った。なぜだろうか？"), ["雨が降った。", "「早く行きなさい。」と母は言った。", "なぜだろうか？"]);
+  assert.deepEqual(splitSentences("営業部　山口様"), ["営業部　山口様"]);
+});
+
+test("reading notes validate, every text has one, and the app names every trap", { skip: !noteFiles().length && "no reading notes yet" }, () => {
+  const texts = [...textFiles(), ...passageFiles()].flatMap((f) => readJSON(f));
+  const notes = {};
+  const errors = noteFiles().flatMap((f) => {
+    const n = readJSON(f);
+    Object.assign(notes, n);
+    return validateNotes(n, f, texts);
+  });
+  assert.deepEqual(errors, []);
+  assert.deepEqual(texts.map((p) => p.id).filter((id) => !notes[id]), [], "reading texts with no lesson");
+  const app = fs.readFileSync(path.join(CONTENT, "..", "js", "app.js"), "utf8");
+  for (const t of NOTE_TRAPS) assert.match(app, new RegExp(`\\b${t}: \\["`), `js/app.js has no name for the trap "${t}"`);
 });
 
 test("listening items validate, and the listening mock has enough of each part", { skip: !listenFiles().length && "no listening items yet" }, () => {

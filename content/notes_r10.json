@@ -1,0 +1,2580 @@
+{
+ "r10-001": {
+  "shape": "Common view (喜ぶ人は多い) → turn (ところが) → office vs online contrast → writer's hedged claim (実は…のかもしれない)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "在宅勤務が広がり、通勤がなくなったことを喜ぶ人は多い。",
+    "en": "With remote work spreading, many people are glad that commuting is gone.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "私もその一人だ。",
+    "en": "I am one of them.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "s": "ところが、しばらく続けるうちに、仕事の進み方に小さな変化が出てきた。",
+    "en": "However, as I kept it up for a while, a small change appeared in how work progressed.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "s": "以前は、コーヒーを入れながら同僚と話しているうちに、誰が何に困っているかが自然に耳に入り、問題が大きくなる前に手を打つことができた。",
+    "en": "Before, while chatting with colleagues as we made coffee, I would naturally hear who was having trouble with what, and could take steps before a problem grew big.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "s": "オンラインでは、用事がなければ連絡を取らない。",
+    "en": "Online, people do not get in touch unless they have a specific reason.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "s": "そのため、相談が届くのは、たいてい問題が大きくなってからだ。",
+    "en": "Because of that, requests for advice usually arrive only after a problem has already grown large.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "s": "むだだと思われがちな職場の雑談は、実は小さな問題を早く見つける役目を果たしていたのかもしれない。",
+    "en": "Workplace small talk, which tends to be thought of as a waste, may in fact have been playing the role of catching small problems early.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "以前は、コーヒーを入れながら同僚と話しているうちに、誰が何に困っているかが自然に耳に入り、問題が大きくなる前に手を打つことができた。",
+    "chunks": [
+     "以前は、",
+     "コーヒーを入れながら同僚と話しているうちに、",
+     "誰が何に困っているかが",
+     "自然に耳に入り、",
+     "問題が大きくなる前に",
+     "手を打つことができた。"
+    ],
+    "core": "以前は 誰が何に困っているかが耳に入り、手を打つことができた",
+    "note": "Four steps chain together: while chatting over coffee (〜うちに), what colleagues struggled with (誰が何に困っているかが) reached your ears, so you could act (手を打つ) before trouble grew."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "在宅勤務",
+    "r": "ざいたくきんむ",
+    "en": "working from home, remote work"
+   },
+   {
+    "w": "通勤",
+    "r": "つうきん",
+    "en": "commuting to work"
+   },
+   {
+    "w": "ところが",
+    "r": "ところが",
+    "en": "however, yet"
+   },
+   {
+    "w": "同僚",
+    "r": "どうりょう",
+    "en": "colleague"
+   },
+   {
+    "w": "耳に入る",
+    "r": "みみにはいる",
+    "en": "reach one's ears, happen to hear",
+    "at": "耳に入り"
+   },
+   {
+    "w": "手を打つ",
+    "r": "てをうつ",
+    "en": "take steps, take measures"
+   },
+   {
+    "w": "雑談",
+    "r": "ざつだん",
+    "en": "small talk, casual chat"
+   },
+   {
+    "w": "役目を果たす",
+    "r": "やくめをはたす",
+    "en": "play a role, fulfil a function",
+    "at": "役目を果たしていた"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "雑談",
+      "何気ないおしゃべり"
+     ],
+     [
+      "小さな問題を早く見つける",
+      "困りごとに早く気づかせる"
+     ],
+     [
+      "役目を果たしていた",
+      "働きがあった"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "notsaid",
+     "half"
+    ]
+   }
+  ]
+ },
+ "r10-002": {
+  "shape": "Reason (改装工事) → decision (そこで…ずらすことになりました) → Sales's new slot (11時30分から) → exception (なお) and reminder",
+  "sents": [
+   {
+    "p": 1,
+    "s": "営業部の皆さん",
+    "en": "To everyone in the Sales Department,",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "お疲れさまです。",
+    "en": "Thank you for your hard work.",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "総務部の松田です。",
+    "en": "This is Matsuda from General Affairs.",
+    "role": "fact"
+   },
+   {
+    "p": 3,
+    "s": "来月から社員食堂の改装工事が始まり、使える席が半分ほどになります。",
+    "en": "Refurbishment work on the staff canteen starts next month, and usable seats will drop to about half.",
+    "role": "reason"
+   },
+   {
+    "p": 3,
+    "s": "そこで、混雑を避けるため、12月1日から工事が終わる1月末まで、部署ごとに昼休みの時間をずらすことになりました。",
+    "en": "Therefore, to avoid crowding, from 1 December until the end of January when the work finishes, lunch breaks will be staggered by department.",
+    "role": "claim"
+   },
+   {
+    "p": 3,
+    "s": "営業部は、これまでの12時からではなく、11時30分から12時30分までとなります。",
+    "en": "For the Sales Department, instead of starting at 12:00 as before, it will be from 11:30 to 12:30.",
+    "role": "claim"
+   },
+   {
+    "p": 4,
+    "s": "なお、外回りなどで社外にいる方は、これまでどおり予定に合わせて取っていただいてかまいません。",
+    "en": "Note that those who are outside the office on client visits or similar may take their break according to their schedule as before.",
+    "role": "fact"
+   },
+   {
+    "p": 4,
+    "s": "この期間に会議を入れる際は、時間にご注意ください。",
+    "en": "When scheduling meetings during this period, please take care with the time.",
+    "role": "ask"
+   }
+  ],
+  "hard": [
+   {
+    "s": "そこで、混雑を避けるため、12月1日から工事が終わる1月末まで、部署ごとに昼休みの時間をずらすことになりました。",
+    "chunks": [
+     "そこで、",
+     "混雑を避けるため、",
+     "12月1日から",
+     "工事が終わる1月末まで、",
+     "部署ごとに",
+     "昼休みの時間をずらすことになりました。"
+    ],
+    "core": "部署ごとに 昼休みの時間をずらすことになりました",
+    "note": "Purpose (混雑を避けるため) and date range (where 工事が終わる describes 1月末) come first. The core action is ずらすことになりました (it has been decided to stagger)."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "総務部",
+    "r": "そうむぶ",
+    "en": "General Affairs Department"
+   },
+   {
+    "w": "改装",
+    "r": "かいそう",
+    "en": "refurbishment, remodelling"
+   },
+   {
+    "w": "混雑",
+    "r": "こんざつ",
+    "en": "crowding, congestion"
+   },
+   {
+    "w": "避ける",
+    "r": "さける",
+    "en": "avoid"
+   },
+   {
+    "w": "部署",
+    "r": "ぶしょ",
+    "en": "department, section"
+   },
+   {
+    "w": "ずらす",
+    "r": "ずらす",
+    "en": "shift, stagger in time"
+   },
+   {
+    "w": "なお",
+    "r": "なお",
+    "en": "in addition, please note that"
+   },
+   {
+    "w": "外回り",
+    "r": "そとまわり",
+    "en": "outside sales, field visits"
+   },
+   {
+    "w": "際",
+    "r": "さい",
+    "en": "when, on the occasion of"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "12月1日から工事が終わる1月末まで",
+      "工事の間"
+     ],
+     [
+      "12時からではなく、11時30分から",
+      "いつもより30分早く始まる"
+     ]
+    ],
+    "trap": [
+     "",
+     "extreme",
+     "notsaid",
+     "elsewhere"
+    ]
+   }
+  ]
+ },
+ "r10-003": {
+  "shape": "Episode (手紙の束) → turn (それなのに) → time spent vs email → metaphor claim (箱のようなもの)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "先日、部屋の片づけをしていたら、祖母からもらった手紙の束が出てきました。",
+    "en": "The other day, while tidying my room, a bundle of letters from my grandmother turned up.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "どれも短いもので、天気や庭の花のことが書いてあるだけです。",
+    "en": "Every one of them is short, with only the weather or the flowers in the garden written in them.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "s": "それなのに、読み返していると、祖母が机に向かってペンを選び、言葉を探している姿が目に浮かびます。",
+    "en": "Even so, as I reread them, an image of my grandmother sitting at her desk, choosing a pen and searching for words, comes to mind.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "s": "メールなら数秒で送れる内容に、祖母はきっと何十分もかけていたのでしょう。",
+    "en": "My grandmother must have spent tens of minutes on content that could be sent in a few seconds by email.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "s": "手書きの手紙は、書いた人の時間をそのまま閉じ込めた箱のようなものだと思います。",
+    "en": "I think a handwritten letter is like a box that seals in the writer's time just as it was.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "s": "開くたびに、その時間が少しずつ流れ出してくるのです。",
+    "en": "Each time you open it, that time flows out little by little.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "それなのに、読み返していると、祖母が机に向かってペンを選び、言葉を探している姿が目に浮かびます。",
+    "chunks": [
+     "それなのに、",
+     "読み返していると、",
+     "祖母が机に向かってペンを選び、",
+     "言葉を探している",
+     "姿が",
+     "目に浮かびます。"
+    ],
+    "core": "姿が 目に浮かびます",
+    "note": "Everything from 祖母が to 言葉を探している is one long clause describing 姿 (figure, image). That whole image is the subject (が) of 目に浮かびます (comes to mind)."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "先日",
+    "r": "せんじつ",
+    "en": "the other day"
+   },
+   {
+    "w": "束",
+    "r": "たば",
+    "en": "bundle, sheaf"
+   },
+   {
+    "w": "それなのに",
+    "r": "それなのに",
+    "en": "even so, despite that"
+   },
+   {
+    "w": "読み返す",
+    "r": "よみかえす",
+    "en": "reread",
+    "at": "読み返して"
+   },
+   {
+    "w": "目に浮かぶ",
+    "r": "めにうかぶ",
+    "en": "come to mind, picture vividly",
+    "at": "目に浮かびます"
+   },
+   {
+    "w": "手書き",
+    "r": "てがき",
+    "en": "handwritten, handwriting"
+   },
+   {
+    "w": "閉じ込める",
+    "r": "とじこめる",
+    "en": "lock in, seal inside",
+    "at": "閉じ込めた"
+   },
+   {
+    "w": "流れ出す",
+    "r": "ながれだす",
+    "en": "flow out",
+    "at": "流れ出して"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "開くたびに",
+      "手紙を読むと"
+     ],
+     [
+      "時間をそのまま閉じ込めた",
+      "かけた手間や思い"
+     ],
+     [
+      "流れ出してくる",
+      "伝わってくる"
+     ]
+    ],
+    "trap": [
+     "",
+     "literal",
+     "opposite",
+     "elsewhere"
+    ]
+   }
+  ]
+ },
+ "r10-004": {
+  "shape": "Closure notice (改修工事のため…休館) → services stopped → exception (ただし…返却ポスト) → CD/DVD warning & branch info",
+  "sents": [
+   {
+    "p": 1,
+    "s": "みどり台市立図書館は、建物の改修工事のため、2月1日（月）から3月31日（水）まで休館いたします。",
+    "en": "Midoridai Municipal Library will be closed from Monday 1 February to Wednesday 31 March for building refurbishment work.",
+    "role": "topic"
+   },
+   {
+    "p": 2,
+    "s": "休館中は、本の貸し出し・返却・予約はできません。",
+    "en": "During the closure, lending, returning and reserving books will not be available.",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "ただし、本の返却については、正面入口の横にある返却ポストをご利用いただけます。",
+    "en": "However, for returning books, you may use the return box beside the main entrance.",
+    "role": "turn"
+   },
+   {
+    "p": 2,
+    "s": "CDやDVDは、ポストに入れると傷がつくおそれがありますので、休館前にカウンターへお返しください。",
+    "en": "As CDs and DVDs risk getting scratched if placed in the box, please return them to the counter before the closure.",
+    "role": "ask"
+   },
+   {
+    "p": 3,
+    "s": "休館中に本を借りたい方は、駅前分室をご利用ください。",
+    "en": "Those who wish to borrow books during the closure, please use the Station Branch.",
+    "role": "ask"
+   },
+   {
+    "p": 3,
+    "s": "4月1日（木）から、通常どおり開館いたします。",
+    "en": "The library will open as usual from Thursday 1 April.",
+    "role": "fact"
+   }
+  ],
+  "hard": [
+   {
+    "s": "CDやDVDは、ポストに入れると傷がつくおそれがありますので、休館前にカウンターへお返しください。",
+    "chunks": [
+     "CDやDVDは、",
+     "ポストに入れると",
+     "傷がつくおそれがありますので、",
+     "休館前に",
+     "カウンターへお返しください。"
+    ],
+    "core": "CDやDVDは 休館前にカウンターへお返しください",
+    "note": "〜と marks the condition (if put in the box), and 傷がつくおそれがある is formal N2 for 'there is a risk of getting scratched'. ので links that risk to the polite request お返しください."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "改修",
+    "r": "かいしゅう",
+    "en": "repair, refurbishment"
+   },
+   {
+    "w": "休館",
+    "r": "きゅうかん",
+    "en": "temporary closure of a public building"
+   },
+   {
+    "w": "貸し出し",
+    "r": "かしだし",
+    "en": "lending, checkout"
+   },
+   {
+    "w": "返却",
+    "r": "へんきゃく",
+    "en": "return of borrowed items"
+   },
+   {
+    "w": "ただし",
+    "r": "ただし",
+    "en": "however, provided that"
+   },
+   {
+    "w": "正面",
+    "r": "しょうめん",
+    "en": "front, main side"
+   },
+   {
+    "w": "おそれがある",
+    "r": "おそれがある",
+    "en": "there is a risk that",
+    "at": "おそれがあります"
+   },
+   {
+    "w": "分室",
+    "r": "ぶんしつ",
+    "en": "branch office, annex"
+   },
+   {
+    "w": "通常どおり",
+    "r": "つうじょうどおり",
+    "en": "as usual, normally"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "休館中は",
+      "休館中でも"
+     ],
+     [
+      "返却ポストをご利用いただけます",
+      "返すことができる"
+     ]
+    ],
+    "trap": [
+     "",
+     "half",
+     "opposite",
+     "notsaid"
+    ]
+   }
+  ]
+ },
+ "r10-005": {
+  "shape": "Personal habit (画面 vs 印刷) → screen drawback → turn to paper strengths (一方) → summary claim (ざっと…画面、じっくり…紙)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "仕事の資料はほとんど画面で読むようになったが、大事な文書だけは今でも印刷している。",
+    "en": "I have come to read most work materials on screen, but I still print out only the important documents.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "画面だと、どうしても目が文字の上をすべっていく。",
+    "en": "On a screen, my eyes inevitably skim over the words.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "s": "次々にスクロールできるので、早く先へ進みたくなるのだ。",
+    "en": "Because you can scroll endlessly, you feel like rushing ahead.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "s": "一方、紙の場合は、ページの厚みで今どのあたりを読んでいるかが分かり、気になった箇所に戻るのも簡単だ。",
+    "en": "On the other hand, with paper, you can tell roughly where you are from the thickness of the pages, and it is also easy to go back to a part that caught your attention.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "s": "余白に書き込みをしながら読めば、内容がより深く頭に残る。",
+    "en": "If you read while writing notes in the margins, the content stays more deeply in your mind.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "s": "情報にざっと目を通すなら画面、じっくり考えるなら紙。",
+    "en": "Screen for skimming through information quickly; paper for thinking carefully.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "s": "私はそう使い分けている。",
+    "en": "That is how I choose between the two.",
+    "role": "restate"
+   }
+  ],
+  "hard": [
+   {
+    "s": "一方、紙の場合は、ページの厚みで今どのあたりを読んでいるかが分かり、気になった箇所に戻るのも簡単だ。",
+    "chunks": [
+     "一方、",
+     "紙の場合は、",
+     "ページの厚みで",
+     "今どのあたりを読んでいるかが分かり、",
+     "気になった箇所に戻るのも",
+     "簡単だ。"
+    ],
+    "core": "紙の場合は 分かり、戻るのも簡単だ",
+    "note": "一方 signals the contrast with screens. Two benefits of paper are linked by 分かり: an embedded question (今どのあたりを読んでいるかが) before 分かり, then 気になった箇所に戻るのも as the subject of 簡単だ."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "文書",
+    "r": "ぶんしょ",
+    "en": "document"
+   },
+   {
+    "w": "どうしても",
+    "r": "どうしても",
+    "en": "inevitably, no matter what"
+   },
+   {
+    "w": "一方",
+    "r": "いっぽう",
+    "en": "on the other hand"
+   },
+   {
+    "w": "厚み",
+    "r": "あつみ",
+    "en": "thickness"
+   },
+   {
+    "w": "箇所",
+    "r": "かしょ",
+    "en": "passage, spot, point"
+   },
+   {
+    "w": "余白",
+    "r": "よはく",
+    "en": "margin, blank space"
+   },
+   {
+    "w": "ざっと",
+    "r": "ざっと",
+    "en": "roughly, quickly, at a glance"
+   },
+   {
+    "w": "目を通す",
+    "r": "めをとおす",
+    "en": "skim through, look over"
+   },
+   {
+    "w": "使い分ける",
+    "r": "つかいわける",
+    "en": "use differently according to purpose",
+    "at": "使い分けて"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "ざっと目を通すなら",
+      "急いで読むときは"
+     ],
+     [
+      "じっくり考えるなら",
+      "考えながら読むときは"
+     ]
+    ],
+    "trap": [
+     "",
+     "swap",
+     "notsaid",
+     "half"
+    ]
+   }
+  ]
+ },
+ "r10-006": {
+  "shape": "Event (宅配便が届きました) → why not received (本人のサインが必要) → action needed (18時までに電話 or 明日以降を指定) → sender's schedule",
+  "sents": [
+   {
+    "p": 1,
+    "s": "佐藤さん",
+    "en": "Sato-san,",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "11時ごろ、佐藤さんあての宅配便が届きました。",
+    "en": "Around 11:00, a courier parcel addressed to you arrived.",
+    "role": "topic"
+   },
+   {
+    "p": 2,
+    "s": "代わりに受け取ろうとしたのですが、本人のサインが必要な荷物だそうで、配達の方が持ち帰ってしまいました。",
+    "en": "I tried to receive it on your behalf, but apparently it is a parcel requiring your own signature, so the delivery person took it back.",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "不在連絡票を机の上に置いておきます。",
+    "en": "I have left the missed-delivery slip on your desk.",
+    "role": "fact"
+   },
+   {
+    "p": 3,
+    "s": "今日中に届けてもらうには、18時までに票にある番号へ電話する必要があるそうです。",
+    "en": "To have it delivered today, you apparently need to phone the number on the slip by 18:00.",
+    "role": "ask"
+   },
+   {
+    "p": 3,
+    "s": "今日が難しければ、明日以降の日時を指定することもできるとのことでした。",
+    "en": "They also said that if today is difficult, you can specify a date and time from tomorrow onwards.",
+    "role": "fact"
+   },
+   {
+    "p": 3,
+    "s": "私は午後から外出して、そのまま直帰しますので、よろしくお願いします。",
+    "en": "I will be out from the afternoon and go straight home from there, so thank you in advance.",
+    "role": "fact"
+   },
+   {
+    "p": 4,
+    "s": "山下　11:20",
+    "en": "Yamashita, 11:20",
+    "role": "fact"
+   }
+  ],
+  "hard": [
+   {
+    "s": "代わりに受け取ろうとしたのですが、本人のサインが必要な荷物だそうで、配達の方が持ち帰ってしまいました。",
+    "chunks": [
+     "代わりに受け取ろうとしたのですが、",
+     "本人のサインが必要な荷物だそうで、",
+     "配達の方が",
+     "持ち帰ってしまいました。"
+    ],
+    "core": "受け取ろうとしたのですが、配達の方が持ち帰ってしまいました",
+    "note": "〜ようとした means 'tried to' (receive it instead). 本人のサインが必要な describes 荷物, and だそうで marks hearsay from the courier, explaining why the courier took it back (持ち帰ってしまう)."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "宅配便",
+    "r": "たくはいびん",
+    "en": "courier delivery, parcel delivery"
+   },
+   {
+    "w": "本人",
+    "r": "ほんにん",
+    "en": "the person themselves"
+   },
+   {
+    "w": "持ち帰る",
+    "r": "もちかえる",
+    "en": "take back, carry back",
+    "at": "持ち帰って"
+   },
+   {
+    "w": "不在連絡票",
+    "r": "ふざいれんらくひょう",
+    "en": "missed-delivery notice slip"
+   },
+   {
+    "w": "今日中",
+    "r": "きょうじゅう",
+    "en": "within today, by the end of today"
+   },
+   {
+    "w": "指定する",
+    "r": "していする",
+    "en": "specify, designate"
+   },
+   {
+    "w": "とのこと",
+    "r": "とのこと",
+    "en": "they said that, according to them"
+   },
+   {
+    "w": "直帰する",
+    "r": "ちょっきする",
+    "en": "go straight home from an outside visit",
+    "at": "直帰します"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "票にある番号へ電話する",
+      "配達会社に電話して"
+     ],
+     [
+      "届けてもらう",
+      "届け直してもらう"
+     ],
+     [
+      "日時を指定する",
+      "日時を決める"
+     ]
+    ],
+    "trap": [
+     "",
+     "opposite",
+     "notsaid",
+     "notsaid"
+    ]
+   }
+  ]
+ },
+ "r10-007": {
+  "shape": "Puzzle (なぜそこまでして待つのか) → first guess (味が特別なのだろうか) → turn (しかし…考えが変わった) → experience → claim (店に入る前から始まっている楽しみ)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "人気の店の前には、一時間以上の行列ができることも珍しくない。",
+    "en": "It is not unusual for a queue of over an hour to form outside a popular shop.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "並ぶのが苦手な私は、なぜそこまでして待つのかと、ずっと不思議に思っていた。",
+    "en": "Not being good at queuing, I had always wondered why people would go that far to wait.",
+    "role": "question"
+   },
+   {
+    "p": 1,
+    "s": "よほど味が特別なのだろうか。",
+    "en": "Is the taste really that special?",
+    "role": "question"
+   },
+   {
+    "p": 2,
+    "s": "しかし、友人に誘われて実際に並んでみて、考えが変わった。",
+    "en": "However, when a friend invited me and I actually queued up, my view changed.",
+    "role": "turn"
+   },
+   {
+    "p": 2,
+    "s": "前後の人と「まだかかりそうですね」と言葉を交わしながら、少しずつ入口に近づいていく。",
+    "en": "Exchanging words like 'Looks like it will still take a while' with the people in front and behind, you gradually get closer to the entrance.",
+    "role": "example"
+   },
+   {
+    "p": 2,
+    "s": "待つ時間がそのまま、これから食べるものへの期待をふくらませていくのだ。",
+    "en": "The waiting time itself builds up anticipation for what you are about to eat.",
+    "role": "reason"
+   },
+   {
+    "p": 2,
+    "s": "行列とは、店に入る前から始まっている楽しみなのだろう。",
+    "en": "A queue must be a pleasure that has already begun before you even enter the shop.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "待つ時間がそのまま、これから食べるものへの期待をふくらませていくのだ。",
+    "chunks": [
+     "待つ時間が",
+     "そのまま、",
+     "これから食べるものへの",
+     "期待を",
+     "ふくらませていくのだ。"
+    ],
+    "core": "待つ時間が 期待をふくらませていくのだ",
+    "note": "待つ時間が is the subject. そのまま means 'directly, as it is'. これから食べるものへの describes 期待 (anticipation for what you will eat), and 〜ていく shows it growing step by step."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "行列",
+    "r": "ぎょうれつ",
+    "en": "queue, line of people"
+   },
+   {
+    "w": "珍しい",
+    "r": "めずらしい",
+    "en": "unusual, rare",
+    "at": "珍しくない"
+   },
+   {
+    "w": "そこまでして",
+    "r": "そこまでして",
+    "en": "going that far to"
+   },
+   {
+    "w": "不思議に思う",
+    "r": "ふしぎにおもう",
+    "en": "wonder, find strange",
+    "at": "不思議に思っていた"
+   },
+   {
+    "w": "よほど",
+    "r": "よほど",
+    "en": "very much, to a great extent"
+   },
+   {
+    "w": "言葉を交わす",
+    "r": "ことばをかわす",
+    "en": "exchange words, chat",
+    "at": "言葉を交わし"
+   },
+   {
+    "w": "期待",
+    "r": "きたい",
+    "en": "anticipation, expectation"
+   },
+   {
+    "w": "ふくらませる",
+    "r": "ふくらませる",
+    "en": "swell, build up",
+    "at": "ふくらませて"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "待つ時間",
+      "店の前で待つ時間"
+     ],
+     [
+      "店に入る前から始まっている楽しみ",
+      "食事の楽しみの一部になっている"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "notsaid",
+     "narrow"
+    ]
+   }
+  ]
+ },
+ "r10-008": {
+  "shape": "One-off change (今週に限り、14時から) → reason (急な来客) → same room & looser deadline (なお) → reply request (明日中にご連絡ください)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "開発チームの皆さま",
+    "en": "To everyone on the Development Team,",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "お疲れさまです。",
+    "en": "Thank you for your hard work.",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "企画部の大野です。",
+    "en": "This is Ono from the Planning Department.",
+    "role": "fact"
+   },
+   {
+    "p": 3,
+    "s": "毎週木曜日10時からの定例会議ですが、今週に限り、14時からに変更させてください。",
+    "en": "Regarding our regular meeting every Thursday from 10:00, for this week only, please allow us to move it to 14:00.",
+    "role": "ask"
+   },
+   {
+    "p": 3,
+    "s": "午前中に急な来客の予定が入ったためです。",
+    "en": "This is because an urgent visitor was scheduled for the morning.",
+    "role": "reason"
+   },
+   {
+    "p": 3,
+    "s": "場所はいつもの第2会議室のままです。",
+    "en": "The venue remains Meeting Room 2 as usual.",
+    "role": "fact"
+   },
+   {
+    "p": 4,
+    "s": "なお、資料はいつも前日までに共有フォルダに入れていただいていますが、今回は開始が遅くなりますので、当日の12時まででかまいません。",
+    "en": "Please note that although we usually ask you to put materials in the shared folder by the day before, as we are starting later this time, by 12:00 on the day is fine.",
+    "role": "fact"
+   },
+   {
+    "p": 4,
+    "s": "時間の変更でご都合が悪くなる方は、明日中にご連絡ください。",
+    "en": "If the time change makes it inconvenient for you, please contact me by the end of tomorrow.",
+    "role": "ask"
+   }
+  ],
+  "hard": [
+   {
+    "s": "なお、資料はいつも前日までに共有フォルダに入れていただいていますが、今回は開始が遅くなりますので、当日の12時まででかまいません。",
+    "chunks": [
+     "なお、",
+     "資料はいつも前日までに",
+     "共有フォルダに入れていただいていますが、",
+     "今回は開始が遅くなりますので、",
+     "当日の12時までで",
+     "かまいません。"
+    ],
+    "core": "今回は 当日の12時まででかまいません",
+    "note": "が contrasts the usual rule (いつも前日までに…入れていただいています, polite for 'have you upload') with this week's exception (今回は). ので gives the reason, and 〜まででかまいません means 'by 12:00 is fine'."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "企画部",
+    "r": "きかくぶ",
+    "en": "Planning Department"
+   },
+   {
+    "w": "定例",
+    "r": "ていれい",
+    "en": "regular, routine"
+   },
+   {
+    "w": "に限り",
+    "r": "にかぎり",
+    "en": "only for, limited to"
+   },
+   {
+    "w": "変更",
+    "r": "へんこう",
+    "en": "change, alteration"
+   },
+   {
+    "w": "来客",
+    "r": "らいきゃく",
+    "en": "visitor, guest"
+   },
+   {
+    "w": "共有",
+    "r": "きょうゆう",
+    "en": "shared, sharing"
+   },
+   {
+    "w": "当日",
+    "r": "とうじつ",
+    "en": "the day itself, that day"
+   },
+   {
+    "w": "都合が悪い",
+    "r": "つごうがわるい",
+    "en": "inconvenient, unable to attend",
+    "at": "都合が悪くなる"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "今週に限り、14時からに変更",
+      "今週の会議は午後に行う"
+     ],
+     [
+      "ご都合が悪くなる方は",
+      "出られない人は"
+     ],
+     [
+      "ご連絡ください",
+      "知らせてほしい"
+     ]
+    ],
+    "trap": [
+     "",
+     "extreme",
+     "half",
+     "opposite"
+    ]
+   }
+  ]
+ },
+ "r10-009": {
+  "shape": "Adult fear of failure → concession (確かに) → turn with guitar example (しかし) → why it worked (〜てはじめて) → soft claim (〜のではないでしょうか)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "大人になってから何かを習い始めると、失敗するのが怖くなります。",
+    "en": "When you start learning something as an adult, you become afraid of failing.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "人前で間違えるのは恥ずかしいですし、時間をむだにしたくないという気持ちもあるでしょう。",
+    "en": "Making mistakes in front of others is embarrassing, and there is probably also a wish not to waste time.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "s": "確かに、うまくいく方法を先に調べておけば、遠回りをせずにすみます。",
+    "en": "Certainly, if you look up a method that works beforehand, you can get by without taking detours.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "しかし、私がギターを習ったとき、一番上達したのは、思いきり弾いて何度も間違えた後でした。",
+    "en": "However, when I learnt the guitar, the time I improved most was after playing freely and making mistakes again and again.",
+    "role": "turn"
+   },
+   {
+    "p": 2,
+    "s": "どこで指が止まるのかを体で知ってはじめて、何を練習すればいいのかが分かったのです。",
+    "en": "Only after my body learnt where my fingers stopped did I understand what I needed to practise.",
+    "role": "reason"
+   },
+   {
+    "p": 2,
+    "s": "失敗を避けてばかりいては、自分の弱いところに気づく機会もなくなってしまうのではないでしょうか。",
+    "en": "If you do nothing but avoid mistakes, surely you will also lose the chance to notice your weak points?",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "どこで指が止まるのかを体で知ってはじめて、何を練習すればいいのかが分かったのです。",
+    "chunks": [
+     "どこで指が止まるのかを",
+     "体で知ってはじめて、",
+     "何を練習すればいいのかが",
+     "分かったのです。"
+    ],
+    "core": "体で知ってはじめて、分かったのです",
+    "note": "Two embedded questions frame the sentence: どこで指が止まるのかを is the object of 知る, and 何を練習すればいいのかが is the subject of 分かる. 〜てはじめて means 'only after doing X did Y happen'."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "人前",
+    "r": "ひとまえ",
+    "en": "in front of others, in public"
+   },
+   {
+    "w": "確かに",
+    "r": "たしかに",
+    "en": "certainly, admittedly"
+   },
+   {
+    "w": "遠回り",
+    "r": "とおまわり",
+    "en": "detour, taking the long way round"
+   },
+   {
+    "w": "せずにすむ",
+    "r": "せずにすむ",
+    "en": "get by without doing",
+    "at": "せずにすみます"
+   },
+   {
+    "w": "上達する",
+    "r": "じょうたつする",
+    "en": "improve, become skilled",
+    "at": "上達した"
+   },
+   {
+    "w": "思いきり",
+    "r": "おもいきり",
+    "en": "freely, boldly, without holding back"
+   },
+   {
+    "w": "避ける",
+    "r": "さける",
+    "en": "avoid",
+    "at": "避けて"
+   },
+   {
+    "w": "機会",
+    "r": "きかい",
+    "en": "opportunity, chance"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "何度も間違えた",
+      "失敗することで"
+     ],
+     [
+      "自分の弱いところに気づく",
+      "自分に足りないものが分かり"
+     ],
+     [
+      "一番上達した",
+      "上達につながる"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "notsaid",
+     "narrow"
+    ]
+   }
+  ]
+ },
+ "r10-010": {
+  "shape": "Water-cut notice (給水設備の点検のため) → date & what stops → prep request (ご用意ください) → no need to stay home (なお) → post-work run-water instruction",
+  "sents": [
+   {
+    "p": 1,
+    "s": "さくら台ハイツ　居住者の皆さまへ",
+    "en": "To all residents of Sakuradai Heights,",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "給水設備の点検のため、下記のとおり断水いたします。",
+    "en": "Due to an inspection of the water supply equipment, the water will be shut off as detailed below.",
+    "role": "topic"
+   },
+   {
+    "p": 3,
+    "s": "日時：11月18日（水）10時〜15時",
+    "en": "Date and time: Wednesday 18 November, 10:00 to 15:00",
+    "role": "fact"
+   },
+   {
+    "p": 4,
+    "s": "断水中は、台所・洗面所・浴室の水が出ません。",
+    "en": "During the water cut, water will not run in the kitchen, washbasin or bathroom.",
+    "role": "fact"
+   },
+   {
+    "p": 4,
+    "s": "トイレは、タンクにたまっている水で一回だけ流せます。",
+    "en": "The toilet can be flushed once only using the water stored in the cistern.",
+    "role": "fact"
+   },
+   {
+    "p": 4,
+    "s": "必要な水は、前日までにご用意ください。",
+    "en": "Please prepare any water you need by the day before.",
+    "role": "ask"
+   },
+   {
+    "p": 5,
+    "s": "なお、点検は各部屋に入らずに行いますので、ご在宅いただく必要はありません。",
+    "en": "Please note that the inspection will be carried out without entering individual flats, so you do not need to be at home.",
+    "role": "fact"
+   },
+   {
+    "p": 5,
+    "s": "点検の後、しばらく水がにごることがありますが、その場合は、透明になるまで数分間水を出してからお使いください。",
+    "en": "After the inspection, the water may be cloudy for a while; in that case, please run the water for a few minutes until it becomes clear before using it.",
+    "role": "ask"
+   },
+   {
+    "p": 6,
+    "s": "管理組合",
+    "en": "Building Management Association",
+    "role": "fact"
+   }
+  ],
+  "hard": [
+   {
+    "s": "点検の後、しばらく水がにごることがありますが、その場合は、透明になるまで数分間水を出してからお使いください。",
+    "chunks": [
+     "点検の後、",
+     "しばらく水がにごることがありますが、",
+     "その場合は、",
+     "透明になるまで",
+     "数分間水を出してから",
+     "お使いください。"
+    ],
+    "core": "その場合は 水を出してからお使いください",
+    "note": "〜ことがある means 'may sometimes happen'. その場合は points back to cloudy water. Inside the instruction, 透明になるまで sets the goal and 〜てから sets the order: run the water first, then use it."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "居住者",
+    "r": "きょじゅうしゃ",
+    "en": "resident, occupant"
+   },
+   {
+    "w": "給水設備",
+    "r": "きゅうすいせつび",
+    "en": "water supply equipment"
+   },
+   {
+    "w": "点検",
+    "r": "てんけん",
+    "en": "inspection, check"
+   },
+   {
+    "w": "下記のとおり",
+    "r": "かきのとおり",
+    "en": "as stated below"
+   },
+   {
+    "w": "断水",
+    "r": "だんすい",
+    "en": "water cut, suspension of water supply"
+   },
+   {
+    "w": "浴室",
+    "r": "よくしつ",
+    "en": "bathroom"
+   },
+   {
+    "w": "在宅",
+    "r": "ざいたく",
+    "en": "being at home"
+   },
+   {
+    "w": "にごる",
+    "r": "にごる",
+    "en": "become cloudy, become murky"
+   },
+   {
+    "w": "管理組合",
+    "r": "かんりくみあい",
+    "en": "building management association"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "ご在宅いただく必要はありません",
+      "出かけていても"
+     ],
+     [
+      "各部屋に入らずに行います",
+      "作業は問題なく行われる"
+     ]
+    ],
+    "trap": [
+     "",
+     "opposite",
+     "half",
+     "notsaid"
+    ]
+   }
+  ]
+ },
+ "r10-011": {
+  "shape": "Habit while living alone (毎晩のように通っていた) → real reason (一言を聞きたかったからだ) → not just a shop → hedged claim (人の寂しさも支えているのかもしれない)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "一人暮らしを始めたころ、毎晩のように近所のコンビニに通っていた。",
+    "en": "Around the time I started living alone, I went to the local convenience store almost every night.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "買う物はたいてい決まっていて、弁当と飲み物ぐらいだ。",
+    "en": "What I bought was usually the same, just a bento and a drink.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "s": "それでも足が向いたのは、店員さんの「いらっしゃいませ」や「温めますか」という一言を聞きたかったからだと、今になって思う。",
+    "en": "Looking back now, I think the reason my feet still took me there was that I wanted to hear a brief word from the staff, like 'Welcome' or 'Would you like this heated up?'",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "s": "誰とも話さずに一日が終わりそうな日でも、そこへ行けば、少なくとも一度は声をかけてもらえる。",
+    "en": "Even on days when the day looked set to end without my speaking to anyone, if I went there, someone would speak to me at least once.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "s": "あの明るい店は、私にとってただの店ではなかった。",
+    "en": "That brightly lit shop was not just an ordinary shop to me.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "s": "便利さを売っているように見えるコンビニは、人の寂しさも支えているのかもしれない。",
+    "en": "Convenience stores, which appear to sell convenience, may also be supporting people in their loneliness.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "それでも足が向いたのは、店員さんの「いらっしゃいませ」や「温めますか」という一言を聞きたかったからだと、今になって思う。",
+    "chunks": [
+     "それでも足が向いたのは、",
+     "店員さんの「いらっしゃいませ」や「温めますか」という",
+     "一言を聞きたかったからだと、",
+     "今になって思う。"
+    ],
+    "core": "足が向いたのは 聞きたかったからだと 思う",
+    "note": "〜のは〜からだ ('the reason X was Y') is wrapped inside 〜と今になって思う ('I realise only now'). Everything between 店員さんの and という describes 一言 (a brief word)."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "毎晩のように",
+    "r": "まいばんのように",
+    "en": "almost every night"
+   },
+   {
+    "w": "足が向く",
+    "r": "あしがむく",
+    "en": "feel drawn to go, find oneself heading to",
+    "at": "足が向いた"
+   },
+   {
+    "w": "一言",
+    "r": "ひとこと",
+    "en": "a brief word, a short remark"
+   },
+   {
+    "w": "今になって",
+    "r": "いまになって",
+    "en": "now, looking back now"
+   },
+   {
+    "w": "少なくとも",
+    "r": "すくなくとも",
+    "en": "at least"
+   },
+   {
+    "w": "声をかける",
+    "r": "こえをかける",
+    "en": "speak to, greet",
+    "at": "声をかけて"
+   },
+   {
+    "w": "支える",
+    "r": "ささえる",
+    "en": "support, sustain",
+    "at": "支えている"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "誰とも話さずに一日が終わりそうな日でも",
+      "ほかに話す人のいない日でも"
+     ],
+     [
+      "声をかけてもらえる",
+      "店員との短いやり取りがあった"
+     ]
+    ],
+    "trap": [
+     "",
+     "notsaid",
+     "rejected",
+     "extreme"
+    ]
+   }
+  ]
+ },
+ "r10-012": {
+  "shape": "Request (担当していただけないでしょうか) → why usual teacher cannot (海外出張) → who recommended recipient (部長にご相談したところ…挙げてくださいました) → date & reply ask",
+  "sents": [
+   {
+    "p": 1,
+    "s": "営業部　山口様",
+    "en": "To Yamaguchi-sama, Sales Department,",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "お疲れさまです。",
+    "en": "Thank you for your hard work.",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "人事部の木村です。",
+    "en": "This is Kimura from Human Resources.",
+    "role": "fact"
+   },
+   {
+    "p": 3,
+    "s": "来年4月の新入社員研修で、「お客様との話し方」の時間を担当していただけないでしょうか。",
+    "en": "At next April's new-employee training, could you take charge of the 'How to Speak with Clients' session?",
+    "role": "ask"
+   },
+   {
+    "p": 3,
+    "s": "例年は営業部の田中部長にお願いしているのですが、今回は海外出張と重なってしまうとのことでした。",
+    "en": "Normally we ask Manager Tanaka of Sales, but we were told this time it clashes with an overseas business trip.",
+    "role": "reason"
+   },
+   {
+    "p": 3,
+    "s": "そこで部長にご相談したところ、現場の経験が豊富な山口さんが適任ではないかと、お名前を挙げてくださいました。",
+    "en": "So when I consulted the manager, he put forward your name, saying that with your rich field experience you would be the right person for the role.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "日時は4月8日（木）の午後、1時間ほどの予定です。",
+    "en": "The date and time are scheduled for the afternoon of Thursday 8 April, for about one hour.",
+    "role": "fact"
+   },
+   {
+    "p": 4,
+    "s": "お引き受けいただける場合は、今月中にお返事をいただけますと幸いです。",
+    "en": "If you are able to accept, I would be grateful for your reply within this month.",
+    "role": "ask"
+   }
+  ],
+  "hard": [
+   {
+    "s": "そこで部長にご相談したところ、現場の経験が豊富な山口さんが適任ではないかと、お名前を挙げてくださいました。",
+    "chunks": [
+     "そこで",
+     "部長にご相談したところ、",
+     "現場の経験が豊富な山口さんが",
+     "適任ではないかと、",
+     "お名前を挙げてくださいました。"
+    ],
+    "core": "（部長が）お名前を挙げてくださいました",
+    "note": "Keigo hides the subject. 〜たところ means 'when I consulted the manager', and 〜てくださいました shows a superior did this for the writer (Kimura), so Manager Tanaka is the one who named Yamaguchi."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "人事部",
+    "r": "じんじぶ",
+    "en": "Human Resources Department"
+   },
+   {
+    "w": "研修",
+    "r": "けんしゅう",
+    "en": "training, staff seminar"
+   },
+   {
+    "w": "担当する",
+    "r": "たんとうする",
+    "en": "be in charge of, handle",
+    "at": "担当して"
+   },
+   {
+    "w": "例年",
+    "r": "れいねん",
+    "en": "normal year, usually each year"
+   },
+   {
+    "w": "重なる",
+    "r": "かさなる",
+    "en": "overlap, clash with",
+    "at": "重なって"
+   },
+   {
+    "w": "現場",
+    "r": "げんば",
+    "en": "the field, front line"
+   },
+   {
+    "w": "豊富",
+    "r": "ほうふ",
+    "en": "rich, abundant"
+   },
+   {
+    "w": "適任",
+    "r": "てきにん",
+    "en": "well suited, the right person for a role"
+   },
+   {
+    "w": "引き受ける",
+    "r": "ひきうける",
+    "en": "accept, take on",
+    "at": "引き受け"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "例年は",
+      "いつもは"
+     ],
+     [
+      "田中部長にお願いしている",
+      "講師を務めている田中部長"
+     ]
+    ],
+    "trap": [
+     "",
+     "swap",
+     "swap",
+     "notsaid"
+    ]
+   }
+  ]
+ },
+ "r10-013": {
+  "shape": "Parent habit (つい何かを与えたくなる) → turn with childhood memory (だが) → why boredom sparked play → claim (〜になりかねない / 待つことを覚えるべきではないか)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "子どもに「つまらない」と言われると、親はつい何かを与えたくなる。",
+    "en": "When a child says 'I'm bored', parents tend to feel like giving them something without thinking.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "動画を見せたり、習い事を増やしたりすれば、その場は静かになるだろう。",
+    "en": "If you show them videos or add more lessons, they will probably quieten down for the moment.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "だが、自分の子ども時代を振り返ると、空き箱で町を作ったり、庭で虫を探したりしたのは、たいてい何もすることがない午後だった。",
+    "en": "However, looking back on my own childhood, the times I built towns from empty boxes or hunted for insects in the garden were mostly afternoons with nothing to do.",
+    "role": "turn"
+   },
+   {
+    "p": 2,
+    "s": "やることが用意されていなかったから、自分で遊びを考えるしかなかったのだ。",
+    "en": "Because no activities had been prepared for me, I had no choice but to invent my own games.",
+    "role": "reason"
+   },
+   {
+    "p": 2,
+    "s": "子どもの退屈を急いで埋めてしまうのは、何かを生み出すきっかけを取り上げることになりかねない。",
+    "en": "Hastily filling a child's boredom could end up taking away their chance to create something.",
+    "role": "claim"
+   },
+   {
+    "p": 2,
+    "s": "大人は、すぐに手を出さずに待つことを覚えるべきではないか。",
+    "en": "Shouldn't adults learn to wait without stepping in straight away?",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "子どもの退屈を急いで埋めてしまうのは、何かを生み出すきっかけを取り上げることになりかねない。",
+    "chunks": [
+     "子どもの退屈を急いで埋めてしまうのは、",
+     "何かを生み出すきっかけを",
+     "取り上げることに",
+     "なりかねない。"
+    ],
+    "core": "退屈を埋めてしまうのは 取り上げることになりかねない",
+    "note": "〜のは turns the whole first clause into the topic. 何かを生み出す describes きっかけ (a spur to create). 〜ことになりかねない (N2 grammar) warns of a bad possible result: 'could end up taking away'."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "つい",
+    "r": "つい",
+    "en": "unintentionally, without thinking"
+   },
+   {
+    "w": "習い事",
+    "r": "ならいごと",
+    "en": "lessons, extracurricular classes"
+   },
+   {
+    "w": "その場",
+    "r": "そのば",
+    "en": "the moment, then and there"
+   },
+   {
+    "w": "振り返る",
+    "r": "ふりかえる",
+    "en": "look back on, reflect on",
+    "at": "振り返ると"
+   },
+   {
+    "w": "退屈",
+    "r": "たいくつ",
+    "en": "boredom"
+   },
+   {
+    "w": "生み出す",
+    "r": "うみだす",
+    "en": "create, produce"
+   },
+   {
+    "w": "取り上げる",
+    "r": "とりあげる",
+    "en": "take away, deprive of"
+   },
+   {
+    "w": "かねない",
+    "r": "かねない",
+    "en": "might, risk ending up"
+   },
+   {
+    "w": "手を出す",
+    "r": "てをだす",
+    "en": "step in, intervene",
+    "at": "手を出さずに"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "すぐに手を出さずに待つ",
+      "しばらく見守る"
+     ],
+     [
+      "覚えるべきではないか",
+      "ほうがよい"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "half",
+     "notsaid"
+    ]
+   }
+  ]
+ },
+ "r10-014": {
+  "shape": "Mum late → eat curry first (先に食べていてください) → cat off food → check on Mike (様子を見て) + call if sick / half food if well",
+  "sents": [
+   {
+    "p": 1,
+    "s": "さきへ",
+    "en": "To Saki,",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "お母さんは急に仕事が入って、帰りが8時過ぎになりそうです。",
+    "en": "Work came up suddenly for Mum, so it looks like I will be home after 8:00.",
+    "role": "reason"
+   },
+   {
+    "p": 2,
+    "s": "カレーを作っておいたので、温めて先に食べていてください。",
+    "en": "I have made curry in advance, so please warm it up and go ahead and eat.",
+    "role": "ask"
+   },
+   {
+    "p": 2,
+    "s": "お父さんも今日は遅くなるそうです。",
+    "en": "Dad will apparently be late today too.",
+    "role": "fact"
+   },
+   {
+    "p": 3,
+    "s": "それから、ミケが今朝からあまりご飯を食べていません。",
+    "en": "Also, Mike has not been eating much food since this morning.",
+    "role": "topic"
+   },
+   {
+    "p": 3,
+    "s": "帰ったら様子を見てあげてください。",
+    "en": "When you get home, please check on her.",
+    "role": "ask"
+   },
+   {
+    "p": 3,
+    "s": "吐いたり、ぐったりしたりしていたら、すぐにお母さんの携帯に電話してね。",
+    "en": "If she is vomiting or looking limp, phone Mum's mobile straight away, okay?",
+    "role": "ask"
+   },
+   {
+    "p": 3,
+    "s": "病院にはお母さんが連れて行きます。",
+    "en": "Mum will take her to the vet.",
+    "role": "fact"
+   },
+   {
+    "p": 3,
+    "s": "元気そうなら、ご飯はいつもの半分だけあげてください。",
+    "en": "If she seems well, please give her only half her usual amount of food.",
+    "role": "ask"
+   },
+   {
+    "p": 4,
+    "s": "母",
+    "en": "Mum",
+    "role": "fact"
+   }
+  ],
+  "hard": [
+   {
+    "s": "吐いたり、ぐったりしたりしていたら、すぐにお母さんの携帯に電話してね。",
+    "chunks": [
+     "吐いたり、",
+     "ぐったりしたり",
+     "していたら、",
+     "すぐに",
+     "お母さんの携帯に",
+     "電話してね。"
+    ],
+    "core": "吐いたりぐったりしていたら、電話してね",
+    "note": "〜たり〜たりする lists example symptoms (vomiting, being limp), and していたら sets the condition ('if she is in that state'). Note the next line: Mum, not Saki, takes Mike to the vet."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "温める",
+    "r": "あたためる",
+    "en": "warm up, heat up",
+    "at": "温めて"
+   },
+   {
+    "w": "先に",
+    "r": "さきに",
+    "en": "first, ahead of someone"
+   },
+   {
+    "w": "様子を見る",
+    "r": "ようすをみる",
+    "en": "check on, see how things are",
+    "at": "様子を見て"
+   },
+   {
+    "w": "吐く",
+    "r": "はく",
+    "en": "vomit, throw up",
+    "at": "吐いたり"
+   },
+   {
+    "w": "ぐったり",
+    "r": "ぐったり",
+    "en": "limp, listless, exhausted"
+   },
+   {
+    "w": "携帯",
+    "r": "けいたい",
+    "en": "mobile phone"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "様子を見てあげてください",
+      "様子を確かめ"
+     ],
+     [
+      "先に食べていてください",
+      "母を待たずに食べる"
+     ]
+    ],
+    "trap": [
+     "",
+     "opposite",
+     "swap",
+     "half"
+    ]
+   }
+  ]
+ },
+ "r10-015": {
+  "shape": "Theme (便利だがやっかい) → shop & colleague examples (ところが…迷ってしまう) → abstract claim (相手に預けてしまう) → hedged reason (頼っているのかもしれない)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "「大丈夫」は便利な言葉だが、同時にやっかいな言葉でもある。",
+    "en": "'Daijoubu' is a handy word, but at the same time it is also a troublesome one.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "店で「袋はご利用ですか」と聞かれて「大丈夫です」と答えれば、多くの場合は「いりません」の意味になる。",
+    "en": "In a shop, if you are asked 'Would you like a bag?' and answer 'Daijoubu desu', in most cases it means 'No, thank you'.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "s": "ところが、言い方によっては「お願いします」とも受け取れるので、店員は迷ってしまう。",
+    "en": "However, depending on how it is said, it can also be taken as 'Yes, please', so the clerk ends up unsure.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "s": "具合の悪そうな同僚に声をかけて「大丈夫」と返ってきても、本当にそうなのかは分からない。",
+    "en": "Even if you check on a colleague who looks unwell and get 'Daijoubu' back, you cannot tell whether that is really true.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "s": "この言葉は、答えの中身を相手に預けてしまうのだ。",
+    "en": "This word hands the substance of the answer over to the other person.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "s": "はっきり断ることや頼むことを避けたいとき、私たちはこの言葉に頼っているのかもしれない。",
+    "en": "When we want to avoid clearly refusing or asking for something, we may be relying on this word.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "具合の悪そうな同僚に声をかけて「大丈夫」と返ってきても、本当にそうなのかは分からない。",
+    "chunks": [
+     "具合の悪そうな同僚に",
+     "声をかけて",
+     "「大丈夫」と返ってきても、",
+     "本当にそうなのかは",
+     "分からない。"
+    ],
+    "core": "返ってきても、本当にそうなのかは分からない",
+    "note": "具合の悪そうな describes 同僚. Notice the silent subject shift: you speak to the colleague (声をかけて), then 'Daijoubu' comes back as the reply (返ってきても). 本当にそうなのかは is the topic of 分からない."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "やっかい",
+    "r": "やっかい",
+    "en": "troublesome, awkward"
+   },
+   {
+    "w": "によっては",
+    "r": "によっては",
+    "en": "depending on"
+   },
+   {
+    "w": "受け取る",
+    "r": "うけとる",
+    "en": "interpret, take as",
+    "at": "受け取れる"
+   },
+   {
+    "w": "具合",
+    "r": "ぐあい",
+    "en": "physical condition, health"
+   },
+   {
+    "w": "中身",
+    "r": "なかみ",
+    "en": "contents, real meaning"
+   },
+   {
+    "w": "預ける",
+    "r": "あずける",
+    "en": "leave to, entrust to",
+    "at": "預けて"
+   },
+   {
+    "w": "断る",
+    "r": "ことわる",
+    "en": "refuse, decline"
+   },
+   {
+    "w": "頼る",
+    "r": "たよる",
+    "en": "rely on, lean on",
+    "at": "頼っている"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "答えの中身",
+      "本当の意味"
+     ],
+     [
+      "相手に預けてしまう",
+      "聞いた側が判断することになる"
+     ]
+    ],
+    "trap": [
+     "",
+     "opposite",
+     "notsaid",
+     "narrow"
+    ]
+   }
+  ]
+ },
+ "r10-016": {
+  "shape": "Refusal (現在の内容のままでは難しい) → pivot (そこで、別の形でのご提案) → two either/or options (〜か、〜ば) to fit budget → offer to send revised quote",
+  "sents": [
+   {
+    "p": 1,
+    "s": "株式会社みなと商事　中村様",
+    "en": "To Nakamura-sama, Minato Trading Co., Ltd.,",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "いつもお世話になっております。",
+    "en": "Thank you for your continued support.",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "青葉印刷の石井です。",
+    "en": "This is Ishii from Aoba Printing.",
+    "role": "fact"
+   },
+   {
+    "p": 3,
+    "s": "お見積もりの件でご連絡をいただき、ありがとうございました。",
+    "en": "Thank you for getting in touch regarding the estimate.",
+    "role": "topic"
+   },
+   {
+    "p": 3,
+    "s": "ご希望の金額までお下げできないか社内で検討いたしましたが、現在の内容のままでは難しいという結論になりました。",
+    "en": "We looked internally into whether we could lower it to your requested price, but came to the conclusion that it is difficult with the specifications as they stand.",
+    "role": "fact"
+   },
+   {
+    "p": 3,
+    "s": "申し訳ございません。",
+    "en": "We are very sorry.",
+    "role": "fact"
+   },
+   {
+    "p": 4,
+    "s": "そこで、別の形でのご提案がございます。",
+    "en": "Accordingly, we have a proposal in a different form.",
+    "role": "turn"
+   },
+   {
+    "p": 4,
+    "s": "印刷部数を2,000部から1,500部に減らしていただくか、納期を1週間延ばしていただければ、ご予算内に収めることができます。",
+    "en": "If you either reduce the print run from 2,000 to 1,500 copies, or extend the delivery deadline by one week, we can keep it within your budget.",
+    "role": "claim"
+   },
+   {
+    "p": 4,
+    "s": "どちらかでご検討いただけるようでしたら、修正したお見積もりをすぐにお送りいたします。",
+    "en": "If you are able to consider either option, we will send a revised estimate right away.",
+    "role": "ask"
+   }
+  ],
+  "hard": [
+   {
+    "s": "印刷部数を2,000部から1,500部に減らしていただくか、納期を1週間延ばしていただければ、ご予算内に収めることができます。",
+    "chunks": [
+     "印刷部数を2,000部から1,500部に",
+     "減らしていただくか、",
+     "納期を1週間延ばしていただければ、",
+     "ご予算内に",
+     "収めることができます。"
+    ],
+    "core": "減らしていただくか、延ばしていただければ、予算内に収めることができます",
+    "note": "か joins two polite conditions ('either reduce copies OR extend the deadline'), and ば makes either one enough. ご予算内に収める means 'keep within your budget'."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "見積もり",
+    "r": "みつもり",
+    "en": "estimate, quote"
+   },
+   {
+    "w": "検討する",
+    "r": "けんとうする",
+    "en": "consider, look into",
+    "at": "検討いたしました"
+   },
+   {
+    "w": "結論",
+    "r": "けつろん",
+    "en": "conclusion"
+   },
+   {
+    "w": "提案",
+    "r": "ていあん",
+    "en": "proposal, suggestion"
+   },
+   {
+    "w": "部数",
+    "r": "ぶすう",
+    "en": "number of copies, print run"
+   },
+   {
+    "w": "納期",
+    "r": "のうき",
+    "en": "delivery date, deadline"
+   },
+   {
+    "w": "延ばす",
+    "r": "のばす",
+    "en": "extend, postpone",
+    "at": "延ばして"
+   },
+   {
+    "w": "収める",
+    "r": "おさめる",
+    "en": "keep within a limit, fit inside"
+   },
+   {
+    "w": "修正する",
+    "r": "しゅうせいする",
+    "en": "revise, amend",
+    "at": "修正した"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "どちらか",
+      "条件を一つ"
+     ],
+     [
+      "ご予算内に収めることができます",
+      "予算に合う金額になる"
+     ]
+    ],
+    "trap": [
+     "",
+     "opposite",
+     "extreme",
+     "notsaid"
+    ]
+   }
+  ]
+ },
+ "r10-017": {
+  "shape": "Move to town (人の歩く速さ) → old city habit → shift after 6 months (ゆっくりになった) → result (おかげで) → claim (体にしみ込んでいく)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "東京から地方の町に引っ越して、最初に驚いたのは人の歩く速さだった。",
+    "en": "After moving from Tokyo to a regional town, the first thing that surprised me was people's walking speed.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "駅の通路でさえ、急いでいる人がほとんどいない。",
+    "en": "Even in the station passageways, almost nobody is hurrying.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "s": "初めのうち、私は前を歩く人を何度も追い越していた。",
+    "en": "At first, I kept overtaking the people walking ahead of me.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "s": "都会では、乗り換えや人の流れに合わせて、知らないうちに速く歩く癖がついていたのだろう。",
+    "en": "In the city, matching train transfers and the flow of crowds, I must have picked up the habit of walking fast without realising it.",
+    "role": "reason"
+   },
+   {
+    "p": 2,
+    "s": "半年ほどたった今、私の歩き方もずいぶんゆっくりになった。",
+    "en": "Now, about half a year on, my own way of walking has become much slower too.",
+    "role": "turn"
+   },
+   {
+    "p": 2,
+    "s": "おかげで、道ばたの花や古い店の看板にも目が向くようになった。",
+    "en": "Thanks to that, my eyes have started turning towards wayside flowers and old shop signs too.",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "町の速さは、住んでいるうちにその人の体にしみ込んでいくものらしい。",
+    "en": "It seems that a town's pace gradually soaks into your body while you live there.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "都会では、乗り換えや人の流れに合わせて、知らないうちに速く歩く癖がついていたのだろう。",
+    "chunks": [
+     "都会では、",
+     "乗り換えや人の流れに合わせて、",
+     "知らないうちに",
+     "速く歩く癖が",
+     "ついていたのだろう。"
+    ],
+    "core": "都会では 癖がついていたのだろう",
+    "note": "〜に合わせて means 'in step with' (transfers and crowd flow). 速く歩く describes 癖 (habit), which pairs with つく (to form a habit). 〜のだろう marks a guess about the past."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "地方",
+    "r": "ちほう",
+    "en": "regional area, outside the capital"
+   },
+   {
+    "w": "通路",
+    "r": "つうろ",
+    "en": "passageway, walkway"
+   },
+   {
+    "w": "追い越す",
+    "r": "おいこす",
+    "en": "overtake, pass",
+    "at": "追い越していた"
+   },
+   {
+    "w": "乗り換え",
+    "r": "のりかえ",
+    "en": "train transfer, changing trains"
+   },
+   {
+    "w": "知らないうちに",
+    "r": "しらないうちに",
+    "en": "without realising, before one knows it"
+   },
+   {
+    "w": "癖がつく",
+    "r": "くせがつく",
+    "en": "form a habit",
+    "at": "癖がついていた"
+   },
+   {
+    "w": "道ばた",
+    "r": "みちばた",
+    "en": "roadside, wayside"
+   },
+   {
+    "w": "目が向く",
+    "r": "めがむく",
+    "en": "turn one's attention to, notice"
+   },
+   {
+    "w": "しみ込む",
+    "r": "しみこむ",
+    "en": "soak in, sink in",
+    "at": "しみ込んで"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "町の速さ",
+      "周りの人の歩く速さ"
+     ],
+     [
+      "住んでいるうちに",
+      "いつの間にか"
+     ],
+     [
+      "体にしみ込んでいく",
+      "合うようになった"
+     ]
+    ],
+    "trap": [
+     "",
+     "swap",
+     "notsaid",
+     "elsewhere"
+    ]
+   }
+  ]
+ },
+ "r10-018": {
+  "shape": "Claim (上手に書こうとしないこと) → common mistake (思い込んでいる) → turn (でも) → plain restatement (つまり…書かない日を作らない) → one-line example",
+  "sents": [
+   {
+    "p": 1,
+    "s": "日記を長く続けるこつを聞かれると、私はいつも「上手に書こうとしないこと」と答えています。",
+    "en": "When asked for the knack of keeping a diary going for a long time, I always answer, 'Do not try to write well.'",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "s": "三日でやめてしまう人の多くは、毎日何か特別なことを書かなければならないと思い込んでいるようです。",
+    "en": "Many of those who give up after three days seem convinced that they must write something special every day.",
+    "role": "view"
+   },
+   {
+    "p": 1,
+    "s": "でも、日記は誰かに読ませるための作品ではありません。",
+    "en": "But a diary is not a work written to be read by someone else.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "s": "つまり、内容が平凡でも短くても、書かない日を作らないことのほうがずっと大切なのです。",
+    "en": "In other words, even if the content is ordinary or short, not leaving days unwritten is far more important.",
+    "role": "restate"
+   },
+   {
+    "p": 1,
+    "s": "「雨。駅まで走った。」という一行だけの日があってもかまいません。",
+    "en": "It is fine to have days with just a single line like 'Rain. Ran to the station.'",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "s": "一年後に読み返すと、そんな一行からも、その日の空気が意外なほどよみがえってきます。",
+    "en": "When you read it back a year later, even from such a single line, the atmosphere of that day comes back to life more than you would expect.",
+    "role": "reason"
+   }
+  ],
+  "hard": [
+   {
+    "s": "つまり、内容が平凡でも短くても、書かない日を作らないことのほうがずっと大切なのです。",
+    "chunks": [
+     "つまり、",
+     "内容が平凡でも短くても、",
+     "書かない日を",
+     "作らないことのほうが",
+     "ずっと大切なのです。"
+    ],
+    "core": "書かない日を作らないことのほうが 大切なのです",
+    "note": "つまり signals a plain restatement of the tip. Watch the double negative: 書かない日 (a day you do not write) + を作らない (do not have) = write every day, even if entries are ordinary or short."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "こつ",
+    "r": "こつ",
+    "en": "knack, secret, tip"
+   },
+   {
+    "w": "思い込む",
+    "r": "おもいこむ",
+    "en": "be convinced, assume firmly",
+    "at": "思い込んでいる"
+   },
+   {
+    "w": "作品",
+    "r": "さくひん",
+    "en": "creative work, piece of writing"
+   },
+   {
+    "w": "つまり",
+    "r": "つまり",
+    "en": "in other words, that is to say"
+   },
+   {
+    "w": "平凡",
+    "r": "へいぼん",
+    "en": "ordinary, commonplace"
+   },
+   {
+    "w": "読み返す",
+    "r": "よみかえす",
+    "en": "read back, reread",
+    "at": "読み返すと"
+   },
+   {
+    "w": "意外",
+    "r": "いがい",
+    "en": "unexpected, surprising"
+   },
+   {
+    "w": "よみがえる",
+    "r": "よみがえる",
+    "en": "come back to life, flood back",
+    "at": "よみがえって"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "内容が平凡でも短くても",
+      "内容のよしあしは気にせず"
+     ],
+     [
+      "書かない日を作らないこと",
+      "毎日少しでも書くこと"
+     ]
+    ],
+    "trap": [
+     "",
+     "opposite",
+     "rejected",
+     "elsewhere"
+    ]
+   }
+  ]
+ },
+ "r10-019": {
+  "shape": "Episode (掃除機を直す) → concession (新しい製品のほうが…分かっている) → override (それでも) → claim (値段では測れない / 過ごしてきた時間を大切にする)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "十年使っている掃除機が動かなくなった。",
+    "en": "The vacuum cleaner I have been using for ten years stopped working.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "メーカーに問い合わせると、修理代は新品の半分ほどかかるという。",
+    "en": "When I enquired with the manufacturer, they said the repair fee would come to about half the price of a new one.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "s": "店では買い替えを勧められたが、迷った末に直してもらうことにした。",
+    "en": "The shop recommended buying a replacement, but after wavering, I decided to have it repaired.",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "戻ってきた掃除機は、以前と同じ音を立てて動き出した。",
+    "en": "The vacuum cleaner that came back started running, making the same sound as before.",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "新しい製品のほうが軽くて性能もいいことは分かっている。",
+    "en": "I know that newer models are lighter and have better performance.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "それでも、手になじんだ道具をもう一度使えるうれしさは、値段を比べるだけでは測れない。",
+    "en": "Even so, the joy of being able to use a tool that fits your hand once again cannot be measured merely by comparing prices.",
+    "role": "claim"
+   },
+   {
+    "p": 2,
+    "s": "物を直すというのは、その物と過ごしてきた時間を大切にすることでもあるのだと思う。",
+    "en": "I think that repairing something is also a way of cherishing the time you have spent with it.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "それでも、手になじんだ道具をもう一度使えるうれしさは、値段を比べるだけでは測れない。",
+    "chunks": [
+     "それでも、",
+     "手になじんだ道具を",
+     "もう一度使える",
+     "うれしさは、",
+     "値段を比べるだけでは",
+     "測れない。"
+    ],
+    "core": "うれしさは 測れない",
+    "note": "それでも overrides the concession in the previous sentence. 手になじんだ describes 道具, and everything up to 使える describes うれしさ (the joy of...). だけでは測れない means 'cannot be measured by comparing prices alone'."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "問い合わせる",
+    "r": "といあわせる",
+    "en": "enquire, contact to ask",
+    "at": "問い合わせると"
+   },
+   {
+    "w": "新品",
+    "r": "しんぴん",
+    "en": "brand-new item"
+   },
+   {
+    "w": "買い替え",
+    "r": "かいかえ",
+    "en": "buying a replacement"
+   },
+   {
+    "w": "末に",
+    "r": "すえに",
+    "en": "after much..., in the end"
+   },
+   {
+    "w": "性能",
+    "r": "せいのう",
+    "en": "performance, capability"
+   },
+   {
+    "w": "手になじむ",
+    "r": "てになじむ",
+    "en": "fit one's hand well, feel familiar",
+    "at": "手になじんだ"
+   },
+   {
+    "w": "測る",
+    "r": "はかる",
+    "en": "measure, gauge",
+    "at": "測れない"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "物を直す",
+      "物を修理して使い続ける"
+     ],
+     [
+      "値段を比べるだけでは測れない",
+      "金額では表せない価値がある"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "notsaid",
+     "opposite"
+    ]
+   }
+  ]
+ },
+ "r10-020": {
+  "shape": "Common reaction (沈黙…気まずい) → turn with old friends (けれども…居心地が悪くない) → reason (信頼) → claim (黙ったままでいられる相手はぜいたく)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "会話の途中で沈黙が生まれると、私たちは慌てて次の話題を探そうとします。",
+    "en": "When silence falls in the middle of a conversation, we hurry to look for the next topic.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "黙っている時間は気まずいもの、という感覚があるからでしょう。",
+    "en": "That is probably because we have a feeling that silent time is awkward.",
+    "role": "view"
+   },
+   {
+    "p": 1,
+    "s": "けれども、長年の友人と一緒にいると、何分も言葉を交わさなくても、少しも居心地が悪くありません。",
+    "en": "However, when you are with a longtime friend, even if you do not exchange a word for many minutes, it does not feel uncomfortable at all.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "s": "言葉がなくても相手を信頼していられるから、沈黙が苦にならないのだと思います。",
+    "en": "I think silence does not bother you because you can still trust the other person even without words.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "s": "そう考えると、沈黙を急いで埋めようとするのは、関係がまだ浅いしるしなのかもしれません。",
+    "en": "Thinking of it that way, rushing to fill a silence may be a sign that the relationship is still shallow.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "s": "黙ったままでいられる相手がいるのは、案外ぜいたくなことなのです。",
+    "en": "Having someone you can stay silent with is, surprisingly, a luxury.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "けれども、長年の友人と一緒にいると、何分も言葉を交わさなくても、少しも居心地が悪くありません。",
+    "chunks": [
+     "けれども、",
+     "長年の友人と一緒にいると、",
+     "何分も言葉を交わさなくても、",
+     "少しも",
+     "居心地が悪くありません。"
+    ],
+    "core": "長年の友人といると 居心地が悪くありません",
+    "note": "けれども marks the turn. 〜ても sets a concession ('even without exchanging words for minutes'), and 少しも + negative cancels 居心地が悪い (uncomfortable), meaning 'not uncomfortable at all'."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "沈黙",
+    "r": "ちんもく",
+    "en": "silence"
+   },
+   {
+    "w": "慌てる",
+    "r": "あわてる",
+    "en": "panic, hurry",
+    "at": "慌てて"
+   },
+   {
+    "w": "気まずい",
+    "r": "きまずい",
+    "en": "awkward, uncomfortable"
+   },
+   {
+    "w": "長年",
+    "r": "ながねん",
+    "en": "many years, longtime"
+   },
+   {
+    "w": "居心地",
+    "r": "いごこち",
+    "en": "comfort, feeling at ease"
+   },
+   {
+    "w": "信頼する",
+    "r": "しんらいする",
+    "en": "trust",
+    "at": "信頼して"
+   },
+   {
+    "w": "苦になる",
+    "r": "くになる",
+    "en": "be a burden, bother one",
+    "at": "苦にならない"
+   },
+   {
+    "w": "浅い",
+    "r": "あさい",
+    "en": "shallow, not deep"
+   },
+   {
+    "w": "案外",
+    "r": "あんがい",
+    "en": "unexpectedly, surprisingly"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "黙ったままでいられる相手",
+      "黙っていても気まずくない相手"
+     ],
+     [
+      "ぜいたくなこと",
+      "貴重だ"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "extreme",
+     "opposite"
+    ]
+   }
+  ]
+ }
+}

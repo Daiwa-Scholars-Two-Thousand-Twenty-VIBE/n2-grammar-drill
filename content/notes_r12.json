@@ -1,0 +1,1987 @@
+{
+ "r12-001": {
+  "shape": "A: start in primary school while parents can watch (防げるのではないか). B: wait till junior high (遅くはない). Both: agree rules as a family (話し合って決め).",
+  "sents": [
+   {
+    "p": 1,
+    "t": "A",
+    "s": "「小学生にスマートフォンはまだ早い」と考える親は少なくない。",
+    "en": "Quite a few parents think a smartphone is still too early for primary school children.",
+    "role": "view"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "しかし、いずれは誰もが使うようになる道具である。",
+    "en": "However, it is a tool that everyone will come to use sooner or later.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "中学生や高校生になってから急に自由に使わせるよりも、親の目が届きやすい小学生のうちに持たせ、使い方を少しずつ身につけさせるほうが、かえって大きなトラブルを防げるのではないか。",
+    "en": "Rather than suddenly letting them use one freely once they reach junior high or high school, giving them one while they are in primary school, when parents can easily keep an eye on them, and helping them pick up how to use it little by little might actually prevent major trouble.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "失敗をしても、早い時期なら親がすぐに気づき、一緒に考えることができる。",
+    "en": "Even if they make a mistake, at an early stage parents can notice straight away and think it through with them.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "もちろん、ただ渡しておけばよいというわけではない。",
+    "en": "Of course, that does not mean it is enough just to hand one over.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "一日に使う時間や、使ってよい場所、アプリを入れるときの手順などを、親子で話し合って決めておくことが欠かせない。",
+    "en": "It is essential for parents and children to discuss and decide in advance on things such as daily usage time, where it may be used, and the steps for installing apps.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "そして、約束を守れるようになったら、少しずつ自由を広げていけばよいのである。",
+    "en": "Then, once they are able to keep those agreements, it is fine to widen their freedom little by little.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "スマートフォンを持つ子どもの年齢が年々下がっている。",
+    "en": "The age at which children get smartphones is dropping year by year.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "だが、小学生の場合、夜遅くまで動画を見て睡眠時間が減ったり、SNSで知り合った見知らぬ大人とやりとりをしてしまったりする例が後を絶たない。",
+    "en": "Yet in the case of primary school children, there is no end to cases where they watch videos late into the night and lose sleep, or end up exchanging messages with adult strangers they met on social media.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "何が危ないのかを判断する力が育っていない時期に、大人と同じ道具を与えるのは危険が大きすぎる。",
+    "en": "Giving children the same tool as adults at a stage when the ability to judge what is dangerous has not yet developed carries far too much risk.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "親と連絡を取るためであれば、通話と居場所の確認ができる子ども向けの携帯電話で十分だろう。",
+    "en": "If it is for keeping in touch with parents, a children's mobile phone that allows calls and location checks should be enough.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "スマートフォンは、自分で使い方を考えられるようになる中学生以降でも遅くはない。",
+    "en": "As for smartphones, junior high school or later, when they can think for themselves about how to use one, is not too late.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "ただし、その時期になっても、利用する時間などのルールを家族でよく話し合って決め、守れているかを親が確かめていく必要がある。",
+    "en": "However, even once they reach that stage, the family still needs to discuss and set rules such as usage times carefully, and parents need to keep checking whether those rules are being kept.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "中学生や高校生になってから急に自由に使わせるよりも、親の目が届きやすい小学生のうちに持たせ、使い方を少しずつ身につけさせるほうが、かえって大きなトラブルを防げるのではないか。",
+    "chunks": [
+     "中学生や高校生になってから",
+     "急に自由に使わせるよりも、",
+     "親の目が届きやすい",
+     "小学生のうちに持たせ、",
+     "使い方を少しずつ身につけさせるほうが、",
+     "かえって大きなトラブルを防げるのではないか。"
+    ],
+    "core": "小学生のうちに持たせ、身につけさせるほうが、トラブルを防げるのではないか。",
+    "note": "Built on AよりもBほうが (\"rather than A, B\"). Both sides use causative forms (使わせる, 持たせ, 身につけさせる: letting/having children do). かえって means \"on the contrary\", and のではないか softens the claim."
+   },
+   {
+    "s": "だが、小学生の場合、夜遅くまで動画を見て睡眠時間が減ったり、SNSで知り合った見知らぬ大人とやりとりをしてしまったりする例が後を絶たない。",
+    "chunks": [
+     "だが、小学生の場合、",
+     "夜遅くまで動画を見て",
+     "睡眠時間が減ったり、",
+     "SNSで知り合った見知らぬ大人と",
+     "やりとりをしてしまったりする例が",
+     "後を絶たない。"
+    ],
+    "core": "例が後を絶たない。",
+    "note": "Everything between 小学生の場合 and 例 modifies 例 (\"cases\"): two examples joined by 〜たり〜たりする. Inside the second one, SNSで知り合った and 見知らぬ both describe 大人. 後を絶たない means \"never cease\"."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "いずれ",
+    "r": "いずれ",
+    "en": "sooner or later"
+   },
+   {
+    "w": "目が届く",
+    "r": "めがとどく",
+    "en": "to be within one's watch, keep an eye on",
+    "at": "目が届きやすい"
+   },
+   {
+    "w": "身につける",
+    "r": "みにつける",
+    "en": "to acquire, pick up (a skill)",
+    "at": "身につけさせる"
+   },
+   {
+    "w": "かえって",
+    "r": "かえって",
+    "en": "on the contrary, rather"
+   },
+   {
+    "w": "手順",
+    "r": "てじゅん",
+    "en": "procedure, steps"
+   },
+   {
+    "w": "欠かせない",
+    "r": "かかせない",
+    "en": "essential, indispensable"
+   },
+   {
+    "w": "年々",
+    "r": "ねんねん",
+    "en": "year by year"
+   },
+   {
+    "w": "見知らぬ",
+    "r": "みしらぬ",
+    "en": "unfamiliar, unknown (stranger)"
+   },
+   {
+    "w": "やりとり",
+    "r": "やりとり",
+    "en": "exchange (of messages)"
+   },
+   {
+    "w": "後を絶たない",
+    "r": "あとをたたない",
+    "en": "to never cease, keep happening"
+   },
+   {
+    "w": "判断する",
+    "r": "はんだんする",
+    "en": "to judge, assess"
+   },
+   {
+    "w": "居場所",
+    "r": "いばしょ",
+    "en": "whereabouts, location"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "ルール",
+      "決まり"
+     ],
+     [
+      "話し合って決め",
+      "相談して作って"
+     ],
+     [
+      "欠かせない",
+      "必要がある"
+     ]
+    ],
+    "trap": [
+     "",
+     "oneonly",
+     "oneonly",
+     "oneonly"
+    ]
+   },
+   {
+    "para": [
+     [
+      "トラブルを防げるのではないか",
+      "ほうがよい"
+     ],
+     [
+      "中学生以降でも遅くはない",
+      "中学生以降でよい"
+     ]
+    ],
+    "trap": [
+     "",
+     "swap",
+     "opposite",
+     "oneonly"
+    ]
+   }
+  ]
+ },
+ "r12-002": {
+  "shape": "A: more firms should adopt it after rethinking work (取り入れるべき). B: let staff choose (選べるように). Both: same work in fewer days causes strain (疲れ / 無理).",
+  "sents": [
+   {
+    "p": 1,
+    "t": "A",
+    "s": "週に三日休める「週休三日制」を取り入れる企業が、少しずつ増えている。",
+    "en": "The number of companies adopting a \"three-days-off-a-week\" system, which gives three days off per week, is gradually increasing.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "試しに導入したある会社では、休みが増えても売り上げは落ちず、むしろ社員一人ひとりが時間の使い方を工夫するようになったという。",
+    "en": "At one company that introduced it on a trial basis, sales did not fall even though days off increased; instead, individual employees reportedly began finding smarter ways to use their time.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "休日に資格の勉強をしたり、家族と過ごしたりする時間が増えれば、働く意欲も高まるだろう。",
+    "en": "If people have more time on their days off to study for qualifications or spend time with their families, their motivation to work will likely rise as well.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "また、働きやすい会社だという評判が広がれば、人手不足の時代にあっても、優秀な人材が集まりやすくなる。",
+    "en": "Furthermore, if a reputation spreads that the company is a good place to work, it becomes easier to attract capable staff even in an era of labour shortages.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "ただし、五日分の仕事をそのまま四日に詰め込むのでは意味がない。",
+    "en": "However, cramming five days' worth of work into four days as it is makes no sense.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "一日の労働時間が長くなれば、疲れがたまり、かえって効率が下がる。",
+    "en": "If daily working hours grow longer, fatigue builds up and efficiency actually drops.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "仕事の中身そのものを見直したうえでなら、週休三日制はもっと多くの企業が取り入れるべき制度である。",
+    "en": "Provided that the content of the work itself is reviewed first, the four-day working week is a system that more companies ought to adopt.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "週休三日制が話題になっているが、どの職場にも合う制度だとは思えない。",
+    "en": "The four-day working week has become a talking point, yet I do not think it is a system that suits every workplace.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "病院や店のように、毎日決まった人数が必要な職場では、休みを増やせばその分だけ人を増やさなければならない。",
+    "en": "In workplaces such as hospitals and shops that require a fixed number of staff every day, increasing days off means having to hire that many more people.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "余裕のない中小企業にとっては、大きな負担だ。",
+    "en": "For small and medium-sized enterprises with no spare capacity, that is a heavy burden.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "また、休みが一日増える代わりに給料が減る形の制度もあり、それを望まない人もいる。",
+    "en": "There are also versions of the system where pay is cut in exchange for an extra day off, and some people do not want that.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "実際、四日間の勤務が毎日十時間になり、平日の疲れが抜けないという声も聞く。",
+    "en": "In fact, one also hears from people whose four working days have become ten hours a day and who cannot shake off their weekday exhaustion.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "同じ量の仕事を少ない日数でこなそうとすれば、無理が出るのは当然だろう。",
+    "en": "If you try to get through the same amount of work in fewer days, it is only natural that strain will show.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "大切なのは、休みの日数を一律に増やすことではない。",
+    "en": "What matters is not increasing the number of days off uniformly.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "週五日働くか、休みを増やすかを、一人ひとりが自分の生活に合わせて選べるようにすることではないか。",
+    "en": "Surely it is making it possible for each person to choose, according to their own life, whether to work five days a week or take more days off.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "試しに導入したある会社では、休みが増えても売り上げは落ちず、むしろ社員一人ひとりが時間の使い方を工夫するようになったという。",
+    "chunks": [
+     "試しに導入したある会社では、",
+     "休みが増えても",
+     "売り上げは落ちず、",
+     "むしろ社員一人ひとりが",
+     "時間の使い方を工夫するようになった",
+     "という。"
+    ],
+    "core": "ある会社では、売り上げは落ちず、社員が工夫するようになったという。",
+    "note": "試しに導入した modifies ある会社. 落ちず is the written negative continuative (\"without falling\"), paired with むしろ (\"rather/instead\") to highlight the positive shift. Final という marks reported information."
+   },
+   {
+    "s": "週五日働くか、休みを増やすかを、一人ひとりが自分の生活に合わせて選べるようにすることではないか。",
+    "chunks": [
+     "週五日働くか、休みを増やすかを、",
+     "一人ひとりが",
+     "自分の生活に合わせて",
+     "選べるようにすること",
+     "ではないか。"
+    ],
+    "core": "一人ひとりが選べるようにすることではないか。",
+    "note": "The opening 〜か、〜かを (\"whether to work five days or take more off\") is the direct object of 選べるようにする (\"make it possible to choose\"). ことではないか frames the proposal, answering 大切なのは from the sentence before."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "導入する",
+    "r": "どうにゅうする",
+    "en": "to introduce, adopt (a system)",
+    "at": "導入した"
+   },
+   {
+    "w": "売り上げ",
+    "r": "うりあげ",
+    "en": "sales, revenue"
+   },
+   {
+    "w": "むしろ",
+    "r": "むしろ",
+    "en": "rather, instead"
+   },
+   {
+    "w": "工夫する",
+    "r": "くふうする",
+    "en": "to devise, find clever ways"
+   },
+   {
+    "w": "意欲",
+    "r": "いよく",
+    "en": "motivation, drive"
+   },
+   {
+    "w": "評判",
+    "r": "ひょうばん",
+    "en": "reputation"
+   },
+   {
+    "w": "人手不足",
+    "r": "ひとでぶそく",
+    "en": "labour shortage, staff shortage"
+   },
+   {
+    "w": "詰め込む",
+    "r": "つめこむ",
+    "en": "to cram in, pack into"
+   },
+   {
+    "w": "見直す",
+    "r": "みなおす",
+    "en": "to review, rethink",
+    "at": "見直した"
+   },
+   {
+    "w": "中小企業",
+    "r": "ちゅうしょうきぎょう",
+    "en": "small and medium-sized enterprises"
+   },
+   {
+    "w": "負担",
+    "r": "ふたん",
+    "en": "burden"
+   },
+   {
+    "w": "こなす",
+    "r": "こなす",
+    "en": "to handle, get through (work)",
+    "at": "こなそう"
+   },
+   {
+    "w": "一律に",
+    "r": "いちりつに",
+    "en": "uniformly, across the board"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "同じ量の仕事を少ない日数で",
+      "仕事の量を変えずに日数だけ減らすと"
+     ],
+     [
+      "疲れがたまり",
+      "疲れてしまう"
+     ],
+     [
+      "平日の疲れが抜けない",
+      "疲れてしまう"
+     ]
+    ],
+    "trap": [
+     "",
+     "oneonly",
+     "oneonly",
+     "oneonly"
+    ]
+   },
+   {
+    "para": [
+     [
+      "もっと多くの企業が取り入れるべき",
+      "もっと広めるべき"
+     ],
+     [
+      "一人ひとりが",
+      "各自が"
+     ],
+     [
+      "週五日働くか、休みを増やすか",
+      "働き方"
+     ]
+    ],
+    "trap": [
+     "",
+     "swap",
+     "notsaid",
+     "opposite"
+    ]
+   }
+  ]
+ },
+ "r12-003": {
+  "shape": "A: switch to self-chosen study (変えてはどうだろうか). B: drop homework (なくしてもよいのではないか). Both: home conditions differ (条件には差 / 家庭による差).",
+  "sents": [
+   {
+    "p": 1,
+    "t": "A",
+    "s": "小学校の宿題を減らしたり、なくしたりする学校が出てきている。",
+    "en": "Schools that reduce or abolish primary school homework have begun to appear.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "だが、私は宿題そのものには意味があると考えている。",
+    "en": "However, I believe that homework itself has value.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "家で毎日少しずつ机に向かうことで、学習の習慣が身につくからだ。",
+    "en": "That is because sitting down at a desk at home a little every day builds a habit of studying.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "ただ、これまでのように全員に同じ量のプリントを配るやり方には問題がある。",
+    "en": "Still, there is a problem with the traditional approach of handing out the same amount of worksheets to everyone.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "得意な子には簡単すぎ、苦手な子には時間がかかりすぎる。",
+    "en": "It is too easy for children who are good at a subject, and takes far too long for those who struggle with it.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "また、家の人が勉強を見てあげられる家庭もあれば、そうでない家庭もあり、同じ宿題でも取り組む条件には差がある。",
+    "en": "Also, some families have someone at home who can help with studying and others do not, so even for the same homework, the conditions under which children tackle it differ.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "そこで、何をどれだけやるかを子ども自身に決めさせる「自主学習」の形に変えてはどうだろうか。",
+    "en": "Therefore, how about changing it to a \"self-directed study\" format where children decide for themselves what and how much to do?",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "自分で計画を立てる経験は、宿題の中身以上に大きな力になるはずだ。",
+    "en": "The experience of making a plan for oneself should become an even greater strength than the content of the homework itself.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "小学生のうちは、宿題で学力が大きく伸びるわけではない。",
+    "en": "During primary school, it is not the case that homework greatly improves academic ability.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "海外の研究でも、小学生の宿題の効果は中学生や高校生に比べてかなり小さいことが示されている。",
+    "en": "Overseas research has also shown that the effect of homework for primary school pupils is considerably smaller than for junior high and high school students.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "むしろ心配なのは、家庭による差が広がることだ。",
+    "en": "What is more worrying is that the gap between families widens.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "親の帰りが遅かったり、弟や妹の世話があったりして、落ち着いて宿題をする場所や時間がない子もいる。",
+    "en": "Some children have no quiet place or time to do homework because their parents come home late or they have to look after younger siblings.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "そうした子は、宿題ができないことで叱られ、勉強そのものを嫌いになってしまうかもしれない。",
+    "en": "Such children may be scolded for failing to do their homework and end up coming to hate studying itself.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "放課後の時間は、外で遊んだり、好きな本を読んだり、十分に眠ったりすることに使うほうが、子どもの成長にとって意味がある。",
+    "en": "Spending after-school hours playing outside, reading books they enjoy, and getting enough sleep is more meaningful for children's growth.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "小学校の宿題は、思い切ってなくしてもよいのではないか。",
+    "en": "Might it not be fine to take the plunge and abolish primary school homework?",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "また、家の人が勉強を見てあげられる家庭もあれば、そうでない家庭もあり、同じ宿題でも取り組む条件には差がある。",
+    "chunks": [
+     "また、",
+     "家の人が勉強を見てあげられる家庭もあれば、",
+     "そうでない家庭もあり、",
+     "同じ宿題でも",
+     "取り組む条件には",
+     "差がある。"
+    ],
+    "core": "家庭もあれば家庭もあり、条件には差がある。",
+    "note": "〜もあれば〜もあり sets up a contrast between two kinds of homes. そうでない stands for \"cannot help with study\". 取り組む modifies 条件 (\"the conditions for tackling it\")."
+   },
+   {
+    "s": "放課後の時間は、外で遊んだり、好きな本を読んだり、十分に眠ったりすることに使うほうが、子どもの成長にとって意味がある。",
+    "chunks": [
+     "放課後の時間は、",
+     "外で遊んだり、",
+     "好きな本を読んだり、",
+     "十分に眠ったりすることに",
+     "使うほうが、",
+     "子どもの成長にとって",
+     "意味がある。"
+    ],
+    "core": "放課後の時間は、使うほうが、意味がある。",
+    "note": "Three activities joined by 〜たり〜たりする all modify こと (\"spending time on playing, reading, and sleeping\"). 〜ほうが compares this with homework, and にとって means \"for\"."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "机に向かう",
+    "r": "つくえにむかう",
+    "en": "to sit at one's desk (to study)"
+   },
+   {
+    "w": "習慣",
+    "r": "しゅうかん",
+    "en": "habit"
+   },
+   {
+    "w": "取り組む",
+    "r": "とりくむ",
+    "en": "to tackle, work on"
+   },
+   {
+    "w": "条件",
+    "r": "じょうけん",
+    "en": "conditions, circumstances"
+   },
+   {
+    "w": "自主学習",
+    "r": "じしゅがくしゅう",
+    "en": "self-directed study, independent study"
+   },
+   {
+    "w": "計画を立てる",
+    "r": "けいかくをたてる",
+    "en": "to make a plan"
+   },
+   {
+    "w": "学力",
+    "r": "がくりょく",
+    "en": "academic ability"
+   },
+   {
+    "w": "効果",
+    "r": "こうか",
+    "en": "effect, effectiveness"
+   },
+   {
+    "w": "示す",
+    "r": "しめす",
+    "en": "to show, indicate",
+    "at": "示されている"
+   },
+   {
+    "w": "落ち着く",
+    "r": "おちつく",
+    "en": "to settle down, be calm",
+    "at": "落ち着いて"
+   },
+   {
+    "w": "叱る",
+    "r": "しかる",
+    "en": "to scold",
+    "at": "叱られ"
+   },
+   {
+    "w": "放課後",
+    "r": "ほうかご",
+    "en": "after school"
+   },
+   {
+    "w": "思い切って",
+    "r": "おもいきって",
+    "en": "boldly, taking the plunge"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "取り組む条件には差がある",
+      "環境や助けに差がある"
+     ],
+     [
+      "家庭による差",
+      "家庭によって"
+     ],
+     [
+      "勉強を見てあげられる",
+      "助け"
+     ]
+    ],
+    "trap": [
+     "",
+     "oneonly",
+     "oneonly",
+     "oneonly"
+    ]
+   },
+   {
+    "para": [
+     [
+      "何をどれだけやるかを子ども自身に決めさせる",
+      "子どもが内容を決める"
+     ],
+     [
+      "形に変えてはどうだろうか",
+      "形に変えるべきだと述べ"
+     ],
+     [
+      "なくしてもよいのではないか",
+      "なくしてもよいと述べている"
+     ]
+    ],
+    "trap": [
+     "",
+     "swap",
+     "opposite",
+     "oneonly"
+    ]
+   }
+  ]
+ },
+ "r12-004": {
+  "shape": "A: useful for shops and shoppers, but tricky for some (一方で). B: shifts work onto shoppers and ends small talk (そうは思わない). Both: keep staffed tills (残しておく).",
+  "sents": [
+   {
+    "p": 1,
+    "t": "A",
+    "s": "スーパーやコンビニで、客が自分で商品を読み取って支払いをするセルフレジが広がっている。",
+    "en": "Self-checkout tills, where customers scan items and pay by themselves, are spreading in supermarkets and convenience stores.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "店にとっては、レジに立つ人を減らせるので、人手不足の対策になる。",
+    "en": "For shops, they serve as a measure against staff shortages because they allow fewer people to stand at the till.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "客にとっても、混雑する時間に列に並ぶ時間が短くなるのはありがたい。",
+    "en": "For customers too, it is welcome that the time spent queuing during busy hours becomes shorter.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "店員とのやりとりが苦手な人が、自分のペースで支払いを済ませられるという良さもある。",
+    "en": "There is also the advantage that people who are uncomfortable interacting with shop staff can finish paying at their own pace.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "一方で、高齢の客など、機械の操作に慣れていない人は戸惑うことが多い。",
+    "en": "On the other hand, people who are not used to operating machines, such as older customers, are often bewildered.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "画面の案内が分かりにくく、後ろに並ぶ人を気にして焦ってしまう人もいるだろう。",
+    "en": "Some people probably find the on-screen instructions hard to follow and end up feeling flustered as they worry about the people queuing behind them.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "すべてのレジを機械にしてしまうのではなく、店員のいるレジもいくつか残しておくことが、誰にとっても使いやすい店につながるはずだ。",
+    "en": "Rather than turning every till into a machine, keeping several staffed tills as well should lead to a shop that is easy for everyone to use.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "セルフレジができて便利になったと言われるが、私はそうは思わない。",
+    "en": "People say self-checkout tills have made things more convenient, but I do not think so.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "商品を読み取り、袋に詰め、支払いを済ませる。",
+    "en": "You scan the items, pack them into a bag, and complete the payment.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "これまで店員がしていた仕事を、客が代わりにしているだけではないか。",
+    "en": "Is that not just customers doing the work that shop staff used to do instead?",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "読み取りの間違いも起きやすく、結局、店員が呼ばれて確認しに来ることも多い。",
+    "en": "Scanning mistakes happen easily too, and in the end staff are often called over to come and check.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "わざと読み取らずに商品を持ち帰る不正も問題になっている。",
+    "en": "Dishonest behaviour, where people deliberately take items home without scanning them, has also become a problem.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "何より気になるのは、店員と客の短い会話がなくなることだ。",
+    "en": "What bothers me most of all is the disappearance of brief conversations between staff and customers.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "一人暮らしのお年寄りの中には、レジでの「今日は寒いですね」という一言を楽しみにしている人もいる。",
+    "en": "Among older people living alone, there are some who look forward to a simple remark like \"It's cold today, isn't it?\" at the till.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "買い物は、ただ物を手に入れるだけの場ではない。",
+    "en": "Shopping is not a place merely for obtaining goods.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "効率だけを求めて、人がいるレジをなくしてしまってはいけないと思う。",
+    "en": "I think we must not seek efficiency alone and do away with staffed tills.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "すべてのレジを機械にしてしまうのではなく、店員のいるレジもいくつか残しておくことが、誰にとっても使いやすい店につながるはずだ。",
+    "chunks": [
+     "すべてのレジを機械にしてしまうのではなく、",
+     "店員のいるレジもいくつか残しておくことが、",
+     "誰にとっても使いやすい店に",
+     "つながるはずだ。"
+    ],
+    "core": "店員のいるレジを残しておくことが、店につながるはずだ。",
+    "note": "Built on AのではなくB (\"rather than A, B\"). The long subject up to ことが links to the verb つながる (\"leads to\"). 誰にとっても使いやすい modifies 店 (\"a shop easy for anyone to use\")."
+   },
+   {
+    "s": "一人暮らしのお年寄りの中には、レジでの「今日は寒いですね」という一言を楽しみにしている人もいる。",
+    "chunks": [
+     "一人暮らしのお年寄りの中には、",
+     "レジでの",
+     "「今日は寒いですね」という一言を",
+     "楽しみにしている人も",
+     "いる。"
+    ],
+    "core": "お年寄りの中には、人もいる。",
+    "note": "〜の中には〜人もいる means \"among X, there are some who...\". Inside that frame, レジでの and 「今日は寒いですね」という both describe 一言 (\"a single remark\"), the object of 楽しみにしている (\"looking forward to\")."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "読み取る",
+    "r": "よみとる",
+    "en": "to scan, read (barcodes)",
+    "at": "読み取って"
+   },
+   {
+    "w": "対策",
+    "r": "たいさく",
+    "en": "countermeasure, measure"
+   },
+   {
+    "w": "混雑する",
+    "r": "こんざつする",
+    "en": "to be crowded, congested"
+   },
+   {
+    "w": "済ませる",
+    "r": "すませる",
+    "en": "to finish, complete",
+    "at": "済ませられる"
+   },
+   {
+    "w": "操作",
+    "r": "そうさ",
+    "en": "operation (of a machine)"
+   },
+   {
+    "w": "戸惑う",
+    "r": "とまどう",
+    "en": "to be bewildered, at a loss"
+   },
+   {
+    "w": "焦る",
+    "r": "あせる",
+    "en": "to feel flustered, panic",
+    "at": "焦ってしまう"
+   },
+   {
+    "w": "詰める",
+    "r": "つめる",
+    "en": "to pack, put into",
+    "at": "詰め"
+   },
+   {
+    "w": "結局",
+    "r": "けっきょく",
+    "en": "in the end, after all"
+   },
+   {
+    "w": "わざと",
+    "r": "わざと",
+    "en": "on purpose, deliberately"
+   },
+   {
+    "w": "不正",
+    "r": "ふせい",
+    "en": "dishonesty, fraud"
+   },
+   {
+    "w": "効率",
+    "r": "こうりつ",
+    "en": "efficiency"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "店員のいるレジ",
+      "店員が対応するレジ"
+     ],
+     [
+      "なくしてしまってはいけない",
+      "なくさずに残しておくべき"
+     ]
+    ],
+    "trap": [
+     "",
+     "oneonly",
+     "oneonly",
+     "oneonly"
+    ]
+   },
+   {
+    "para": [
+     [
+      "店にとっては",
+      "店にも"
+     ],
+     [
+      "良さもある",
+      "良い点がある"
+     ],
+     [
+      "店員がしていた仕事を、客が代わりにしている",
+      "客に店の仕事をさせている"
+     ]
+    ],
+    "trap": [
+     "",
+     "swap",
+     "oneonly",
+     "half"
+    ]
+   }
+  ]
+ },
+ "r12-005": {
+  "shape": "A: living alone brings freedom and works with monitoring (十分に可能だ). B: plan early to stay connected (考えておくべき). Both: risk of falling ill unnoticed.",
+  "sents": [
+   {
+    "p": 1,
+    "t": "A",
+    "s": "年を取ってからの一人暮らしと聞くと、寂しくて不便な生活を想像する人が多いかもしれない。",
+    "en": "When people hear of living alone in old age, many may picture a lonely and inconvenient life.",
+    "role": "view"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "しかし、ある調査では、一人で暮らす高齢者の多くが「今の生活に満足している」と答えている。",
+    "en": "However, in one survey, many older people living alone answered, \"I am satisfied with my current life.\"",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "好きな時間に起き、食べたいものを作り、誰にも気を遣わずに過ごせる。",
+    "en": "They can wake up whenever they like, cook what they want to eat, and spend their days without having to worry about anyone else.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "長年家族のために生きてきた人にとって、それは初めて手に入れた自由でもある。",
+    "en": "For people who have lived for their families for many years, it is also a freedom they have gained for the very first time.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "もちろん心配がないわけではない。",
+    "en": "Of course, it is not that there are no worries.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "急に体の具合が悪くなったとき、一人では助けを呼べず、発見が遅れるおそれがある。",
+    "en": "If they suddenly fall ill, they cannot call for help on their own, and there is a risk that discovery will be delayed.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "だが最近は、電気やガスの使い方から異変を知らせる見守りの仕組みも広がっている。",
+    "en": "Yet recently, monitoring systems that alert others to irregularities based on electricity or gas usage have also been spreading.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "こうしたものを上手に使えば、本人が望む限り、一人暮らしを続けることは十分に可能だ。",
+    "en": "If they make good use of such tools, continuing to live alone is entirely possible for as long as the person wishes.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "一人で暮らす高齢者が増えている。",
+    "en": "The number of older people living alone is increasing.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "配偶者に先立たれたり、子どもが独立したりして、一人になる人も多い。",
+    "en": "Many end up alone after losing a spouse or seeing their children become independent.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "年を重ねるにつれて外出の機会が減り、何日も誰とも話さないという人も少なくない。",
+    "en": "As they grow older, opportunities to go out decrease, and quite a few people go for days without speaking to anyone.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "人と話さない生活が続くと、気持ちが沈みがちになるだけでなく、体や頭の働きも衰えやすいと言われている。",
+    "en": "It is said that when a life without talking to others continues, not only does one tend to feel low, but physical and mental functions also decline more easily.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "さらに怖いのは、家の中で倒れても、誰にも気づいてもらえないことだ。",
+    "en": "Even more frightening is the possibility of collapsing at home and having nobody notice.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "元気なうちは一人で大丈夫だと思っていても、いつ何が起こるかは分からない。",
+    "en": "Even if you think you are fine on your own while you are healthy, there is no telling what might happen or when.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "高齢者向けの共同住宅に移ったり、家族の近くに引っ越したりするなど、誰かとつながりを持って暮らす方法を、早いうちから考えておくべきではないだろうか。",
+    "en": "Should we not think from an early stage about ways of living while staying connected to others, such as moving into shared housing for older people or relocating near family?",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "だが最近は、電気やガスの使い方から異変を知らせる見守りの仕組みも広がっている。",
+    "chunks": [
+     "だが最近は、",
+     "電気やガスの使い方から",
+     "異変を知らせる",
+     "見守りの仕組みも",
+     "広がっている。"
+    ],
+    "core": "最近は、見守りの仕組みも広がっている。",
+    "note": "電気やガスの使い方から異変を知らせる (\"which reports irregularities from electricity and gas use\") modifies 見守りの仕組み (\"monitoring systems\"). だが pivots back from the risk in the previous sentence."
+   },
+   {
+    "s": "高齢者向けの共同住宅に移ったり、家族の近くに引っ越したりするなど、誰かとつながりを持って暮らす方法を、早いうちから考えておくべきではないだろうか。",
+    "chunks": [
+     "高齢者向けの共同住宅に移ったり、",
+     "家族の近くに引っ越したりするなど、",
+     "誰かとつながりを持って暮らす方法を、",
+     "早いうちから",
+     "考えておくべきではないだろうか。"
+    ],
+    "core": "方法を、早いうちから考えておくべきではないだろうか。",
+    "note": "The two 〜たり examples plus など illustrate 誰かとつながりを持って暮らす方法 (\"ways to live connected to others\"), the object of 考えておく (\"think ahead\"). べきではないだろうか softens \"should\" into a suggestion."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "気を遣う",
+    "r": "きをつかう",
+    "en": "to worry about others, be considerate",
+    "at": "気を遣わずに"
+   },
+   {
+    "w": "おそれ",
+    "r": "おそれ",
+    "en": "risk, danger, fear"
+   },
+   {
+    "w": "異変",
+    "r": "いへん",
+    "en": "abnormality, irregularity"
+   },
+   {
+    "w": "見守り",
+    "r": "みまもり",
+    "en": "watching over, monitoring"
+   },
+   {
+    "w": "限り",
+    "r": "かぎり",
+    "en": "as long as (after a verb)"
+   },
+   {
+    "w": "配偶者",
+    "r": "はいぐうしゃ",
+    "en": "spouse"
+   },
+   {
+    "w": "先立つ",
+    "r": "さきだつ",
+    "en": "to die before (someone)",
+    "at": "先立たれたり"
+   },
+   {
+    "w": "独立する",
+    "r": "どくりつする",
+    "en": "to become independent",
+    "at": "独立したり"
+   },
+   {
+    "w": "年を重ねる",
+    "r": "としをかさねる",
+    "en": "to grow older, age"
+   },
+   {
+    "w": "につれて",
+    "r": "につれて",
+    "en": "as, in proportion to"
+   },
+   {
+    "w": "沈む",
+    "r": "しずむ",
+    "en": "to sink, feel low (of mood)",
+    "at": "沈みがち"
+   },
+   {
+    "w": "衰える",
+    "r": "おとろえる",
+    "en": "to decline, weaken",
+    "at": "衰えやすい"
+   },
+   {
+    "w": "共同住宅",
+    "r": "きょうどうじゅうたく",
+    "en": "shared housing, collective residence"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "体の具合",
+      "体調"
+     ],
+     [
+      "発見が遅れる",
+      "気づいてもらいにくい"
+     ],
+     [
+      "誰にも気づいてもらえない",
+      "周りの人に気づいてもらいにくい"
+     ]
+    ],
+    "trap": [
+     "",
+     "oneonly",
+     "oneonly",
+     "oneonly"
+    ]
+   },
+   {
+    "para": [
+     [
+      "本人が望む限り",
+      "望めば"
+     ],
+     [
+      "続けることは十分に可能だ",
+      "続けられる"
+     ],
+     [
+      "誰かとつながりを持って暮らす方法",
+      "人とつながる暮らし方"
+     ]
+    ],
+    "trap": [
+     "",
+     "swap",
+     "oneonly",
+     "rejected"
+    ]
+   }
+  ]
+ },
+ "r12-006": {
+  "shape": "A: go in high school (大きな意味がある). B: build a base, go at university (大学で留学するほうが). Both: living abroad young has great value (一生の財産 / 確かに…価値).",
+  "sents": [
+   {
+    "p": 1,
+    "t": "A",
+    "s": "高校生のうちに海外に留学することには、大きな意味がある。",
+    "en": "Studying abroad while still in high school has great meaning.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "十代の柔らかい頭と耳は、外国語の音や表現を驚くほど自然に吸収する。",
+    "en": "The flexible minds and ears of teenagers absorb the sounds and expressions of a foreign language surprisingly naturally.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "また、言葉も習慣も違う環境で、自分で問題を解決しなければならない経験は、大人になってからではなかなか得られない。",
+    "en": "Moreover, the experience of having to solve problems on one's own in an environment with a different language and different customs is hard to come by once you are an adult.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "留学すると日本の授業に遅れてしまうと心配する親も多いが、最近は留学中の学習を単位として認める高校も増えており、以前ほど不利にはならない。",
+    "en": "Many parents worry that studying abroad will make their child fall behind in Japanese classes, but recently more high schools recognise study done abroad for credit, so it is no longer as much of a disadvantage as before.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "一年遅れたとしても、その間に得たものを考えれば、損をしたことにはならないだろう。",
+    "en": "Even if they do fall a year behind, considering what they gained during that time, it would not amount to a loss.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "迷っているなら、まずは一歩を踏み出してほしい。",
+    "en": "If you are hesitating, I hope you will first take that step forward.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "若いうちに外の世界を見た経験は、きっと一生の財産になる。",
+    "en": "The experience of seeing the outside world while young is sure to become a lifelong treasure.",
+    "role": "restate"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "確かに、若いうちに異なる文化の中で暮らす経験には、何物にも代えがたい価値がある。",
+    "en": "Certainly, the experience of living in a different culture while young has an irreplaceable value.",
+    "role": "view"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "しかし、高校生という時期が最も適しているかどうかは、よく考える必要がある。",
+    "en": "However, whether high school is the most suitable time needs careful thought.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "留学先では、日本の社会や文化について意見を求められることが多い。",
+    "en": "At the study-abroad destination, one is often asked for opinions about Japanese society and culture.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "ところが、母語で物事を深く考え、説明する力がまだ育ちきっていないと、外国語以前に、伝える中身がないということになりかねない。",
+    "en": "Yet if the ability to think deeply and explain things in one's native language has not yet fully developed, before it is even a matter of foreign language, there is a risk of having no substance to convey.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "また、目的があいまいなまま出かけると、「楽しかった」だけで終わってしまうこともある。",
+    "en": "Also, if one heads off with a vague purpose, it can end up being nothing more than \"it was fun\".",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "日本で学ぶ基礎をしっかり固め、何を学びたいのかがはっきりしてから大学で留学するほうが、得るものはずっと多いのではないか。",
+    "en": "Surely building a solid foundation of learning in Japan and studying abroad at university once it is clear what you want to study yields far more.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "留学すると日本の授業に遅れてしまうと心配する親も多いが、最近は留学中の学習を単位として認める高校も増えており、以前ほど不利にはならない。",
+    "chunks": [
+     "留学すると日本の授業に遅れてしまうと",
+     "心配する親も多いが、",
+     "最近は",
+     "留学中の学習を単位として認める高校も",
+     "増えており、",
+     "以前ほど不利にはならない。"
+    ],
+    "core": "心配する親も多いが、高校も増えており、不利にはならない。",
+    "note": "〜が separates the parents' worry from the writer's reply. 留学中の学習を単位として認める modifies 高校 (\"high schools that recognise study abroad for credit\"). 増えており is the formal te-form leading to the conclusion."
+   },
+   {
+    "s": "ところが、母語で物事を深く考え、説明する力がまだ育ちきっていないと、外国語以前に、伝える中身がないということになりかねない。",
+    "chunks": [
+     "ところが、",
+     "母語で物事を深く考え、説明する力が",
+     "まだ育ちきっていないと、",
+     "外国語以前に、",
+     "伝える中身がないということに",
+     "なりかねない。"
+    ],
+    "core": "力が育ちきっていないと、中身がないということになりかねない。",
+    "note": "母語で物事を深く考え、説明する modifies 力 (\"ability to think deeply and explain in one's native tongue\"). 育ちきっていない means \"not fully developed\", 外国語以前に means \"before it is even a language issue\", and なりかねない warns of a bad outcome."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "吸収する",
+    "r": "きゅうしゅうする",
+    "en": "to absorb"
+   },
+   {
+    "w": "単位",
+    "r": "たんい",
+    "en": "academic credit"
+   },
+   {
+    "w": "不利",
+    "r": "ふり",
+    "en": "disadvantage, unfavourable"
+   },
+   {
+    "w": "損をする",
+    "r": "そんをする",
+    "en": "to suffer a loss, lose out",
+    "at": "損をした"
+   },
+   {
+    "w": "踏み出す",
+    "r": "ふみだす",
+    "en": "to step forward, take a first step",
+    "at": "踏み出して"
+   },
+   {
+    "w": "財産",
+    "r": "ざいさん",
+    "en": "asset, treasure"
+   },
+   {
+    "w": "何物にも代えがたい",
+    "r": "なにものにもかえがたい",
+    "en": "irreplaceable"
+   },
+   {
+    "w": "適する",
+    "r": "てきする",
+    "en": "to be suitable, fit",
+    "at": "適している"
+   },
+   {
+    "w": "母語",
+    "r": "ぼご",
+    "en": "native language, mother tongue"
+   },
+   {
+    "w": "育ちきる",
+    "r": "そだちきる",
+    "en": "to develop fully, finish growing",
+    "at": "育ちきっていない"
+   },
+   {
+    "w": "かねない",
+    "r": "かねない",
+    "en": "might (risk of an unwelcome outcome)"
+   },
+   {
+    "w": "あいまい",
+    "r": "あいまい",
+    "en": "vague, ambiguous"
+   },
+   {
+    "w": "基礎",
+    "r": "きそ",
+    "en": "foundation, basics"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "外の世界を見た経験",
+      "外国で暮らす経験"
+     ],
+     [
+      "一生の財産になる",
+      "大きな価値がある"
+     ],
+     [
+      "何物にも代えがたい価値がある",
+      "大きな価値がある"
+     ]
+    ],
+    "trap": [
+     "",
+     "oneonly",
+     "oneonly",
+     "oneonly"
+    ]
+   },
+   {
+    "para": [
+     [
+      "一歩を踏み出してほしい",
+      "行くことを勧め"
+     ],
+     [
+      "大学で留学するほうが、得るものはずっと多い",
+      "大学生になってから行くほうがよい"
+     ]
+    ],
+    "trap": [
+     "",
+     "swap",
+     "oneonly",
+     "half"
+    ]
+   }
+  ]
+ },
+ "r12-007": {
+  "shape": "A: likes cashless, wants lower fees (手数料を下げる仕組み). B: warns of overspending; mix with cash (使い分ける). Both: fees burden small shops (重い負担 / 決して軽くない).",
+  "sents": [
+   {
+    "p": 1,
+    "t": "A",
+    "s": "私は買い物のほとんどを、カードやスマートフォンで支払っている。",
+    "en": "I pay for almost all of my shopping by card or smartphone.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "小銭を数える手間がなく、レジでの支払いもあっという間に終わる。",
+    "en": "There is no hassle of counting small change, and paying at the till is over in an instant.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "何より助かるのは、いつ、どこで、いくら使ったかが自動で記録に残ることだ。",
+    "en": "What helps most of all is that when, where, and how much I spent is automatically recorded.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "毎月の支出が一目で分かるので、無駄遣いに気づきやすくなり、以前より貯金ができるようになった。",
+    "en": "Because my monthly spending is clear at a glance, I notice wasteful spending more easily and have become able to save more than before.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "支払いのたびにポイントがたまるのもうれしい。",
+    "en": "It is also nice that points build up every time I pay.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "ただ、近所の小さな店では、まだ現金しか使えないところが多い。",
+    "en": "However, among small local shops, there are still many places where only cash can be used.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "店の人に聞くと、カード会社などに払う手数料が重い負担になるのだという。",
+    "en": "When I asked shopkeepers, they said the commission fees paid to card companies and the like are a heavy burden.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "こうした店でも使いやすくなるよう、手数料を下げる仕組みが必要だと思う。",
+    "en": "I think we need a system to lower those fees so that it becomes easier to use cashless payment at such shops as well.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "キャッシュレス決済の便利さは誰もが認めるところだろう。",
+    "en": "Everyone would surely acknowledge the convenience of cashless payment.",
+    "role": "view"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "だが、私は注意も必要だと考えている。",
+    "en": "However, I believe caution is needed too.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "現金なら財布の中身が減っていくのが目に見えるが、カードやスマートフォンでの支払いでは、お金を払っているという感覚が薄くなる。",
+    "en": "With cash you can see the contents of your wallet shrinking with your own eyes, whereas with card or smartphone payments, the sense that you are spending money becomes fainter.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "そのため、気づかないうちに使いすぎてしまう人が少なくない。",
+    "en": "For that reason, quite a few people end up overspending without realising it.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "また、大きな災害で停電が起きれば、端末が使えず、何も買えなくなるおそれもある。",
+    "en": "Also, if a power cut occurs in a major disaster, payment terminals cannot be used and there is a risk of being unable to buy anything.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "店の側にも問題がある。",
+    "en": "There is a problem on the shop side too.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "支払いのたびに店が払う手数料は、小さな店にとっては決して軽くない。",
+    "en": "The fees a shop pays on every transaction are by no means light for a small shop.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "その分が値段に上乗せされれば、結局は客全体の負担になる。",
+    "en": "If that amount is added on top of prices, in the end it becomes a burden on customers as a whole.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "便利さに頼り切らず、現金と上手に使い分けることが大切だ。",
+    "en": "It is important not to rely completely on convenience, and to use cashless payment and cash smartly alongside each other.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "何より助かるのは、いつ、どこで、いくら使ったかが自動で記録に残ることだ。",
+    "chunks": [
+     "何より助かるのは、",
+     "いつ、どこで、いくら使ったかが",
+     "自動で",
+     "記録に残ることだ。"
+    ],
+    "core": "何より助かるのは、記録に残ることだ。",
+    "note": "Built on 〜のは〜ことだ (\"what helps most is that...\"). Inside it, the embedded question いつ、どこで、いくら使ったか acts as a single noun subject marked by が for the verb 残る (\"remains in the record\")."
+   },
+   {
+    "s": "現金なら財布の中身が減っていくのが目に見えるが、カードやスマートフォンでの支払いでは、お金を払っているという感覚が薄くなる。",
+    "chunks": [
+     "現金なら",
+     "財布の中身が減っていくのが",
+     "目に見えるが、",
+     "カードやスマートフォンでの支払いでは、",
+     "お金を払っているという感覚が",
+     "薄くなる。"
+    ],
+    "core": "現金なら目に見えるが、支払いでは感覚が薄くなる。",
+    "note": "〜が contrasts two halves: 現金なら (\"with cash\") vs カードやスマートフォンでの支払いでは (\"with card or phone payments\"). 財布の中身が減っていくの is nominalised by の as the subject of 目に見える (\"visible\")."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "手間",
+    "r": "てま",
+    "en": "time and trouble, hassle"
+   },
+   {
+    "w": "支出",
+    "r": "ししゅつ",
+    "en": "expenditure, spending"
+   },
+   {
+    "w": "一目で",
+    "r": "ひとめで",
+    "en": "at a glance"
+   },
+   {
+    "w": "無駄遣い",
+    "r": "むだづかい",
+    "en": "wasteful spending"
+   },
+   {
+    "w": "手数料",
+    "r": "てすうりょう",
+    "en": "commission fee, handling fee"
+   },
+   {
+    "w": "決済",
+    "r": "けっさい",
+    "en": "settlement, payment"
+   },
+   {
+    "w": "感覚",
+    "r": "かんかく",
+    "en": "sense, feeling"
+   },
+   {
+    "w": "薄い",
+    "r": "うすい",
+    "en": "faint, weak (of a feeling)",
+    "at": "薄くなる"
+   },
+   {
+    "w": "停電",
+    "r": "ていでん",
+    "en": "power cut, blackout"
+   },
+   {
+    "w": "端末",
+    "r": "たんまつ",
+    "en": "terminal, device"
+   },
+   {
+    "w": "決して",
+    "r": "けっして",
+    "en": "never, by no means (with a negative)"
+   },
+   {
+    "w": "上乗せする",
+    "r": "うわのせする",
+    "en": "to add on top (of a price)",
+    "at": "上乗せされれば"
+   },
+   {
+    "w": "使い分ける",
+    "r": "つかいわける",
+    "en": "to use properly according to the situation"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "決して軽くない",
+      "重い負担"
+     ],
+     [
+      "カード会社などに払う手数料",
+      "店が払う手数料"
+     ]
+    ],
+    "trap": [
+     "",
+     "oneonly",
+     "oneonly",
+     "oneonly"
+    ]
+   },
+   {
+    "para": [
+     [
+      "無駄遣いに気づきやすくなり",
+      "無駄遣いに気づきやすい"
+     ],
+     [
+      "使いすぎてしまう人が少なくない",
+      "使いすぎにつながる"
+     ]
+    ],
+    "trap": [
+     "",
+     "swap",
+     "oneonly",
+     "oneonly"
+    ]
+   }
+  ]
+ },
+ "r12-008": {
+  "shape": "A: get used to speaking in meetings step by step (少しずつ慣れていって). B: share ideas after the meeting (終わった後で…伝えればよい). Both: many share this worry.",
+  "sents": [
+   {
+    "p": 1,
+    "t": "A",
+    "s": "「会議で自分の意見が言えない」というご相談ですね。",
+    "en": "Your query is that you cannot voice your own opinions in meetings, I see.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "こうした悩みは、実はとても多いものです。",
+    "en": "Worries like this are actually very common.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "「的外れなことを言ったらどうしよう」とためらうのは、それだけ真剣に考えている証拠でもあります。",
+    "en": "Hesitating with the thought, \"What if I say something off the mark?\", is also proof that you are thinking that seriously about it.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "ただ、黙っていては、せっかくの考えも存在しないのと同じになってしまいます。",
+    "en": "However, if you stay silent, even your valuable ideas end up being the same as if they did not exist.",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "まずは、会議の前に資料を読み、言いたいことを一つだけメモしておきましょう。",
+    "en": "First, read the documents before the meeting and jot down just one thing you want to say.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "いきなり意見を言うのが難しければ、「〜ということでしょうか」と質問の形で口を開くのも一つの方法です。",
+    "en": "If stating an opinion straight away is hard, opening your mouth in the form of a question, such as \"Do you mean that...?\", is also one approach.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "一度発言できれば、次からはずっと楽になります。",
+    "en": "Once you manage to speak up once, it becomes much easier from the next time on.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "A",
+    "s": "小さな一言を積み重ねて、会議の場で話すことに少しずつ慣れていってください。",
+    "en": "Please build up small remarks and gradually get used to speaking in meetings.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "ご相談を読んで、同じように感じている人は少なくないだろうと思いました。",
+    "en": "Reading your query, I thought that quite a few people must feel the same way.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "間違えるのが怖いのは、誰でも同じです。",
+    "en": "Being afraid of making a mistake is the same for everyone.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "ただ、会議の場で話すことに、それほどこだわる必要はないのではないでしょうか。",
+    "en": "However, is there really any need to insist so much on speaking during the meeting itself?",
+    "role": "turn"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "人には、その場ですぐに考えをまとめられる人と、時間をかけて考えを深める人がいます。",
+    "en": "Among people, there are those who can pull their thoughts together on the spot and those who take time to deepen their ideas.",
+    "role": "reason"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "あなたが後者なら、会議ではよく聞くことに集中し、終わった後で、上司や担当者に「先ほどの件ですが」とメールや口頭で伝えればよいのです。",
+    "en": "If you are the latter, you can focus on listening carefully during the meeting, and afterwards pass your thoughts on to your manager or the person in charge by email or in person, saying, \"Regarding the matter earlier...\".",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "大切なのは、あなたの考えが相手に届くことで、会議で発言すること自体ではありません。",
+    "en": "What matters is that your ideas reach the other person, not speaking in the meeting itself.",
+    "role": "claim"
+   },
+   {
+    "p": 1,
+    "t": "B",
+    "s": "自分に合った伝え方を見つけてください。",
+    "en": "Please find a way of communicating that suits you.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "「的外れなことを言ったらどうしよう」とためらうのは、それだけ真剣に考えている証拠でもあります。",
+    "chunks": [
+     "「的外れなことを言ったらどうしよう」と",
+     "ためらうのは、",
+     "それだけ",
+     "真剣に考えている",
+     "証拠でもあります。"
+    ],
+    "core": "ためらうのは、証拠でもあります。",
+    "note": "Built on 〜のは〜証拠だ (\"hesitating is proof of...\"). The quote inside 「」 gives the worry behind ためらう (\"hesitate\"). それだけ (\"to that extent\") links the worry to how seriously you think, and でもあります adds \"also\"."
+   },
+   {
+    "s": "あなたが後者なら、会議ではよく聞くことに集中し、終わった後で、上司や担当者に「先ほどの件ですが」とメールや口頭で伝えればよいのです。",
+    "chunks": [
+     "あなたが後者なら、",
+     "会議ではよく聞くことに集中し、",
+     "終わった後で、",
+     "上司や担当者に",
+     "「先ほどの件ですが」と",
+     "メールや口頭で伝えればよいのです。"
+    ],
+    "core": "後者なら、集中し、後で伝えればよいのです。",
+    "note": "後者 (\"the latter\") points back to people who need time to think. Two actions follow: 集中し (formal stem linking to the next verb) during the meeting, then 伝えればよいのです (\"it is fine just to convey it\") afterwards."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "的外れ",
+    "r": "まとはずれ",
+    "en": "off the mark, beside the point"
+   },
+   {
+    "w": "ためらう",
+    "r": "ためらう",
+    "en": "to hesitate"
+   },
+   {
+    "w": "証拠",
+    "r": "しょうこ",
+    "en": "proof, evidence"
+   },
+   {
+    "w": "せっかく",
+    "r": "せっかく",
+    "en": "hard-earned, valuable (with effort)"
+   },
+   {
+    "w": "存在する",
+    "r": "そんざいする",
+    "en": "to exist",
+    "at": "存在しない"
+   },
+   {
+    "w": "いきなり",
+    "r": "いきなり",
+    "en": "suddenly, straight away"
+   },
+   {
+    "w": "口を開く",
+    "r": "くちをひらく",
+    "en": "to speak up, start speaking"
+   },
+   {
+    "w": "発言する",
+    "r": "はつげんする",
+    "en": "to speak up, make a remark",
+    "at": "発言できれば"
+   },
+   {
+    "w": "積み重ねる",
+    "r": "つみかさねる",
+    "en": "to build up, accumulate",
+    "at": "積み重ねて"
+   },
+   {
+    "w": "こだわる",
+    "r": "こだわる",
+    "en": "to insist on, fixate on"
+   },
+   {
+    "w": "後者",
+    "r": "こうしゃ",
+    "en": "the latter"
+   },
+   {
+    "w": "担当者",
+    "r": "たんとうしゃ",
+    "en": "person in charge"
+   },
+   {
+    "w": "口頭",
+    "r": "こうとう",
+    "en": "oral, spoken, by word of mouth"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "こうした悩みは、実はとても多い",
+      "同じことで悩んでいる人は、少なくない"
+     ],
+     [
+      "同じように感じている人",
+      "同じことで悩んでいる人"
+     ]
+    ],
+    "trap": [
+     "",
+     "oneonly",
+     "oneonly",
+     "oneonly"
+    ]
+   },
+   {
+    "para": [
+     [
+      "慣れていってください",
+      "慣れるよう勧め"
+     ],
+     [
+      "終わった後で",
+      "会議の後で"
+     ],
+     [
+      "伝えればよいのです",
+      "伝えてもよい"
+     ]
+    ],
+    "trap": [
+     "",
+     "swap",
+     "oneonly",
+     "oneonly"
+    ]
+   }
+  ]
+ }
+}

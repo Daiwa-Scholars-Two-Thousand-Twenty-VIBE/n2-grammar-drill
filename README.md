@@ -117,7 +117,19 @@ The reading section is where the July 2026 N3 paper was lost (18 of 60), and the
 - **Wrong choices are built like the paper's:** true but about another part, half right, cause and effect turned round, the view the writer argues against, too wide or too narrow, sensible but not in the text. Each `why` names its trap.
 - **Texts are not scheduled like flashcards** (you would remember the answers). They come least-read first, so the bank lasts. Today's set takes the types in turn: 問題10, 11, 12, 10, 13, 11, 14.
 - **Speed:** each text has a paper pace (2:30 for 問題10, 6:00 for 問題11, 7:00 for 問題12, 10:00 for 問題13, 7:00 for 問題14). Results compare your time with it, and Progress shows your last five texts of each type as a multiple of pace, plus characters a minute.
-- **Tips:** Library → Reading and listening tips holds the book's method in our own words, part by part, with the book's page numbers: signal words, steps, tips and traps for each technique and each part of the paper, and a drill button for each.
+- **Tips:** Library → Reading and listening tips holds the book's method in our own words, part by part, with the book's page numbers: signal words, steps, tips and traps for each technique and each part of the paper, and a drill button for each. Two sheets at the top are our own advice, not the book's: **the plan for the mock and the exam** (minutes per part, the order to take them in, and the listening routine) and **the traps in the wrong choices**.
+
+### The reading coach (28 Nov 2026)
+
+Outside a timed section, every text is a small lesson in three steps. A timed section (full or half) still runs like the paper, with none of this.
+
+1. **Before you read.** The questions come first, with one line on where each answer usually sits (a reason: just before or after the underline; a pointing word: look backward) and the plan for that part of the paper. The clock starts when you press Start reading. Once you have a few wrong answers on record, the card names the trap you fall for most.
+2. **The text and its questions**, as before. After each answer, every wrong choice carries the name of its trap (Not in the text, Half right, The view the writer rejects, and nine more), and a line shows **how the right choice re-words the text** (取り組む条件には差がある → 環境や助けに差がある). That is the main skill of N2 reading: the answer never copies the text.
+3. **The lesson.** The shape of the text in one line; every sentence with its role (others' view, the turn, the writer's point, a reason, an example) and its signal words boxed, with the English one tap away; the hardest sentences cut into chunks with their skeleton; and the words worth knowing. Then **Read it again against the clock**: a second read of a text you now understand, logged in characters a minute. Reading a text again is how reading speed is built.
+
+- **Traps are counted.** A wrong reading answer keeps which choice you picked. Results name the traps of that set, and Progress lists the traps you fall for, most common first, each with the check that beats it.
+- **Time in the lesson counts** toward the day's hours (at most ten minutes a text), and so does the second read.
+- The lessons live in `content/notes_*.json`, one note per text, made with `tools/notes.mjs` and checked by `validateNotes`. A text with no note simply has no lesson.
 
 ## Listening (聴解 問題1 to 5)
 
@@ -229,6 +241,8 @@ node --test tests/*.mjs            # scheduler, sync, relay and content tests
 uv run --with genanki python tools/build_anki.py   # rebuild the Anki deck
 python3 -I tools/build_sound_parts.py              # rebuild js/sound.js after changing the kanji list
 node tools/check.mjs content/read_r10.json         # check one reading, listening or vocab file while writing it
+node tools/notes.mjs skeleton content/read_r10.json   # after adding a reading text: add its empty note to content/notes_r10.json
+node tools/notes.mjs check content/notes_r10.json     # check a notes file while filling it in
 ```
 
 ### Listening audio
@@ -270,7 +284,8 @@ Commit the regenerated `js/data.js` (and the `.apkg` if you changed the Anki que
 | `content/r14_*.json` | 問題14 情報検索 notices (`r14`) with their questions |
 | `content/vocab_v4.json` | 問題4 文脈規定 (`v4`) items |
 | `content/read_*.json` | Reading texts 問題10 to 13 (`r10` to `r13`) with their questions and techniques |
-| `content/read_tips.json` | The reading and listening tips: 新完全マスター読解 N2 technique by technique, each part of the paper, each listening type |
+| `content/read_tips.json` | The reading and listening tips: 新完全マスター読解 N2 technique by technique, each part of the paper, each listening type, and (`extra`) our own sheets: the plan for the day and the traps |
+| `content/notes_*.json` | The lesson for each reading text: its shape, every sentence with an English line and a role, the hard sentences in chunks, the words, and per question the re-wording and the trap of each wrong choice |
 | `content/listen_*.json` | Listening scripts 聴解 問題1 to 5 (`l1` to `l5`) |
 | `content/audio.json` | Made by `tools/build_audio.py`: each item's length, script hash, voices and spoken order |
 | `audio/` | The listening audio, one `.m4a` per item (AAC, about 40 kbps) |
@@ -287,6 +302,7 @@ Commit the regenerated `js/data.js` (and the `.apkg` if you changed the Anki que
 | `tools/bundle.mjs` | Validates everything and writes `js/data.js` |
 | `tools/build_sound_parts.py` | Writes `js/sound.js` from Kanjium and WaniKani's public level pages |
 | `tools/check.mjs` | Validates one reading, listening or vocab file and prints text lengths |
+| `tools/notes.mjs` | Makes the empty note for each reading text (sentences already split) and validates a notes file |
 | `tools/build_audio.py` | Makes the listening audio (see above) |
 | `tools/build_videos.py` | Copies in and shrinks the lesson videos (see above) |
 | `tests/` | `test_srs.mjs`, `test_sync.mjs`, `test_content.mjs`, `test_proxy.mjs`, `test_offline.mjs` |

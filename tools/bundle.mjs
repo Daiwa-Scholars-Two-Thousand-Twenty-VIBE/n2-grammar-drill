@@ -6,7 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
-import { ROOT, CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, textFiles, listenFiles, readJSON, validateItems, validateKanji, validateKanjiInfo, validateVocab, validatePassages, validateTexts, validateListening, charCount, plainText } from "./lib.mjs";
+import { ROOT, CONTENT, loadCatalog, questionFiles, vocabFiles, passageFiles, textFiles, listenFiles, readJSON, validateItems, validateKanji, validateKanjiInfo, validateVocab, validatePassages, validateTexts, validateListening, validateNotes, noteFiles, charCount, plainText } from "./lib.mjs";
 
 const report = process.argv.includes("--report");
 const catalog = loadCatalog();
@@ -77,6 +77,15 @@ for (const [id, v] of Object.entries(videoAll)) {
   else if (!(v.secs > 0 && v.mb > 0 && v.h)) errors.push(`videos.json: ${id} needs secs, mb and h`);
   else if (fs.existsSync(path.join(ROOT, "video", `${id}.mp4`))) videos[id] = { secs: v.secs, mb: v.mb, h: v.h };
 }
+// Reading notes (content/notes_*.json): the lesson shown after a text's questions. A text whose note is
+// still an empty skeleton (no vocab yet) is left out, so the app shows that text without a lesson.
+const notes = {};
+for (const file of noteFiles()) {
+  const all = readJSON(file);
+  const written = Object.fromEntries(Object.entries(all).filter(([, n]) => n && Array.isArray(n.vocab) && n.vocab.length));
+  errors.push(...validateNotes(written, file, [...texts, ...passages]));
+  Object.assign(notes, written);
+}
 const tipsFile = path.join(CONTENT, "read_tips.json");
 const tips = fs.existsSync(tipsFile) ? readJSON(tipsFile) : null;
 
@@ -124,6 +133,7 @@ const data = {
   audio,
   videos,
   tips,
+  notes,
 };
 const json = JSON.stringify(data);
 const version = crypto.createHash("sha1").update(json).digest("hex").slice(0, 8);
@@ -138,7 +148,7 @@ const vType = (t) => vocab.filter((q) => q.type === t).length;
 console.log(`  Vocab: ${vType("v3")} 問題3 · ${vType("v4")} 問題4 · ${vType("v5")} 問題5 · ${vType("v6")} 問題6 · ${passages.length} 問題14 notices`);
 const tType = (t) => texts.filter((p) => p.type === t).length;
 const lType = (t) => listen.filter((p) => p.type === t).length;
-console.log(`  Reading: ${tType("r10")} 問題10 · ${tType("r11")} 問題11 · ${tType("r12")} 問題12 · ${tType("r13")} 問題13`);
+console.log(`  Reading: ${tType("r10")} 問題10 · ${tType("r11")} 問題11 · ${tType("r12")} 問題12 · ${tType("r13")} 問題13 · lessons for ${Object.keys(notes).length} of ${texts.length + passages.length} texts`);
 console.log(`  Listening: ${lType("l1")} 問題1 · ${lType("l2")} 問題2 · ${lType("l3")} 問題3 · ${lType("l4")} 問題4 · ${lType("l5")} 問題5 · audio for ${Object.keys(audio).length}`);
 console.log(`  Lesson videos: ${Object.keys(videos).length} · ${Math.round(Object.values(videos).reduce((a, v) => a + v.secs, 0) / 60)} min`);
 if (thin.length) console.log(`  Points with fewer than 2 web questions: ${thin.join(", ")}`);

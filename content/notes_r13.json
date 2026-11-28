@@ -1,0 +1,2575 @@
+{
+ "r13-001": {
+  "shape": "Everyday scene (P1) → common view (確かに, P2) → turn and idea (しかし, P3-4) → modern problem (ところが, P5) → proposal and claim in P6 (ただ〜どうだろうか)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "電車の中を見渡すと、ほとんどの人がスマートフォンの画面を見ている。",
+    "en": "When you look around inside a train, most people are looking at their smartphone screens.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "数分の待ち時間でさえ、私たちは何かで埋めずにはいられないようだ。",
+    "en": "Even a wait of a few minutes seems to be something we cannot help filling with something.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "退屈は、できるだけ避けるべき無駄な時間だと考えられている。",
+    "en": "Boredom is thought of as wasted time that should be avoided as much as possible.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "確かに、退屈な時間は楽しいものではない。",
+    "en": "Certainly, boring time is not enjoyable.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "何もすることがないと落ち着かず、時間がもったいないと感じる人も多いだろう。",
+    "en": "Many people probably feel restless when they have nothing to do and feel that time is being wasted.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "忙しい現代人にとって、すき間の時間に情報を得たり、連絡を済ませたりできるのは便利なことだ。",
+    "en": "For busy modern people, being able to get information or take care of messages during spare moments is convenient.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "電車を待つ数分の間にメールに返事をしておけば、その分、ほかのことに時間を使える。",
+    "en": "If you reply to emails during the few minutes you wait for a train, you can use that much more time for other things.",
+    "role": "example"
+   },
+   {
+    "p": 3,
+    "s": "しかし、私は最近、退屈を手放したことで失ったものもあるのではないかと思うようになった。",
+    "en": "However, I have recently come to think that we may also have lost something by letting go of boredom.",
+    "role": "claim"
+   },
+   {
+    "p": 3,
+    "s": "子どものころ、雨の日に外で遊べず、することがなくて困った経験はないだろうか。",
+    "en": "When you were a child, did you never have the experience of being stuck with nothing to do on a rainy day when you could not play outside?",
+    "role": "question"
+   },
+   {
+    "p": 3,
+    "s": "そんなとき、私は空き箱を組み立てて家を作ったり、自分で考えたゲームのルールを妹に説明したりしていた。",
+    "en": "At times like that, I would put empty boxes together to make a house, or explain to my younger sister the rules of a game I had made up myself.",
+    "role": "example"
+   },
+   {
+    "p": 3,
+    "s": "退屈だったからこそ、自分で何かを生み出そうとしたのである。",
+    "en": "It was precisely because I was bored that I tried to create something myself.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "大人になっても同じことが言える。",
+    "en": "The same can be said even after becoming an adult.",
+    "role": "fact"
+   },
+   {
+    "p": 4,
+    "s": "ぼんやりと窓の外を眺めているときに、仕事の問題を解決する方法がふと浮かんだり、忘れていた約束を思い出したりすることがある。",
+    "en": "While gazing absently out of the window, a way to solve a work problem sometimes suddenly comes to mind, or you remember an appointment you had forgotten.",
+    "role": "example"
+   },
+   {
+    "p": 4,
+    "s": "頭が外からの情報で満たされていないとき、それまでばらばらだった考えが、静かに結びついていくのだろう。",
+    "en": "When the mind is not filled with information from outside, thoughts that had been scattered until then probably connect quietly.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "散歩の途中や風呂に入っているときに良い考えが浮かぶという人が多いのも、同じ理由からではないだろうか。",
+    "en": "Is it not for the same reason that many people say good ideas come to them during a walk or while taking a bath?",
+    "role": "example"
+   },
+   {
+    "p": 5,
+    "s": "ところが今は、退屈を感じる前に、手の中の画面が次々と新しい刺激を与えてくれる。",
+    "en": "Yet nowadays, before we even feel bored, the screen in our hand gives us one new stimulus after another.",
+    "role": "turn"
+   },
+   {
+    "p": 5,
+    "s": "それはまるで、のどが渇く前から水を飲まされ続けているようなものだ。",
+    "en": "It is just like being made to keep drinking water even before you feel thirsty.",
+    "role": "restate"
+   },
+   {
+    "p": 5,
+    "s": "自分から何かを求める前に満たされてしまうので、本当は何がしたいのか、何を考えたいのかが分からなくなってしまう。",
+    "en": "Because we end up satisfied before we seek anything ourselves, we lose sight of what we truly want to do or what we want to think about.",
+    "role": "reason"
+   },
+   {
+    "p": 6,
+    "s": "もちろん、スマートフォンを捨てるべきだと言いたいわけではない。",
+    "en": "Of course, I do not mean to say that we should throw away our smartphones.",
+    "role": "fact"
+   },
+   {
+    "p": 6,
+    "s": "ただ、一日のうち少しの時間でもいいから、あえて何もしない時間を作ってみてはどうだろうか。",
+    "en": "Still, even if it is just a little time each day, why not deliberately make time to do nothing?",
+    "role": "claim"
+   },
+   {
+    "p": 6,
+    "s": "退屈は無駄な空白ではなく、自分の内側から考えが生まれてくるための大切な時間なのである。",
+    "en": "Boredom is not a useless blank, but valuable time for thoughts to emerge from within oneself.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "忙しい現代人にとって、すき間の時間に情報を得たり、連絡を済ませたりできるのは便利なことだ。",
+    "chunks": [
+     "忙しい現代人にとって、",
+     "すき間の時間に",
+     "情報を得たり、",
+     "連絡を済ませたり",
+     "できるのは",
+     "便利なことだ。"
+    ],
+    "core": "〜できるのは便利なことだ",
+    "note": "A 〜のは〜だ frame: everything from すき間の時間に to できる is one long subject clause linking two actions with 〜たり〜たり, and 便利なことだ is the predicate."
+   },
+   {
+    "s": "頭が外からの情報で満たされていないとき、それまでばらばらだった考えが、静かに結びついていくのだろう。",
+    "chunks": [
+     "頭が",
+     "外からの情報で",
+     "満たされていないとき、",
+     "それまでばらばらだった",
+     "考えが、",
+     "静かに結びついていくのだろう。"
+    ],
+    "core": "考えが結びついていくのだろう",
+    "note": "The 〜とき clause sets the condition using a negative passive (満たされていない, not filled). In the main clause, それまでばらばらだった modifies 考え, and のだろう softens the writer's explanation."
+   },
+   {
+    "s": "退屈は無駄な空白ではなく、自分の内側から考えが生まれてくるための大切な時間なのである。",
+    "chunks": [
+     "退屈は",
+     "無駄な空白ではなく、",
+     "自分の内側から",
+     "考えが生まれてくる",
+     "ための",
+     "大切な時間なのである。"
+    ],
+    "core": "退屈は大切な時間なのである",
+    "note": "AではなくB contrasts what boredom is not (無駄な空白) with what it is. 自分の内側から考えが生まれてくるための modifies 大切な時間, and なのである gives an emphatic conclusion."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "見渡す",
+    "r": "みわたす",
+    "en": "to look around, survey"
+   },
+   {
+    "w": "退屈",
+    "r": "たいくつ",
+    "en": "boredom, tedium"
+   },
+   {
+    "w": "落ち着く",
+    "r": "おちつく",
+    "en": "to calm down, feel settled",
+    "at": "落ち着かず"
+   },
+   {
+    "w": "すき間",
+    "r": "すきま",
+    "en": "gap, spare moment"
+   },
+   {
+    "w": "済ませる",
+    "r": "すませる",
+    "en": "to finish, take care of",
+    "at": "済ませたり"
+   },
+   {
+    "w": "手放す",
+    "r": "てばなす",
+    "en": "to let go of, part with",
+    "at": "手放した"
+   },
+   {
+    "w": "組み立てる",
+    "r": "くみたてる",
+    "en": "to assemble, put together",
+    "at": "組み立てて"
+   },
+   {
+    "w": "生み出す",
+    "r": "うみだす",
+    "en": "to create, produce",
+    "at": "生み出そう"
+   },
+   {
+    "w": "ぼんやり",
+    "r": "ぼんやり",
+    "en": "absently, vaguely"
+   },
+   {
+    "w": "ふと",
+    "r": "ふと",
+    "en": "suddenly, casually"
+   },
+   {
+    "w": "満たす",
+    "r": "みたす",
+    "en": "to fill, satisfy",
+    "at": "満たされて"
+   },
+   {
+    "w": "ばらばら",
+    "r": "ばらばら",
+    "en": "scattered, disconnected"
+   },
+   {
+    "w": "結びつく",
+    "r": "むすびつく",
+    "en": "to connect, link together",
+    "at": "結びついて"
+   },
+   {
+    "w": "刺激",
+    "r": "しげき",
+    "en": "stimulus, stimulation"
+   },
+   {
+    "w": "あえて",
+    "r": "あえて",
+    "en": "deliberately, on purpose"
+   },
+   {
+    "w": "空白",
+    "r": "くうはく",
+    "en": "blank, empty space"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "自分で何かを生み出そうとした",
+      "自分で考え、工夫する"
+     ],
+     [
+      "失った",
+      "減った"
+     ]
+    ],
+    "trap": [
+     "",
+     "narrow",
+     "opposite",
+     "notsaid"
+    ]
+   },
+   {
+    "para": [
+     [
+      "のどが渇く前から",
+      "自分から求める前に"
+     ],
+     [
+      "水を飲まされ続けている",
+      "外から刺激が次々と与えられている"
+     ]
+    ],
+    "trap": [
+     "",
+     "notsaid",
+     "literal",
+     "opposite"
+    ]
+   },
+   {
+    "para": [
+     [
+      "考えが生まれてくるための",
+      "考えが生まれるために"
+     ],
+     [
+      "大切な時間",
+      "必要なもの"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "extreme",
+     "narrow"
+    ]
+   }
+  ]
+ },
+ "r13-002": {
+  "shape": "Common view (P1-2, 確かに) → turn and old job episode (しかし, P3-4) → why efficiency cuts value (P5) → core claim in P6-7 (大切なのは〜、手段にすぎない)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "どの職場でも「効率を上げよう」という言葉をよく耳にする。",
+    "en": "In any workplace, we often hear the phrase 'let's raise efficiency'.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "会議は短く、資料は簡潔に、無駄な作業は減らす。",
+    "en": "Keep meetings short, make documents concise, and cut wasteful tasks.",
+    "role": "view"
+   },
+   {
+    "p": 1,
+    "s": "限られた時間で多くの成果を出すことが、よい働き方だとされている。",
+    "en": "Producing a lot of results in a limited amount of time is regarded as a good way of working.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "確かに、効率を考えることは大切だ。",
+    "en": "Certainly, thinking about efficiency is important.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "目的のはっきりしない会議を何時間も続けたり、誰も読まない報告書を作り続けたりするのは、働く人にとっても会社にとっても損失でしかない。",
+    "en": "Continuing meetings with no clear purpose for hours, or keeping on writing reports that nobody reads, is nothing but a loss for both workers and the company.",
+    "role": "example"
+   },
+   {
+    "p": 3,
+    "s": "しかし、効率を追い求めるあまり、かえって仕事が悪くなることもあるのではないか。",
+    "en": "However, could it not be that pursuing efficiency too single-mindedly actually makes the work worse?",
+    "role": "claim"
+   },
+   {
+    "p": 3,
+    "s": "私が以前勤めていた会社では、作業時間を細かく記録し、一つ一つの仕事にかかる時間を減らすよう求められた。",
+    "en": "At a company where I used to work, we were asked to record our task times in detail and reduce the time spent on each piece of work.",
+    "role": "example"
+   },
+   {
+    "p": 3,
+    "s": "その結果、確かに一件あたりの時間は短くなった。",
+    "en": "As a result, the time per task certainly became shorter.",
+    "role": "fact"
+   },
+   {
+    "p": 3,
+    "s": "ところが半年ほどたつと、客からの問い合わせや、やり直しの件数がむしろ増えていたのである。",
+    "en": "Yet after about half a year, the number of enquiries from customers and tasks that had to be redone had actually increased.",
+    "role": "turn"
+   },
+   {
+    "p": 4,
+    "s": "原因を調べてみると、記録には残らない時間が削られていたことが分かった。",
+    "en": "When we looked into the cause, we found that time that does not show up in records had been cut.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "たとえば、隣の席の同僚に「この書き方で伝わるかな」と相談する時間や、締め切りまで余裕のある仕事を念のため見直す時間である。",
+    "en": "For example, time to consult the colleague at the next desk asking 'Will this wording get the message across?', or time to review work with room before the deadline just in case.",
+    "role": "example"
+   },
+   {
+    "p": 4,
+    "s": "こうした時間は、数字の上では何も生み出していないように見える。",
+    "en": "In terms of numbers, time like this looks as if it produces nothing.",
+    "role": "view"
+   },
+   {
+    "p": 4,
+    "s": "しかし実際には、小さな間違いが大きな問題になる前に防ぐ役割を果たしていたのだ。",
+    "en": "In reality, however, it was playing the role of stopping small mistakes before they turned into big problems.",
+    "role": "reason"
+   },
+   {
+    "p": 5,
+    "s": "効率という考え方は、測れるものしか見ない。",
+    "en": "The idea of efficiency looks only at what can be measured.",
+    "role": "reason"
+   },
+   {
+    "p": 5,
+    "s": "そのため、測りにくいが大切なものは、真っ先に「無駄」として切り捨てられてしまう。",
+    "en": "For that reason, things that are hard to measure yet important end up being cut off first as 'waste'.",
+    "role": "reason"
+   },
+   {
+    "p": 5,
+    "s": "道路にたとえるなら、車が速く走れるように、ガードレールや路肩を取り払ってしまうようなものだろう。",
+    "en": "To compare it to a road, it is like removing guardrails and hard shoulders so that cars can drive faster.",
+    "role": "example"
+   },
+   {
+    "p": 5,
+    "s": "普段は何の問題もないが、一度事故が起きれば、被害は大きくなる。",
+    "en": "Normally there is no problem at all, but once an accident happens, the damage becomes huge.",
+    "role": "example"
+   },
+   {
+    "p": 6,
+    "s": "では、効率を考えなければよいのかというと、そうではない。",
+    "en": "Then does that mean we should simply not think about efficiency? Not so.",
+    "role": "question"
+   },
+   {
+    "p": 6,
+    "s": "大切なのは、何が減らしてよい無駄で、何が一見無駄に見えても必要な「余白」なのかを見分けることだ。",
+    "en": "What matters is distinguishing what is waste that can be cut from what is necessary 'slack' even though it looks wasteful at first glance.",
+    "role": "claim"
+   },
+   {
+    "p": 6,
+    "s": "そのためには、数字だけでなく、現場で働く人の声にも耳を傾ける必要がある。",
+    "en": "To do that, we need to listen not only to numbers, but also to the voices of people working on the ground.",
+    "role": "claim"
+   },
+   {
+    "p": 7,
+    "s": "効率とは本来、よい仕事をするための手段にすぎない。",
+    "en": "Efficiency is originally nothing more than a means for doing good work.",
+    "role": "restate"
+   },
+   {
+    "p": 7,
+    "s": "それが目的になってしまったとき、仕事の質はかえって下がっていくのである。",
+    "en": "When it becomes the goal itself, the quality of work actually goes down.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "目的のはっきりしない会議を何時間も続けたり、誰も読まない報告書を作り続けたりするのは、働く人にとっても会社にとっても損失でしかない。",
+    "chunks": [
+     "目的のはっきりしない会議を",
+     "何時間も続けたり、",
+     "誰も読まない報告書を",
+     "作り続けたりするのは、",
+     "働く人にとっても",
+     "会社にとっても",
+     "損失でしかない。"
+    ],
+    "core": "〜のは損失でしかない",
+    "note": "Two 〜たり examples sit inside one long 〜のは subject. 目的のはっきりしない modifies 会議, and 誰も読まない modifies 報告書. 〜でしかない means 'is nothing but'."
+   },
+   {
+    "s": "たとえば、隣の席の同僚に「この書き方で伝わるかな」と相談する時間や、締め切りまで余裕のある仕事を念のため見直す時間である。",
+    "chunks": [
+     "たとえば、",
+     "隣の席の同僚に",
+     "「この書き方で伝わるかな」と相談する時間や、",
+     "締め切りまで余裕のある仕事を",
+     "念のため見直す時間",
+     "である。"
+    ],
+    "core": "相談する時間や見直す時間である",
+    "note": "Two parallel noun phrases joined by や, both ending in 時間. Each has a long modifier before 時間; read backwards from 時間 to see what kind of time is being named."
+   },
+   {
+    "s": "大切なのは、何が減らしてよい無駄で、何が一見無駄に見えても必要な「余白」なのかを見分けることだ。",
+    "chunks": [
+     "大切なのは、",
+     "何が減らしてよい無駄で、",
+     "何が一見無駄に見えても",
+     "必要な「余白」なのかを",
+     "見分けることだ。"
+    ],
+    "core": "大切なのは〜を見分けることだ",
+    "note": "大切なのは〜ことだ frames the claim. Inside 〜を見分ける (distinguish), two embedded questions (何が…で、何が…なのか) contrast cuttable waste with necessary slack."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "効率",
+    "r": "こうりつ",
+    "en": "efficiency"
+   },
+   {
+    "w": "簡潔",
+    "r": "かんけつ",
+    "en": "concise, brief"
+   },
+   {
+    "w": "成果",
+    "r": "せいか",
+    "en": "result, outcome"
+   },
+   {
+    "w": "損失",
+    "r": "そんしつ",
+    "en": "loss"
+   },
+   {
+    "w": "追い求める",
+    "r": "おいもとめる",
+    "en": "to pursue eagerly"
+   },
+   {
+    "w": "かえって",
+    "r": "かえって",
+    "en": "on the contrary, instead"
+   },
+   {
+    "w": "削る",
+    "r": "けずる",
+    "en": "to cut, pare down",
+    "at": "削られて"
+   },
+   {
+    "w": "余裕",
+    "r": "よゆう",
+    "en": "room to spare, margin"
+   },
+   {
+    "w": "念のため",
+    "r": "ねんのため",
+    "en": "just in case, to be sure"
+   },
+   {
+    "w": "役割を果たす",
+    "r": "やくわりをはたす",
+    "en": "to play a role, fulfil a role",
+    "at": "役割を果たしていた"
+   },
+   {
+    "w": "真っ先に",
+    "r": "まっさきに",
+    "en": "first of all, ahead of everything else"
+   },
+   {
+    "w": "切り捨てる",
+    "r": "きりすてる",
+    "en": "to cut off, discard",
+    "at": "切り捨てられて"
+   },
+   {
+    "w": "路肩",
+    "r": "ろかた",
+    "en": "hard shoulder, road verge"
+   },
+   {
+    "w": "一見",
+    "r": "いっけん",
+    "en": "at first glance"
+   },
+   {
+    "w": "余白",
+    "r": "よはく",
+    "en": "margin, slack, breathing room"
+   },
+   {
+    "w": "耳を傾ける",
+    "r": "みみをかたむける",
+    "en": "to listen carefully to"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "数字の上では何も生み出していない",
+      "数字には表れない"
+     ],
+     [
+      "大きな問題になる前に防ぐ",
+      "前もって防いでいる"
+     ]
+    ],
+    "trap": [
+     "",
+     "elsewhere",
+     "opposite",
+     "half"
+    ]
+   },
+   {
+    "para": [
+     [
+      "測れるものしか見ない",
+      "数字で測れるものしか見ない"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "notsaid",
+     "narrow"
+    ]
+   },
+   {
+    "para": [
+     [
+      "減らしてよい無駄",
+      "削ってよい無駄"
+     ],
+     [
+      "見分けることだ",
+      "見分けるべきだ"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "extreme",
+     "narrow"
+    ]
+   }
+  ]
+ },
+ "r13-003": {
+  "shape": "Background (P1-2) → common view (一般には言われる, P3) → turning-point episode (考えが変わったのは, P4) → new idea (P5-6) → claim in P7 (〜ではなく〜)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "年末になると、テレビでは「ふるさとへ帰る人たちで駅が混み合っています」というニュースが流れる。",
+    "en": "When the end of the year comes round, news reports air on television saying, 'Stations are crowded with people returning to their hometowns.'",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "そのたびに、私は少し居心地の悪さを感じる。",
+    "en": "Every time that happens, I feel slightly uncomfortable.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "s": "私には、帰るべき故郷と呼べる場所がないからだ。",
+    "en": "That is because I have no place I can call a hometown to return to.",
+    "role": "reason"
+   },
+   {
+    "p": 2,
+    "s": "父の仕事の都合で、私は子どものころに五回引っ越しをした。",
+    "en": "Because of my father's work, I moved house five times as a child.",
+    "role": "example"
+   },
+   {
+    "p": 2,
+    "s": "生まれた町のことはほとんど覚えていないし、一番長く住んだ町にも、今では知り合いが一人もいない。",
+    "en": "I hardly remember the town where I was born, and even in the town where I lived the longest, I no longer have a single acquaintance.",
+    "role": "example"
+   },
+   {
+    "p": 2,
+    "s": "転校するたびに新しい言葉を覚え、新しい友だちを作り、ようやくなじんだころにまた次の町へ移る。",
+    "en": "Every time I changed schools, I would learn a new dialect, make new friends, and just when I had finally settled in, move on to the next town.",
+    "role": "example"
+   },
+   {
+    "p": 2,
+    "s": "その繰り返しだった。",
+    "en": "It was that same cycle over and over.",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "「出身はどちらですか」と聞かれるたびに、どの町の名前を答えればよいのか迷ってしまう。",
+    "en": "Whenever someone asks me 'Where are you from?', I am at a loss over which town's name I should give.",
+    "role": "example"
+   },
+   {
+    "p": 3,
+    "s": "故郷とは生まれ育った土地のことだと、一般には言われる。",
+    "en": "It is generally said that a hometown is the place where one was born and raised.",
+    "role": "view"
+   },
+   {
+    "p": 3,
+    "s": "そう考えると、私のような人間には故郷がないことになる。",
+    "en": "Looking at it that way, someone like me ends up having no hometown.",
+    "role": "view"
+   },
+   {
+    "p": 3,
+    "s": "私も長い間、そう思い込んでいた。",
+    "en": "For a long time, I too was convinced of that.",
+    "role": "view"
+   },
+   {
+    "p": 4,
+    "s": "考えが変わったのは、数年前、出張で訪れた見知らぬ港町でのことだ。",
+    "en": "My thinking changed a few years ago, in an unfamiliar port town I visited on a business trip.",
+    "role": "turn"
+   },
+   {
+    "p": 4,
+    "s": "夕方、ある食堂に入り、魚の煮つけを注文した。",
+    "en": "In the evening, I went into a diner and ordered simmered fish.",
+    "role": "example"
+   },
+   {
+    "p": 4,
+    "s": "一口食べた瞬間、なぜか胸が熱くなった。",
+    "en": "The moment I took a bite, my chest unexpectedly filled with emotion.",
+    "role": "example"
+   },
+   {
+    "p": 4,
+    "s": "その甘辛い味が、小学生のころ、三番目に住んだ町で母がよく作ってくれたものとそっくりだったのである。",
+    "en": "Its sweet and savoury flavour was just like the dish my mother often made for me in the third town we lived in when I was in primary school.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "その町を訪ねたいとは思わない。",
+    "en": "I do not feel I want to visit that town.",
+    "role": "fact"
+   },
+   {
+    "p": 4,
+    "s": "それでも、あの味を思い出すと、自分がどこかに確かにつながっているような気がした。",
+    "en": "Even so, recalling that taste made me feel as though I was surely connected to somewhere.",
+    "role": "fact"
+   },
+   {
+    "p": 5,
+    "s": "そのとき私は、故郷とは地図の上の一点ではないのかもしれないと思った。",
+    "en": "At that moment, I thought that a hometown might not be a single point on a map.",
+    "role": "claim"
+   },
+   {
+    "p": 5,
+    "s": "ある味や匂い、聞き慣れた言葉の響きなど、自分を形づくってきたものの記憶こそが、帰る場所なのではないか。",
+    "en": "Could it not be that the memories of things that have shaped us, such as a certain taste or smell or the sound of familiar words, are the very place we return to?",
+    "role": "claim"
+   },
+   {
+    "p": 5,
+    "s": "そうだとすれば、それは土地を離れても失われることはないし、いくつもの町に分かれていてもかまわない。",
+    "en": "If that is the case, it will not be lost even if one leaves a place, and it does not matter if it is split across several towns.",
+    "role": "reason"
+   },
+   {
+    "p": 5,
+    "s": "旅先で耳にした方言に、思わず足を止めてしまうことがあるのも、そのためかもしれない。",
+    "en": "That may also be why I sometimes stop in my tracks without thinking at a dialect I hear while travelling.",
+    "role": "example"
+   },
+   {
+    "p": 6,
+    "s": "確かに、生まれ育った土地に家族や友人がいて、いつでも帰れる人はうらやましい。",
+    "en": "Certainly, people who have family and friends in the place where they were born and raised and can return any time are enviable.",
+    "role": "view"
+   },
+   {
+    "p": 6,
+    "s": "しかし、故郷を土地だけに限ってしまうと、私のように各地を移り住んだ人や、生まれた土地を離れざるを得なかった人は、故郷を持たないことになってしまう。",
+    "en": "However, if we limit 'hometown' strictly to a geographical place, then people like me who moved from place to place, or people who had no choice but to leave the place they were born, end up having no hometown.",
+    "role": "reason"
+   },
+   {
+    "p": 7,
+    "s": "故郷とは、どこかにあるものではなく、一人ひとりの中にあるものだ。",
+    "en": "A hometown is not something located somewhere out there, but something inside each individual.",
+    "role": "claim"
+   },
+   {
+    "p": 7,
+    "s": "今の私は、そう考えている。",
+    "en": "That is how I think now.",
+    "role": "fact"
+   }
+  ],
+  "hard": [
+   {
+    "s": "その甘辛い味が、小学生のころ、三番目に住んだ町で母がよく作ってくれたものとそっくりだったのである。",
+    "chunks": [
+     "その甘辛い味が、",
+     "小学生のころ、",
+     "三番目に住んだ町で",
+     "母がよく作ってくれたものと",
+     "そっくりだったのである。"
+    ],
+    "core": "その甘辛い味がものとそっくりだったのである",
+    "note": "小学生のころ、三番目に住んだ町で母がよく作ってくれた is one long clause modifying もの (the dish). 〜とそっくりだった means 'was identical to', and のである explains the emotion in the sentence before."
+   },
+   {
+    "s": "ある味や匂い、聞き慣れた言葉の響きなど、自分を形づくってきたものの記憶こそが、帰る場所なのではないか。",
+    "chunks": [
+     "ある味や匂い、",
+     "聞き慣れた言葉の響きなど、",
+     "自分を形づくってきたものの",
+     "記憶こそが、",
+     "帰る場所なのではないか。"
+    ],
+    "core": "記憶こそが帰る場所なのではないか",
+    "note": "Read up to 記憶こそが for the subject; everything before it gives examples and defines the memories (自分を形づくってきたものの). こそが emphasises the subject, and のではないか poses a hedged claim."
+   },
+   {
+    "s": "しかし、故郷を土地だけに限ってしまうと、私のように各地を移り住んだ人や、生まれた土地を離れざるを得なかった人は、故郷を持たないことになってしまう。",
+    "chunks": [
+     "しかし、",
+     "故郷を土地だけに限ってしまうと、",
+     "私のように各地を移り住んだ人や、",
+     "生まれた土地を離れざるを得なかった人は、",
+     "故郷を持たないことになってしまう。"
+    ],
+    "core": "故郷を土地だけに限ると、〜人は故郷を持たないことになる",
+    "note": "〜と sets the condition. The subject has two long 〜人 groups joined by や, including 〜ざるを得ない (have no choice but to). 〜ことになってしまう states an unwanted logical result."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "居心地",
+    "r": "いごこち",
+    "en": "comfort, feeling of ease (here: awkwardness)"
+   },
+   {
+    "w": "故郷",
+    "r": "こきょう",
+    "en": "hometown, birthplace"
+   },
+   {
+    "w": "転校",
+    "r": "てんこう",
+    "en": "changing schools"
+   },
+   {
+    "w": "なじむ",
+    "r": "なじむ",
+    "en": "to fit in, grow accustomed to",
+    "at": "なじんだ"
+   },
+   {
+    "w": "思い込む",
+    "r": "おもいこむ",
+    "en": "to be convinced, assume",
+    "at": "思い込んで"
+   },
+   {
+    "w": "見知らぬ",
+    "r": "みしらぬ",
+    "en": "unfamiliar, strange"
+   },
+   {
+    "w": "煮つけ",
+    "r": "につけ",
+    "en": "simmered dish (in soy sauce and sugar)"
+   },
+   {
+    "w": "胸が熱くなる",
+    "r": "むねがあつくなる",
+    "en": "to feel deeply moved",
+    "at": "胸が熱くなった"
+   },
+   {
+    "w": "甘辛い",
+    "r": "あまからい",
+    "en": "sweet and savoury"
+   },
+   {
+    "w": "そっくり",
+    "r": "そっくり",
+    "en": "just like, identical to"
+   },
+   {
+    "w": "響き",
+    "r": "ひびき",
+    "en": "sound, ring"
+   },
+   {
+    "w": "形づくる",
+    "r": "かたちづくる",
+    "en": "to shape, form",
+    "at": "形づくってきた"
+   },
+   {
+    "w": "方言",
+    "r": "ほうげん",
+    "en": "regional dialect"
+   },
+   {
+    "w": "思わず",
+    "r": "おもわず",
+    "en": "involuntarily, without thinking"
+   },
+   {
+    "w": "限る",
+    "r": "かぎる",
+    "en": "to limit, restrict",
+    "at": "限って"
+   },
+   {
+    "w": "移り住む",
+    "r": "うつりすむ",
+    "en": "to move from place to place",
+    "at": "移り住んだ"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "私のような人間には故郷がないことになる",
+      "自分には故郷がない"
+     ],
+     [
+      "思い込んでいた",
+      "思っていた"
+     ]
+    ],
+    "trap": [
+     "",
+     "half",
+     "opposite",
+     "notsaid"
+    ]
+   },
+   {
+    "para": [
+     [
+      "自分を形づくってきたもの",
+      "これまでの暮らしの中で身についた"
+     ],
+     [
+      "ある味や匂い、聞き慣れた言葉の響き",
+      "味や言葉の響き"
+     ]
+    ],
+    "trap": [
+     "",
+     "literal",
+     "elsewhere",
+     "rejected"
+    ]
+   },
+   {
+    "para": [
+     [
+      "どこかにあるものではなく",
+      "特定の土地に限られるものではなく"
+     ],
+     [
+      "一人ひとりの中にあるものだ",
+      "人の心の中にあるものだ"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "notsaid",
+     "narrow"
+    ]
+   }
+  ]
+ },
+ "r13-004": {
+  "shape": "Everyday uses (P1) → foreign view (P2) → real role (しかし, P3) → worry about reflex apologies (ただ, P4) → claim in P5-6 (考えることの代わり, 何を伝えたいのか)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "日本で暮らしていると、一日に何度も「すみません」という言葉を耳にします。",
+    "en": "Living in Japan, you hear the word 'sumimasen' many times a day.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "店員を呼ぶとき、道を譲ってもらったとき、エレベーターのドアを押さえてもらったとき。",
+    "en": "When calling a shop assistant, when someone gives way to you on the street, when someone holds the lift door for you.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "s": "私自身も、気がつけば一日に何十回も口にしています。",
+    "en": "I myself find that I say it dozens of times a day without noticing.",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "日本人はすぐに謝るとよく言われます。",
+    "en": "It is often said that Japanese people apologise immediately.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "海外の友人から、「悪いことをしていないのに、どうして謝るの」と不思議がられたこともあります。",
+    "en": "A friend from abroad once looked puzzled and asked me, 'Why do you apologise when you have not done anything wrong?'",
+    "role": "example"
+   },
+   {
+    "p": 2,
+    "s": "確かに、自分に責任のないことまで謝るのは、おかしなことのように見えるかもしれません。",
+    "en": "Certainly, apologising even for things you are not responsible for may seem strange.",
+    "role": "view"
+   },
+   {
+    "p": 3,
+    "s": "しかし、日本語の「すみません」は、必ずしも謝罪だけを表しているわけではありません。",
+    "en": "However, the Japanese 'sumimasen' does not necessarily express only an apology.",
+    "role": "turn"
+   },
+   {
+    "p": 3,
+    "s": "相手に手間をかけさせたことへのお礼や、話しかける前の呼びかけとしても使われます。",
+    "en": "It is also used as thanks for putting the other person to trouble, or as a way of getting their attention before speaking.",
+    "role": "reason"
+   },
+   {
+    "p": 3,
+    "s": "相手との間にできた小さな「借り」を、その場で返す言葉だと言ってもいいでしょう。",
+    "en": "You could even say it is a word that repays on the spot a small 'debt' that has arisen between you and the other person.",
+    "role": "restate"
+   },
+   {
+    "p": 3,
+    "s": "そう考えると、この言葉がよく使われるのは、人との関係をなめらかにしようとする気持ちの表れだと言えます。",
+    "en": "Seen that way, the frequent use of this word can be said to reflect a desire to make relationships with others run smoothly.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "ただ、気になることもあります。",
+    "en": "Still, there is something that worries me.",
+    "role": "turn"
+   },
+   {
+    "p": 4,
+    "s": "最近、問題が起きたときに、事情を確かめる前に、まず謝ってしまう人が増えているように感じるのです。",
+    "en": "Lately, I feel that more and more people apologise first when a problem occurs, before checking the circumstances.",
+    "role": "fact"
+   },
+   {
+    "p": 4,
+    "s": "職場で、自分の担当ではないミスについて「すみません」と頭を下げ、そのまま話を終わらせてしまう。",
+    "en": "At work, they bow their heads and say 'sumimasen' over a mistake they were not in charge of, and let the matter end there.",
+    "role": "example"
+   },
+   {
+    "p": 4,
+    "s": "こうした謝り方は、その場の空気を丸く収めはしても、何が原因だったのかを分からないままにしてしまいます。",
+    "en": "Even if this way of apologising smooths over the atmosphere at that moment, it leaves the cause unknown.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "言われた側も、相手に頭を下げられてしまうと、詳しい事情を聞きにくくなるからです。",
+    "en": "That is because the person on the receiving end also finds it hard to ask for the full details once the other person has bowed in apology.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "その結果、同じ問題が繰り返されることにもなりかねません。",
+    "en": "As a result, the same problem could well end up being repeated.",
+    "role": "reason"
+   },
+   {
+    "p": 5,
+    "s": "謝ることそのものが悪いのではありません。",
+    "en": "Apologising itself is not a bad thing.",
+    "role": "fact"
+   },
+   {
+    "p": 5,
+    "s": "問題は、謝ることが考えることの代わりになってしまうことです。",
+    "en": "The problem is when apologising takes the place of thinking.",
+    "role": "claim"
+   },
+   {
+    "p": 5,
+    "s": "本当に自分に責任があるのなら、心から謝ったうえで、なぜそうなったのか、次にどうするのかを言葉にする必要があります。",
+    "en": "If you truly bear responsibility, then after apologising sincerely, you need to put into words why it happened and what you will do next time.",
+    "role": "claim"
+   },
+   {
+    "p": 5,
+    "s": "たとえば、「確認が足りませんでした。次からは送る前に必ず二人で見直します」と言えば、相手も安心できるでしょう。",
+    "en": "For example, if you say, 'We did not check thoroughly enough. From next time, two of us will always review it before sending,' the other person will feel reassured too.",
+    "role": "example"
+   },
+   {
+    "p": 5,
+    "s": "責任がないのなら、謝るより先に、一緒に原因を探そうと提案するほうが、相手のためにもなるはずです。",
+    "en": "If you are not responsible, suggesting that you look for the cause together before apologising should serve the other person better as well.",
+    "role": "claim"
+   },
+   {
+    "p": 6,
+    "s": "「すみません」は便利な言葉です。",
+    "en": "'Sumimasen' is a convenient word.",
+    "role": "fact"
+   },
+   {
+    "p": 6,
+    "s": "だからこそ、その一言で何を伝えたいのかを、ときどき立ち止まって考えてみる必要があるのではないでしょうか。",
+    "en": "Precisely for that reason, do we not need to stop now and then and think about what we want to convey with that single word?",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "そう考えると、この言葉がよく使われるのは、人との関係をなめらかにしようとする気持ちの表れだと言えます。",
+    "chunks": [
+     "そう考えると、",
+     "この言葉がよく使われるのは、",
+     "人との関係を",
+     "なめらかにしようとする",
+     "気持ちの表れだと",
+     "言えます。"
+    ],
+    "core": "この言葉がよく使われるのは、気持ちの表れだと言えます",
+    "note": "〜のは〜だ links the fact (この言葉がよく使われる) to its explanation (気持ちの表れ). 人との関係をなめらかにしようとする modifies 気持ち, using 〜ようとする (try to)."
+   },
+   {
+    "s": "こうした謝り方は、その場の空気を丸く収めはしても、何が原因だったのかを分からないままにしてしまいます。",
+    "chunks": [
+     "こうした謝り方は、",
+     "その場の空気を",
+     "丸く収めはしても、",
+     "何が原因だったのかを",
+     "分からないままにしてしまいます。"
+    ],
+    "core": "こうした謝り方は、原因を分からないままにしてしまいます",
+    "note": "〜はしても grants a partial result ('even if it does smooth over the mood') before the real problem. 何が原因だったのか is the object of 分からないままにしてしまう (regrettably leave unknown)."
+   },
+   {
+    "s": "本当に自分に責任があるのなら、心から謝ったうえで、なぜそうなったのか、次にどうするのかを言葉にする必要があります。",
+    "chunks": [
+     "本当に自分に責任があるのなら、",
+     "心から謝ったうえで、",
+     "なぜそうなったのか、",
+     "次にどうするのかを",
+     "言葉にする必要があります。"
+    ],
+    "core": "責任があるのなら、〜を言葉にする必要があります",
+    "note": "〜のなら sets the condition and 〜たうえで means 'after doing X (and on that basis)'. Two embedded questions (なぜ…か, 次に…か) serve as the object of 言葉にする (put into words)."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "譲る",
+    "r": "ゆずる",
+    "en": "to give way, yield",
+    "at": "譲って"
+   },
+   {
+    "w": "口にする",
+    "r": "くちにする",
+    "en": "to say, utter",
+    "at": "口にして"
+   },
+   {
+    "w": "不思議がる",
+    "r": "ふしぎがる",
+    "en": "to seem puzzled, wonder at",
+    "at": "不思議がられた"
+   },
+   {
+    "w": "謝罪",
+    "r": "しゃざい",
+    "en": "apology"
+   },
+   {
+    "w": "手間",
+    "r": "てま",
+    "en": "trouble, effort, time taken"
+   },
+   {
+    "w": "借り",
+    "r": "かり",
+    "en": "debt, favour owed"
+   },
+   {
+    "w": "なめらか",
+    "r": "なめらか",
+    "en": "smooth, frictionless"
+   },
+   {
+    "w": "表れ",
+    "r": "あらわれ",
+    "en": "sign, manifestation, expression"
+   },
+   {
+    "w": "事情",
+    "r": "じじょう",
+    "en": "circumstances, situation"
+   },
+   {
+    "w": "担当",
+    "r": "たんとう",
+    "en": "being in charge of"
+   },
+   {
+    "w": "頭を下げる",
+    "r": "あたまをさげる",
+    "en": "to bow one's head (in apology)",
+    "at": "頭を下げ"
+   },
+   {
+    "w": "丸く収める",
+    "r": "まるくおさめる",
+    "en": "to settle peacefully, smooth over",
+    "at": "丸く収め"
+   },
+   {
+    "w": "繰り返す",
+    "r": "くりかえす",
+    "en": "to repeat",
+    "at": "繰り返される"
+   },
+   {
+    "w": "言葉にする",
+    "r": "ことばにする",
+    "en": "to put into words"
+   },
+   {
+    "w": "見直す",
+    "r": "みなおす",
+    "en": "to review, check again",
+    "at": "見直します"
+   },
+   {
+    "w": "提案",
+    "r": "ていあん",
+    "en": "suggestion, proposal"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "小さな「借り」",
+      "相手にかけた手間"
+     ],
+     [
+      "返す",
+      "気持ちを示す"
+     ]
+    ],
+    "trap": [
+     "",
+     "narrow",
+     "literal",
+     "opposite"
+    ]
+   },
+   {
+    "para": [
+     [
+      "事情を確かめる前に",
+      "何があったのかを確かめないうちに"
+     ],
+     [
+      "まず謝ってしまう",
+      "とりあえず謝ってしまう"
+     ]
+    ],
+    "trap": [
+     "",
+     "opposite",
+     "elsewhere",
+     "elsewhere"
+    ]
+   },
+   {
+    "para": [
+     [
+      "考えてみる必要がある",
+      "考えるべきだ"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "half",
+     "notsaid"
+    ]
+   }
+  ]
+ },
+ "r13-005": {
+  "shape": "Slogan and awakening (P1-2, ところが) → why instant answers hurt (P3) → view and limit (確かに/しかし, P4) → new method (P5) → claim in P6 (答えを待つこと)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "「失敗を恐れるな。失敗から学べ」。",
+    "en": "'Do not be afraid of mistakes. Learn from your mistakes.'",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "スポーツの指導の場で、これほどよく聞かれる言葉はないだろう。",
+    "en": "In sports coaching, there is probably no phrase heard more often than this.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "私も少年サッカーのコーチを始めたころ、子どもたちに何度もそう言っていた。",
+    "en": "When I first started coaching youth football, I too said this to the children over and over.",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "ところが、ある試合の後、一人の子に「コーチは失敗するなっていう顔をしてる」と言われて、はっとした。",
+    "en": "Yet after one match, a child told me, 'Coach, your face says do not make a mistake,' and it brought me up short.",
+    "role": "turn"
+   },
+   {
+    "p": 2,
+    "s": "振り返ってみると、子どもがパスを失敗するたびに、私はすぐに「今のは右だろう」「もっと早く出せ」と大声で指示を出していた。",
+    "en": "Looking back, every time a child missed a pass, I was immediately shouting instructions like 'You should have passed right there!' or 'Get it out faster!'",
+    "role": "example"
+   },
+   {
+    "p": 2,
+    "s": "口では失敗してもいいと言いながら、実際にはその機会を奪っていたのである。",
+    "en": "While saying with my words that it was fine to make mistakes, in reality I was taking away that very chance.",
+    "role": "fact"
+   },
+   {
+    "p": 3,
+    "s": "失敗から学ぶというのは、失敗をした本人が、何がいけなかったのかを考え、次にどうするかを自分で決めることだ。",
+    "en": "Learning from a mistake means the person who made the mistake thinks about what went wrong and decides for themselves what to do next.",
+    "role": "claim"
+   },
+   {
+    "p": 3,
+    "s": "ところが、失敗した直後に大人が答えを言ってしまえば、子どもは考える必要がなくなる。",
+    "en": "Yet if an adult gives the answer right after a mistake, the child no longer needs to think.",
+    "role": "reason"
+   },
+   {
+    "p": 3,
+    "s": "それどころか、次は叱られないようにと、難しいプレーを避けるようになる。",
+    "en": "Worse still, they start avoiding difficult plays so as not to be scolded next time.",
+    "role": "reason"
+   },
+   {
+    "p": 3,
+    "s": "そうなれば、失敗は減るかもしれないが、上達もしない。",
+    "en": "If that happens, mistakes may decrease, but they will not improve either.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "確かに、すぐに正しいやり方を教えたほうが早く上手になる、という考え方もある。",
+    "en": "Certainly, there is also the view that teaching the right way right away helps players get better faster.",
+    "role": "view"
+   },
+   {
+    "p": 4,
+    "s": "基本的な技術を身につける段階では、それも必要だろう。",
+    "en": "At the stage of acquiring basic skills, that is probably necessary too.",
+    "role": "view"
+   },
+   {
+    "p": 4,
+    "s": "しかし、試合の中で何を選ぶかという判断の力は、人から教わるだけでは育たない。",
+    "en": "However, the ability to judge what to choose during a match does not grow merely from being taught by someone else.",
+    "role": "claim"
+   },
+   {
+    "p": 4,
+    "s": "自分で迷い、選び、その結果を引き受けるという経験を繰り返す中で、少しずつ身についていくものだ。",
+    "en": "It is something acquired little by little through repeating the experience of hesitating, choosing for oneself, and accepting the result.",
+    "role": "reason"
+   },
+   {
+    "p": 5,
+    "s": "そこで私は、指導のやり方を変えた。",
+    "en": "So I changed the way I coached.",
+    "role": "fact"
+   },
+   {
+    "p": 5,
+    "s": "試合中はできるだけ黙って見守り、試合の後で「あの場面、何が見えていた？」と質問するようにしたのである。",
+    "en": "During matches I watched quietly as much as possible, and afterwards I began asking questions like, 'In that moment, what could you see?'",
+    "role": "example"
+   },
+   {
+    "p": 5,
+    "s": "最初は答えられなかった子どもたちも、次第に自分の言葉でプレーを説明するようになった。",
+    "en": "Even children who could not answer at first gradually came to explain their play in their own words.",
+    "role": "example"
+   },
+   {
+    "p": 5,
+    "s": "中には、うまくいった場面より、失敗した場面のほうを楽しそうに話す子まで出てきた。",
+    "en": "Some children even started talking more happily about the moments where they failed than about the ones that went well.",
+    "role": "example"
+   },
+   {
+    "p": 5,
+    "s": "失敗が、責められるものから、考えるための材料に変わったのだ。",
+    "en": "Mistakes had changed from something to be blamed for into material for thinking.",
+    "role": "restate"
+   },
+   {
+    "p": 6,
+    "s": "失敗から学ぶ力は、「失敗してもいい」という言葉ではなく、失敗について自分で考える時間と場所によって育つ。",
+    "en": "The ability to learn from mistakes grows not from the words 'it is fine to fail', but through the time and space to think about mistakes for oneself.",
+    "role": "claim"
+   },
+   {
+    "p": 6,
+    "s": "指導者がまず学ぶべきなのは、答えを教えることではなく、答えを待つことなのではないだろうか。",
+    "en": "Is what a coach should learn first not teaching the answer, but waiting for the answer?",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "失敗から学ぶというのは、失敗をした本人が、何がいけなかったのかを考え、次にどうするかを自分で決めることだ。",
+    "chunks": [
+     "失敗から学ぶというのは、",
+     "失敗をした本人が、",
+     "何がいけなかったのかを考え、",
+     "次にどうするかを",
+     "自分で決めることだ。"
+    ],
+    "core": "失敗から学ぶというのは、自分で決めることだ",
+    "note": "〜というのは〜ことだ defines a concept. Inside it, 失敗をした本人が is the subject of two linked actions: 考え (think what went wrong) and 自分で決める (decide what to do next)."
+   },
+   {
+    "s": "自分で迷い、選び、その結果を引き受けるという経験を繰り返す中で、少しずつ身についていくものだ。",
+    "chunks": [
+     "自分で迷い、選び、",
+     "その結果を引き受けるという",
+     "経験を繰り返す中で、",
+     "少しずつ",
+     "身についていくものだ。"
+    ],
+    "core": "経験を繰り返す中で、身についていくものだ",
+    "note": "The subject (判断の力) carries over from the previous sentence. Three verbs (迷い、選び、引き受ける) are packed by という onto 経験, inside 〜中で (in the course of)."
+   },
+   {
+    "s": "失敗から学ぶ力は、「失敗してもいい」という言葉ではなく、失敗について自分で考える時間と場所によって育つ。",
+    "chunks": [
+     "失敗から学ぶ力は、",
+     "「失敗してもいい」という言葉ではなく、",
+     "失敗について自分で考える",
+     "時間と場所によって",
+     "育つ。"
+    ],
+    "core": "失敗から学ぶ力は、時間と場所によって育つ",
+    "note": "AではなくBによって contrasts what does not build the skill (mere words) with what does (時間と場所). 失敗について自分で考える modifies both 時間と場所."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "指導",
+    "r": "しどう",
+    "en": "coaching, guidance, instruction"
+   },
+   {
+    "w": "はっとする",
+    "r": "はっとする",
+    "en": "to be taken aback, suddenly realise",
+    "at": "はっとした"
+   },
+   {
+    "w": "振り返る",
+    "r": "ふりかえる",
+    "en": "to look back, reflect",
+    "at": "振り返って"
+   },
+   {
+    "w": "指示",
+    "r": "しじ",
+    "en": "instruction, order"
+   },
+   {
+    "w": "奪う",
+    "r": "うばう",
+    "en": "to take away, rob of",
+    "at": "奪って"
+   },
+   {
+    "w": "直後",
+    "r": "ちょくご",
+    "en": "immediately after"
+   },
+   {
+    "w": "それどころか",
+    "r": "それどころか",
+    "en": "far from it, worse still"
+   },
+   {
+    "w": "叱る",
+    "r": "しかる",
+    "en": "to scold",
+    "at": "叱られない"
+   },
+   {
+    "w": "上達",
+    "r": "じょうたつ",
+    "en": "improvement, progress (in a skill)"
+   },
+   {
+    "w": "段階",
+    "r": "だんかい",
+    "en": "stage, phase"
+   },
+   {
+    "w": "判断",
+    "r": "はんだん",
+    "en": "judgement, decision"
+   },
+   {
+    "w": "引き受ける",
+    "r": "ひきうける",
+    "en": "to take on, accept (consequences)"
+   },
+   {
+    "w": "見守る",
+    "r": "みまもる",
+    "en": "to watch over",
+    "at": "見守り"
+   },
+   {
+    "w": "次第に",
+    "r": "しだいに",
+    "en": "gradually"
+   },
+   {
+    "w": "責める",
+    "r": "せめる",
+    "en": "to blame, reproach",
+    "at": "責められる"
+   },
+   {
+    "w": "材料",
+    "r": "ざいりょう",
+    "en": "material, basis (for thinking)"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "奪っていた",
+      "なくしていた"
+     ],
+     [
+      "子どもは考える必要がなくなる",
+      "子どもが考える機会をなくしていた"
+     ]
+    ],
+    "trap": [
+     "",
+     "notsaid",
+     "half",
+     "opposite"
+    ]
+   },
+   {
+    "para": [
+     [
+      "責められるものから",
+      "叱られるものではなく"
+     ],
+     [
+      "材料に変わったのだ",
+      "材料になったから"
+     ]
+    ],
+    "trap": [
+     "",
+     "opposite",
+     "notsaid",
+     "elsewhere"
+    ]
+   },
+   {
+    "para": [
+     [
+      "答えを教えることではなく",
+      "答えを教えるより"
+     ],
+     [
+      "答えを待つことなのではないだろうか",
+      "考えるのを待つべきだ"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "opposite",
+     "rejected"
+    ]
+   }
+  ]
+ },
+ "r13-006": {
+  "shape": "Speed-reading trend and concession (P1-2, 確かに) → main turn and reread (しかし, P3-4) → train metaphor (P5) → limit and claim in P6-7 (もっとも〜、本と対話する時間)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "「速読」をうたう本や講座が人気だという。",
+    "en": "Books and courses that promise 'speed reading' are said to be popular.",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "一冊を三十分で読める、一日に何冊も読めるようになる、といった宣伝を目にすることも多い。",
+    "en": "We also often see adverts claiming you can read a book in thirty minutes or come to read many books a day.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "s": "情報があふれる時代に、少しでも多くの文章に目を通したいと思うのは自然なことだろう。",
+    "en": "In an age overflowing with information, wanting to look through as many texts as possible is probably natural.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "確かに、仕事の資料や新聞のように、必要な情報を素早く拾い出せばよい文章もある。",
+    "en": "Certainly, as with work documents or newspapers, there are texts where it is enough to pick out the needed information quickly.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "そうした文章を一字一字丁寧に読んでいては、時間がいくらあっても足りない。",
+    "en": "If you read texts like that carefully word by word, no amount of time would ever be enough.",
+    "role": "reason"
+   },
+   {
+    "p": 3,
+    "s": "しかし、読書の価値は、どれだけ多くの情報を得たかで決まるものではないと私は考える。",
+    "en": "However, I think that the value of reading is not decided by how much information one obtains.",
+    "role": "claim"
+   },
+   {
+    "p": 3,
+    "s": "以前、学生時代に読んだ小説を二十年ぶりに読み返したとき、まったく違う物語のように感じたことがある。",
+    "en": "Once, when I reread a novel I had read as a student for the first time in twenty years, I felt as though it were a completely different story.",
+    "role": "example"
+   },
+   {
+    "p": 3,
+    "s": "書かれている文字は同じなのに、読み取れるものが変わっていたのだ。",
+    "en": "Even though the words written on the page were the same, what I could read out of them had changed.",
+    "role": "example"
+   },
+   {
+    "p": 3,
+    "s": "その間に私が経験してきたことが、行間にあるものに気づかせてくれたのだろう。",
+    "en": "What I had experienced during those years probably made me notice what lay between the lines.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "文章には、書かれている内容のほかに、書かれていないものがある。",
+    "en": "In a text, besides the content that is written, there are things that are not written.",
+    "role": "fact"
+   },
+   {
+    "p": 4,
+    "s": "登場人物が口にしなかった言葉や、書き手があえて書かなかった理由などだ。",
+    "en": "Such as words a character did not speak, or the reason the writer deliberately left something unwritten.",
+    "role": "example"
+   },
+   {
+    "p": 4,
+    "s": "たとえば、別れの場面で主人公が天気の話しかしないのはなぜなのか。",
+    "en": "For example, why does the main character talk only about the weather in a farewell scene?",
+    "role": "example"
+   },
+   {
+    "p": 4,
+    "s": "そうしたものは、急いで字を追っているだけでは見えてこない。",
+    "en": "Things like that do not come into view if you merely race through the words.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "立ち止まり、前のページに戻り、「なぜここでこの言葉なのか」と考える。",
+    "en": "You stop, go back to the previous page, and think, 'Why this word here?'",
+    "role": "example"
+   },
+   {
+    "p": 4,
+    "s": "その手間の中でしか出会えないものがある。",
+    "en": "There are things you can only encounter through taking that trouble.",
+    "role": "reason"
+   },
+   {
+    "p": 5,
+    "s": "速く読むことは、言わば、特急列車で景色の中を通り過ぎるようなものだ。",
+    "en": "Reading fast is, so to speak, like passing through scenery on an express train.",
+    "role": "restate"
+   },
+   {
+    "p": 5,
+    "s": "目的地には早く着くが、窓の外に咲く花の名前を知ることはできない。",
+    "en": "You reach your destination quickly, but you cannot learn the names of the flowers blooming outside the window.",
+    "role": "example"
+   },
+   {
+    "p": 5,
+    "s": "各駅停車でしか見えない風景もあるのである。",
+    "en": "There is also scenery that can only be seen from a local stopping train.",
+    "role": "restate"
+   },
+   {
+    "p": 6,
+    "s": "もっとも、ゆっくり読むことが常に正しいと言いたいのではない。",
+    "en": "That said, I do not mean to say that reading slowly is always right.",
+    "role": "fact"
+   },
+   {
+    "p": 6,
+    "s": "目的に応じて読み方を変えればよい。",
+    "en": "One should simply change how one reads according to the purpose.",
+    "role": "fact"
+   },
+   {
+    "p": 6,
+    "s": "速く読める人もいれば、一文一文を味わいながら読む人もいる。",
+    "en": "Some people can read fast, while others read savouring one sentence at a time.",
+    "role": "fact"
+   },
+   {
+    "p": 6,
+    "s": "それは能力の差というより、読み方の違いにすぎない。",
+    "en": "That is less a difference in ability than merely a difference in reading style.",
+    "role": "fact"
+   },
+   {
+    "p": 6,
+    "s": "問題なのは、速く多く読むことだけが優れた読み方だと思い込み、ゆっくりとしか読めない自分を責めてしまうことだ。",
+    "en": "What is a problem is assuming that only reading fast and in large amounts is a superior way to read, and blaming oneself for only being able to read slowly.",
+    "role": "claim"
+   },
+   {
+    "p": 7,
+    "s": "本を一冊読み終えるのに一か月かかっても、その間に何度も立ち止まって考えたのであれば、それは決して無駄な時間ではない。",
+    "en": "Even if it takes a month to finish reading one book, if you stopped and thought many times along the way, that is by no means wasted time.",
+    "role": "claim"
+   },
+   {
+    "p": 7,
+    "s": "読書とは、情報を集める作業である以上に、本と対話する時間なのだから。",
+    "en": "Because reading is a time for dialogue with a book even more than it is a task of gathering information.",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "しかし、読書の価値は、どれだけ多くの情報を得たかで決まるものではないと私は考える。",
+    "chunks": [
+     "しかし、",
+     "読書の価値は、",
+     "どれだけ多くの情報を得たかで",
+     "決まるものではないと",
+     "私は考える。"
+    ],
+    "core": "読書の価値は決まるものではないと私は考える",
+    "note": "読書の価値は is the topic inside 私は考える. どれだけ多くの情報を得たか is an embedded question marked by で (by how much info you got), and 〜ものではない rejects that as the standard."
+   },
+   {
+    "s": "問題なのは、速く多く読むことだけが優れた読み方だと思い込み、ゆっくりとしか読めない自分を責めてしまうことだ。",
+    "chunks": [
+     "問題なのは、",
+     "速く多く読むことだけが",
+     "優れた読み方だと思い込み、",
+     "ゆっくりとしか読めない自分を",
+     "責めてしまうことだ。"
+    ],
+    "core": "問題なのは、自分を責めてしまうことだ",
+    "note": "問題なのは〜ことだ frames the point. Inside it, two actions are linked: assuming only fast reading is good (思い込み), and blaming oneself, where ゆっくりとしか読めない modifies 自分."
+   },
+   {
+    "s": "本を一冊読み終えるのに一か月かかっても、その間に何度も立ち止まって考えたのであれば、それは決して無駄な時間ではない。",
+    "chunks": [
+     "本を一冊読み終えるのに",
+     "一か月かかっても、",
+     "その間に何度も立ち止まって考えたのであれば、",
+     "それは",
+     "決して無駄な時間ではない。"
+    ],
+    "core": "一か月かかっても、それは無駄な時間ではない",
+    "note": "Two conditions stack before the main clause: 〜ても (even if it takes a month to finish one book) and 〜のであれば (provided that you stopped and thought). 決して〜ない means 'by no means'."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "速読",
+    "r": "そくどく",
+    "en": "speed reading"
+   },
+   {
+    "w": "うたう",
+    "r": "うたう",
+    "en": "to advertise, claim, boast"
+   },
+   {
+    "w": "講座",
+    "r": "こうざ",
+    "en": "course, lecture series"
+   },
+   {
+    "w": "目を通す",
+    "r": "めをとおす",
+    "en": "to look through, skim",
+    "at": "目を通したい"
+   },
+   {
+    "w": "拾い出す",
+    "r": "ひろいだす",
+    "en": "to pick out, extract",
+    "at": "拾い出せば"
+   },
+   {
+    "w": "読み取る",
+    "r": "よみとる",
+    "en": "to read into, grasp from a text",
+    "at": "読み取れる"
+   },
+   {
+    "w": "行間",
+    "r": "ぎょうかん",
+    "en": "between the lines"
+   },
+   {
+    "w": "登場人物",
+    "r": "とうじょうじんぶつ",
+    "en": "character (in a story)"
+   },
+   {
+    "w": "言わば",
+    "r": "いわば",
+    "en": "so to speak, as it were"
+   },
+   {
+    "w": "特急列車",
+    "r": "とっきゅうれっしゃ",
+    "en": "limited express train"
+   },
+   {
+    "w": "各駅停車",
+    "r": "かくえきていしゃ",
+    "en": "local stopping train"
+   },
+   {
+    "w": "もっとも",
+    "r": "もっとも",
+    "en": "though, that said"
+   },
+   {
+    "w": "応じる",
+    "r": "おうじる",
+    "en": "to accord with, match",
+    "at": "応じて"
+   },
+   {
+    "w": "味わう",
+    "r": "あじわう",
+    "en": "to savour, appreciate",
+    "at": "味わい"
+   },
+   {
+    "w": "優れる",
+    "r": "すぐれる",
+    "en": "to be superior, excel",
+    "at": "優れた"
+   },
+   {
+    "w": "対話",
+    "r": "たいわ",
+    "en": "dialogue, conversation"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "その間に私が経験してきたこと",
+      "その間の経験"
+     ],
+     [
+      "行間にあるもの",
+      "書かれていない部分"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "opposite",
+     "notsaid"
+    ]
+   },
+   {
+    "para": [
+     [
+      "各駅停車",
+      "時間をかけて読むこと"
+     ],
+     [
+      "その手間の中でしか出会えないもの",
+      "初めて気づくことのできる文章の中身"
+     ]
+    ],
+    "trap": [
+     "",
+     "opposite",
+     "elsewhere",
+     "literal"
+    ]
+   },
+   {
+    "para": [
+     [
+      "どれだけ多くの情報を得たか",
+      "速さや量"
+     ],
+     [
+      "本と対話する時間",
+      "立ち止まって考えること"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "extreme",
+     "narrow"
+    ]
+   }
+  ]
+ },
+ "r13-007": {
+  "shape": "Old belief and failed episode (P1-2, ところが) → common view and turn (確かに/しかし, P3) → tailoring metaphor (P4) → new habit (P5) → claim in P6 (まず聞くことから)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "友人や後輩から相談を受けると、何か役に立つことを言わなければと考えてしまう人は多いのではないでしょうか。",
+    "en": "When asked for advice by a friend or junior colleague, are there not many people who end up feeling they must say something useful?",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "私もその一人でした。",
+    "en": "I was one of them.",
+    "role": "fact"
+   },
+   {
+    "p": 1,
+    "s": "相談されたら、できるだけ早く、具体的な解決策を示すのがよい助言だと信じていたのです。",
+    "en": "I believed that when consulted, offering a concrete solution as quickly as possible was good advice.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "ところが、数年前、転職に迷っている後輩の話を聞いていたときのことです。",
+    "en": "However, it happened a few years ago when I was listening to a junior colleague who was hesitating about changing jobs.",
+    "role": "turn"
+   },
+   {
+    "p": 2,
+    "s": "私は彼の話が終わらないうちに、転職のよい点と悪い点を並べ、「今は動かないほうがいい」と結論まで伝えました。",
+    "en": "Before he had even finished speaking, I listed the pros and cons of changing jobs and even gave him a conclusion: 'You had better not move right now.'",
+    "role": "example"
+   },
+   {
+    "p": 2,
+    "s": "後輩は「ありがとうございます」と言いましたが、その表情は少しも晴れていませんでした。",
+    "en": "My junior said 'Thank you,' yet his expression had not brightened at all.",
+    "role": "example"
+   },
+   {
+    "p": 2,
+    "s": "後で分かったのですが、彼はすでに転職を決めていて、ただその不安を誰かに聞いてほしかっただけだったのです。",
+    "en": "I found out later that he had already decided to change jobs and had simply wanted someone to listen to his worries.",
+    "role": "reason"
+   },
+   {
+    "p": 3,
+    "s": "助言は具体的であるほどよいと言われます。",
+    "en": "It is said that the more concrete advice is, the better.",
+    "role": "view"
+   },
+   {
+    "p": 3,
+    "s": "確かに、何をすればよいか分からずに困っている人には、具体的な方法を示すことが大きな助けになるでしょう。",
+    "en": "Certainly, for someone struggling without knowing what to do, showing a concrete method will be a great help.",
+    "role": "view"
+   },
+   {
+    "p": 3,
+    "s": "しかし、相談する人が求めているものは、いつも答えだとは限りません。",
+    "en": "However, what the person asking for advice is seeking is not always an answer.",
+    "role": "claim"
+   },
+   {
+    "p": 3,
+    "s": "考えを整理したい人もいれば、決めたことを後押ししてほしい人、ただ気持ちを分かってほしい人もいます。",
+    "en": "Some people want to organise their thoughts, some want encouragement for a decision they have already made, and others simply want their feelings understood.",
+    "role": "example"
+   },
+   {
+    "p": 3,
+    "s": "相手が求めていない答えは、どんなに正しくても、押しつけに聞こえてしまうことがあるのです。",
+    "en": "An answer the other person is not asking for, no matter how right it is, can sound like forcing one's view on them.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "相手が何を求めているのかを知らないまま助言をするのは、サイズを測らずに服を仕立てるようなものです。",
+    "en": "Giving advice without knowing what the other person is looking for is like tailoring clothes without taking measurements.",
+    "role": "restate"
+   },
+   {
+    "p": 4,
+    "s": "どんなに上等な布を使っても、体に合わなければ着てもらえません。",
+    "en": "No matter how fine the cloth you use, if it does not fit the body, no one will wear it.",
+    "role": "example"
+   },
+   {
+    "p": 5,
+    "s": "それ以来、私は相談を受けたら、まず最後まで話を聞き、「それで、あなたはどうしたいと思っているの？」と尋ねるようにしています。",
+    "en": "Since then, whenever someone consults me, I have made it a rule to listen to the very end first and then ask, 'So what do you yourself feel you want to do?'",
+    "role": "example"
+   },
+   {
+    "p": 5,
+    "s": "すると、多くの人が、話しているうちに自分で答えを見つけていくことに気づきました。",
+    "en": "Then I noticed that many people find their own answers while talking.",
+    "role": "example"
+   },
+   {
+    "p": 5,
+    "s": "自分で答えにたどり着いた人の顔は、私が答えを伝えたときよりも、ずっと明るく見えます。",
+    "en": "The faces of people who reach an answer on their own look much brighter than when I gave them the answer.",
+    "role": "example"
+   },
+   {
+    "p": 5,
+    "s": "私が何か言うのは、その後です。",
+    "en": "It is only after that that I say anything.",
+    "role": "fact"
+   },
+   {
+    "p": 5,
+    "s": "それも、「私ならこうする」という形で、一つの考えとして伝えるだけにしています。",
+    "en": "Even then, I limit myself to sharing it as just one idea, phrased as 'If it were me, I would do this.'",
+    "role": "fact"
+   },
+   {
+    "p": 6,
+    "s": "助言の価値は、言葉の正しさだけで決まるものではありません。",
+    "en": "The value of advice is not decided by the correctness of the words alone.",
+    "role": "claim"
+   },
+   {
+    "p": 6,
+    "s": "相手が受け取れる形で、受け取りたいときに渡してこそ、意味を持つのです。",
+    "en": "It only has meaning when offered in a form the other person can accept and at the moment they want to receive it.",
+    "role": "claim"
+   },
+   {
+    "p": 6,
+    "s": "よい助言をしたいと思うなら、話す前に、まず聞くことから始めるべきではないでしょうか。",
+    "en": "If you want to give good advice, should you not begin by listening first, before speaking?",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "相談されたら、できるだけ早く、具体的な解決策を示すのがよい助言だと信じていたのです。",
+    "chunks": [
+     "相談されたら、",
+     "できるだけ早く、",
+     "具体的な解決策を示すのが",
+     "よい助言だと",
+     "信じていたのです。"
+    ],
+    "core": "解決策を示すのがよい助言だと信じていた",
+    "note": "〜と信じていた wraps the whole old belief. Inside it, 相談されたら…示すのが is the subject clause (marked by のが), and よい助言だ is its predicate."
+   },
+   {
+    "s": "相手が何を求めているのかを知らないまま助言をするのは、サイズを測らずに服を仕立てるようなものです。",
+    "chunks": [
+     "相手が何を求めているのかを",
+     "知らないまま",
+     "助言をするのは、",
+     "サイズを測らずに",
+     "服を仕立てるようなものです。"
+    ],
+    "core": "助言をするのは、服を仕立てるようなものです",
+    "note": "〜のは〜ようなものです sets up a metaphor. 相手が何を求めているのか is an embedded question inside 知らないまま (while still not knowing), describing how the advice is given."
+   },
+   {
+    "s": "相手が受け取れる形で、受け取りたいときに渡してこそ、意味を持つのです。",
+    "chunks": [
+     "相手が受け取れる形で、",
+     "受け取りたいときに",
+     "渡してこそ、",
+     "意味を持つのです。"
+    ],
+    "core": "渡してこそ、意味を持つのです",
+    "note": "〜てこそ means 'only when you do X', stressing the necessary condition. Two phrases set how and when to give advice: 受け取れる形で (in a form they can accept) and 受け取りたいときに (when they want it)."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "具体的",
+    "r": "ぐたいてき",
+    "en": "concrete, specific"
+   },
+   {
+    "w": "解決策",
+    "r": "かいけつさく",
+    "en": "solution, remedy"
+   },
+   {
+    "w": "助言",
+    "r": "じょげん",
+    "en": "advice, counsel"
+   },
+   {
+    "w": "転職",
+    "r": "てんしょく",
+    "en": "changing jobs"
+   },
+   {
+    "w": "結論",
+    "r": "けつろん",
+    "en": "conclusion"
+   },
+   {
+    "w": "表情",
+    "r": "ひょうじょう",
+    "en": "facial expression"
+   },
+   {
+    "w": "晴れる",
+    "r": "はれる",
+    "en": "to brighten up, clear (of mood)",
+    "at": "晴れて"
+   },
+   {
+    "w": "整理",
+    "r": "せいり",
+    "en": "sorting out, organising"
+   },
+   {
+    "w": "後押し",
+    "r": "あとおし",
+    "en": "backing, encouragement, push"
+   },
+   {
+    "w": "押しつけ",
+    "r": "おしつけ",
+    "en": "forcing on someone, imposition"
+   },
+   {
+    "w": "仕立てる",
+    "r": "したてる",
+    "en": "to tailor, make (clothes)"
+   },
+   {
+    "w": "上等",
+    "r": "じょうとう",
+    "en": "fine, high-grade"
+   },
+   {
+    "w": "尋ねる",
+    "r": "たずねる",
+    "en": "to ask, enquire"
+   },
+   {
+    "w": "たどり着く",
+    "r": "たどりつく",
+    "en": "to arrive at, reach",
+    "at": "たどり着いた"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "すでに転職を決めていて",
+      "結論ではなく"
+     ],
+     [
+      "ただその不安を誰かに聞いてほしかった",
+      "不安を聞いてほしかった"
+     ]
+    ],
+    "trap": [
+     "",
+     "opposite",
+     "opposite",
+     "half"
+    ]
+   },
+   {
+    "para": [
+     [
+      "相手が何を求めているのかを知らないまま",
+      "相手の望みを確かめずに"
+     ],
+     [
+      "体に合わなければ着てもらえません",
+      "受け入れてもらえない"
+     ]
+    ],
+    "trap": [
+     "",
+     "opposite",
+     "notsaid",
+     "notsaid"
+    ]
+   },
+   {
+    "para": [
+     [
+      "話す前に",
+      "助言をする前に"
+     ],
+     [
+      "聞くことから始めるべきではないでしょうか",
+      "聞くべきだ"
+     ]
+    ],
+    "trap": [
+     "",
+     "rejected",
+     "extreme",
+     "opposite"
+    ]
+   }
+  ]
+ },
+ "r13-008": {
+  "shape": "Childhood episode (P1) → basic meaning and concession (P2) → hidden standard (しかし, P3) → shifting ruler (P4-5) → claim in P6 (多数派の考え方にすぎない)",
+  "sents": [
+   {
+    "p": 1,
+    "s": "「普通はこうするでしょう」。",
+    "en": "'Normally you do it like this, do you not?'",
+    "role": "topic"
+   },
+   {
+    "p": 1,
+    "s": "子どものころ、母によくそう言われた。",
+    "en": "When I was a child, my mother often said that to me.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "s": "箸の持ち方、宿題をする時間、友だちへの話し方。",
+    "en": "How to hold chopsticks, when to do homework, how to speak to friends.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "s": "何かがみんなと違うたびに、「普通」という言葉が私を正しい場所へ連れ戻そうとした。",
+    "en": "Every time something about me differed from everyone else, the word 'normal' tried to pull me back to the 'right' place.",
+    "role": "example"
+   },
+   {
+    "p": 1,
+    "s": "そのたびに私は、自分のどこがいけないのか分からないまま、黙ってみんなに合わせてきた。",
+    "en": "Each time, without understanding what was wrong with me, I silently conformed to everyone else.",
+    "role": "example"
+   },
+   {
+    "p": 2,
+    "s": "「普通」とは本来、多くの人が同じようにしていること、特に変わったところがないことを指す言葉だ。",
+    "en": "'Normal' is originally a word referring to what many people do in the same way, or to having nothing particularly unusual.",
+    "role": "fact"
+   },
+   {
+    "p": 2,
+    "s": "社会の中で人と一緒に暮らしていくうえで、ある程度の決まりや常識が必要なのは確かである。",
+    "en": "It is true that a certain level of rules and common sense is necessary for living together with others in society.",
+    "role": "view"
+   },
+   {
+    "p": 2,
+    "s": "皆がばらばらに行動すれば、電車に乗ることさえ難しくなるだろう。",
+    "en": "If everyone acted completely differently, even getting on a train would probably become difficult.",
+    "role": "example"
+   },
+   {
+    "p": 3,
+    "s": "しかし、私たちが日常で使う「普通」は、そうした意味をはるかに超えているように思う。",
+    "en": "However, it seems to me that the 'normal' we use in everyday life goes far beyond that meaning.",
+    "role": "claim"
+   },
+   {
+    "p": 3,
+    "s": "「普通の家庭」「普通の人生」と言うとき、そこには、こうあるべきだという見えない基準が含まれている。",
+    "en": "When we say 'a normal family' or 'a normal life', an invisible standard of how things ought to be is included in it.",
+    "role": "reason"
+   },
+   {
+    "p": 3,
+    "s": "そして、その基準から外れた人は、何か足りないもの、直すべきものを持っているかのように扱われてしまう。",
+    "en": "And people who fall outside that standard end up being treated as if they are lacking something or have something that needs fixing.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "興味深いのは、「普通」の中身が時代や場所によって大きく変わることだ。",
+    "en": "What is interesting is that what counts as 'normal' changes greatly depending on the era and place.",
+    "role": "reason"
+   },
+   {
+    "p": 4,
+    "s": "私の祖母の時代には、女性が結婚後も働き続けることは普通ではなかった。",
+    "en": "In my grandmother's era, it was not normal for women to keep working after marriage.",
+    "role": "example"
+   },
+   {
+    "p": 4,
+    "s": "今では、それを珍しいと思う人のほうが少ないだろう。",
+    "en": "Nowadays, people who think that is unusual are probably in the minority.",
+    "role": "example"
+   },
+   {
+    "p": 4,
+    "s": "逆に、かつては当たり前だった習慣が、今では考えられないものになっている例もある。",
+    "en": "Conversely, there are also examples of customs once taken for granted that have now become unthinkable.",
+    "role": "example"
+   },
+   {
+    "p": 4,
+    "s": "絶対だと思われていた物差しは、実は伸び縮みするゴムでできていたのである。",
+    "en": "The ruler that was thought to be absolute was actually made of elastic rubber that stretches and shrinks.",
+    "role": "restate"
+   },
+   {
+    "p": 5,
+    "s": "それなのに、私たちは目の前の「普通」を、変わることのない正解のように信じてしまう。",
+    "en": "Even so, we end up believing the 'normal' in front of us as if it were an unchanging right answer.",
+    "role": "turn"
+   },
+   {
+    "p": 5,
+    "s": "そして、自分が普通かどうかを気にし、人と違う部分を隠そうとする。",
+    "en": "And we worry about whether we are normal and try to hide the parts of ourselves that differ from others.",
+    "role": "fact"
+   },
+   {
+    "p": 5,
+    "s": "だが、一人ひとりを細かく見れば、すべての点で平均的な人など、どこにもいないはずだ。",
+    "en": "Yet if we look closely at each individual, there cannot be anyone anywhere who is average in every respect.",
+    "role": "claim"
+   },
+   {
+    "p": 5,
+    "s": "人より背が高い人もいれば、字が苦手な人も、朝に弱い人もいる。",
+    "en": "Some people are taller than others, some are poor at handwriting, and some are not morning people.",
+    "role": "example"
+   },
+   {
+    "p": 5,
+    "s": "誰もが、どこかで「普通」からはみ出している。",
+    "en": "Everyone sticks out from 'normal' somewhere.",
+    "role": "restate"
+   },
+   {
+    "p": 6,
+    "s": "「普通」という言葉を使うなと言いたいのではない。",
+    "en": "I do not mean to say that we must not use the word 'normal'.",
+    "role": "fact"
+   },
+   {
+    "p": 6,
+    "s": "ただ、それを口にするとき、それが一つの時代の、一つの場所の、多数派の考え方にすぎないことを忘れないでいたい。",
+    "en": "Still, when we utter it, I want us not to forget that it is merely the view of the majority in one era and one place.",
+    "role": "claim"
+   },
+   {
+    "p": 6,
+    "s": "そう意識するだけで、人と違うことを責める言葉は、少しずつ減っていくのではないだろうか。",
+    "en": "Simply keeping that in mind would surely make words that blame people for being different decrease little by little, would it not?",
+    "role": "claim"
+   }
+  ],
+  "hard": [
+   {
+    "s": "そして、その基準から外れた人は、何か足りないもの、直すべきものを持っているかのように扱われてしまう。",
+    "chunks": [
+     "そして、",
+     "その基準から外れた人は、",
+     "何か足りないもの、",
+     "直すべきものを",
+     "持っているかのように",
+     "扱われてしまう。"
+    ],
+    "core": "その基準から外れた人は、〜かのように扱われてしまう",
+    "note": "その基準から外れた modifies 人. Two parallel objects (何か足りないもの, 直すべきもの) go with 持っている, and 〜かのように ('as if') describes how they are passively treated (扱われてしまう)."
+   },
+   {
+    "s": "逆に、かつては当たり前だった習慣が、今では考えられないものになっている例もある。",
+    "chunks": [
+     "逆に、",
+     "かつては当たり前だった習慣が、",
+     "今では考えられないものに",
+     "なっている",
+     "例もある。"
+    ],
+    "core": "習慣が考えられないものになっている例もある",
+    "note": "Everything before 例 is one long clause describing 例 (examples). Inside it, かつては当たり前だった modifies 習慣, contrasting かつては (once) with 今では (nowadays)."
+   },
+   {
+    "s": "ただ、それを口にするとき、それが一つの時代の、一つの場所の、多数派の考え方にすぎないことを忘れないでいたい。",
+    "chunks": [
+     "ただ、",
+     "それを口にするとき、",
+     "それが一つの時代の、一つの場所の、",
+     "多数派の考え方にすぎないことを",
+     "忘れないでいたい。"
+    ],
+    "core": "それが多数派の考え方にすぎないことを忘れないでいたい",
+    "note": "Both それ refer to 「普通」. Three の phrases narrow 考え方 down, 〜にすぎない means 'is nothing more than', and 〜ないでいたい expresses the writer's wish to keep remembering it."
+   }
+  ],
+  "vocab": [
+   {
+    "w": "連れ戻す",
+    "r": "つれもどす",
+    "en": "to bring back, drag back",
+    "at": "連れ戻そう"
+   },
+   {
+    "w": "合わせる",
+    "r": "あわせる",
+    "en": "to conform, match oneself to",
+    "at": "合わせて"
+   },
+   {
+    "w": "指す",
+    "r": "さす",
+    "en": "to refer to, point to"
+   },
+   {
+    "w": "常識",
+    "r": "じょうしき",
+    "en": "common sense"
+   },
+   {
+    "w": "はるかに",
+    "r": "はるかに",
+    "en": "far, by far"
+   },
+   {
+    "w": "基準",
+    "r": "きじゅん",
+    "en": "standard, criterion"
+   },
+   {
+    "w": "外れる",
+    "r": "はずれる",
+    "en": "to deviate from, fall outside",
+    "at": "外れた"
+   },
+   {
+    "w": "扱う",
+    "r": "あつかう",
+    "en": "to treat, handle",
+    "at": "扱われて"
+   },
+   {
+    "w": "興味深い",
+    "r": "きょうみぶかい",
+    "en": "interesting, intriguing"
+   },
+   {
+    "w": "かつて",
+    "r": "かつて",
+    "en": "once, formerly"
+   },
+   {
+    "w": "物差し",
+    "r": "ものさし",
+    "en": "ruler, yardstick, standard"
+   },
+   {
+    "w": "伸び縮み",
+    "r": "のびちぢみ",
+    "en": "stretching and shrinking"
+   },
+   {
+    "w": "平均的",
+    "r": "へいきんてき",
+    "en": "average, typical"
+   },
+   {
+    "w": "はみ出す",
+    "r": "はみだす",
+    "en": "to stick out, go beyond bounds",
+    "at": "はみ出して"
+   },
+   {
+    "w": "多数派",
+    "r": "たすうは",
+    "en": "majority"
+   },
+   {
+    "w": "意識",
+    "r": "いしき",
+    "en": "awareness, being conscious of"
+   }
+  ],
+  "qs": [
+   {
+    "para": [
+     [
+      "こうあるべきだという見えない基準",
+      "人が従うべき基準"
+     ]
+    ],
+    "trap": [
+     "",
+     "opposite",
+     "elsewhere",
+     "notsaid"
+    ]
+   },
+   {
+    "para": [
+     [
+      "絶対だと思われていた物差し",
+      "変わらないと思われていた「普通」の基準"
+     ],
+     [
+      "伸び縮みするゴムでできていた",
+      "時代や場所によって変わる"
+     ]
+    ],
+    "trap": [
+     "",
+     "notsaid",
+     "half",
+     "narrow"
+    ]
+   },
+   {
+    "para": [
+     [
+      "多数派の考え方にすぎない",
+      "多数派の考え方の一つにすぎない"
+     ],
+     [
+      "忘れないでいたい",
+      "意識して使うべきだ"
+     ]
+    ],
+    "trap": [
+     "",
+     "extreme",
+     "rejected",
+     "opposite"
+    ]
+   }
+  ]
+ }
+}

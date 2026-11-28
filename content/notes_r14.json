@@ -1,0 +1,544 @@
+{
+ "r14-001": {
+  "vocab": [
+   {
+    "w": "講座",
+    "r": "こうざ",
+    "en": "course, class"
+   },
+   {
+    "w": "受講者",
+    "r": "じゅこうしゃ",
+    "en": "course participant, attendee"
+   },
+   {
+    "w": "募集",
+    "r": "ぼしゅう",
+    "en": "recruitment, call for applications"
+   },
+   {
+    "w": "申し込み",
+    "r": "もうしこみ",
+    "en": "application, registration"
+   },
+   {
+    "w": "定員",
+    "r": "ていいん",
+    "en": "capacity, maximum places"
+   },
+   {
+    "w": "受講料",
+    "r": "じゅこうりょう",
+    "en": "tuition fee, course fee"
+   },
+   {
+    "w": "入門",
+    "r": "にゅうもん",
+    "en": "introductory, beginner's course"
+   },
+   {
+    "w": "材料費",
+    "r": "ざいりょうひ",
+    "en": "cost of materials or ingredients"
+   },
+   {
+    "w": "受付",
+    "r": "うけつけ",
+    "en": "reception desk, registration office"
+   },
+   {
+    "w": "抽選",
+    "r": "ちゅうせん",
+    "en": "lottery, draw"
+   },
+   {
+    "w": "初回",
+    "r": "しょかい",
+    "en": "first session, first time"
+   },
+   {
+    "w": "対象外",
+    "r": "たいしょうがい",
+    "en": "excluded, not eligible"
+   }
+  ],
+  "qs": [
+   {
+    "para": [],
+    "trap": [
+     "",
+     "note",
+     "cond",
+     "cond"
+    ]
+   },
+   {
+    "para": [],
+    "trap": [
+     "",
+     "half",
+     "note",
+     "note"
+    ]
+   }
+  ]
+ },
+ "r14-002": {
+  "vocab": [
+   {
+    "w": "財団",
+    "r": "ざいだん",
+    "en": "foundation"
+   },
+   {
+    "w": "奨学金",
+    "r": "しょうがくきん",
+    "en": "scholarship, grant"
+   },
+   {
+    "w": "対象",
+    "r": "たいしょう",
+    "en": "eligible group, target"
+   },
+   {
+    "w": "支給額",
+    "r": "しきゅうがく",
+    "en": "amount granted or paid"
+   },
+   {
+    "w": "月額",
+    "r": "げつがく",
+    "en": "monthly amount"
+   },
+   {
+    "w": "採用",
+    "r": "さいよう",
+    "en": "selection, acceptance"
+   },
+   {
+    "w": "在籍",
+    "r": "ざいせき",
+    "en": "enrolment, being enrolled"
+   },
+   {
+    "w": "応募資格",
+    "r": "おうぼしかく",
+    "en": "eligibility requirements"
+   },
+   {
+    "w": "在留資格",
+    "r": "ざいりゅうしかく",
+    "en": "residence status, visa status"
+   },
+   {
+    "w": "未満",
+    "r": "みまん",
+    "en": "under, strictly less than"
+   },
+   {
+    "w": "必着",
+    "r": "ひっちゃく",
+    "en": "must arrive by (not postmarked)"
+   },
+   {
+    "w": "持参",
+    "r": "じさん",
+    "en": "bringing in person"
+   },
+   {
+    "w": "選考",
+    "r": "せんこう",
+    "en": "selection, screening"
+   },
+   {
+    "w": "不採用",
+    "r": "ふさいよう",
+    "en": "not selected, rejected"
+   }
+  ],
+  "qs": [
+   {
+    "para": [],
+    "trap": [
+     "",
+     "note",
+     "cond",
+     "note"
+    ]
+   },
+   {
+    "para": [],
+    "trap": [
+     "",
+     "cond",
+     "cond",
+     "cond"
+    ]
+   }
+  ]
+ },
+ "r14-003": {
+  "vocab": [
+   {
+    "w": "勤務時間",
+    "r": "きんむじかん",
+    "en": "working hours, shift hours"
+   },
+   {
+    "w": "時給",
+    "r": "じきゅう",
+    "en": "hourly wage"
+   },
+   {
+    "w": "配膳",
+    "r": "はいぜん",
+    "en": "serving food to tables"
+   },
+   {
+    "w": "調理",
+    "r": "ちょうり",
+    "en": "cooking, food preparation"
+   },
+   {
+    "w": "清掃",
+    "r": "せいそう",
+    "en": "cleaning"
+   },
+   {
+    "w": "待遇",
+    "r": "たいぐう",
+    "en": "employment terms, benefits"
+   },
+   {
+    "w": "交通費",
+    "r": "こうつうひ",
+    "en": "travel expenses, commuting allowance"
+   },
+   {
+    "w": "実費",
+    "r": "じっぴ",
+    "en": "actual cost"
+   },
+   {
+    "w": "支給",
+    "r": "しきゅう",
+    "en": "payment, provision of allowance"
+   },
+   {
+    "w": "履歴書",
+    "r": "りれきしょ",
+    "en": "CV, resume"
+   },
+   {
+    "w": "翌朝",
+    "r": "よくあさ",
+    "en": "the following morning"
+   },
+   {
+    "w": "増し",
+    "r": "まし",
+    "en": "extra, increased by"
+   },
+   {
+    "w": "研修期間",
+    "r": "けんしゅうきかん",
+    "en": "training period, probation"
+   }
+  ],
+  "qs": [
+   {
+    "para": [],
+    "trap": [
+     "",
+     "note",
+     "note",
+     "cond"
+    ]
+   },
+   {
+    "para": [],
+    "trap": [
+     "",
+     "half",
+     "note",
+     "note"
+    ]
+   }
+  ]
+ },
+ "r14-004": {
+  "vocab": [
+   {
+    "w": "利用案内",
+    "r": "りようあんない",
+    "en": "user guide, usage information"
+   },
+   {
+    "w": "初回講習",
+    "r": "しょかいこうしゅう",
+    "en": "first-time induction course"
+   },
+   {
+    "w": "各回",
+    "r": "かくかい",
+    "en": "each session"
+   },
+   {
+    "w": "予約制",
+    "r": "よやくせい",
+    "en": "booking required, by reservation only"
+   },
+   {
+    "w": "区分",
+    "r": "くぶん",
+    "en": "category, classification"
+   },
+   {
+    "w": "回数券",
+    "r": "かいすうけん",
+    "en": "booklet of multiple-use tickets"
+   },
+   {
+    "w": "一般",
+    "r": "いっぱん",
+    "en": "general adult rate, standard"
+   },
+   {
+    "w": "開館時間",
+    "r": "かいかんじかん",
+    "en": "opening hours"
+   },
+   {
+    "w": "休館日",
+    "r": "きゅうかんび",
+    "en": "regular closing day"
+   },
+   {
+    "w": "室内用",
+    "r": "しつないよう",
+    "en": "for indoor use"
+   },
+   {
+    "w": "購入",
+    "r": "こうにゅう",
+    "en": "purchase"
+   },
+   {
+    "w": "身分",
+    "r": "みぶん",
+    "en": "status, identity"
+   },
+   {
+    "w": "有効期限",
+    "r": "ゆうこうきげん",
+    "en": "expiry date, validity period"
+   }
+  ],
+  "qs": [
+   {
+    "para": [],
+    "trap": [
+     "",
+     "cond",
+     "cond",
+     "cond"
+    ]
+   },
+   {
+    "para": [],
+    "trap": [
+     "",
+     "note",
+     "cond",
+     "cond"
+    ]
+   }
+  ]
+ },
+ "r14-005": {
+  "vocab": [
+   {
+    "w": "入居者",
+    "r": "にゅうきょしゃ",
+    "en": "tenant, resident moving in"
+   },
+   {
+    "w": "共用",
+    "r": "きょうよう",
+    "en": "shared, communal"
+   },
+   {
+    "w": "家賃",
+    "r": "やちん",
+    "en": "rent"
+   },
+   {
+    "w": "入居可",
+    "r": "にゅうきょか",
+    "en": "available to move in"
+   },
+   {
+    "w": "共益費",
+    "r": "きょうえきひ",
+    "en": "common service fee, shared utility fee"
+   },
+   {
+    "w": "保証金",
+    "r": "ほしょうきん",
+    "en": "security deposit"
+   },
+   {
+    "w": "退去",
+    "r": "たいきょ",
+    "en": "moving out"
+   },
+   {
+    "w": "礼金",
+    "r": "れいきん",
+    "en": "key money (non-refundable payment to landlord)"
+   },
+   {
+    "w": "仲介手数料",
+    "r": "ちゅうかいてすうりょう",
+    "en": "agency fee, brokerage fee"
+   },
+   {
+    "w": "翌月分",
+    "r": "よくげつぶん",
+    "en": "the following month's portion"
+   },
+   {
+    "w": "振り込む",
+    "r": "ふりこむ",
+    "en": "transfer money to a bank account",
+    "at": "振り込み"
+   },
+   {
+    "w": "違約金",
+    "r": "いやくきん",
+    "en": "cancellation penalty, breach-of-contract fee"
+   },
+   {
+    "w": "専用",
+    "r": "せんよう",
+    "en": "exclusive use, for one group only"
+   },
+   {
+    "w": "面談",
+    "r": "めんだん",
+    "en": "interview, meeting"
+   }
+  ],
+  "qs": [
+   {
+    "para": [],
+    "trap": [
+     "",
+     "cond",
+     "cond",
+     "cond"
+    ]
+   },
+   {
+    "para": [],
+    "trap": [
+     "",
+     "note",
+     "half",
+     "note"
+    ]
+   }
+  ]
+ },
+ "r14-006": {
+  "vocab": [
+   {
+    "w": "粗大ごみ",
+    "r": "そだいごみ",
+    "en": "oversized rubbish, bulky waste"
+   },
+   {
+    "w": "一辺",
+    "r": "いっぺん",
+    "en": "one side, one edge"
+   },
+   {
+    "w": "手順",
+    "r": "てじゅん",
+    "en": "procedure, steps"
+   },
+   {
+    "w": "収集日",
+    "r": "しゅうしゅうび",
+    "en": "collection day"
+   },
+   {
+    "w": "処理券",
+    "r": "しょりけん",
+    "en": "disposal fee sticker"
+   },
+   {
+    "w": "品目",
+    "r": "ひんもく",
+    "en": "item, category of goods"
+   },
+   {
+    "w": "手数料",
+    "r": "てすうりょう",
+    "en": "handling fee, service charge"
+   },
+   {
+    "w": "引き取り",
+    "r": "ひきとり",
+    "en": "collection, pickup"
+   },
+   {
+    "w": "依頼する",
+    "r": "いらいする",
+    "en": "request",
+    "at": "依頼して"
+   },
+   {
+    "w": "世帯",
+    "r": "せたい",
+    "en": "household"
+   },
+   {
+    "w": "運び出す",
+    "r": "はこびだす",
+    "en": "carry out"
+   },
+   {
+    "w": "職員",
+    "r": "しょくいん",
+    "en": "city staff, official"
+   },
+   {
+    "w": "処分する",
+    "r": "しょぶんする",
+    "en": "dispose of",
+    "at": "処分したい"
+   }
+  ],
+  "qs": [
+   {
+    "para": [],
+    "trap": [
+     "",
+     "cond",
+     "cond",
+     "cond"
+    ]
+   },
+   {
+    "para": [],
+    "trap": [
+     "",
+     "note",
+     "note",
+     "note"
+    ]
+   }
+  ]
+ }
+}

@@ -8,7 +8,7 @@
   const G = window.Sync || null; // gist sync (js/sync.js). Missing means sync stays off.
   // This build. version.json on the site holds the newest; a page left open on an older build stops
   // syncing and reloads itself, so old sync code never runs against newer progress. Bump both together.
-  const APP_VERSION = "2026-11-22.1";
+  const APP_VERSION = "2026-11-28.1";
   const app = document.getElementById("app");
   const KEYS = { state: "n2drill.state.v2", settings: "n2drill.settings.v2", sync: "n2drill.sync.v1", wk: "n2drill.wk.v1" };
   // rlFrom: the day reading and listening join Today. Before it they show as optional blocks.
@@ -167,6 +167,7 @@
   const TIPS = D.tips || { techniques: [], types: [], listening: [], listenGeneral: [] };
   const tipById = new Map([...(TIPS.techniques || []), ...(TIPS.types || []), ...(TIPS.listening || [])].map((t) => [t.id, t]));
   if (TIPS.intro) tipById.set("intro", TIPS.intro);
+  for (const t of TIPS.extra || []) tipById.set(t.id, t);
   // Skills that belong to a whole exam part rather than a Part 1 technique map onto that part's guide.
   const TIP_ALIAS = { compare: "r12", gist: "intro" };
   const tipFor = (id) => tipById.get(id) || tipById.get(TIP_ALIAS[id]);
@@ -175,6 +176,54 @@
     return t ? `${t.ja} · ${t.en}` : { gist: "全体 · Main point", compare: "統合 · Comparing A and B" }[id] || id;
   };
   const isR = (q) => q.type[0] === "r"; // r10 to r14
+  // Reading notes (content/notes_*.json): the lesson shown after a text's questions.
+  const NOTES = D.notes || {};
+  // The traps the paper builds wrong choices from: a short name, and the check that beats it.
+  const TRAPS = {
+    opposite: ["Opposite of the text", "Check the direction: ない, わけではない, 逆に, かえって."],
+    elsewhere: ["True, but not the answer", "It is in the text, but it answers another question. Read the stem again."],
+    notsaid: ["Not in the text", "It sounds sensible. If you cannot point to the line, cross it out."],
+    half: ["Half right", "Read the choice to its last word. One part was changed or added."],
+    swap: ["Right words, wrong owner", "Check who, or which side, each part belongs to."],
+    rejected: ["The view the writer rejects", "What comes before しかし, or after 確かに, is there to be answered."],
+    extreme: ["Stronger than the text", "The text hedges (かもしれない, とは限らない). The choice does not."],
+    narrow: ["Too narrow", "One example or detail is not the main point."],
+    literal: ["Read literally", "It is a figure of speech. Ask what it stands for."],
+    oneonly: ["Only one text says it", "Test the choice against A, then against B."],
+    cond: ["Fails a condition", "List the person's conditions and tick each one off."],
+    note: ["Misses a ※ note", "Read every ※, exception and deadline before you choose."],
+  };
+  const ROLES = { topic: "Topic", view: "Others' view", turn: "Turn", claim: "Writer's point", reason: "Reason", example: "Example", restate: "Said again", question: "Writer's question", ask: "The request", fact: "" };
+  // Where the answer usually sits, by technique. Shown beside each question before the text is read.
+  const WHERE = {
+    contrast: "Find the two sides. The point comes after しかし, 一方 or それに対して.",
+    rephrase: "Find where the text says it again: つまり, 要するに, 〜ということだ.",
+    metaphor: "A likeness. The sentence after it says what the picture stands for.",
+    question: "Find the writer's own question (〜だろうか). The answer follows it.",
+    claim: "Hunt the endings: 〜べきだ, 〜のではないだろうか, 〜と思う. Usually near the end.",
+    ref: "Pointing word. Look backward one or two sentences, then put your answer in its place.",
+    who: "Who or what. The subject is often left out: carry it over from the sentence before.",
+    meaning: "Read one sentence before the underline and one after. One of them re-words it.",
+    reason: "Read just before and just after the underline: から, ので, ため, 〜のだ.",
+    example: "The cases in the choices are new: none is in the text. Find the writer's rule, then pick the case that fits it.",
+    gist: "Main point. The last paragraph, and whatever follows しかし.",
+    purpose: "What must the reader do? Look for 〜てください and 〜をお願いします, near the end.",
+    compare: "Decide what A says and what B says, then test each choice against both.",
+    r14: "Note the person's conditions: day, time, age, where they live, what they have.",
+  };
+  // One line on how to attack each part of the paper.
+  const TYPE_PLAN = {
+    r10: "One question. Read it, then find the writer's point: the last sentence, or what follows しかし or ところが.",
+    r11: "The questions follow the order of the text. Read to the first underline, answer it, then read on.",
+    r12: "Two short texts on one topic. For each, decide: for, against, or a condition? Then test each choice against both.",
+    r13: "Long. The claim sits in the paragraphs around the story, often the last ones. The questions follow the order of the text: answer each one when you reach its underline.",
+    r14: "Do not read the whole notice. Take the conditions from the question, cut the table by them, then check every ※. If the choices name four things, check only those four rows.",
+    practical: "A practical text. Who writes to whom, and what must the reader do? The request usually comes near the end.",
+  };
+  const planFor = (q) => (["メール", "お知らせ", "メモ"].includes(q.genre) ? TYPE_PLAN.practical : TYPE_PLAN[q.type] || "");
+  // Signal words: a connective at the head of a sentence, and the ending that carries a claim or a reason.
+  const SIG_HEAD = /^(しかしながら|しかし|ところが|けれども|だが|でも|それでも|それなのに|とはいえ|とはいっても|一方で|一方|それに対して|これに対して|逆に|反対に|むしろ|つまり|すなわち|要するに|言い換えれば|いわば|なぜなら|というのは|というのも|だから|ですから|そのため|このため|したがって|その結果|これにより|こうして|そこで|それで|果たして|そもそも|たとえば|例えば|実際|実は|確かに|たしかに|もちろん|なるほど|また|さらに|そのうえ|しかも|それに|ただし|ただ|もっとも|それでは|では)(?=[、，　 ]|[^ぁ-ん])/;
+  const SIG_TAIL = /(のではないだろうか|のではないでしょうか|ではないだろうか|ではないでしょうか|のではないか|べきではない|べきである|べきだろう|べきだ|なければならない|必要がある|必要だろう|に違いない|にちがいない|はずだ|わけではない|わけにはいかない|とは限らない|とはかぎらない|かもしれない|かもしれません|と思うのです|と思う|と思います|気がする|はしないか|必要である|と考える|と考えている|と言えるだろう|と言える|といえる|てほしい|たいものだ|のである|のです|んです|のだ|だろう|でしょう|からだ|からである|ためだ|ためである)([。」）]*)$/;
   const isL = (q) => q.type[0] === "l";
   // 問題9 passages, reading texts and 問題5 listening items hold several questions, answered one at a time.
   const isMulti = (q) => q.type === "p9" || isR(q) || q.type === "l5";
@@ -585,6 +634,7 @@
     const reading = RALL.length
       ? [
           row("read-today", "Today's reading set", "One timed set, the type taken in turn"),
+          row("read-tour", "One of each part, with its lesson", `問題14, 10, 11, 12, then 13, in the order of the exam plan · about ${Math.round(RTYPES.reduce((a, t) => a + S.PACE[t], 0) / 60)} min at paper pace`),
           RALL.length >= 8 ? row("read-mock", "Reading section, full", "問題10 to 14: 11 texts, 21 questions · 55 min · no answers until the end") : "",
           row("read-half", "Reading section, half", "Two short texts, one mid-length, one long · about 25 min"),
           ...RTYPES.filter((t) => RALL.some((p) => p.type === t)).map((t) => row("read-type", RNAME[t][1], `${readDone(t)}/${RALL.filter((p) => p.type === t).length} read · about ${Math.round((S.PACE[t] * (t === "r10" ? 3 : 1)) / 60)} min`, `data-t="${t}"`)),
@@ -689,10 +739,16 @@
       .sort((a, b) => a[1].right / a[1].seen - b[1].right / b[1].seen)
       .map(([id, x]) => `<button data-act="read-skill" data-id="${esc(id)}"><span class="form">${esc(skillName(id))}</span><span class="muted small">${pct(x.right, x.seen)} of ${x.seen}</span></button>`)
       .join("");
+    const re = log.filter((e) => e.re && e.chars).slice(-5);
+    const reread = re.length ? `<p class="small">Second reads: <b>${S.median(re.map((e) => cpmOf(e.chars, e.re)))} characters a minute</b> over your last ${re.length}. Aim for 300 or more.</p>` : "";
+    const traps = trapCounts();
+    const trapRows = traps.length
+      ? `<h3 style="margin-top:14px">Traps you fall for</h3><ul class="tiplist">${traps.map(([t, n]) => `<li><b>${esc(TRAPS[t][0])}</b> ×${n}. ${esc(TRAPS[t][1])}</li>`).join("")}</ul>`
+      : "";
     return `<div class="card"><h3>Reading 読解</h3>
       <table class="mini"><thead><tr><th>Type</th><th>Read</th><th>Right</th><th>Time</th></tr></thead><tbody>${rows}</tbody></table>
       <p class="small muted">Time is your last five texts against exam pace: 1.0× is on pace, above 1.0× is slower.</p>
-      ${speed}
+      ${speed}${reread}${trapRows}
       ${tech ? `<h3 style="margin-top:14px">By technique, weakest first</h3><div class="mix">${tech}</div>` : ""}</div>`;
   }
 
@@ -969,6 +1025,7 @@
     return `${header()}${back("library", "Library")}
       <h2>Reading and listening tips</h2>
       <p class="muted small">The method of 新完全マスター読解 N2, summed up in our own words, with the book's pages so you can look things up. Your accuracy shows once you have answered questions on a technique.</p>
+      ${(TIPS.extra || []).length ? `<div class="list">${section("Start here · our own advice", TIPS.extra.map((t) => row(t, esc(t.title || ""))).join(""))}</div>` : ""}
       ${TIPS.intro ? `<div class="list">${row(TIPS.intro, "Read for the shape first, then the details")}</div>` : ""}
       <div class="list">${section("How texts are built · 第1部 1", tech("第1部 1"))}${section("Question types · 第1部 2", tech("第1部 2"))}${section("Practical texts · 第2部", tech("第2部"))}${section("Each part of the paper", types)}${section("Listening, part by part", listen)}</div>
       ${general}`;
@@ -1242,6 +1299,8 @@
     if (kind === "read-mock") return begin("rmock", "Reading section", S.buildReadingMock(args));
     if (kind === "read-half") return begin("rmock", "Reading, half section", S.buildReadingMock({ ...args, half: true }));
     if (kind === "read-type") return begin("read", RNAME[arg][0], S.leastRead({ state, texts: RALL.filter((p) => p.type === arg), n: arg === "r10" ? 3 : 1 }));
+    // One text of each part, in the order the exam plan takes them: the notice first, the long essay last.
+    if (kind === "read-tour") return begin("read", "Reading, each part", ["r14", "r10", "r11", "r12", "r13"].flatMap((t) => S.leastRead({ state, texts: RALL.filter((p) => p.type === t), n: 1 })));
     // One technique: two texts that have a question on it.
     const texts = RT.filter((p) => p.qs.some((b) => b.skill === arg));
     begin("read", skillName(arg).split(" · ")[0], S.leastRead({ state, texts, n: 2 }));
@@ -1278,12 +1337,21 @@
     sess.order = spokenL(q) ? orderOf(q).slice() : twoL5(q) ? orderL5(q, 0) : S.shuffle([0, 1, 2, 3]);
     if (q.type === "p8") sess.built = [];
     if (isMulti(q)) sess.blank = 0;
+    if (isR(q)) {
+      // Outside a timed section a text has three steps: the questions first (pre), the text and its
+      // questions (q), then the lesson (study), which can hold a second, fast read (sprint).
+      sess.rstep = coached() ? "pre" : "q";
+      sess.sprint = null;
+      sess.rlogId = null;
+      sess.studied = 0;
+    }
     if (isL(q)) {
       sess.ls = "ready"; // ready, playing, then answer once the audio ends
       sess.tEnd = 0;
       sess.heard = false;
     }
   }
+  const coached = () => !!sess && !sess.mock && sess.mode === "read";
   const spokenL = (q) => isL(q) && spokenOf(q);
   // Two-question 問題5 prints one list of options for both questions, in a fixed order, as the paper does.
   const twoL5 = (q) => q.type === "l5" && q.qs.length > 1;
@@ -1323,6 +1391,9 @@
     }
     const q = cur();
     if (q.type === "kn") return "new";
+    if (isR(q) && sess.rstep === "pre") return "ready";
+    if (isR(q) && sess.rstep === "study") return "lesson";
+    if (isR(q) && sess.rstep === "sprint") return settings.eink ? "timing" : fmtSecs(Math.floor((Date.now() - sess.s0) / 1000));
     if (sess.answered) return fmtSecs(sess.answered.secs);
     if (!settings.timer || settings.eink) return `aim ${fmtSecs(S.TARGET[q.type])}`;
     return fmtSecs(Math.floor((Date.now() - sess.t0) / 1000));
@@ -1342,6 +1413,9 @@
       const left = (sess.deadline - Date.now()) / 1000;
       if (left <= 0) return finishMock();
       el.classList.toggle("over", left < 60);
+    } else if (isR(q) && sess.rstep !== "q") {
+      el.classList.remove("over");
+      if (sess.rstep !== "sprint" || settings.eink) return;
     } else if (sess.answered || !settings.timer || settings.eink) {
       return;
     } else {
@@ -1369,7 +1443,7 @@
   function viewQuiz() {
     const q = cur();
     const { pct, text } = counter();
-    const canHint = !sess.mock && !sess.answered && !sess.hint && q.type !== "p8" && !isK(q) && !isV(q) && !isL(q);
+    const canHint = !sess.mock && !sess.answered && !sess.hint && q.type !== "p8" && !isK(q) && !isV(q) && !isL(q) && !(isR(q) && sess.rstep !== "q");
     const body = isK(q) ? qK(q) : isV(q) ? qV(q) : isL(q) ? qL(q) : isR(q) ? qRead(q) : q.type === "p7" ? qP7(q) : q.type === "p8" ? qP8(q) : qP9(q);
     return `<div class="qbar">
         <button class="quit" data-act="quit">✕ ${sess.mock ? "End" : "Stop"}</button>
@@ -1452,7 +1526,7 @@
   // Feedback for one 4-choice item (a 問題7 question, one 問題9 blank, a vocab item or a 情報検索 question).
   // `extra` is shown under the tell (the word card for vocab).
   const PACE_NOTE = "slower than the paper allows";
-  function feedback(b, a, order, { en = "", set = null, next = false, nextLabel = "Next", target = S.TARGET.p7, extra = "", slow = "slow, so it comes back tomorrow" } = {}) {
+  function feedback(b, a, order, { en = "", set = null, next = false, nextLabel = "Next", target = S.TARGET.p7, extra = "", slow = "slow, so it comes back tomorrow", traps = null } = {}) {
     // A whole sentence (問題6, 情報検索) is named by its number; it is already marked green above.
     const answer = b.c[0].length > 12 ? `number ${order.indexOf(0) + 1}` : esc(b.c[0].replace(/[。.]$/, ""));
     const verdict = a.ok
@@ -1465,7 +1539,8 @@
         const cls = orig === 0 ? "right" : orig === a.orig ? "chosen" : "";
         const pid = b.cp ? b.cp[orig] : null;
         const showChip = pid && (orig === 0 || pid !== b.point);
-        return `<li class="${cls}"><div class="head"><span class="form jp">${d + 1}. ${esc(b.c[orig])}</span>${showChip ? chip(pid) : ""}</div>${esc(b.why[orig])}</li>`;
+        const trap = traps && orig !== 0 && TRAPS[traps[orig]];
+        return `<li class="${cls}"><div class="head"><span class="form jp">${d + 1}. ${esc(b.c[orig])}</span>${showChip ? chip(pid) : ""}</div>${trap ? `<div><button class="traptag" data-act="tip" data-id="traps">${esc(trap[0])}</button></div>` : ""}${esc(b.why[orig])}</li>`;
       })
       .join("");
     return `<div class="feedback">
@@ -1883,18 +1958,193 @@
       : `<p class="small skill">Technique: ${label}</p>`;
   };
 
+  // What a reading question's notes add to its feedback: the trap behind the choice picked, and how the
+  // right choice re-words the text.
+  const noteQ = (q, k) => (NOTES[q.id] && NOTES[q.id].qs[k]) || null;
+  function readExtra(q, k, a) {
+    const n = noteQ(q, k);
+    const fell = n && a && !a.ok && a.orig > 0 && TRAPS[n.trap[a.orig]];
+    const para = n && n.para && n.para.length
+      ? `<p class="small para"><b>The answer re-words the text:</b> ${n.para.map(([t, c]) => `<span class="jp">${esc(t)}</span> → <span class="jp">${esc(c)}</span>`).join(" · ")}</p>`
+      : "";
+    return `${fell ? `<p class="small fell"><b>Trap: ${esc(fell[0])}.</b> ${esc(fell[1])}</p>` : ""}${para}${skillLine(q.qs[k], q.type)}`;
+  }
+  // The trap behind each wrong reading answer on record. A reading record keeps the choice last picked
+  // wrongly (`pick`), and the text's notes say which trap that choice is. Most common first.
+  function trapCounts() {
+    const c = {};
+    for (const p of RALL) {
+      const n = NOTES[p.id];
+      if (!n) continue;
+      p.qs.forEach((_, k) => {
+        const r = state.reading[`${p.id}#${k + 1}`];
+        const t = r && r.pick > 0 && n.qs[k] && n.qs[k].trap[r.pick];
+        if (t && TRAPS[t]) c[t] = (c[t] || 0) + 1;
+      });
+    }
+    return Object.entries(c).sort((x, y) => y[1] - x[1]);
+  }
+  const cpmOf = (chars, secs) => (secs ? Math.round(chars / (secs / 60)) : 0);
+
+  // Before the text: the questions, where each answer usually sits, and the plan for this part of the paper.
+  function preHTML(q) {
+    const said = new Set();
+    const stems = q.qs
+      .map((b) => {
+        let where = WHERE[b.skill] || (q.type === "r14" ? WHERE.r14 : "");
+        if (said.has(where)) where = ""; // the same hint is given once
+        said.add(where);
+        return `<li><span class="jp">${esc(b.q)}</span>${where ? `<div class="small muted">${esc(where)}</div>` : ""}</li>`;
+      })
+      .join("");
+    const worst = trapCounts()[0];
+    return `<div class="pre">
+      <span class="kicker">Before you read${q.chars ? ` · ${q.chars} 字` : ""} · paper pace ${fmtSecs(S.PACE[q.type])}</span>
+      <p>${esc(planFor(q))}</p>
+      <h3>${q.qs.length > 1 ? "The questions. Read them first" : "The question. Read it first"}</h3>
+      <ol class="stems">${stems}</ol>
+      ${worst && worst[1] > 1 ? `<p class="small fell"><b>Your most common trap: ${esc(TRAPS[worst[0]][0])}</b> (${worst[1]} times). ${esc(TRAPS[worst[0]][1])}</p>` : ""}
+      <button class="btn primary wide" data-act="read-go">Start reading, the clock starts now <kbd>Enter</kbd></button>
+    </div>`;
+  }
+  function startReading() {
+    if (!sess || !isR(cur()) || sess.rstep !== "pre") return;
+    sess.rstep = "q";
+    sess.t0 = Date.now();
+    paintQuiz(true);
+  }
+
+  // A sentence with its signal words marked: the connective it opens with and the ending that carries a claim.
+  function sigHTML(s) {
+    let head = "";
+    let tail = "";
+    let end = "";
+    const h = SIG_HEAD.exec(s);
+    if (h) {
+      head = h[1];
+      s = s.slice(head.length);
+    }
+    const t = SIG_TAIL.exec(s);
+    if (t) {
+      tail = t[1];
+      end = t[2] || "";
+      s = s.slice(0, t.index);
+    }
+    return `${head ? `<b class="sig">${esc(head)}</b>` : ""}${esc(s)}${tail ? `<b class="sig end">${esc(tail)}</b>` : ""}${esc(end)}`;
+  }
+
+  // After the last question: the lesson. The shape of the text, each sentence with its role (tap one for
+  // the English), the hard sentences cut into chunks, the words, and a second read against the clock.
+  function studyHTML(q) {
+    const n = NOTES[q.id];
+    const mine = sess.res.slice(-q.qs.length).filter((x) => x.qid === q.id);
+    const ok = mine.filter((x) => x.ok).length;
+    const secs = mine.reduce((a, x) => a + x.secs, 0);
+    const head = `<div class="verdict ${ok === mine.length ? "good" : "bad"}">${ok} of ${mine.length} right · ${fmtSecs(secs)} <span class="muted small">(paper pace ${fmtSecs(S.PACE[q.type])})</span></div>`;
+    let sents = "";
+    if (n.sents) {
+      let key = null;
+      for (const x of n.sents) {
+        const k = `${x.t || ""}${x.p}`;
+        if (k !== key) {
+          sents += `${key === null ? "" : "</div>"}<div class="spara">${x.t && x.p === 1 ? `<div class="rlabel">${esc(x.t)}</div>` : ""}`;
+          key = k;
+        }
+        const role = ROLES[x.role] || "";
+        sents += `<details class="sent ${esc(x.role)}"><summary>${role ? `<span class="role">${role}</span>` : ""}<span class="jp">${sigHTML(x.s)}</span></summary><div class="en">${esc(x.en)}</div></details>`;
+      }
+      sents += "</div>";
+    }
+    const hard = (n.hard || [])
+      .map((h) => `<div class="hard"><div class="chunks jp">${h.chunks.map((c) => `<span>${esc(c)}</span>`).join("")}</div>
+        <p class="small"><b>Skeleton:</b> <span class="jp">${esc(h.core)}</span></p><p class="small">${esc(h.note)}</p></div>`)
+      .join("");
+    const vocab = (n.vocab || []).map((v) => `<li><span class="jp">${esc(v.w)}</span> <span class="jp muted">${esc(v.r)}</span> ${esc(v.en)}</li>`).join("");
+    const first = cpmOf(q.chars || 0, secs);
+    const sp = sess.sprint;
+    const again = q.type === "r14" || !q.chars
+      ? ""
+      : `<h3>Read it again, fast</h3>${
+          sp
+            ? `<p class="sprint-res">Second read: <b>${fmtSecs(sp.secs)}</b>, <b>${cpmOf(q.chars, sp.secs)} 字 a minute</b>.<span class="small muted"> First time, with the questions: ${first}. Aim for 300 or more on a text you now understand.</span></p>
+               <button class="btn" data-act="sprint">Once more</button>`
+            : `<p class="small">You know what it says now, so read it once more at speed, eyes moving forward only. Reading a text again is how reading speed is built. Or read it aloud (音読): where you stumble is where your parsing breaks.</p>
+               <button class="btn wide" data-act="sprint">Read it again against the clock</button>`
+        }`;
+    return `<div class="study">
+      ${head}
+      ${n.shape ? `<h3>The shape</h3><div class="tell">${esc(n.shape)}</div>` : ""}
+      ${sents ? `<h3>Sentence by sentence</h3><p class="small muted">Say what a sentence means, then tap it to check. <b class="sig">Boxed</b> words are the signals to hunt for. <button class="linkish" data-act="sent-all">Show all the English</button></p><div class="sents">${sents}</div>` : ""}
+      ${hard ? `<h3>The hard sentence${n.hard.length > 1 ? "s" : ""}, cut up</h3><p class="small muted">Find the end of the sentence first (the verb), then the topic, then hang the rest on them.</p>${hard}` : ""}
+      ${vocab ? `<h3>Words</h3><ul class="kwords rwords">${vocab}</ul>` : ""}
+      ${again}
+      ${q.en ? `<div class="en">${esc(q.en)}</div>` : ""}
+      ${nextButton("Next")}
+    </div>`;
+  }
+  function startSprint() {
+    if (!sess || !isR(cur()) || sess.rstep !== "study") return;
+    sess.studied += Date.now() - sess.st0;
+    sess.rstep = "sprint";
+    sess.s0 = Date.now();
+    paintQuiz(true);
+  }
+  // The second read is done. It goes on the text's log entry, and its time counts toward the day.
+  function endSprint() {
+    if (!sess || sess.rstep !== "sprint") return;
+    const q = cur();
+    const secs = (Date.now() - sess.s0) / 1000;
+    sess.rstep = "study";
+    sess.st0 = Date.now();
+    if (cpmOf(q.chars, secs) > 1500) toast("Too fast to be a read. Not counted.");
+    else {
+      sess.sprint = { secs };
+      const e = sess.rlogId && state.rlog[sess.rlogId];
+      if (e) state.rlog[sess.rlogId] = { ...e, re: Math.round(secs), ts: Date.now() };
+      const d = state.rdays[today()];
+      if (d) d.secs += Math.round(secs);
+      saveState();
+      syncSoon();
+    }
+    paintQuiz(false);
+    const el = app.querySelector(".sprint-res");
+    if (el) el.scrollIntoView({ block: "center" });
+  }
+  // Leaving the lesson: the time spent in it counts toward the day's hours (at most ten minutes a text).
+  function closeStudy() {
+    const secs = Math.min(600, Math.round((sess.studied + Date.now() - sess.st0) / 1000));
+    const d = state.rdays[today()];
+    if (d && secs > 0) {
+      d.secs += secs;
+      saveState();
+      syncSoon();
+    }
+  }
+
   // A text and one of its questions at a time. The time for the first question includes reading the text.
   function qRead(q) {
+    if (sess.rstep === "pre") return preHTML(q);
+    if (sess.rstep === "study") return studyHTML(q);
+    if (sess.rstep === "sprint")
+      return `<p class="small muted">Second read. Eyes forward, no going back. Tap Done at the last word.</p>${textHTML(q, [])}
+        <button class="btn primary wide" data-act="sprint-done">Done <kbd>Enter</kbd></button>`;
     const a = sess.answered;
     const k = sess.blank;
     const b = q.qs[k];
     const lastQ = k === q.qs.length - 1;
     const of = sess.items.filter(isR).length;
     const nth = sess.items.slice(0, sess.i + 1).filter(isR).length;
+    const lesson = lastQ && coached() && NOTES[q.id];
+    // The paper shows every question at once, so the ones still to come can be looked at.
+    const rest = !a && coached() && q.qs.length > 1
+      ? `<details class="also"><summary>All ${q.qs.length} questions on this text</summary><ol class="jp">${q.qs.map((x) => `<li>${esc(x.q)}</li>`).join("")}</ol></details>`
+      : "";
+    const nq = noteQ(q, k);
     return `${of > 1 ? `<p class="small muted">Text ${nth} of ${of}</p>` : ""}${textHTML(q, a || sess.hint ? b.cue : [])}
       <p class="rq jp"><span class="small muted">Question ${k + 1} of ${q.qs.length}</span><br>${esc(b.q)}</p>
       <div class="choices long-choices">${choiceButtons(b, a)}</div>
-      ${a ? feedback(b, a, sess.order, { en: lastQ ? q.en : "", next: true, nextLabel: lastQ ? "Next" : "Next question", target: S.TARGET[q.type], slow: PACE_NOTE, extra: skillLine(b, q.type) }) : ""}`;
+      ${rest}
+      ${a ? feedback(b, a, sess.order, { en: lastQ && !lesson ? q.en : "", next: true, nextLabel: lesson ? "Now study the text" : lastQ ? "Next" : "Next question", target: S.TARGET[q.type], slow: PACE_NOTE, extra: readExtra(q, k, a), traps: nq && nq.trap }) : ""}`;
   }
 
   // A text is done once its last question is answered: log its speed for the Progress tab.
@@ -1904,6 +2154,7 @@
     const secs = mine.reduce((a, x) => a + x.secs, 0);
     const id = `r${Date.now().toString(36)}${Math.floor(Math.random() * 1e4).toString(36)}`;
     state.rlog[id] = { d: today(), id: q.id, type: q.type, chars: q.chars || 0, secs: Math.round(secs), right: mine.filter((x) => x.ok).length, n: mine.length, mode: sess.mode, ts: Date.now() };
+    sess.rlogId = id;
   }
 
   // ---------- listening (聴解 問題1 to 5) ----------
@@ -2062,6 +2313,7 @@
     const orig = sess.order[d];
     if (orig === undefined) return;
     const b = isMulti(q) ? q.qs[sess.blank] : q;
+    if (isR(q) && sess.rstep !== "q") return;
     // Two-question 問題5 is answered only after the talk.
     if (q.type === "l5" && q.qs.length > 1 && sess.ls !== "answer") return;
     const ok = orig === 0;
@@ -2077,6 +2329,11 @@
     record(q, point, ok, secs, ok || !b.cp ? null : b.cp[orig], qid);
     if (isL(q)) {
       addHeard(q);
+      saveState();
+    }
+    // A wrong reading answer keeps which choice was picked, so the trap behind it can be counted.
+    if (isR(q) && !ok && state.reading[qid]) {
+      state.reading[qid].pick = orig;
       saveState();
     }
     sess.res.push({ qid: q.id, blank: isMulti(q) ? sess.blank : null, ok, secs, orig, order: sess.order.slice(), item: isK(q) ? q : null, retry: !!q.retry });
@@ -2133,6 +2390,7 @@
 
   function hint() {
     if (!sess || sess.mock || sess.answered || cur().type === "p8" || isK(cur()) || isV(cur()) || isL(cur())) return;
+    if (isR(cur()) && sess.rstep !== "q") return;
     sess.hint = true;
     paintQuiz(false);
   }
@@ -2140,6 +2398,8 @@
   function advance() {
     if (held.timer) return;
     const q = cur();
+    if (isR(q) && sess.rstep === "pre") return startReading();
+    if (isR(q) && sess.rstep === "sprint") return endSprint();
     if (isMulti(q) && sess.blank < q.qs.length - 1) {
       sess.blank++;
       sess.t0 = Date.now();
@@ -2149,6 +2409,13 @@
       if (isL(q)) sess.tEnd = Date.now(); // 質問2: its answer clock starts now
       return paintQuiz(false);
     }
+    // A text read outside a timed section ends with its lesson.
+    if (isR(q) && sess.rstep === "q" && coached() && NOTES[q.id]) {
+      sess.rstep = "study";
+      sess.st0 = Date.now();
+      return paintQuiz(true);
+    }
+    if (isR(q) && sess.rstep === "study") closeStudy();
     stopAudio();
     sess.i++;
     if (sess.i >= sess.items.length) return finish();
@@ -2224,11 +2491,20 @@
         })
         .join(" · ");
       const ratio = spent / pace;
+      // The traps behind this set's wrong answers, most common first.
+      const fell = {};
+      for (const x of res) {
+        const n = !x.ok && x.orig > 0 && noteQ(itemOf(x), x.blank);
+        if (n && TRAPS[n.trap[x.orig]]) fell[n.trap[x.orig]] = (fell[n.trap[x.orig]] || 0) + 1;
+      }
+      const fellNote = Object.keys(fell).length
+        ? `<p class="small fell"><b>Traps you fell for:</b> ${Object.entries(fell).sort((a, b) => b[1] - a[1]).map(([t, n]) => `${esc(TRAPS[t][0])}${n > 1 ? ` ×${n}` : ""}`).join(", ")}. <button class="linkish" data-act="tip" data-id="traps">How to beat each one</button></p>`
+        : "";
       const say = ratio > 1.15 ? `${ratio.toFixed(1)}× the paper's pace. Speed is what to build: keep every text timed.` : ratio < 0.8 && ok < res.length * 0.7 ? "Faster than the paper's pace, but with misses. Spend the spare time on the choices, not the text." : "Within the paper's pace.";
       top = `<div class="card"><span class="kicker">${esc(r.title)}</span>
         <div class="score">${ok}<small> / ${res.length} right</small></div>
         ${texts.length > 1 ? `<p>${parts}</p>` : ""}
-        <p class="muted small">Time on the texts ${fmtSecs(spent)}; the paper gives about ${fmtSecs(pace)}. ${say}${res.some((x) => x.skipped) ? " Unanswered questions count as wrong." : ""}</p></div>`;
+        <p class="muted small">Time on the texts ${fmtSecs(spent)}; the paper gives about ${fmtSecs(pace)}. ${say}${res.some((x) => x.skipped) ? " Unanswered questions count as wrong." : ""}</p>${fellNote}</div>`;
     } else if (r.mode === "listen" || r.mode === "lmock") {
       const ok = res.filter((x) => x.ok).length;
       const parts = LTYPES.filter((t) => res.some((x) => typeOf(x) === t))
@@ -2300,7 +2576,7 @@
           const b = it.qs[x.blank];
           const name = it.type === "r14" ? it.title : `${RNAME[it.type][0]} ${it.id.slice(4)}`;
           return `<details><summary>${mark}<span class="form jp">${esc(name)}${it.qs.length > 1 ? ` · Q${x.blank + 1}` : ""}</span><span class="t">${x.skipped ? "skipped" : fmtSecs(x.secs)}</span></summary>
-            ${textHTML(it, b.cue)}<p class="rq jp">${esc(b.q)}</p>${feedback(b, x, x.order, { target: S.TARGET[it.type], slow: PACE_NOTE, extra: skillLine(b, it.type) })}</details>`;
+            ${textHTML(it, b.cue)}<p class="rq jp">${esc(b.q)}</p>${feedback(b, x, x.order, { target: S.TARGET[it.type], slow: PACE_NOTE, extra: readExtra(it, x.blank, x), traps: (noteQ(it, x.blank) || {}).trap })}</details>`;
         }
         if (isL(it)) {
           const two = it.type === "l5" && it.qs.length > 1;
@@ -2341,7 +2617,7 @@
     const main = next
       ? `<button class="btn primary wide go" data-act="${next.act}">Next: ${esc(next.name)}${blk && next.id === blk.id ? `, ${next.left > next.n ? `${next.n} of the ${next.left}` : `the last ${next.n}`} ${next.unit}` : ""}</button>`
       : `<button class="btn primary wide go" data-act="nav" data-to="home">Back to Today</button>`;
-    const more = `${missed.length ? `<button class="btn" data-act="again">Go again on the ${missed.length} I missed</button>` : ""}${next ? `<button class="btn" data-act="nav" data-to="home">Today</button>` : ""}`;
+    const more = `${missed.length ? `<button class="btn" data-act="again">Go again on the ${missed.length} I missed</button>` : ""}${r.mode === "read" ? `<button class="btn" data-act="read-today">Another reading set</button>` : ""}${next ? `<button class="btn" data-act="nav" data-to="home">Today</button>` : ""}`;
     return `${header()}${top}
       ${leftNote}
       ${main}
@@ -3119,6 +3395,7 @@
       case "notice":
         return startNotice();
       case "read-today":
+      case "read-tour":
       case "read-mock":
       case "read-half":
       case "read-type":
@@ -3138,6 +3415,19 @@
         return stopAudio();
       case "tip":
         return openTip(a.id);
+      case "read-go":
+        return startReading();
+      case "sprint":
+        return startSprint();
+      case "sprint-done":
+        return endSprint();
+      case "sent-all": {
+        const all = [...app.querySelectorAll("details.sent")];
+        const open = all.some((d) => !d.open);
+        all.forEach((d) => (d.open = open));
+        el.textContent = open ? "Hide the English" : "Show all the English";
+        return;
+      }
       case "video-restart":
         return restartVideo();
       case "hours-add":
@@ -3251,6 +3541,7 @@
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
         if (e.repeat) return; // a held-down key does not race past the feedback it just opened
+        if (isR(q) && (sess.rstep === "pre" || sess.rstep === "sprint")) return advance();
         if (sess.answered) return advance();
         if (q.type === "p8") return check();
         return;

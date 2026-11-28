@@ -410,3 +410,115 @@ export function validateListening(list, file, seenIds = new Set()) {
   });
   return errors;
 }
+
+// ---------- reading notes (content/notes_*.json) ----------
+// The teaching layer for one reading text, shown after its questions: the text sentence by sentence
+// with an English line and a role, its hardest sentences cut into chunks, the words worth knowing, and
+// for each question how the answer re-words the text and which trap each wrong choice is.
+// Files hold { textId: note }. `sents[].s` is made by tools/notes.mjs and must not be edited.
+export const noteFiles = () => listFiles(/^notes_.*\.json$/);
+export const NOTE_ROLES = ["topic", "view", "turn", "claim", "reason", "example", "restate", "question", "ask", "fact"];
+export const NOTE_TRAPS = ["opposite", "elsewhere", "notsaid", "half", "swap", "rejected", "extreme", "narrow", "literal", "oneonly", "cond", "note"];
+const NOTE_VOCAB = { r10: [5, 9], r11: [8, 13], r12: [8, 13], r13: [10, 16], r14: [8, 14] };
+const NOTE_HARD = { r10: [1, 1], r11: [1, 2], r12: [2, 2], r13: [2, 3] };
+
+// Sentences of one paragraph. A 。 inside 「」 or （） does not end the sentence.
+export function splitSentences(para) {
+  const out = [];
+  let cur = "";
+  let depth = 0;
+  for (const ch of para) {
+    cur += ch;
+    if ("「『（(".includes(ch)) depth++;
+    else if ("」』）)".includes(ch)) depth = Math.max(0, depth - 1);
+    else if ("。？！?!".includes(ch) && depth === 0) {
+      out.push(cur);
+      cur = "";
+    }
+  }
+  if (cur.trim()) out.push(cur);
+  return out.map((s) => s.trim()).filter(Boolean);
+}
+// The sentences a note must hold for a text, in order: [{ p, t?, s }]. `p` counts paragraphs from 1
+// (inside A or B for 問題12, where `t` is the label).
+export function noteSentences(p) {
+  const bodies = p.texts ? p.texts : [{ label: "", text: p.text }];
+  return bodies.flatMap((b) =>
+    plainText(b.text)
+      .split("\n")
+      .filter((x) => x.trim())
+      .flatMap((para, i) => splitSentences(para).map((s) => ({ p: i + 1, ...(b.label ? { t: b.label } : {}), s }))),
+  );
+}
+
+export function validateNotes(notes, file, texts) {
+  const errors = [];
+  const name = path.basename(file);
+  if (!notes || typeof notes !== "object" || Array.isArray(notes)) return [`${name}: top level must be an object keyed by text id`];
+  const byId = new Map(texts.map((p) => [p.id, p]));
+  for (const [id, n] of Object.entries(notes)) {
+    const err = (m) => errors.push(`${name} ${id}: ${m}`);
+    const p = byId.get(id);
+    if (!p) {
+      err("no reading text has this id");
+      continue;
+    }
+    const isNotice = p.type === "r14";
+    const body = isNotice ? `${p.title || ""}\n${noticeText(p)}` : (p.texts ? p.texts.map((b) => plainText(b.text)).join("\n") : plainText(p.text));
+    const str = (x) => typeof x === "string" && x.trim().length > 0;
+    if (!isNotice) {
+      if (!str(n.shape)) err("missing shape");
+      else if (n.shape.length > 170) err(`shape is ${n.shape.length} chars (keep it under 170)`);
+      const want = noteSentences(p);
+      if (!Array.isArray(n.sents) || n.sents.length !== want.length) err(`sents must have ${want.length} entries, as tools/notes.mjs made them`);
+      else
+        n.sents.forEach((x, i) => {
+          if (x.s !== want[i].s || x.p !== want[i].p || (x.t || "") !== (want[i].t || "")) err(`sents[${i}]: s, p and t must stay as generated`);
+          if (!str(x.en)) err(`sents[${i}]: missing en`);
+          if (!NOTE_ROLES.includes(x.role)) err(`sents[${i}]: role must be one of ${NOTE_ROLES.join(", ")}`);
+        });
+      if (Array.isArray(n.sents) && !n.sents.some((x) => x.role === "claim" || x.role === "ask")) err("no sentence has the role claim (or ask): every text has a point");
+      const [lo, hi] = NOTE_HARD[p.type];
+      if (!Array.isArray(n.hard) || n.hard.length < lo || n.hard.length > hi) err(`hard must list ${lo === hi ? lo : `${lo} to ${hi}`} sentence(s)`);
+      else
+        n.hard.forEach((h, i) => {
+          if (!want.some((w) => w.s === h.s)) err(`hard[${i}]: s must be one whole sentence copied from sents`);
+          if (!Array.isArray(h.chunks) || h.chunks.length < 3 || h.chunks.join("") !== h.s) err(`hard[${i}]: chunks must be 3 or more pieces that join back into s exactly`);
+          if (!str(h.core)) err(`hard[${i}]: missing core`);
+          if (!str(h.note)) err(`hard[${i}]: missing note`);
+          else if (h.note.length > 260) err(`hard[${i}]: note is ${h.note.length} chars (keep it under 260)`);
+        });
+    }
+    const [vlo, vhi] = NOTE_VOCAB[p.type];
+    if (!Array.isArray(n.vocab) || n.vocab.length < vlo || n.vocab.length > vhi) err(`vocab must list ${vlo} to ${vhi} words`);
+    else {
+      const seenW = new Set();
+      n.vocab.forEach((v, i) => {
+        if (!v || !str(v.w) || !str(v.r) || !str(v.en)) return err(`vocab[${i}]: needs w, r and en`);
+        if (seenW.has(v.w)) err(`vocab[${i}]: ${v.w} is listed twice`);
+        seenW.add(v.w);
+        if (!/^[ぁ-ゖァ-ヺー・]+$/.test(v.r)) err(`vocab[${i}] ${v.w}: r must be kana only`);
+        const at = v.at || v.w;
+        const hay = isNotice ? body + "\n" + p.qs.map((q) => q.q).join("\n") : body;
+        if (!hay.includes(at)) err(`vocab[${i}] ${v.w}: "${at}" is not in the text (set "at" to the form the text uses)`);
+      });
+    }
+    if (!Array.isArray(n.qs) || n.qs.length !== p.qs.length) err(`qs must have ${p.qs.length} entries, one per question`);
+    else
+      n.qs.forEach((x, k) => {
+        const q = p.qs[k];
+        if (!Array.isArray(x.trap) || x.trap.length !== q.c.length || x.trap[0] !== "" || x.trap.slice(1).some((t) => !NOTE_TRAPS.includes(t))) err(`qs[${k}].trap: "" for the right choice, then one of ${NOTE_TRAPS.join(", ")} for each wrong choice`);
+        if (!Array.isArray(x.para) || x.para.length > 3) err(`qs[${k}].para: 0 to 3 pairs`);
+        else
+          x.para.forEach((pair, j) => {
+            if (!Array.isArray(pair) || pair.length !== 2 || !str(pair[0]) || !str(pair[1])) return err(`qs[${k}].para[${j}]: must be [words in the text, words in the right choice]`);
+            if (!body.includes(pair[0])) err(`qs[${k}].para[${j}]: "${pair[0]}" is not in the text word for word`);
+            if (!q.c[0].includes(pair[1])) err(`qs[${k}].para[${j}]: "${pair[1]}" is not in the right choice word for word`);
+            if (pair[0] === pair[1]) err(`qs[${k}].para[${j}]: both sides are the same words, so it is not a re-wording`);
+          });
+        if (!isNotice && Array.isArray(x.para) && !x.para.length && !str(x.nopara)) err(`qs[${k}].para is empty: give at least one pair, or set "nopara" to a short reason`);
+      });
+    checkEnglish(err, "", n.shape || "", (n.sents || []).map((x) => x.en || ""), (n.hard || []).map((h) => h.note || ""), (n.vocab || []).map((v) => (v && v.en) || ""));
+  }
+  return errors;
+}
